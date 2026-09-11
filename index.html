@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polyglot Stories - Cuentos Políglotas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var raw = localStorage.getItem('telar_user_settings_v4') || localStorage.getItem('telar_user_settings_v3');
+          if (raw) {
+            var s = JSON.parse(raw);
+            if (s && s.darkMode === true) {
+              document.documentElement.classList.add('dark');
+              return;
+            }
+          }
+          document.documentElement.classList.remove('dark');
+        } catch (e) {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#f8f9fa] dark:bg-slate-950 text-[#2b2b2b] dark:text-white font-sans antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

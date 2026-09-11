@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Duolingo-style 3D buttons */
+.btn-duo-green {
+  @apply bg-duo-green hover:bg-[#52be02] active:translate-y-1 text-white font-bold py-2.5 px-5 rounded-2xl shadow-duo-green active:shadow-none transition-all duration-75 select-none;
+}
+.btn-duo-blue {
+  @apply bg-duo-blue hover:bg-[#19a2e3] active:translate-y-1 text-white font-bold py-2.5 px-5 rounded-2xl shadow-duo-blue active:shadow-none transition-all duration-75 select-none;
+}
+.btn-duo-white {
+  @apply bg-white hover:bg-gray-50 active:translate-y-1 text-gray-700 font-bold py-2.5 px-5 rounded-2xl border-2 border-gray-200 shadow-duo active:shadow-none transition-all duration-75 select-none;
+}
+.btn-duo-purple {
+  @apply bg-purple-500 hover:bg-purple-600 active:translate-y-1 text-white font-bold py-2.5 px-5 rounded-2xl shadow-duo-purple active:shadow-none transition-all duration-75 select-none;
+}
