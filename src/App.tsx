@@ -3,6 +3,7 @@ import confetti from "canvas-confetti";
 import { STORIES, Story } from "./data/stories";
 import { LANGUAGES, Language } from "./data/languages";
 import { Navbar, ViewMode } from "./components/Navbar";
+import { HomePage } from "./components/HomePage";
 import { CharacterStage } from "./components/CharacterStage";
 import { ParallelSentenceRow } from "./components/ParallelSentenceRow";
 import { CodeSwitchingView } from "./components/CodeSwitchingView";
@@ -14,10 +15,14 @@ import { PhraseExplainerModal } from "./components/PhraseExplainerModal";
 import { SettingsModal, UserSettings } from "./components/SettingsModal";
 import { VocabularyDrawer } from "./components/VocabularyDrawer";
 import { AchievementsModal } from "./components/AchievementsModal";
+import { FlashcardsModal } from "./components/FlashcardsModal";
+import { LanguageFamiliesModal } from "./components/LanguageFamiliesModal";
+import { AboutModal } from "./components/AboutModal";
 import { audioPlayer, PlaybackRate } from "./utils/audioPlayer";
 import { vocabularyTracker } from "./utils/vocabularyTracker";
 import { achievementsManager } from "./utils/achievements";
 import { extractVocabularyWords } from "./utils/textSegmenter";
+import { themeManager } from "./utils/themeManager";
 import { I18N } from "./utils/i18n";
 import { Sparkles, ArrowRight, X } from "lucide-react";
 
@@ -28,6 +33,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   darkMode: false,
   interfaceLanguage: "es",
   currentlyLearning: ["es-MX", "ja-JP", "fr-FR", "pt-BR", "ar-SA"],
+  masteredLanguages: ["es-ES", "en-US"],
   geminiApiKey: "",
 };
 
@@ -36,9 +42,16 @@ export const App: React.FC = () => {
   const [settings, setSettings] = useState<UserSettings>(() => {
     try {
       const v4 = localStorage.getItem(SETTINGS_STORAGE_KEY);
-      if (v4) return JSON.parse(v4);
+      if (v4) {
+        const parsed = JSON.parse(v4);
+        return {
+          ...DEFAULT_SETTINGS,
+          ...parsed,
+          darkMode: themeManager.isDarkMode(),
+        };
+      }
 
-      // Migrate previous versions if available, preserving user API key and profile, but defaulting to light mode
+      // Migrate previous versions if available, preserving user API key and profile
       const prev = localStorage.getItem("telar_user_settings_v3") || 
                    localStorage.getItem("telar_user_settings_v2") || 
                    localStorage.getItem("telar_user_settings_v1");
@@ -47,7 +60,7 @@ export const App: React.FC = () => {
         const migrated: UserSettings = {
           ...DEFAULT_SETTINGS,
           ...parsed,
-          darkMode: false, // Ensure light mode is active by default as requested
+          darkMode: false,
         };
         localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(migrated));
         return migrated;
@@ -61,12 +74,12 @@ export const App: React.FC = () => {
   const locale = settings.interfaceLanguage || "es";
   const t = I18N[locale] || I18N.es;
 
-  // Navigation & Story state
+  // Navigation & Story state (starts on new Home Page)
   const [currentStoryId, setCurrentStoryId] = useState<string>("story_1");
-  const [viewMode, setViewMode] = useState<ViewMode>("parallel");
+  const [viewMode, setViewMode] = useState<ViewMode>("home");
   const [activeTagFilter, setActiveTagFilter] = useState<string | null>(null);
 
-  // Language customization: Start with diverse polyglot selection
+  // Language customization
   const [selectedLanguageCodes, setSelectedLanguageCodes] = useState<string[]>([
     "es-ES",
     "es-MX",
@@ -91,6 +104,10 @@ export const App: React.FC = () => {
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
   const [isVocabOpen, setIsVocabOpen] = useState<boolean>(false);
   const [isAchievementsOpen, setIsAchievementsOpen] = useState<boolean>(false);
+  const [isFlashcardsOpen, setIsFlashcardsOpen] = useState<boolean>(false);
+  const [isFamiliesOpen, setIsFamiliesOpen] = useState<boolean>(false);
+  const [familiesTab, setFamiliesTab] = useState<"combinations" | "families">("combinations");
+  const [isAboutOpen, setIsAboutOpen] = useState<boolean>(false);
   const [selectedFactLang, setSelectedFactLang] = useState<Language | null>(null);
   const [explainingPhrase, setExplainingPhrase] = useState<{
     phrase: string;
@@ -103,27 +120,10 @@ export const App: React.FC = () => {
     langCode?: string;
   } | null>(null);
 
-  // Synchronize dark mode class with <html> and <body> elements
+  // Initialize theme on mount
   useEffect(() => {
-    if (settings.darkMode) {
-      document.documentElement.classList.add("dark");
-      document.body.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.body.classList.remove("dark");
-    }
-  }, [settings.darkMode]);
-
-  const handleToggleDarkMode = () => {
-    const nextMode = !settings.darkMode;
-    const updated = { ...settings, darkMode: nextMode };
-    setSettings(updated);
-    try {
-      localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(updated));
-    } catch (e) {
-      console.error(e);
-    }
-  };
+    themeManager.init();
+  }, []);
 
   // Record active varieties for monthly stats
   useEffect(() => {
@@ -165,57 +165,42 @@ export const App: React.FC = () => {
       const lineIndex = currentStory.lines.findIndex((l) => l.id === lineId);
       if (lineIndex >= 0 && lineIndex + 1 < currentStory.lines.length) {
         const nextLine = currentStory.lines[lineIndex + 1];
-        const nextElemId = isDialogue ? `dialogue-line-${lineIndex + 2}` : `line-${lineIndex + 2}`;
+        const nextAudioId = isDialogue
+          ? `switch_${nextLine.id}_${nextLine.characterId}`
+          : `${nextLine.id}_${currentLang}`;
 
-        setTimeout(() => {
-          const nextElem = document.getElementById(nextElemId);
-          if (nextElem) {
-            nextElem.scrollIntoView({ behavior: "smooth", block: "center" });
-            nextElem.classList.add("ring-4", "ring-sky-400", "animate-pulse");
-            setTimeout(() => {
-              nextElem.classList.remove("ring-4", "ring-sky-400", "animate-pulse");
-            }, 1200);
-          }
+        const nextTrans = nextLine.translations[currentLang];
+        const nextAudioUrl = nextTrans?.audioUrl;
 
-          const nextAudioId = isDialogue ? `switch_${nextLine.id}_${currentLang}` : `${nextLine.id}_${currentLang}`;
-          const nextTrans = nextLine.translations[currentLang] || nextLine.translations["es-ES"];
-          setActiveSpeakerId(nextLine.characterId);
-          audioPlayer.playLine({
-            id: nextAudioId,
-            audioUrl: nextTrans.audioUrl,
-            spokenText: nextTrans.text,
-            langCode: currentLang,
-            characterId: nextLine.characterId,
-          });
-        }, 500);
+        if (nextAudioUrl) {
+          setTimeout(() => {
+            audioPlayer.playLine({
+              id: nextAudioId,
+              audioUrl: nextAudioUrl,
+              spokenText: nextTrans.text,
+              langCode: currentLang,
+              characterId: nextLine.characterId as any
+            });
+            setActiveSpeakerId(nextLine.characterId);
+          }, 400);
+        }
       }
     });
 
     return () => unsubscribe();
   }, [autoAdvance, currentStory]);
 
-  // Language selection handlers
   const handleToggleLanguage = (code: string) => {
-    setSelectedLanguageCodes((prev) => {
-      if (prev.includes(code)) {
-        if (prev.length === 1) return prev; // Keep at least one
-        return prev.filter((c) => c !== code);
-      } else {
-        return [...prev, code];
-      }
-    });
+    setSelectedLanguageCodes((prev) =>
+      prev.includes(code) ? prev.filter((c) => c !== code) : [...prev, code]
+    );
   };
 
   const handleApplyPreset = (codes: string[]) => {
-    // If empty array passed (e.g. Deselect all), keep 1 default or empty
-    if (codes.length === 0) {
-      setSelectedLanguageCodes(["es-ES"]);
-    } else {
-      setSelectedLanguageCodes(codes);
-    }
+    setSelectedLanguageCodes(codes);
   };
 
-  const handleSelectWord = (word: string, contextTranslation?: string, targetLangCode?: string) => {
+  const handleWordClick = (word: string, contextTranslation?: string, targetLangCode?: string) => {
     setInspectedWord({
       word,
       translation: contextTranslation,
@@ -226,6 +211,7 @@ export const App: React.FC = () => {
 
   const handleSaveSettings = (newSettings: UserSettings) => {
     setSettings(newSettings);
+    themeManager.applyTheme(newSettings.darkMode);
     try {
       localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(newSettings));
     } catch (e) {
@@ -243,20 +229,16 @@ export const App: React.FC = () => {
 
   // Automatically record words seen from current story when advancing to next story
   const handleNextStory = () => {
-    // Collect all words from the completed story in user's active languages (CJK segmented properly)
     currentStory.lines.forEach((line) => {
       selectedLanguageCodes.forEach((code) => {
         const trans = line.translations[code];
         if (trans && trans.text) {
           const words = extractVocabularyWords(trans.text, code);
-          words.forEach((clean) => {
-            if (clean.length > 0) {
-              vocabularyTracker.recordWord(clean, code, trans.text);
-            }
-          });
+          words.forEach((w) => vocabularyTracker.recordWord(w, code, trans.text));
         }
       });
     });
+
     setVocabCount(vocabularyTracker.getTotalCount());
 
     const currentIndex = STORIES.findIndex((s) => s.id === currentStoryId);
@@ -276,7 +258,7 @@ export const App: React.FC = () => {
         currentStoryId={currentStoryId}
         onSelectStory={(id) => {
           setCurrentStoryId(id);
-          if (viewMode === "tour") setViewMode("parallel");
+          if (viewMode === "tour" || viewMode === "home") setViewMode("parallel");
         }}
         viewMode={viewMode}
         onChangeViewMode={(mode) => setViewMode(mode)}
@@ -299,15 +281,54 @@ export const App: React.FC = () => {
         vocabularyCount={vocabCount}
         onOpenAchievements={() => setIsAchievementsOpen(true)}
         unlockedAchievementsCount={unlockedBadgesCount}
+        onOpenFlashcards={() => setIsFlashcardsOpen(true)}
+        onOpenFamilies={() => {
+          setFamiliesTab("combinations");
+          setIsFamiliesOpen(true);
+        }}
+        onOpenAbout={() => setIsAboutOpen(true)}
         username={settings.username}
         locale={locale}
-        darkMode={settings.darkMode}
-        onToggleDarkMode={handleToggleDarkMode}
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 w-full">
+      <main className="flex-1 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 w-full">
         
+        {/* NEW HOME PAGE VIEW */}
+        {viewMode === "home" && (
+          <HomePage
+            onStartReading={() => setViewMode("parallel")}
+            onOpenTour={() => setViewMode("tour")}
+            onOpenFlashcards={() => setIsFlashcardsOpen(true)}
+            onOpenFamilies={(tab) => {
+              if (tab) setFamiliesTab(tab);
+              setIsFamiliesOpen(true);
+            }}
+            onOpenSettings={() => setIsSettingsOpen(true)}
+            masteredLanguageCodes={settings.masteredLanguages || ["es-ES", "en-US"]}
+            learningLanguageCodes={settings.currentlyLearning || ["es-MX", "ja-JP", "fr-FR"]}
+            onUpdateMastered={(codes) => {
+              const updated = { ...settings, masteredLanguages: codes };
+              setSettings(updated);
+              try {
+                localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(updated));
+              } catch (e) {
+                console.error(e);
+              }
+            }}
+            onUpdateLearning={(codes) => {
+              const updated = { ...settings, currentlyLearning: codes };
+              setSettings(updated);
+              try {
+                localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(updated));
+              } catch (e) {
+                console.error(e);
+              }
+            }}
+            locale={locale}
+          />
+        )}
+
         {/* World Tour View */}
         {viewMode === "tour" && (
           <WorldTourView
@@ -320,7 +341,7 @@ export const App: React.FC = () => {
         )}
 
         {/* Story Views (Parallel & Dialogue) */}
-        {viewMode !== "tour" && (
+        {(viewMode === "parallel" || viewMode === "dialogue") && (
           <>
             {/* Tag Filter Notification Pill if active */}
             {activeTagFilter && (
@@ -349,105 +370,93 @@ export const App: React.FC = () => {
               conflictType={currentStory.conflictType}
               vocabularyTheme={currentStory.vocabularyTheme}
               activeTagFilter={activeTagFilter}
-              onSelectTagFilter={(tag) => {
-                setActiveTagFilter(tag);
-                // Find story with matching theme if current one doesn't have it
-                const matchingStory = STORIES.find(s => s.vocabularyTheme.toLowerCase().includes(tag.toLowerCase()));
-                if (matchingStory) {
-                  setCurrentStoryId(matchingStory.id);
-                }
-              }}
+              onSelectTagFilter={(tag) => setActiveTagFilter(tag)}
               onClearTagFilter={() => setActiveTagFilter(null)}
               locale={locale}
             />
 
-            {/* View Mode 1: Parallel Polyglot Reader */}
+            {/* Story Dialogue View (Code Switching) */}
+            {viewMode === "dialogue" && (
+              <div className="mt-8">
+                <CodeSwitchingView
+                  story={currentStory}
+                  activeAudioId={activeAudioId}
+                  showPhonetics={showPhonetics}
+                  onSelectWord={handleWordClick}
+                  onSpeakerActive={(speakerId) => setActiveSpeakerId(speakerId)}
+                  onOpenFactCard={(lang) => setSelectedFactLang(lang)}
+                  onExplainPhrase={(phrase, langCode, charId) => {
+                    setExplainingPhrase({ phrase, langCode, characterId: charId });
+                  }}
+                  locale={locale}
+                />
+              </div>
+            )}
+
+            {/* Parallel Sentence Reader */}
             {viewMode === "parallel" && (
-              <div className="space-y-5">
-                <div className="flex items-center justify-between px-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl">📖</span>
-                    <h3 className="font-extrabold text-base text-gray-800 dark:text-gray-200">
-                      {t.parallelReaderTitle(selectedLanguageCodes.length)}
-                    </h3>
-                  </div>
+              <div className="mt-8 space-y-6">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-black text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    {t.parallelReaderTitle(selectedLanguageCodes.length)}
+                  </h3>
                   <button
                     onClick={() => setIsLangModalOpen(true)}
-                    className="text-xs font-black text-duo-blue dark:text-sky-400 hover:underline"
+                    className="text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline"
                   >
                     {t.addMoreDialects}
                   </button>
                 </div>
 
-                {currentStory.lines.map((line, idx) => (
-                  <ParallelSentenceRow
-                    key={line.id}
-                    line={line}
-                    lineNumber={idx + 1}
-                    totalLines={currentStory.lines.length}
-                    activeLanguageCodes={selectedLanguageCodes}
-                    activeAudioId={activeAudioId}
-                    showPhonetics={showPhonetics}
-                    onSelectWord={handleSelectWord}
-                    onSpeakerActive={(charId) => setActiveSpeakerId(charId)}
-                    onOpenFactCard={(lang) => setSelectedFactLang(lang)}
-                    onExplainPhrase={(phrase, langCode, charId) =>
-                      setExplainingPhrase({ phrase, langCode, characterId: charId })
-                    }
-                    locale={locale}
-                  />
-                ))}
-              </div>
-            )}
-
-            {/* View Mode 2: Conversational Back-and-Forth Mode */}
-            {viewMode === "dialogue" && (
-              <CodeSwitchingView
-                story={currentStory}
-                activeAudioId={activeAudioId}
-                showPhonetics={showPhonetics}
-                onSelectWord={handleSelectWord}
-                onSpeakerActive={(charId) => setActiveSpeakerId(charId)}
-                onOpenFactCard={(lang) => setSelectedFactLang(lang)}
-                onExplainPhrase={(phrase, langCode, charId) =>
-                  setExplainingPhrase({ phrase, langCode, characterId: charId })
-                }
-                locale={locale}
-              />
-            )}
-
-            {/* Story Completion Banner */}
-            <div className="mt-10 bg-white dark:bg-slate-900 rounded-3xl p-6 border-2 border-gray-200 dark:border-slate-800 shadow-duo-card flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 flex items-center justify-center text-2xl shadow-sm">
-                  🏆
+                <div className="space-y-4">
+                  {currentStory.lines.map((line, index) => (
+                    <ParallelSentenceRow
+                      key={line.id}
+                      line={line}
+                      lineNumber={index + 1}
+                      totalLines={currentStory.lines.length}
+                      activeLanguageCodes={selectedLanguageCodes}
+                      activeAudioId={activeAudioId}
+                      showPhonetics={showPhonetics}
+                      onSelectWord={handleWordClick}
+                      onSpeakerActive={(speakerId) => setActiveSpeakerId(speakerId)}
+                      onOpenFactCard={(lang) => setSelectedFactLang(lang)}
+                      onExplainPhrase={(phrase, langCode, charId) => {
+                        setExplainingPhrase({ phrase, langCode, characterId: charId });
+                      }}
+                      locale={locale}
+                    />
+                  ))}
                 </div>
-                <div>
-                  <h4 className="font-black text-base text-gray-900 dark:text-white">
-                    {t.storyCompletedTitle}
-                  </h4>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 font-bold">
-                    {t.storyCompletedDesc(selectedLanguageCodes.length)}
-                  </p>
+
+                {/* Bottom Story Completion Bar */}
+                <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border-2 border-gray-200 dark:border-slate-800 shadow-duo-card flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
+                  <div>
+                    <h4 className="font-black text-base text-gray-900 dark:text-white">
+                      {t.storyCompletedTitle}
+                    </h4>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                      {t.storyCompletedDesc(selectedLanguageCodes.length)}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={handleCompleteStory}
+                      className="px-4 py-2.5 rounded-2xl bg-amber-100 hover:bg-amber-200 text-amber-900 dark:bg-amber-950 dark:text-amber-200 font-bold text-xs transition-all shadow-xs"
+                    >
+                      🎉 {t.celebrate}
+                    </button>
+                    <button
+                      onClick={handleNextStory}
+                      className="btn-duo-green flex items-center gap-2 py-2.5 px-5 text-xs"
+                    >
+                      <span>{t.nextStory}</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 w-full sm:w-auto">
-                <button
-                  onClick={handleCompleteStory}
-                  className="btn-duo-white text-xs py-2.5 px-4 flex-1 sm:flex-none flex items-center justify-center gap-1.5"
-                >
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  <span>{t.celebrate}</span>
-                </button>
-                <button
-                  onClick={handleNextStory}
-                  className="btn-duo-green text-xs py-2.5 px-5 flex-1 sm:flex-none flex items-center justify-center gap-1.5"
-                >
-                  <span>{t.nextStory}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
+            )}
           </>
         )}
 
@@ -502,7 +511,8 @@ export const App: React.FC = () => {
         settings={settings}
         onSaveSettings={handleSaveSettings}
         onLiveThemeChange={(dark) => {
-          setSettings(prev => ({ ...prev, darkMode: dark }));
+          themeManager.applyTheme(dark);
+          setSettings((prev) => ({ ...prev, darkMode: dark }));
         }}
         locale={locale}
       />
@@ -522,6 +532,36 @@ export const App: React.FC = () => {
         isOpen={isAchievementsOpen}
         onClose={() => setIsAchievementsOpen(false)}
         badges={badges}
+        locale={locale}
+      />
+
+      {/* Flashcards Modal */}
+      <FlashcardsModal
+        isOpen={isFlashcardsOpen}
+        onClose={() => setIsFlashcardsOpen(false)}
+        activeLanguageCodes={selectedLanguageCodes}
+        geminiApiKey={settings.geminiApiKey}
+        locale={locale}
+      />
+
+      {/* Language Families & Classic Combinations Modal */}
+      <LanguageFamiliesModal
+        isOpen={isFamiliesOpen}
+        onClose={() => setIsFamiliesOpen(false)}
+        defaultTab={familiesTab}
+        locale={locale}
+        onSelectCombination={(comb) => {
+          // Switch to reading mode with the languages of the combination
+          const codes = comb.languages.map((l) => l.code);
+          setSelectedLanguageCodes(codes);
+          setViewMode("parallel");
+        }}
+      />
+
+      {/* About Modal (Duolingo Comparison) */}
+      <AboutModal
+        isOpen={isAboutOpen}
+        onClose={() => setIsAboutOpen(false)}
         locale={locale}
       />
 

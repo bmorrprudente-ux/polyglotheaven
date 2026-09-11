@@ -8,8 +8,8 @@ export type SupportedLocale = "es" | "en" | "fr" | "pt";
 
 export const I18N = {
   es: {
-    appName: "Telar",
-    tagline: "Tejido de microcuentos políglotas",
+    appName: "Polyglot Heaven",
+    tagline: "El paraíso del aprendizaje políglota",
     badgeMultidialect: "Multidialecto",
     parallelView: "Paralelo",
     dialogueView: "Cruce",
@@ -140,8 +140,8 @@ export const I18N = {
   },
 
   en: {
-    appName: "Telar",
-    tagline: "Woven polyglot microstories",
+    appName: "Polyglot Heaven",
+    tagline: "The polyglot language learning sanctuary",
     badgeMultidialect: "Multidialect",
     parallelView: "Parallel",
     dialogueView: "Cross",
@@ -272,8 +272,8 @@ export const I18N = {
   },
 
   fr: {
-    appName: "Telar",
-    tagline: "Tissage de micro-récits polyglottes",
+    appName: "Polyglot Heaven",
+    tagline: "Le paradis de l'apprentissage polyglotte",
     badgeMultidialect: "Multidialecte",
     parallelView: "Parallèle",
     dialogueView: "Croisé",
@@ -404,8 +404,8 @@ export const I18N = {
   },
 
   pt: {
-    appName: "Telar",
-    tagline: "Tecido de microcontos poliglotas",
+    appName: "Polyglot Heaven",
+    tagline: "O paraíso do aprendizado poliglota",
     badgeMultidialect: "Multidialeto",
     parallelView: "Paralelo",
     dialogueView: "Cruzamento",

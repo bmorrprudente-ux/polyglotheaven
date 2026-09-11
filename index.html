@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Polyglot Stories - Cuentos Políglotas</title>
+    <title>Polyglot Heaven — Cuentos y Herramientas Políglotas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <script>
       (function() {
         try {
-          var raw = localStorage.getItem('telar_user_settings_v4') || localStorage.getItem('telar_user_settings_v3');
-          if (raw) {
-            var s = JSON.parse(raw);
-            if (s && s.darkMode === true) {
-              document.documentElement.classList.add('dark');
-              return;
-            }
+          var theme = localStorage.getItem('polyglot_heaven_theme');
+          var isDark = theme === 'dark';
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.style.colorScheme = 'light';
           }
-          document.documentElement.classList.remove('dark');
         } catch (e) {
           document.documentElement.classList.remove('dark');
         }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { explainWordWithAi, WordExplanation } from "../utils/aiExplainer";
 import { vocabularyTracker } from "../utils/vocabularyTracker";
 import { LANGUAGES } from "../data/languages";
-import { X, Volume2, Bookmark, Check, Sparkles, Loader2, RefreshCw, AlertTriangle } from "lucide-react";
+import { X, Volume2, Bookmark, Check, Sparkles, Loader2, RefreshCw, AlertTriangle, Star } from "lucide-react";
 import { I18N, SupportedLocale } from "../utils/i18n";
 
 interface WordInspectorModalProps {
@@ -29,6 +29,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
   const [loading, setLoading] = useState(true);
   const [explanation, setExplanation] = useState<WordExplanation | null>(null);
   const [saved, setSaved] = useState(false);
+  const [isFav, setIsFav] = useState(false);
 
   const t = I18N[locale] || I18N.es;
   const actualLangCode = langCode || "es-ES";
@@ -50,6 +51,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
   useEffect(() => {
     if (!isOpen || !word) return;
     setSaved(false);
+    setIsFav(vocabularyTracker.isFavorite(word, actualLangCode));
 
     // Automatically record word encounter in Vocabulary Tracker
     vocabularyTracker.recordWord(word, actualLangCode, contextSentence);
@@ -226,18 +228,39 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="p-3.5 bg-gray-50 dark:bg-slate-800/60 border-t border-gray-200 dark:border-slate-800 flex justify-between items-center">
-          <button
-            onClick={() => setSaved(true)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
-              saved
-                ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300"
-                : "bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-slate-700 hover:bg-gray-100 dark:hover:bg-slate-700"
-            }`}
-          >
-            {saved ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Bookmark className="w-3.5 h-3.5" />}
-            <span>{saved ? t.savedInVocabulary : t.saveToVocabulary}</span>
-          </button>
+        <div className="p-3.5 bg-gray-50 dark:bg-slate-800/60 border-t border-gray-200 dark:border-slate-800 flex justify-between items-center gap-2">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                if (word) {
+                  const nowFav = vocabularyTracker.toggleFavorite(word, actualLangCode);
+                  setIsFav(nowFav);
+                }
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                isFav
+                  ? "bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-400"
+                  : "bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-slate-700 hover:bg-gray-100"
+              }`}
+              title="Añadir a favoritas para repasar en Flashcards"
+            >
+              <Star className={`w-3.5 h-3.5 ${isFav ? "fill-amber-500 text-amber-500" : "text-gray-400"}`} />
+              <span>{isFav ? "Favorita ⭐" : "Favorita"}</span>
+            </button>
+
+            <button
+              onClick={() => setSaved(true)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                saved
+                  ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300"
+                  : "bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-slate-700 hover:bg-gray-100 dark:hover:bg-slate-700"
+              }`}
+            >
+              {saved ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Bookmark className="w-3.5 h-3.5" />}
+              <span>{saved ? t.savedInVocabulary : t.saveToVocabulary}</span>
+            </button>
+          </div>
+
           <button
             onClick={onClose}
             className="px-5 py-2 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 font-extrabold text-xs rounded-xl transition-all"
