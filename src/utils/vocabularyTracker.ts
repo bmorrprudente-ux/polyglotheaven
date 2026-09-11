@@ -1,8 +1,4 @@
-/**
- * Vocabulary Tracker for Polyglot Heaven
- * Keeps track of words seen, inspected, or learned across microcuentos in localStorage.
- * Supports favoriting words for SRS flashcards practice.
- */
+import { polyglotDB, StoredVocabularyWord } from "./polyglotDB";
 
 export interface TrackedWord {
   word: string;
@@ -55,6 +51,16 @@ export const vocabularyTracker = {
       if (contextSentence) words[existingIndex].contextSentence = contextSentence;
       if (translation) words[existingIndex].translation = translation;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+      polyglotDB.saveVocabularyWord({
+        id: `${cleanWord}_${langCode}`,
+        word: words[existingIndex].word,
+        langCode,
+        contextPhrase: words[existingIndex].contextSentence,
+        translation: words[existingIndex].translation,
+        timestamp: now,
+        isFavorite: Boolean(words[existingIndex].isFavorite),
+        timesReviewed: words[existingIndex].encounterCount,
+      });
       return words[existingIndex];
     } else {
       const newEntry: TrackedWord = {
@@ -70,6 +76,16 @@ export const vocabularyTracker = {
       };
       words.unshift(newEntry);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+      polyglotDB.saveVocabularyWord({
+        id: `${cleanWord}_${langCode}`,
+        word: newEntry.word,
+        langCode,
+        contextPhrase: newEntry.contextSentence,
+        translation: newEntry.translation,
+        timestamp: now,
+        isFavorite: false,
+        timesReviewed: 1,
+      });
       return newEntry;
     }
   },
@@ -82,6 +98,16 @@ export const vocabularyTracker = {
     if (idx >= 0) {
       words[idx].isFavorite = !words[idx].isFavorite;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+      polyglotDB.saveVocabularyWord({
+        id: `${clean}_${langCode}`,
+        word: words[idx].word,
+        langCode,
+        contextPhrase: words[idx].contextSentence,
+        translation: words[idx].translation,
+        timestamp: new Date().toISOString(),
+        isFavorite: Boolean(words[idx].isFavorite),
+        timesReviewed: words[idx].encounterCount,
+      });
       return Boolean(words[idx].isFavorite);
     } else {
       // Record and favorite immediately
@@ -96,6 +122,16 @@ export const vocabularyTracker = {
       };
       words.unshift(newWord);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
+      polyglotDB.saveVocabularyWord({
+        id: `${clean}_${langCode}`,
+        word: newWord.word,
+        langCode,
+        contextPhrase: newWord.contextSentence,
+        translation: newWord.translation,
+        timestamp: new Date().toISOString(),
+        isFavorite: true,
+        timesReviewed: 1,
+      });
       return true;
     }
   },

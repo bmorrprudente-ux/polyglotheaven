@@ -23,6 +23,7 @@ import { vocabularyTracker } from "./utils/vocabularyTracker";
 import { achievementsManager } from "./utils/achievements";
 import { extractVocabularyWords } from "./utils/textSegmenter";
 import { themeManager } from "./utils/themeManager";
+import { polyglotDB } from "./utils/polyglotDB";
 import { I18N } from "./utils/i18n";
 import { Sparkles, ArrowRight, X } from "lucide-react";
 
@@ -32,15 +33,24 @@ const DEFAULT_SETTINGS: UserSettings = {
   username: "Políglota",
   darkMode: false,
   interfaceLanguage: "es",
-  currentlyLearning: ["es-MX", "ja-JP", "fr-FR", "pt-BR", "ar-SA"],
+  currentlyLearning: ["fr-FR", "pt-BR", "nl-NL", "de-DE", "it-IT"],
   masteredLanguages: ["es-ES", "en-US"],
   geminiApiKey: "",
 };
 
 export const App: React.FC = () => {
-  // User Settings state with localStorage persistence (defaults strictly to clean light mode)
+  // User Settings state with Polyglot Database persistence
   const [settings, setSettings] = useState<UserSettings>(() => {
     try {
+      const dbSettings = polyglotDB.getSettingsSync();
+      if (dbSettings) {
+        return {
+          ...DEFAULT_SETTINGS,
+          ...dbSettings,
+          darkMode: themeManager.isDarkMode(),
+        };
+      }
+
       const v4 = localStorage.getItem(SETTINGS_STORAGE_KEY);
       if (v4) {
         const parsed = JSON.parse(v4);
@@ -75,19 +85,55 @@ export const App: React.FC = () => {
   const t = I18N[locale] || I18N.es;
 
   // Navigation & Story state (starts on new Home Page)
-  const [currentStoryId, setCurrentStoryId] = useState<string>("story_1");
-  const [viewMode, setViewMode] = useState<ViewMode>("home");
+  const [currentStoryId, setCurrentStoryId] = useState<string>(() => {
+    return polyglotDB.getStoryPreferencesSync()?.currentStoryId || "story_1";
+  });
+  const [viewMode, setViewMode] = useState<ViewMode>(() => {
+    return polyglotDB.getStoryPreferencesSync()?.viewMode || "home";
+  });
   const [activeTagFilter, setActiveTagFilter] = useState<string | null>(null);
 
-  // Language customization
-  const [selectedLanguageCodes, setSelectedLanguageCodes] = useState<string[]>([
-    "es-ES",
-    "es-MX",
-    "es-DO",
-    "fr-FR",
-    "pt-BR",
-    "ja-JP",
-  ]);
+  // Story languages customization: loaded from database or synced from user's learning languages
+  const [selectedLanguageCodes, setSelectedLanguageCodes] = useState<string[]>(() => {
+    const dbPrefs = polyglotDB.getStoryPreferencesSync();
+    if (dbPrefs?.selectedLanguageCodes && dbPrefs.selectedLanguageCodes.length > 0) {
+      return dbPrefs.selectedLanguageCodes;
+    }
+
+    // If user has learning languages defined, show anchor + learning languages in cuentos
+    const dbSettings = polyglotDB.getSettingsSync();
+    const learning = dbSettings?.currentlyLearning || settings.currentlyLearning;
+    const mastered = dbSettings?.masteredLanguages || settings.masteredLanguages || ["es-ES"];
+    if (learning && learning.length > 0) {
+      const anchor = mastered.length > 0 ? mastered[0] : "es-ES";
+      return [anchor, ...learning.filter(c => c !== anchor)];
+    }
+
+    return ["es-ES", "es-MX", "es-DO", "fr-FR", "pt-BR", "ja-JP"];
+  });
+
+  // Background sync from IndexedDB on startup
+  useEffect(() => {
+    polyglotDB.initDB().then(async () => {
+      const [dbSettings, dbPrefs] = await Promise.all([
+        polyglotDB.getSettings(),
+        polyglotDB.getStoryPreferences(),
+      ]);
+
+      if (dbSettings) {
+        setSettings(prev => ({ ...prev, ...dbSettings }));
+      }
+      if (dbPrefs?.selectedLanguageCodes && dbPrefs.selectedLanguageCodes.length > 0) {
+        setSelectedLanguageCodes(dbPrefs.selectedLanguageCodes);
+      }
+      if (dbPrefs?.currentStoryId) {
+        setCurrentStoryId(dbPrefs.currentStoryId);
+      }
+      if (dbPrefs?.viewMode) {
+        setViewMode(dbPrefs.viewMode);
+      }
+    });
+  }, []);
 
   // Audio, Speed & Phonetics state
   const [activeAudioId, setActiveAudioId] = useState<string | null>(null);
@@ -191,13 +237,16 @@ export const App: React.FC = () => {
   }, [autoAdvance, currentStory]);
 
   const handleToggleLanguage = (code: string) => {
-    setSelectedLanguageCodes((prev) =>
-      prev.includes(code) ? prev.filter((c) => c !== code) : [...prev, code]
-    );
+    setSelectedLanguageCodes((prev) => {
+      const next = prev.includes(code) ? prev.filter((c) => c !== code) : [...prev, code];
+      polyglotDB.saveStoryPreferences({ selectedLanguageCodes: next });
+      return next;
+    });
   };
 
   const handleApplyPreset = (codes: string[]) => {
     setSelectedLanguageCodes(codes);
+    polyglotDB.saveStoryPreferences({ selectedLanguageCodes: codes });
   };
 
   const handleWordClick = (word: string, contextTranslation?: string, targetLangCode?: string) => {
@@ -212,6 +261,30 @@ export const App: React.FC = () => {
   const handleSaveSettings = (newSettings: UserSettings) => {
     setSettings(newSettings);
     themeManager.applyTheme(newSettings.darkMode);
+
+    // Sincronizar inmediatamente los idiomas de los cuentos con los que el usuario está aprendiendo
+    if (newSettings.currentlyLearning && newSettings.currentlyLearning.length > 0) {
+      const anchor = (newSettings.masteredLanguages && newSettings.masteredLanguages.length > 0)
+        ? newSettings.masteredLanguages[0]
+        : "es-ES";
+      const updatedStoryLangs = [
+        anchor,
+        ...newSettings.currentlyLearning.filter((code) => code !== anchor),
+      ];
+      setSelectedLanguageCodes(updatedStoryLangs);
+      polyglotDB.saveStoryPreferences({ selectedLanguageCodes: updatedStoryLangs });
+    }
+
+    // Persistir de forma robusta en la base de datos IndexedDB
+    polyglotDB.saveSettings({
+      username: newSettings.username,
+      darkMode: newSettings.darkMode,
+      interfaceLanguage: newSettings.interfaceLanguage,
+      currentlyLearning: newSettings.currentlyLearning || [],
+      masteredLanguages: newSettings.masteredLanguages || ["es-ES"],
+      geminiApiKey: newSettings.geminiApiKey || "",
+    });
+
     try {
       localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(newSettings));
     } catch (e) {
@@ -243,7 +316,9 @@ export const App: React.FC = () => {
 
     const currentIndex = STORIES.findIndex((s) => s.id === currentStoryId);
     const nextIndex = (currentIndex + 1) % STORIES.length;
-    setCurrentStoryId(STORIES[nextIndex].id);
+    const nextId = STORIES[nextIndex].id;
+    setCurrentStoryId(nextId);
+    polyglotDB.saveStoryPreferences({ currentStoryId: nextId });
     handleCompleteStory();
   };
 
@@ -258,19 +333,31 @@ export const App: React.FC = () => {
         currentStoryId={currentStoryId}
         onSelectStory={(id) => {
           setCurrentStoryId(id);
-          if (viewMode === "tour" || viewMode === "home") setViewMode("parallel");
+          polyglotDB.saveStoryPreferences({ currentStoryId: id });
+          if (viewMode === "tour" || viewMode === "home") {
+            setViewMode("parallel");
+            polyglotDB.saveStoryPreferences({ viewMode: "parallel" });
+          }
         }}
         viewMode={viewMode}
-        onChangeViewMode={(mode) => setViewMode(mode)}
+        onChangeViewMode={(mode) => {
+          setViewMode(mode);
+          polyglotDB.saveStoryPreferences({ viewMode: mode });
+        }}
         onOpenLanguageModal={() => setIsLangModalOpen(true)}
         activeLanguageCount={selectedLanguageCodes.length}
         playbackSpeed={playbackSpeed}
         onChangeSpeed={(speed) => {
           setPlaybackSpeed(speed);
           audioPlayer.setSpeed(speed);
+          polyglotDB.saveStoryPreferences({ playbackSpeed: speed });
         }}
         showPhonetics={showPhonetics}
-        onTogglePhonetics={() => setShowPhonetics(!showPhonetics)}
+        onTogglePhonetics={() => {
+          const next = !showPhonetics;
+          setShowPhonetics(next);
+          polyglotDB.saveStoryPreferences({ showPhonetics: next });
+        }}
         autoAdvance={autoAdvance}
         onToggleAutoAdvance={() => setAutoAdvance(!autoAdvance)}
         onOpenSettings={() => setIsSettingsOpen(true)}
@@ -297,8 +384,14 @@ export const App: React.FC = () => {
         {/* NEW HOME PAGE VIEW */}
         {viewMode === "home" && (
           <HomePage
-            onStartReading={() => setViewMode("parallel")}
-            onOpenTour={() => setViewMode("tour")}
+            onStartReading={() => {
+              setViewMode("parallel");
+              polyglotDB.saveStoryPreferences({ viewMode: "parallel" });
+            }}
+            onOpenTour={() => {
+              setViewMode("tour");
+              polyglotDB.saveStoryPreferences({ viewMode: "tour" });
+            }}
             onOpenFlashcards={() => setIsFlashcardsOpen(true)}
             onOpenFamilies={(tab) => {
               if (tab) setFamiliesTab(tab);
@@ -306,10 +399,18 @@ export const App: React.FC = () => {
             }}
             onOpenSettings={() => setIsSettingsOpen(true)}
             masteredLanguageCodes={settings.masteredLanguages || ["es-ES", "en-US"]}
-            learningLanguageCodes={settings.currentlyLearning || ["es-MX", "ja-JP", "fr-FR"]}
+            learningLanguageCodes={settings.currentlyLearning || ["fr-FR", "pt-BR", "nl-NL"]}
             onUpdateMastered={(codes) => {
               const updated = { ...settings, masteredLanguages: codes };
               setSettings(updated);
+              polyglotDB.saveSettings({
+                username: updated.username,
+                darkMode: updated.darkMode,
+                interfaceLanguage: updated.interfaceLanguage,
+                currentlyLearning: updated.currentlyLearning || [],
+                masteredLanguages: codes,
+                geminiApiKey: updated.geminiApiKey || "",
+              });
               try {
                 localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(updated));
               } catch (e) {
@@ -319,6 +420,22 @@ export const App: React.FC = () => {
             onUpdateLearning={(codes) => {
               const updated = { ...settings, currentlyLearning: codes };
               setSettings(updated);
+              if (codes && codes.length > 0) {
+                const anchor = (settings.masteredLanguages && settings.masteredLanguages.length > 0)
+                  ? settings.masteredLanguages[0]
+                  : "es-ES";
+                const storyLangs = [anchor, ...codes.filter((c) => c !== anchor)];
+                setSelectedLanguageCodes(storyLangs);
+                polyglotDB.saveStoryPreferences({ selectedLanguageCodes: storyLangs });
+              }
+              polyglotDB.saveSettings({
+                username: updated.username,
+                darkMode: updated.darkMode,
+                interfaceLanguage: updated.interfaceLanguage,
+                currentlyLearning: codes,
+                masteredLanguages: updated.masteredLanguages || ["es-ES"],
+                geminiApiKey: updated.geminiApiKey || "",
+              });
               try {
                 localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(updated));
               } catch (e) {

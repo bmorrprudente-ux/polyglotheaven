@@ -110,7 +110,7 @@ export const I18N = {
     darkMode: "Modo oscuro",
     interfaceLanguage: "Idioma de la interfaz",
     currentlyLearningLabel: (count: number) => `Actualmente aprendiendo (${count})`,
-    currentlyLearningSubtitle: "Aparecerán fijadas en el selector",
+    currentlyLearningSubtitle: "Aparecerán en el selector y activas en tus cuentos",
     searchLanguagePlaceholder: "Buscar idioma para añadir...",
     geminiKeyLabel: "Clave de Google Gemini API (opcional)",
     geminiKeyDesc: "Desbloquea análisis contextuales avanzados en vivo y definiciones enriquecidas.",

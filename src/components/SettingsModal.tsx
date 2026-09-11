@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { LANGUAGES } from "../data/languages";
-import { X, Moon, Sun, Globe, BookOpen, Key, Check, Info, ExternalLink, Flag, Trash2, User, CheckCircle2 } from "lucide-react";
+import { X, Moon, Sun, Globe, BookOpen, Key, Check, Info, ExternalLink, Flag, Trash2, User, CheckCircle2, Database, Download, Upload, ShieldCheck } from "lucide-react";
 import { I18N, SupportedLocale } from "../utils/i18n";
 import { voiceFlagger } from "../utils/voiceFlagger";
 import { themeManager } from "../utils/themeManager";
+import { polyglotDB } from "../utils/polyglotDB";
 
 export interface UserSettings {
   username: string;
@@ -39,9 +40,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [geminiApiKey, setGeminiApiKey] = useState(settings.geminiApiKey || "");
   const [searchFilter, setSearchFilter] = useState("");
   const [flaggedVoices, setFlaggedVoices] = useState<string[]>(() => voiceFlagger.getFlaggedVoiceCodes());
+  const [dbStats, setDbStats] = useState(() => polyglotDB.getDatabaseStats());
+  const [savedFeedback, setSavedFeedback] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Keep state in sync when opened
-  React.useEffect(() => {
+  useEffect(() => {
     if (isOpen) {
       setUsername(settings.username || "Políglota");
       setDarkMode(settings.darkMode);
@@ -49,6 +53,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
       setCurrentlyLearning(settings.currentlyLearning || []);
       setMasteredLanguages(settings.masteredLanguages || ["es-ES"]);
       setGeminiApiKey(settings.geminiApiKey || "");
+      setDbStats(polyglotDB.getDatabaseStats());
+      setSavedFeedback(false);
     }
   }, [isOpen, settings]);
 
@@ -76,7 +82,46 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     );
   };
 
+  const handleExportDB = async () => {
+    try {
+      const json = await polyglotDB.exportDatabaseJSON();
+      const blob = new Blob([json], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `polyglot_heaven_backup_${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.error(e);
+      alert("Error al exportar la base de datos.");
+    }
+  };
+
+  const handleImportDB = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (event) => {
+      try {
+        const text = event.target?.result as string;
+        const ok = await polyglotDB.importDatabaseJSON(text);
+        if (ok) {
+          alert("¡Base de datos restaurada con éxito! La página se recargará para aplicar los datos.");
+          window.location.reload();
+        } else {
+          alert("El archivo de copia de seguridad no tiene un formato válido.");
+        }
+      } catch {
+        alert("Error al leer el archivo de copia de seguridad.");
+      }
+    };
+    reader.readAsText(file);
+  };
+
   const handleSave = () => {
+    setSavedFeedback(true);
     onSaveSettings({
       username: username.trim() || "Políglota",
       darkMode,
@@ -85,7 +130,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
       masteredLanguages,
       geminiApiKey: geminiApiKey.trim(),
     });
-    onClose();
+    setTimeout(() => {
+      onClose();
+    }, 250);
   };
 
   const handleClearFlagged = () => {
@@ -337,6 +384,87 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             />
           </div>
 
+          {/* Base de Datos Persistente (IndexedDB) */}
+          <div className="p-4 rounded-2xl bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-sky-500/10 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-300/80 dark:border-emerald-800/60 shadow-xs">
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-600 text-white flex items-center justify-center shadow-xs">
+                  <Database className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-black text-gray-900 dark:text-white flex items-center gap-1.5 flex-wrap">
+                    <span>Base de datos persistente</span>
+                    <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-300 font-extrabold">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                      IndexedDB activa
+                    </span>
+                  </h4>
+                  <p className="text-[11px] text-gray-600 dark:text-gray-400">
+                    Tus idiomas seleccionados, progreso, cuentos y vocabulario se guardan de forma permanente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Metrics */}
+            <div className="grid grid-cols-3 gap-2 my-3 text-center">
+              <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-200/60 dark:border-slate-800">
+                <span className="block text-sm font-black text-sky-600 dark:text-sky-400">
+                  {currentlyLearning.length}
+                </span>
+                <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">
+                  Aprendiendo
+                </span>
+              </div>
+              <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-200/60 dark:border-slate-800">
+                <span className="block text-sm font-black text-emerald-600 dark:text-emerald-400">
+                  {masteredLanguages.length}
+                </span>
+                <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">
+                  Dominados
+                </span>
+              </div>
+              <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-200/60 dark:border-slate-800">
+                <span className="block text-sm font-black text-amber-600 dark:text-amber-400">
+                  {dbStats.vocabularyCount}
+                </span>
+                <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">
+                  Vocabulario ({dbStats.favoritesCount} ⭐)
+                </span>
+              </div>
+            </div>
+
+            {/* Backup & Restore Controls */}
+            <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-emerald-200/60 dark:border-slate-800">
+              <button
+                type="button"
+                onClick={handleExportDB}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-gray-700 dark:text-gray-200 hover:bg-emerald-50 dark:hover:bg-slate-800 border border-gray-200 dark:border-slate-700 text-xs font-bold shadow-2xs transition-all active:scale-95"
+                title="Descargar todos tus datos en un archivo JSON seguro"
+              >
+                <Download className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                <span>Exportar copia (.json)</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-gray-700 dark:text-gray-200 hover:bg-sky-50 dark:hover:bg-slate-800 border border-gray-200 dark:border-slate-700 text-xs font-bold shadow-2xs transition-all active:scale-95"
+                title="Subir un archivo JSON previo para restaurar tus datos"
+              >
+                <Upload className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
+                <span>Restaurar copia</span>
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".json"
+                onChange={handleImportDB}
+                className="hidden"
+              />
+            </div>
+          </div>
+
           {/* Flagged Voices for ElevenLabs Upgrade */}
           {flaggedVoices.length > 0 && (
             <div className="p-4 rounded-2xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/40">
@@ -380,12 +508,20 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
         {/* Footer */}
         <div className="p-4 bg-gray-50 dark:bg-slate-800/60 border-t border-gray-200 dark:border-slate-800 flex items-center justify-between">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 font-bold text-xs text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-          >
-            {t.cancel}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={onClose}
+              className="px-4 py-2 font-bold text-xs text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            >
+              {t.cancel}
+            </button>
+            {savedFeedback && (
+              <span className="text-xs font-black text-emerald-600 dark:text-emerald-400 flex items-center gap-1 animate-fade-in">
+                <CheckCircle2 className="w-4 h-4" />
+                <span>¡Guardado en base de datos!</span>
+              </span>
+            )}
+          </div>
           <button
             onClick={handleSave}
             className="px-5 py-2 bg-duo-green hover:bg-duo-green-dark text-white font-extrabold text-xs rounded-xl transition-all shadow-duo"
