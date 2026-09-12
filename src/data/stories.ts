@@ -129,6 +129,11 @@ export const STORIES: Story[] = [
             stageDirection: "Susurrando",
             audioUrl: "/audio/s1/s1_l1_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "Clara, agaches pas ara... mas aquela valisa verda sus la taula d'en fàcia es plan suspècta.",
+            stageDirection: "Susurrando",
+            audioUrl: "/audio/s1/s1_l1_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Clara, schau jetzt nicht hin... aber dieser grüne Koffer auf dem Tisch da drüben ist extrem verdächtig.",
             stageDirection: "Susurrando",
@@ -555,6 +560,11 @@ export const STORIES: Story[] = [
           "gl-ES": {
             text: "É só unha maleta, Hugo. Come o teu bocadillo.",
             stageDirection: "Suspirando",
+            audioUrl: "/audio/s1/s1_l2_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Es pas qu'una valisa, Uc. Manja ton entrepan en patz.",
+            stageDirection: "Normal",
             audioUrl: "/audio/s1/s1_l2_gl-ES.mp3"
           },
           "de-DE": {
@@ -985,6 +995,11 @@ export const STORIES: Story[] = [
             stageDirection: "Con los ojos muy abiertos",
             audioUrl: "/audio/s1/s1_l3_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "Degun daissa pas una valisa verda atau a l'abandon. I deu aver de documents secrets. O de diamants!",
+            stageDirection: "Conspirador",
+            audioUrl: "/audio/s1/s1_l3_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Niemand lässt einfach so einen grünen Koffer stehen. Da müssen Geheimdokumente drin sein. Oder Diamanten!",
             stageDirection: "Con los ojos muy abiertos",
@@ -1411,6 +1426,11 @@ export const STORIES: Story[] = [
           "gl-ES": {
             text: "Ou roupa sucia.",
             stageDirection: "Tono plano",
+            audioUrl: "/audio/s1/s1_l4_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "O de linge brut.",
+            stageDirection: "Sarcástica",
             audioUrl: "/audio/s1/s1_l4_gl-ES.mp3"
           },
           "de-DE": {
@@ -1841,6 +1861,11 @@ export const STORIES: Story[] = [
             stageDirection: "Se acerca corriendo, sudando pero sonriente",
             audioUrl: "/audio/s1/s1_l5_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "Excusatz-me! Qualqu'un a vist ma valisa verda amb de belugas?",
+            stageDirection: "Preocupada",
+            audioUrl: "/audio/s1/s1_l5_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Entschuldigung! Hat jemand meinen grünen Glitzerkoffer gesehen?",
             stageDirection: "Se acerca corriendo, sudando pero sonriente",
@@ -2269,6 +2294,11 @@ export const STORIES: Story[] = [
             stageDirection: "Ojos desorbitados",
             audioUrl: "/audio/s1/s1_l6_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "De belugas? Es aquel lo mot de pass secret per los diamants?",
+            stageDirection: "Emocionado",
+            audioUrl: "/audio/s1/s1_l6_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Glitzer? Ist das etwa das Codewort für die Diamanten?",
             stageDirection: "Ojos desorbitados",
@@ -2695,6 +2725,11 @@ export const STORIES: Story[] = [
           "gl-ES": {
             text: "Non, rapaz. É a miña roupa para a clase de hip-hop.",
             stageDirection: "Ajustándose la gorra hacia atrás",
+            audioUrl: "/audio/s1/s1_l7_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Non pas, gojat! Es mon vestit d'entraïnament per lo cors de hip-hop.",
+            stageDirection: "Sonriendo",
             audioUrl: "/audio/s1/s1_l7_gl-ES.mp3"
           },
           "de-DE": {
@@ -3135,6 +3170,11 @@ export const STORIES: Story[] = [
             stageDirection: "Golpeando la barra con estilo",
             audioUrl: "/audio/s2/s2_l1_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "Bonsir, domaisèla! Vòli un cafè tant fòrt que me desvelhe en 1985, e amb un briconet de dangièr.",
+            stageDirection: "Dramático",
+            audioUrl: "/audio/s1/s2_l1_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Guten Tag, junge Dame! Ich hätte gerne einen Kaffee, so stark, dass er mich 1985 aufweckt – und mit einem Hauch von Gefahr.",
             stageDirection: "Golpeando la barra con estilo",
@@ -3562,6 +3602,11 @@ export const STORIES: Story[] = [
             text: "Xa mesmo! Un café fervendo servido xusto no bordo da mesa e un espertador programado hai corenta anos.",
             stageDirection: "Sonriendo alegremente con su libreta",
             audioUrl: "/audio/s2/s2_l2_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Òc plan! Un cafè bolhent servit just al caire de la taula e un revelh reglat fa quaranta ans.",
+            stageDirection: "Burlona",
+            audioUrl: "/audio/s1/s2_l2_gl-ES.mp3"
           },
           "de-DE": {
             text: "Kommt sofort! Kochend heißer Kaffee direkt an der Tischkante und ein Wecker, gestellt auf vor vierzig Jahren.",
@@ -3991,6 +4036,11 @@ export const STORIES: Story[] = [
             stageDirection: "Riendo con sorpresa",
             audioUrl: "/audio/s2/s2_l3_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "E los mandils? Me'n cal exactament sèt per mos torns de magia.",
+            stageDirection: "Serio",
+            audioUrl: "/audio/s1/s2_l3_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Und die Servietten? Ich brauche exakt sieben für meine Zaubertricks.",
             stageDirection: "Riendo con sorpresa",
@@ -4418,6 +4468,11 @@ export const STORIES: Story[] = [
             text: "Aquí ten sete panos numerados do un ao sete e cinta amarela de perigo.",
             stageDirection: "Saca una regla y cuenta solemnemente",
             audioUrl: "/audio/s2/s2_l4_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Vaicí vòstres sèt mandils numerotats d'un a sèt e de riban jaune de precaucion.",
+            stageDirection: "Riendo",
+            audioUrl: "/audio/s1/s2_l4_gl-ES.mp3"
           },
           "de-DE": {
             text: "Hier sind sieben Servietten, durchnummeriert von eins bis sieben, plus gelbes Gefahrenband.",
@@ -4857,6 +4912,11 @@ export const STORIES: Story[] = [
             stageDirection: "Ajustándose los lentes y mostrando la pantalla de su tableta",
             audioUrl: "/audio/s3/s3_l1_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "Sénher Ramon, segon la clausa quatre de nòstre acòrd bilateral, me devètz transferir vòstre cromò olografic.",
+            stageDirection: "Formal",
+            audioUrl: "/audio/s1/s3_l1_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Herr Ramon, gemäß Klausel vier unserer bilateralen Vereinbarung müssen Sie mir Ihre holografische Sammelkarte übertragen.",
             stageDirection: "Ajustándose los lentes y mostrando la pantalla de su tableta",
@@ -5284,6 +5344,11 @@ export const STORIES: Story[] = [
             text: "Tranquilo, avogado miúdo. Primeiro ensíname a subir vídeos con música moderna a esa rede social.",
             stageDirection: "Haciendo equilibrio sobre su patineta",
             audioUrl: "/audio/s3/s3_l2_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Tranquil, avocat pichonet. D'en primièr ensenha-me a publicar de vidèos amb de musica modèrna sus aquela ret sociala.",
+            stageDirection: "Divertido",
+            audioUrl: "/audio/s1/s3_l2_gl-ES.mp3"
           },
           "de-DE": {
             text: "Ganz ruhig, Mini-Anwalt. Bring mir erst bei, wie man Videos mit moderner Musik ins Netz stellt.",
@@ -5713,6 +5778,11 @@ export const STORIES: Story[] = [
             stageDirection: "Masticando con gravedad absoluta",
             audioUrl: "/audio/s3/s3_l3_gl-ES.mp3"
           },
+          "oc-FR": {
+            text: "Aquò demandarà una extension de ma cobrafuòc. E d'un ponch de vista nutricional, lo glaçat compta coma un produch lachièr.",
+            stageDirection: "Pensativo",
+            audioUrl: "/audio/s1/s3_l3_gl-ES.mp3"
+          },
           "de-DE": {
             text: "Das erfordert eine Verlängerung meiner Schlafenszeit. Und ernährungsphysiologisch gilt Eiscreme als vollwertiges Milchprodukt.",
             stageDirection: "Masticando con gravedad absoluta",
@@ -6140,6 +6210,11 @@ export const STORIES: Story[] = [
             text: "Trato feito, socio! Á miña idade non pido permiso, pido dobre xeado e imos patinar!",
             stageDirection: "Chocando los puños con el niño",
             audioUrl: "/audio/s3/s3_l4_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Afhar conclús, sòci! A mon edat demandi pas ges de permission: demandi un glaçat doble e anam patinar!",
+            stageDirection: "Triunfante",
+            audioUrl: "/audio/s1/s3_l4_gl-ES.mp3"
           },
           "de-DE": {
             text: "Abgemacht, Partner! In meinem Alter frage ich nicht um Erlaubnis, ich bestelle doppeltes Eis und ab auf die Piste!",

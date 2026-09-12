@@ -151,7 +151,104 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
       "[ˈe.so re.ke.ɾiˈɾa ˈu.na eɡs.tenˈsjõn de mi ˈto.ke ðe ˈke.ða. i ˈðez.ðe ˈu.na peɾs.peɡˈti.βa nu.tɾi.θjoˈnal, el eˈla.ðo kaˈli.fi.ka ˈko.mo ˈlak.te.o]",
     "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!":
       "[ˈtɾa.to ˈe.t͡ʃo, ˈso.θjo! a mj eˈðað no ˈpi.ðo peɾˈmi.so, ˈpi.ðo eˈla.ðo ˈðo.βle i noz ˈβa.mos a pa.tiˈnaɾ!]"
-  }
+  },
+
+  "ca-ES": {
+    "Clara, no miris ara... però aquella maleta verda a la taula del davant és molt sospitosa.":
+      "[ˈkla.ɾə, no ˈmi.ɾis ˈa.ɾə... pəˈɾɔ əˈke.ʎə məˈle.tə ˈβɛɾ.ðə ə lə ˈtaw.lə dəl dəˈβan ez ˈmɔl sus.piˈto.zə]",
+    "És només una maleta, Hugo. Menja't l'entrepà.":
+      "[ez nuˈmez ˈu.nə məˈle.tə, ˈu.ɣu. ˈmɛɲ.ʒət lən.tɾəˈpa]",
+    "Ningú no deixa una maleta verda així com així. Hi deu haver documents secrets. O diamants!":
+      "[niŋˈɡu no ˈdeʃ.ʃə ˈu.nə məˈle.tə ˈβɛɾ.ðə əjˈʃi kum əjˈʃi. i ˈdew əˈβe ðu.kuˈmenz səˈkɾɛts. u ðjəˈmants!]",
+    "O roba bruta.":
+      "[u ˈrɔ.βə ˈβɾu.tə]",
+    "Perdó! Algú ha vist la meva maleta verda amb purpurina?":
+      "[pəɾˈðo! əɫˈɡu a ˈβiz lə ˈme.βə məˈle.tə ˈβɛɾ.ðə əm puɾ.puˈɾi.nə?]",
+    "Purpurina? És aquesta la clau secreta per als diamants?":
+      "[puɾ.puˈɾi.nə? ez əˈkɛs.tə lə ˈklaw səˈkɾe.tə pəɾ əlz ðjəˈmants?]",
+    "No, noi. És la meva roba d'entrenament per a la classe de hip-hop.":
+      "[no, ˈnɔj. ez lə ˈme.βə ˈrɔ.βə dən.tɾə.nəˈmen pəɾ ə lə ˈkla.sə ðə hip.hɔp]",
+    "Bona tarda, senyoreta! Vull un cafè tan fort que em desperti el 1985, i amb un toc de perill.":
+      "[ˈbɔ.nə ˈtaɾ.ðə, sə.ɲuˈɾe.tə! ˈbuʎ uŋ kəˈfɛ tam ˈfɔɾ kəm dəsˈpɛɾ.ti əl mil nɔw.sənz ujˈtɛn.tə i ˈsiŋ, i əm un ˈtɔɡ ðə pəˈɾiʎ]",
+    "I tant! Un cafè bullint servit just a la vora de la taula i un despertador programat fa quaranta anys.":
+      "[i ˈtan! uŋ kəˈfɛ βuˈʎin səɾˈβid ˈʒust ə lə ˈβɔ.ɾə ðə lə ˈtaw.lə i un dəs.pəɾ.təˈðo pɾu.ɣɾəˈmat fa kwəˈɾan.tə ˈaɲs]",
+    "I els torbavallons? Me'n calen exactament set per als meus trucs de màgia.":
+      "[i əlz tuɾ.βə.βəˈʎonz? mən ˈka.lən əɡ.zak.təˈmen ˈsɛt pəɾ əlz ˈmɛws ˈtɾugz ðə ˈma.ʒi.ə]",
+    "Aquí té set torbavallons numerats de l'un al set i cinta groga de precaució.":
+      "[əˈki ˈte ˈsɛt tuɾ.βə.βəˈʎonz nu.məˈɾadz də ˈlun əl ˈsɛt i ˈsin.tə ˈɡɾɔ.ɣə ðə pɾə.kəw.siˈo]",
+    "Don Ramón, segons la clàusula quatre del nostre acord bilateral, vostè m'ha de transferir el seu cromo hologràfic.":
+      "[don rəˈmon, səˈɣonz lə ˈklaw.zu.lə ˈkwa.tɾə ðəl ˈnɔs.tɾə əˈkɔɾ bi.lə.təˈɾaɫ, busˈte ma ðə tɾəns.fəˈɾiɾ əl ˈsɛw ˈkɾɔ.mu u.luˈɣɾa.fik]",
+    "Tranquil, advocadet. Primer ensenya'm a penjar vídeos amb música moderna en aquesta xarxa social.":
+      "[tɾəŋˈkiɫ, əð.βu.kəˈðɛt. pɾiˈme ənˈsɛ.ɲəm ə pəɲˈʒa ˈbi.ðjuz əm ˈmu.zi.kə muˈðɛɾ.nə ən əˈkɛs.tə ˈʃaɾ.ʃə su.siˈaɫ]",
+    "Això requerirà una extensió del meu toc de queda. I des d'una perspectiva nutricional, el gelat compta com a làctic.":
+      "[əˈʃɔ rə.kə.ɾiˈɾa ˈu.nə əks.tən.siˈo ðəl ˈmɛw ˈtɔɡ ðə ˈkɛ.ðə. i dez ˈdu.nə pəɾs.pəkˈti.βə nu.tɾi.si.uˈnaɫ, əl ʒəˈlat ˈkom.tə ˈkɔm ə ˈlak.tik]",
+    "Tracte fet, soci! A la meva edat no demano permís: demano gelat doble i anem a patinar!":
+      "[ˈtɾak.tə ˈfɛt, ˈsɔ.si! ə lə ˈme.βə əˈðat no ðəˈma.nu pəɾˈmis: dəˈma.nu ʒəˈlad ˈdɔ.βblə i əˈnɛm ə pə.tiˈna!]"
+  },
+  "gl-ES": {
+    "Clara, non mires agora... pero esa maleta verde na mesa de fronte é moi sospeitosa.":
+      "[ˈkla.ɾɐ, noŋ ˈmi.ɾɪs ɐˈɣɔ.ɾɐ... ˈpɛ.ɾʊ ˈe.sɐ mɐˈle.tɐ ˈbɛɾ.ðɪ nɐ ˈme.sɐ ðɪ ˈfɾɔn.tɪ ɛ ˈmɔj sɔs.pejˈto.sɐ]",
+    "É só unha maleta, Hugo. Come o teu bocadillo en paz.":
+      "[ɛ ˈsɔ ˈu.ɲɐ mɐˈle.tɐ, ˈu.ɣʊ. ˈkɔ.mɪ ʊ ˈtew βo.kɐˈði.ʎʊ em ˈpas]",
+    "Ninguén deixa unha maleta verde así coma así. Ten que haber documentos secretos. Ou diamantes!":
+      "[niŋˈɡɛŋ ˈdej.ʃɐ ˈu.ɲɐ mɐˈle.tɐ ˈbɛɾ.ðɪ ɐˈsi ˈkɔ.mɐ ɐˈsi. ˈtɛŋ kɪ ɐˈβeɾ do.kuˈmɛn.tʊs seˈkɾe.tʊs. ow djɐˈman.tɪs!]",
+    "Ou roupa sucia.":
+      "[ow ˈrow.pɐ ˈsu.sjɐ]",
+    "Desculpen! Alguén viu a miña maleta verde con purpurina?":
+      "[desˈkul.pɛn! ɐlˈɡɛŋ ˈbiw ɐ ˈmi.ɲɐ mɐˈle.tɐ ˈbɛɾ.ðɪ kom puɾ.puˈɾi.nɐ?]",
+    "Purpurina? É esa a clave secreta para os diamantes?":
+      "[puɾ.puˈɾi.nɐ? ˈɛ ˈe.sɐ ɐ ˈkla.βɪ seˈkɾe.tɐ ˈpa.ɾɐ ʊz djɐˈman.tɪs?]",
+    "Non, rapaz. É a miña roupa de adestramento para a clase de hip-hop.":
+      "[noŋ, rɐˈpas. ɛ ɐ ˈmi.ɲɐ ˈrow.pɐ ðɪ ɐ.ðɛs.tɾɐˈmen.tʊ ˈpa.ɾɐ ɐ ˈkla.sɪ ðɪ hip.hɔp]",
+    "Boas tardes, señorita! Quero un café tan forte que me esperte en 1985, e cun toque de perigo.":
+      "[ˈbo.ɐs ˈtaɾ.ðɪs, se.ɲoˈɾi.tɐ! ˈkɛ.ɾʊ uŋ kɐˈfɛ tam ˈfɔɾ.tɪ kɪ mɪ esˈpɛɾ.tɪ en ˈmil nɔ.βɪˈsɛn.tʊs ojˈten.tɐ e ˈsiŋ.kʊ, e kun ˈto.kɪ ðɪ peˈɾi.ɣʊ]",
+    "Coma queira! Un café a ferver servido xusto no bordo da mesa e un espertador programado hai corenta anos.":
+      "[ˈkɔ.mɐ ˈkej.ɾɐ! uŋ kɐˈfɛ ɐ feɾˈβeɾ seɾˈβi.ðʊ ˈʃus.tʊ nʊ ˈbɔɾ.ðʊ ðɐ ˈme.sɐ e uŋ es.peɾ.tɐˈðoɾ pɾo.ɣɾɐˈma.ðʊ aj koˈɾɛn.tɐ ˈa.nʊs]",
+    "E os panos de mesa? Preciso de exactamente sete para os meus trucos de maxia.":
+      "[e ʊs ˈpa.nʊs ðɪ ˈme.sɐ? pɾeˈsi.sʊ ðɪ eɡ.sɐk.tɐˈmɛn.tɪ ˈsɛ.tɪ ˈpa.ɾɐ ʊz ˈmews ˈtɾu.kʊs ðɪ ˈma.ʃjɐ]",
+    "Aquí ten sete panos de mesa numerados do un ao sete e cinta amarela de precaución.":
+      "[ɐˈki ˈtɛŋ ˈsɛ.tɪ ˈpa.nʊs ðɪ ˈme.sɐ nu.meˈɾa.ðʊs dʊ ˈuŋ aw ˈsɛ.tɪ e ˈsin.tɐ ɐ.mɐˈɾɛ.lɐ ðɪ pɾe.kawˈsjoŋ]",
+    "Don Ramón, segundo a cláusula catro do noso acordo bilateral, vostede debe transferirme o seu cromo holográfico.":
+      "[dom rɐˈmoŋ, seˈɣun.dʊ ɐ ˈklaw.su.lɐ ˈka.tɾʊ dʊ ˈnɔ.sʊ ɐˈkɔɾ.ðʊ bi.lɐ.teˈɾal, bosˈte.ðɪ ˈde.βɪ tɾɐns.feˈɾiɾ.mɪ ʊ ˈsew ˈkɾɔ.mʊ o.loˈɣɾa.fi.kʊ]",
+    "Tranquilo, avogadiño. Primeiro enséñame a subir vídeos con música moderna a esa rede social.":
+      "[tɾɐŋˈki.lʊ, ɐ.βo.ɣɐˈði.ɲʊ. pɾiˈmej.ɾʊ enˈsɛ.ɲɐ.mɪ ɐ suˈβiɾ ˈbi.ðjʊs kom ˈmu.si.kɐ moˈðɛɾ.nɐ ɐ ˈe.sɐ ˈrɛ.ðɪ soˈsjal]",
+    "Iso requirirá unha extensión do meu toque de queda. E desde unha perspectiva nutricional, o xeado cualifícase como lácteo.":
+      "[ˈi.sʊ re.ki.ɾiˈɾa ˈu.ɲɐ es.tenˈsjoŋ dʊ ˈmew ˈto.kɪ ðɪ ˈke.ðɐ. e ˈdɛz.ðɪ ˈu.ɲɐ peɾs.pekˈti.βɐ nu.tɾi.sjoˈnal, ʊ ʃeˈa.ðʊ kwɐ.liˈfi.kɐ.sɪ ˈkɔ.mʊ ˈlak.te.ʊ]",
+    "Trato feito, compañeiro! Á miña idade non pido permiso: pido xeado dobre e imos patinar!":
+      "[ˈtɾa.tʊ ˈfej.tʊ, kom.pɐˈɲej.ɾʊ! a ˈmi.ɲɐ iˈða.ðɪ noŋ ˈpi.ðʊ peɾˈmi.sʊ: ˈpi.ðʊ ʃeˈa.ðʊ ˈdɔ.βɾɪ e ˈi.mʊs pɐ.tiˈnaɾ!]"
+  },
+  "oc-FR": {
+    "Clara, agaches pas ara... mas aquela valisa verda sus la taula d'en fàcia es plan suspècta.":
+      "[ˈkla.ɾɔ, aˈɡa.tʃes pas ˈa.ɾɔ... mas aˈke.lɔ baˈli.zɔ ˈβɛɾ.ðɔ sys lɔ ˈtaw.lɔ dɛm ˈfa.sjɔ es plan sysˈpɛk.tɔ]",
+    "Es pas qu'una valisa, Uc. Manja ton entrepan en patz.":
+      "[es pas ˈky.nɔ baˈli.zɔ, yk. ˈman.d͡ʒɔ tun en.tɾeˈpan em pats]",
+    "Degun daissa pas una valisa verda atau a l'abandon. I deu aver de documents secrets. O de diamants!":
+      "[deˈɣyn ˈdaj.sɔ pas ˈy.nɔ baˈli.zɔ ˈβɛɾ.ðɔ aˈtaw a lam.banˈdun. i dew aˈβe ðe du.kyˈmens seˈkɾɛts. u ðe djaˈmans!]",
+    "O de linge brut.":
+      "[u ðe ˈlin.d͡ʒe bɾyt]",
+    "Excusatz-me! Qualqu'un a vist ma valisa verda amb de belugas?":
+      "[eks.kyˈzas.me! kalˈkyn a bis ma baˈli.zɔ ˈβɛɾ.ðɔ am de beˈly.ɣɔs?]",
+    "De belugas? Es aquel lo mot de pass secret per los diamants?":
+      "[de beˈly.ɣɔs? ez aˈkɛl lu mud ðe pas seˈkɾɛt peɾ luz djaˈmans?]",
+    "Non pas, gojat! Es mon vestit d'entraïnament per lo cors de hip-hop.":
+      "[num pas, ɡuˈd͡ʒat! es mum besˈtit dɛn.tɾaj.naˈmen peɾ lu kuɾs ðe hip.hɔp]",
+    "Bonsir, domaisèla! Vòli un cafè tant fòrt que me desvelhe en 1985, e amb un briconet de dangièr.":
+      "[bunˈsi, du.majˈzɛ.lɔ! ˈbɔ.li yŋ kaˈfɛ tam fɔɾ ke me dezˈβe.ʎe en mil nɔw.sents ujˈten.tɔ e siŋk, e am ym bɾi.kuˈnet fe danˈd͡ʒɛ]",
+    "Òc plan! Un cafè bolhent servit just al caire de la taula e un revelh reglat fa quaranta ans.":
+      "[ɔk plan! yŋ kaˈfɛ buˈʎen seɾˈbit d͡ʒyst al ˈkaj.ɾe ðe lɔ ˈtaw.lɔ e yɲ reˈβeʎ reˈɡlat fa kwaˈɾan.tɔ ans]",
+    "E los mandils? Me'n cal exactament sèt per mos torns de magia.":
+      "[e luz manˈdils? men kal eɡ.zak.taˈmen sɛt peɾ muz tuɾnz ðe maˈd͡ʒi.ɔ]",
+    "Vaicí vòstres sèt mandils numerotats d'un a sèt e de riban jaune de precaucion.":
+      "[bajˈsi ˈβɔs.tɾes sɛt manˈdils ny.me.ɾuˈtats dyn a sɛt e ðe riˈβan ˈd͡ʒaw.ne ðe pɾe.kawˈsju]",
+    "Sénher Ramon, segon la clausa quatre de nòstre acòrd bilateral, me devètz transferir vòstre cromò olografic.":
+      "[ˈse.ɲe raˈmun, seˈɣun lɔ ˈklaw.zɔ ˈkwa.tɾe ðe ˈnɔs.tɾe aˈkɔɾt bi.la.teˈɾal, me deˈβɛts tɾans.feˈɾi ˈβɔs.tɾe kɾuˈmɔ u.lu.ɣɾaˈfik]",
+    "Tranquil, avocat pichonet. D'en primièr ensenha-me a publicar de vidèos amb de musica modèrna sus aquela ret sociala.":
+      "[tɾaŋˈkil, a.βuˈkat pi.t͡ʃuˈnet. dɛm pɾiˈmje enˈse.ɲɔ.me a py.βliˈka ðe biˈdɛ.uz am de myˈzi.kɔ muˈðɛɾ.nɔ syz aˈke.lɔ ret suˈsja.lɔ]",
+    "Aquò demandarà una extension de ma cobrafuòc. E d'un ponch de vista nutricional, lo glaçat compta coma un produch lachièr.":
+      "[aˈkɔ de.man.daˈɾa ˈy.nɔ eks.tenˈsju ðe ma ku.βɾaˈfwɔk. e dym punt͡ʃ ðe ˈbis.tɔ ny.tɾi.sjuˈnal, lu ɡlaˈsat ˈkun.tɔ ˈkɔ.mɔ ym pɾuˈdyt͡ʃ laˈt͡ʃje]",
+    "Afhar conclús, sòci! A mon edat demandi pas ges de permission: demandi un glaçat doble e anam patinar!":
+      "[aˈfaɾ kuŋˈklys, ˈsɔ.si! a mun eˈdat deˈman.di pas d͡ʒez ðe peɾ.miˈsju: deˈman.di yŋ ɡlaˈsat ˈdu.βle e aˈnam pa.tiˈna!]"
+  },
 };
 
 // ==========================================

@@ -1632,13 +1632,439 @@ export const LANGUAGES: Record<string, Language> = {
       mateo: { modelId: "ru-RU-DmitryNeural", gender: "Masculino", region: "Rusia", type: "Neural2", label: "Dmitry (Joven)" },
       bea: { modelId: "ru-RU-SvetlanaNeural", gender: "Femenina", region: "Rusia", type: "Neural2", label: "Svetlana (Alegre)" }
     }
+  },
+
+  // ==========================================
+  // LENGUAS DE LA PENÍNSULA IBÉRICA, OCCITANIA Y OTRAS LENGUAS EUROPEAS
+  // ==========================================
+  "ca-ES": {
+    code: "ca-ES",
+    name: "Catalán",
+    nativeName: "Català",
+    flag: "🟡",
+    family: "Romance (Occitanorromance)",
+    region: "Cataluña, Valencia, Baleares y Andorra",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "10 millones",
+      whereConcentrated: "Barcelona, Valencia, Palma, Gerona, Andorra la Vella",
+      totalLanguageSpeakers: "10 millones",
+      speakers2050: "10.5 millones",
+      curiosity: "Forma junto al occitano el tronco lingüístico occitanorromance; preserva la 'l' geminada (l·l) y una excepcional tradición literaria desde el Siglo de Oro valenciano."
+    },
+    characterVoices: {
+      hugo: { modelId: "ca-ES-EnricNeural", gender: "Masculino", region: "Cataluña", type: "Neural2", label: "Enric (Català)" },
+      clara: { modelId: "ca-ES-JoanaNeural", gender: "Femenina", region: "Cataluña", type: "Neural2", label: "Joana (Catalana)" },
+      don_ramon: { modelId: "ca-ES-EnricNeural", gender: "Masculino", region: "Cataluña", type: "WaveNet", label: "Enric (Maduro)" },
+      mateo: { modelId: "ca-ES-EnricNeural", gender: "Masculino", region: "Cataluña", type: "Neural2", label: "Enric (Joven)" },
+      bea: { modelId: "ca-ES-JoanaNeural", gender: "Femenina", region: "Cataluña", type: "Neural2", label: "Joana (Alegre)" }
+    }
+  },
+  "gl-ES": {
+    code: "gl-ES",
+    name: "Gallego",
+    nativeName: "Galego",
+    flag: "⚪",
+    family: "Romance (Galaicoportuguesa)",
+    region: "Galicia (España)",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "2.5 millones",
+      whereConcentrated: "A Coruña, Vigo, Santiago de Compostela, Lugo, Ourense",
+      totalLanguageSpeakers: "2.8 millones",
+      speakers2050: "2.6 millones",
+      curiosity: "Hermano genético directo del portugués a través del galaicoportugués medieval de las Cantigas de Santa María; conserva el infinitivo conjugado y la 'gheada'."
+    },
+    characterVoices: {
+      hugo: { modelId: "gl-ES-RoiNeural", gender: "Masculino", region: "Galicia", type: "Neural2", label: "Roi (Galego)" },
+      clara: { modelId: "gl-ES-SabelaNeural", gender: "Femenina", region: "Galicia", type: "Neural2", label: "Sabela (Galega)" },
+      don_ramon: { modelId: "gl-ES-RoiNeural", gender: "Masculino", region: "Galicia", type: "WaveNet", label: "Roi (Maduro)" },
+      mateo: { modelId: "gl-ES-RoiNeural", gender: "Masculino", region: "Galicia", type: "Neural2", label: "Roi (Joven)" },
+      bea: { modelId: "gl-ES-SabelaNeural", gender: "Femenina", region: "Galicia", type: "Neural2", label: "Sabela (Alegre)" }
+    }
+  },
+  "oc-FR": {
+    code: "oc-FR",
+    name: "Occitano",
+    nativeName: "Lenga d'òc / Occitan",
+    flag: "🔴",
+    family: "Romance (Occitanorromance)",
+    region: "Sur de Francia (Occitania, Provenza, Gascuña) y Valle de Arán",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "1.5 millones",
+      whereConcentrated: "Tolosa, Montpellier, Marsella, Niza, Vielha (Valle de Arán)",
+      totalLanguageSpeakers: "1.8 millones",
+      speakers2050: "1.5 millones",
+      curiosity: "La legendaria lengua de los trovadores que inventó la poesía lírica y el 'amor cortés' medieval en toda Europa; cooficial en Cataluña como aranés."
+    },
+    characterVoices: {
+      hugo: { modelId: "fr-FR-HenriNeural", gender: "Masculino", region: "Occitania", type: "Neural2", label: "Henri (Occitano)" },
+      clara: { modelId: "fr-FR-DeniseNeural", gender: "Femenina", region: "Occitania", type: "Neural2", label: "Denise (Occitana)" },
+      don_ramon: { modelId: "fr-FR-HenriNeural", gender: "Masculino", region: "Occitania", type: "WaveNet", label: "Henri (Maduro)" },
+      mateo: { modelId: "fr-FR-HenriNeural", gender: "Masculino", region: "Occitania", type: "Neural2", label: "Henri (Joven)" },
+      bea: { modelId: "fr-FR-DeniseNeural", gender: "Femenina", region: "Occitania", type: "Neural2", label: "Denise (Alegre)" }
+    }
+  },
+  "eu-ES": {
+    code: "eu-ES",
+    name: "Euskera",
+    nativeName: "Euskara",
+    flag: "🟢",
+    family: "Aislada (Paleoeuropea)",
+    region: "País Vasco, Navarra y País Vasco francés",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "900.000",
+      whereConcentrated: "Bilbao, San Sebastián, Vitoria-Gasteiz, Pamplona, Bayona",
+      totalLanguageSpeakers: "1.2 millones",
+      speakers2050: "1.3 millones",
+      curiosity: "La lengua viva más antigua de Europa; lengua aislada sin parentesco genético con ninguna otra familia lingüística del planeta, ergativa y aglutinante."
+    },
+    characterVoices: {
+      hugo: { modelId: "eu-ES-AnderNeural", gender: "Masculino", region: "Euskal Herria", type: "Neural2", label: "Ander (Euskaldun)" },
+      clara: { modelId: "eu-ES-MirenNeural", gender: "Femenina", region: "Euskal Herria", type: "Neural2", label: "Miren (Euskalduna)" },
+      don_ramon: { modelId: "eu-ES-AnderNeural", gender: "Masculino", region: "Euskal Herria", type: "WaveNet", label: "Ander (Maduro)" },
+      mateo: { modelId: "eu-ES-AnderNeural", gender: "Masculino", region: "Euskal Herria", type: "Neural2", label: "Ander (Joven)" },
+      bea: { modelId: "eu-ES-MirenNeural", gender: "Femenina", region: "Euskal Herria", type: "Neural2", label: "Miren (Alegre)" }
+    }
+  },
+  "de-CH": {
+    code: "de-CH",
+    name: "Alemán (Suiza)",
+    nativeName: "Schwyzerdütsch",
+    flag: "🇨🇭",
+    family: "Germánica (Almánica)",
+    region: "Suiza germánica",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "5 millones",
+      whereConcentrated: "Zúrich, Berna, Basilea, Lucerna",
+      totalLanguageSpeakers: "5 millones",
+      speakers2050: "5.5 millones",
+      curiosity: "Conjunto de dialectos altogermánicos hablados en la vida cotidiana de Suiza; difiere marcadamente del alemán estándar en fonética y léxico."
+    },
+    characterVoices: {
+      hugo: { modelId: "de-CH-JanNeural", gender: "Masculino", region: "Suiza", type: "Neural2", label: "Jan (Schwyzerdütsch)" },
+      clara: { modelId: "de-CH-LeniNeural", gender: "Femenina", region: "Suiza", type: "Neural2", label: "Leni (Schwyzerdütsch)" },
+      don_ramon: { modelId: "de-CH-JanNeural", gender: "Masculino", region: "Suiza", type: "WaveNet", label: "Jan (Maduro)" },
+      mateo: { modelId: "de-CH-JanNeural", gender: "Masculino", region: "Suiza", type: "Neural2", label: "Jan (Joven)" },
+      bea: { modelId: "de-CH-LeniNeural", gender: "Femenina", region: "Suiza", type: "Neural2", label: "Leni (Alegre)" }
+    }
+  },
+  "ro-RO": {
+    code: "ro-RO",
+    name: "Rumano",
+    nativeName: "Română",
+    flag: "🇷🇴",
+    family: "Romance (Balcorromance)",
+    region: "Rumanía y Moldavia",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "24 millones",
+      whereConcentrated: "Bucarest, Cluj-Napoca, Timișoara, Chisináu",
+      totalLanguageSpeakers: "28 millones",
+      speakers2050: "25 millones",
+      curiosity: "La única lengua romance principal que preserva el sistema de casos latino (nominativo/acusativo vs. genitivo/dativo) y el artículo definido enclítico (al final)."
+    },
+    characterVoices: {
+      hugo: { modelId: "ro-RO-EmilNeural", gender: "Masculino", region: "Rumanía", type: "Neural2", label: "Emil (Română)" },
+      clara: { modelId: "ro-RO-AlinaNeural", gender: "Femenina", region: "Rumanía", type: "Neural2", label: "Alina (Română)" },
+      don_ramon: { modelId: "ro-RO-EmilNeural", gender: "Masculino", region: "Rumanía", type: "WaveNet", label: "Emil (Maduro)" },
+      mateo: { modelId: "ro-RO-EmilNeural", gender: "Masculino", region: "Rumanía", type: "Neural2", label: "Emil (Joven)" },
+      bea: { modelId: "ro-RO-AlinaNeural", gender: "Femenina", region: "Rumanía", type: "Neural2", label: "Alina (Alegre)" }
+    }
+  },
+  "pl-PL": {
+    code: "pl-PL",
+    name: "Polaco",
+    nativeName: "Polski",
+    flag: "🇵🇱",
+    family: "Eslava (Lequítica)",
+    region: "Polonia",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "38 millones",
+      whereConcentrated: "Varsovia, Cracovia, Breslavia, Gdansk",
+      totalLanguageSpeakers: "45 millones",
+      speakers2050: "40 millones",
+      curiosity: "Famoso por su rica serie de consonantes sibilantes (sz, cz, rz, ż, ś, ć, ź) y por mantener vocales nasales históricas (ą, ę)."
+    },
+    characterVoices: {
+      hugo: { modelId: "pl-PL-MarekNeural", gender: "Masculino", region: "Polonia", type: "Neural2", label: "Marek (Polski)" },
+      clara: { modelId: "pl-PL-ZofiaNeural", gender: "Femenina", region: "Polonia", type: "Neural2", label: "Zofia (Polska)" },
+      don_ramon: { modelId: "pl-PL-MarekNeural", gender: "Masculino", region: "Polonia", type: "WaveNet", label: "Marek (Maduro)" },
+      mateo: { modelId: "pl-PL-MarekNeural", gender: "Masculino", region: "Polonia", type: "Neural2", label: "Marek (Joven)" },
+      bea: { modelId: "pl-PL-ZofiaNeural", gender: "Femenina", region: "Polonia", type: "Neural2", label: "Zofia (Alegre)" }
+    }
+  },
+  "cs-CZ": {
+    code: "cs-CZ",
+    name: "Checo",
+    nativeName: "Čeština",
+    flag: "🇨🇿",
+    family: "Eslava (Occidental)",
+    region: "República Checa",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "10.5 millones",
+      whereConcentrated: "Praga, Brno, Ostrava, Pilsen",
+      totalLanguageSpeakers: "13 millones",
+      speakers2050: "11 millones",
+      curiosity: "Posee la consonante 'ř' (vibrante fricativa alveolar), prácticamente única en el mundo, y alta inteligibilidad mutua con el eslovaco."
+    },
+    characterVoices: {
+      hugo: { modelId: "cs-CZ-AntoninNeural", gender: "Masculino", region: "Chequia", type: "Neural2", label: "Antonín (Čeština)" },
+      clara: { modelId: "cs-CZ-VlastaNeural", gender: "Femenina", region: "Chequia", type: "Neural2", label: "Vlasta (Čeština)" },
+      don_ramon: { modelId: "cs-CZ-AntoninNeural", gender: "Masculino", region: "Chequia", type: "WaveNet", label: "Antonín (Maduro)" },
+      mateo: { modelId: "cs-CZ-AntoninNeural", gender: "Masculino", region: "Chequia", type: "Neural2", label: "Antonín (Joven)" },
+      bea: { modelId: "cs-CZ-VlastaNeural", gender: "Femenina", region: "Chequia", type: "Neural2", label: "Vlasta (Alegre)" }
+    }
+  },
+  "hr-HR": {
+    code: "hr-HR",
+    name: "Croata",
+    nativeName: "Hrvatski",
+    flag: "🇭🇷",
+    family: "Eslava (Meridional)",
+    region: "Croacia y los Balcanes",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "5.5 millones",
+      whereConcentrated: "Zagreb, Split, Rijeka, Dubrovnik",
+      totalLanguageSpeakers: "6 millones",
+      speakers2050: "5.5 millones",
+      curiosity: "Lengua eslava meridional escrita en alfabeto latino con acentos diacríticos (č, ć, dž, đ, š, ž); parte del continuum lingüístico serbocroata."
+    },
+    characterVoices: {
+      hugo: { modelId: "hr-HR-SreckoNeural", gender: "Masculino", region: "Croacia", type: "Neural2", label: "Srećko (Hrvatski)" },
+      clara: { modelId: "hr-HR-GabrijelaNeural", gender: "Femenina", region: "Croacia", type: "Neural2", label: "Gabrijela (Hrvatska)" },
+      don_ramon: { modelId: "hr-HR-SreckoNeural", gender: "Masculino", region: "Croacia", type: "WaveNet", label: "Srećko (Maduro)" },
+      mateo: { modelId: "hr-HR-SreckoNeural", gender: "Masculino", region: "Croacia", type: "Neural2", label: "Srećko (Joven)" },
+      bea: { modelId: "hr-HR-GabrijelaNeural", gender: "Femenina", region: "Croacia", type: "Neural2", label: "Gabrijela (Alegre)" }
+    }
+  },
+  "hu-HU": {
+    code: "hu-HU",
+    name: "Húngaro",
+    nativeName: "Magyar",
+    flag: "🇭🇺",
+    family: "Urálica (Fino-úgrica)",
+    region: "Hungría y cuenca de los Cárpatos",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "13 millones",
+      whereConcentrated: "Budapest, Debrecen, Szeged, Transilvania",
+      totalLanguageSpeakers: "15 millones",
+      speakers2050: "12.5 millones",
+      curiosity: "Isla lingüística no indoeuropea en el corazón de Europa; idioma aglutinante con armonía vocálica y hasta 18 casos gramaticales."
+    },
+    characterVoices: {
+      hugo: { modelId: "hu-HU-TamasNeural", gender: "Masculino", region: "Hungría", type: "Neural2", label: "Tamás (Magyar)" },
+      clara: { modelId: "hu-HU-NoemiNeural", gender: "Femenina", region: "Hungría", type: "Neural2", label: "Noémi (Magyar)" },
+      don_ramon: { modelId: "hu-HU-TamasNeural", gender: "Masculino", region: "Hungría", type: "WaveNet", label: "Tamás (Maduro)" },
+      mateo: { modelId: "hu-HU-TamasNeural", gender: "Masculino", region: "Hungría", type: "Neural2", label: "Tamás (Joven)" },
+      bea: { modelId: "hu-HU-NoemiNeural", gender: "Femenina", region: "Hungría", type: "Neural2", label: "Noémi (Alegre)" }
+    }
+  },
+  "fi-FI": {
+    code: "fi-FI",
+    name: "Finés",
+    nativeName: "Suomi",
+    flag: "🇫🇮",
+    family: "Urálica (Finobáltica)",
+    region: "Finlandia",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "5.5 millones",
+      whereConcentrated: "Helsinki, Espoo, Tampere, Turku",
+      totalLanguageSpeakers: "5.8 millones",
+      speakers2050: "5.6 millones",
+      curiosity: "Célebre por su ritmo silábico, 15 casos gramaticales, total ausencia de género gramatical y su influencia estética en las lenguas élficas de Tolkien."
+    },
+    characterVoices: {
+      hugo: { modelId: "fi-FI-HarriNeural", gender: "Masculino", region: "Finlandia", type: "Neural2", label: "Harri (Suomi)" },
+      clara: { modelId: "fi-FI-NooraNeural", gender: "Femenina", region: "Finlandia", type: "Neural2", label: "Noora (Suomi)" },
+      don_ramon: { modelId: "fi-FI-HarriNeural", gender: "Masculino", region: "Finlandia", type: "WaveNet", label: "Harri (Maduro)" },
+      mateo: { modelId: "fi-FI-HarriNeural", gender: "Masculino", region: "Finlandia", type: "Neural2", label: "Harri (Joven)" },
+      bea: { modelId: "fi-FI-NooraNeural", gender: "Femenina", region: "Finlandia", type: "Neural2", label: "Noora (Alegre)" }
+    }
+  },
+  "sv-SE": {
+    code: "sv-SE",
+    name: "Sueco",
+    nativeName: "Svenska",
+    flag: "🇸🇪",
+    family: "Germánica (Escandinava)",
+    region: "Suecia y costa de Finlandia",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "10.5 millones",
+      whereConcentrated: "Estocolmo, Gotemburgo, Malmö, Helsinki",
+      totalLanguageSpeakers: "11 millones",
+      speakers2050: "11.5 millones",
+      curiosity: "Distinguido por su acento tonal musical ('tonal word accent') y el fonema 'sje-sound' (/ɧ/), con inteligibilidad con noruego y danés."
+    },
+    characterVoices: {
+      hugo: { modelId: "sv-SE-MattiasNeural", gender: "Masculino", region: "Suecia", type: "Neural2", label: "Mattias (Svenska)" },
+      clara: { modelId: "sv-SE-SofieNeural", gender: "Femenina", region: "Suecia", type: "Neural2", label: "Sofie (Svenska)" },
+      don_ramon: { modelId: "sv-SE-MattiasNeural", gender: "Masculino", region: "Suecia", type: "WaveNet", label: "Mattias (Maduro)" },
+      mateo: { modelId: "sv-SE-MattiasNeural", gender: "Masculino", region: "Suecia", type: "Neural2", label: "Mattias (Joven)" },
+      bea: { modelId: "sv-SE-SofieNeural", gender: "Femenina", region: "Suecia", type: "Neural2", label: "Sofie (Alegre)" }
+    }
+  },
+  "da-DK": {
+    code: "da-DK",
+    name: "Danés",
+    nativeName: "Dansk",
+    flag: "🇩🇰",
+    family: "Germánica (Escandinava)",
+    region: "Dinamarca y Groenlandia",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "5.8 millones",
+      whereConcentrated: "Copenhague, Aarhus, Odense, Aalborg",
+      totalLanguageSpeakers: "6 millones",
+      speakers2050: "6.2 millones",
+      curiosity: "Conocido por el fenómeno fonético único del 'stød' (golpe de glotis laríngeo que cambia el significado de las palabras) y su reducción consonántica."
+    },
+    characterVoices: {
+      hugo: { modelId: "da-DK-JeppeNeural", gender: "Masculino", region: "Dinamarca", type: "Neural2", label: "Jeppe (Dansk)" },
+      clara: { modelId: "da-DK-ChristelNeural", gender: "Femenina", region: "Dinamarca", type: "Neural2", label: "Christel (Dansk)" },
+      don_ramon: { modelId: "da-DK-JeppeNeural", gender: "Masculino", region: "Dinamarca", type: "WaveNet", label: "Jeppe (Maduro)" },
+      mateo: { modelId: "da-DK-JeppeNeural", gender: "Masculino", region: "Dinamarca", type: "Neural2", label: "Jeppe (Joven)" },
+      bea: { modelId: "da-DK-ChristelNeural", gender: "Femenina", region: "Dinamarca", type: "Neural2", label: "Christel (Alegre)" }
+    }
+  },
+  "nb-NO": {
+    code: "nb-NO",
+    name: "Noruego (Bokmål)",
+    nativeName: "Norsk (Bokmål)",
+    flag: "🇳🇴",
+    family: "Germánica (Escandinava)",
+    region: "Noruega",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "5.4 millones",
+      whereConcentrated: "Oslo, Bergen, Trondheim, Stavanger",
+      totalLanguageSpeakers: "5.5 millones",
+      speakers2050: "6 millones",
+      curiosity: "La variante estándar escrita más extendida de Noruega; actúa como puente de inteligibilidad mutua entre suecos y daneses en Escandinavia."
+    },
+    characterVoices: {
+      hugo: { modelId: "nb-NO-FinnNeural", gender: "Masculino", region: "Noruega", type: "Neural2", label: "Finn (Norsk)" },
+      clara: { modelId: "nb-NO-PernilleNeural", gender: "Femenina", region: "Noruega", type: "Neural2", label: "Pernille (Norsk)" },
+      don_ramon: { modelId: "nb-NO-FinnNeural", gender: "Masculino", region: "Noruega", type: "WaveNet", label: "Finn (Maduro)" },
+      mateo: { modelId: "nb-NO-FinnNeural", gender: "Masculino", region: "Noruega", type: "Neural2", label: "Finn (Joven)" },
+      bea: { modelId: "nb-NO-PernilleNeural", gender: "Femenina", region: "Noruega", type: "Neural2", label: "Pernille (Alegre)" }
+    }
+  },
+  "tr-TR": {
+    code: "tr-TR",
+    name: "Turco",
+    nativeName: "Türkçe",
+    flag: "🇹🇷",
+    family: "Túrquica (Oghuz)",
+    region: "Turquía, Chipre y diáspora europea",
+    scriptType: "latin",
+    demographics: {
+      dialectSpeakers: "85 millones",
+      whereConcentrated: "Estambul, Ankara, Esmirna, Bursa",
+      totalLanguageSpeakers: "90 millones",
+      speakers2050: "100 millones",
+      curiosity: "Lengua aglutinante paradigmática con estricta armonía vocálica y orden oracional SOV (Sujeto-Objeto-Verbo), sin género gramatical."
+    },
+    characterVoices: {
+      hugo: { modelId: "tr-TR-AhmetNeural", gender: "Masculino", region: "Turquía", type: "Neural2", label: "Ahmet (Türkçe)" },
+      clara: { modelId: "tr-TR-EmelNeural", gender: "Femenina", region: "Turquía", type: "Neural2", label: "Emel (Türkçe)" },
+      don_ramon: { modelId: "tr-TR-AhmetNeural", gender: "Masculino", region: "Turquía", type: "WaveNet", label: "Ahmet (Maduro)" },
+      mateo: { modelId: "tr-TR-AhmetNeural", gender: "Masculino", region: "Turquía", type: "Neural2", label: "Ahmet (Joven)" },
+      bea: { modelId: "tr-TR-EmelNeural", gender: "Femenina", region: "Turquía", type: "Neural2", label: "Emel (Alegre)" }
+    }
+  },
+  "uk-UA": {
+    code: "uk-UA",
+    name: "Ucraniano",
+    nativeName: "Українська мова",
+    flag: "🇺🇦",
+    family: "Eslava (Oriental)",
+    region: "Ucrania y Europa del Este",
+    scriptType: "cyrillic",
+    demographics: {
+      dialectSpeakers: "37 millones",
+      whereConcentrated: "Kiev, Leópolis, Járkov, Odesa",
+      totalLanguageSpeakers: "45 millones",
+      speakers2050: "40 millones",
+      curiosity: "La segunda lengua eslava más hablada en Europa; reconocida por su eufonía melódica alternando vocales y consonantes, y 7 casos gramaticales (con vocativo)."
+    },
+    characterVoices: {
+      hugo: { modelId: "uk-UA-OstapNeural", gender: "Masculino", region: "Ucrania", type: "Neural2", label: "Ostap (Українська)" },
+      clara: { modelId: "uk-UA-PolinaNeural", gender: "Femenina", region: "Ucrania", type: "Neural2", label: "Polina (Українська)" },
+      don_ramon: { modelId: "uk-UA-OstapNeural", gender: "Masculino", region: "Ucrania", type: "WaveNet", label: "Ostap (Maduro)" },
+      mateo: { modelId: "uk-UA-OstapNeural", gender: "Masculino", region: "Ucrania", type: "Neural2", label: "Ostap (Joven)" },
+      bea: { modelId: "uk-UA-PolinaNeural", gender: "Femenina", region: "Ucrania", type: "Neural2", label: "Polina (Alegre)" }
+    }
+  },
+  "he-IL": {
+    code: "he-IL",
+    name: "Hebreo",
+    nativeName: "עברית",
+    flag: "🇮🇱",
+    family: "Afroasiática (Semítica)",
+    region: "Israel",
+    scriptType: "hebrew",
+    demographics: {
+      dialectSpeakers: "9 millones",
+      whereConcentrated: "Tel Aviv, Jerusalén, Haifa",
+      totalLanguageSpeakers: "9.5 millones",
+      speakers2050: "12 millones",
+      curiosity: "El único caso en la historia de una lengua sagrada y litúrgica 'resucitada' con éxito como lengua materna moderna de una nación entera."
+    },
+    characterVoices: {
+      hugo: { modelId: "he-IL-AvriNeural", gender: "Masculino", region: "Israel", type: "Neural2", label: "Avri (עברית)" },
+      clara: { modelId: "he-IL-HilaNeural", gender: "Femenina", region: "Israel", type: "Neural2", label: "Hila (עברית)" },
+      don_ramon: { modelId: "he-IL-AvriNeural", gender: "Masculino", region: "Israel", type: "WaveNet", label: "Avri (Maduro)" },
+      mateo: { modelId: "he-IL-AvriNeural", gender: "Masculino", region: "Israel", type: "Neural2", label: "Avri (Joven)" },
+      bea: { modelId: "he-IL-HilaNeural", gender: "Femenina", region: "Israel", type: "Neural2", label: "Hila (Alegre)" }
+    }
+  },
+  "ar-XA": {
+    code: "ar-XA",
+    name: "Árabe estándar moderno",
+    nativeName: "العربية الفصحى",
+    flag: "🌍",
+    family: "Afroasiática (Semítica)",
+    region: "Mundo Árabe (22 países de la Liga Árabe)",
+    scriptType: "arabic",
+    demographics: {
+      dialectSpeakers: "300 millones",
+      whereConcentrated: "Medios panárabes, literatura, diplomacia y educación",
+      totalLanguageSpeakers: "422 millones",
+      speakers2050: "600 millones",
+      curiosity: "La lengua franca culta (fus'ha) que une a todo el mundo árabe; vehículo de la literatura clásica y los medios de comunicación internacionales."
+    },
+    characterVoices: {
+      hugo: { modelId: "ar-XA-ShakirNeural", gender: "Masculino", region: "Panárabe", type: "Neural2", label: "Shakir (الفصحى)" },
+      clara: { modelId: "ar-XA-AminaNeural", gender: "Femenina", region: "Panárabe", type: "Neural2", label: "Amina (الفصحى)" },
+      don_ramon: { modelId: "ar-XA-ShakirNeural", gender: "Masculino", region: "Panárabe", type: "WaveNet", label: "Shakir (Maduro)" },
+      mateo: { modelId: "ar-XA-ShakirNeural", gender: "Masculino", region: "Panárabe", type: "Neural2", label: "Shakir (Joven)" },
+      bea: { modelId: "ar-XA-AminaNeural", gender: "Femenina", region: "Panárabe", type: "Neural2", label: "Amina (Alegre)" }
+    }
   }
+
 };
 
 // ==========================================
 // GRUPOS LINGÜÍSTICOS VISUALES
 // ==========================================
 export const LANGUAGE_GROUPS: LanguageGroup[] = [
+  {
+    id: "iberian_occitan",
+    name: "Península Ibérica y Occitania",
+    description: "Catalán, Gallego, Occitano, Euskera, Español y Portugués peninsular.",
+    icon: "🏰",
+    codes: ["es-ES", "pt-PT", "ca-ES", "gl-ES", "oc-FR", "eu-ES"]
+  },
   {
     id: "spanish",
     name: "Español y sus variantes",
@@ -1728,6 +2154,13 @@ export const LANGUAGE_GROUPS: LanguageGroup[] = [
 ];
 
 export const PRESET_BUNDLES = [
+  {
+    id: "iberian_romance",
+    name: "Mosaico Ibérico y Occitano",
+    description: "Español, Portugués, Catalán, Gallego y Occitano.",
+    codes: ["es-ES", "pt-PT", "ca-ES", "gl-ES", "oc-FR"],
+    icon: "🏰"
+  },
   {
     id: "big_five",
     name: "Las Grandes Cinco",

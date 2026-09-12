@@ -50,8 +50,9 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
       { code: "fr-FR", name: "Francés", flag: "🇫🇷" },
       { code: "it-IT", name: "Italiano", flag: "🇮🇹" },
       { code: "ro-RO", name: "Rumano", flag: "🇷🇴" },
-      { code: "ca-ES", name: "Catalán", flag: "🇦🇩" },
-      { code: "gl-ES", name: "Gallego", flag: "🇪🇸" }
+      { code: "ca-ES", name: "Catalán", flag: "🟡" },
+      { code: "gl-ES", name: "Gallego", flag: "⚪" },
+      { code: "oc-FR", name: "Occitano", flag: "🔴" }
     ],
     polyglotAdvantage: "Si dominas una lengua romance, puedes alcanzar un nivel de lectura B1 en otra en apenas un tercio del tiempo de estudio habitual."
   },
@@ -124,6 +125,36 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
 ];
 
 export const CLASSIC_COMBINATIONS: ClassicCombination[] = [
+  {
+    id: "catalan_occitan",
+    title: "Catalán y Occitano",
+    languages: [
+      { name: "Catalán", flag: "🟡", script: "Latino", code: "ca-ES" },
+      { name: "Occitano", flag: "🔴", script: "Latino", code: "oc-FR" }
+    ],
+    intelligibilityRate: 94,
+    icon: "🏰",
+    summary: "El continuo occitanorromance por excelencia. Durante siglos compartieron la misma lengua poética trovadoresca (lemozin/proensal); la inteligibilidad en lectura escrita roza el 95%.",
+    sharedRoots: "Tratamiento idéntico de vocales átonas, diptongos, conservación de consonantes finales y léxico medieval compartido.",
+    differences: "El catalán desarrolló la 'l' geminada (l·l) y una norma ortográfica unificada moderna (Fabra); el occitano posee diversas normas (clásica y mistraliana) y ligera influencia fonética del francés en el norte.",
+    learningAdvantage: "Aprender uno te abre automáticamente la comprensión del otro y de la literatura medieval trovadoresca más influyente de la historia europea.",
+    bonusCoverage: "+12 millones en el arco mediterráneo (Cataluña, Valencia, Baleares, Andorra y el sur de Francia)"
+  },
+  {
+    id: "galician_portuguese",
+    title: "Gallego y Portugués",
+    languages: [
+      { name: "Gallego", flag: "⚪", script: "Latino", code: "gl-ES" },
+      { name: "Portugués", flag: "🇵🇹", script: "Latino", code: "pt-PT" }
+    ],
+    intelligibilityRate: 95,
+    icon: "🌊",
+    summary: "Ramas gemelas del galaicoportugués histórico. Hasta el siglo XIV fueron la misma lengua de las célebres Cantigas. La comprensión mutua es espontánea e inmediata.",
+    sharedRoots: "Conservación del infinitivo conjugado, misma sintaxis de pronombres clíticos y un sustrato léxico prácticamente intercambiable.",
+    differences: "El gallego adoptó convenciones ortográficas próximas al castellano (ñ en lugar de nh, ll en lugar de lh) y perdió las sibilantes sonoras que el portugués peninsular conserva.",
+    learningAdvantage: "Dominar gallego te otorga acceso natural e inmediato a la lusofonía mundial (más de 260 millones de personas).",
+    bonusCoverage: "+265 millones en la Península Ibérica, Brasil, Angola y Mozambique"
+  },
   {
     id: "malay_indonesian",
     title: "Malayo e Indonesio",
