@@ -18,6 +18,7 @@ import { AchievementsModal } from "./components/AchievementsModal";
 import { FlashcardsModal } from "./components/FlashcardsModal";
 import { LanguageFamiliesModal } from "./components/LanguageFamiliesModal";
 import { AboutModal } from "./components/AboutModal";
+import { LanguageOrderBar } from "./components/LanguageOrderBar";
 import { audioPlayer, PlaybackRate } from "./utils/audioPlayer";
 import { vocabularyTracker } from "./utils/vocabularyTracker";
 import { achievementsManager } from "./utils/achievements";
@@ -247,6 +248,25 @@ export const App: React.FC = () => {
   const handleApplyPreset = (codes: string[]) => {
     setSelectedLanguageCodes(codes);
     polyglotDB.saveStoryPreferences({ selectedLanguageCodes: codes });
+  };
+
+  const handleReorderLanguages = (newOrder: string[]) => {
+    setSelectedLanguageCodes(newOrder);
+    polyglotDB.saveStoryPreferences({ selectedLanguageCodes: newOrder });
+  };
+
+  const handleMoveLanguage = (langCode: string, direction: "left" | "right") => {
+    const currentIndex = selectedLanguageCodes.indexOf(langCode);
+    if (currentIndex === -1) return;
+
+    const targetIndex = direction === "left" ? currentIndex - 1 : currentIndex + 1;
+    if (targetIndex < 0 || targetIndex >= selectedLanguageCodes.length) return;
+
+    const updated = [...selectedLanguageCodes];
+    const [moved] = updated.splice(currentIndex, 1);
+    updated.splice(targetIndex, 0, moved);
+    setSelectedLanguageCodes(updated);
+    polyglotDB.saveStoryPreferences({ selectedLanguageCodes: updated });
   };
 
   const handleWordClick = (word: string, contextTranslation?: string, targetLangCode?: string) => {
@@ -525,6 +545,14 @@ export const App: React.FC = () => {
                   </button>
                 </div>
 
+                {/* Reorderable Language Tiles Bar */}
+                <LanguageOrderBar
+                  selectedLanguageCodes={selectedLanguageCodes}
+                  onReorder={handleReorderLanguages}
+                  onOpenCatalog={() => setIsLangModalOpen(true)}
+                  locale={locale}
+                />
+
                 <div className="space-y-4">
                   {currentStory.lines.map((line, index) => (
                     <ParallelSentenceRow
@@ -541,6 +569,7 @@ export const App: React.FC = () => {
                       onExplainPhrase={(phrase, langCode, charId) => {
                         setExplainingPhrase({ phrase, langCode, characterId: charId });
                       }}
+                      onMoveLanguage={handleMoveLanguage}
                       locale={locale}
                     />
                   ))}

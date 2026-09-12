@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { DialogueLine } from "../data/stories";
 import { CHARACTERS } from "../data/characters";
 import { LANGUAGES, Language } from "../data/languages";
-import { Volume2, VolumeX, Mic, ChevronDown, Sparkles, Info, Flag } from "lucide-react";
+import { Volume2, VolumeX, Mic, ChevronDown, Sparkles, Info, Flag, ChevronLeft, ChevronRight } from "lucide-react";
 import { audioPlayer } from "../utils/audioPlayer";
 import { getIpaTranscription } from "../utils/ipaConverter";
 import { voiceFlagger } from "../utils/voiceFlagger";
@@ -20,6 +20,7 @@ interface ParallelSentenceRowProps {
   onSpeakerActive: (characterId: string) => void;
   onOpenFactCard: (lang: Language) => void;
   onExplainPhrase: (phrase: string, langCode: string, characterId: string) => void;
+  onMoveLanguage?: (langCode: string, direction: "left" | "right") => void;
   locale?: SupportedLocale;
 }
 
@@ -34,6 +35,7 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
   onSpeakerActive,
   onOpenFactCard,
   onExplainPhrase,
+  onMoveLanguage,
   locale = "es",
 }) => {
   const character = CHARACTERS[line.characterId];
@@ -147,6 +149,36 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
                     >
                       <Info className="w-3.5 h-3.5" />
                     </button>
+
+                    {/* Reorder tile column left/right */}
+                    {onMoveLanguage && activeLanguageCodes.length > 1 && (
+                      <div className="flex items-center -space-x-0.5 opacity-60 hover:opacity-100 transition-opacity ml-1">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onMoveLanguage(langCode, "left");
+                          }}
+                          disabled={activeLanguageCodes.indexOf(langCode) === 0}
+                          className="p-1 text-gray-400 hover:text-sky-600 dark:hover:text-sky-400 disabled:opacity-20 disabled:hover:text-gray-400 rounded hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                          title="Mover esta columna a la izquierda"
+                        >
+                          <ChevronLeft className="w-3.5 h-3.5" />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onMoveLanguage(langCode, "right");
+                          }}
+                          disabled={activeLanguageCodes.indexOf(langCode) === activeLanguageCodes.length - 1}
+                          className="p-1 text-gray-400 hover:text-sky-600 dark:hover:text-sky-400 disabled:opacity-20 disabled:hover:text-gray-400 rounded hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                          title="Mover esta columna a la derecha"
+                        >
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    )}
                   </div>
 
                   <div className="flex items-center gap-1.5 flex-shrink-0">
