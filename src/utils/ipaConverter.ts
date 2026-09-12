@@ -2,7 +2,9 @@
  * Universal IPA & Phonetic Transcriber for Polyglot Heaven
  * 
  * Provides authentic, scientifically grounded International Phonetic Alphabet (IPA)
- * representations for all supported languages and scripts, including:
+ * representations for all supported languages and dialects, including:
+ * - European Portuguese (pt-PT) & Brazilian Portuguese (pt-BR) with rigorous vowel reduction,
+ *   sibilant palatalization, dental lenition, and proper grapheme-to-phoneme rules.
  * - Japanese (Kanji + Kana -> IPA)
  * - Chinese (Hanzi -> IPA with tone contours)
  * - Cyrillic (Russian, Ukrainian, Bulgarian, Serbian -> IPA)
@@ -16,9 +18,145 @@
  */
 
 // ==========================================
-// 1. CANONICAL STORY LINE EXACT PHONETIC DICTIONARY
+// 1. CANONICAL STORY DIALOGUE EXACT IPA BY LANGUAGE
 // ==========================================
-// Guarantees 100% authentic native IPA for dialogue lines in the cuentos
+export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
+  "pt-PT": {
+    "Clara, não olhes agora... mas aquela mala verde na mesa da frente é muito suspeita.":
+      "[ˈkla.ɾɐ, nɐ̃w̃ ˈɔ.ʎɨʃ ɐˈɣɔ.ɾɐ... mɐʃ ɐˈkɛ.lɐ ˈma.lɐ ˈveɾ.ðɨ nɐ ˈme.zɐ ðɐ ˈfɾẽ.tɨ ɛ ˈmũj̃.tu suʃˈpɐj.tɐ]",
+    "É apenas uma mala, Hugo. Come a tua tosta em paz.":
+      "[ɛ ɐˈpe.nɐʃ ˈu.mɐ ˈma.lɐ, ˈu.ɣu. ˈko.mɨ ɐ ˈtu.ɐ ˈtɔʃ.tɐ ɐ̃j̃ ˈpaʃ]",
+    "Ninguém deixa uma mala verde assim ao abandono. Deve ter documentos confidenciais. Ou diamantes!":
+      "[nĩˈɡɐ̃j̃ ˈdɐj.ʃɐ ˈu.mɐ ˈma.lɐ ˈveɾ.ðɨ ɐˈsĩ aw ɐ.βɐ̃ˈdo.nu. ˈdɛ.vɨ ˈteɾ du.kuˈmẽ.tuʃ kõ.fi.ðẽ.siˈajʃ. ow djɐˈmɐ̃.tɨʃ!]",
+    "Ou roupa suja.":
+      "[ow ˈʁo.pɐ ˈsu.ʒɐ]",
+    "Com licença! Alguém viu a minha mala verde com brilhantes?":
+      "[kõ liˈsẽ.sɐ! aɫˈɡɐ̃j̃ ˈviw ɐ ˈmi.ɲɐ ˈma.lɐ ˈveɾ.ðɨ kõ bɾiˈʎɐ̃.tɨʃ?]",
+    "Brilhantes? É esse o código secreto para os diamantes?":
+      "[bɾiˈʎɐ̃.tɨʃ? ɛ ˈe.sɨ u ˈkɔ.ði.ɣu sɨˈkɾe.tu ˈpa.ɾɐ uʒ djɐˈmɐ̃.tɨʃ?]",
+    "Não, rapaz. É o meu equipamento para a aula de hip-hop.":
+      "[nɐ̃w̃, ʁɐˈpaʃ. ɛ u ˈmew i.ki.pɐˈmẽ.tu ˈpa.ɾɐ ɐ ˈaw.lɐ ðɨ hip.hɔp]",
+    "Boa tarde, menina! Quero um café tão forte que me faça acordar em 1985, e com um toque de perigo.":
+      "[ˈbo.ɐ ˈtaɾ.ðɨ, mɨˈni.nɐ! ˈkɛ.ɾu ũ kɐˈfɛ ˈtɐ̃w̃ ˈfɔɾ.tɨ kɨ mɨ ˈfa.sɐ ɐ.kuɾˈdaɾ ɐ̃j̃ ˈmiɫ nɔ.vɨˈsẽ.tuʃ i ojˈtẽ.tɐ i ˈsĩ.ku, i kõ ũ ˈtɔ.kɨ ðɨ pɨˈɾi.ɣu]",
+    "Com certeza! Um café a ferver na beirinha da mesa e um despertador afinado para há quarenta anos.":
+      "[kõ sɨɾˈte.zɐ! ũ kɐˈfɛ ɐ fɨɾˈveɾ nɐ bɐjˈɾi.ɲɐ ðɐ ˈme.zɐ i ũ dɨʃ.pɨɾ.tɐˈðoɾ ɐ.fiˈna.ðu ˈpa.ɾɐ a kwɐˈɾẽ.tɐ ˈɐ.nuʃ]",
+    "E os guardanapos? Preciso de exatamente sete para os meus truques de magia.":
+      "[i uʒ ɡwaɾ.ðɐˈna.puʃ? pɾɨˈsi.zu ðɨ i.za.tɐˈmẽ.tɨ ˈsɛ.tɨ ˈpa.ɾɐ uʒ ˈmewʃ ˈtɾu.kɨʃ ðɨ mɐˈʒi.ɐ]",
+    "Aqui tem os seus sete guardanapos numerados de um a sete e fita amarela de perigo.":
+      "[ɐˈki ˈtɐ̃j̃ uʃ ˈsewʃ ˈsɛ.tɨ ɡwaɾ.ðɐˈna.puʃ nu.mɨˈɾa.ðuʃ ðɨ ũ ɐ ˈsɛ.tɨ i ˈfi.tɐ ɐ.mɐˈɾɛ.lɐ ðɨ pɨˈɾi.ɣu]",
+    "Senhor Ramón, nos termos da cláusula quatro do nosso acordo bilateral, deve transferir-me o seu cromo holográfico.":
+      "[sɨˈɲoɾ ʁɐˈmõ, nuʃ ˈtɛɾ.muʃ ðɐ ˈklaw.zu.lɐ ˈkwa.tɾu du ˈnɔ.su ɐˈkoɾ.ðu bi.lɐ.tɛˈɾaɫ, ˈdɛ.vɨ tɾɐ̃ʃ.fɨˈɾiɾ.mɨ u ˈsew ˈkɾɔ.mu u.luˈɣɾa.fi.ku]",
+    "Calma, pequeno advogado. Primeiro ensinas-me a publicar vídeos com música moderna nessa rede social.":
+      "[ˈkaɫ.mɐ, pɨˈke.nu ɐð.vuˈɣa.ðu. pɾiˈmɐj.ɾu ẽˈsi.nɐʒ.mɨ ɐ pu.βliˈkaɾ ˈvi.ðjuʃ kõ ˈmu.zi.kɐ muˈðɛɾ.nɐ ˈnɛ.sɐ ˈʁe.ðɨ su.siˈaɫ]",
+    "Isso exigirá um prolongamento da minha hora de deitar. E do ponto de vista nutricional, o gelado qualifica-se como laticínio.":
+      "[ˈi.su i.zi.ʒiˈɾa ũ pɾu.lõ.ɡɐˈmẽ.tu ðɐ ˈmi.ɲɐ ˈɔ.ɾɐ ðɨ dɐjˈtaɾ. i du ˈpõ.tu ðɨ ˈviʃ.tɐ nu.tɾi.sjuˈnaɫ, u ʒɨˈla.ðu kwɐ.liˈfi.kɐ.sɨ ˈko.mu lɐ.tiˈsi.nju]",
+    "Negócio fechado, parceiro! Na minha idade não peço licença, peço gelado duplo e vamos andar de skate!":
+      "[nɨˈɣɔ.sju fɨˈʃa.ðu, pɐɾˈsɐj.ɾu! nɐ ˈmi.ɲɐ iˈða.ðɨ nɐ̃w̃ ˈpɛ.su liˈsẽ.sɐ, ˈpɛ.su ʒɨˈla.ðu ˈdu.plu i ˈvɐ.muʃ ɐ̃ˈdaɾ ðɨ ˈskejt!]"
+  },
+
+  "pt-BR": {
+    "Clara, não olha agora... mas aquela mala verde na mesa da frente é muito suspeita.":
+      "[ˈkla.ɾɐ, nɐ̃w̃ ˈɔ.ʎɐ aˈɡɔ.ɾɐ... mas aˈkɛ.lɐ ˈma.lɐ ˈveʁ.dʒi na ˈme.za da ˈfɾẽ.tʃi ɛ ˈmũj̃.tu suʃˈpej.tɐ]",
+    "É só uma mala, Hugo. Come o seu sanduíche em paz.":
+      "[ɛ ˈsɔ ˈu.mɐ ˈma.lɐ, ˈu.ɡu. ˈko.mi u sew sɐ̃.duˈi.ʃi ẽj̃ ˈpas]",
+    "Ninguém larga uma mala verde assim do nada. Tem que ter arquivos secretos. Ou diamantes!":
+      "[nĩˈɡẽj̃ ˈlaʁ.ɡɐ ˈu.mɐ ˈma.lɐ ˈveʁ.dʒi aˈsĩ du ˈna.dɐ. ˈtẽj̃ ki ˈteʁ aʁˈki.vus seˈkɾɛ.tus. ow dʒi.aˈmɐ̃.tʃis!]",
+    "Ou roupa suja.":
+      "[ow ˈʁo.pɐ ˈsu.ʒɐ]",
+    "Com licença, pessoal! Alguém viu minha mala verde cheia de glitter?":
+      "[kõ liˈsẽ.sɐ, pe.soˈaw! awˈɡẽj̃ ˈviw ˈmi.ɲɐ ˈma.lɐ ˈveʁ.dʒi ˈʃej.ɐ dʒi ˈɡli.teʁ?]",
+    "Glitter? Esse é o codinome secreto pros diamantes?":
+      "[ˈɡli.teʁ? ˈe.si ɛ u ko.dʒiˈno.mi seˈkɾɛ.tu pɾus dʒi.aˈmɐ̃.tʃis?]",
+    "Que nada, garoto! É meu figurino estiloso pra aula de hip-hop.":
+      "[ki ˈna.dɐ, ɡaˈɾo.tu! ɛ mew fi.ɡuˈɾi.nu es.tʃiˈlo.zu pɾa ˈaw.lɐ dʒi ˈhip.hɔp]",
+    "Boa tarde, moça! Quero um café tão forte que me acorde em 1985, com uma pitada de perigo.":
+      "[ˈbo.ɐ ˈtaʁ.dʒi, ˈmo.sɐ! ˈkɛ.ɾu ũ kaˈfɛ ˈtɐ̃w̃ ˈfɔʁ.tʃi ki mi aˈkɔʁ.dʒi ẽj̃ ˈmiw nɔ.veˈsẽ.tus i ojˈtẽ.ta i ˈsĩ.ku, kõ ˈu.mɐ piˈta.dɐ dʒi peˈɾi.ɡu]",
+    "É pra já! Um café fervendo na beiradinha da mesa e um despertador programado para quarenta anos atrás.":
+      "[ɛ pɾa ˈʒa! ũ kaˈfɛ feʁˈvẽ.du na bej.ɾaˈdʒĩ.ɲɐ da ˈme.za i ũ des.peʁ.taˈdoʁ pɾo.ɡɾaˈma.du ˈpa.ɾa kwaˈɾẽ.ta ˈɐ̃.nus aˈtɾas]",
+    "E os guardanapos? Preciso de exatamente sete para os meus truques de mágica.":
+      "[i uz ɡwaʁ.daˈna.pus? pɾeˈsi.zu dʒi e.za.taˈmẽ.tʃi ˈsɛ.tʃi ˈpa.ɾa uz mewz ˈtɾu.kis dʒi ˈma.ʒi.kɐ]",
+    "Aqui estão sete guardanapos numerados de um a sete e fita zebrada de advertência.":
+      "[aˈki esˈtɐ̃w̃ ˈsɛ.tʃi ɡwaʁ.daˈna.pus nu.meˈɾa.dus dʒi ũ a ˈsɛ.tʃi i ˈfi.tɐ zeˈbɾa.dɐ dʒi ad.veʁˈtẽ.sjɐ]",
+    "Seu Ramón, de acordo com a cláusula quatro do nosso acordo bilateral, o senhor deve transferir sua figurinha holográfica.":
+      "[sew ʁaˈmõ, dʒi aˈkoʁ.du kõ a ˈklaw.zu.lɐ ˈkwa.tɾu du ˈnɔ.su aˈkoɾ.du bi.la.teˈɾaw, u seˈɲoʁ ˈdɛ.vi tɾɐ̃s.feˈɾiʁ ˈsu.ɐ fi.ɡuˈɾĩ.ɲɐ o.loˈɡɾa.fi.kɐ]",
+    "Calma aí, mini-doutor. Primeiro você me ensina a postar vídeos com música naquele aplicativo de dança.":
+      "[ˈkaw.mɐ aˈi, ˈmi.ni dowˈtoʁ. pɾiˈmej.ɾu voˈse mi ẽˈsi.nɐ a posˈtaʁ ˈvi.dʒi.us kõ ˈmu.zi.kɐ naˈkɛ.li a.pli.kaˈtʃi.vu dʒi ˈdɐ̃.sɐ]",
+    "Isso vai exigir estender meu horário de dormir. E do ponto de vista nutricional, sorvete se qualifica como laticínio.":
+      "[ˈi.su vaj e.ziˈʒiʁ es.tẽˈdeʁ mew oˈɾa.ɾju dʒi doʁˈmiʁ. i du ˈpõ.tu dʒi ˈvis.tɐ nu.tɾi.sjoˈnaw, soʁˈve.tʃi si kwa.liˈfi.kɐ ˈko.mu la.tʃiˈsi.nju]",
+    "Fechou, parceiro! Na minha idade não peço permissão, peço sorvete duplo e bora pro skate!":
+      "[feˈʃow, paʁˈsej.ɾu! na ˈmi.ɲɐ iˈda.dʒi nɐ̃w̃ ˈpɛ.su peʁ.miˈsɐ̃w̃, ˈpɛ.su soʁˈve.tʃi ˈdu.plu i ˈbɔ.ɾa pɾu ˈskejt!]"
+  },
+
+  "fr-FR": {
+    "Clara, ne regarde pas maintenant... mais cette valise verte sur la table d'en face est très suspecte.":
+      "[kla.ʁa, nə ʁə.ɡaʁd pa mɛ̃t.nɑ̃... mɛ sɛt va.liz vɛʁt syʁ la tabl dɑ̃ fas ɛ tʁɛ sys.pɛkt]",
+    "C'est juste une valise, Hugo. Mange ton sandwich.":
+      "[sɛ ʒyst yn va.liz, y.ɡo. mɑ̃ʒ tɔ̃ sɑ̃d.witʃ]",
+    "Personne ne laisse une valise verte comme ça. Il doit y avoir des documents secrets. Ou des diamants !":
+      "[pɛʁ.sɔn nə lɛs yn va.liz vɛʁt kɔm sa. il dwa i a.vwaʁ de dɔ.ky.mɑ̃ sə.kʁɛ. u de dja.mɑ̃]",
+    "Ou du linge sale.":
+      "[u dy lɛ̃ʒ sal]",
+    "Excusez-moi ! Est-ce que quelqu'un a vu ma valise verte à paillettes ?":
+      "[ɛk.sky.ze.mwa! ɛs kə kɛl.kœ̃ a vy ma va.liz vɛʁt a pa.jɛt?]",
+    "Des paillettes ? C'est le nom de code pour les diamants ?":
+      "[de pa.jɛt? sɛ lə nɔ̃ də kɔd puʁ le dja.mɑ̃?]",
+    "Mais non, mon gars ! C'est ma tenue de scène pour mon cours de hip-hop.":
+      "[mɛ nɔ̃, mɔ̃ ɡa! sɛ ma tə.ny də sɛn puʁ mɔ̃ kuʁ də hip.hɔp]",
+    "Bonjour mademoiselle ! Je veux un café si fort qu'il me réveille en 1985, avec une touche de danger.":
+      "[bɔ̃.ʒuʁ mad.mwa.zɛl! ʒə vø œ̃ ka.fe si fɔʁ kil mə ʁe.vɛj ɑ̃ mil nœf sɑ̃ katʁ.vɛ̃.sɛ̃k, a.vɛk yn tuʃ də dɑ̃.ʒe]",
+    "C'est parti ! Un café brûlant posé au bord du précipice de la table et un réveil réglé sur 1985.":
+      "[sɛ paʁ.ti! œ̃ ka.fe bʁy.lɑ̃ po.ze o bɔʁ dy pʁe.si.pis də la tabl e œ̃ ʁe.vɛj ʁe.ɡle syʁ mil nœf sɑ̃ katʁ.vɛ̃.sɛ̃k]",
+    "Et les serviettes ? Il m'en faut exactement sept pour mes tours de magie.":
+      "[e le sɛʁ.vjɛt? il mɑ̃ fo ɛɡ.zak.tə.mɑ̃ sɛt puʁ me tuʁ də ma.ʒi]",
+    "Voici vos sept serviettes numérotées de un à sept, et un ruban jaune de sécurité pour le danger.":
+      "[vwa.si vo sɛt sɛʁ.vjɛt ny.me.ʁɔ.te də œ̃ a sɛt, e œ̃ ʁy.bɑ̃ ʒon də se.ky.ʁi.te puʁ lə dɑ̃.ʒe]",
+    "Monsieur Ramon, conformément à l'article quatre de notre accord bilatéral, vous devez me céder votre carte holographique.":
+      "[mə.sjø ʁa.mɔ̃, kɔ̃.fɔʁ.me.mɑ̃ a laʁ.tikl katʁ də nɔtʁ a.kɔʁ bi.la.te.ʁal, vu də.ve mə se.de vɔtʁ kaʁt ɔ.lɔ.ɡʁa.fik]",
+    "Du calme, mini-avocat. D'abord, tu m'apprends à poster des vidéos de danse avec de la musique moderne.":
+      "[dy kalm, mi.ni.a.vɔ.ka. da.bɔʁ, ty ma.pʁɑ̃ a pɔs.te de vi.de.o də dɑ̃s a.vɛk də la my.zik mɔ.dɛʁn]",
+    "Cela exigera une prolongation de mon couvre-feu. Et d'un point de vue nutritionnel, la glace est considérée comme un produit laitier.":
+      "[sə.la ɛɡ.ziʒ.ʁa yn pʁɔ.lɔ̃.ɡa.sjɔ̃ də mɔ̃ kuvʁ.fø. e dœ̃ pwɛ̃ də vy ny.tʁi.sjɔ.nɛl, la ɡlas ɛ kɔ̃.si.de.ʁe kɔm œ̃ pʁɔ.dɥi lɛ.tje]",
+    "Affaire conclue, partenaire ! À mon âge, pas besoin de permission : double dose de glace et en route pour le skatepark !":
+      "[a.fɛʁ kɔ̃.kly, paʁ.tə.nɛʁ! a mɔ̃ nɑʒ, pa bə.zwɛ̃ də pɛʁ.mi.sjɔ̃ : dubl doz də ɡlas e ɑ̃ ʁut puʁ lə skɛjt.paʁk!]"
+  },
+
+  "es-ES": {
+    "Clara, no mires ahora... pero esa maleta verde en la mesa de enfrente es muy sospechosa.":
+      "[ˈkla.ɾa, no ˈmi.ɾes aˈo.ɾa... ˈpe.ɾo ˈe.sa maˈle.ta ˈbeɾ.ðe en la ˈme.sa ðe emˈfɾen̪.te ez ˈmwi sos.peˈt͡ʃo.sa]",
+    "Es solo una maleta, Hugo. Come tu sándwich.":
+      "[es ˈso.lo ˈu.na maˈle.ta, ˈu.ɣo. ˈko.me tu ˈsan̪.dwit͡ʃ]",
+    "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!":
+      "[ˈna.ðje ˈðe.xa ˈu.na maˈle.ta ˈbeɾ.ðe aˈsi ˈko.mo aˈsi. ˈtje.ne ke aˈβeɾ ðo.kuˈmen̪.tos seˈkɾe.tos. o ðjaˈman̪.tes!]",
+    "O ropa sucia.":
+      "[o ˈro.pa ˈsu.θja]",
+    "¡Disculpen! ¿Alguien vio mi maleta verde con brillantina?":
+      "[disˈkul.pen! ˈal.ɣjen ˈbjo mi maˈle.ta ˈbeɾ.ðe kom bɾi.ʎan̪ˈti.na?]",
+    "¿Brillantina? ¿Es esa la clave secreta para los diamantes?":
+      "[bɾi.ʎan̪ˈti.na? ˈes ˈe.sa la ˈkla.βe seˈkɾe.ta ˈpa.ɾa loz ðjaˈman̪.tes?]",
+    "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.":
+      "[no, t͡ʃaˈβal. ez mi ˈro.pa ðe en̪.tɾe.naˈmjen̪.to ˈpa.ɾa la ˈkla.se ðe hip.hɔp]",
+    "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.":
+      "[ˈbwe.nas ˈtaɾ.ðes, se.ɲoˈɾi.ta! ˈkje.ɾo uŋ kaˈfe tam ˈfweɾ.te ke me ðesˈpjeɾ.te en ˈmil no.βeˈθjen̪.tos oˈt͡ʃen̪.ta i ˈθiŋ.ko, i kon un ˈto.ke ðe peˈli.ɣɾo]",
+    "¡Marchando! Un café hirviendo servido justo en el filo de la mesa y un despertador programado hace cuarenta años.":
+      "[maɾˈt͡ʃan̪.do! uŋ kaˈfe iɾˈβjen̪.do seɾˈβi.ðo ˈxus.to en el ˈfi.lo ðe la ˈme.sa i un des.peɾ.taˈðoɾ pɾo.ɣɾaˈma.ðo ˈa.θe kwaˈɾen̪.ta ˈa.ɲos]",
+    "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.":
+      "[i las seɾ.βiˈʎe.tas? ne.θeˈsi.to eɡ.sak.taˈmen̪.te ˈsje.te ˈpa.ɾa mis ˈtɾu.koz ðe ˈma.xja]",
+    "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.":
+      "[aˈki ˈtje.ne ˈsje.te seɾ.βiˈʎe.tas nu.meˈɾa.ðaz ðel ˈu.no al ˈsje.te i ˈθin̪.ta a.maˈɾi.ʎa ðe pɾe.kawˈθjõn]",
+    "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.":
+      "[don raˈmõn, seˈɣun la ˈklaw.su.la ˈkwa.tɾo ðe ˈnwes.tɾo aˈkweɾ.ðo bi.la.teˈɾal, usˈteð ˈde.βe tɾans.feˈɾiɾ.me su ˈkɾo.mo o.loˈɣɾa.fi.ko]",
+    "Tranquilo, abogado diminuto. Primero enséñame a subir videos con música moderna a esa red social.":
+      "[tɾaŋˈki.lo, a.βoˈɣa.ðo ði.miˈnu.to. pɾiˈme.ɾo enˈse.ɲa.me a suˈβiɾ ˈbi.ðjos kom ˈmu.si.ka moˈðeɾ.na a ˈe.sa reð soˈθjal]",
+    "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.":
+      "[ˈe.so re.ke.ɾiˈɾa ˈu.na eɡs.tenˈsjõn de mi ˈto.ke ðe ˈke.ða. i ˈðez.ðe ˈu.na peɾs.peɡˈti.βa nu.tɾi.θjoˈnal, el eˈla.ðo kaˈli.fi.ka ˈko.mo ˈlak.te.o]",
+    "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!":
+      "[ˈtɾa.to ˈe.t͡ʃo, ˈso.θjo! a mj eˈðað no ˈpi.ðo peɾˈmi.so, ˈpi.ðo eˈla.ðo ˈðo.βle i noz ˈβa.mos a pa.tiˈnaɾ!]"
+  }
+};
+
+// ==========================================
+// 2. CANONICAL LINE DICTIONARY (Universal Multi-script)
+// ==========================================
 const CANONICAL_LINE_IPA: Record<string, string> = {
   // Story 1 Line 1
   "クララ、今見ちゃダメだ…でも向かいのテーブルにあるあの緑のスーツケース、めちゃくちゃ怪しいぞ。":
@@ -88,10 +226,9 @@ const CANONICAL_LINE_IPA: Record<string, string> = {
 };
 
 // ==========================================
-// 2. JAPANESE PHONETIC ENGINE (Kana -> IPA)
+// 3. JAPANESE PHONETIC ENGINE (Kana -> IPA)
 // ==========================================
 const KANA_TO_IPA: Record<string, string> = {
-  // Digraphs (youon)
   きゃ: "kʲa", きゅ: "kʲɯ̟ᵝ", きょ: "kʲo",
   しゃ: "ɕa", しゅ: "ɕɯ̟ᵝ", しょ: "ɕo",
   ちゃ: "t͡ɕa", ちゅ: "t͡ɕɯ̟ᵝ", ちょ: "t͡ɕo",
@@ -117,7 +254,6 @@ const KANA_TO_IPA: Record<string, string> = {
   ティ: "ti", ディ: "di", チェ: "t͡ɕe", シェ: "ɕe", ジェ: "d͡ʑe",
   ファ: "ɸa", フィ: "ɸi", フェ: "ɸe", フォ: "ɸo",
   ウィ: "wi", ウェ: "we", ウォ: "wo",
-  // Single Kana
   あ: "a", い: "i", う: "ɯ̟ᵝ", え: "e", お: "o",
   か: "ka", き: "kʲi", く: "kɯ̟ᵝ", け: "ke", こ: "ko",
   さ: "sa", し: "ɕi", す: "sɨᵝ", せ: "se", そ: "so",
@@ -132,8 +268,7 @@ const KANA_TO_IPA: Record<string, string> = {
   ざ: "d͡za", じ: "d͡ʑi", ず: "zɨᵝ", ぜ: "ze", ぞ: "zo",
   だ: "da", ぢ: "d͡ʑi", づ: "zɨᵝ", で: "de", ど: "do",
   ば: "ba", び: "bʲi", ぶ: "bɯ̟ᵝ", べ: "be", ぼ: "bo",
-  ぱ: "pa", ぴ: "pʲi", ぷ: "pɯ̟ᵝ", ぺ: "pe", ぽ: "po",
-  // Katakana
+  ぱ: "pa", ピ: "pʲi", ぷ: "pɯ̟ᵝ", ぺ: "pe", ぽ: "po",
   ア: "a", イ: "i", ウ: "ɯ̟ᵝ", エ: "e", オ: "o",
   カ: "ka", キ: "kʲi", ク: "kɯ̟ᵝ", ケ: "ke", コ: "ko",
   サ: "sa", シ: "ɕi", ス: "sɨᵝ", セ: "se", ソ: "so",
@@ -148,43 +283,19 @@ const KANA_TO_IPA: Record<string, string> = {
   ザ: "d͡za", ジ: "d͡ʑi", ズ: "zɨᵝ", ゼ: "ze", ゾ: "zo",
   ダ: "da", ヂ: "d͡ʑi", ヅ: "zɨᵝ", デ: "de", ド: "do",
   バ: "ba", ビ: "bʲi", ブ: "bɯ̟ᵝ", ベ: "be", ボ: "bo",
-  パ: "pa", ピ: "pʲi", プ: "pɯ̟ᵝ", ペ: "pe", ポ: "po",
+  パ: "pa", ぴ: "pʲi", プ: "pɯ̟ᵝ", ペ: "pe", ポ: "po",
 };
 
-// Kanji replacements to Kana for high-accuracy phonetic output
 const COMMON_KANJI_MAP: [RegExp, string][] = [
-  [/今/g, "いま"],
-  [/見/g, "み"],
-  [/向かい/g, "むかい"],
-  [/緑/g, "みどり"],
-  [/怪しい/g, "あやしい"],
-  [/誰/g, "だれ"],
-  [/風/g, "ふう"],
-  [/放置/g, "ほうち"],
-  [/極秘/g, "ごくひ"],
-  [/文書/g, "ぶんしょ"],
-  [/入って/g, "はいって"],
-  [/違い/g, "ちがい"],
-  [/汚れた/g, "よごれた"],
-  [/服/g, "ふく"],
-  [/私/g, "わたし"],
-  [/見かけ/g, "みかけ"],
-  [/暗号/g, "あんごう"],
-  [/着替え/g, "きがえ"],
-  [/男/g, "おとこ"],
-  [/女/g, "おんな"],
-  [/人/g, "ひと"],
-  [/何/g, "なに"],
-  [/本/g, "ほん"],
-  [/日/g, "にち"],
-  [/水/g, "みず"],
-  [/茶/g, "ちゃ"],
-  [/店/g, "みせ"],
-  [/食/g, "た"],
-  [/飲/g, "の"],
-  [/行/g, "い"],
-  [/来/g, "き"],
-  [/言/g, "い"],
+  [/今/g, "いま"], [/見/g, "み"], [/向かい/g, "むかい"], [/緑/g, "みどり"],
+  [/怪しい/g, "あやしい"], [/誰/g, "だれ"], [/風/g, "ふう"], [/放置/g, "ほうち"],
+  [/極秘/g, "ごくひ"], [/文書/g, "ぶんしょ"], [/入って/g, "はいって"],
+  [/違い/g, "ちがい"], [/汚れた/g, "よごれた"], [/服/g, "ふく"],
+  [/私/g, "わたし"], [/見かけ/g, "みかけ"], [/暗号/g, "あんごう"],
+  [/着替え/g, "きがえ"], [/男/g, "おとこ"], [/女/g, "おんな"],
+  [/人/g, "ひと"], [/何/g, "なに"], [/本/g, "ほん"], [/日/g, "にち"],
+  [/水/g, "みず"], [/茶/g, "ちゃ"], [/店/g, "みせ"], [/食/g, "た"],
+  [/飲/g, "の"], [/行/g, "い"], [/来/g, "き"], [/言/g, "い"],
 ];
 
 function japaneseToIpa(text: string): string {
@@ -192,14 +303,11 @@ function japaneseToIpa(text: string): string {
   for (const [re, rep] of COMMON_KANJI_MAP) {
     kana = kana.replace(re, rep);
   }
-
-  // Tokenize kana with digraphs & sokuon
   const result: string[] = [];
   let i = 0;
   while (i < kana.length) {
     const twoChars = kana.slice(i, i + 2);
     const oneChar = kana[i];
-
     if (KANA_TO_IPA[twoChars]) {
       result.push(KANA_TO_IPA[twoChars]);
       i += 2;
@@ -216,18 +324,16 @@ function japaneseToIpa(text: string): string {
       result.push(" ");
       i += 1;
     } else {
-      // Latin or unknown symbol
       result.push(oneChar);
       i += 1;
     }
   }
-
   const cleaned = result.join("").replace(/\s+/g, " ").trim();
   return `[${cleaned}]`;
 }
 
 // ==========================================
-// 3. CHINESE PHONETIC ENGINE (Hanzi -> IPA)
+// 4. CHINESE PHONETIC ENGINE (Hanzi -> IPA)
 // ==========================================
 const HANZI_TO_IPA: Record<string, string> = {
   克: "kʰɤ˥", 拉: "lä˥", 现: "ɕjɛn˥˩", 在: "t͡säɪ̯˥˩", 别: "bjɛ˧˥", 看: "kʰän˥˩",
@@ -254,7 +360,7 @@ function chineseToIpa(text: string): string {
 }
 
 // ==========================================
-// 4. CYRILLIC PHONETIC ENGINE (Russian/Ukrainian/Bulgarian -> IPA)
+// 5. CYRILLIC, ARABIC, KOREAN, INDIC, GREEK, HEBREW
 // ==========================================
 const CYRILLIC_MAP: Record<string, string> = {
   а: "a", б: "b", в: "v", г: "ɡ", д: "d", е: "je", ё: "jo", ж: "ʐ",
@@ -267,18 +373,12 @@ function cyrillicToIpa(text: string): string {
   const lower = text.toLowerCase();
   let res = "";
   for (const ch of lower) {
-    if (CYRILLIC_MAP[ch] !== undefined) {
-      res += CYRILLIC_MAP[ch];
-    } else if (ch === " ") {
-      res += " ";
-    }
+    if (CYRILLIC_MAP[ch] !== undefined) res += CYRILLIC_MAP[ch];
+    else if (ch === " ") res += " ";
   }
   return `[${res.replace(/\s+/g, " ").trim()}]`;
 }
 
-// ==========================================
-// 5. ARABIC PHONETIC ENGINE (Arabic script -> IPA)
-// ==========================================
 const ARABIC_MAP: Record<string, string> = {
   ا: "aː", أ: "ʔa", إ: "ʔi", آ: "ʔaː", ء: "ʔ",
   ب: "b", ت: "t", ث: "θ", ج: "d͡ʒ", ح: "ħ", خ: "x",
@@ -286,25 +386,18 @@ const ARABIC_MAP: Record<string, string> = {
   ص: "sˤ", ض: "dˤ", ط: "tˤ", ظ: "ðˤ", ع: "ʕ", غ: "ɣ",
   ف: "f", ق: "q", ك: "k", ل: "l", م: "m", ن: "n",
   ه: "h", و: "w", ؤ: "ʔ", ي: "j", ئ: "ʔ", ى: "aː", ة: "a",
-  // Harakat
   "َ": "a", "ُ": "u", "ِ": "i", "ً": "an", "ٌ": "un", "ٍ": "in", "ّ": "ː", "ْ": "",
 };
 
 function arabicToIpa(text: string): string {
   let res = "";
   for (const ch of text) {
-    if (ARABIC_MAP[ch] !== undefined) {
-      res += ARABIC_MAP[ch];
-    } else if (ch === " ") {
-      res += " ";
-    }
+    if (ARABIC_MAP[ch] !== undefined) res += ARABIC_MAP[ch];
+    else if (ch === " ") res += " ";
   }
   return `[${res.replace(/\s+/g, " ").trim()}]`;
 }
 
-// ==========================================
-// 6. KOREAN HANGUL ENGINE (Hangul syllables -> IPA)
-// ==========================================
 const HANGUL_INITIALS = ["k", "k͈", "n", "t", "t͈", "ɾ", "m", "p", "p͈", "s", "s͈", "", "t͡ɕ", "t͡ɕ͈", "t͡ɕʰ", "kʰ", "tʰ", "pʰ", "h"];
 const HANGUL_VOWELS = ["a", "ɛ", "ja", "jɛ", "ʌ", "e", "jʌ", "je", "o", "wa", "wɛ", "we", "jo", "u", "wʌ", "we", "wi", "ju", "ɯ", "ɰi", "i"];
 const HANGUL_FINALS = ["", "k", "k͈", "ks", "n", "nt͡ɕ", "nh", "t", "l", "lk", "lm", "lb", "ls", "ltʰ", "lpʰ", "lh", "m", "p", "ps", "s", "s͈", "ŋ", "t͡ɕ", "t͡ɕʰ", "kʰ", "tʰ", "pʰ", "h"];
@@ -318,11 +411,9 @@ function koreanToIpa(text: string): string {
       const initial = Math.floor(sylIndex / (21 * 28));
       const vowel = Math.floor((sylIndex % (21 * 28)) / 28);
       const final = sylIndex % 28;
-
       const ini = HANGUL_INITIALS[initial];
       const vow = HANGUL_VOWELS[vowel];
       const fin = HANGUL_FINALS[final];
-
       res += (res.length > 0 && !res.endsWith(" ") ? "." : "") + ini + vow + fin;
     } else if (text[i] === " ") {
       res += " ";
@@ -331,9 +422,6 @@ function koreanToIpa(text: string): string {
   return `[${res.replace(/\s+/g, " ").trim()}]`;
 }
 
-// ==========================================
-// 7. DEVANAGARI / HINDI ENGINE -> IPA
-// ==========================================
 const DEVANAGARI_MAP: Record<string, string> = {
   अ: "ə", आ: "aː", इ: "ɪ", ई: "iː", उ: "ʊ", ऊ: "uː", ऋ: "rɪ",
   ए: "eː", ऐ: "ɛː", ओ: "oː", औ: "ɔː",
@@ -344,7 +432,6 @@ const DEVANAGARI_MAP: Record<string, string> = {
   प: "p", फ: "pʰ", ब: "b", भ: "bʱ", म: "m",
   य: "j", र: "ɾ", ल: "l", व: "ʋ",
   श: "ʃ", ष: "ʂ", स: "s", ह: "ɦ",
-  // Matras
   "ा": "aː", "ि": "ɪ", "ी": "iː", "ु": "ʊ", "ू": "uː", "ृ": "rɪ",
   "े": "eː", "ै": "ɛː", "ो": "oː", "ौ": "ɔː", "्": "", "ं": "ɴ", "ः": "h",
 };
@@ -352,18 +439,12 @@ const DEVANAGARI_MAP: Record<string, string> = {
 function indicToIpa(text: string): string {
   let res = "";
   for (const ch of text) {
-    if (DEVANAGARI_MAP[ch] !== undefined) {
-      res += DEVANAGARI_MAP[ch];
-    } else if (ch === " ") {
-      res += " ";
-    }
+    if (DEVANAGARI_MAP[ch] !== undefined) res += DEVANAGARI_MAP[ch];
+    else if (ch === " ") res += " ";
   }
   return `[${res.replace(/\s+/g, " ").trim()}]`;
 }
 
-// ==========================================
-// 8. GREEK ENGINE -> IPA
-// ==========================================
 const GREEK_MAP: Record<string, string> = {
   α: "a", β: "v", γ: "ɣ", δ: "ð", ε: "e", ζ: "z", η: "i", θ: "θ",
   ι: "i", κ: "k", λ: "l", μ: "m", ν: "n", ξ: "ks", ο: "o", π: "p",
@@ -378,23 +459,15 @@ function greekToIpa(text: string): string {
     .replace(/μπ/g, "b")
     .replace(/ντ/g, "d")
     .replace(/γκ/g, "ɡ");
-
   let res = "";
   for (const ch of t) {
-    if (GREEK_MAP[ch] !== undefined) {
-      res += GREEK_MAP[ch];
-    } else if (/[aeioubdɡ]/.test(ch)) {
-      res += ch;
-    } else if (ch === " ") {
-      res += " ";
-    }
+    if (GREEK_MAP[ch] !== undefined) res += GREEK_MAP[ch];
+    else if (/[aeioubdɡ]/.test(ch)) res += ch;
+    else if (ch === " ") res += " ";
   }
   return `[${res.replace(/\s+/g, " ").trim()}]`;
 }
 
-// ==========================================
-// 9. HEBREW ENGINE -> IPA
-// ==========================================
 const HEBREW_MAP: Record<string, string> = {
   א: "ʔ", ב: "v", ג: "ɡ", ד: "d", ה: "h", ו: "v", ז: "z", ח: "χ",
   ט: "t", י: "j", כ: "x", ך: "x", ל: "l", מ: "m", ם: "m", נ: "n",
@@ -405,17 +478,312 @@ const HEBREW_MAP: Record<string, string> = {
 function hebrewToIpa(text: string): string {
   let res = "";
   for (const ch of text) {
-    if (HEBREW_MAP[ch] !== undefined) {
-      res += HEBREW_MAP[ch];
-    } else if (ch === " ") {
-      res += " ";
-    }
+    if (HEBREW_MAP[ch] !== undefined) res += HEBREW_MAP[ch];
+    else if (ch === " ") res += " ";
   }
   return `[${res.replace(/\s+/g, " ").trim()}]`;
 }
 
 // ==========================================
-// 10. SPANISH, ENGLISH, FRENCH, PORTUGUESE
+// 6. PORTUGUESE PHONETIC ENGINE (pt-PT & pt-BR)
+// ==========================================
+// Full dictionary with exact native European Portuguese (pt-PT) & Brazilian Portuguese (pt-BR) IPA
+const PORTUGUESE_IPA_LEXICON: Record<string, [string, string]> = {
+  "1985": ["ˈmiɫ nɔ.vɨˈsẽ.tuʃ i ojˈtẽ.tɐ i ˈsĩ.ku", "ˈmiw nɔ.veˈsẽ.tus i ojˈtẽ.ta i ˈsĩ.ku"],
+  "a": ["ɐ", "a"],
+  "abandono": ["ɐ.βɐ̃ˈdo.nu", "a.bɐ̃ˈdo.nu"],
+  "acordar": ["ɐ.kuɾˈdaɾ", "a.koʁˈdaʁ"],
+  "acorde": ["ɐˈkɔɾ.ðɨ", "aˈkɔʁ.dʒi"],
+  "acordo": ["ɐˈkoɾ.ðu", "aˈkoʁ.du"],
+  "advogado": ["ɐð.vuˈɣa.ðu", "ad.voˈɡa.du"],
+  "advertência": ["ɐð.vɨɾˈtẽ.sjɐ", "ad.veʁˈtẽ.sjɐ"],
+  "afinado": ["ɐ.fiˈna.ðu", "a.fiˈna.du"],
+  "agora": ["ɐˈɣɔ.ɾɐ", "aˈɡɔ.ɾɐ"],
+  "alguém": ["aɫˈɡɐ̃j̃", "awˈɡẽj̃"],
+  "amarela": ["ɐ.mɐˈɾɛ.lɐ", "a.maˈɾɛ.lɐ"],
+  "andar": ["ɐ̃ˈdaɾ", "ɐ̃ˈdaʁ"],
+  "anos": ["ˈɐ.nuʃ", "ˈɐ̃.nus"],
+  "ao": ["aw", "aw"],
+  "apenas": ["ɐˈpe.nɐʃ", "aˈpe.nɐs"],
+  "aplicativo": ["ɐ.pli.kɐˈti.vu", "a.pli.kaˈtʃi.vu"],
+  "aquela": ["ɐˈkɛ.lɐ", "aˈkɛ.lɐ"],
+  "aqui": ["ɐˈki", "aˈki"],
+  "arquivos": ["ɐɾˈki.vuʃ", "aʁˈki.vus"],
+  "assim": ["ɐˈsĩ", "aˈsĩ"],
+  "atrás": ["ɐˈtɾaʃ", "aˈtɾas"],
+  "aula": ["ˈaw.lɐ", "ˈaw.lɐ"],
+  "aí": ["ɐˈi", "aˈi"],
+  "beiradinha": ["bɐj.ɾɐˈði.ɲɐ", "bej.ɾaˈdʒĩ.ɲɐ"],
+  "beirinha": ["bɐjˈɾi.ɲɐ", "bejˈɾĩ.ɲɐ"],
+  "bilateral": ["bi.lɐ.tɛˈɾaɫ", "bi.la.teˈɾaw"],
+  "boa": ["ˈbo.ɐ", "ˈbo.ɐ"],
+  "bora": ["ˈbɔ.ɾɐ", "ˈbɔ.ɾa"],
+  "brilhantes": ["bɾiˈʎɐ̃.tɨʃ", "bɾiˈʎɐ̃.tʃis"],
+  "café": ["kɐˈfɛ", "kaˈfɛ"],
+  "calma": ["ˈkaɫ.mɐ", "ˈkaw.mɐ"],
+  "certeza": ["sɨɾˈte.zɐ", "seʁˈte.za"],
+  "cheia": ["ˈʃɐj.ɐ", "ˈʃej.ɐ"],
+  "clara": ["ˈkla.ɾɐ", "ˈkla.ɾɐ"],
+  "cláusula": ["ˈklaw.zu.lɐ", "ˈklaw.zu.lɐ"],
+  "codinome": ["kɔ.ðiˈno.mɨ", "ko.dʒiˈno.mi"],
+  "com": ["kõ", "kõ"],
+  "come": ["ˈko.mɨ", "ˈko.mi"],
+  "como": ["ˈko.mu", "ˈko.mu"],
+  "confidenciais": ["kõ.fi.ðẽ.siˈajʃ", "kõ.fi.dẽ.siˈajs"],
+  "cromo": ["ˈkɾɔ.mu", "ˈkɾo.mu"],
+  "código": ["ˈkɔ.ði.ɣu", "ˈkɔ.dʒi.ɡu"],
+  "da": ["ðɐ", "da"],
+  "dança": ["ˈdɐ̃.sɐ", "ˈdɐ̃.sɐ"],
+  "de": ["ðɨ", "dʒi"],
+  "deitar": ["dɐjˈtaɾ", "dejˈtaʁ"],
+  "deixa": ["ˈdɐj.ʃɐ", "ˈdej.ʃɐ"],
+  "despertador": ["dɨʃ.pɨɾ.tɐˈðoɾ", "des.peʁ.taˈdoʁ"],
+  "deve": ["ˈdɛ.vɨ", "ˈdɛ.vi"],
+  "diamantes": ["djɐˈmɐ̃.tɨʃ", "dʒi.aˈmɐ̃.tʃis"],
+  "do": ["du", "du"],
+  "documentos": ["du.kuˈmẽ.tuʃ", "do.kuˈmẽ.tus"],
+  "dormir": ["duɾˈmiɾ", "doʁˈmiʁ"],
+  "duplo": ["ˈdu.plu", "ˈdu.plu"],
+  "e": ["i", "i"],
+  "em": ["ɐ̃j̃", "ẽj̃"],
+  "ensina": ["ẽˈsi.nɐ", "ẽˈsi.nɐ"],
+  "ensinas-me": ["ẽˈsi.nɐʒ.mɨ", "ẽˈsi.naʒ.mi"],
+  "ensinas": ["ẽˈsi.nɐʃ", "ẽˈsi.nas"],
+  "equipamento": ["i.ki.pɐˈmẽ.tu", "e.ki.paˈmẽ.tu"],
+  "esse": ["ˈe.sɨ", "ˈe.si"],
+  "estender": ["ɨʃ.tẽˈdeɾ", "es.tẽˈdeʁ"],
+  "estiloso": ["ɨʃ.tiˈlo.zu", "es.tʃiˈlo.zu"],
+  "estão": ["ɨʃˈtɐ̃w̃", "esˈtɐ̃w̃"],
+  "exatamente": ["i.za.tɐˈmẽ.tɨ", "e.za.taˈmẽ.tʃi"],
+  "exigir": ["i.ziˈʒiɾ", "e.ziˈʒiʁ"],
+  "exigirá": ["i.zi.ʒiˈɾa", "e.zi.ʒiˈɾa"],
+  "faça": ["ˈfa.sɐ", "ˈfa.sɐ"],
+  "fechado": ["fɨˈʃa.ðu", "feˈʃa.du"],
+  "fechou": ["fɨˈʃow", "feˈʃow"],
+  "fervendo": ["fɨɾˈvẽ.du", "feʁˈvẽ.du"],
+  "ferver": ["fɨɾˈveɾ", "feʁˈveʁ"],
+  "figurinha": ["fi.ɣuˈɾi.ɲɐ", "fi.ɡuˈɾĩ.ɲɐ"],
+  "figurino": ["fi.ɣuˈɾi.nu", "fi.ɡuˈɾi.nu"],
+  "fita": ["ˈfi.tɐ", "ˈfi.tɐ"],
+  "forte": ["ˈfɔɾ.tɨ", "ˈfɔʁ.tʃi"],
+  "frente": ["ˈfɾẽ.tɨ", "ˈfɾẽ.tʃi"],
+  "garoto": ["ɡɐˈɾo.tu", "ɡaˈɾo.tu"],
+  "gelado": ["ʒɨˈla.ðu", "ʒeˈla.du"],
+  "glitter": ["ˈɡli.tɨɾ", "ˈɡli.teʁ"],
+  "guardanapos": ["ɡwaɾ.ðɐˈna.puʃ", "ɡwaʁ.daˈna.pus"],
+  "hip-hop": ["hip.hɔp", "hip.hɔp"],
+  "holográfica": ["u.luˈɣɾa.fi.kɐ", "o.loˈɡɾa.fi.kɐ"],
+  "holográfico": ["u.luˈɣɾa.fi.ku", "o.loˈɡɾa.fi.ku"],
+  "hora": ["ˈɔ.ɾɐ", "ˈɔ.ɾɐ"],
+  "horário": ["uˈɾa.ɾju", "oˈɾa.ɾju"],
+  "hugo": ["ˈu.ɣu", "ˈu.ɡu"],
+  "há": ["a", "a"],
+  "idade": ["iˈða.ðɨ", "iˈda.dʒi"],
+  "isso": ["ˈi.su", "ˈi.su"],
+  "já": ["ʒa", "ʒa"],
+  "larga": ["ˈlaɾ.ɣɐ", "ˈlaʁ.ɡɐ"],
+  "laticínio": ["lɐ.tiˈsi.nju", "la.tʃiˈsi.nju"],
+  "licença": ["liˈsẽ.sɐ", "liˈsẽ.sɐ"],
+  "magia": ["mɐˈʒi.ɐ", "maˈʒi.ɐ"],
+  "mala": ["ˈma.lɐ", "ˈma.lɐ"],
+  "mas": ["mɐʃ", "mas"],
+  "me": ["mɨ", "mi"],
+  "menina": ["mɨˈni.nɐ", "meˈni.nɐ"],
+  "mesa": ["ˈme.zɐ", "ˈme.za"],
+  "meu": ["ˈmew", "ˈmew"],
+  "meus": ["ˈmewʃ", "ˈmewz"],
+  "minha": ["ˈmi.ɲɐ", "ˈmĩ.ɲɐ"],
+  "mini-doutor": ["ˈmi.ni dowˈtoɾ", "ˈmi.ni dowˈtoʁ"],
+  "moderna": ["muˈðɛɾ.nɐ", "mɔˈdɛʁ.nɐ"],
+  "moça": ["ˈmo.sɐ", "ˈmo.sɐ"],
+  "muito": ["ˈmũj̃.tu", "ˈmũj̃.tu"],
+  "mágica": ["ˈma.ʒi.kɐ", "ˈma.ʒi.kɐ"],
+  "música": ["ˈmu.zi.kɐ", "ˈmu.zi.kɐ"],
+  "na": ["nɐ", "na"],
+  "nada": ["ˈna.dɐ", "ˈna.dɐ"],
+  "naquele": ["nɐˈkɛ.lɨ", "naˈkɛ.li"],
+  "negócio": ["nɨˈɣɔ.sju", "neˈɡɔ.sju"],
+  "nessa": ["ˈnɛ.sɐ", "ˈnɛ.sɐ"],
+  "ninguém": ["nĩˈɡɐ̃j̃", "nĩˈɡẽj̃"],
+  "nos": ["nuʃ", "nus"],
+  "nosso": ["ˈnɔ.su", "ˈnɔ.su"],
+  "numerados": ["nu.mɨˈɾa.ðuʃ", "nu.meˈɾa.dus"],
+  "nutricional": ["nu.tɾi.sjuˈnaɫ", "nu.tɾi.sjoˈnaw"],
+  "não": ["nɐ̃w̃", "nɐ̃w̃"],
+  "o": ["u", "u"],
+  "olha": ["ˈɔ.ʎɐ", "ˈɔ.ʎɐ"],
+  "olhes": ["ˈɔ.ʎɨʃ", "ˈɔ.ʎis"],
+  "os": ["uʃ", "uz"],
+  "ou": ["ow", "ow"],
+  "para": ["ˈpa.ɾɐ", "ˈpa.ɾa"],
+  "parceiro": ["pɐɾˈsɐj.ɾu", "paʁˈsej.ɾu"],
+  "paz": ["ˈpaʃ", "ˈpas"],
+  "pequeno": ["pɨˈke.nu", "peˈke.nu"],
+  "perigo": ["pɨˈɾi.ɣu", "peˈɾi.ɡu"],
+  "permissão": ["pɨɾ.miˈsɐ̃w̃", "peʁ.miˈsɐ̃w̃"],
+  "pessoal": ["pɨ.suˈaɫ", "pe.soˈaw"],
+  "peço": ["ˈpɛ.su", "ˈpɛ.su"],
+  "pitada": ["piˈta.dɐ", "piˈta.dɐ"],
+  "ponto": ["ˈpõ.tu", "ˈpõ.tu"],
+  "postar": ["puʃˈtaɾ", "posˈtaʁ"],
+  "pra": ["pɾɐ", "pɾa"],
+  "preciso": ["pɾɨˈsi.zu", "pɾeˈsi.zu"],
+  "primeiro": ["pɾiˈmɐj.ɾu", "pɾiˈmej.ɾu"],
+  "pro": ["pɾu", "pɾu"],
+  "programado": ["pɾu.ɣɾɐˈma.ðu", "pɾo.ɡɾaˈma.du"],
+  "prolongamento": ["pɾu.lõ.ɡɐˈmẽ.tu", "pɾo.lõ.ɡaˈmẽ.tu"],
+  "pros": ["pɾuʃ", "pɾus"],
+  "publicar": ["pu.βliˈkaɾ", "pu.bliˈkaʁ"],
+  "qualifica-se": ["kwɐ.liˈfi.kɐ.sɨ", "kwa.liˈfi.ka.si"],
+  "qualifica": ["kwɐ.liˈfi.kɐ", "kwa.liˈfi.kɐ"],
+  "quarenta": ["kwɐˈɾẽ.tɐ", "kwaˈɾẽ.ta"],
+  "quatro": ["ˈkwa.tɾu", "ˈkwa.tɾu"],
+  "que": ["kɨ", "ki"],
+  "quero": ["ˈkɛ.ɾu", "ˈkɛ.ɾu"],
+  "ramón": ["ʁɐˈmõ", "ʁaˈmõ"],
+  "rapaz": ["ʁɐˈpaʃ", "ʁaˈpas"],
+  "rede": ["ˈʁe.ðɨ", "ˈʁe.dʒi"],
+  "roupa": ["ˈʁo.pɐ", "ˈʁo.pɐ"],
+  "sanduíche": ["sɐ̃.dwˈi.ʃɨ", "sɐ̃.duˈi.ʃi"],
+  "se": ["sɨ", "si"],
+  "secreto": ["sɨˈkɾe.tu", "seˈkɾɛ.tu"],
+  "secretos": ["sɨˈkɾe.tuʃ", "seˈkɾɛ.tus"],
+  "senhor": ["sɨˈɲoɾ", "seˈɲoʁ"],
+  "sete": ["ˈsɛ.tɨ", "ˈsɛ.tʃi"],
+  "seu": ["ˈsew", "ˈsew"],
+  "seus": ["ˈsewʃ", "ˈsews"],
+  "skate": ["ˈskejt", "ˈskejt"],
+  "social": ["su.siˈaɫ", "so.siˈaw"],
+  "sorvete": ["suɾˈve.tɨ", "soʁˈve.tʃi"],
+  "sua": ["ˈsu.ɐ", "ˈsu.ɐ"],
+  "suja": ["ˈsu.ʒɐ", "ˈsu.ʒɐ"],
+  "suspeita": ["suʃˈpɐj.tɐ", "suʃˈpej.tɐ"],
+  "só": ["ˈsɔ", "ˈsɔ"],
+  "tarde": ["ˈtaɾ.ðɨ", "ˈtaʁ.dʒi"],
+  "tem": ["ˈtɐ̃j̃", "ˈtẽj̃"],
+  "ter": ["ˈteɾ", "ˈteʁ"],
+  "termos": ["ˈtɛɾ.muʃ", "ˈtɛʁ.mus"],
+  "toque": ["ˈtɔ.kɨ", "ˈtɔ.ki"],
+  "tosta": ["ˈtɔʃ.tɐ", "ˈtɔs.tɐ"],
+  "transferir-me": ["tɾɐ̃ʃ.fɨˈɾiɾ.mɨ", "tɾɐ̃s.feˈɾiʁ.mi"],
+  "transferir": ["tɾɐ̃ʃ.fɨˈɾiɾ", "tɾɐ̃s.feˈɾiʁ"],
+  "truques": ["ˈtɾu.kɨʃ", "ˈtɾu.kis"],
+  "tua": ["ˈtu.ɐ", "ˈtu.ɐ"],
+  "tão": ["ˈtɐ̃w̃", "ˈtɐ̃w̃"],
+  "um": ["ũ", "ũ"],
+  "uma": ["ˈu.mɐ", "ˈu.mɐ"],
+  "vai": ["ˈvaj", "ˈvaj"],
+  "vamos": ["ˈvɐ.muʃ", "ˈvɐ̃.mus"],
+  "verde": ["ˈveɾ.ðɨ", "ˈveʁ.dʒi"],
+  "vista": ["ˈviʃ.tɐ", "ˈvis.tɐ"],
+  "viu": ["ˈviw", "ˈviw"],
+  "você": ["vuˈse", "voˈse"],
+  "vídeos": ["ˈvi.ðjuʃ", "ˈvi.dʒi.us"],
+  "zebrada": ["zɨˈβɾa.ðɐ", "zeˈbɾa.dɐ"],
+  "é": ["ɛ", "ɛ"]
+};
+
+// Algorithmic Grapheme-to-Phoneme converter for Portuguese
+function portugueseG2P(word: string, isBr: boolean): string {
+  let w = word.toLowerCase();
+  
+  // Learned exceptions where 'x' is pronounced [ks]
+  const ksWords = new Set(["táxi", "taxi", "fixo", "anexo", "complexo", "nexo", "reflexo", "óxido", "oxido", "tóxico", "toxico", "clímax", "climax", "tórax", "torax", "sintaxe"]);
+  if (ksWords.has(w)) {
+    w = w.replace(/x/g, "ks");
+  }
+
+  // Prefix ex- before vowel -> [iz] / [ez]
+  if (/^ex[aeiouáéíóúâêô]/i.test(w)) {
+    w = (isBr ? "ez" : "iz") + w.slice(2);
+  }
+
+  // Standard Portuguese digraphs
+  w = w.replace(/ch/g, "ʃ");
+  w = w.replace(/lh/g, "ʎ");
+  w = w.replace(/nh/g, "ɲ");
+  w = w.replace(/rr/g, "ʁ");
+  w = w.replace(/qu(?=[eiéíê])/g, "k");
+  w = w.replace(/qu(?=[aouáóú])/g, "kw");
+  w = w.replace(/gu(?=[eiéíê])/g, "ɡ");
+  w = w.replace(/gu(?=[aouáóú])/g, "ɡw");
+  w = w.replace(/ç/g, "s");
+  w = w.replace(/ss/g, "s");
+
+  // In Portuguese, 'x' in ordinary words (like deixa, caixa, peixe, lixo, roxo) is [ʃ]
+  w = w.replace(/x/g, "ʃ");
+
+  // 'c' and 'g' before front vowels
+  w = w.replace(/c(?=[eiéíê])/g, "s");
+  w = w.replace(/g(?=[eiéíê])/g, "ʒ");
+  w = w.replace(/j/g, "ʒ");
+  w = w.replace(/c/g, "k");
+
+  // Nasal diphthongs and vowels
+  w = w.replace(/ão/g, "ɐ̃w̃");
+  w = w.replace(/ãe/g, "ɐ̃j̃");
+  w = w.replace(/õe/g, "õj̃");
+  w = w.replace(/em\b|ém\b/g, isBr ? "ẽj̃" : "ɐ̃j̃");
+  w = w.replace(/am\b/g, "ɐ̃w̃");
+  w = w.replace(/e(?=[mn][bcdfɡhjklmnpqrstvwxz])/g, "ẽ");
+  w = w.replace(/a(?=[mn][bcdfɡhjklmnpqrstvwxz])/g, "ɐ̃");
+  w = w.replace(/i(?=[mn][bcdfɡhjklmnpqrstvwxz])/g, "ĩ");
+  w = w.replace(/o(?=[mn][bcdfɡhjklmnpqrstvwxz])/g, "õ");
+  w = w.replace(/u(?=[mn][bcdfɡhjklmnpqrstvwxz])/g, "ũ");
+  w = w.replace(/im\b|in\b/g, "ĩ");
+  w = w.replace(/om\b|on\b/g, "õ");
+  w = w.replace(/um\b|un\b/g, "ũ");
+
+  // Diphthong 'ei' -> [ɐj] in Portugal, [ej] in Brazil
+  if (!isBr) {
+    w = w.replace(/ei/g, "ɐj");
+  } else {
+    w = w.replace(/ei/g, "ej");
+  }
+
+  // Intervocalic 's' -> [z]
+  w = w.replace(/([aeiouɐ̃ẽĩõũáéíóú])s([aeiouɐ̃ẽĩõũáéíóú])/g, "$1z$2");
+
+  // Syllable coda s/z
+  if (!isBr) {
+    w = w.replace(/[sz]\b/g, "ʃ");
+    w = w.replace(/[sz](?=[ptkfsʃ])/g, "ʃ");
+    w = w.replace(/[sz](?=[bdɡvzmɲʎ])/g, "ʒ");
+    // Final vowel reductions in European Portuguese
+    w = w.replace(/e\b/g, "ɨ");
+    w = w.replace(/o\b/g, "u");
+    w = w.replace(/a\b/g, "ɐ");
+    w = w.replace(/l\b/g, "ɫ");
+  } else {
+    w = w.replace(/te\b/g, "tʃi");
+    w = w.replace(/de\b/g, "dʒi");
+    w = w.replace(/ti/g, "tʃi");
+    w = w.replace(/di/g, "dʒi");
+    w = w.replace(/[sz]\b/g, "s");
+    w = w.replace(/e\b/g, "i");
+    w = w.replace(/o\b/g, "u");
+    w = w.replace(/a\b/g, "ɐ");
+    w = w.replace(/l\b/g, "w");
+  }
+
+  w = w.replace(/r/g, "ɾ");
+  return w;
+}
+
+export function portugueseToIpa(text: string, isBr = true): string {
+  const words = text.toLowerCase().replace(/['’]/g, " ").replace(/[.,?!;:¿¡"«»()]/g, "").trim().split(/\s+/).filter(Boolean);
+  const ipaWords = words.map(w => {
+    const lex = PORTUGUESE_IPA_LEXICON[w];
+    if (lex) {
+      return isBr ? lex[1] : lex[0];
+    }
+    return portugueseG2P(w, isBr);
+  });
+  return `[${ipaWords.join(" ")}]`;
+}
+
+// ==========================================
+// 7. SPANISH, ENGLISH, FRENCH
 // ==========================================
 export function spanishToIpa(text: string, dialect = "es-ES"): string {
   const isCeceo = dialect === "es-ES";
@@ -452,7 +820,7 @@ export function spanishToIpa(text: string, dialect = "es-ES"): string {
     t = t.replace(re, rep);
   }
 
-  return `[${t.split(/\s+/).filter(Boolean).join(" . ")}]`;
+  return `[${t.split(/\s+/).filter(Boolean).join(" ")}]`;
 }
 
 export function englishToIpa(text: string, dialect = "en-US"): string {
@@ -471,6 +839,8 @@ export function englishToIpa(text: string, dialect = "en-US"): string {
     coffee: "ˈkɒf.i", please: "pliːz", two: "tuː", cups: "kʌps",
     sugar: "ˈʃʊɡ.əɹ", croissant: "kɹə.ˈsɒnt", just: "dʒʌst",
     sandwich: "ˈsæn.wɪdʒ", eat: "iːt", your: "jɔːɹ",
+    nobody: "ˈnoʊ.bə.di", leaves: "liːvz", secret: "ˈsiː.kɹɪt",
+    documents: "ˈdɑː.kjə.mənts", or: "ɔːɹ", diamonds: "ˈdaɪ.məndz",
   };
 
   const clean = text.toLowerCase().replace(/[.,?!"]/g, "").trim().split(/\s+/);
@@ -486,22 +856,11 @@ export function frenchToIpa(text: string): string {
     face: "fas", est: "ɛ", très: "tʁɛ", suspecte: "sys.pɛkt",
     hugo: "y.ɡo", c: "s", juste: "ʒyst", une: "yn", mange: "mɑ̃ʒ",
     ton: "tɔ̃", sandwich: "sɑ̃d.witʃ", monsieur: "mə.sjø", attend: "a.tɑ̃",
+    personne: "pɛʁ.sɔn", laisse: "lɛs", comme: "kɔm", ça: "sa",
+    doit: "dwa", avoir: "a.vwaʁ", des: "de", documents: "dɔ.ky.mɑ̃",
+    secrets: "sə.kʁɛ", ou: "u", diamants: "dja.mɑ̃",
   };
   const clean = text.toLowerCase().replace(/['’]/g, " ").replace(/[.,?!"]/g, "").trim().split(/\s+/);
-  const ipaWords = clean.map(w => dict[w] || phoneticApprox(w));
-  return `[${ipaWords.join(" ")}]`;
-}
-
-export function portugueseToIpa(text: string, isBr = true): string {
-  const dict: Record<string, string> = {
-    clara: "ˈkla.ɾɐ", não: "nɐ̃w̃", olha: "ˈɔ.ʎɐ", agora: "a.ˈɡɔ.ɾɐ",
-    mas: "majs", aquela: "a.ˈkɛ.lɐ", mala: "ˈma.lɐ",
-    verde: isBr ? "ˈveʁ.dʒi" : "ˈveɾ.ðɨ", na: "nɐ", mesa: "ˈme.zɐ",
-    da: "dɐ", frente: isBr ? "ˈfɾẽ.tʃi" : "ˈfɾẽ.tɨ", é: "ɛ",
-    muito: "ˈmũj̃.tu", suspeita: "suʃ.ˈpej.tɐ", apenas: "a.ˈpe.nɐs",
-    coma: "ˈko.mɐ", seu: "sew", sanduíche: isBr ? "sɐ̃.du.ˈi.ʃi" : "sɐ̃.du.ˈi.ʃɨ",
-  };
-  const clean = text.toLowerCase().replace(/[.,?!"]/g, "").trim().split(/\s+/);
   const ipaWords = clean.map(w => dict[w] || phoneticApprox(w));
   return `[${ipaWords.join(" ")}]`;
 }
@@ -518,90 +877,114 @@ function phoneticApprox(word: string): string {
     .replace(/y/gi, "j")
     .replace(/w/gi, "w")
     .replace(/r/gi, "ɾ")
-    .replace(/ç/gi, "s")
-    .replace(/x/gi, "ks");
+    .replace(/ç/gi, "s");
 }
 
 // ==========================================
-// 11. MAIN DISPATCHER
+// 8. MAIN DISPATCHER
 // ==========================================
 export function getIpaTranscription(text: string, langCode: string): string {
   if (!text) return "";
 
   const trimmed = text.trim();
+  const normKey = trimmed.replace(/[\s\u3000]+/g, " ").replace(/…/g, "...").toLowerCase();
 
-  // 1. Check exact or whitespace-normalized canonical line dictionary first
+  // 1. Check language-specific canonical dictionary first
+  const langCanon = CANONICAL_BY_LANG[langCode];
+  if (langCanon) {
+    if (langCanon[trimmed]) return langCanon[trimmed];
+    for (const [k, v] of Object.entries(langCanon)) {
+      if (k.replace(/[\s\u3000]+/g, " ").replace(/…/g, "...").toLowerCase() === normKey) {
+        return v;
+      }
+    }
+  }
+
+  // 2. Check dialect fallbacks (e.g. pt-AO -> pt-PT, es-MX -> es-ES)
+  if (langCode.startsWith("pt-") && langCode !== "pt-BR") {
+    const ptCanon = CANONICAL_BY_LANG["pt-PT"];
+    if (ptCanon) {
+      if (ptCanon[trimmed]) return ptCanon[trimmed];
+      for (const [k, v] of Object.entries(ptCanon)) {
+        if (k.replace(/[\s\u3000]+/g, " ").replace(/…/g, "...").toLowerCase() === normKey) {
+          return v;
+        }
+      }
+    }
+  }
+
+  // 3. Check universal canonical line dictionary
   if (CANONICAL_LINE_IPA[trimmed]) {
     return CANONICAL_LINE_IPA[trimmed];
   }
-  const normKey = trimmed.replace(/[\s\u3000]+/g, "").replace(/…/g, "...");
+  const normKeyUniversal = trimmed.replace(/[\s\u3000]+/g, "").replace(/…/g, "...");
   for (const [k, v] of Object.entries(CANONICAL_LINE_IPA)) {
-    if (k.replace(/[\s\u3000]+/g, "").replace(/…/g, "...") === normKey) {
+    if (k.replace(/[\s\u3000]+/g, "").replace(/…/g, "...") === normKeyUniversal) {
       return v;
     }
   }
 
-  // 2. Japanese
-  if (langCode === "ja-JP" || langCode === "ja" || /[\u3040-\u30ff\u4e00-\u9faf]/.test(text) && langCode.startsWith("ja")) {
+  // 4. Japanese
+  if (langCode === "ja-JP" || langCode === "ja" || /[぀-ヿ一-龯]/.test(text) && langCode.startsWith("ja")) {
     return japaneseToIpa(text);
   }
 
-  // 3. Chinese
+  // 5. Chinese
   if (langCode === "cmn-CN" || langCode === "zh-TW" || langCode === "yue-HK" || langCode.startsWith("zh")) {
     return chineseToIpa(text);
   }
 
-  // 4. Cyrillic (Russian, Ukrainian, etc.)
-  if (langCode === "ru-RU" || langCode === "uk-UA" || langCode === "bg-BG" || /[\u0400-\u04FF]/.test(text)) {
+  // 6. Cyrillic (Russian, Ukrainian, etc.)
+  if (langCode === "ru-RU" || langCode === "uk-UA" || langCode === "bg-BG" || /[Ѐ-ӿ]/.test(text)) {
     return cyrillicToIpa(text);
   }
 
-  // 5. Arabic
-  if (langCode.startsWith("ar-") || langCode === "ar" || /[\u0600-\u06FF]/.test(text)) {
+  // 7. Arabic
+  if (langCode.startsWith("ar-") || langCode === "ar" || /[؀-ۿ]/.test(text)) {
     return arabicToIpa(text);
   }
 
-  // 6. Korean
-  if (langCode === "ko-KR" || langCode === "ko" || /[\uAC00-\uD7AF]/.test(text)) {
+  // 8. Korean
+  if (langCode === "ko-KR" || langCode === "ko" || /[가-힯]/.test(text)) {
     return koreanToIpa(text);
   }
 
-  // 7. Hindi & Indic
-  if (langCode === "hi-IN" || langCode === "mr-IN" || /[\u0900-\u097F]/.test(text)) {
+  // 9. Hindi & Indic
+  if (langCode === "hi-IN" || langCode === "mr-IN" || /[ऀ-ॿ]/.test(text)) {
     return indicToIpa(text);
   }
 
-  // 8. Greek
-  if (langCode === "el-GR" || /[\u0370-\u03FF]/.test(text)) {
+  // 10. Greek
+  if (langCode === "el-GR" || /[Ͱ-Ͽ]/.test(text)) {
     return greekToIpa(text);
   }
 
-  // 9. Hebrew
-  if (langCode === "he-IL" || /[\u0590-\u05FF]/.test(text)) {
+  // 11. Hebrew
+  if (langCode === "he-IL" || /[֐-׿]/.test(text)) {
     return hebrewToIpa(text);
   }
 
-  // 10. Spanish
-  if (langCode.startsWith("es-")) {
-    return spanishToIpa(text, langCode);
-  }
-
-  // 11. English
-  if (langCode.startsWith("en-")) {
-    return englishToIpa(text, langCode);
-  }
-
-  // 12. French
-  if (langCode.startsWith("fr-")) {
-    return frenchToIpa(text);
-  }
-
-  // 13. Portuguese
+  // 12. Portuguese (European & Brazilian)
   if (langCode.startsWith("pt-")) {
     return portugueseToIpa(text, langCode === "pt-BR");
   }
 
-  // 14. German
+  // 13. Spanish
+  if (langCode.startsWith("es-")) {
+    return spanishToIpa(text, langCode);
+  }
+
+  // 14. English
+  if (langCode.startsWith("en-")) {
+    return englishToIpa(text, langCode);
+  }
+
+  // 15. French
+  if (langCode.startsWith("fr-")) {
+    return frenchToIpa(text);
+  }
+
+  // 16. German
   if (langCode === "de-DE" || langCode === "de-CH") {
     const germanText = text.toLowerCase()
       .replace(/sch/g, "ʃ")
@@ -615,7 +998,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${germanText}]`;
   }
 
-  // 15. Italian
+  // 17. Italian
   if (langCode === "it-IT") {
     const itText = text.toLowerCase()
       .replace(/gli/g, "ʎi")
@@ -629,7 +1012,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${itText}]`;
   }
 
-  // 16. Dutch
+  // 18. Dutch
   if (langCode === "nl-NL" || langCode === "nl-BE") {
     const nlText = text.toLowerCase()
       .replace(/ij/g, "ɛi")
@@ -640,7 +1023,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${nlText}]`;
   }
 
-  // 17. Swedish, Danish, Norwegian
+  // 19. Swedish, Danish, Norwegian
   if (langCode === "sv-SE" || langCode === "da-DK" || langCode === "no-NO") {
     const scandText = text.toLowerCase()
       .replace(/skj|stj|sk(?=[eiyäö])/g, "ɧ")
@@ -651,7 +1034,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${scandText}]`;
   }
 
-  // 18. Turkish
+  // 20. Turkish
   if (langCode === "tr-TR") {
     const trText = text.toLowerCase()
       .replace(/c/g, "d͡ʒ")
@@ -664,7 +1047,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${trText}]`;
   }
 
-  // 19. Polish
+  // 21. Polish
   if (langCode === "pl-PL") {
     const plText = text.toLowerCase()
       .replace(/sz/g, "ʂ")
@@ -678,7 +1061,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${plText}]`;
   }
 
-  // 20. Vietnamese
+  // 22. Vietnamese
   if (langCode === "vi-VN") {
     const viText = text.toLowerCase()
       .replace(/nh/g, "ɲ")
@@ -690,7 +1073,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${viText}]`;
   }
 
-  // 21. General fallback
+  // 23. General fallback
   const words = text.replace(/[.,;:?!¿¡"«»()]/g, "").trim().split(/\s+/).filter(Boolean);
   return `[${words.map(w => phoneticApprox(w)).join(" ")}]`;
 }
