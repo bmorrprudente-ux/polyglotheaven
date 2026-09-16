@@ -31,6 +31,34 @@ export interface ClassicCombination {
 
 export const LANGUAGE_FAMILIES: LanguageFamily[] = [
   {
+    id: "indoeuropean",
+    name: "Macrofamilia indoeuropea",
+    icon: "🌍",
+    badgeColor: "bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300 border-indigo-300",
+    description: "La macrofamilia lingüística con mayor número de hablantes y dispersión del planeta. Engloba las ramas romance, germánica, eslava, indoirania, griega, celta, báltica, armenia y albanesa.",
+    ancestor: "Protoindoeuropeo (estepas pónticas / cultura Yamnaya, c. 4500–2500 a.C.)",
+    speakersTotal: "+3.200 millones (45% mundial)",
+    keyFeatures: [
+      "Vocabulario nuclear compartido para parentesco, números y naturaleza (madre/mother/mat'/mātā, tres/three/tri/trīn).",
+      "Herencia del sistema flexivo original con raíces consonantales y apofonía vocálica (Ablaut indoeuropeo).",
+      "Evolución tipológica diversa: desde lenguas sintéticas con casos (ruso, alemán, hindi) hasta analíticas (inglés, español).",
+      "Constituye la columna vertebral del comercio, la ciencia contemporánea, el derecho y la diplomacia global."
+    ],
+    members: [
+      { code: "es-ES", name: "Español", flag: "🇪🇸" },
+      { code: "en-US", name: "Inglés", flag: "🇺🇸" },
+      { code: "hi-IN", name: "Hindi", flag: "🇮🇳" },
+      { code: "pt-BR", name: "Portugués", flag: "🇧🇷" },
+      { code: "ru-RU", name: "Ruso", flag: "🇷🇺" },
+      { code: "bn-IN", name: "Bengalí", flag: "🇧🇩" },
+      { code: "fr-FR", name: "Francés", flag: "🇫🇷" },
+      { code: "de-DE", name: "Alemán", flag: "🇩🇪" },
+      { code: "it-IT", name: "Italiano", flag: "🇮🇹" },
+      { code: "el-GR", name: "Griego", flag: "🇬🇷" }
+    ],
+    polyglotAdvantage: "Entender el tronco indoeuropeo te permite conectar las raíces léxicas y gramaticales de casi 40 idiomas de la aplicación, reconociendo que el inglés, el ruso, el hindi y el español comparten un mismo esqueleto ancestral."
+  },
+  {
     id: "romance",
     name: "Lenguas romances",
     icon: "🏛️",
@@ -63,7 +91,7 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
     badgeColor: "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-300",
     description: "Rama indoeuropea caracterizada por las mutaciones consonánticas de la Ley de Grimm y gran peso en el comercio, ciencia y tecnología global.",
     ancestor: "Protogermánico (Europa del Norte)",
-    speakersTotal: "+550 millones nativos / +1.500 millones totales",
+    speakersTotal: "+550M nativos / +1.500M totales",
     keyFeatures: [
       "Distinción histórica entre verbos débiles (con sufijo dental -ed/-t) y verbos fuertes (apofonía vocálica).",
       "Acento prosódico fijado en la primera sílaba de la raíz.",
@@ -92,7 +120,7 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
       "Sistema de 6 a 7 casos gramaticales casi intacto (nominativo, acusativo, genitivo, dativo, instrumental, locativo, vocativo).",
       "Categoría de aspecto verbal omnipresente (pares perfectivo / imperfectivo para cada acción).",
       "Oposición fonémica entre consonantes palatalizadas (blandas) y no palatalizadas (duras).",
-      "Uso histórico compartido de los alfabetos cirílico y latino según tradición religiosa."
+      "Uso histórico compartido de los alfabetos cirílico y latino según tradición cultural."
     ],
     members: [
       { code: "ru-RU", name: "Ruso", flag: "🇷🇺" },
@@ -102,6 +130,135 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
       { code: "hr-HR", name: "Croata / Serbio", flag: "🇭🇷" }
     ],
     polyglotAdvantage: "Dominar la gramática eslava una sola vez desbloquea la capacidad de entender el esqueleto gramatical de toda Europa oriental y los Balcanes."
+  },
+  {
+    id: "indo_aryan",
+    name: "Lenguas indoarias e indoiranias",
+    icon: "🪷",
+    badgeColor: "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-300 border-orange-300",
+    description: "La rama más poblada de la familia indoeuropea. Floreció en el subcontinente indio y la meseta iraní con una continuidad literaria ininterrumpida de más de 3.500 años.",
+    ancestor: "Protoindoiranio / Sánscrito védico (c. 1800–1500 a.C.)",
+    speakersTotal: "+1.500 millones",
+    keyFeatures: [
+      "Distinción fonológica cuádruple en oclusivas: sordas, sordas aspiradas, sonoras y murmuradas (k, kh, g, gh).",
+      "Serie completa de consonantes retroflejas articuladas contra el paladar duro (ṭ, ḍ, ṇ).",
+      "Ergatividad escindida: marca de caso ergativo en tiempos verbales de pasado/perfecto.",
+      "Orden sintáctico estricto SOV con uso sistemático de postposiciones."
+    ],
+    members: [
+      { code: "hi-IN", name: "Hindi", flag: "🇮🇳" },
+      { code: "ur-PK", name: "Urdu", flag: "🇵🇰" },
+      { code: "bn-IN", name: "Bengalí", flag: "🇧🇩" },
+      { code: "pa-IN", name: "Panyabí", flag: "🇮🇳" },
+      { code: "mr-IN", name: "Maratí", flag: "🇮🇳" },
+      { code: "gu-IN", name: "Guyaratí", flag: "🇮🇳" }
+    ],
+    polyglotAdvantage: "Dominar la estructura del indostaní (hindi/urdu) te otorga comprensión inmediata del 80% de las construcciones gramaticales y vocabulario del norte de la India y Pakistán."
+  },
+  {
+    id: "bantu",
+    name: "Lenguas bantúes (Níger-Congo)",
+    icon: "🦁",
+    badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border-emerald-300",
+    description: "La mayor subfamilia de la macrofamilia Níger-Congo, protagonista de la expansión humana más vasta del continente africano, extendiéndose por el centro, oriente y sur de África.",
+    ancestor: "Protobantú (frontera Nigeria-Camerún, expansión c. 1000 a.C.)",
+    speakersTotal: "+350 millones",
+    keyFeatures: [
+      "Sistema de clases nominales con hasta 18 prefijos (m-/wa- para personas, ki-/vi- para objetos, u-/ma- para conceptos abstractos).",
+      "Concordancia aliterativa total: adjetivos, pronombres, numerales y verbos adoptan obligatoriamente el prefijo de clase del sustantivo.",
+      "Aglutinación verbal compleja con ricas extensiones derivativas (causativas, aplicativas, recíprocas, pasivas).",
+      "Lenguas mayoritariamente tonales, excepto el suajili, que adoptó un acento regular y predecible en la penúltima sílaba."
+    ],
+    members: [
+      { code: "sw-KE", name: "Suajili (Kiswahili)", flag: "🇰🇪" }
+    ],
+    polyglotAdvantage: "El suajili es la lengua franca de toda África oriental; su sistema de clases nominales y prefijos verbales es tan regular y melódico que permite deducir el significado de oraciones completas como un rompecabezas lógico."
+  },
+  {
+    id: "afroasiatic",
+    name: "Lenguas afroasiáticas (Semíticas)",
+    icon: "🐪",
+    badgeColor: "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-300",
+    description: "Macrofamilia con la documentación escrita más antigua de la humanidad (egipcio antiguo, acadio, hebreo y árabe). Su rama semítica domina el suroeste de Asia y el norte de África.",
+    ancestor: "Protoafroasiático / Protosemítico (Creciente Fértil y Cuerno de África)",
+    speakersTotal: "+500 millones",
+    keyFeatures: [
+      "Morfología de raíces consonánticas trilíteras (3 consonantes C-C-C como k-t-b que modulan su significado insertando patrones vocálicos).",
+      "Consonantes enfáticas faringealizadas (tˤ, dˤ, sˤ, ðˤ) y oclusivas glotales.",
+      "Marcación explícita de género gramatical en la 2.ª y 3.ª persona singular y plural.",
+      "Sistemas de escritura consonántica (abyad) leídos de derecha a izquierda (RTL)."
+    ],
+    members: [
+      { code: "ar-EG", name: "Árabe egipcio", flag: "🇪🇬" },
+      { code: "ar-SA", name: "Árabe peninsular", flag: "🇸🇦" },
+      { code: "ar-MA", name: "Árabe marroquí (Dariya)", flag: "🇲🇦" },
+      { code: "ar-XA", name: "Árabe estándar moderno", flag: "🌐" },
+      { code: "he-IL", name: "Hebreo moderno", flag: "🇮🇱" }
+    ],
+    polyglotAdvantage: "La raíz trilítera es la herramienta mnemotécnica más poderosa del mundo: una sola raíz de 3 letras genera de forma predecible verbos, sustantivos, profesiones y lugares en todo el mundo semítico."
+  },
+  {
+    id: "sino_tibetan",
+    name: "Lenguas sinotibetanas",
+    icon: "🐉",
+    badgeColor: "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-300 border-red-300",
+    description: "La segunda macrofamilia más grande del mundo. Comprende todas las variantes de las lenguas siníticas (mandarín, cantonés, wu, min) y las lenguas tibetano-birmanas del Himalaya.",
+    ancestor: "Protosinotibetano (Cuenca del Río Amarillo, c. 4000 a.C.)",
+    speakersTotal: "+1.400 millones",
+    keyFeatures: [
+      "Lenguas tonales de registro y contorno: el tono melódico con que se pronuncia una sílaba cambia por completo su significado.",
+      "Morfología aislante/analítica pura: sin conjugaciones verbales, sin género gramatical, sin plurales obligatorios ni casos.",
+      "Clasificadores numerales obligatorios al contar o individualizar sustantivos.",
+      "Estructura basada en Tema-Comentario y gran productividad de compuestos léxicos monosilábicos."
+    ],
+    members: [
+      { code: "cmn-CN", name: "Chino mandarín (Simplificado)", flag: "🇨🇳" },
+      { code: "zh-TW", name: "Chino tradicional (Taiwán)", flag: "🇹🇼" },
+      { code: "yue-HK", name: "Cantonés (Hong Kong)", flag: "🇭🇰" }
+    ],
+    polyglotAdvantage: "Al no existir tiempos verbales ni concordancias de género o número, el 100% del esfuerzo de aprendizaje se canaliza en el dominio del tono y la asociación visual y conceptual de caracteres."
+  },
+  {
+    id: "austronesian",
+    name: "Lenguas austronésicas",
+    icon: "🌺",
+    badgeColor: "bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300 border-cyan-300",
+    description: "La familia marítima más extensa de la antigüedad. Abarca más de 1.200 lenguas diseminadas desde Madagascar en el océano Índico hasta Hawái y la Isla de Pascua en el Pacífico.",
+    ancestor: "Protoaustronésico (isla de Taiwán, c. 3000 a.C.)",
+    speakersTotal: "+380 millones",
+    keyFeatures: [
+      "Morfología elegante basada en afijos y circunfijos (me-, ber-, -kan, pe-...-an) para matizar voz, foco y transitividad.",
+      "Reduplicación completa o parcial como mecanismo gramatical productivo (anak = niño, anak-anak = niños).",
+      "Distinción inclusivo/exclusivo en 'nosotros': kita (tú y yo) vs. kami (nosotros sin ti).",
+      "Fonología accesible y transparente: sílabas predominantemente abiertas (CV) y cinco vocales puras muy similares al español."
+    ],
+    members: [
+      { code: "id-ID", name: "Indonesio", flag: "🇮🇩" },
+      { code: "ms-MY", name: "Malayo", flag: "🇲🇾" }
+    ],
+    polyglotAdvantage: "El indonesio y el malayo son considerados universalmente entre los idiomas más amigables y rápidos de aprender del mundo para hispanohablantes: fonética idéntica, alfabeto latino y cero flexión irregular."
+  },
+  {
+    id: "dravidian",
+    name: "Lenguas dravídicas",
+    icon: "🛕",
+    badgeColor: "bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300 border-purple-300",
+    description: "Familia autóctona del sur de la India con una tradición literaria clásica ininterrumpida de más de dos milenios (poesía Sangam tamil). Completamente independiente del sánscrito y las lenguas indoeuropeas.",
+    ancestor: "Protodravídico (Sur del subcontinente indio, anterior a la llegada aria)",
+    speakersTotal: "+250 millones",
+    keyFeatures: [
+      "Aglutinación de sufijos en cadena perfectamente regular acoplados a la raíz nominal o verbal.",
+      "Contraste fonémico triple en oclusivas: dentales, alveolares y retroflejas (producidas con la lengua hacia atrás).",
+      "Orden oracional estricto SOV con encadenamiento de participios en vez de oraciones coordinadas.",
+      "Distinción de género gramatical entre seres racionales (humanos/dioses) y no racionales (animales y objetos inanimados)."
+    ],
+    members: [
+      { code: "ta-IN", name: "Tamil", flag: "🇮🇳" },
+      { code: "te-IN", name: "Telugu", flag: "🇮🇳" },
+      { code: "kn-IN", name: "Canarés (Kannada)", flag: "🇮🇳" },
+      { code: "ml-IN", name: "Malayalam (Malabar)", flag: "🇮🇳" }
+    ],
+    polyglotAdvantage: "Comparten una arquitectura sintáctica idéntica: aprender la mecánica de sufijos y retroflejas en una lengua dravídica transfiere automáticamente el 90% de la lógica a las otras tres."
   },
   {
     id: "turkic",
@@ -121,6 +278,88 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
       { code: "tr-TR", name: "Turco", flag: "🇹🇷" }
     ],
     polyglotAdvantage: "Por su regularidad matemática casi sin verbos irregulares, es considerada una de las familias más lógicas y placenteras de aprender."
+  },
+  {
+    id: "japonic_koreanic",
+    name: "Japónico y Coreánico (Área del Noreste Asiático)",
+    icon: "⛩️",
+    badgeColor: "bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-950 dark:text-fuchsia-300 border-fuchsia-300",
+    description: "Aunque el consenso histórico las clasifica como familias separadas, el japonés y el coreano son 'almas gemelas gramaticales': comparten una arquitectura sintáctica y conceptual prácticamente idéntica punto por punto.",
+    ancestor: "Protojapónico y Protocoreánico (Área lingüística transeurasiática)",
+    speakersTotal: "+200 millones",
+    keyFeatures: [
+      "Aglutinación estricta con partículas pospuestas que marcan sujeto, tema, objeto directo, dirección y medio.",
+      "Orden sintáctico rígido Sujeto-Objeto-Verbo (el verbo siempre corona el final absoluto de la frase).",
+      "Sistemas honoríficos altamente gramaticalizados (keigo en japonés, jondaenmal en coreano) que modifican desinencias enteras según cortesía.",
+      "Ausencia total de género gramatical, concordancia de número obligatoria o artículos."
+    ],
+    members: [
+      { code: "ja-JP", name: "Japonés", flag: "🇯🇵" },
+      { code: "ko-KR", name: "Coreano", flag: "🇰🇷" }
+    ],
+    polyglotAdvantage: "La correspondencia partícula a partícula entre japonés y coreano es la más exacta de dos idiomas mayores en el mundo; quien aprende uno puede descifrar la gramática del otro en cuestión de semanas."
+  },
+  {
+    id: "amerindian",
+    name: "Lenguas indígenas americanas (Tupí, Quechumara, Náhuatl, Na-Dené)",
+    icon: "🦅",
+    badgeColor: "bg-lime-100 text-lime-800 dark:bg-lime-950 dark:text-lime-300 border-lime-300",
+    description: "Las lenguas originarias de las grandes civilizaciones y pueblos americanos. Polyglot Heaven integra cinco grandes tradiciones vivas: guaraní, quechua, aymara, náhuatl y navajo.",
+    ancestor: "Familias autóctonas milenarias de Abya Yala / América precolombina",
+    speakersTotal: "+30 millones",
+    keyFeatures: [
+      "Polisíntesis e incorporación nominal: una sola palabra agrupa sujeto, objeto, dirección y matices verbales.",
+      "Sistemas gramaticalizados de evidencialidad: es obligatorio marcar si lo que se afirma fue presenciado, escuchado o deducido.",
+      "Armonía nasal en guaraní, oclusivas eyectivas en quechua y aymara, y consonantes laterales velares en náhuatl y navajo.",
+      "Fuerte vigencia contemporánea: el guaraní es lengua cooficial de mayoría demográfica en Paraguay y el quechua cuenta con millones de hablantes andinos."
+    ],
+    members: [
+      { code: "gn-PY", name: "Guaraní", flag: "🇵🇾" },
+      { code: "nah-MX", name: "Náhuatl", flag: "🇲🇽" },
+      { code: "qu-PE", name: "Quechua", flag: "🇵🇪" },
+      { code: "ay-BO", name: "Aymara", flag: "🇧🇴" },
+      { code: "nv-US", name: "Navajo (Diné Bizaad)", flag: "🇺🇸" }
+    ],
+    polyglotAdvantage: "Rompe por completo las categorías de pensamiento indoeuropeas: entrena la mente en conceptos holísticos de comunidad, reciprocidad (ayni) y relación con el cosmos."
+  },
+  {
+    id: "uralic",
+    name: "Lenguas urálicas (Finougrias)",
+    icon: "🌲",
+    badgeColor: "bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-300 border-slate-300",
+    description: "Familia ancestral de cazadores y pastores del norte de Eurasia que sobrevivió en el corazón de Europa sin pertenecer al árbol indoeuropeo, dividida entre las ramas báltico-finesa y úgrica.",
+    ancestor: "Protourálico (Montes Urales, c. 2000 a.C.)",
+    speakersTotal: "+25 millones",
+    keyFeatures: [
+      "Sistemas de casos extraordinariamente ricos (15 casos en finés, 18 en húngaro) que expresan relaciones espaciales milimétricas.",
+      "Armonía vocálica estricta: las vocales de los sufijos mutan para armonizar con el carácter anterior o posterior de la raíz.",
+      "Ausencia del verbo 'tener': la posesión se expresa locativamente ('en mí está el libro').",
+      "Acentuación fija absoluta e invariable en la primera sílaba de cada palabra."
+    ],
+    members: [
+      { code: "fi-FI", name: "Finés", flag: "🇫🇮" },
+      { code: "hu-HU", name: "Húngaro", flag: "🇭🇺" }
+    ],
+    polyglotAdvantage: "Ofrece la experiencia de una arquitectura morfológica de precisión cristalina, donde los casos sustituyen a las preposiciones con exactitud matemática."
+  },
+  {
+    id: "basque_isolate",
+    name: "Lengua aislada paleoeuropea: Euskera",
+    icon: "⛰️",
+    badgeColor: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300 border-green-300",
+    description: "La lengua viva más antigua de Europa occidental. Un fósil lingüístico viviente anterior a la llegada de las lenguas indoeuropeas a la Península Ibérica y las Galias.",
+    ancestor: "Protoibérico / Aquitano preindoeuropeo (Europa de la Edad de Piedra)",
+    speakersTotal: "~1 millón",
+    keyFeatures: [
+      "Alineamiento morfosintáctico ergativo-absolutivo: el sujeto de un verbo transitivo se marca con -k, mientras el intransitivo coincide con el objeto.",
+      "Sistema verbal alocutivo polipersonal: la forma del verbo indica al mismo tiempo el sujeto, el objeto directo, el indirecto y el género de quien escucha.",
+      "Aglutinación de casos declinados directamente sobre el sintagma nominal.",
+      "Inexistencia demostrada de parentesco genético con ninguna otra lengua del planeta."
+    ],
+    members: [
+      { code: "eu-ES", name: "Euskera", flag: "🟢" }
+    ],
+    polyglotAdvantage: "Es una cápsula del tiempo cultural única: aprender nociones de euskera te transporta directamente a la mentalidad de los pueblos prehistóricos europeos previa a la romanización."
   }
 ];
 

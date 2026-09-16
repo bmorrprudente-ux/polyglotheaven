@@ -19,7 +19,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
   onSelectCombination,
 }) => {
   const [activeTab, setActiveTab] = useState<"combinations" | "families">(defaultTab);
-  const [selectedFamilyId, setSelectedFamilyId] = useState<string>("romance");
+  const [selectedFamilyId, setSelectedFamilyId] = useState<string>("indoeuropean");
   const [selectedCombId, setSelectedCombId] = useState<string>("malay_indonesian");
 
   if (!isOpen) return null;
@@ -68,7 +68,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
           >
             <span>✨ Combinaciones clásicas ("2 por 1")</span>
             <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 font-black">
-              8
+              {CLASSIC_COMBINATIONS.length}
             </span>
           </button>
 
@@ -82,7 +82,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
           >
             <span>🌐 Familias lingüísticas mayores</span>
             <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 font-black">
-              4
+              {LANGUAGE_FAMILIES.length}
             </span>
           </button>
         </div>
@@ -95,7 +95,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
               
               {/* Left Selector List */}
-              <div className="lg:col-span-5 space-y-2">
+              <div className="lg:col-span-5 space-y-2 max-h-[65vh] overflow-y-auto pr-1.5 scrollbar-thin">
                 <span className="text-[11px] font-black uppercase tracking-wider text-gray-400 block mb-1">
                   Pares estratégicos con inteligibilidad mutua
                 </span>
@@ -136,7 +136,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
               </div>
 
               {/* Right Details Panel */}
-              <div className="lg:col-span-7 bg-gray-50/80 dark:bg-slate-800/40 rounded-3xl p-5 border border-gray-200 dark:border-slate-700 flex flex-col justify-between space-y-4">
+              <div className="lg:col-span-7 bg-gray-50/80 dark:bg-slate-800/40 rounded-3xl p-5 border border-gray-200 dark:border-slate-700 flex flex-col justify-between space-y-4 lg:sticky lg:top-0 self-start">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <div className="flex items-center gap-2">
@@ -223,9 +223,9 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
               
               {/* Left Selector List */}
-              <div className="lg:col-span-5 space-y-2">
+              <div className="lg:col-span-5 space-y-2 max-h-[65vh] overflow-y-auto pr-1.5 scrollbar-thin">
                 <span className="text-[11px] font-black uppercase tracking-wider text-gray-400 block mb-1">
-                  Ramas lingüísticas principales
+                  Ramas y macrofamilias lingüísticas
                 </span>
                 <div className="space-y-2">
                   {LANGUAGE_FAMILIES.map(f => {
@@ -262,7 +262,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
               </div>
 
               {/* Right Details Panel */}
-              <div className="lg:col-span-7 bg-gray-50/80 dark:bg-slate-800/40 rounded-3xl p-5 border border-gray-200 dark:border-slate-700 space-y-4">
+              <div className="lg:col-span-7 bg-gray-50/80 dark:bg-slate-800/40 rounded-3xl p-5 border border-gray-200 dark:border-slate-700 space-y-4 lg:sticky lg:top-0 self-start">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className="text-3xl">{currentFamily.icon}</span>
