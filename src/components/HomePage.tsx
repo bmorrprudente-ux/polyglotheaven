@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { CloudSunIcon } from "./CloudSunIcon";
-import { LANGUAGE_MATRIX, LanguageMatrixItem, calculateReachablePeople } from "../data/languageMatrix";
+import { LANGUAGE_MATRIX, LanguageMatrixItem, calculateReachablePeople, OrthographicScoreLevel } from "../data/languageMatrix";
 import { CLASSIC_COMBINATIONS, LANGUAGE_FAMILIES } from "../data/languageFamilies";
 import { LANGUAGES } from "../data/languages";
 import {
@@ -40,6 +40,23 @@ interface HomePageProps {
   onUpdateLearning: (codes: string[]) => void;
   locale?: SupportedLocale;
 }
+
+const getOrthographyBadge = (level: OrthographicScoreLevel) => {
+  switch (level) {
+    case "Muy fácil":
+      return "bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700";
+    case "Fácil":
+      return "bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 border-sky-300 dark:border-sky-700";
+    case "Moderada":
+      return "bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-700";
+    case "Difícil":
+      return "bg-orange-100 dark:bg-orange-950/80 text-orange-800 dark:text-orange-300 border-orange-300 dark:border-orange-700";
+    case "Muy difícil":
+      return "bg-rose-100 dark:bg-rose-950/80 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-700";
+    default:
+      return "bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 border-gray-300";
+  }
+};
 
 export const HomePage: React.FC<HomePageProps> = ({
   onStartReading,
@@ -619,7 +636,22 @@ export const HomePage: React.FC<HomePageProps> = ({
                   <th className="py-3 px-3 text-center">Poder Cultural</th>
                   <th className="py-3 px-3 text-right">PIB ($Trillones)</th>
                   <th className="py-3 px-3">Dificultad FSI</th>
-                  <th className="py-3 px-3">Joyas no traducidas</th>
+                  <th className="py-3 px-3">
+                    <span className="block text-[11px] font-black tracking-normal normal-case text-gray-700 dark:text-gray-200">
+                      Pronunciar al leer
+                    </span>
+                    <span className="block text-[9px] font-semibold text-gray-400 dark:text-gray-500 normal-case">
+                      Texto → Voz
+                    </span>
+                  </th>
+                  <th className="py-3 px-3">
+                    <span className="block text-[11px] font-black tracking-normal normal-case text-gray-700 dark:text-gray-200">
+                      Escribir al oír
+                    </span>
+                    <span className="block text-[9px] font-semibold text-gray-400 dark:text-gray-500 normal-case">
+                      Voz → Texto
+                    </span>
+                  </th>
                   <th className="py-3 px-4 text-center">Detalles</th>
                 </tr>
               </thead>
@@ -695,9 +727,38 @@ export const HomePage: React.FC<HomePageProps> = ({
                           </span>
                         </td>
 
-                        {/* Untranslated Literature Preview */}
-                        <td className="py-3 px-3 max-w-xs truncate text-[11px] text-gray-600 dark:text-gray-400 font-medium">
-                          {item.untranslatedTreasures}
+                        {/* Reading Transparency (Pronunciar al leer) */}
+                        <td className="py-3 px-3 whitespace-nowrap">
+                          <span
+                            className={`inline-flex items-center gap-1 text-[10px] font-extrabold px-2 py-0.5 rounded-full border ${getOrthographyBadge(
+                              item.readingTransparencyLevel
+                            )}`}
+                          >
+                            {item.readingTransparencyLevel}
+                          </span>
+                          <span
+                            className="block text-[10px] text-gray-500 dark:text-gray-400 font-medium truncate max-w-[140px] mt-0.5"
+                            title={item.readingTransparencyNote}
+                          >
+                            {item.readingTransparencyNote}
+                          </span>
+                        </td>
+
+                        {/* Listening-Spelling Consistency (Escribir al oír) */}
+                        <td className="py-3 px-3 whitespace-nowrap">
+                          <span
+                            className={`inline-flex items-center gap-1 text-[10px] font-extrabold px-2 py-0.5 rounded-full border ${getOrthographyBadge(
+                              item.listeningSpellingLevel
+                            )}`}
+                          >
+                            {item.listeningSpellingLevel}
+                          </span>
+                          <span
+                            className="block text-[10px] text-gray-500 dark:text-gray-400 font-medium truncate max-w-[140px] mt-0.5"
+                            title={item.listeningSpellingNote}
+                          >
+                            {item.listeningSpellingNote}
+                          </span>
                         </td>
 
                         {/* Expand Button */}
@@ -717,7 +778,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       {/* EXPANDED ROW DETAILS */}
                       {isExpanded && (
                         <tr className="bg-amber-50/20 dark:bg-slate-800/60 border-b border-gray-200 dark:border-slate-700">
-                          <td colSpan={8} className="p-4 sm:p-6 space-y-4">
+                          <td colSpan={9} className="p-4 sm:p-6 space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
                               
                               <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 space-y-1">
@@ -738,13 +799,33 @@ export const HomePage: React.FC<HomePageProps> = ({
                                 </p>
                               </div>
 
-                              <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 space-y-1">
+                              <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 space-y-2">
                                 <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-300 block">
                                   ✍️ Curva ortográfica y fonética
                                 </span>
                                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                                   {item.orthographicPhoneticCurve}
                                 </p>
+                                <div className="pt-2 border-t border-gray-100 dark:border-slate-700/60 space-y-2 text-[11px]">
+                                  <div>
+                                    <div className="flex items-center gap-1.5 mb-0.5">
+                                      <span className="font-extrabold text-gray-900 dark:text-white">📖 Pronunciar al leer:</span>
+                                      <span className={`px-2 py-0.2 rounded-full text-[10px] font-extrabold border ${getOrthographyBadge(item.readingTransparencyLevel)}`}>
+                                        {item.readingTransparencyLevel}
+                                      </span>
+                                    </div>
+                                    <p className="text-gray-600 dark:text-gray-400 leading-normal">{item.readingTransparencyNote}</p>
+                                  </div>
+                                  <div>
+                                    <div className="flex items-center gap-1.5 mb-0.5">
+                                      <span className="font-extrabold text-gray-900 dark:text-white">👂 Escribir al oír:</span>
+                                      <span className={`px-2 py-0.2 rounded-full text-[10px] font-extrabold border ${getOrthographyBadge(item.listeningSpellingLevel)}`}>
+                                        {item.listeningSpellingLevel}
+                                      </span>
+                                    </div>
+                                    <p className="text-gray-600 dark:text-gray-400 leading-normal">{item.listeningSpellingNote}</p>
+                                  </div>
+                                </div>
                               </div>
 
                             </div>

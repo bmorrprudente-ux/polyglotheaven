@@ -3,6 +3,8 @@
  * Multi-dimensional analysis across demographics, economics, culture, literature, and linguistic difficulty.
  */
 
+export type OrthographicScoreLevel = "Muy fácil" | "Fácil" | "Moderada" | "Difícil" | "Muy difícil";
+
 export interface LanguageMatrixItem {
   id: string;
   name: string;
@@ -27,6 +29,10 @@ export interface LanguageMatrixItem {
   dialectalNote: string;
   untranslatedTreasures: string; // Philosophy, literature, niche commentary that rarely gets translated
   orthographicPhoneticCurve: string; // Writing system, phonemes, tones
+  readingTransparencyLevel: OrthographicScoreLevel; // "Pronunciar al leer" (Grapheme-to-Phoneme / Lectura directa)
+  readingTransparencyNote: string;
+  listeningSpellingLevel: OrthographicScoreLevel; // "Escribir al oír" (Phoneme-to-Grapheme / Escritura al dictado)
+  listeningSpellingNote: string;
   regions: ("América" | "Europa" | "Asia" | "África" | "Oceanía" | "Oriente Medio")[];
 }
 
@@ -55,6 +61,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Alta inteligibilidad mutua general combinada con una rica gama de jergas locales e inflexiones fonéticas caribeñas, andinas y rioplatenses.",
     untranslatedTreasures: "Inmensa tradición de crónica periodística latinoamericana, poesía lírica contemporánea, filosofía de la liberación y ensayos políticos regionales que no circulan en inglés.",
     orthographicPhoneticCurve: "Ortografía fonética casi 1:1, 5 vocales puras muy claras, sin tonos.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía fonética casi 1:1; 5 vocales invariables y acento regular.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Ambigüedad leve por b/v, c/s/z (seseo) y h muda; el resto es directo.",
     regions: ["América", "Europa"]
   },
   {
@@ -81,6 +91,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Estándar formal muy unificado; enorme diversidad en acentos regionales (escocés, cockney, sudasiático, nigeriano, sureño).",
     untranslatedTreasures: "La inmensa mayoría de obras globales se traducen hacia el inglés, pero alberga infinitos nichos de subculturas técnicas, foros de vanguardia y revistas literarias independientes.",
     orthographicPhoneticCurve: "Ortografía caótica no fonética con 12–14 sonidos vocálicos; gramática morfológica muy simple sin género ni casos.",
+    readingTransparencyLevel: "Muy difícil",
+    readingTransparencyNote: "Ortografía opaca histórica; 14-20 fonemas vocálicos para 5 letras.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Innumerables homófonos y patrones impredecibles (knight, right, led).",
     regions: ["América", "Europa", "Asia", "África", "Oceanía"]
   },
   {
@@ -107,6 +121,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "El mandarín estándar (Putonghua) actúa como lingua franca unificadora sobre un mosaico de variedades orales (cantonés, wu, min, hakka) no inteligibles oralmente pero unidas por la escritura.",
     untranslatedTreasures: "El mayor océano de literatura histórica, novelas web colosales de millones de palabras, tratados de medicina tradicional, estrategia militar y debates filosóficos y geopolíticos chinos que jamás se vierten a lenguas occidentales.",
     orthographicPhoneticCurve: "Gramática sin conjugaciones ni géneros, pero requiere memorizar miles de caracteres hanzi y dominar 4 tonos orales.",
+    readingTransparencyLevel: "Muy difícil",
+    readingTransparencyNote: "Escritura logográfica (hanzi); los caracteres no indican pronunciación directa ni tono.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Extrema homofonía; una sola sílaba corresponde a decenas de caracteres distintos.",
     regions: ["Asia"]
   },
   {
@@ -133,6 +151,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Situación clásica de diglosia: el Árabe Estándar Moderno (Fusha) se lee y escucha en noticias y literatura en 22 países, mientras en la calle se habla árabe egipcio, levantino, magrebí o del golfo.",
     untranslatedTreasures: "Siglos de filosofía islámica medieval, tratados sufíes de mística, poesía beduina, debates jurídicos y crítica política árabe contemporánea que no existe en traducciones europeas.",
     orthographicPhoneticCurve: "Alfabeto abyad consonántico cursivo de derecha a izquierda; fonética rica en consonantes faríngeas y uvulares; raíz triconsonántica matemáticamente predecible.",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Abjad sin vocales cortas en textos reales; exige inferir raíces y gramática.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Consonantes y vocales largas fonéticas; dilemas de hamza y ta marbuta.",
     regions: ["Oriente Medio", "África"]
   },
   {
@@ -159,6 +181,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Francés metropolitano, quebequense y variedades africanas con vocabulario colorido y entonaciones rítmicas.",
     untranslatedTreasures: "Inmensa bibliografía de filosofía posestructuralista, novelas africanas de descolonización, revistas literarias del siglo XIX y cómics conceptuales.",
     orthographicPhoneticCurve: "Ortografía histórica con muchas letras mudas; vocales nasales características; liaison entre palabras.",
+    readingTransparencyLevel: "Moderada",
+    readingTransparencyNote: "Reglas de lectura regulares pero complejas; abundantes letras mudas y enlaces.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Asimetría extrema: /o/ puede ser o, au, aux, eau, eaux; desinencias verbales mudas.",
     regions: ["Europa", "África", "América"]
   },
   {
@@ -185,6 +211,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Diferencia acústica marcada entre el portugués europeo (más cerrado y consonántico) y el brasileño (abierto, musical y vocalizado).",
     untranslatedTreasures: "Tesoros de la literatura colonial luso-asiática (Goa, Macao), cronistas de la Amazonía, poesía modernista brasileña y literatura poscolonial angoleña.",
     orthographicPhoneticCurve: "Ortografía muy accesible para hispanohablantes; fonología con vocales nasales (ã, õ) y reducción de vocales átonas.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Lectura muy regular; tildes agudas y circunflejas indican timbre abierto/cerrado.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Múltiples grafías para sibilantes (s, ss, c, ç, z, x) y reducción vocálica.",
     regions: ["América", "Europa", "África"]
   },
   {
@@ -211,6 +241,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Sorprendentemente homogéneo a lo largo de 11 husos horarios debido a la estandarización educativa soviética.",
     untranslatedTreasures: "Archivos inagotables de teoría literaria formalista, tratados matemáticos y de ajedrez, cartas y memorias de la era soviética, literatura de ciencia ficción filosófica (hermanos Strugatski).",
     orthographicPhoneticCurve: "Alfabeto cirílico fácil de aprender en una semana; declinación de 6 casos; acento tónico libre impredecible que modifica las vocales (ikanie / akanie).",
+    readingTransparencyLevel: "Moderada",
+    readingTransparencyNote: "Cirílico fonético, pero el acento no se marca y produce fuerte reducción (o→a).",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Reducción vocálica (akanie) y ensordecimiento de consonantes finales (d suena t).",
     regions: ["Europa", "Asia"]
   },
   {
@@ -237,6 +271,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Estándar de Tokio unificado en televisión; dialectos regionales muy queridos como el dialecto de Kansai (Osaka/Kioto).",
     untranslatedTreasures: "Montañas de novelas visuales, ensayos filosóficos de la Escuela de Kioto, crítica estética, mangas de autor no licenciados, novelas ligeras y tratados de artesanía tradicional.",
     orthographicPhoneticCurve: "Fonética muy fácil para hispanohablantes (5 vocales idénticas); pero sistema de escritura triple muy complejo (Hiragana, Katakana, 2.136 Kanji) y lenguaje honorífico (Keigo).",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Kana transparente, pero los kanji tienen múltiples lecturas on/kun contextuales.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Enorme densidad de homófonos kanji que suenan idénticos al escucharse.",
     regions: ["Asia"]
   },
   {
@@ -263,6 +301,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Alemán estándar (Hochdeutsch) estricto en medios escritos, pero gran lealtad a los dialectos orales (bávaro, suizo-alemán, austríaco).",
     untranslatedTreasures: "Enormes fondos de filosofía idealista, tratados de psicología, teología, musicología y crítica arquitectónica que pierden su precisión al traducirse.",
     orthographicPhoneticCurve: "Ortografía bastante lógica y fonética; 4 casos gramaticales (nominativo, acusativo, dativo, genitivo) y 3 géneros gramaticales.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Correspondencia grafema-a-fonema muy sistemática; diptongos y umlauts fijos.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Ensordecimiento final (d suena t), doble consonante y variantes s/ss/ß.",
     regions: ["Europa"]
   },
   {
@@ -289,6 +331,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "El indonesio y el malayo estándar son mutuamente inteligibles al 95%.",
     untranslatedTreasures: "La literatura de la independencia indonesia, crónicas orales malayas de navegantes, y foros de desarrollo y tecnología comunitaria del sudeste asiático.",
     orthographicPhoneticCurve: "Alfabeto latino 100% fonético; SIN conjugaciones de tiempo, SIN género, SIN plurales irregulares; sistema de afijos lógico.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Alfabeto latino totalmente fonético reformado; 1 grafema = 1 sonido sin tonos.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "Correspondencia biunívoca casi perfecta; lo que oyes se escribe exactamente igual.",
     regions: ["Asia"]
   },
   {
@@ -315,6 +361,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Hindustani en la conversación diaria; bifurcación en registros formales literarios.",
     untranslatedTreasures: "Océanos de literatura épica sagrada, poesía sufí, comentarios espirituales y sátiras sociales del siglo XX que nunca salieron de la India.",
     orthographicPhoneticCurve: "Escritura Devanagari para Hindi y Perso-árabe para Urdu; fonología con consonantes aspiradas y retroflejas.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Escritura devanagari muy fonética y científica; signos silábicos precisos.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Fiel a retroflejas y aspiradas; exige dominar matras vocálicas y virama.",
     regions: ["Asia"]
   },
   {
@@ -341,6 +391,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "El dialecto de Estambul es el estándar indiscutible; abre las puertas a entender uzbeko y azerí.",
     untranslatedTreasures: "Poesía mística derviche, literatura modernista de la República de Atatürk, y crónicas históricas bizantino-otomanas.",
     orthographicPhoneticCurve: "Alfabeto latino fonético casi perfecto; aglutinación matemáticamente regular; armonía vocálica estricta; sin género.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Alfabeto latino perfectamente fonético desde 1928; 1 letra = 1 fonema estricto.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "100% biunívoco sin excepciones; pronunciación y ortografía coinciden totalmente.",
     regions: ["Europa", "Oriente Medio"]
   },
   {
@@ -367,6 +421,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "El dialecto de Zanzíbar (Kiunguja) es el estándar formal respetado en todos los países.",
     untranslatedTreasures: "Cuentos populares bantúes, proverbios metafóricos orales y reflexiones sobre la identidad panafricana poscolonial.",
     orthographicPhoneticCurve: "Alfabeto latino 100% fonético; 5 vocales idénticas al español; sin tonos; sistema fascinante de clases de sustantivos con prefijos concordantes.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía latina 100% fonética; 5 vocales puras y acento fijo en penúltima sílaba.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "Sin letras mudas ni irregularidades; relación sonido-grafema directa e inmediata.",
     regions: ["África"]
   },
   {
@@ -393,6 +451,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "El persa de Teherán, el darí afgano y el tayiko (escrito en cirílico) son inteligibles al 85%+.",
     untranslatedTreasures: "La cumbre de las joyas no traducidas: bibliotecas enteras de poesía mística, metáforas sufíes, crónicas de cortes persas y reflexiones existenciales que los orientalistas consideran intraducibles sin perder su musicalidad.",
     orthographicPhoneticCurve: "Gramática indoeuropea muy sencilla (sin género, sin casos); orden SOV; alfabeto perso-árabe cursivo.",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Abjad sin vocales cortas (a, e, o); exige conocer el vocabulario para leerlo.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Varios caracteres heredados suenan idénticos (4 para /z/, 3 para /s/, 2 para /t/).",
     regions: ["Oriente Medio", "Asia"]
   },
   {
@@ -419,6 +481,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "División entre bloques oriental (central, balear) y occidental (valenciano, leridano) con total inteligibilidad mutua.",
     untranslatedTreasures: "Enorme fondo de narrativa mediterránea contemporánea (Mercè Rodoreda, Joan Sales, Quim Monzó) y ensayos de humanidades.",
     orthographicPhoneticCurve: "8 vocales tónicas (distinción e/o abierta y cerrada), vocal neutra en el bloque oriental y dígrafo l·l.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Ortografía normativa muy regular; acentos abiertos y cerrados fijan el timbre.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Neutralización vocálica átona oriental (vocal neutra) y dígrafos consonánticos.",
     regions: ["Europa"]
   },
   {
@@ -445,6 +511,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Tres bloques (occidental, central, oriental) con inteligibilidad del 95%+ y puente directo a la fonología portuguesa.",
     untranslatedTreasures: "Poesía lírica del Rexurdimento (Rosalía de Castro, Castelao), literatura de realismo mágico atlántico y crónica rural profunda.",
     orthographicPhoneticCurve: "7 vocales tónicas (con distinción abierta/cerrada), 5 átonas, sin sibilantes sonoras y ortografía muy cercana al castellano.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía fonética muy transparente con 7 vocales orales y reglas de acento claras.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Casi 1:1; leves alternancias normativas b/v y terminaciones -ón / -án.",
     regions: ["Europa"]
   },
   {
@@ -471,6 +541,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Dialectos lengadocien (base estándar), provenzal, gascón (aranés), auvernés y limosín.",
     untranslatedTreasures: "La lírica trovadoresca original en su musicalidad genuina, epopeyas de la Cruzada Albigense, la obra maestra 'Mirèio' de Mistral y crónicas rurales provenzales.",
     orthographicPhoneticCurve: "Grafía clásica unificada cercana al catalán, vocales nasales sutiles, diptongos ricos y conservación de consonantes oclusivas.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Grafía clásica alibertina con reglas fonológicas regulares entre dialectos.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Consonantes finales mudas en varias variantes y neutralizaciones vocálicas.",
     regions: ["Europa"]
   },
   {
@@ -497,6 +571,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Italiano estándar con rica tradición dialectal (siciliano, napolitano, véneto, toscano).",
     untranslatedTreasures: "Ensayos renacentistas inéditos, crítica cinematográfica del neorrealismo y tratados culinarios históricos.",
     orthographicPhoneticCurve: "Ortografía fonética transparente; vocales claras, consonantes dobles geminadas (/tt/, /ss/).",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Muy transparente; reglas claras c/ch y g/gh; solo ambigüedad en acento tónico.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy predecible; las consonantes dobles geminadas son audibles y se escriben dobles.",
     regions: ["Europa"]
   },
   {
@@ -523,6 +601,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Variedad de Seúl estándar frente a dialectos regionales (Gyeongsang, Jeolla, Jeju).",
     untranslatedTreasures: "Webtoons serializados, novela gráfica vanguardista y poesía tradicional sijo no adaptada.",
     orthographicPhoneticCurve: "Alfabeto Hangul altamente lógico y científico; fonética con consonantes tensas y aspiradas.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Alfabeto Hangul sumamente fonético; reglas lógicas de asimilación entre bloques.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Reglas de asimilación (batchim): sonidos idénticos provienen de letras finales distintas.",
     regions: ["Asia"]
   },
   {
@@ -549,6 +631,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Distinción tonal y léxica entre dialectos del norte (Hanoi), centro (Huế) y sur (Saigón).",
     untranslatedTreasures: "Literatura poética de la época dinástica y memorias contemporáneas del siglo XX sin traducción occidental.",
     orthographicPhoneticCurve: "Escritura en alfabeto latino con diacríticos (chữ Quốc ngữ), 6 tonos contorneados.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Alfabeto Quốc ngữ sistemático; marcas diacríticas precisas para vocales y 6 tonos.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Variación dialectal norte/sur; consonantes iniciales y finales que coinciden.",
     regions: ["Asia"]
   },
   {
@@ -575,6 +661,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Diferencias sutiles de entonación y léxico entre holandés septentrional y flamenco belga.",
     untranslatedTreasures: "Tratados de derecho marítimo y de navegación de la Edad de Oro holandesa y filosofía moderna de Spinoza.",
     orthographicPhoneticCurve: "Diptongos únicos (/œy/, /ɛi/), consonante fricativa velar /x/ (g).",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Reglas ortográficas lógicas de sílabas abiertas y cerradas (vocales simples/dobles).",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Ensordecimiento final (d suena t) y dígrafos idénticos al oído (ei/ij, ou/au).",
     regions: ["Europa"]
   },
   {
@@ -601,6 +691,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Alta uniformidad estándar moderna con dialecto silesio y casubio reconocidos.",
     untranslatedTreasures: "Fantasía épica centroeuropea, poesía vanguardista del siglo XX y tratados de lógica matemática.",
     orthographicPhoneticCurve: "Ortografía latina con dígrafos (sz, cz, rz) y vocales nasales (ą, ę); ricos grupos consonánticos.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Dígrafos cz, sz, rz consistentes y regulares; acento siempre en penúltima sílaba.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Pares homófonos con idéntico sonido pero distinta grafía (rz = ż, u = ó, ch = h).",
     regions: ["Europa"]
   },
   {
@@ -627,6 +721,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Dialectos sur-occidentales, norteños y sudorientales que nutren la lengua estándar de Kiev.",
     untranslatedTreasures: "Crónicas históricas cosacas, poesía lírica de Lesya Ukrainka y literatura contemporánea de resistencia.",
     orthographicPhoneticCurve: "Alfabeto cirílico con letras particulares (і, ї, є, ґ); entonación melódica suave.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Cirílico muy fonético; sin reducción vocálica (las o se leen siempre como o).",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Alta correspondencia sonido-letra; ortografía muy fiel a la lengua oral.",
     regions: ["Europa"]
   },
   {
@@ -653,6 +751,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Diferencia notable entre checo formal escrito (spisovná) y checo común coloquial (obecná čeština).",
     untranslatedTreasures: "Sátiras políticas del teatro del absurdo (Václav Havel) y novelas modernistas de la época de entreguerras.",
     orthographicPhoneticCurve: "Consonante única en el mundo: la vibrante alveolar fricativa /r̝/ (ř); acento siempre en la primera sílaba.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía diacrítica regular casi perfecta; acento siempre en la 1ª sílaba.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy fonético; leves distinciones de sonido idéntico (i/y, ů/ú).",
     regions: ["Europa"]
   },
   {
@@ -679,6 +781,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Cercanía léxica evidente con el español y el italiano, enriquecida con aportes eslavos históricos.",
     untranslatedTreasures: "Tratados de mística y filosofía de Mircea Eliade y poesía melancólica de Mihai Eminescu.",
     orthographicPhoneticCurve: "Ortografía fonética basada en el latín; vocales especiales ă (/ə/) e î/â (/ɨ/).",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía latina prácticamente fonética; 1 letra = 1 sonido sin geminadas.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy directo y regular; mínima ambigüedad limitada a â / î.",
     regions: ["Europa"]
   },
   {
@@ -705,6 +811,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Alta inteligibilidad mutua pasiva con el noruego y el danés (tríada escandinava).",
     untranslatedTreasures: "Sagas nórdicas medievales preservadas, poesía lírica de Tranströmer y obras teatrales de Strindberg.",
     orthographicPhoneticCurve: "Entonación tonal musical de dos acentos melódicos y sonido fricativo sjöljudet (/ɧ/).",
+    readingTransparencyLevel: "Moderada",
+    readingTransparencyNote: "Buena consistencia general, pero pronunciación dependiente de vocales suaves/duras.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Múltiples combinaciones para el sonido sj (sj, sk, stj, skj) y consonantes dobles.",
     regions: ["Europa"]
   },
   {
@@ -731,6 +841,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Convivencia oficial de dos estándares escritos: Bokmål (mayoritario) y Nynorsk.",
     untranslatedTreasures: "Ensayos de ecología profunda (Arne Næss) y literatura de exploradores árticos sin traducción.",
     orthographicPhoneticCurve: "Gramática germánica simplificada sin conjugaciones por persona; acento tonal melódico.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Ortografía bokmål bastante regular y predecible a partir del texto.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Consonantes mudas etimológicas (d final, g en og) y alternancias en consonantes dobles.",
     regions: ["Europa"]
   },
   {
@@ -757,6 +871,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Fuerte reducción vocálica y fenómeno fonético de oclusión glotal stød (/ʔ/).",
     untranslatedTreasures: "Diarios de Søren Kierkegaard y cartas de navegación atlántica medieval.",
     orthographicPhoneticCurve: "Rica gama de vocales abiertas y semiconsonante blanda /ð/; ortografía más conservadora que la pronunciación.",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Fuerte divergencia texto-habla; gran reducción de consonantes intermedias y vocales.",
+    listeningSpellingLevel: "Difícil",
+    listeningSpellingNote: "Pronunciación glotal (stød) y asimilación extrema dificultan escribir al oír.",
     regions: ["Europa"]
   },
   {
@@ -783,6 +901,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Gran contraste entre el finés formal estándar (kirjakieli) y el habla cotidiana (puhekieli).",
     untranslatedTreasures: "Cantos rúnicos ancestrales del Kalevala y literatura modernista de Tove Jansson en versión original.",
     orthographicPhoneticCurve: "Armonía vocálica estricta; 15 casos gramaticales sufijados; ortografía 100% fonética 1:1.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Estándar mundial de transparencia: 100% 1 a 1, acento siempre en la 1ª sílaba.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "Correspondencia biunívoca absoluta; vocales y consonantes dobles se escriben tal cual.",
     regions: ["Europa"]
   },
   {
@@ -809,6 +931,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Basado en el dialecto shtokaviano, con variantes čakavianas y kajkavianas históricas.",
     untranslatedTreasures: "Textos en escritura glagolítica medieval y literatura lírica dálmata del siglo XVI.",
     orthographicPhoneticCurve: "Escritura en alfabeto latino con diacríticos (č, ć, š, ž, đ); pronunciación fonética muy precisa.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Principio fonológico de Vuk: 'lee como está escrito'; fonético al 100%.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "Correspondencia estricta entre cada sonido y su letra latina (č, ć, dž, đ, š, ž).",
     regions: ["Europa"]
   },
   {
@@ -835,6 +961,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Alta uniformidad en toda la cuenca danubiana con pequeñas variaciones transilvanas.",
     untranslatedTreasures: "Poesía metafísica de Attila József y prosa vanguardista de László Krasznahorkai.",
     orthographicPhoneticCurve: "Lengua aglutinante con armonía vocálica; 18 casos gramaticales; ortografía fonética precisa.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía sumamente regular; tildes marcan longitud y dígrafos (sz, zs, gy) son fijos.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy predecible; solo leves asimilaciones fonéticas en compuestos.",
     regions: ["Europa"]
   },
   {
@@ -861,6 +991,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Hebreo moderno estándar (Ivrit) con raíces bíblicas y rabínicas milenarias.",
     untranslatedTreasures: "Comentarios rabínicos medievales, filosofía cabalística original y prosa moderna de Etgar Keret.",
     orthographicPhoneticCurve: "Escritura abyad de derecha a izquierda (RTL) basada en raíces consonánticas trilíteras (shoresh).",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Abjad sin vocales (niqud) en el uso diario; exige deducir el patrón morfológico.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Varias letras confluyen en el mismo sonido moderno (Tet/Tav, Kaf/Qof, Bet/Vav).",
     regions: ["Oriente Medio"]
   },
   {
@@ -887,6 +1021,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Dialecto central de Bangkok como norma estándar frente al Isan (noreste) y variedades norteñas.",
     untranslatedTreasures: "Crónicas épicas del Ramakien y tratados budistas tradicionales en hojas de palma.",
     orthographicPhoneticCurve: "Alfabeto propio sin espacios entre palabras (scriptura continua), 5 tonos tonales distintivos.",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Abugida de 44 consonantes en 3 clases tonales con complejas reglas; sin espacios.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Múltiples letras para un mismo sonido (5 para /kʰ/), basadas en etimología sánscrita.",
     regions: ["Asia"]
   },
   {
@@ -913,6 +1051,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Inteligibilidad mutua muy alta con el indonesio, compartiendo vocabulario base austronesio.",
     untranslatedTreasures: "Crónicas de los Reyes Malayos (Sejarah Melayu) y poesía panteísta pantun tradicional.",
     orthographicPhoneticCurve: "Escritura en alfabeto latino (Rumi) sin conjugaciones verbales complejas ni tonos.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía latina rumi totalmente estandarizada y fonética; sin letras mudas.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "Totalmente transparente; la palabra hablada se escribe de forma directa e inmediata.",
     regions: ["Asia"]
   },
   {
@@ -939,6 +1081,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Variedad de Calcuta y Daca como estándares cultos compartidos.",
     untranslatedTreasures: "Inmensa tradición poética lírica del Renacimiento Bengalí y ensayos filosóficos humanistas.",
     orthographicPhoneticCurve: "Alfabeto alfasilábico bengalí de gran elegancia caligráfica; fonética vocálica rica en /ɔ/ y /o/.",
+    readingTransparencyLevel: "Moderada",
+    readingTransparencyNote: "Abugida con vocal inherente /ɔ/ o /o/ no siempre explícita y densas ligaduras.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Tres letras sibilantes (শ, ষ, স) y dos nasales que suenan casi idénticas.",
     regions: ["Asia"]
   },
   {
@@ -965,6 +1111,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Gramática idéntica al hindi en el registro coloquial; vocabulario culto persa y árabe.",
     untranslatedTreasures: "Poemas místicos sufíes en dísticos ghazal y crónicas del Imperio Mogol.",
     orthographicPhoneticCurve: "Escritura en caligrafía persa-árabe Nastaliq de derecha a izquierda (RTL).",
+    readingTransparencyLevel: "Difícil",
+    readingTransparencyNote: "Caligrafía nastaliq del persa/árabe; habitualmente sin marcas vocálicas cortas.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Varios grafemas de origen árabe suenan idénticos en urdu (para /z/, /s/, /t/).",
     regions: ["Asia"]
   },
   {
@@ -991,6 +1141,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Escritura en Gurmukhi en India y en Shahmukhi (árabe) en Pakistán.",
     untranslatedTreasures: "Versos sagrados del Guru Granth Sahib y poesía romántica tradicional de Heer Ranjha.",
     orthographicPhoneticCurve: "Una de las pocas lenguas indoeuropeas modernas con tono fonémico melódico.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Alfabeto Gurmukhi fonético y geométrico; vocales bien delimitadas.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Los tonos tonogénicos derivan históricamente de consonantes aspiradas sonoras.",
     regions: ["Asia"]
   },
   {
@@ -1017,6 +1171,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Variedad culta estandarizada compartida por comunidades en India y el extranjero.",
     untranslatedTreasures: "Autobiografía y escritos éticos de Mahatma Gandhi en su redacción original guyaratí.",
     orthographicPhoneticCurve: "Escritura alfasilábica derivada del Devanagari sin la línea horizontal superior (shirorekha).",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Abugida fonética sin trazo superior horizontal; lectura directa y consistente.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Alta correspondencia entre fonema percibido y símbolo gráfico.",
     regions: ["Asia"]
   },
   {
@@ -1043,6 +1201,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Variedades costeras konkani y deshi del interior con base en la ciudad de Pune.",
     untranslatedTreasures: "Tratados de poesía devocional de Tukaram y crónicas de Shivaji Maharaj.",
     orthographicPhoneticCurve: "Escrito en alfabeto Devanagari; consonantes retroflejas y vocales abiertas.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Devanagari con correspondencia fonémica sistemática para cada sonido maratí.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Gran regularidad al dictado con clara diferenciación gráfica.",
     regions: ["Asia"]
   },
   {
@@ -1069,6 +1231,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Diglosia marcada entre el tamil literario formal (Centamil) y el habla coloquial (Koduntamil).",
     untranslatedTreasures: "Poemas del Sangam (siglo II a.C.) y el tratado ético Tirukkural, pilares de la sabiduría asiática.",
     orthographicPhoneticCurve: "Alfabeto silábico tamil de trazos circulares; fonemas retroflejos y líquidas distintivas.",
+    readingTransparencyLevel: "Moderada",
+    readingTransparencyNote: "Una misma consonante se sonoriza entre vocales o tras nasales según reglas fijas.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Ortografía silábica simplificada sin distinciones de aspiración indoeuropea.",
     regions: ["Asia"]
   },
   {
@@ -1095,6 +1261,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Descrito por eruditos coloniales como el 'Italiano de Oriente' porque todas sus palabras terminan en vocal.",
     untranslatedTreasures: "Versos épicos de Srinatha y canciones devocionales poéticas de Annamayya.",
     orthographicPhoneticCurve: "Escritura redondeada y armónica; todas las palabras concluyen sonoramente en vocal pura.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Abugida silábica circular con altísima precisión fonética; todas terminan en vocal.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy predecible; correspondencia inmediata del sonido al símbolo.",
     regions: ["Asia"]
   },
   {
@@ -1121,6 +1291,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Diferenciación entre el canarés costero (Mangalore), el norteño y el estándar de Mysore.",
     untranslatedTreasures: "Inscripciones poéticas de Kavirajamarga (siglo IX) y versos filosóficos de Vachana sahitya.",
     orthographicPhoneticCurve: "Alfasilabario curvado derivado del Brahmi; fonología dravídica con armonía consonántica.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Escritura silábica altamente estructurada y fonéticamente rigurosa.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Gran coherencia entre la articulación y los caracteres gráficos al dictado.",
     regions: ["Asia"]
   },
   {
@@ -1147,6 +1321,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Palíndromo perfecto en su nombre en alfabeto latino (MALAYALAM); rica influencia sánscrita.",
     untranslatedTreasures: "Tratados astronómicos y matemáticos de la Escuela de Kerala del siglo XIV.",
     orthographicPhoneticCurve: "Escritura malayalam con el mayor número de letras consonánticas del sur de la India.",
+    readingTransparencyLevel: "Fácil",
+    readingTransparencyNote: "Repertorio gráfico completo para registrar con exactitud cada matiz articulatorio.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Consistencia notable; grafemas dedicados para retroflejas y nasales.",
     regions: ["Asia"]
   },
   {
@@ -1173,6 +1351,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Euskera batua (unificado) estandarizado por Euskaltzaindia en 1968 junto a dialectos históricos (vizcaíno, guipuzcoano).",
     untranslatedTreasures: "Lírica oral tradicional bertsolaritza y mitología preindoeuropea sobre Mari y las fuerzas naturales.",
     orthographicPhoneticCurve: "Lengua ergativa-absolutiva y aglutinante; pronunciación limpia muy cercana a los fonemas del español.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía del euskera batua oficial: 100% fonética, sin excepciones ni letras mudas.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Diferenciación rigurosa de sibilantes (s, z, x) y africadas (ts, tz, tx) audibles.",
     regions: ["Europa"]
   },
   {
@@ -1199,6 +1381,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Quechua sureño (Cusco-Collao) y Quechua norteño (Kichwa ecuatoriano) con alta vitalidad oral.",
     untranslatedTreasures: "Drama Ollantay de época incaica, oraciones agrícolas del Haylli y poesía elegíaca andina.",
     orthographicPhoneticCurve: "Lengua aglutinante y sufijante; consonantes oclusivas simples, aspiradas y eyectivas (/k'/, /t'/).",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía oficial de 3 vocales (a, i, u); reglas sumamente fonéticas y directas.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy regular; solo requiere distinguir velares (k) y postvelares (q) al oído.",
     regions: ["América"]
   },
   {
@@ -1225,6 +1411,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Uso generalizado del Jopará (fusión fluida y natural de español y guaraní en la vida cotidiana).",
     untranslatedTreasures: "Cantos sagrados cosmogónicos de los Mbyá Guaraní (Ayvu Rapyta) y crónicas de las misiones jesuíticas.",
     orthographicPhoneticCurve: "Nasalidad fonémica distintiva en vocales y consonantes; consonante oclusiva glotal puso'i (/ʔ/).",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Alfabeto achegety fonético; tildes nasales explícitas y acento final por defecto.",
+    listeningSpellingLevel: "Muy fácil",
+    listeningSpellingNote: "1 letra = 1 sonido estricto; el apóstrofo puso marca con exactitud la oclusión glotal.",
     regions: ["América"]
   },
   {
@@ -1251,6 +1441,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Fuerte identidad comunitaria en La Paz, El Alto y el departamento de Puno.",
     untranslatedTreasures: "Lógica formal aimara estudiada por científicos modernos y relatos orales del Tata Inti.",
     orthographicPhoneticCurve: "Consonantes oclusivas simples, aspiradas y glotalizadas; 3 vocales básicas con alargamiento.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Alfabeto unificado fonémico; 3 vocales y correspondencia biunívoca total.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Distingue con fidelidad al dictado consonantes simples, aspiradas y glotalizadas.",
     regions: ["América"]
   },
   {
@@ -1277,6 +1471,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Variantes de la Huasteca, la Sierra de Puebla y el Valle Central con raíces históricas clásicas.",
     untranslatedTreasures: "Cantares mexicanos, poemas de Nezahualcóyotl sobre la fugacidad de la vida y el Códice Florentino.",
     orthographicPhoneticCurve: "Consonante lateral africada /tɬ/ (tl); palabras aglutinantes de gran belleza descriptiva.",
+    readingTransparencyLevel: "Muy fácil",
+    readingTransparencyNote: "Ortografía fonética estandarizada; dígrafos tl, tz, ch fijos y acento penúltimo.",
+    listeningSpellingLevel: "Fácil",
+    listeningSpellingNote: "Muy consistente; el saltillo (corte glotal) se marca de forma regular con h.",
     regions: ["América"]
   },
   {
@@ -1303,6 +1501,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Lengua atabascana con estructura verbal morfológica extraordinariamente compleja.",
     untranslatedTreasures: "Cantos rituales de curación y armonía cósmica (Hózhǫ́) entonados por sanadores tradicionales.",
     orthographicPhoneticCurve: "Lengua tonal con consonantes eyectivas, nasales y oclusiones glotales; verbos con múltiples prefijos.",
+    readingTransparencyLevel: "Moderada",
+    readingTransparencyNote: "Ortografía latina rica en diacríticos: ogonek nasal, tonos agudos y consonantes glotales.",
+    listeningSpellingLevel: "Moderada",
+    listeningSpellingNote: "Requiere captar con precisión tonos agudos, nasalizaciones y cortes glotales.",
     regions: ["América"]
   },
   {
@@ -1329,6 +1531,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Variedad de Hong Kong y Guangzhou como estándares de gran prestigio internacional.",
     untranslatedTreasures: "Ópera cantonesa tradicional, refranes populares llenos de ingenio y literatura vernácula de Hong Kong.",
     orthographicPhoneticCurve: "6 a 9 tonos contorneados distintos; preserva las consonantes finales oclusivas del chino antiguo (-p, -t, -k).",
+    readingTransparencyLevel: "Muy difícil",
+    readingTransparencyNote: "Caracteres tradicionales con caracteres cantoneses propios; no indica fonemas ni tonos.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Enorme homofonía para sus 6-9 tonos; imposible deducir el caracter únicamente por el sonido.",
     regions: ["Asia"]
   },
   {
@@ -1355,6 +1561,10 @@ export const LANGUAGE_MATRIX: LanguageMatrixItem[] = [
     dialectalNote: "Mandarín estándar con fonética taiwanesa suave y caracteres chinos tradicionales no simplificados.",
     untranslatedTreasures: "Los grandes clásicos de la literatura china preservados en su tipografía original sin simplificar.",
     orthographicPhoneticCurve: "Caracteres tradicionales con rica etimología pictográfica y fonética; 4 tonos con tonalidad neutra.",
+    readingTransparencyLevel: "Muy difícil",
+    readingTransparencyNote: "Escritura logográfica tradicional clásica; exige memorizar la lectura y el tono de cada caracter.",
+    listeningSpellingLevel: "Muy difícil",
+    listeningSpellingNote: "Densidad homófona extrema; decenas de caracteres tradicionales comparten la misma sílaba.",
     regions: ["Asia"]
   },
 ];
