@@ -84,6 +84,12 @@ export const HomePage: React.FC<HomePageProps> = ({
   const [diaryNote, setDiaryNote] = useState("");
   const [diarySaved, setDiarySaved] = useState(false);
 
+  // States for expandable "..." languages in Reach Calculator
+  const [showMoreMastered, setShowMoreMastered] = useState(false);
+  const [searchMastered, setSearchMastered] = useState("");
+  const [showMoreLearning, setShowMoreLearning] = useState(false);
+  const [searchLearning, setSearchLearning] = useState("");
+
   // Calculate Reachable People in real time
   const reachStats = useMemo(() => {
     return calculateReachablePeople(masteredLanguageCodes, learningLanguageCodes);
@@ -115,20 +121,53 @@ export const HomePage: React.FC<HomePageProps> = ({
     });
   }, [searchQuery, matrixFilter]);
 
+  // Helper to check if a code or its dialect is active in a list
+  const isCodeActive = (activeCodes: string[], code: string) => {
+    return activeCodes.some(
+      (c) => c === code || c.startsWith(code + "-") || code.startsWith(c.split("-")[0])
+    );
+  };
+
+  // Default dialect mapping so selecting a base language (e.g. it, el, ko) maps to its full locale if available
+  const defaultDialectMap: Record<string, string> = {
+    es: "es-ES", en: "en-US", cmn: "cmn-CN", fr: "fr-FR", pt: "pt-BR",
+    ar: "ar-EG", ru: "ru-RU", ja: "ja-JP", de: "de-DE", hi: "hi-IN",
+    id: "id-ID", sw: "sw-KE", it: "it-IT", el: "el-GR", ko: "ko-KR",
+    tr: "tr-TR", nl: "nl-NL", pl: "pl-PL", uk: "uk-UA", cs: "cs-CZ",
+    ro: "ro-RO", sv: "sv-SE", nb: "nb-NO", da: "da-DK", fi: "fi-FI",
+    hr: "hr-HR", hu: "hu-HU", he: "he-IL", th: "th-TH", ms: "ms-MY",
+    bn: "bn-IN", ur: "ur-PK", pa: "pa-IN", gu: "gu-IN", mr: "mr-IN",
+    ta: "ta-IN", te: "te-IN", kn: "kn-IN", ml: "ml-IN", eu: "eu-ES",
+    qu: "qu-PE", gn: "gn-PY", ay: "ay-BO", nah: "nah-MX", nv: "nv-US",
+    yue: "yue-HK", zh: "zh-TW", ca: "ca-ES", gl: "gl-ES", oc: "oc-FR",
+  };
+
   // Quick toggle language helpers
   const toggleMasteredCode = (code: string) => {
-    if (masteredLanguageCodes.includes(code)) {
-      onUpdateMastered(masteredLanguageCodes.filter((c) => c !== code));
+    const isCurrentlySelected = isCodeActive(masteredLanguageCodes, code);
+    if (isCurrentlySelected) {
+      onUpdateMastered(
+        masteredLanguageCodes.filter(
+          (c) => c !== code && !c.startsWith(code + "-") && !code.startsWith(c.split("-")[0])
+        )
+      );
     } else {
-      onUpdateMastered([...masteredLanguageCodes, code]);
+      const codeToStore = defaultDialectMap[code] || code;
+      onUpdateMastered([...masteredLanguageCodes, codeToStore]);
     }
   };
 
   const toggleLearningCode = (code: string) => {
-    if (learningLanguageCodes.includes(code)) {
-      onUpdateLearning(learningLanguageCodes.filter((c) => c !== code));
+    const isCurrentlySelected = isCodeActive(learningLanguageCodes, code);
+    if (isCurrentlySelected) {
+      onUpdateLearning(
+        learningLanguageCodes.filter(
+          (c) => c !== code && !c.startsWith(code + "-") && !code.startsWith(c.split("-")[0])
+        )
+      );
     } else {
-      onUpdateLearning([...learningLanguageCodes, code]);
+      const codeToStore = defaultDialectMap[code] || code;
+      onUpdateLearning([...learningLanguageCodes, codeToStore]);
     }
   };
 
@@ -146,6 +185,42 @@ export const HomePage: React.FC<HomePageProps> = ({
     { code: "id", label: "Indonesio", flag: "🇮🇩" },
     { code: "sw", label: "Suajili", flag: "🇰🇪" },
   ];
+
+  const popularCodeSet = useMemo(() => new Set(POPULAR_OPTIONS.map((p) => p.code)), []);
+
+  // All other languages from the matrix sorted alphabetically
+  const OTHER_OPTIONS = useMemo(() => {
+    return LANGUAGE_MATRIX.filter((item) => !popularCodeSet.has(item.id))
+      .map((item) => ({
+        code: item.id,
+        label: item.name,
+        flag: item.flag,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label, "es"));
+  }, [popularCodeSet]);
+
+  // If a language from OTHER_OPTIONS is selected, keep it pinned in the visible primary list
+  const visibleMasteredPopular = useMemo(() => {
+    const extraSelected = OTHER_OPTIONS.filter((opt) => isCodeActive(masteredLanguageCodes, opt.code));
+    return [...POPULAR_OPTIONS, ...extraSelected];
+  }, [OTHER_OPTIONS, masteredLanguageCodes]);
+
+  const visibleLearningPopular = useMemo(() => {
+    const extraSelected = OTHER_OPTIONS.filter((opt) => isCodeActive(learningLanguageCodes, opt.code));
+    return [...POPULAR_OPTIONS, ...extraSelected];
+  }, [OTHER_OPTIONS, learningLanguageCodes]);
+
+  const filteredOtherMastered = useMemo(() => {
+    if (!searchMastered.trim()) return OTHER_OPTIONS;
+    const q = searchMastered.toLowerCase();
+    return OTHER_OPTIONS.filter((opt) => opt.label.toLowerCase().includes(q));
+  }, [OTHER_OPTIONS, searchMastered]);
+
+  const filteredOtherLearning = useMemo(() => {
+    if (!searchLearning.trim()) return OTHER_OPTIONS;
+    const q = searchLearning.toLowerCase();
+    return OTHER_OPTIONS.filter((opt) => opt.label.toLowerCase().includes(q));
+  }, [OTHER_OPTIONS, searchLearning]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-12 animate-fade-in">
@@ -441,29 +516,98 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
                 <span>Domino estos idiomas y dialectos:</span>
               </label>
-              <span className="text-xs text-gray-400 font-bold">
-                {masteredLanguageCodes.length} seleccionados
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 font-bold">
+                  {masteredLanguageCodes.length} seleccionados
+                </span>
+                {masteredLanguageCodes.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => onUpdateMastered([])}
+                    className="text-[10px] text-red-500 hover:text-red-700 dark:hover:text-red-400 font-bold underline"
+                    title="Deseleccionar todos los idiomas dominados"
+                  >
+                    Limpiar
+                  </button>
+                )}
+              </div>
             </div>
 
-            <div className="flex flex-wrap gap-1.5 p-3 rounded-2xl bg-gray-50 dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 min-h-[58px]">
-              {POPULAR_OPTIONS.map((opt) => {
-                const isSelected = masteredLanguageCodes.some((c) => c.startsWith(opt.code));
-                return (
-                  <button
-                    key={opt.code}
-                    onClick={() => toggleMasteredCode(opt.code)}
-                    className={`px-3 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
-                      isSelected
-                        ? "bg-emerald-600 text-white shadow-xs"
-                        : "bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-600 hover:bg-gray-100"
-                    }`}
-                  >
-                    <span>{opt.flag}</span>
-                    <span>{opt.label}</span>
-                  </button>
-                );
-              })}
+            <div className="p-3 rounded-2xl bg-gray-50 dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 min-h-[58px] space-y-2.5">
+              <div className="flex flex-wrap gap-1.5">
+                {visibleMasteredPopular.map((opt) => {
+                  const isSelected = isCodeActive(masteredLanguageCodes, opt.code);
+                  return (
+                    <button
+                      key={`mastered-${opt.code}`}
+                      type="button"
+                      onClick={() => toggleMasteredCode(opt.code)}
+                      className={`px-3 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                        isSelected
+                          ? "bg-emerald-600 text-white shadow-xs scale-102"
+                          : "bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-600 hover:bg-gray-100"
+                      }`}
+                    >
+                      <span>{opt.flag}</span>
+                      <span>{opt.label}</span>
+                    </button>
+                  );
+                })}
+
+                {/* Clickable "..." button */}
+                <button
+                  type="button"
+                  onClick={() => setShowMoreMastered(!showMoreMastered)}
+                  className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 ${
+                    showMoreMastered
+                      ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700 shadow-xs"
+                      : "bg-white dark:bg-slate-700 text-gray-600 dark:text-gray-300 border border-dashed border-gray-300 dark:border-slate-600 hover:border-emerald-500 hover:text-emerald-600"
+                  }`}
+                  title={showMoreMastered ? "Ocultar lista extendida" : `Ver todos los demás idiomas (${OTHER_OPTIONS.length} disponibles)`}
+                >
+                  <span className="font-black tracking-widest leading-none">...</span>
+                  <span className="text-[10px] font-bold">
+                    {showMoreMastered ? "Menos" : `+${OTHER_OPTIONS.length}`}
+                  </span>
+                </button>
+              </div>
+
+              {/* Collapsible Drawer with Search and Scrollable Grid */}
+              {showMoreMastered && (
+                <div className="pt-2 border-t border-gray-200/80 dark:border-slate-700 space-y-2 animate-fade-in">
+                  <div className="relative">
+                    <Search className="w-3.5 h-3.5 text-gray-400 absolute left-2.5 top-1/2 -translate-y-1/2" />
+                    <input
+                      type="text"
+                      value={searchMastered}
+                      onChange={(e) => setSearchMastered(e.target.value)}
+                      placeholder="Buscar entre los demás 40 idiomas (ej. Griego, Italiano, Coreano)..."
+                      className="w-full pl-8 pr-3 py-1.5 text-xs rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-hidden focus:ring-1 focus:ring-emerald-500"
+                    />
+                  </div>
+
+                  <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 scrollbar-thin">
+                    {filteredOtherMastered.map((opt) => {
+                      const isSelected = isCodeActive(masteredLanguageCodes, opt.code);
+                      return (
+                        <button
+                          key={`other-mastered-${opt.code}`}
+                          type="button"
+                          onClick={() => toggleMasteredCode(opt.code)}
+                          className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                            isSelected
+                              ? "bg-emerald-600 text-white shadow-xs"
+                              : "bg-white dark:bg-slate-700/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-600 hover:bg-gray-100"
+                          }`}
+                        >
+                          <span>{opt.flag}</span>
+                          <span>{opt.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -474,29 +618,98 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <span className="w-2.5 h-2.5 rounded-full bg-indigo-500" />
                 <span>Aprendo estos otros idiomas y dialectos:</span>
               </label>
-              <span className="text-xs text-gray-400 font-bold">
-                {learningLanguageCodes.length} seleccionados
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 font-bold">
+                  {learningLanguageCodes.length} seleccionados
+                </span>
+                {learningLanguageCodes.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => onUpdateLearning([])}
+                    className="text-[10px] text-red-500 hover:text-red-700 dark:hover:text-red-400 font-bold underline"
+                    title="Deseleccionar todos los idiomas en estudio"
+                  >
+                    Limpiar
+                  </button>
+                )}
+              </div>
             </div>
 
-            <div className="flex flex-wrap gap-1.5 p-3 rounded-2xl bg-gray-50 dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 min-h-[58px]">
-              {POPULAR_OPTIONS.map((opt) => {
-                const isSelected = learningLanguageCodes.some((c) => c.startsWith(opt.code));
-                return (
-                  <button
-                    key={opt.code}
-                    onClick={() => toggleLearningCode(opt.code)}
-                    className={`px-3 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
-                      isSelected
-                        ? "bg-indigo-600 text-white shadow-xs"
-                        : "bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-600 hover:bg-gray-100"
-                    }`}
-                  >
-                    <span>{opt.flag}</span>
-                    <span>{opt.label}</span>
-                  </button>
-                );
-              })}
+            <div className="p-3 rounded-2xl bg-gray-50 dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 min-h-[58px] space-y-2.5">
+              <div className="flex flex-wrap gap-1.5">
+                {visibleLearningPopular.map((opt) => {
+                  const isSelected = isCodeActive(learningLanguageCodes, opt.code);
+                  return (
+                    <button
+                      key={`learning-${opt.code}`}
+                      type="button"
+                      onClick={() => toggleLearningCode(opt.code)}
+                      className={`px-3 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                        isSelected
+                          ? "bg-indigo-600 text-white shadow-xs scale-102"
+                          : "bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-600 hover:bg-gray-100"
+                      }`}
+                    >
+                      <span>{opt.flag}</span>
+                      <span>{opt.label}</span>
+                    </button>
+                  );
+                })}
+
+                {/* Clickable "..." button */}
+                <button
+                  type="button"
+                  onClick={() => setShowMoreLearning(!showMoreLearning)}
+                  className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 ${
+                    showMoreLearning
+                      ? "bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-700 shadow-xs"
+                      : "bg-white dark:bg-slate-700 text-gray-600 dark:text-gray-300 border border-dashed border-gray-300 dark:border-slate-600 hover:border-indigo-500 hover:text-indigo-600"
+                  }`}
+                  title={showMoreLearning ? "Ocultar lista extendida" : `Ver todos los demás idiomas (${OTHER_OPTIONS.length} disponibles)`}
+                >
+                  <span className="font-black tracking-widest leading-none">...</span>
+                  <span className="text-[10px] font-bold">
+                    {showMoreLearning ? "Menos" : `+${OTHER_OPTIONS.length}`}
+                  </span>
+                </button>
+              </div>
+
+              {/* Collapsible Drawer with Search and Scrollable Grid */}
+              {showMoreLearning && (
+                <div className="pt-2 border-t border-gray-200/80 dark:border-slate-700 space-y-2 animate-fade-in">
+                  <div className="relative">
+                    <Search className="w-3.5 h-3.5 text-gray-400 absolute left-2.5 top-1/2 -translate-y-1/2" />
+                    <input
+                      type="text"
+                      value={searchLearning}
+                      onChange={(e) => setSearchLearning(e.target.value)}
+                      placeholder="Buscar entre los demás 40 idiomas (ej. Griego, Italiano, Coreano)..."
+                      className="w-full pl-8 pr-3 py-1.5 text-xs rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-hidden focus:ring-1 focus:ring-indigo-500"
+                    />
+                  </div>
+
+                  <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 scrollbar-thin">
+                    {filteredOtherLearning.map((opt) => {
+                      const isSelected = isCodeActive(learningLanguageCodes, opt.code);
+                      return (
+                        <button
+                          key={`other-learning-${opt.code}`}
+                          type="button"
+                          onClick={() => toggleLearningCode(opt.code)}
+                          className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                            isSelected
+                              ? "bg-indigo-600 text-white shadow-xs"
+                              : "bg-white dark:bg-slate-700/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-slate-600 hover:bg-gray-100"
+                          }`}
+                        >
+                          <span>{opt.flag}</span>
+                          <span>{opt.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
