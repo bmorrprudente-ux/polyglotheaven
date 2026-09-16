@@ -6595,7 +6595,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s4/s4_l1_es-AR.mp3"
           },
           "es-DO": {
-            text: "Clara, ponte atrás de mí. Esta tostadora ta pitando en código morse cada ve que salta el pan. Estoy convensío de que le pasa lo que hablamos al ministerio.",
+            text: "Clara, ponte detrás de mí. Esta tostadora emite pitidos en código morse cada vez que salta el pan. Estoy convencido de que le pasa lo que hablamos al ministerio.",
             stageDirection: "Susurrando con gravedad",
             audioUrl: "/audio/s4/s4_l1_es-DO.mp3"
           },
@@ -7028,7 +7028,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s4/s4_l2_es-AR.mp3"
           },
           "es-DO": {
-            text: "Hugo, eso no transmite na. Se te quemó el pan porque le subite to' el fogaje. Devuélvela ya y vamonos antes de que nos boten de aquí.",
+            text: "Hugo, eso no transmite nada. Se te quemó el pan porque le subiste toda la potencia. Devuélvela ya y vámonos antes de que nos boten de aquí.",
             stageDirection: "Seca y harta",
             audioUrl: "/audio/s4/s4_l2_es-DO.mp3"
           },
@@ -7894,7 +7894,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s4/s4_l4_es-AR.mp3"
           },
           "es-DO": {
-            text: "¿Tú ve, Clara? ¡El protocolo de seguridad nacional ta activo ya! Dígame, agente Bea, ¿cuál e' la clave pa' cancelar la operación?",
+            text: "¿Ves, Clara? ¡El protocolo de seguridad nacional ya está activo! Dígame, agente Bea, ¿cuál es la clave para cancelar la operación?",
             stageDirection: "Creído de la vida",
             audioUrl: "/audio/s4/s4_l4_es-DO.mp3"
           },
@@ -8327,7 +8327,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s4/s4_l5_es-AR.mp3"
           },
           "es-DO": {
-            text: "La contraseña e' «croqueta», pero hoy el encargado no vino a trabajar. Solo le' puedo dar un crédito o cambiarle la tostadora por una cafetera que habla.",
+            text: "La contraseña es «croqueta», pero hoy el encargado no vino a trabajar. Solo les puedo dar una nota de crédito o cambiarle la tostadora por una cafetera que habla.",
             stageDirection: "Inocente y tranquila",
             audioUrl: "/audio/s4/s4_l5_es-DO.mp3"
           },

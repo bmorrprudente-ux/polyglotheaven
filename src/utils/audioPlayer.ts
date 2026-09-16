@@ -85,27 +85,42 @@ class AudioPlayerService {
       utterance.lang = langCode;
       utterance.rate = this.playbackRate;
 
-      // Character-specific pitch tuning
+      // Character-specific pitch tuning (Hugo and Don Ramón must sound unmistakably male)
+      const isMale = characterId === "hugo" || characterId === "don_ramon";
       if (characterId === "mateo") {
-        utterance.pitch = 1.35; // Youthful / child prodigy
+        utterance.pitch = 1.15; // Youthful boy
       } else if (characterId === "don_ramon") {
-        utterance.pitch = 0.8;  // Deeper / mature rebel
+        utterance.pitch = 0.75;  // Deep mature male
         utterance.rate = this.playbackRate * 0.95;
       } else if (characterId === "bea") {
-        utterance.pitch = 1.2;  // Bright / cheerful
+        utterance.pitch = 1.1;  // Bright female
       } else if (characterId === "hugo") {
-        utterance.pitch = 1.05; // Dramatic
+        utterance.pitch = 0.88; // Masculine, dramatic tenor
       } else {
-        utterance.pitch = 1.0;  // Clara calm & steady
+        utterance.pitch = 1.0;  // Clara calm & steady female
       }
 
-      // Try selecting closest voice matching langCode
+      // Try selecting closest voice matching langCode with gender preference
       const voices = window.speechSynthesis.getVoices();
-      const matchedVoice = voices.find(
-        (v) => v.lang.toLowerCase() === langCode.toLowerCase() || v.lang.startsWith(langCode.split("-")[0])
+      const langPrefix = langCode.split("-")[0].toLowerCase();
+      const matchingLangVoices = voices.filter(
+        (v) => v.lang.toLowerCase() === langCode.toLowerCase() || v.lang.toLowerCase().startsWith(langPrefix)
       );
-      if (matchedVoice) {
-        utterance.voice = matchedVoice;
+
+      if (matchingLangVoices.length > 0) {
+        const malePatterns = /male|masculino|man\b|jorge|diego|carlos|juan|daniel|arthur|david|guy|henri|thomas|luca|matteo|alvaro|george|oliver|nicolas|paul|fred/i;
+        const femalePatterns = /female|femenino|woman\b|monica|samantha|victoria|paulina|elena|luciana|alice|amelie|clara|elvira|karen|zira/i;
+
+        let selectedVoice: SpeechSynthesisVoice | undefined;
+        if (isMale) {
+          selectedVoice = matchingLangVoices.find(v => malePatterns.test(v.name) && !femalePatterns.test(v.name))
+            || matchingLangVoices.find(v => !femalePatterns.test(v.name));
+        } else {
+          selectedVoice = matchingLangVoices.find(v => femalePatterns.test(v.name) && !malePatterns.test(v.name))
+            || matchingLangVoices.find(v => !malePatterns.test(v.name));
+        }
+
+        utterance.voice = selectedVoice || matchingLangVoices[0];
       }
 
       utterance.onstart = () => this.notify(id);
