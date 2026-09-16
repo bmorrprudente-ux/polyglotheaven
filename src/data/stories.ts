@@ -6555,4 +6555,93 @@ export const STORIES: Story[] = [
       },
     ]
   },
+  {
+    id: "story_4",
+    title: "La Devolución Imposible",
+    subtitle: "Hugo + Clara + Bea",
+    characters: ["hugo", "clara", "bea"],
+    conflictType: "Hugo sospecha espionaje en un electrodoméstico; Bea sigue el manual al pie de la letra.",
+    vocabularyTheme: "Compras, atención al cliente, electrodomésticos, quejas cotidianas y hogar.",
+    lines: [
+      {
+        id: "s4_l1",
+        characterId: "hugo",
+        defaultStageDirection: "Sosteniendo la tostadora envuelta en papel burbuja con máxima cautela",
+        expression: "conspiracy",
+        translations: {
+          "es-ES": {
+            text: "Clara, ponte detrás de mí. Esta tostadora emite pitidos en código morse cada vez que salta el pan. Estoy convencido de que transmite nuestras conversaciones al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s4_l2",
+        characterId: "clara",
+        defaultStageDirection: "Cruzándose de brazos y agitando el ticket arrugado",
+        expression: "skeptical",
+        translations: {
+          "es-ES": {
+            text: "Hugo, no transmite nada. Se te quemó la rebanada porque pusiste la potencia al máximo. Devuélvela ya y vámonos antes de que nos echen.",
+            stageDirection: "Con tono seco y cansado",
+            audioUrl: "/audio/s4/s4_l2_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s4_l3",
+        characterId: "bea",
+        defaultStageDirection: "Apareciendo tras el mostrador con una sonrisa radiante y un sello",
+        expression: "cheerful",
+        translations: {
+          "es-ES": {
+            text: "¡Buenos días! Según el manual de atención al cliente, para devolver electrodomésticos con sospechas de espionaje necesito el embalaje original y un testigo jurado.",
+            stageDirection: "Amable y completamente servicial",
+            audioUrl: "/audio/s4/s4_l3_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s4_l4",
+        characterId: "hugo",
+        defaultStageDirection: "Señalando a Bea con aire de triunfo absoluto",
+        expression: "smug",
+        translations: {
+          "es-ES": {
+            text: "¿Lo ves, Clara? ¡El protocolo de seguridad nacional ya está en marcha! Dígame, agente Bea, ¿cuál es la contraseña para cancelar la operación?",
+            stageDirection: "Envalentonado",
+            audioUrl: "/audio/s4/s4_l4_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s4_l5",
+        characterId: "bea",
+        defaultStageDirection: "Consultando una libreta de espiral con total naturalidad",
+        expression: "neutral",
+        translations: {
+          "es-ES": {
+            text: "La contraseña es «croqueta», pero hoy el encargado libra. Solo puedo darles un vale de tienda o cambiar la tostadora por una cafetera parlante.",
+            stageDirection: "Inocente y complaciente",
+            audioUrl: "/audio/s4/s4_l5_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s4_l6",
+        characterId: "clara",
+        defaultStageDirection: "Frotándose las sienes con resignación cósmica",
+        expression: "defeated",
+        translations: {
+          "es-ES": {
+            text: "Deme la cafetera parlante, Bea. Seguro que tiene conversaciones más sensatas que las que escucho en casa.",
+            stageDirection: "Suspirando rendida",
+            audioUrl: "/audio/s4/s4_l6_es-ES.mp3"
+          }
+        }
+      }
+    ]
+  }
 ];
+

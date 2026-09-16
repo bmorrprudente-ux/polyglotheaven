@@ -216,16 +216,16 @@ export const App: React.FC = () => {
           ? `switch_${nextLine.id}_${nextLine.characterId}`
           : `${nextLine.id}_${currentLang}`;
 
-        const nextTrans = nextLine.translations[currentLang];
+        const nextTrans = nextLine.translations[currentLang] || nextLine.translations["es-ES"];
         const nextAudioUrl = nextTrans?.audioUrl;
 
-        if (nextAudioUrl) {
+        if (nextAudioUrl && nextTrans) {
           setTimeout(() => {
             audioPlayer.playLine({
               id: nextAudioId,
               audioUrl: nextAudioUrl,
               spokenText: nextTrans.text,
-              langCode: currentLang,
+              langCode: nextLine.translations[currentLang] ? currentLang : "es-ES",
               characterId: nextLine.characterId as any
             });
             setActiveSpeakerId(nextLine.characterId);

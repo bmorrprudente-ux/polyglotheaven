@@ -117,12 +117,13 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
           const translation = line.translations[langCode] || line.translations["es-ES"];
           if (!translation) return null;
 
+          const isDraftFallback = !line.translations[langCode] && langCode !== "es-ES";
           const audioId = `${line.id}_${langCode}`;
           const isPlaying = activeAudioId === audioId;
           const voiceModel = lang.characterVoices[line.characterId];
           const hasVoice = lang.hasVoiceModel !== false && voiceModel && !voiceModel.label.includes("Sin modelo");
           const isFlagged = voiceFlagger.isFlagged(langCode);
-          const ipaString = translation.phonetic || getIpaTranscription(translation.text, langCode);
+          const ipaString = translation.phonetic || getIpaTranscription(translation.text, line.translations[langCode] ? langCode : "es-ES");
 
           return (
             <div
@@ -141,6 +142,14 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
                     <span className="font-bold text-xs text-gray-800 dark:text-slate-100 truncate">
                       {lang.name}
                     </span>
+                    {isDraftFallback && (
+                      <span
+                        className="text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/80 px-1.5 py-0.5 rounded flex-shrink-0"
+                        title="Este cuento aún no tiene traducción a este idioma. Mostrando versión original en español de España."
+                      >
+                        Borrador ES
+                      </span>
+                    )}
                     <button
                       type="button"
                       onClick={() => onOpenFactCard(lang)}
@@ -215,7 +224,7 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
                             id: audioId,
                             audioUrl: translation.audioUrl,
                             spokenText: translation.text,
-                            langCode: lang.code,
+                            langCode: line.translations[langCode] ? lang.code : "es-ES",
                             characterId: line.characterId,
                           });
                         }}

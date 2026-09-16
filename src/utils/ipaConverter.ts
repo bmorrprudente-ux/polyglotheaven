@@ -150,7 +150,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.":
       "[ˈe.so re.ke.ɾiˈɾa ˈu.na eɡs.tenˈsjõn de mi ˈto.ke ðe ˈke.ða. i ˈðez.ðe ˈu.na peɾs.peɡˈti.βa nu.tɾi.θjoˈnal, el eˈla.ðo kaˈli.fi.ka ˈko.mo ˈlak.te.o]",
     "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!":
-      "[ˈtɾa.to ˈe.t͡ʃo, ˈso.θjo! a mj eˈðað no ˈpi.ðo peɾˈmi.so, ˈpi.ðo eˈla.ðo ˈðo.βle i noz ˈβa.mos a pa.tiˈnaɾ!]"
+      "[ˈtɾa.to ˈe.t͡ʃo, ˈso.θjo! a mj eˈðað no ˈpi.ðo peɾˈmi.so, ˈpi.ðo eˈla.ðo ˈðo.βle i noz ˈβa.mos a pa.tiˈnaɾ!]",
+    "Clara, ponte detrás de mí. Esta tostadora emite pitidos en código morse cada vez que salta el pan. Estoy convencido de que transmite nuestras conversaciones al ministerio.":
+      "[ˈkla.ɾa, ˈpon̪.te ðeˈtɾaz ðe ˈmi. ˈes.ta tos.taˈðo.ɾa eˈmi.te piˈti.ðos eŋ ˈko.ði.ɣo ˈmoɾ.se ˈka.ða ˈβeθ ke ˈsal.ta el ˈpan. esˈtoj kom.benˈθi.ðo ðe ke tɾanzˈmi.te ˈnwes.tɾas kom.beɾ.saˈθjo.nes al mi.nisˈte.ɾjo]",
+    "Hugo, no transmite nada. Se te quemó la rebanada porque pusiste la potencia al máximo. Devuélvela ya y vámonos antes de que nos echen.":
+      "[ˈu.ɣo, no tɾanzˈmi.te ˈna.ða. se te keˈmo la re.βaˈna.ða poɾˈke puˈsis.te la poˈten̪.θja al ˈmak.si.mo. deˈbwel.βe.la ˈʝa i ˈba.mo.nos ˈan̪.tes ðe ke nos ˈe.t͡ʃen]",
+    "¡Buenos días! Según el manual de atención al cliente, para devolver electrodomésticos con sospechas de espionaje necesito el embalaje original y un testigo jurado.":
+      "[bwe.noz ˈði.as! seˈɣun el maˈnwal de a.tenˈθjon al ˈkljen̪.te, ˈpa.ɾa de.βolˈβeɾ e.lek.tɾo.ðoˈmes.ti.kos kon sosˈpe.t͡ʃaz ðe es.pjoˈna.xe ne.θeˈsi.to el em.baˈla.xe o.ɾi.xiˈnal i un tesˈti.ɣo xuˈɾa.ðo]",
+    "¿Lo ves, Clara? ¡El protocolo de seguridad nacional ya está en marcha! Dígame, agente Bea, ¿cuál es la contraseña para cancelar la operación?":
+      "[lo ˈβes, ˈkla.ɾa? el pɾo.toˈko.lo ðe se.ɣu.ɾiˈðað na.θjoˈnal ʝa esˈta em ˈmaɾ.t͡ʃa! ˈdi.ɣa.me, aˈxen̪.te ˈbe.a, ˈkwal ˈez la kon̪.tɾaˈse.ɲa ˈpa.ɾa kan.θeˈlaɾ la o.pe.ɾaˈθjon?]",
+    "La contraseña es «croqueta», pero hoy el encargado libra. Solo puedo darles un vale de tienda o cambiar la tostadora por una cafetera parlante.":
+      "[la kon̪.tɾaˈse.ɲa ˈes kɾoˈke.ta, ˈpe.ɾo ˈoj el eŋ.kaɾˈɣa.ðo ˈli.βɾa. ˈso.lo ˈpwe.ðo ˈðaɾ.les um ˈba.le ðe ˈtjen̪.da o kamˈbjaɾ la tos.taˈðo.ɾa poɾ ˈu.na ka.feˈte.ɾa paɾˈlan̪.te]",
+    "Deme la cafetera parlante, Bea. Seguro que tiene conversaciones más sensatas que las que escucho en casa.":
+      "[ˈde.me la ka.feˈte.ɾa paɾˈlan̪.te, ˈbe.a. seˈɣu.ɾo ke ˈtje.ne kom.beɾ.saˈθjo.nez ˈmas senˈsa.tas ke las ke esˈku.t͡ʃo eŋ ˈka.sa]"
   },
 
   "ca-ES": {
