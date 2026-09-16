@@ -51,7 +51,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Isso exigirá um prolongamento da minha hora de deitar. E do ponto de vista nutricional, o gelado qualifica-se como laticínio.":
       "[ˈi.su i.zi.ʒiˈɾa ũ pɾu.lõ.ɡɐˈmẽ.tu ðɐ ˈmi.ɲɐ ˈɔ.ɾɐ ðɨ dɐjˈtaɾ. i du ˈpõ.tu ðɨ ˈviʃ.tɐ nu.tɾi.sjuˈnaɫ, u ʒɨˈla.ðu kwɐ.liˈfi.kɐ.sɨ ˈko.mu lɐ.tiˈsi.nju]",
     "Negócio fechado, parceiro! Na minha idade não peço licença, peço gelado duplo e vamos andar de skate!":
-      "[nɨˈɣɔ.sju fɨˈʃa.ðu, pɐɾˈsɐj.ɾu! nɐ ˈmi.ɲɐ iˈða.ðɨ nɐ̃w̃ ˈpɛ.su liˈsẽ.sɐ, ˈpɛ.su ʒɨˈla.ðu ˈdu.plu i ˈvɐ.muʃ ɐ̃ˈdaɾ ðɨ ˈskejt!]"
+      "[nɨˈɣɔ.sju fɨˈʃa.ðu, pɐɾˈsɐj.ɾu! nɐ ˈmi.ɲɐ iˈða.ðɨ nɐ̃w̃ ˈpɛ.su liˈsẽ.sɐ, ˈpɛ.su ʒɨˈla.ðu ˈdu.plu i ˈvɐ.muʃ ɐ̃ˈdaɾ ðɨ ˈskejt!]",
+    "Clara, fica atrás de mim. Esta torradeira emite bipes em código morse cada vez que o pão salta. Estou convencido de que transmite as nossas conversas para o ministério.":
+      "[ˈkla.ɾɐ, ˈfi.kɐ ɐˈtɾaʒ ðɨ ˈmĩ. ˈeʃ.tɐ tu.rɐˈðej.ɾɐ eˈmi.tɨ ˈbi.pɨz ẽj ˈkɔ.ði.ɣu ˈmɔɾ.sɨ ˈka.ðɐ ˈveʃ kɨ u ˈpɐ̃w ˈsaɫ.tɐ. ʃtoi kõ.vẽˈsi.ðu ðɨ kɨ tɾɐ̃ʒˈmi.tɨ ɐʒ ˈnɔ.sɐʃ kõˈvɛɾ.sɐʃ pɐ.ɾɐ u mi.niʃˈtɛ.ɾju]",
+    "Hugo, não transmite nada. Queimaste a fatia porque puseste a potência no máximo. Devolve isso já e vamos embora antes que nos ponham na rua.":
+      "[ˈu.ɣu, nɐ̃w tɾɐ̃ʒˈmi.tɨ ˈna.ðɐ. kejˈmaʃ.tɨ ɐ fɐˈti.ɐ peɾˈkɨ puˈzeʃ.tɨ ɐ puˈtẽ.sjɐ nu ˈma.ksi.mu. dɨˈvɔɫ.vɨ ˈi.su ˈʒa i ˈvɐ.muz ẽjˈbɔ.ɾɐ ˈɐ̃.tɨʃ kɨ nuʃ ˈpõ.ɲɐ̃w̃ nɐ ˈʁu.ɐ]",
+    "Bom dia! Segundo o manual de apoio ao cliente, para devolver eletrodomésticos com suspeitas de espionagem preciso da embalagem original e de uma testemunha juramentada.":
+      "[bõ ˈdi.ɐ! sɨˈɣũ.du u mɐˈnwaɫ dɨ ɐˈpoj.w aɫ kliˈẽ.tɨ, pɐ.ɾɐ dɨ.voɫˈveɾ e.lɛ.tɾu.ðuˈmɛʃ.ti.kuʃ kõ suʃˈpej.tɐʒ ðeʃ.pjuˈna.ʒɐ̃j pɾɨˈsi.zu dɐ ẽ.bɐˈla.ʒɐ̃j̃ o.ɾi.ʒiˈnaɫ i dɨ ˈu.mɐ tɨʃ.tɨˈmu.ɲɐ ʒu.ɾɐ.mẽˈta.ðɐ]",
+    "Estás a ver, Clara? O protocolo de segurança nacional já está em marcha! Diga-me, agente Bea, qual é a palavra-passe para abortar a operação?":
+      "[ʃtaʒ ɐ ˈveɾ, ˈkla.ɾɐ? u pɾu.tuˈkɔ.lu dɨ sɨ.ɣuˈɾɐ̃.sɐ nɐ.sjuˈnaɫ ʒa ʃta ẽj̃ ˈmaɾ.ʃɐ! ˈdi.ɡɐ.mɨ, ɐˈʒẽ.tɨ ˈbe.ɐ, ˈkwaɫ ˈɛ ɐ pɐˈla.vɾɐ ˈpa.sɨ pɐ.ɾɐ ɐ.βuɾˈtaɾ ɐ o.pɨ.ɾɐˈsɐ̃w̃?]",
+    "A palavra-passe é «croquete», mas o gerente hoje está de folga. Só posso passar um vale de loja ou trocar a torradeira por uma máquina de café falante.":
+      "[ɐ pɐˈla.vɾɐ ˈpa.sɨ ˈɛ kɾuˈkɛ.tɨ, mɐʒ u ʒɨˈɾẽ.tɨ ˈo.ʒɨ ʃta dɨ ˈfɔɫ.ɡɐ. ˈsɔ ˈpɔ.su pɐˈsaɾ ũ ˈva.lɨ dɨ ˈlo.ʒɐ ow tɾuˈkaɾ ɐ tu.rɐˈðej.ɾɐ poɾ ˈu.mɐ ˈma.ki.nɐ ðɨ kɐˈfɛ fɐˈlɐ̃.tɨ]",
+    "Dê-me a máquina de café falante, Bea. Com certeza terá conversas mais sensatas do que as parvoíces que ouço em casa.":
+      "[ˈde.mɨ ɐ ˈma.ki.nɐ ðɨ kɐˈfɛ fɐˈlɐ̃.tɨ, ˈbe.ɐ. kõ sɨɾˈte.zɐ tɨˈɾa kõˈvɛɾ.sɐʒ ˈmajʃ sẽˈsa.tɐʒ du kɨ ɐʒ pɐɾ.vuˈi.sɨʃ kɨ ˈo.sw ẽj̃ ˈka.zɐ]"
   },
 
   "pt-BR": {
@@ -84,7 +96,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Isso vai exigir estender meu horário de dormir. E do ponto de vista nutricional, sorvete se qualifica como laticínio.":
       "[ˈi.su vaj e.ziˈʒiʁ es.tẽˈdeʁ mew oˈɾa.ɾju dʒi doʁˈmiʁ. i du ˈpõ.tu dʒi ˈvis.tɐ nu.tɾi.sjoˈnaw, soʁˈve.tʃi si kwa.liˈfi.kɐ ˈko.mu la.tʃiˈsi.nju]",
     "Fechou, parceiro! Na minha idade não peço permissão, peço sorvete duplo e bora pro skate!":
-      "[feˈʃow, paʁˈsej.ɾu! na ˈmi.ɲɐ iˈda.dʒi nɐ̃w̃ ˈpɛ.su peʁ.miˈsɐ̃w̃, ˈpɛ.su soʁˈve.tʃi ˈdu.plu i ˈbɔ.ɾa pɾu ˈskejt!]"
+      "[feˈʃow, paʁˈsej.ɾu! na ˈmi.ɲɐ iˈda.dʒi nɐ̃w̃ ˈpɛ.su peʁ.miˈsɐ̃w̃, ˈpɛ.su soʁˈve.tʃi ˈdu.plu i ˈbɔ.ɾa pɾu ˈskejt!]",
+    "Clara, fica atrás de mim. Essa torradeira tá apitando em código morse toda vez que o pão pula. Tenho certeza de que ela tá mandando nossas conversas pro ministério.":
+      "[ˈkla.ɾɐ, ˈfi.kɐ ɐˈtɾaz dʒi ˈmĩ. ˈe.sɐ to.haˈdej.ɾɐ ta ɐ.piˈtɐ̃.du ẽj ˈkɔ.dʒi.ɡu ˈmɔɾ.si ˈto.dɐ ˈveʃ ki u ˈpɐ̃w̃ ˈpu.lɐ. ˈtẽj.ɲu seɾˈte.zɐ dʒi ki ˈe.lɐ ta mɐ̃ˈdɐ̃.dw ˈnɔ.sɐs kõˈvɛɾ.sɐs pɾu mi.nisˈtɛ.ɾju]",
+    "Hugo, não tá transmitindo nada. Você queimou a torrada porque colocou a potência no talo. Devolve logo e vamo embora antes que botem a gente pra fora.":
+      "[ˈu.ɡu, nɐ̃w̃ ta tɾɐ̃z.miˈtʃĩ.du ˈna.dɐ. voˈse kejˈmow a toˈha.dɐ poɾˈki ko.loˈkow a poˈtẽ.sjɐ nu ˈta.lu. dʒeˈvɔw.vi ˈlo.ɡw i ˈvɐ̃.mw ẽj̃ˈbɔ.ɾɐ ˈɐ̃.tʃis ki ˈbɔ.tẽj̃ a ˈʒẽ.tʃi pɾa ˈfo.ɾɐ]",
+    "Bom dia! Segundo o manual de atendimento ao cliente, pra devolver eletrodomésticos com suspeita de espionagem eu preciso da embalagem original e de uma testemunha juramentada.":
+      "[bõ ˈdʒi.ɐ! seˈɡũ.du u mɐ.nuˈaw dʒi a.tẽ.dʒiˈmẽ.tw aw kliˈẽ.tʃi, pɾa de.vowˈveɾ e.lɛ.tɾo.doˈmɛs.tʃi.kws kõ susˈpej.tɐ dʒi es.pjoˈna.ʒẽj̃ ew pɾeˈsi.zu da ẽ.baˈla.ʒẽj̃ o.ɾi.ʒiˈnaw i dʒi ˈu.mɐ tes.teˈmu.ɲɐ ʒu.ɾa.mẽˈta.dɐ]",
+    "Tá vendo, Clara? O protocolo de segurança nacional já tá em andamento! Me diga, agente Bea, qual é a senha pra cancelar a operação?":
+      "[ta ˈvẽ.du, ˈkla.ɾɐ? u pɾo.toˈkɔ.lu dʒi se.ɡuˈɾɐ̃.sɐ nɐ.sjoˈnaw ʒa ta ẽj̃ ɐ̃.dɐˈmẽ.tu! mi ˈdʒi.ɡɐ, aˈʒẽ.tʃi ˈbe.ɐ, ˈkwaɫ ˈɛ a ˈsẽ.ɲɐ pɾa kɐ̃.seˈlaɾ a o.pe.ɾaˈsɐ̃w̃?]",
+    "A senha é «croquete», mas hoje o gerente tá de folga. Só posso dar um vale-compras ou trocar a torradeira por uma cafeteira que fala.":
+      "[a ˈsẽ.ɲɐ ˈɛ kɾoˈkɛ.tʃi, mas ˈo.ʒi u ʒeˈɾẽ.tʃi ta dʒi ˈfɔw.ɡɐ. ˈsɔ ˈpɔ.su da ũ ˈva.li ˈkõ.pɾɐz ow tɾoˈkaɾ a to.haˈdej.ɾɐ poɾ ˈu.mɐ kɐ.feˈtej.ɾɐ ki ˈfa.lɐ]",
+    "Me dá a cafeteira que fala, Bea. Tenho certeza de que ela tem conversas mais sensatas do que as loucuras que eu ouço em casa.":
+      "[mi ˈda a kɐ.feˈtej.ɾɐ ki ˈfa.lɐ, ˈbe.ɐ. ˈtẽj̃.ɲu seɾˈte.zɐ dʒi ki ˈe.lɐ ˈtẽj̃ kõˈvɛɾ.sɐz ˈmajz sẽˈsa.tɐz du ki az lowˈku.ɾɐs ki ew ˈo.sw ẽj̃ ˈka.zɐ]"
   },
 
   "fr-FR": {
@@ -117,7 +141,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Cela exigera une prolongation de mon couvre-feu. Et d'un point de vue nutritionnel, la glace est considérée comme un produit laitier.":
       "[sə.la ɛɡ.ziʒ.ʁa yn pʁɔ.lɔ̃.ɡa.sjɔ̃ də mɔ̃ kuvʁ.fø. e dœ̃ pwɛ̃ də vy ny.tʁi.sjɔ.nɛl, la ɡlas ɛ kɔ̃.si.de.ʁe kɔm œ̃ pʁɔ.dɥi lɛ.tje]",
     "Affaire conclue, partenaire ! À mon âge, pas besoin de permission : double dose de glace et en route pour le skatepark !":
-      "[a.fɛʁ kɔ̃.kly, paʁ.tə.nɛʁ! a mɔ̃ nɑʒ, pa bə.zwɛ̃ də pɛʁ.mi.sjɔ̃ : dubl doz də ɡlas e ɑ̃ ʁut puʁ lə skɛjt.paʁk!]"
+      "[a.fɛʁ kɔ̃.kly, paʁ.tə.nɛʁ! a mɔ̃ nɑʒ, pa bə.zwɛ̃ də pɛʁ.mi.sjɔ̃ : dubl doz də ɡlas e ɑ̃ ʁut puʁ lə skɛjt.paʁk!]",
+    "Clara, mets-toi derrière moi. Ce grille-pain émet des bips en morse chaque fois que le pain saute. Je suis convaincu qu'il transmet nos conversations au ministère.":
+      "[kla.ʁa, mɛ twa dɛ.ʁjɛʁ mwa. sə ɡʁij.pɛ̃ e.mɛ de bip ɑ̃ mɔʁs ʃak fwa kə lə pɛ̃ sot. ʒə sɥi kɔ̃.vɛ̃.ky k‿il tʁɑ̃s.mɛ no kɔ̃.vɛʁ.sa.sjɔ̃ o mi.nis.tɛʁ]",
+    "Hugo, ça ne transmet rien du tout. Tu as brûlé la tranche parce que tu as mis la puissance au maximum. Rends-le tout de suite et partons avant qu'on se fasse virer.":
+      "[y.ɡo, sa nə tʁɑ̃s.mɛ ʁjɛ̃ dy tu. ty a bʁy.le la tʁɑ̃ʃ paʁs kə ty a mi la pɥi.sɑ̃s o mak.si.mɔm. ʁɑ̃ lə tut sɥit e paʁ.tɔ̃ a.vɑ̃ k‿ɔ̃ sə fas vi.ʁe]",
+    "Bonjour ! D'après le manuel du service client, pour retourner un appareil suspecté d'espionnage, il me faut l'emballage d'origine et un témoin assermenté.":
+      "[bɔ̃.ʒuʁ! dap.ʁɛ lə ma.nɥɛl dy sɛʁ.vis klijɑ̃, puʁ ʁə.tuʁ.ne œ̃ n‿a.pa.ʁɛj sys.pɛk.te d‿ɛs.pjɔ.naʒ, il mə fo l‿ɑ̃.ba.laʒ d‿ɔ.ʁi.ʒin e œ̃ te.mwɛ̃ a.sɛʁ.mɑ̃.te]",
+    "Tu vois, Clara ? Le protocole de sécurité nationale est déjà lancé ! Dites-moi, agent Bea, quel est le mot de passe pour annuler l'opération ?":
+      "[ty vwa, kla.ʁa? lə pʁɔ.tɔ.kɔl də se.ky.ʁi.te na.sjɔ.nal ɛ de.ʒa lɑ̃.se! dit mwa, a.ʒɑ̃ be.a, kɛl ɛ lə mo d‿pas puʁ a.ny.le l‿ɔ.pe.ʁa.sjɔ̃?]",
+    "Le mot de passe est « croquette », mais le responsable est en jour de repos. Je peux seulement vous faire un avoir ou échanger le grille-pain contre une cafetière parlante.":
+      "[lə mo d‿pas ɛ kʁɔ.kɛt, mɛ lə ʁɛs.pɔ̃.sabl ɛ t‿ɑ̃ ʒuʁ də ʁə.po. ʒə pø søl.mɑ̃ vu fɛʁ œ̃ n‿a.vwaʁ u e.ʃɑ̃.ʒe lə ɡʁij.pɛ̃ kɔ̃tʁ yn ka.fə.tjɛʁ paʁ.lɑ̃t]",
+    "Donnez-moi la cafetière parlante, Bea. Elle aura sûrement des conversations plus sensées que celles que j'entends à la maison.":
+      "[dɔ.ne mwa la ka.fə.tjɛʁ paʁ.lɑ̃t, be.a. ɛl o.ʁa syʁ.mɑ̃ de kɔ̃.vɛʁ.sa.sjɔ̃ ply sɑ̃.se kə sɛl kə ʒ‿ɑ̃.tɑ̃ a la mɛ.zɔ̃]"
   },
 
   "es-ES": {
@@ -195,7 +231,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Això requerirà una extensió del meu toc de queda. I des d'una perspectiva nutricional, el gelat compta com a làctic.":
       "[əˈʃɔ rə.kə.ɾiˈɾa ˈu.nə əks.tən.siˈo ðəl ˈmɛw ˈtɔɡ ðə ˈkɛ.ðə. i dez ˈdu.nə pəɾs.pəkˈti.βə nu.tɾi.si.uˈnaɫ, əl ʒəˈlat ˈkom.tə ˈkɔm ə ˈlak.tik]",
     "Tracte fet, soci! A la meva edat no demano permís: demano gelat doble i anem a patinar!":
-      "[ˈtɾak.tə ˈfɛt, ˈsɔ.si! ə lə ˈme.βə əˈðat no ðəˈma.nu pəɾˈmis: dəˈma.nu ʒəˈlad ˈdɔ.βblə i əˈnɛm ə pə.tiˈna!]"
+      "[ˈtɾak.tə ˈfɛt, ˈsɔ.si! ə lə ˈme.βə əˈðat no ðəˈma.nu pəɾˈmis: dəˈma.nu ʒəˈlad ˈdɔ.βblə i əˈnɛm ə pə.tiˈna!]",
+    "Clara, posa't darrere meu. Aquesta torradora pita en codi morse cada vegada que salta el pa. Estic convençut que transmet les nostres converses al ministeri.":
+      "[ˈkla.ɾə, ˈpɔ.zəd dəˈreɾ ˈmɛw. əˈkɛs.tə tu.rəˈðo.ɾə ˈpi.tə ɛŋ ˈkɔ.ði ˈmɔɾ.sə ˈka.ðə βəˈɣa.ðə kə ˈsal.tə l ˈpa. əsˈtik kum.bəɲˈsud kə tɾənzˈmɛd ləz ˈnɔs.tɾəz kum.bəɾˈsa.zəz əl mi.nisˈtɛ.ɾi]",
+    "Hugo, no transmet res. Se t'ha cremat la llesca perquè has posat la potència al màxim. Torna-la ja i marxem abans que ens facin fora.":
+      "[ˈu.ɣu, no tɾənzˈmɛd ˈrɛs. sə ˈta kɾəˈmad lə ˈʎes.kə pəɾˈkɛ əs puˈzat lə puˈtɛn.si.ə əl ˈmak.sim. ˈtoɾ.nə.lə ˈʒa i məɾˈʃɛm əˈβanz kə əns ˈfa.sin ˈfɔ.ɾə]",
+    "Bon dia! Segons el manual d'atenció al client, per tornar electrodomèstics amb sospites d'espionatge necessito l'embalatge original i un testimoni jurat.":
+      "[ˈbɔn ˈdi.ə! səˈɣonz əl məˈnwal də.tən.siˈo əl kliˈen, pəɾ tuɾˈna ə.lɛk.tɾu.ðuˈmɛs.tiks əm susˈpi.təz ðəs.pjuˈna.dʒə nə.səˈsi.tu ləm.bəˈla.dʒə u.ɾi.ʒiˈnal i un təs.tiˈmɔ.ni ʒuˈɾat]",
+    "Ho veus, Clara? El protocol de seguretat nacional ja està en marxa! Digui'm, agent Bea, quina és la contrasenya per cancel·lar l'operació?":
+      "[u ˈβɛws, ˈkla.ɾə? əl pɾu.tuˈkɔl də sə.ɣu.ɾəˈtad nə.si.uˈnal ʒə sˈta əm ˈmaɾ.ʃə! ˈdi.ɣim, əˈʒen ˈbe.ə, ˈki.nə ˈez lə kun.tɾəˈsə.ɲə pəɾ kən.səˈla l u.pə.ɾə.siˈo?]",
+    "La contrasenya és «croqueta», però avui l'encarregat té festa. Només us puc donar un val de la botiga o canviar la torradora per una cafetera que parla.":
+      "[lə kun.tɾəˈsə.ɲə ˈez kɾuˈkɛ.tə, pəˈɾɔ əˈβuj ləŋ.kə.rəˈɣad ˈte ˈfɛs.tə. nuˈmez uz puk duˈna um ˈbal də lə ˈbɔ.ti.ɣə u kəɲˈbja lə tu.rəˈðo.ɾə pəɾ ˈu.nə kə.fəˈte.ɾə kə ˈpaɾ.lə]",
+    "Dóna'm la cafetera que parla, Bea. Segur que té converses amb més sentit que les que sento a casa.":
+      "[ˈdɔ.nəm lə kə.fəˈte.ɾə kə ˈpaɾ.lə, ˈbe.ə. səˈɣu kə ˈte kum.bɛɾˈsəz əm ˈmez sənˈtid kə ləz kə ˈsɛn.tu ə ˈka.zə]"
   },
   "gl-ES": {
     "Clara, non mires agora... pero esa maleta verde na mesa de fronte é moi sospeitosa.":
@@ -227,7 +275,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Iso requirirá unha extensión do meu toque de queda. E desde unha perspectiva nutricional, o xeado cualifícase como lácteo.":
       "[ˈi.sʊ re.ki.ɾiˈɾa ˈu.ɲɐ es.tenˈsjoŋ dʊ ˈmew ˈto.kɪ ðɪ ˈke.ðɐ. e ˈdɛz.ðɪ ˈu.ɲɐ peɾs.pekˈti.βɐ nu.tɾi.sjoˈnal, ʊ ʃeˈa.ðʊ kwɐ.liˈfi.kɐ.sɪ ˈkɔ.mʊ ˈlak.te.ʊ]",
     "Trato feito, compañeiro! Á miña idade non pido permiso: pido xeado dobre e imos patinar!":
-      "[ˈtɾa.tʊ ˈfej.tʊ, kom.pɐˈɲej.ɾʊ! a ˈmi.ɲɐ iˈða.ðɪ noŋ ˈpi.ðʊ peɾˈmi.sʊ: ˈpi.ðʊ ʃeˈa.ðʊ ˈdɔ.βɾɪ e ˈi.mʊs pɐ.tiˈnaɾ!]"
+      "[ˈtɾa.tʊ ˈfej.tʊ, kom.pɐˈɲej.ɾʊ! a ˈmi.ɲɐ iˈða.ðɪ noŋ ˈpi.ðʊ peɾˈmi.sʊ: ˈpi.ðʊ ʃeˈa.ðʊ ˈdɔ.βɾɪ e ˈi.mʊs pɐ.tiˈnaɾ!]",
+    "Clara, ponte detrás de min. Esta torradora emite asubíos en código morse cada vez que salta o pan. Estou convencido de que lle transmite as nosas conversas ao ministerio.":
+      "[ˈkla.ɾa, ˈpon̪.te deˈtɾaz ðe ˈmiŋ. ˈɛs.ta to.raˈðo.ɾa eˈmi.te a.suˈβi.os eŋ ˈkɔ.ði.ɣo ˈmɔɾ.se ˈka.ða ˈbeθ ke ˈsal.ta o ˈpaŋ. esˈtow kom.benˈθi.ðo ðe ke ʎe tɾanzˈmi.te az ˈnɔ.sas kom.beɾˈsa.sjos al mi.nisˈtɛ.ɾjo]",
+    "Hugo, non transmite nada. Queimóuseche a rebanda porque puxeches a potencia a tope. Devólvea xa e marchamos antes de que nos boten fóra.":
+      "[ˈu.ɣo, noŋ tɾanzˈmi.te ˈna.ða. kejˈmɔw.se.t͡ʃe a reˈβan̪.da poɾˈke puˈʃe.t͡ʃes a poˈtɛn̪.sja a ˈto.pe. deˈβɔl.βe.a ˈʃa i maɾˈt͡ʃa.mos ˈan̪.tes ðe ke noz ˈbɔ.teŋ ˈfɔ.ɾa]",
+    "Bos días! Segundo o manual de atención ao cliente, para devolver electrodomésticos con sospeitas de espionaxe preciso a embalaxe orixinal e unha testemuña xurada.":
+      "[ˈbɔz ˈdi.as! seˈɣun.do o maˈnwal de a.tenˈsjoŋ al kliˈen̪.te, ˈpa.ɾa de.βolˈβeɾ e.lɛk.tɾo.ðoˈmɛs.ti.kos kon sosˈpej.taz ðe es.pjoˈna.ʃe pɾeˈθi.so a em.baˈla.ʃe o.ɾi.ʃiˈnal i ˈu.ɲa tes.teˈmu.ɲa ʃuˈɾa.ða]",
+    "Velo, Clara? O protocolo de seguridade nacional xa está en marcha! Dígame, axente Bea, cal é o contrasinal para cancelar a operación?":
+      "[ˈbe.lo, ˈkla.ɾa? o pɾo.toˈkɔ.lo ðe se.ɣu.ɾiˈða.ðe na.sjoˈnal ʃa esˈta em ˈmaɾ.t͡ʃa! ˈdi.ɣa.me, aˈʃɛn̪.te ˈbe.a, ˈkal ˈɛ o kon.tɾa.siˈnal ˈpa.ɾa kan.θeˈlaɾ a o.pe.ɾaˈsjoŋ?]",
+    "O contrasinal é «croqueta», pero hoxe o encargado libra. Só vos podo dar un vale da tenda ou cambiar a torradora por unha cafeteira que fala.":
+      "[o kon.tɾa.siˈnal ˈɛ kɾoˈkɛ.ta, ˈpɛ.ɾo ˈo.ʃe o eŋ.kaɾˈɣa.ðo ˈli.βɾa. ˈsɔ βoz ˈpɔ.ðo ˈdaɾ um ˈba.le da ˈtɛn̪.da o kamˈbjaɾ a to.raˈðo.ɾa poɾ ˈu.ɲa ka.feˈtej.ɾa ke ˈfa.la]",
+    "Deme a cafeteira que fala, Bea. Seguro que ten conversas máis asisadas que as que teño que aturar na casa.":
+      "[ˈde.me a ka.feˈtej.ɾa ke ˈfa.la, ˈbe.a. seˈɣu.ɾo ke ˈtɛŋ kom.beɾˈsa.sjos ˈmajz a.siˈsa.ðas ke az ke ˈtɛ.ɲo ke a.tuˈɾaɾ na ˈka.sa]"
   },
   "oc-FR": {
     "Clara, agaches pas ara... mas aquela valisa verda sus la taula d'en fàcia es plan suspècta.":
@@ -259,7 +319,19 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Aquò demandarà una extension de ma cobrafuòc. E d'un ponch de vista nutricional, lo glaçat compta coma un produch lachièr.":
       "[aˈkɔ de.man.daˈɾa ˈy.nɔ eks.tenˈsju ðe ma ku.βɾaˈfwɔk. e dym punt͡ʃ ðe ˈbis.tɔ ny.tɾi.sjuˈnal, lu ɡlaˈsat ˈkun.tɔ ˈkɔ.mɔ ym pɾuˈdyt͡ʃ laˈt͡ʃje]",
     "Afhar conclús, sòci! A mon edat demandi pas ges de permission: demandi un glaçat doble e anam patinar!":
-      "[aˈfaɾ kuŋˈklys, ˈsɔ.si! a mun eˈdat deˈman.di pas d͡ʒez ðe peɾ.miˈsju: deˈman.di yŋ ɡlaˈsat ˈdu.βle e aˈnam pa.tiˈna!]"
+      "[aˈfaɾ kuŋˈklys, ˈsɔ.si! a mun eˈdat deˈman.di pas d͡ʒez ðe peɾ.miˈsju: deˈman.di yŋ ɡlaˈsat ˈdu.βle e aˈnam pa.tiˈna!]",
+    "Clara, te bota darrièr ieu. Aquela grasilhadeira bipa en còdi morse cada còp que lo pan sauta. Siái segur que transmet nòstras convèrsas al ministèri.":
+      "[ˈkla.ɾɔ, te ˈbu.to daˈrjeɾ ˈjew. aˈke.lo ɡɾa.zi.ʎaˈðej.ɾɔ ˈbi.po eŋ ˈkɔ.ði ˈmɔɾ.se ˈka.ðo kɔp ke lu pam ˈsaw.to. sjaj seˈɣyɾ ke tɾanzˈmet ˈnɔs.tɾoz kum.bɛɾˈsas al mi.nisˈtɛ.ɾi]",
+    "Hugo, transmet pas ren. As cremat la lesca perque as botat la poténcia a fons. Tòrna-la lèu e partèm abans que nos fòrabandisson.":
+      "[ˈy.ɣu, tɾanzˈmet pas reŋ. as kɾeˈmat la ˈles.ko peɾˈke as buˈtat la puˈten.sjo a funs. ˈtɔɾ.no.lo ˈlɛw e paɾˈtɛm aˈbans ke nuz fɔ.ɾa.βanˈdi.sun]",
+    "Bonjorn ! Segon lo manual de servici al client, per tornar d'electrodomestics amb de suspèctas d'espionatge me cal l'embalatge d'origina e un testimòni jurat.":
+      "[bunˈʒuɾ! seˈɣum lu maˈnwal de seɾˈbi.si al kliˈen, peɾ tuɾˈna de.lɛk.tɾu.ðuˈmɛs.tiks am de sysˈpɛk.toz des.pjuˈna.dʒe me kal ləm.baˈla.dʒe du.ɾiˈdʒi.no e ym tes.tiˈmɔ.ni dʒyˈɾat]",
+    "O ves, Clara? Lo protocòl de seguretat nacionala es ja en marcha! Digatz-me, agenta Bea, quina es la senhal per anullar l'operacion?":
+      "[u βes, ˈkla.ɾɔ? lu pɾu.tuˈkɔl de se.ɣy.ɾeˈtat na.sjuˈna.lo ez dʒa em ˈmaɾ.t͡ʃo! diˈɣaz.me, aˈdʒen.to ˈbe.o, ˈki.no ez la seˈɲal peɾ a.nyˈla lu.pe.ɾaˈsjum?]",
+    "La senhal es «croqueta», mas uèi lo responsable es en repaus. Vos pòdi sonque donar un bon de crompa o escambiar la grasilhadeira per una cafetièra que parla.":
+      "[la seˈɲal ez kɾuˈke.to, maz ˈwɛj lu res.punˈsa.ble ez em reˈpaws. buz ˈpɔ.ði suŋ.ke duˈna ym bum de ˈkɾum.po u es.kamˈbja la ɡɾa.zi.ʎaˈðej.ɾo peɾ ˈy.no ka.feˈtje.ɾo ke ˈpaɾ.lo]",
+    "Donatz-me la cafetièra que parla, Bea. Segur qu'a de convèrsas mai sensadas que çò qu'ausissi a l'ostal.":
+      "[duˈna.me la ka.feˈtje.ɾo ke ˈpaɾ.lo, ˈbe.o. seˈɣyɾ ka de kum.bɛɾˈsas maj senˈsa.ðoz ke sɔ kawˈsi.si a lusˈtal]"
   },
 };
 

@@ -6569,10 +6569,430 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Sosteniendo la tostadora envuelta en papel burbuja con máxima cautela",
         expression: "conspiracy",
         translations: {
+          "fr-CH": {
+            text: "Clara, mets-toi derrière moi. Ce grille-pain bipe en morse chaque fois que le pain saute. Je suis certain qu'il transmet nos discussions au ministère.",
+            stageDirection: "En chuchotant gravement",
+            audioUrl: "/audio/s4/s4_l1_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Clara, mets-toi derrière moi. Ce grille-pain émet des bips en morse chaque fois que le pain saute. Je suis convaincu qu'il transmet nos conversations au ministère, une fois !",
+            stageDirection: "En chuchotant gravement",
+            audioUrl: "/audio/s4/s4_l1_fr-BE.mp3"
+          },
           "es-ES": {
             text: "Clara, ponte detrás de mí. Esta tostadora emite pitidos en código morse cada vez que salta el pan. Estoy convencido de que transmite nuestras conversaciones al ministerio.",
             stageDirection: "Susurrando con gravedad",
             audioUrl: "/audio/s4/s4_l1_es-ES.mp3"
+          },
+          "es-MX": {
+            text: "Clara, ponte atrás de mí. Este tostador anda pitando en clave morse cada que bota el pan. Estoy segurísimo de que le transmite nuestras pláticas a la secretaría.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "Clara, ponete atrás mío. Esta tostadora tira pitidos en código morse cada vez que salta el pan. Estoy convencido de que le manda nuestras charlas al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "Clara, ponte atrás de mí. Esta tostadora ta pitando en código morse cada ve que salta el pan. Estoy convensío de que le pasa lo que hablamos al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "Clara, tírate detrás de mí. Esta tostadora emite pitidos en código morse cada vez que brinca el pan. Estoy seguro que le tira nuestras conversaciones al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "Clara, hágase detrás de mí. Este tostador pita en código morse cada vez que bota el pan. Estoy segurísimo de que le pasa nuestras charlas al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Clara, mets-toi derrière moi. Ce grille-pain émet des bips en morse chaque fois que le pain saute. Je suis convaincu qu'il transmet nos conversations au ministère.",
+            stageDirection: "Chuchotant avec gravité",
+            audioUrl: "/audio/s4/s4_l1_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Clara, place-toi en arrière de moi. Ce grille-pain-là fait des bips en morse à chaque fois que la toast saute. J'suis sûr qu'il envoie nos jasettes au ministère.",
+            stageDirection: "Chuchotant très sérieusement",
+            audioUrl: "/audio/s4/s4_l1_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Clara, viens derrière moi dêh ! Le grille-pain là bipe en morse quand le pain saute. Je suis calé qu'il envoie nos palabres au ministère !",
+            stageDirection: "En chuchotant avec inquiétude",
+            audioUrl: "/audio/s4/s4_l1_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Clara, fica atrás de mim. Essa torradeira tá apitando em código morse toda vez que o pão pula. Tenho certeza de que ela tá mandando nossas conversas pro ministério.",
+            stageDirection: "Sussurrando com gravidade",
+            audioUrl: "/audio/s4/s4_l1_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Clara, fica atrás de mim. Esta torradeira emite bipes em código morse cada vez que o pão salta. Estou convencido de que transmite as nossas conversas para o ministério.",
+            stageDirection: "Sussurrando com gravidade",
+            audioUrl: "/audio/s4/s4_l1_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Clara, mettiti dietro di me. Questo tostapane emette segnali in codice morse ogni volta che salta il pane. Sono convinto che trasmetta le nostre conversazioni al ministero.",
+            stageDirection: "Sussurrando con gravità",
+            audioUrl: "/audio/s4/s4_l1_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Clara, posa't darrere meu. Aquesta torradora pita en codi morse cada vegada que salta el pa. Estic convençut que transmet les nostres converses al ministeri.",
+            stageDirection: "Murmurant amb gravetat",
+            audioUrl: "/audio/s4/s4_l1_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Clara, treci în spatele meu. Acest prăjitor de pâine piuie în codul morse de fiecare dată când sare pâinea. Sunt convins că transmite conversațiile noastre la minister.",
+            stageDirection: "Șoptind grav",
+            audioUrl: "/audio/s4/s4_l1_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Clara, ponte detrás de min. Esta torradora emite asubíos en código morse cada vez que salta o pan. Estou convencido de que lle transmite as nosas conversas ao ministerio.",
+            stageDirection: "Susurrando con gravidade",
+            audioUrl: "/audio/s4/s4_l1_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Clara, te bota darrièr ieu. Aquela grasilhadeira bipa en còdi morse cada còp que lo pan sauta. Siái segur que transmet nòstras convèrsas al ministèri.",
+            stageDirection: "Murmurent amb gravetat",
+            audioUrl: "/audio/s4/s4_l1_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Clara, stell dich hinter mich. Dieser Toaster piept jedes Mal im Morsecode, wenn das Brot herausspringt. Ich bin überzeugt, dass er unsere Gespräche an das Ministerium übermittelt.",
+            stageDirection: "Ernst flüsternd",
+            audioUrl: "/audio/s4/s4_l1_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Clara, gang hinder mich. Dä Toaster piepst jedes Mal im Morsecode, wenn s'Brot usespringt. Ich bi sicher, dass er üsi Gspröch as Ministerium wyterleitet.",
+            stageDirection: "Ernsthaft flüschternd",
+            audioUrl: "/audio/s4/s4_l1_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Clara, ga achter me staan. Deze broodrooster piept in morsecode telkens als het brood omhoog springt. Ik ben ervan overtuigd dat hij onze gesprekken naar het ministerie doorseint.",
+            stageDirection: "Ernstig fluisterend",
+            audioUrl: "/audio/s4/s4_l1_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Clara, still deg bak meg. Denne brødristeren piper i morsekode hver gang brødet spretter opp. Jeg er overbevist om at den sender samtalene våre til departementet.",
+            stageDirection: "Hviskende med alvor",
+            audioUrl: "/audio/s4/s4_l1_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Clara, ställ dig bakom mig. Den här brödrosten piper i morsekod varje gång brödet hoppar upp. Jag är övertygad om att den överför våra samtal till ministeriet.",
+            stageDirection: "Viskande med allvar",
+            audioUrl: "/audio/s4/s4_l1_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Clara, stil dig bag mig. Denne brødrister bipper i morsekode, hver gang brødet springer op. Jeg er overbevist om, at den sender vores samtaler videre til ministeriet.",
+            stageDirection: "Hvidskende alvorligt",
+            audioUrl: "/audio/s4/s4_l1_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Клара, встань за мной. Этот тостер пищит азбукой Морзе каждый раз, когда выскакивает хлеб. Я убеждён, что он передаёт наши разговоры в министерство.",
+            stageDirection: "Зловеще шепчет",
+            audioUrl: "/audio/s4/s4_l1_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Кларо, стань за мною. Цей тостер пищить азбукою Морзе щоразу, коли вискакує хліб. Я переконаний, що він передає наші розмови в міністерство.",
+            stageDirection: "Тривожно шепоче",
+            audioUrl: "/audio/s4/s4_l1_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Clara, stań za mną. Ten toster piszczy alfabetem Morse'a za każdym razem, gdy wyskakuje chleb. Jestem przekonany, że transmituje nasze rozmowy do ministerstwa.",
+            stageDirection: "Szepcząc z powagą",
+            audioUrl: "/audio/s4/s4_l1_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Kláro, stoupni si za mě. Tenhle toustovač pípá v Morseově abecedě pokaždé, když vyskočí chleba. Jsem přesvědčený, že vysílá naše rozhovory na ministerstvo.",
+            stageDirection: "Vážně šeptá",
+            audioUrl: "/audio/s4/s4_l1_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Clara, stani iza mene. Ovaj toster pišti u Morseovom kodu svaki put kad kruh iskoči. Uvjeren sam da prenosi naše razgovore ministarstvu.",
+            stageDirection: "Ozbiljno šapće",
+            audioUrl: "/audio/s4/s4_l1_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Clara, mene minun taakseni. Tämä leivänpaahdin piippaa morsekoodilla joka kerta kun leipä ponnahtaa ylös. Olen vakuuttunut, että se välittää keskustelumme ministeriöön.",
+            stageDirection: "Kuiskaa vakavasti",
+            audioUrl: "/audio/s4/s4_l1_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Klára, állj mögém! Ez a kenyérpirító morzekóddal csipog minden egyes alkalommal, amikor kiugrik a kenyér. Meggyőződésem, hogy továbbítja a beszélgetéseinket a minisztériumnak.",
+            stageDirection: "Vészjóslóan suttogva",
+            audioUrl: "/audio/s4/s4_l1_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Clara, jarri nire atzean. Txigorgailu honek morse kodean jotzen du txistua ogia jauzten den bakoitzean. Ziur nago gure elkarrizketak ministeriora bidaltzen ari dela.",
+            stageDirection: "Zinez xuxurlatuz",
+            audioUrl: "/audio/s4/s4_l1_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Clara, arkama geç. Bu ekmek kızartma makinesi, ekmek her fırladığında mors alfabesiyle bip sesi çıkarıyor. Konuşmalarımızı bakanlığa ilettiğine kesinlikle eminim.",
+            stageDirection: "Ciddi bir şekilde fısıldayarak",
+            audioUrl: "/audio/s4/s4_l1_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "クララ、俺の後ろに隠れるんだ。このトースター、パンが跳ね上がるたびにモールス信号でピピッて鳴ってる。俺たちの会話を省庁に送信してるに違いない。",
+            stageDirection: "深刻そうに囁く",
+            audioUrl: "/audio/s4/s4_l1_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "克拉拉，站在我身后。这台烤面包机每次面包弹出来时，都在发摩尔斯电码的哔哔声。我敢肯定它在把我们的谈话传给部里。",
+            stageDirection: "神色凝重地低语",
+            audioUrl: "/audio/s4/s4_l1_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "Clara，企喺我後面。呢部多士爐每次彈麵包嗰陣，都嗶嗶叫摩斯密碼。我肯定佢將我哋嘅說話傳緊去政府部門！",
+            stageDirection: "好嚴肅咁細細聲講",
+            audioUrl: "/audio/s4/s4_l1_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "클라라, 내 뒤로 숨어. 이 토스터는 빵이 튀어 오를 때마다 모스 부호로 삐삐 소리를 내고 있어. 우리 대화를 정부 부처로 전송하고 있는 게 분명해.",
+            stageDirection: "진지하게 속삭이며",
+            audioUrl: "/audio/s4/s4_l1_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "كلارا، قفي خلفي. هذه المحمصة تصدر إشارات بشفرة مورس في كل مرة يقفز فيها الخبز. أنا مقتنع بأنها تنقل محادثاتنا إلى الوزارة.",
+            stageDirection: "يهمس بجدية بالغة",
+            audioUrl: "/audio/s4/s4_l1_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "קלרה, תעמדי מאחוריי. המצנם הזה מצפצף בקוד מורס בכל פעם שהלחם קופץ. אני משוכנע שהוא משדר את השיחות שלנו למשרד הממשלתי.",
+            stageDirection: "לוחש בכובד ראש",
+            audioUrl: "/audio/s4/s4_l1_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "Clara, ponte detrás de mí. Esta tostadora pita en código morse cada vez que salta el pan. Estoy segurísimo de que le pasa nuestros cuentos al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "Clara, ponte detrás mío. Este tostador tira pitidos en código morse cada vez que salta el pan. Estoy cachando que le pasa nuestras conversaciones al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "Clara, ponte detrás de mí. Esta tostadora emite pitidos en código morse cada vez que salta el pan. Estoy convencido de que le sopla nuestras conversaciones al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "Clara, ponte detrás de mí. Esta tostadora emite pitidos en código morse cada ve que salta el pan. Estoy convencido de que le chivatea nuestras conversaciones al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "Clara, quédate detrás de mí. Esta tostadora pita en código morse cada vez que salta el pan. Estoy convencido de que transmite nuestras palabras al ministerio.",
+            stageDirection: "Susurrando con gravedad",
+            audioUrl: "/audio/s4/s4_l1_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Clara, get behind me. This toaster is beeping in morse code every time the bread pops up. I'm convinced it's transmitting our conversations to the ministry.",
+            stageDirection: "Gravely whispering",
+            audioUrl: "/audio/s4/s4_l1_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Clara, step behind me. This toaster is bleeping in morse code each time the toast pops up. I am quite convinced it is transmitting our conversations to the ministry.",
+            stageDirection: "Gravely whispering",
+            audioUrl: "/audio/s4/s4_l1_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Clara, get behind me lass. This toaster is bleepin' away in morse code every time the toast jumps. I'm fair certain it's sendin' our bleedin' blether to the ministry.",
+            stageDirection: "Whisperin' grimly",
+            audioUrl: "/audio/s4/s4_l1_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Clara, you get on behind me. That there toaster is a-beepin' in morse code every time the bread pops. I reckon it's sendin' our talk straight to the government.",
+            stageDirection: "Whispering dead serious",
+            audioUrl: "/audio/s4/s4_l1_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Clara, get behind me there. This toaster is beeping in proper morse code every time the toast pops so it is. I'm dead certain it's sending our talk to the ministry.",
+            stageDirection: "Whispering earnestly",
+            audioUrl: "/audio/s4/s4_l1_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Clara, get behind me mate. This bloody toaster is beeping in morse code every time the toast pops. Reckon it's sending our chat straight to the ministry.",
+            stageDirection: "Whispering gravely",
+            audioUrl: "/audio/s4/s4_l1_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Clara, jump behind me bro. This toaster's beeping in morse code every time the bread pops up. Pretty sure it's beaming our yarns to the ministry.",
+            stageDirection: "Whispering gravely",
+            audioUrl: "/audio/s4/s4_l1_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Clara, stand behind me hey. This toaster is beeping in morse code every time the bread pops. I'm lekker sure it's transmitting our chat to the ministry.",
+            stageDirection: "Whispering seriously",
+            audioUrl: "/audio/s4/s4_l1_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Clara, stay behind me o! This toaster dey beep morse code every time the bread jump up. I dey sure say e dey transmit our talk to ministry!",
+            stageDirection: "Whispering with fear",
+            audioUrl: "/audio/s4/s4_l1_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Clara, please get behind me only! This toaster is beeping in morse code every single time bread pops up. I am fully convinced it is transmitting our talks to the ministry.",
+            stageDirection: "Whispering solemnly",
+            audioUrl: "/audio/s4/s4_l1_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Clara, mets-toi derrière moi mon cher. Ce grille-pain fait des bruits en morse quand le pain saute. C'est sûr qu'il envoie nos causeries au ministère.",
+            stageDirection: "En chuchotant gravement",
+            audioUrl: "/audio/s4/s4_l1_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Clara, viens te mettre derrière moi. Ce grille-pain émet des signaux en morse dès que le pain sort. Je sais qu'il balance nos paroles au ministère.",
+            stageDirection: "Chuchotant gravement",
+            audioUrl: "/audio/s4/s4_l1_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Clara, põe-te atrás de mim ya. Essa torradeira está a apitar em código morse sempre que o pão salta. Tenho certeza que está a passar as nossas conversas ao ministério.",
+            stageDirection: "Sussurrando com ar sério",
+            audioUrl: "/audio/s4/s4_l1_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Clara, fica atrás de mim. Essa torradeira apita em código morse cada vez que o pão pula fora. Tenho a certeza que transmite a nossa conversa para o ministério.",
+            stageDirection: "Sussurrando com cautela",
+            audioUrl: "/audio/s4/s4_l1_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Clara, kom achter mij staan. Die broodrooster piept in morsecode telkens als het brood opspringt. Ik ben er zeker van dat hij onze gesprekken naar het ministerie doorstuurt.",
+            stageDirection: "Ernstig fluisterend",
+            audioUrl: "/audio/s4/s4_l1_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "كلارا، خليك وراي. هالحماصة تصفر بشفرة مورس كل ما نقز الخبز. متأكد إنها تنقل كلامنا للوزارة.",
+            stageDirection: "يهمس بجدية",
+            audioUrl: "/audio/s4/s4_l1_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "كلارا، اقفي ورايا. التوستر ده بيصفر بشفرة مورس كل ما العيش ينط. متأكد إنه بينقل كلامنا للوزارة.",
+            stageDirection: "بيهمس بقلق شديد",
+            audioUrl: "/audio/s4/s4_l1_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "كلارا، وقفي مورايا. هاد الشواية ديال الخبز كاتصوني بمورس كل ما قفز الخبز. راني مأكد باللي كاتوّصل هضرتنا للوزارة.",
+            stageDirection: "كايوشوش بجدية",
+            audioUrl: "/audio/s4/s4_l1_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "كلارا، وقفي وراي. هاي المحمصة بتصفر بشفرة مورس كل ما ينط الخبز. متأكد إنها بتنقل حكينا للوزارة.",
+            stageDirection: "بهمس بجدية",
+            audioUrl: "/audio/s4/s4_l1_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "كلارا، وكفي وراية. هاي الحماصة تدك بشفرة مورس كل ما يطفر الصمون. متأكد تنقل حجينا للوزارة.",
+            stageDirection: "يهمس بخوف وجدية",
+            audioUrl: "/audio/s4/s4_l1_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "克拉拉，站在我身後。這台烤麵包機每次麵包彈出來時，都在嗶嗶叫摩斯密碼。我敢肯定它在把我們的對話發送給部裡。",
+            stageDirection: "神色凝重地低語",
+            audioUrl: "/audio/s4/s4_l1_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "क्लारा, मेरे पीछे हो जाओ। यह टोस्टर जब भी ब्रेड उछलती है, मोर्स कोड में बीप करता है। मुझे पूरा यकीन है कि यह हमारी बातचीत मंत्रालय को भेज रहा है।",
+            stageDirection: "गंभीरता से फुसफुसाते हुए",
+            audioUrl: "/audio/s4/s4_l1_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "کلارا، میرے پیچھے ہو جاؤ۔ یہ ٹوسٹر جب بھی ڈبل روٹی اچھلتی ہے، مورس کوڈ میں بیپ کرتا ہے۔ مجھے پورا یقین ہے کہ یہ ہماری گفتگو وزارت کو بھیج رہا ہے۔",
+            stageDirection: "سنجیدگی سے سرگوشی کرتے ہوئے",
+            audioUrl: "/audio/s4/s4_l1_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "ক্লারা, আমার পেছনে দাঁড়াও। এই টোস্টারটি প্রতিবার পাউরুটি লাফিয়ে ওঠার সময় মোর্স কোডে বিপ শব্দ করে। আমি নিশ্চিত এটা আমাদের কথাবার্তা মন্ত্রণালয়ে পাঠাচ্ছে।",
+            stageDirection: "গভীর উদ্বেগে ফিসফিস করে",
+            audioUrl: "/audio/s4/s4_l1_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਕਲਾਰਾ, ਮੇਰੇ ਪਿੱਛੇ ਹੋ ਜਾ। ਇਹ ਟੋਸਟਰ ਹਰ ਵਾਰ ਜਦੋਂ ਬਰੈੱਡ ਉਛਲਦੀ ਹੈ ਤਾਂ ਮੋਰਸ ਕੋਡ ਵਿੱਚ ਬੀਪ ਕਰਦਾ ਹੈ। ਮੈਨੂੰ ਪੂਰਾ ਯਕੀਨ ਹੈ ਕਿ ਇਹ ਸਾਡੀਆਂ ਗੱਲਾਂ ਮੰਤਰਾਲੇ ਨੂੰ ਭੇਜ ਰਿਹਾ ਹੈ।",
+            stageDirection: "ਗੰਭੀਰਤਾ ਨਾਲ ਫੁਸਫੁਸਾਉਂਦੇ ਹੋਏ",
+            audioUrl: "/audio/s4/s4_l1_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "ક્લેરા, મારી પાછળ ઊભી રહે. આ ટોસ્ટર જ્યારે પણ બ્રેડ બહાર કૂદે છે ત્યારે મોર્સ કોડમાં બીપ કરે છે. મને ખાતરી છે કે તે આપણી વાતો મંત્રાલયમાં મોકલી રહ્યું છે.",
+            stageDirection: "ગંભીરતાથી ફુસફુસાવતા",
+            audioUrl: "/audio/s4/s4_l1_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "क्लारा, माझ्या मागे हो. हा टोस्टर जेव्हा जेव्हा ब्रेड वर उडतो तेव्हा मोर्स कोडमध्ये बीप करतो. मला खात्री आहे की तो आपले संभाषण मंत्रालयाला पाठवत आहे.",
+            stageDirection: "गंभीरतेने कुजबुजत",
+            audioUrl: "/audio/s4/s4_l1_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "கிளாரா, என் பின்னால் நில். ரொட்டி மேலே எழும்பும் போதெல்லாம் இந்த டோஸ்டர் மோர்ஸ் குறியீட்டில் பீப் ஒலிக்கிறது. இது நம்முடைய உரையாடல்களை அமைச்சகத்திற்கு அனுப்புகிறது என்று நான் உறுதியாக நம்புகிறேன்.",
+            stageDirection: "தீவிரமாக கிசுகிசுக்கிறார்",
+            audioUrl: "/audio/s4/s4_l1_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "క్లారా, నా వెనుక నిలబడు. రొట్టె పైకి దూకినప్పుడల్లా ఈ టోస్టర్ మోర్స్ కోడ్‌లో బీప్ చేస్తుంది. ఇది మన సంభాషణలను మంత్రిత్వ శాఖకు ప్రసారం చేస్తోందని నేను నమ్ముతున్నాను.",
+            stageDirection: "తీవ్రంగా గుసగుసలాడుతూ",
+            audioUrl: "/audio/s4/s4_l1_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಕ್ಲಾರಾ, ನನ್ನ ಹಿಂದೆ ನಿಲ್ಲು. ಬ್ರೆಡ್ ಮೇಲಕ್ಕೆ ಪುಟಿಯುವಾಗಲೆಲ್ಲಾ ಈ ಟೋಸ್ಟರ್ ಮೋರ್ಸ್ ಕೋಡ್‌ನಲ್ಲಿ ಬೀಪ್ ಸದ್ದು ಮಾಡುತ್ತದೆ. ಇದು ನಮ್ಮ ಸಂಭಾಷಣೆಗಳನ್ನು ಸಚಿವಾಲಯಕ್ಕೆ ಕಳುಹಿಸುತ್ತಿದೆ ಎಂದು ನನಗೆ ಖಚಿತವಾಗಿದೆ.",
+            stageDirection: "ಗಂಭೀರವಾಗಿ ಪಿಸುಗುಟ್ಟುತ್ತಾ",
+            audioUrl: "/audio/s4/s4_l1_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "ക്ലാര, എന്റെ പിന്നിൽ നിൽക്കൂ. ബ്രെഡ് മുകളിലേക്ക് തെറിക്കുമ്പോഴെല്ലാം ഈ ടോസ്റ്റർ മോഴ്സ് കോഡിൽ ബീപ് ശബ്ദമുണ്ടാക്കുന്നു. ഇത് നമ്മുടെ സംഭാഷണങ്ങൾ മന്ത്രാലയത്തിലേക്ക് അയക്കുന്നുണ്ടെന്ന് എനിക്ക് ഉറപ്പാണ്.",
+            stageDirection: "ഗൗരവത്തോടെ മന്ത്രിക്കുന്നു",
+            audioUrl: "/audio/s4/s4_l1_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Clara, đứng ra sau tôi. Cái máy nướng bánh mì này phát ra tiếng bíp bằng mã Morse mỗi khi bánh mì nhảy lên. Tôi chắc chắn nó đang truyền các cuộc trò chuyện của chúng ta đến bộ ngành.",
+            stageDirection: "Thì thầm nghiêm trọng",
+            audioUrl: "/audio/s4/s4_l1_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "คลารา ไปยืนข้างหลังผม เครื่องปิ้งขนมปังเครื่องนี้ส่งสัญญาณเป็นรหัสมอร์สทุกครั้งที่ขนมปังเด้งขึ้นมา ผมมั่นใจว่ามันกำลังส่งบทสนทนาของเราไปที่กระทรวงแน่ๆ",
+            stageDirection: "กระซิบอย่างจริงจัง",
+            audioUrl: "/audio/s4/s4_l1_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Clara, berdiri di belakangku. Pemanggang roti ini berbunyi bip dalam kode morse setiap kali rotinya melompat. Aku yakin sekali pemanggang ini mengirim obrolan kita ke kementerian.",
+            stageDirection: "Berbisik dengan sungguh-sungguh",
+            audioUrl: "/audio/s4/s4_l1_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Clara, berdiri di belakang saya. Pembakar roti ini berbunyi bip dalam kod morse setiap kali roti melompat. Saya yakin ia menghantar perbualan kita kepada kementerian.",
+            stageDirection: "Berbisik dengan cemas",
+            audioUrl: "/audio/s4/s4_l1_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Clara, simama nyuma yangu. Kibaniko hiki kinalia kwa msimbo wa morse kila wakati mkate unaporuka. Nina hakika kinatuma mazungumzo yetu wizarani.",
+            stageDirection: "Akinong'ona kwa umakini",
+            audioUrl: "/audio/s4/s4_l1_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Clara, epyta che rapykuéri. Ko tostadora opoñemboty código morse-pe opa jey pan opóvo. Ajerovia omondo hína ñane ñe'ẽ ministeriopa.",
+            stageDirection: "Oñe'ẽkirirĩ vy'a'ỹre",
+            audioUrl: "/audio/s4/s4_l1_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Clara, qhepaypi sayay. Kay tanta kankanaqa morse qillqapim waqan sapa tanta phinkiptin. Yachanim rimayninchikta kamachikuq wasiman apachisqanta.",
+            stageDirection: "Pakallapi llakikuywan rimay",
+            audioUrl: "/audio/s4/s4_l1_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Clara, nayan qhipäxaru sayt'asim. Aka t'ant'a kankarxa morse chimpunwa axti sapa kutis t'ant'ax t'ijt'aski ukhaxa. Ukhamarakiw parlatanakasarux ministerioru apayaski.",
+            stageDirection: "Jallallaña arunaka ch'usat sasa",
+            audioUrl: "/audio/s4/s4_l1_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Clara, ximoquetza nocuitlapan. Inin tlaxcalchijchihualoni quiyehuatia tlaxicahualiztli código morse ihcuac tlaxcalli quiza. Neltiliztica quimonahuatilia totlatol inic ministerio.",
+            stageDirection: "Ichtacatzin tlatoltica",
+            audioUrl: "/audio/s4/s4_l1_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Clara, shikʼééʼ nízheeh. Díí bááh bibaʼ hólónígíí morse bizaad yee yáłtiʼ tʼáá áłahjįʼ bááh chʼégháahgo. Nihizaad tʼáá aaníí naatʼáanii yaa yíníłtsooz nísin.",
+            stageDirection: "Tsxį́įłgo hazhóʼó yáłtiʼ",
+            audioUrl: "/audio/s4/s4_l1_nv-US.mp3"
           }
         }
       },
@@ -6582,10 +7002,430 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Cruzándose de brazos y agitando el ticket arrugado",
         expression: "skeptical",
         translations: {
+          "fr-CH": {
+            text: "Hugo, il ne transmet rien du tout. Tu as brûlé la tranche parce que tu as mis la puissance à fond. Rends-le vite et partons avant qu'on nous sorte.",
+            stageDirection: "D'un ton sec et usé",
+            audioUrl: "/audio/s4/s4_l2_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Hugo, ça ne transmet rien du tout. Tu as cramé la tartine parce que tu as mis la molette à fond. Rends-le et tirons-nous avant qu'on se fasse jeter dehors.",
+            stageDirection: "Sec et bien lassé",
+            audioUrl: "/audio/s4/s4_l2_fr-BE.mp3"
+          },
           "es-ES": {
             text: "Hugo, no transmite nada. Se te quemó la rebanada porque pusiste la potencia al máximo. Devuélvela ya y vámonos antes de que nos echen.",
             stageDirection: "Con tono seco y cansado",
             audioUrl: "/audio/s4/s4_l2_es-ES.mp3"
+          },
+          "es-MX": {
+            text: "Hugo, no transmite nada. Se te quemó la rebanada porque le subiste a todo el power. Regrésala ya y vámonos antes de que nos corran.",
+            stageDirection: "Con tono seco y harta",
+            audioUrl: "/audio/s4/s4_l2_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "Hugo, no transmite nada. Se te quemó la tostada porque le mandaste la potencia al mango. Devolvila ya y rajemos antes de que nos echen.",
+            stageDirection: "Con tono seco y re cansada",
+            audioUrl: "/audio/s4/s4_l2_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "Hugo, eso no transmite na. Se te quemó el pan porque le subite to' el fogaje. Devuélvela ya y vamonos antes de que nos boten de aquí.",
+            stageDirection: "Seca y harta",
+            audioUrl: "/audio/s4/s4_l2_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "Hugo, no transmite ná. Se te quemó el pan porque le metiste la potencia hasta arriba. Devuélvela ya y vámonos antes de que nos boten.",
+            stageDirection: "Con tono seco y cansada",
+            audioUrl: "/audio/s4/s4_l2_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "Hugo, no transmite nada. Se le quemó el pan porque le puso la potencia al tope. Devuélvalo ya y vámonos antes de que nos saquen.",
+            stageDirection: "Con tono seco y aburrida",
+            audioUrl: "/audio/s4/s4_l2_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Hugo, ça ne transmet rien du tout. Tu as brûlé la tranche parce que tu as mis la puissance au maximum. Rends-le tout de suite et partons avant qu'on se fasse virer.",
+            stageDirection: "D'un ton sec et fatigué",
+            audioUrl: "/audio/s4/s4_l2_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Hugo, ça transmet rien pantoute. T'as brûlé ta toast parce que t'as mis la chaleur dans l'tapis. Rapporte-le donc pis décampons avant d'se faire sacrer dehors.",
+            stageDirection: "Découragée et blasée",
+            audioUrl: "/audio/s4/s4_l2_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Hugo, ça n'envoie rien deh ! Tu as calciné le pain parce que tu as mis la chaleur au max. Rends ça vite et quittons ici avant qu'on nous chasse !",
+            stageDirection: "Fatiguée de ses bêtises",
+            audioUrl: "/audio/s4/s4_l2_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Hugo, não tá transmitindo nada. Você queimou a torrada porque colocou a potência no talo. Devolve logo e vamo embora antes que botem a gente pra fora.",
+            stageDirection: "Com voz seca e sem paciência",
+            audioUrl: "/audio/s4/s4_l2_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Hugo, não transmite nada. Queimaste a fatia porque puseste a potência no máximo. Devolve isso já e vamos embora antes que nos ponham na rua.",
+            stageDirection: "Com tom seco e farto",
+            audioUrl: "/audio/s4/s4_l2_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Hugo, non trasmette un bel niente. Hai bruciato la fetta perché hai messo la potenza al massimo. Restituiscilo subito e andiamocene prima che ci caccino.",
+            stageDirection: "Con tono secco ed esausto",
+            audioUrl: "/audio/s4/s4_l2_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Hugo, no transmet res. Se t'ha cremat la llesca perquè has posat la potència al màxim. Torna-la ja i marxem abans que ens facin fora.",
+            stageDirection: "Amb to sec i cansat",
+            audioUrl: "/audio/s4/s4_l2_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Hugo, nu transmite absolut nimic. Ai ars felia pentru că ai dat puterea la maxim. Returnează-l odată și hai să plecăm înainte să fim dați afară.",
+            stageDirection: "Cu ton sec și epuizat",
+            audioUrl: "/audio/s4/s4_l2_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Hugo, non transmite nada. Queimóuseche a rebanda porque puxeches a potencia a tope. Devólvea xa e marchamos antes de que nos boten fóra.",
+            stageDirection: "Con ton seco e farta",
+            audioUrl: "/audio/s4/s4_l2_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Hugo, transmet pas ren. As cremat la lesca perque as botat la poténcia a fons. Tòrna-la lèu e partèm abans que nos fòrabandisson.",
+            stageDirection: "D'un ton sec e cansat",
+            audioUrl: "/audio/s4/s4_l2_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Hugo, das Ding überträgt gar nichts. Du hast die Scheibe verbrannt, weil du die Stufe auf Anschlag gedreht hast. Gib ihn zurück und lass uns gehen, bevor man uns rauswirft.",
+            stageDirection: "Trocken und sichtlich genervt",
+            audioUrl: "/audio/s4/s4_l2_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Hugo, dä Toaster überträit überhaupt nüt. Du häsch d'Schibe verbrännt, will d'd Stuefe voll ufdräit häsch. Bring en zrugg und mir gönd, bevor mir usegrüert wärded.",
+            stageDirection: "Troche und gnervt",
+            audioUrl: "/audio/s4/s4_l2_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Hugo, hij seint helemaal niets door. Je hebt de boterham verbrand omdat je hem op vol vermogen hebt gezet. Breng hem terug en laten we gaan voordat we eruit worden gegooid.",
+            stageDirection: "Droog en vermoeid",
+            audioUrl: "/audio/s4/s4_l2_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Hugo, den sender ingenting. Du svidde brødskiven fordi du skrudde varmen på maks. Bare lever den tilbake og la oss stikke før vi blir kastet ut.",
+            stageDirection: "Tørt og oppgitt",
+            audioUrl: "/audio/s4/s4_l2_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Hugo, den sänder inte ett dugg. Du brände brödet för att du vred upp värmen på max. Lämna bara tillbaka den och låt oss gå innan vi blir utslängda.",
+            stageDirection: "Torrt och utmattat",
+            audioUrl: "/audio/s4/s4_l2_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Hugo, den sender overhovedet intet. Du brændte brødet, fordi du skruede helt op på maksimum. Aflever den nu og lad os skride, før vi bliver smidt ud.",
+            stageDirection: "Tørt og træt",
+            audioUrl: "/audio/s4/s4_l2_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Гюго, ничего он не передаёт. Ты спалил кусок, потому что выкрутил мощность на максимум. Верни его уже, и пошли, пока нас не выставили.",
+            stageDirection: "Сухо и устало",
+            audioUrl: "/audio/s4/s4_l2_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Гюго, нічого він не передає. Ти спалив шматок, бо викрутив потужність на максимум. Поверни його вже і ходімо звідси, поки нас не вигнали.",
+            stageDirection: "Сухо і знесилено",
+            audioUrl: "/audio/s4/s4_l2_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Hugo, niczego nie nadaje. Przypaliłeś kromkę, bo ustawiłeś moc na maksa. Oddaj go wreszcie i zmywajmy się, zanim nas stąd wyrzucą.",
+            stageDirection: "Sucho i ze znużeniem",
+            audioUrl: "/audio/s4/s4_l2_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Hugo, nic nevysílá. Připálil jsi krajíc, protože jsi to otočil na maximum. Vrať ho a pojďme pryč, než nás vyhodí.",
+            stageDirection: "Suchým a unaveným hlasem",
+            audioUrl: "/audio/s4/s4_l2_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Hugo, ne prenosi ništa. Zagorio si šnitu jer si navio snagu do kraja. Vrati ga već jednom i idemo prije nego što nas izbace.",
+            stageDirection: "Suho i umorno",
+            audioUrl: "/audio/s4/s4_l2_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Hugo, se ei lähetä yhtään mitään. Poltit viipaleen vain siksi, että väänsit tehon täysille. Palauta se jo ja lähdetään ennen kuin meidät heitetään ulos.",
+            stageDirection: "Kuivasti ja kyllästyneenä",
+            audioUrl: "/audio/s4/s4_l2_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Hugo, az égvilágon semmit sem közvetít. Csak azért égetted oda a kenyeret, mert maximumra csavartad. Add vissza gyorsan, és menjünk, mielőtt kidobnak minket!",
+            stageDirection: "Szárazon, holtfáradtan",
+            audioUrl: "/audio/s4/s4_l2_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Hugo, ez du ezer transmititzen. Xerra erre egin zaizu potentzia topera jarri duzulako. Itzul ezazu behingoz eta goazen hemendik bota aurretik.",
+            stageDirection: "Lehor eta nekatuta",
+            audioUrl: "/audio/s4/s4_l2_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Hugo, hiçbir şey ilettiği yok. Ayarı sonuna kadar köklediğin için ekmeği yaktın. Şunu hemen iade et de bizi kovmadan önce çıkıp gidelim.",
+            stageDirection: "Kuru ve bezgin bir tonla",
+            audioUrl: "/audio/s4/s4_l2_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "ウーゴ、何も送信してないわよ。あなたがダイヤルを最大にしたからパンが焦げただけ。さっさと返品して、追い出される前に帰りましょう。",
+            stageDirection: "乾いた呆れ声で",
+            audioUrl: "/audio/s4/s4_l2_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "雨果，它什么也没发送。你把档位开到最大才把面包烤糊了。赶紧退了它，趁我们还没被赶出去前快走吧。",
+            stageDirection: "语气干瘪而疲惫",
+            audioUrl: "/audio/s4/s4_l2_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "Hugo，佢乜都冇傳送啊。係你將個火開到最大先至燒燶塊麵包咋！快啲退咗佢，趁人哋未趕我哋走好走喇。",
+            stageDirection: "好乾澀兼無奈嘅語氣",
+            audioUrl: "/audio/s4/s4_l2_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "위고, 아무것도 전송 안 해. 네가 세기를 최대로 올려서 빵이 탄 거뿐이잖아. 빨리 환불하고 쫓겨나기 전에 여기서 나가자.",
+            stageDirection: "건조하고 지친 어조로",
+            audioUrl: "/audio/s4/s4_l2_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "هوغو، إنها لا تنقل أي شيء. لقد أحرقت الشريحة لأنك ضبطت الحرارة على أقصى درجة. أعدها فوراً ولنغادر قبل أن يطردونا.",
+            stageDirection: "بنبرة جافة ومجهدة",
+            audioUrl: "/audio/s4/s4_l2_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "הוגו, זה לא משדר שום דבר. שרפת את הפרוסה כי שמת את החום על המקסימום. פשוט תחזיר את זה כבר ובוא נלך מפה לפני שיעיפו אותנו.",
+            stageDirection: "בטון יבש ועייף",
+            audioUrl: "/audio/s4/s4_l2_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "Hugo, no transmite nada. Se te quemó el pan porque le pusiste la potencia al máximo. Devuélvela de una y vámonos antes de que nos boten.",
+            stageDirection: "Con tono seco y fastidiada",
+            audioUrl: "/audio/s4/s4_l2_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "Hugo, no transmite nada. Se te quemó el pan porque le pusiste la potencia al chancho. Devuélvela al tiro y vámonos antes de que nos echen.",
+            stageDirection: "Con tono seco y chata",
+            audioUrl: "/audio/s4/s4_l2_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "Hugo, no transmite nada. Se te quemó la tostada porque le pusiste la potencia al tope. Devuélvela ya y vámonos antes de que nos boten.",
+            stageDirection: "Con tono seco y cansada",
+            audioUrl: "/audio/s4/s4_l2_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "Hugo, no transmite na. Se te quemó el pan porque le metiste to' el vapor. Devuélvela ya y echemos un pie antes de que nos boten.",
+            stageDirection: "Con tono seco y sofocada",
+            audioUrl: "/audio/s4/s4_l2_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "Hugo, no transmite nada. El pan se quemó porque pusiste la fuerza al máximo. Devuélvela ya y vámonos antes de que nos despidan de aquí.",
+            stageDirection: "Con tono seco y cansado",
+            audioUrl: "/audio/s4/s4_l2_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Hugo, it's not transmitting anything. You burned the slice because you set it to maximum. Just return it already and let's go before we get kicked out.",
+            stageDirection: "Dry and utterly tired",
+            audioUrl: "/audio/s4/s4_l2_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Hugo, it isn't transmitting a thing. You burnt the toast because you cranked it up to full power. Return it right away and let us leave before we are thrown out.",
+            stageDirection: "Dry and exasperated",
+            audioUrl: "/audio/s4/s4_l2_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Hugo, it's no transmittin' nuthin'. Ye burnt the piece cause ye turned it richt up tae the max. Hand it back noo and let's bolt afore we get chucked oot.",
+            stageDirection: "Exasperated sigh",
+            audioUrl: "/audio/s4/s4_l2_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Hugo, ain't transmitting a blessed thing. You scorched that bread 'cause you had it turned all the way up. Take it on back and let's skedaddle 'fore we get run off.",
+            stageDirection: "Weary drawl",
+            audioUrl: "/audio/s4/s4_l2_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Hugo, it's transmitting nothing at all. You burned the toast because you had the heat up to ninety. Hand it back now and let's shift before we're thrown out.",
+            stageDirection: "Dry and completely fed up",
+            audioUrl: "/audio/s4/s4_l2_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Hugo, it ain't transmitting jack. You burnt the bloody toast 'cause you turned it all the way up. Just take it back and let's rack off before we get booted.",
+            stageDirection: "Tired and sarcastic",
+            audioUrl: "/audio/s4/s4_l2_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Hugo, it's not transmitting anything, mate. You torched the toast 'cause you put it on max. Just return it and let's bounce before we get kicked out.",
+            stageDirection: "Flat and weary",
+            audioUrl: "/audio/s4/s4_l2_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Hugo, it's not transmitting anything man. You burnt the toast because you whacked it on max. Return it now and let's vaai before we get kicked out hey.",
+            stageDirection: "Dry and exhausted",
+            audioUrl: "/audio/s4/s4_l2_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Hugo, e no dey transmit anything! You burn the bread because you put the heat full ground. Return am now make we comot before dem pursue us.",
+            stageDirection: "Tired sigh",
+            audioUrl: "/audio/s4/s4_l2_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Hugo, it is not transmitting any single thing. You only burned the slice because you kept it on maximum power. Return it quickly and let us leave before they kick us out na.",
+            stageDirection: "Deeply irritated",
+            audioUrl: "/audio/s4/s4_l2_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Hugo, ça ne transmet rien. Tu as brûlé le pain parce que tu as poussé la puissance à fond. Remets l'appareil et partons avant qu'on nous chasse.",
+            stageDirection: "D'un ton las et direct",
+            audioUrl: "/audio/s4/s4_l2_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Hugo, ça ne transmet rien. Tu as cramé ton pain parce que tu as mis le feu au maximum. Dépose ça et allons-nous-en avant d'avoir la honte.",
+            stageDirection: "D'un ton sec",
+            audioUrl: "/audio/s4/s4_l2_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Hugo, não está a transmitir nada. Queimaste o pão porque puseste a potência no máximo ya. Devolve isso rápido e bazamos antes que nos corram daqui.",
+            stageDirection: "Cansada e despachada",
+            audioUrl: "/audio/s4/s4_l2_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Hugo, isso não transmite nada. Queimaste o pão porque puseste no máximo. Devolve já e vamos embora antes que nos expulsem.",
+            stageDirection: "Tom seco e impaciente",
+            audioUrl: "/audio/s4/s4_l2_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Hugo, dat zendt niks door. Ge hebt die snee verbrand omdat ge die op de hoogste stand hebt gezet. Breng dat terug en laat ons vertrekken voor ze ons buitensmijten.",
+            stageDirection: "Droog en beu",
+            audioUrl: "/audio/s4/s4_l2_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "هوغو، ما تنقل شي أصلاً. حرقت التوست لأنك حطيته على أعلى شي. رجعها وخلنا نمشي قبل ما يطردونا.",
+            stageDirection: "بنبرة جافة وتعبانة",
+            audioUrl: "/audio/s4/s4_l2_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "يا هوغو، ما بيبعتش حاجة خالص. انت حرقت التوست عشان عليت الحرارة على الآخر. رجعه بقى ويلا نمشي قبل ما يطردونا.",
+            stageDirection: "بزهق ونفاد صبر",
+            audioUrl: "/audio/s4/s4_l2_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "هوغو، راه ما كايصيفط والو. حرقتي الخبز حيت درتي الحرارة فالماكسيموم. ردها دابا ويلا نمشيو قبل ما يجريو علينا.",
+            stageDirection: "بنبرة ناشفة وعيانة",
+            audioUrl: "/audio/s4/s4_l2_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "هوغو، ما بتبعت إشي بالمرة. حرقت التوست لأنك حطيت الحرارة على الآخر. رجعها وخلينا نروح قبل ما يطردونا.",
+            stageDirection: "بصوت ناشف ومفلسف",
+            audioUrl: "/audio/s4/s4_l2_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "هوغو، ما دز أي شي. احتركت الصمونة لأنك خليت الحرارة للأخير. رجعها عاد وخل نولي كبل ما يطردونا.",
+            stageDirection: "بلهجة ناشفة وتعبانة",
+            audioUrl: "/audio/s4/s4_l2_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "雨果，它什麼也沒發送。你把檔位開到最大才把麵包烤焦了。趕緊退了它，趁我們還沒被趕出去前快走吧。",
+            stageDirection: "語氣乾癟而無奈",
+            audioUrl: "/audio/s4/s4_l2_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "ह्यूगो, यह कुछ भी नहीं भेज रहा है। तुमने पावर फुल पर कर दी थी इसलिए ब्रेड जल गई। इसे तुरंत वापस करो और इससे पहले कि वे हमें बाहर निकालें, चलो यहाँ से।",
+            stageDirection: "रूखे और थके हुए लहजे में",
+            audioUrl: "/audio/s4/s4_l2_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "ہیوگو، یہ کچھ بھی نہیں بھیج رہا ہے۔ تم نے پاور فل کر دی تھی اس لیے ڈبل روٹی جل گئی۔ اسے ابھی واپس کرو اور اس سے پہلے کہ وہ ہمیں باہر نکالیں، یہاں سے چلو۔",
+            stageDirection: "خشک اور بیزار لہجے میں",
+            audioUrl: "/audio/s4/s4_l2_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "হিউগো, এটা কিছুই পাঠাচ্ছে না। তুমি তাপমাত্রা সর্বোচ্চ করে রেখেছিলে বলেই পাউরুটিটা পুড়ে গেছে। তাড়াতাড়ি এটা ফেরত দাও আর ওরা তাড়িয়ে দেওয়ার আগেই চলো যাই।",
+            stageDirection: "বিরক্ত এবং ক্লান্ত সুরে",
+            audioUrl: "/audio/s4/s4_l2_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਹਿਊਗੋ, ਇਹ ਕੁਝ ਨਹੀਂ ਭੇਜ ਰਿਹਾ। ਤੂੰ ਪਾਵਰ ਪੂਰੀ ਵਧਾ ਦਿੱਤੀ ਸੀ ਇਸ ਲਈ ਬਰੈੱਡ ਸੜ ਗਈ। ਇਹਨੂੰ ਹੁਣੇ ਵਾਪਸ ਕਰ ਅਤੇ ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਉਹ ਸਾਨੂੰ ਬਾਹਰ ਕੱਢਣ, ਚੱਲੀਏ।",
+            stageDirection: "ਅੱਕੇ ਹੋਏ ਅਤੇ ਥੱਕੇ ਹੋਏ ਲਹਿਜੇ ਵਿੱਚ",
+            audioUrl: "/audio/s4/s4_l2_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "હ્યુગો, એ કશુંય મોકલતું નથી. તેં પાવર પૂરો વધારી દીધો હતો એટલે બ્રેડ બળી ગઈ. એને હમણાં જ પાછું આપી દે અને એ લોકો આપણને કાઢી મૂકે તે પહેલાં નીકળીએ.",
+            stageDirection: "કંટાળેલા અને થાકેલા અવાજે",
+            audioUrl: "/audio/s4/s4_l2_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "ह्युगो, तो काहीही पाठवत नाहीये. तू पॉवर फुल केली होतीस म्हणूनच ब्रेड जळाला. तो आत्ता परत कर आणि त्यांनी आपल्याला बाहेर काढण्यापूर्वी निघूया.",
+            stageDirection: "कंटाळवाण्या आणि थकलेल्या सुरात",
+            audioUrl: "/audio/s4/s4_l2_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "ஹ்யூகோ, இது எதையும் அனுப்பவில்லை. நீ வெப்பநிலையை முழுமையாக வைத்ததால் ரொட்டி கருகிவிட்டது. இதை உடனே திருப்பி கொடுத்துவிட்டு அவர்கள் நம்மை துரத்துவதற்குள் கிளம்புவோம்.",
+            stageDirection: "சலிப்படைந்த மற்றும் சோர்வான தொனியில்",
+            audioUrl: "/audio/s4/s4_l2_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "హ్యూగో, ఇది ఏమీ పంపడం లేదు. నువ్వు పవర్‌ను గరిష్టంగా ఉంచినందువల్లనే రొట్టె మాడిపోయింది. దీన్ని ఇప్పుడే తిరిగి ఇచ్చేసి వాళ్లు మనల్ని గెంటేయకముందే వెళ్దాం.",
+            stageDirection: "విసుగు చెందిన స్వరంతో",
+            audioUrl: "/audio/s4/s4_l2_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಹ್ಯೂಗೋ, ಇದು ಏನನ್ನೂ ಕಳುಹಿಸುತ್ತಿಲ್ಲ. ನೀನು ಉರಿಯನ್ನು ಗರಿಷ್ಠ ಮಟ್ಟದಲ್ಲಿ ಇಟ್ಟಿದ್ದರಿಂದ ಬ್ರೆಡ್ ಸುಟ್ಟುಹೋಯಿತು. ಇದನ್ನು ಈಗಲೇ ಹಿಂತಿರುಗಿಸಿ ಅವರು ನಮ್ಮನ್ನು ಹೊರಹಾಕುವ ಮುನ್ನ ಹೋಗೋಣ.",
+            stageDirection: "ಬೇಸರ ಮತ್ತು ದಣಿದ ಧ್ವನಿಯಲ್ಲಿ",
+            audioUrl: "/audio/s4/s4_l2_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "ഹ്യൂഗോ, ഇത് ഒന്നും അയക്കുന്നില്ല. നീ പവർ പരമാവധി ആക്കിവെച്ചതുകൊണ്ടാണ് ബ്രെഡ് കരിഞ്ഞുപോയത്. ഇത് ഉടൻ തിരികെ നൽകി അവർ നമ്മളെ പുറത്താക്കുന്നതിന് മുൻപ് പോകാം.",
+            stageDirection: "വിരസവും തളർന്നതുമായ ശബ്ദത്തിൽ",
+            audioUrl: "/audio/s4/s4_l2_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Hugo, nó chẳng truyền cái gì hết. Anh làm cháy lát bánh mì chỉ vì vặn nhiệt độ lên mức tối đa thôi. Trả nó lại mau rồi đi khỏi đây trước khi bị đuổi.",
+            stageDirection: "Bằng giọng khô khốc và mệt mỏi",
+            audioUrl: "/audio/s4/s4_l2_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "ฮูโก มันไม่ได้ส่งอะไรทั้งนั้นแหละ นายทำขนมปังไหม้เพราะนายปรับความร้อนไปที่ระดับสูงสุดต่างหาก รีบคืนแล้วไปกันเถอะก่อนจะโดนไล่ออกไป",
+            stageDirection: "น้ำเสียงเย็นชาและเหนื่อยหน่าย",
+            audioUrl: "/audio/s4/s4_l2_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Hugo, pemanggang itu tidak mengirim apa pun. Rotimu hangus karena kamu menyetel suhunya ke paling tinggi. Kembalikan saja sekarang dan ayo pergi sebelum kita diusir.",
+            stageDirection: "Dengan nada datar dan lelah",
+            audioUrl: "/audio/s4/s4_l2_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Hugo, ia tidak menghantar apa-apa pun. Roti itu hangus sebab awak letak kuasa pada tahap maksimum. Pulangkan sekarang dan jom keluar sebelum kita dihalau.",
+            stageDirection: "Dengan nada datar dan penat",
+            audioUrl: "/audio/s4/s4_l2_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Hugo, hakitumi chochote. Ulichoma mkate kwa sababu uliweka moto hadi mwisho. Kirudishe sasa hivi na tuondoke kabla hawajatufukuza.",
+            stageDirection: "Kwa sauti kavu na iliyochoka",
+            audioUrl: "/audio/s4/s4_l2_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Hugo, nomondoiete mba'eve. Oñembokusugue pe pan emoĩgui imbaretépe. Eme'ẽ jey ko'ág̃a ha jaha katu ani hag̃ua ñande mosẽ.",
+            stageDirection: "Ikueráiva ha ikane'õva",
+            audioUrl: "/audio/s4/s4_l2_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Hugo, manam imatapas apachinchu. Tantaqa kankakurusqa lliw kallpapi churasqaykiraykum. Kutiychiyña hinaspa ripukusun manaraq qarqowaptinchik.",
+            stageDirection: "Sayk'usqa rimaywan",
+            audioUrl: "/audio/s4/s4_l2_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Hugo, janiw kunsa apaykiti. T'ant'ax qhanaw phichantasixa nina sinti ch'amanita churatamatxa. Kutt'ayxapxam ukatx sarxapxañani janïr apsupkistu ukhaxa.",
+            stageDirection: "Ch'usat qarjata arumpi",
+            audioUrl: "/audio/s4/s4_l2_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Hugo, ahtle quimonahuatilia. Tlaxcalli otlatlac yehica ticmotlalili chicahualiztli cenca huel. Xiccuepa aman ihuan tiazque achto techquixtizque.",
+            stageDirection: "Tlatolchiuhqui ihuan ciauhqui",
+            audioUrl: "/audio/s4/s4_l2_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Hugo, doo haʼátʼíhída yaa yíníłtsooz da. Bááh díílidígíí éí ayóo dííłtłʼiʼ biniinaa. Tʼáá kʼad nináńtsoos dóó chʼééníildééh tʼahdoo chʼééhóshóodi.",
+            stageDirection: "Chʼééh deeyáago yáłtiʼ",
+            audioUrl: "/audio/s4/s4_l2_nv-US.mp3"
           }
         }
       },
@@ -6595,10 +7435,430 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Apareciendo tras el mostrador con una sonrisa radiante y un sello",
         expression: "cheerful",
         translations: {
+          "fr-CH": {
+            text: "Bonjour ! Selon le manuel du service clientèle, pour retourner un appareil soupçonné d'espionnage, il me faut l'emballage d'origine et un témoin assermenté.",
+            stageDirection: "Très polie et serviable",
+            audioUrl: "/audio/s4/s4_l3_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Bonjour ! D'après le guide du service client, pour reprendre un appareil suspecté d'espionnage, il me faut l'emballage d'origine et un témoin sous serment.",
+            stageDirection: "Aimable et toute serviable",
+            audioUrl: "/audio/s4/s4_l3_fr-BE.mp3"
+          },
           "es-ES": {
             text: "¡Buenos días! Según el manual de atención al cliente, para devolver electrodomésticos con sospechas de espionaje necesito el embalaje original y un testigo jurado.",
             stageDirection: "Amable y completamente servicial",
             audioUrl: "/audio/s4/s4_l3_es-ES.mp3"
+          },
+          "es-MX": {
+            text: "¡Buenos días! Según el manual de atención a clientes, para devolver aparatos con sospecha de espionaje necesito la caja original y un testigo jurado.",
+            stageDirection: "Súper linda y servicial",
+            audioUrl: "/audio/s4/s4_l3_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "¡Buenos días! Según el manual de atención al cliente, para devolver electrodomésticos bajo sospecha de espionaje necesito la caja original y un testigo jurado.",
+            stageDirection: "Súper amable y sonriente",
+            audioUrl: "/audio/s4/s4_l3_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "¡Buen día! Según el manual de servicio, para devolver aparatos con sospecha de espionaje necesito la caja original y un testigo juramentado.",
+            stageDirection: "Sonriente y servicial",
+            audioUrl: "/audio/s4/s4_l3_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "¡Buenos días! Según el manual de servicio al cliente, para devolver enseres con sospechas de espionaje necesito la caja original y un testigo juramentado.",
+            stageDirection: "Amable y complaciente",
+            audioUrl: "/audio/s4/s4_l3_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "¡Buenos días! Según el manual de servicio al cliente, para devolver electrodomésticos con sospechas de espionaje necesito el empaque original y un testigo juramentado.",
+            stageDirection: "Muy atenta y sonriente",
+            audioUrl: "/audio/s4/s4_l3_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Bonjour ! D'après le manuel du service client, pour retourner un appareil suspecté d'espionnage, il me faut l'emballage d'origine et un témoin assermenté.",
+            stageDirection: "Souriante et pleine de bonne volonté",
+            audioUrl: "/audio/s4/s4_l3_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Bonjour ! Selon le guide du service à la clientèle, pour rapporter un appareil soupçonné d'espionnage, ça m'prend la boîte originale pis un témoin assermenté.",
+            stageDirection: "Souriante et ben smouthe",
+            audioUrl: "/audio/s4/s4_l3_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Bonjour ! Selon le cahier du service client, pour rendre un appareil suspecté d'espionnage là, il me faut le carton d'origine et un témoin qui a juré !",
+            stageDirection: "Très accueillante et gentille",
+            audioUrl: "/audio/s4/s4_l3_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Bom dia! Segundo o manual de atendimento ao cliente, pra devolver eletrodomésticos com suspeita de espionagem eu preciso da embalagem original e de uma testemunha juramentada.",
+            stageDirection: "Toda simpática e solícita",
+            audioUrl: "/audio/s4/s4_l3_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Bom dia! Segundo o manual de apoio ao cliente, para devolver eletrodomésticos com suspeitas de espionagem preciso da embalagem original e de uma testemunha juramentada.",
+            stageDirection: "Simpática e prestável",
+            audioUrl: "/audio/s4/s4_l3_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Buongiorno! Secondo il manuale di assistenza clienti, per effettuare il reso di elettrodomestici sospettati di spionaggio ho bisogno dell'imballaggio originale e di un testimone giurato.",
+            stageDirection: "Solare e premurosa",
+            audioUrl: "/audio/s4/s4_l3_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Bon dia! Segons el manual d'atenció al client, per tornar electrodomèstics amb sospites d'espionatge necessito l'embalatge original i un testimoni jurat.",
+            stageDirection: "Amable i completament servicial",
+            audioUrl: "/audio/s4/s4_l3_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Bună dimineața! Conform manualului de relații cu clienții, pentru a returna electrocasnice suspectate de spionaj am nevoie de ambalajul original și de un martor jurat.",
+            stageDirection: "Zâmbitoare și amabilă",
+            audioUrl: "/audio/s4/s4_l3_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Bos días! Segundo o manual de atención ao cliente, para devolver electrodomésticos con sospeitas de espionaxe preciso a embalaxe orixinal e unha testemuña xurada.",
+            stageDirection: "Moi riseira e servicial",
+            audioUrl: "/audio/s4/s4_l3_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Bonjorn ! Segon lo manual de servici al client, per tornar d'electrodomestics amb de suspèctas d'espionatge me cal l'embalatge d'origina e un testimòni jurat.",
+            stageDirection: "Aimabla e plan serviciala",
+            audioUrl: "/audio/s4/s4_l3_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Guten Morgen! Laut unserem Kundenservice-Handbuch benötige ich für die Rückgabe von Geräten mit Spionageverdacht die Originalverpackung und einen vereidigten Zeugen.",
+            stageDirection: "Überaus freundlich und hilfsbereit",
+            audioUrl: "/audio/s4/s4_l3_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Guete Morge! Luut em Chundedienst-Handbuech bruuchi für d'Ruckgab vo Gräät mit Spionagiverdacht d'Originalverpackig und en beeidigte Züüge.",
+            stageDirection: "Fründlich und hilfsbereit",
+            audioUrl: "/audio/s4/s4_l3_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Goedemorgen! Volgens de klantenservicehandleiding heb ik voor het retourneren van apparaten die van spionage worden verdacht de originele verpakking en een beëdigde getuige nodig.",
+            stageDirection: "Vrolijk en buitengewoon behulpzaam",
+            audioUrl: "/audio/s4/s4_l3_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "God morgen! I henhold til kundeservicehåndboken trenger jeg originalemballasjen og et edsvorent vitne for å ta imot apparater mistenkt for spionasje.",
+            stageDirection: "Blid og hjelpsom",
+            audioUrl: "/audio/s4/s4_l3_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "God morgon! Enligt kundtjänstmanualen behöver jag originalförpackningen och ett edsvurit vittne för att ta emot vitvaror som misstänks för spioneri.",
+            stageDirection: "Glad och hjälpsam",
+            audioUrl: "/audio/s4/s4_l3_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Godmorgen! Ifølge kundeservicevejledningen skal jeg bruge den originale emballage og et edsvorent vidne for at returnere apparater mistænkt for spionage.",
+            stageDirection: "Imødekommende og hjælpsom",
+            audioUrl: "/audio/s4/s4_l3_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Доброе утро! Согласно инструкции по обслуживанию клиентов, для возврата техники с подозрением на шпионаж мне нужна оригинальная упаковка и свидетель под присягой.",
+            stageDirection: "Любезна и лучезарна",
+            audioUrl: "/audio/s4/s4_l3_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Доброго ранку! Згідно з інструкцією обслуговування клієнтів, для повернення техніки з підозрою на шпигунство мені потрібна оригінальна упаковка та свідок під присягою.",
+            stageDirection: "Привітно і послужливо",
+            audioUrl: "/audio/s4/s4_l3_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Dzień dobry! Zgodnie z podręcznikiem obsługi klienta, aby zwrócić sprzęt podejrzany o szpiegostwo, potrzebuję oryginalnego opakowania i zaprzysiężonego świadka.",
+            stageDirection: "Uprzejma i pomocna",
+            audioUrl: "/audio/s4/s4_l3_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Dobré ráno! Podle příručky péče o zákazníky potřebuji pro vrácení spotřebiče s podezřením na špionáž původní obal a místopřísežného svědka.",
+            stageDirection: "Milá a nanejvýš ochotná",
+            audioUrl: "/audio/s4/s4_l3_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Dobro jutro! Prema priručniku za korisnike, za povrat uređaja pod sumnjom na špijunažu trebam originalno pakiranje i prisegnutog svjedoka.",
+            stageDirection: "Ljubazna i uslužna",
+            audioUrl: "/audio/s4/s4_l3_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Hyvää huomenta! Asiakaspalveluoppaan mukaan vakoilusta epäiltyjen laitteiden palauttamiseen tarvitsen alkuperäispakkauksen ja valantehneen todistajan.",
+            stageDirection: "Ystävällinen ja palvelualtis",
+            audioUrl: "/audio/s4/s4_l3_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Jó reggelt! Az ügyfélszolgálati kézikönyv szerint a kémkedéssel gyanúsított készülékek visszavételéhez az eredeti csomagolásra és egy esküt tett tanúra van szükségem.",
+            stageDirection: "Kedvesen és készségesen",
+            audioUrl: "/audio/s4/s4_l3_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Egun on! Bezeroen arretarako eskuliburuaren arabera, espioitza-susmoa duten etxetresnak itzultzeko jatorrizko bilgarria eta zinpeko lekuko bat behar ditut.",
+            stageDirection: "Atsegina eta erabat zerbitzari",
+            audioUrl: "/audio/s4/s4_l3_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Günaydın! Müşteri hizmetleri el kitabına göre, casusluk şüphesi taşıyan cihazları iade alabilmem için orijinal ambalajı ve yeminli bir şahit gerekiyor.",
+            stageDirection: "Güleryüzlü ve son derece yardımsever",
+            audioUrl: "/audio/s4/s4_l3_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "おはようございます！お客様窓口マニュアルによりますと、スパイ容疑の家電をご返品いただくには、元の外箱と宣誓証人が必要となっております。",
+            stageDirection: "愛想よく完璧な笑顔で",
+            audioUrl: "/audio/s4/s4_l3_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "早上好！根据客户服务手册，退回疑似涉嫌间谍活动的家电，需要提供原包装并附带一名宣誓证人。",
+            stageDirection: "面带微笑，服务周到",
+            audioUrl: "/audio/s4/s4_l3_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "早晨！根據我哋客戶服務手冊，如果想退回懷疑有間諜行為嘅電器，我需要原裝包裝同埋一位宣誓證人先得㗎。",
+            stageDirection: "笑得好親切又有禮貌",
+            audioUrl: "/audio/s4/s4_l3_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "좋은 아침입니다! 고객 서비스 매뉴얼에 따르면, 간첩 활동이 의심되는 가전제품을 환불하시려면 원래 포장 상자와 선서 증인이 필요합니다.",
+            stageDirection: "상냥하고 매우 친절하게",
+            audioUrl: "/audio/s4/s4_l3_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "صباح الخير! وفقاً لدليل خدمة العملاء، لاسترجاع الأجهزة المشتبه في تورطها بالتجسس أحتاج إلى العبوة الأصلية وشاهد محلف.",
+            stageDirection: "بلباقة وابتسامة خدومة",
+            audioUrl: "/audio/s4/s4_l3_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "בוקר טוב! על פי מדריך שירות הלקוחות, כדי להחזיר מכשירי חשמל החשודים בריגול אני זקוקה לאריזה המקורית ולעד בשבועה.",
+            stageDirection: "חייכנית ומאירת פנים",
+            audioUrl: "/audio/s4/s4_l3_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "¡Buenos días! Según el manual de atención al cliente, para devolver aparatos con sospechas de espionaje necesito la caja original y un testigo jurado.",
+            stageDirection: "Muy amable y servicial",
+            audioUrl: "/audio/s4/s4_l3_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "¡Buenos días! Según el manual de atención a clientes, para devolver electrodomésticos con sospecha de espionaje necesito el embalaje original y un testigo jurado.",
+            stageDirection: "Súper atenta y simpática",
+            audioUrl: "/audio/s4/s4_l3_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "¡Buenos días! Según el manual de atención al cliente, para devolver electrodomésticos con sospechas de espionaje necesito el empaque original y un testigo juramentado.",
+            stageDirection: "Amable y solícita",
+            audioUrl: "/audio/s4/s4_l3_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "¡Buenos días! Según el manual de atención a la población, para devolver equipos con sospecha de espionaje necesito el empaque original y un testigo jurado.",
+            stageDirection: "Amable y tranquila",
+            audioUrl: "/audio/s4/s4_l3_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "¡Buenos días! Según las normas de atención al cliente, para devolver aparatos con sospecha de espionaje necesito el embalaje original y un testigo jurado.",
+            stageDirection: "Muy educada y servicial",
+            audioUrl: "/audio/s4/s4_l3_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Good morning! According to the customer service manual, to return appliances suspected of espionage I need the original packaging and a sworn witness.",
+            stageDirection: "Cheerfully helpful",
+            audioUrl: "/audio/s4/s4_l3_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Good morning! According to the customer service handbook, to return appliances suspected of espionage I shall require the original packaging and a sworn witness.",
+            stageDirection: "Polite and thoroughly helpful",
+            audioUrl: "/audio/s4/s4_l3_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Mornin' folks! Accordin' tae the customer care handbook, tae return appliances suspected o' spyin' I'll be needin' the original box and a sworn witness.",
+            stageDirection: "Bubbly and dead helpful",
+            audioUrl: "/audio/s4/s4_l3_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Mornin' y'all! Accordin' to the customer service handbook, to return appliances suspected of spyin' I'm gonna need the original box and a sworn witness.",
+            stageDirection: "Sweet as pie",
+            audioUrl: "/audio/s4/s4_l3_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Morning to you! Now according to the customer handbook, to return appliances suspected of espionage I'll be needing the original packaging and a sworn witness.",
+            stageDirection: "Grand and obliging",
+            audioUrl: "/audio/s4/s4_l3_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Morning! According to the store manual, to return appliances suspected of espionage I'm gonna need the original box and a sworn witness, mate.",
+            stageDirection: "Bright and easygoing",
+            audioUrl: "/audio/s4/s4_l3_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Good morning! According to our customer handbook, to return appliances suspected of espionage I'll need the original box and a sworn witness.",
+            stageDirection: "Friendly and obliging",
+            audioUrl: "/audio/s4/s4_l3_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Morning! According to our customer service manual, to return appliances suspected of espionage I need the original packaging and a sworn witness, hey.",
+            stageDirection: "Sunny and obliging",
+            audioUrl: "/audio/s4/s4_l3_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Good morning! According to our customer manual, to return any machine wey dey do spy work, I need the original box and one person to swear oath.",
+            stageDirection: "Smiling plenty",
+            audioUrl: "/audio/s4/s4_l3_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Good morning! According to the customer service manual only, to return appliances suspected of espionage I will be requiring original packaging and one sworn witness.",
+            stageDirection: "Very polite and cheerful",
+            audioUrl: "/audio/s4/s4_l3_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Bonjour ! Selon le règlement du service client, pour retourner un appareil soupçonné d'espionnage, il me faut l'emballage original et un témoin assermenté.",
+            stageDirection: "Souriante et dévouée",
+            audioUrl: "/audio/s4/s4_l3_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Bonjour ! D'après notre manuel de service client, pour le retour d'un appareil suspecté d'espionnage, j'ai besoin de l'emballage d'origine et d'un témoin juré.",
+            stageDirection: "Gentille et avenante",
+            audioUrl: "/audio/s4/s4_l3_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Bom dia! Conforme o guia de atendimento ao cliente, para devolver aparelhos com suspeita de espionagem preciso da caixa original e de uma testemunha jurada.",
+            stageDirection: "Muito atenciosa e sorridente",
+            audioUrl: "/audio/s4/s4_l3_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Bom dia! De acordo com o manual de atendimento, para devolver eletrodomésticos com suspeitas de espionagem preciso da caixa original e de uma testemunha juramentada.",
+            stageDirection: "Prestável e simpática",
+            audioUrl: "/audio/s4/s4_l3_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Goeiemorgen! Volgens de handleiding van de klantendienst heb ik voor het terugbrengen van toestellen met spionagevermoeden de originele verpakking en een beëdigde getuige nodig.",
+            stageDirection: "Vriendelijk en gedienstig",
+            audioUrl: "/audio/s4/s4_l3_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "صباح الخير! حسب دليل خدمة العملاء، عشان نرجع أجهزة يشتبه فيها تجسس أحتاج الكرتون الأصلي وشاهد يحلف يمين.",
+            stageDirection: "بشوشة ومبتسمة",
+            audioUrl: "/audio/s4/s4_l3_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "صباح الخير! طبقاً لكتيب خدمة العملا، عشان نرجع أجهزة فيها شبهة تجسس محتاجة الكرتونة الأصلية وشاهد حالف يمين.",
+            stageDirection: "مبتسمة وبمنتهى اللطافة",
+            audioUrl: "/audio/s4/s4_l3_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "صباح الخير! على حساب كتاب خدمة الزبناء، باش نرجعو أجهزة مشكوك فيها فالتجسس، خاصني الكرتونة الأصلية وشاهد يحلف.",
+            stageDirection: "ضاحكة ومؤدبة",
+            audioUrl: "/audio/s4/s4_l3_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "صباح الخير! حسب دليل خدمة الزباين، عشان نرجع أجهزة مشكوك فيها بالتجسس بدي الكرتونة الأصلية وشاهد محلف.",
+            stageDirection: "مبتسمة وبخدمة كاملة",
+            audioUrl: "/audio/s4/s4_l3_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "صباح الخير! حسب دليل خدمة العملاء، حتى نرجع أجهزة بيها شبهة تجسس محتاجة الكارتون الأصلي وشاهد يحلف يمين.",
+            stageDirection: "بشوشة وكلها خدمة",
+            audioUrl: "/audio/s4/s4_l3_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "早安！根據客戶服務手冊，退回疑似涉嫌間諜活動的家電，需要提供原包裝並附帶一名宣誓證人。",
+            stageDirection: "笑容可掬，服務親切",
+            audioUrl: "/audio/s4/s4_l3_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "शुभ प्रभात! ग्राहक सेवा नियमावली के अनुसार, जासूसी के संदेह वाले उपकरणों को वापस करने के लिए मुझे मूल डिब्बा और एक शपथ पत्र वाला गवाह चाहिए।",
+            stageDirection: "मुस्कुराते हुए पूरी विनम्रता से",
+            audioUrl: "/audio/s4/s4_l3_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "صبح بخیر! کسٹمر سروس مینوئل کے مطابق، جاسوسی کے شبہ والے آلات واپس کرنے کے لیے مجھے اصل ڈبہ اور ایک حلفیہ گواہ درکار ہے۔",
+            stageDirection: "مسکراتے ہوئے اور انتہائی شائستگی سے",
+            audioUrl: "/audio/s4/s4_l3_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "সুপ্রভাত! গ্রাহক সেবা নিয়মাবলী অনুসারে, গুপ্তচরবৃত্তির সন্দেহযুক্ত সরঞ্জাম ফেরত দিতে হলে মূল প্যাকেজিং এবং একজন শপথকারী সাক্ষী প্রয়োজন।",
+            stageDirection: "হাসিমুখে অত্যন্ত অমায়িক ভঙ্গিতে",
+            audioUrl: "/audio/s4/s4_l3_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਸ਼ੁਭ ਸਵੇਰ! ਗਾਹਕ ਸੇਵਾ ਨਿਯਮਾਂ ਅਨੁਸਾਰ, ਜਾਸੂਸੀ ਦੇ ਸ਼ੱਕ ਵਾਲੇ ਉਪਕਰਣ ਵਾਪਸ ਕਰਨ ਲਈ ਮੈਨੂੰ ਅਸਲੀ ਡੱਬਾ ਅਤੇ ਇੱਕ ਸਹੁੰ ਚੁੱਕਿਆ ਗਵਾਹ ਚਾਹੀਦਾ ਹੈ।",
+            stageDirection: "ਮੁਸਕਰਾਉਂਦੇ ਹੋਏ ਅਤੇ ਨਿਮਰਤਾ ਨਾਲ",
+            audioUrl: "/audio/s4/s4_l3_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "શુભ સવાર! ગ્રાહક સેવા માર્ગદર્શિકા મુજબ, જાસૂસીની શંકાવાળા ઉપકરણો પરત કરવા માટે મને મૂળ પેકિંગ અને સોગંદ લીધેલા એક સાક્ષીની જરૂર છે.",
+            stageDirection: "હસતાં મુખે અને સંપૂર્ણ મદદગાર",
+            audioUrl: "/audio/s4/s4_l3_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "शुभ प्रभात! ग्राहक सेवा नियमावलीनुसार, हेरगिरीचा संशय असलेल्या उपकरणांचा परतावा करण्यासाठी मला मूळ बॉक्स आणि एक शपथ घेतलेला साक्षीदार आवश्यक आहे.",
+            stageDirection: "हसतमुख आणि नम्रपणे",
+            audioUrl: "/audio/s4/s4_l3_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "காலை வணக்கம்! வாடிக்கையாளர் சேவை கையேட்டின்படி, உளவு பார்த்ததாக சந்தேகிக்கப்படும் சாதனங்களைத் திருப்பித் தர அசல் பெட்டியும் உறுதிமொழி எடுத்த ஒரு சாட்சியும் தேவை.",
+            stageDirection: "புன்னகையுடன் பணிவாக",
+            audioUrl: "/audio/s4/s4_l3_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "శుభోదయం! కస్టమర్ సర్వీస్ మాన్యువల్ ప్రకారం, గూఢచర్యం అనుమానం ఉన్న పరికరాలను వాపసు చేయడానికి నాకు అసలు ప్యాకింగ్ మరియు ప్రమాణం చేసిన ఒక సాక్షి కావాలి.",
+            stageDirection: "చిరునవ్వుతో వినయంగా",
+            audioUrl: "/audio/s4/s4_l3_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಶುಭೋದಯ! ಗ್ರಾಹಕ ಸೇವಾ ಕೈಪಿಡಿಯ ಪ್ರಕಾರ, ಗೂಢಚಾರಿಕೆಯ ಶಂಕೆಯಿರುವ ಉಪಕರಣಗಳನ್ನು ಹಿಂತಿರುಗಿಸಲು ನನಗೆ ಮೂಲ ಪ್ಯಾಕಿಂಗ್ ಮತ್ತು ಪ್ರಮಾಣ ವಚನ ಸ್ವೀಕರಿಸಿದ ಸಾಕ್ಷಿಯ ಅಗತ್ಯವಿದೆ.",
+            stageDirection: "ಮುಗುಳುನಗೆಯಿಂದ ಸೌಜನ್ಯಯುತವಾಗಿ",
+            audioUrl: "/audio/s4/s4_l3_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "സുപ്രഭാതം! കസ്റ്റമർ സർവീസ് മാനുവൽ അനുസരിച്ച്, ചാരപ്പണി സംശയിക്കുന്ന ഉപകരണങ്ങൾ തിരികെ നൽകാൻ എനിക്ക് ഒറിജിനൽ പാക്കേജിംഗും സത്യപ്രതിജ്ഞ ചെയ്ത ഒരു സാക്ഷിയും ആവശ്യമാണ്.",
+            stageDirection: "ചിരിച്ചുകൊണ്ട് വിനയപൂർവ്വം",
+            audioUrl: "/audio/s4/s4_l3_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Chào buổi sáng! Theo cẩm nang chăm sóc khách hàng, để trả lại thiết bị điện tử bị nghi ngờ làm gián điệp, tôi cần bao bì gốc và một nhân chứng hữu thệ.",
+            stageDirection: "Tươi cười và hết sức ân cần",
+            audioUrl: "/audio/s4/s4_l3_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "สวัสดีตอนเช้าค่ะ! ตามคู่มือการบริการลูกค้า การจะคืนเครื่องใช้ไฟฟ้าที่ต้องสงสัยว่าเป็นจารกรรม ฉันต้องใช้กล่องบรรจุภัณฑ์เดิมและพยานที่สาบานตนแล้วค่ะ",
+            stageDirection: "ยิ้มแย้มและพร้อมบริการอย่างยิ่ง",
+            audioUrl: "/audio/s4/s4_l3_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Selamat pagi! Menurut buku panduan layanan pelanggan, untuk mengembalikan peralatan yang dicurigai sebagai mata-mata, saya memerlukan kemasan asli dan saksi yang disumpah.",
+            stageDirection: "Ramah dan sangat bersahabat",
+            audioUrl: "/audio/s4/s4_l3_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Selamat pagi! Mengikut manual perkhidmatan pelanggan, untuk memulangkan perkakas yang disyaki menjalankan pengintipan, saya memerlukan pembungkusan asal dan saksi yang mengangkat sumpah.",
+            stageDirection: "Mesra dan bersedia membantu",
+            audioUrl: "/audio/s4/s4_l3_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Habari za asubuhi! Kulingana na mwongozo wa huduma kwa wateja, ili kurudisha vyombo vinavyoshukiwa kwa ujasusi ninahitaji sanduku la asili na shahidi aliyeapa.",
+            stageDirection: "Mchangamfu na mwenye kusaidia",
+            audioUrl: "/audio/s4/s4_l3_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Mba'éichapa ne ko'ẽ! Tembiapo ñangarekohára kuatiáre he'i: oñeme'ẽ jey hag̃ua tembiporu ojekuaáva espionaje-pe tekotevẽ ikaha ypykue ha peteĩ testígo oñe'ẽme'ẽva.",
+            stageDirection: "Hory ha ipy'aporãva",
+            audioUrl: "/audio/s4/s4_l3_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Allillanchu tutamanta! Rantikuqkunata yanapaq qillqam nin: wateqasqa kananpaq yuyasqa llamk'anakunata kutiychinapaqqa kikin mayt'unatam munani hinallataq huk jurasqa testigotapas.",
+            stageDirection: "Kusi sonqowan yanapaypi",
+            audioUrl: "/audio/s4/s4_l3_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Aski alwakipana! Alirinakar yanapaña qillqamax sasawa: espionajerjam uñtat yänaka kutt'ayañatakix qallta mayt'uw munata ukatx juramento lurir testigompi.",
+            stageDirection: "Kusisitaw yanapt'iri",
+            audioUrl: "/audio/s4/s4_l3_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Cualli tonalli! Inic tlacuahuatiliztli tlatequitiltiliztli, ic mocuepaz tlamantli tlaixmatiliztli espionaje monequi in yancuic tlapacholli ihuan ce tlatolixtlamatqui tlatocani.",
+            stageDirection: "Cenca tlapaccaihiyocan",
+            audioUrl: "/audio/s4/s4_l3_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Yáʼátʼééh abíní! Naaltsoos bikʼehgo naʼanishígíí binahjįʼ, tsin bee naʼanishígíí naʼneestʼą́ʼ biniinaa nináńtsoosgo, bighan áltséhígíí dóó diné tʼáá aaníí yáłtiʼii bíká adeeshwoł.",
+            stageDirection: "Baʼahózhǫ́ǫgo yáłtiʼ",
+            audioUrl: "/audio/s4/s4_l3_nv-US.mp3"
           }
         }
       },
@@ -6608,10 +7868,430 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Señalando a Bea con aire de triunfo absoluto",
         expression: "smug",
         translations: {
+          "fr-CH": {
+            text: "Tu vois, Clara ? Le protocole de sécurité nationale est déjà déclenché ! Dites-moi, agent Bea, quel est le mot de passe pour annuler l'opération ?",
+            stageDirection: "Gonflé d'orgueil",
+            audioUrl: "/audio/s4/s4_l4_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Tu vois, Clara ? Le protocole de sécurité nationale est déjà en route ! Dites-moi, agent Bea, quel est le mot de passe pour annuler l'opération ?",
+            stageDirection: "Tout fier et victorieux",
+            audioUrl: "/audio/s4/s4_l4_fr-BE.mp3"
+          },
           "es-ES": {
             text: "¿Lo ves, Clara? ¡El protocolo de seguridad nacional ya está en marcha! Dígame, agente Bea, ¿cuál es la contraseña para cancelar la operación?",
             stageDirection: "Envalentonado",
             audioUrl: "/audio/s4/s4_l4_es-ES.mp3"
+          },
+          "es-MX": {
+            text: "¿Ya ves, Clara? ¡El protocolo de seguridad nacional ya está jalando! Dígame, agente Bea, ¿cuál es la clave para cancelar el operativo?",
+            stageDirection: "Bien crecido y triunfante",
+            audioUrl: "/audio/s4/s4_l4_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "¿Viste, Clara? ¡El protocolo de seguridad nacional ya está en marcha! Dígame, agente Bea, ¿cuál es la contraseña para cancelar el operativo?",
+            stageDirection: "Agrandidísimo",
+            audioUrl: "/audio/s4/s4_l4_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "¿Tú ve, Clara? ¡El protocolo de seguridad nacional ta activo ya! Dígame, agente Bea, ¿cuál e' la clave pa' cancelar la operación?",
+            stageDirection: "Creído de la vida",
+            audioUrl: "/audio/s4/s4_l4_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "¿Viste, Clara? ¡El protocolo de seguridad nacional ya arrancó! Dígame, agente Bea, ¿cuál es la clave secreta pa' cancelar la misión?",
+            stageDirection: "Bien pompeao",
+            audioUrl: "/audio/s4/s4_l4_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "¿Si ve, Clara? ¡El protocolo de seguridad nacional ya está corriendo! Dígame, agente Bea, ¿cuál es la clave para cancelar el operativo?",
+            stageDirection: "Crecido de orgullo",
+            audioUrl: "/audio/s4/s4_l4_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Tu vois, Clara ? Le protocole de sécurité nationale est déjà lancé ! Dites-moi, agent Bea, quel est le mot de passe pour annuler l'opération ?",
+            stageDirection: "Pavoisant d'assurance",
+            audioUrl: "/audio/s4/s4_l4_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Tu vois ben, Clara ? Le protocole de sécurité nationale est déjà en marche ! Dites-moi, agent Bea, c'est quoi l'mot d'passe pour canceller l'opération ?",
+            stageDirection: "Gonflé à bloc et triomphant",
+            audioUrl: "/audio/s4/s4_l4_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Tu as vu ça, Clara ? Le protocole de sécurité de l'État est déjà en mouvement ! Dis-moi, agent Bea, c'est quoi le code secret pour couper l'opération ?",
+            stageDirection: "Tout fier devant elle",
+            audioUrl: "/audio/s4/s4_l4_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Tá vendo, Clara? O protocolo de segurança nacional já tá em andamento! Me diga, agente Bea, qual é a senha pra cancelar a operação?",
+            stageDirection: "Se achando o máximo",
+            audioUrl: "/audio/s4/s4_l4_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Estás a ver, Clara? O protocolo de segurança nacional já está em marcha! Diga-me, agente Bea, qual é a palavra-passe para abortar a operação?",
+            stageDirection: "Envaidecido e triunfante",
+            audioUrl: "/audio/s4/s4_l4_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Hai visto, Clara? Il protocollo di sicurezza nazionale è già attivo! Mi dica, agente Bea, qual è la parola d'ordine per annullare l'operazione?",
+            stageDirection: "Rinvigorito e trionfante",
+            audioUrl: "/audio/s4/s4_l4_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Ho veus, Clara? El protocol de seguretat nacional ja està en marxa! Digui'm, agent Bea, quina és la contrasenya per cancel·lar l'operació?",
+            stageDirection: "Envalentit i triomfant",
+            audioUrl: "/audio/s4/s4_l4_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Vezi, Clara? Protocolul de securitate națională este deja în desfășurare! Spuneți-mi, agent Bea, care este parola pentru a anula operațiunea?",
+            stageDirection: "Înfumurat și victorios",
+            audioUrl: "/audio/s4/s4_l4_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Velo, Clara? O protocolo de seguridade nacional xa está en marcha! Dígame, axente Bea, cal é o contrasinal para cancelar a operación?",
+            stageDirection: "Crego e triunfante",
+            audioUrl: "/audio/s4/s4_l4_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "O ves, Clara? Lo protocòl de seguretat nacionala es ja en marcha! Digatz-me, agenta Bea, quina es la senhal per anullar l'operacion?",
+            stageDirection: "Bofi e triomfant",
+            audioUrl: "/audio/s4/s4_l4_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Siehst du, Clara? Das nationale Sicherheitsprotokoll läuft bereits! Sagen Sie mir, Agentin Bea, wie lautet das Passwort, um die Operation abzubrechen?",
+            stageDirection: "Selbstgefällig und siegessicher",
+            audioUrl: "/audio/s4/s4_l4_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Gseesch, Clara? S'nationale Sicherheitsprotokoll lauft scho! Säged Si mir, Agäntin Bea, was isch s'Passwort zum d'Aktion abblase?",
+            stageDirection: "Selbstsicher und stolz",
+            audioUrl: "/audio/s4/s4_l4_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Zie je wel, Clara? Het nationale veiligheidsprotocol is al in werking getreden! Vertel eens, agent Bea, wat is het wachtwoord om de operatie te staken?",
+            stageDirection: "Zelfgenoegzaam en zegevierend",
+            audioUrl: "/audio/s4/s4_l4_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Ser du, Clara? Den nasjonale sikkerhetsprotokollen er allerede i gang! Si meg, agent Bea, hva er passordet for å avbryte operasjonen?",
+            stageDirection: "Hovmodig og seierssikker",
+            audioUrl: "/audio/s4/s4_l4_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Ser du, Clara? Protokollet för nationell säkerhet är redan igång! Säg mig, agent Bea, vad är lösenordet för att avbryta operationen?",
+            stageDirection: "Mallig och triumferande",
+            audioUrl: "/audio/s4/s4_l4_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Kan du se, Clara? Den nationale sikkerhedsprotokol er allerede trådt i kraft! Sig mig, agent Bea, hvad er adgangskoden til at afblæse operationen?",
+            stageDirection: "Selvfed og triumferende",
+            audioUrl: "/audio/s4/s4_l4_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Видишь, Клара? Протокол национальной безопасности уже запущен! Скажите мне, агент Беа, каков пароль для отмены операции?",
+            stageDirection: "Окрылённый и победоносный",
+            audioUrl: "/audio/s4/s4_l4_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Бачиш, Кларо? Протокол національної безпеки вже активовано! Скажіть мені, агентко Беа, який пароль для скасування операції?",
+            stageDirection: "Зарозуміло й тріумфально",
+            audioUrl: "/audio/s4/s4_l4_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Widzisz, Clara? Protokół bezpieczeństwa narodowego już ruszył! Niech mi pani powie, agentko Bea, jakie jest hasło do odwołania operacji?",
+            stageDirection: "Rozochocony i dumny",
+            audioUrl: "/audio/s4/s4_l4_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Vidíš to, Kláro? Protokol národní bezpečnosti už běží! Řekněte mi, agentko Beo, jaké je heslo pro zrušení celé operace?",
+            stageDirection: "Povýšeně a vítězoslavně",
+            audioUrl: "/audio/s4/s4_l4_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Vidiš li, Clara? Protokol nacionalne sigurnosti već je pokrenut! Recite mi, agentice Bea, koja je lozinka za prekid operacije?",
+            stageDirection: "Samouvjereno i pobjednički",
+            audioUrl: "/audio/s4/s4_l4_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Näetkö, Clara? Kansallisen turvallisuuden protokolla on jo käynnissä! Sanokaa, agentti Bea, mikä on salasana operaation peruuttamiseksi?",
+            stageDirection: "Itsetyytyväisenä ja voitokkaana",
+            audioUrl: "/audio/s4/s4_l4_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Látod, Klára? A nemzetbiztonsági protokoll máris érvénybe lépett! Mondja csak, Bea ügynök, mi a jelszó a hadművelet leállításához?",
+            stageDirection: "Felfuvalkodottan és diadalittasan",
+            audioUrl: "/audio/s4/s4_l4_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Ikusten duzu, Clara? Segurtasun nazionaleko protokoloa martxan da dagoeneko! Esadazu, Bea agentea, zein da operazioa bertan behera uzteko pasahitza?",
+            stageDirection: "Harro eta garaile",
+            audioUrl: "/audio/s4/s4_l4_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Gördün mü, Clara? Ulusal güvenlik protokolü çoktan devreye girdi bile! Söyleyin bana Ajan Bea, operasyonu iptal etmek için gereken parola nedir?",
+            stageDirection: "Kendinden emin ve zafer kazanmışçasına",
+            audioUrl: "/audio/s4/s4_l4_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "見たかい、クララ？国家安全保障プロトコルは既に発動したんだ！教えてくれ、エージェント・ベア、作戦を中止するためのパスワードは何だ？",
+            stageDirection: "得意満面で気取って",
+            audioUrl: "/audio/s4/s4_l4_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "你看到了吧，克拉拉？国家安全协议已经启动了！告诉我，比阿特工，取消这次行动的密码是什么？",
+            stageDirection: "得意洋洋，昂首挺胸",
+            audioUrl: "/audio/s4/s4_l4_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "妳睇到喇咩，Clara？國家安全協議已經啟動咗喇！快啲話我知，Bea特工，取消呢次行動嘅密碼係咩？",
+            stageDirection: "好得戚兼自滿",
+            audioUrl: "/audio/s4/s4_l4_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "봤지, 클라라? 국가 안보 프로토콜이 이미 시작됐다고! 말해보세요, 베아 요원, 작전을 중단할 암호가 뭡니까?",
+            stageDirection: "기세등등하게 득의양양해하며",
+            audioUrl: "/audio/s4/s4_l4_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "أرأيتِ يا كلارا؟ بروتوكول الأمن القومي قيد التنفيذ بالفعل! أخبريني أيتها العميلة بيا، ما هي كلمة المرور لإلغاء العملية؟",
+            stageDirection: "بزهو وانتصار",
+            audioUrl: "/audio/s4/s4_l4_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "את רואה, קלרה? נוהל הביטחון הלאומי כבר יצא לדרך! תגידי לי, סוכנת ביאה, מהי הסיסמה כדי לבטל את המבצע?",
+            stageDirection: "זחוח ומלא ביטחון עצמי",
+            audioUrl: "/audio/s4/s4_l4_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "¿Viste, Clara? ¡El protocolo de seguridad nacional ya está activo! Dígame, agente Bea, ¿cuál es la clave para cancelar el operativo?",
+            stageDirection: "Bien agrandado",
+            audioUrl: "/audio/s4/s4_l4_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "¿Cachai, Clara? ¡El protocolo de seguridad nacional ya está corriendo! Dígame, agente Bea, ¿cuál es la clave para cancelar la operación?",
+            stageDirection: "Agrandado y con aires de victoria",
+            audioUrl: "/audio/s4/s4_l4_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "¿Ves, Clara? ¡El protocolo de seguridad nacional ya está en marcha! Dígame, agente Bea, ¿cuál es la contraseña para cancelar el operativo?",
+            stageDirection: "Crecido y triunfal",
+            audioUrl: "/audio/s4/s4_l4_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "¿Viste, Clara? ¡El protocolo de seguridad nacional ya arrancó! Dígame, agente Bea, ¿cuál es la clave pa' parar la operación?",
+            stageDirection: "Envalentonado",
+            audioUrl: "/audio/s4/s4_l4_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "¿Lo ves, Clara? ¡El protocolo de seguridad nacional ya está activado! Dígame, agente Bea, ¿cuál es la contraseña para detener la operación?",
+            stageDirection: "Con aire de victoria",
+            audioUrl: "/audio/s4/s4_l4_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Do you see, Clara? The national security protocol is already underway! Tell me, Agent Bea, what is the password to abort the mission?",
+            stageDirection: "Smug and emboldened",
+            audioUrl: "/audio/s4/s4_l4_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Do you see that, Clara? National security protocol has already commenced! Tell me, Agent Bea, what is the passphrase to abort the operation?",
+            stageDirection: "Smug and triumphant",
+            audioUrl: "/audio/s4/s4_l4_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "D'ye see that, Clara? National security protocol is already rollin'! Tell me, Agent Bea, what's the secret code tae call off the job?",
+            stageDirection: "Fair burstin' wi' pride",
+            audioUrl: "/audio/s4/s4_l4_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "You see that, Clara? Homeland security protocol's already firin' up! Tell me, Agent Bea, what's the secret word to shut down this operation?",
+            stageDirection: "Cocky as all get-out",
+            audioUrl: "/audio/s4/s4_l4_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Do you see that now, Clara? The national security protocol is well on its way! Tell me, Agent Bea, what's the password to stand down the operation?",
+            stageDirection: "Smug and full of himself",
+            audioUrl: "/audio/s4/s4_l4_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "See that, Clara? National security protocol's already kicked off! Tell me, Agent Bea, what's the secret password to abort the op?",
+            stageDirection: "Smug as anything",
+            audioUrl: "/audio/s4/s4_l4_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "See that, Clara? National security protocol is already underway! Tell me, Agent Bea, what's the password to cancel the op?",
+            stageDirection: "Smug and buzzing",
+            audioUrl: "/audio/s4/s4_l4_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "You see, Clara? National security protocol is already running hey! Tell me, Agent Bea, what is the password to abort the mission?",
+            stageDirection: "Smug and pumped up",
+            audioUrl: "/audio/s4/s4_l4_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "You see am, Clara? National security protocol don start like this! Tell me, Agent Bea, wetin be the password to stop the mission?",
+            stageDirection: "Chesting up with pride",
+            audioUrl: "/audio/s4/s4_l4_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Are you seeing that, Clara? National security protocol is already in full swing! Tell me, Agent Bea, what is the secret password to abort the operation?",
+            stageDirection: "Triumphantly beaming",
+            audioUrl: "/audio/s4/s4_l4_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Tu vois, Clara ? Le protocole de sécurité nationale est déjà activé ! Dis-moi, agent Bea, quel est le mot de passe pour arrêter l'opération ?",
+            stageDirection: "Plein d'assurance et fier",
+            audioUrl: "/audio/s4/s4_l4_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Tu as vu, Clara ? Le protocole de sécurité nationale est déjà lancé ! Dis-moi, agent Bea, quel est le mot de passe pour stopper l'opération ?",
+            stageDirection: "Fier et conquérant",
+            audioUrl: "/audio/s4/s4_l4_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Estás a ver, Clara? O protocolo de segurança do Estado já arrancou! Diz lá, agente Bea, qual é a palavra-passe para cancelar a operação?",
+            stageDirection: "Todo convencido",
+            audioUrl: "/audio/s4/s4_l4_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Estás a ver, Clara? O protocolo de segurança nacional já está ativo! Diga lá, agente Bea, qual é o código secreto para parar a missão?",
+            stageDirection: "Orgulhoso e confiante",
+            audioUrl: "/audio/s4/s4_l4_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Zie je wel, Clara? Het protocol voor nationale veiligheid is al opgestart! Zeg eens, agent Bea, wat is het paswoord om de operatie af te blazen?",
+            stageDirection: "Zegezeker en trots",
+            audioUrl: "/audio/s4/s4_l4_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "شفتي يا كلارا؟ بروتوكول الأمن القومي اشتغل خلاص! قولي لي يا عميلة بيا، وش هي كلمة السر عشان نلغي العملية؟",
+            stageDirection: "مغرور ومبسوط بانتصاره",
+            audioUrl: "/audio/s4/s4_l4_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "شايفة يا كلارا؟ بروتوكول الأمن القومي اشتغل خلاص! قوليلي يا سيادة العميلة بيا، إيه هي كلمة السر عشان نلغي العملية دي؟",
+            stageDirection: "منتشي وفرحان بنفسه",
+            audioUrl: "/audio/s4/s4_l4_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "شفتي يا كلارا؟ بروتوكول الأمن القومي راه بدا نيت! قولي ليا أ العميلة بيا، شنو هو الكود السري باش نحبسو هاد العملية؟",
+            stageDirection: "ناشط وفرحان براسو",
+            audioUrl: "/audio/s4/s4_l4_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "شفتي يا كلارا؟ بروتوكول الأمن القومي اشتغل رسمي! احكيلي يا عميلة بيا، شو هي كلمة السر مشان نلغي العملية؟",
+            stageDirection: "مبسوط بحاله ومتشجع",
+            audioUrl: "/audio/s4/s4_l4_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "شفتي يا كلارا؟ نظام الأمن القومي اشتغل هسة! كوليلي يا عميلة بيا، شنو الباسورد حتى نلغي العملية؟",
+            stageDirection: "متفائل وفرحان بنفسه",
+            audioUrl: "/audio/s4/s4_l4_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "妳看到了吧，克拉拉？國家安全協議已經啟動了！告訴我，比阿特工，取消這次行動的密碼是什麼？",
+            stageDirection: "得意洋洋，信心滿滿",
+            audioUrl: "/audio/s4/s4_l4_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "देखा तुमने, क्लारा? राष्ट्रीय सुरक्षा प्रोटोकॉल पहले ही शुरू हो चुका है! मुझे बताइए, एजेंट बी, इस ऑपरेशन को रद्द करने का पासवर्ड क्या है?",
+            stageDirection: "घमंड और जीत के जोश में",
+            audioUrl: "/audio/s4/s4_l4_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "دیکھا تم نے، کلارا؟ قومی سلامتی کا پروٹوکول تو پہلے ہی شروع ہو چکا ہے! مجھے بتائیے، ایجنٹ بیا، اس آپریشن کو منسوخ کرنے کا پاس ورڈ کیا ہے؟",
+            stageDirection: "غرور اور فتح کے جوش میں",
+            audioUrl: "/audio/s4/s4_l4_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "দেখলে তো, ক্লারা? জাতীয় নিরাপত্তা প্রোটোকল ইতিমধ্যে শুরু হয়ে গেছে! আমাকে বলুন, এজেন্ট বিয়া, অপারেশন বাতিল করার গোপন পাসওয়ার্ডটা কী?",
+            stageDirection: "অহংকারে ডগমগ হয়ে",
+            audioUrl: "/audio/s4/s4_l4_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਵੇਖਿਆ ਤੂੰ, ਕਲਾਰਾ? ਰਾਸ਼ਟਰੀ ਸੁਰੱਖਿਆ ਪ੍ਰੋਟੋਕੋਲ ਪਹਿਲਾਂ ਹੀ ਚਾਲੂ ਹੋ ਚੁੱਕਾ ਹੈ! ਮੈਨੂੰ ਦੱਸੋ, ਏਜੰਟ ਬੀਆ, ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਰੱਦ ਕਰਨ ਦਾ ਪਾਸਵਰਡ ਕੀ ਹੈ?",
+            stageDirection: "ਹੰਕਾਰ ਅਤੇ ਜਿੱਤ ਦੇ ਰੌਂਅ ਵਿੱਚ",
+            audioUrl: "/audio/s4/s4_l4_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "જોયું તેં, ક્લેરા? રાષ્ટ્રીય સુરક્ષા પ્રોટોકોલ તો ક્યારનોય શરૂ થઈ ચૂક્યો છે! મને કહો, એજન્ટ બીયા, આ ઓપરેશન રદ કરવાનો ગુપ્ત પાસવર્ડ કયો છે?",
+            stageDirection: "ગર્વથી ફુલાઈને",
+            audioUrl: "/audio/s4/s4_l4_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "पाहिलंस, क्लारा? राष्ट्रीय सुरक्षा प्रोटोकॉल आधीच सुरू झाला आहे! मला सांगा, एजंट बीया, हे ऑपरेशन रद्द करण्यासाठी पासवर्ड काय आहे?",
+            stageDirection: "अहंकाराने आणि विजयी सुरात",
+            audioUrl: "/audio/s4/s4_l4_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "பார்த்தாயா, கிளாரா? தேசிய பாதுகாப்பு நடைமுறை ஏற்கனவே தொடங்கிவிட்டது! சொல்லுங்கள், உளவாளி பீயா, இந்த நடவடிக்கையை ரத்து செய்வதற்கான கடவுச்சொல் என்ன?",
+            stageDirection: "பெருமிதத்துடனும் உற்சாகத்துடனும்",
+            audioUrl: "/audio/s4/s4_l4_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "చూశావా, క్లారా? జాతీయ భద్రతా ప్రోటోకాల్ ఇప్పటికే మొదలైపోయింది! చెప్పండి, ఏజెంట్ బియా, ఈ ఆపరేషన్‌ను రద్దు చేయడానికి పాస్‌వర్డ్ ఏమిటి?",
+            stageDirection: "గర్వంగా మరియు విజయోత్సాహంతో",
+            audioUrl: "/audio/s4/s4_l4_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ನೋಡಿದೆಯಾ, ಕ್ಲಾರಾ? ರಾಷ್ಟ್ರೀಯ ಭದ್ರತಾ ಶಿಷ್ಟಾಚಾರವು ಈಗಾಗಲೇ ಪ್ರಾರಂಭವಾಗಿದೆ! ನನಗೆ ತಿಳಿಸಿ, ಏಜೆಂಟ್ ಬಿಯಾ, ಈ ಕಾರ್ಯಾಚರಣೆಯನ್ನು ರದ್ದುಗೊಳಿಸುವ ಪಾಸ್‌ವರ್ಡ್ ಏನು?",
+            stageDirection: "ಹೆಮ್ಮೆಯಿಂದ ಬೀಗುತ್ತಾ",
+            audioUrl: "/audio/s4/s4_l4_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "കണ്ടോ നീ, ക്ലാര? ദേശീയ സുരക്ഷാ പ്രോട്ടോക്കോൾ ഇതിനകം ആരംഭിച്ചുകഴിഞ്ഞു! എന്നോട് പറയൂ, ഏജന്റ് ബിയാ, ഈ ഓപ്പറേഷൻ റദ്ദാക്കാനുള്ള പാസ്‌വേഡ് എന്താണ്?",
+            stageDirection: "അഹങ്കാരത്തോടെ വിജയഭാവത്തിൽ",
+            audioUrl: "/audio/s4/s4_l4_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Thấy chưa, Clara? Giao thức an ninh quốc gia đã được kích hoạt rồi! Nói cho tôi biết đi, Điệp viên Bea, mật khẩu để hủy bỏ chiến dịch là gì?",
+            stageDirection: "Đắc thắng và tự đắc",
+            audioUrl: "/audio/s4/s4_l4_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "เห็นไหมล่ะ คลารา? ระเบียบการความมั่นคงแห่งชาติเริ่มทำงานแล้ว! บอกมาสิครับ สายลับเบีย รหัสผ่านในการยกเลิกปฏิบัติการนี้คืออะไร?",
+            stageDirection: "ฮึกเหิมและลำพองใจ",
+            audioUrl: "/audio/s4/s4_l4_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Kamu lihat, Clara? Protokol keamanan nasional sudah berjalan! Katakan padaku, Agen Bea, apa kata sandi untuk membatalkan operasi ini?",
+            stageDirection: "Puas dan berlagak sombong",
+            audioUrl: "/audio/s4/s4_l4_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Awak nampak tak, Clara? Protokol keselamatan negara sudah bermula! Beritahu saya, Ejen Bea, apakah kata laluan untuk membatalkan operasi ini?",
+            stageDirection: "Berlagak megah dan bangga",
+            audioUrl: "/audio/s4/s4_l4_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Unaona, Clara? Itifaki ya usalama wa taifa tayari imeanza! Niambie, Afisa Bea, nenosiri la kufuta operesheni hii ni lipi?",
+            stageDirection: "Akitamba kwa ushindi",
+            audioUrl: "/audio/s4/s4_l4_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Rehechápa, Clara? Seguridad nacional rape oñepyrũma hína! Emombe'u chéve, agente Bea, mba'épa pe ñe'ẽñemi jajoko hag̃ua ko operasion?",
+            stageDirection: "Iñakãguapýva ha ojeroviáva ijehe",
+            audioUrl: "/audio/s4/s4_l4_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Rikunkichu, Clara? Suyupa allin kawsayninpa kamachiyninqa qallarinñam! Willaway, agente Bea, ima pakasqa rimaytaq kay rurayta sayachinapaq?",
+            stageDirection: "Kusisqa atipaq hina",
+            audioUrl: "/audio/s4/s4_l4_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Uñjtati, Clara? Aka markana seguridadatak kamachix qalltxapxiwa! Sitaxa, agente Bea, kunas uka p'iqi chimpu aka operacion qallt'aña sayt'ayañatakixa?",
+            stageDirection: "Ch'ama k'arisiñampi arnaqasa",
+            audioUrl: "/audio/s4/s4_l4_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Tiquita, Clara? In altepetl tlapacholiztli protocol omopeuhya! Xinechmolhuili, agente Bea, tlen tlaixpahuiliztli ic tlatzaccaz inin tlatequiliztli?",
+            stageDirection: "Cenca mohueyimati",
+            audioUrl: "/audio/s4/s4_l4_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Yiniłtsą́ą́sh, Clara? Kéyah baa aháyó bee hazʼáanii kʼad choolʼį́! Shil hólneʼ, Naatʼáanii Bea, haʼátʼíhída bízhiʼ yee tʼóó bee chʼééh ádoolnííł?",
+            stageDirection: "Ayóo ayóí áhátʼį́įgo yáłtiʼ",
+            audioUrl: "/audio/s4/s4_l4_nv-US.mp3"
           }
         }
       },
@@ -6621,10 +8301,430 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Consultando una libreta de espiral con total naturalidad",
         expression: "neutral",
         translations: {
+          "fr-CH": {
+            text: "Le mot de passe est « croquette », mais le gérant a congé aujourd'hui. Je peux seulement vous donner un bon d'achat ou échanger l'appareil contre une machine à café qui parle.",
+            stageDirection: "Douce et serviable",
+            audioUrl: "/audio/s4/s4_l5_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Le mot de passe est « croquette », mais le gérant est en congé aujourd'hui. Je peux seulement vous faire un bon d'achat ou échanger le grille-pain contre une cafetière qui parle.",
+            stageDirection: "Très innocente et avenante",
+            audioUrl: "/audio/s4/s4_l5_fr-BE.mp3"
+          },
           "es-ES": {
             text: "La contraseña es «croqueta», pero hoy el encargado libra. Solo puedo darles un vale de tienda o cambiar la tostadora por una cafetera parlante.",
             stageDirection: "Inocente y complaciente",
             audioUrl: "/audio/s4/s4_l5_es-ES.mp3"
+          },
+          "es-MX": {
+            text: "La clave es «croqueta», pero hoy el gerente descansó. Solo les puedo dar un monedero electrónico o cambiar el tostador por una cafetera que habla.",
+            stageDirection: "Súper tierna y calmada",
+            audioUrl: "/audio/s4/s4_l5_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "La contraseña es «croqueta», pero hoy el encargado tiene franco. Solo les puedo dar una nota de crédito o cambiar la tostadora por una cafetera que habla.",
+            stageDirection: "Inocente y tranquila",
+            audioUrl: "/audio/s4/s4_l5_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "La contraseña e' «croqueta», pero hoy el encargado no vino a trabajar. Solo le' puedo dar un crédito o cambiarle la tostadora por una cafetera que habla.",
+            stageDirection: "Inocente y tranquila",
+            audioUrl: "/audio/s4/s4_l5_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "La clave es «croqueta», pero hoy el gerente tiene el día libre. Solo les puedo dar un crédito de la tienda o cambiar la tostadora por una cafetera parlanchina.",
+            stageDirection: "Inocente y complaciente",
+            audioUrl: "/audio/s4/s4_l5_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "La clave es «croqueta», pero hoy el administrador tiene descanso. Solo les puedo dar un bono de la tienda o cambiar el tostador por una cafetera que habla.",
+            stageDirection: "Muy dulce y tranquila",
+            audioUrl: "/audio/s4/s4_l5_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Le mot de passe est « croquette », mais le responsable est en jour de repos. Je peux seulement vous faire un avoir ou échanger le grille-pain contre une cafetière parlante.",
+            stageDirection: "Innocente et serviable",
+            audioUrl: "/audio/s4/s4_l5_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Le mot d'passe c'est « croquette », mais l'gérant est en congé aujourd'hui. J'peux juste vous donner une note de crédit ou échanger l'grille-pain pour une cafetière parlante.",
+            stageDirection: "Ben naïve et gentille",
+            audioUrl: "/audio/s4/s4_l5_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Le mot de passe c'est « croquette », mais le chef est en repos aujourd'hui. Je peux seulement vous donner un bon d'achat ou changer le grille-pain contre une cafetière qui parle là.",
+            stageDirection: "Calme et innocente",
+            audioUrl: "/audio/s4/s4_l5_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "A senha é «croquete», mas hoje o gerente tá de folga. Só posso dar um vale-compras ou trocar a torradeira por uma cafeteira que fala.",
+            stageDirection: "Toda ingênua e prestativa",
+            audioUrl: "/audio/s4/s4_l5_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "A palavra-passe é «croquete», mas o gerente hoje está de folga. Só posso passar um vale de loja ou trocar a torradeira por uma máquina de café falante.",
+            stageDirection: "Ingénua e prestável",
+            audioUrl: "/audio/s4/s4_l5_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "La parola d'ordine è «crocchetta», ma oggi il direttore è di riposo. Posso solo farvi un buono spesa o scambiare il tostapane con una macchina del caffè parlante.",
+            stageDirection: "Candida e accomodante",
+            audioUrl: "/audio/s4/s4_l5_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "La contrasenya és «croqueta», però avui l'encarregat té festa. Només us puc donar un val de la botiga o canviar la torradora per una cafetera que parla.",
+            stageDirection: "Innocent i complaent",
+            audioUrl: "/audio/s4/s4_l5_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Parola este «crochetă», dar șeful de magazin este în ziua lui liberă. Vă pot oferi doar un voucher de magazin sau să vă schimb prăjitorul cu un espressor vorbitor.",
+            stageDirection: "Inocentă și binevoitoare",
+            audioUrl: "/audio/s4/s4_l5_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "O contrasinal é «croqueta», pero hoxe o encargado libra. Só vos podo dar un vale da tenda ou cambiar a torradora por unha cafeteira que fala.",
+            stageDirection: "Inocente e agarimosa",
+            audioUrl: "/audio/s4/s4_l5_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "La senhal es «croqueta», mas uèi lo responsable es en repaus. Vos pòdi sonque donar un bon de crompa o escambiar la grasilhadeira per una cafetièra que parla.",
+            stageDirection: "Inocenta e complasenta",
+            audioUrl: "/audio/s4/s4_l5_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Das Passwort lautet «Krokette», aber der Filialleiter hat heute seinen freien Tag. Ich kann Ihnen nur einen Warengutschein ausstellen oder den Toaster gegen eine sprechende Kaffeemaschine tauschen.",
+            stageDirection: "Treuherzig und entgegenkommend",
+            audioUrl: "/audio/s4/s4_l5_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "S'Passwort isch «Krokette», aber de Filialleiter hät hüt frei. Ich cha Ihne nume en Guetschiin gäh oder de Toaster gäge e Kaffimaschine tusche, wo redt.",
+            stageDirection: "Unschuldig und fründlich",
+            audioUrl: "/audio/s4/s4_l5_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Het wachtwoord is 'kroket', maar de bedrijfsleider heeft vandaag zijn vrije dag. Ik kan u alleen een tegoedbon aanbieden of de broodrooster ruilen voor een sprekend koffiezetapparaat.",
+            stageDirection: "Onschuldig en inschikkelijk",
+            audioUrl: "/audio/s4/s4_l5_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Passordet er «krokett», men butikksjefen har fridag i dag. Jeg kan bare tilby dere en tilgodelapp eller bytte brødristeren mot en snakkende kaffetrakter.",
+            stageDirection: "Uskyldig og imøtekommende",
+            audioUrl: "/audio/s4/s4_l5_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Lösenordet är 'krokett', men chefen är ledig idag. Jag kan bara erbjuda ett tillgodokvitto eller byta brödrosten mot en talande kaffebryggare.",
+            stageDirection: "Oskyldig och tillmötesgående",
+            audioUrl: "/audio/s4/s4_l5_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Adgangskoden er 'kroket', men butikschefen har fridag i dag. Jeg kan kun give jer et tilgodebevis eller bytte brødristeren til en talende kaffemaskine.",
+            stageDirection: "Uskyldig og hjælpsom",
+            audioUrl: "/audio/s4/s4_l5_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Пароль — «крокет», но у управляющего сегодня выходной. Я могу предложить вам только подарочный сертификат или обменять тостер на говорящую кофеварку.",
+            stageDirection: "Невинно и услужливо",
+            audioUrl: "/audio/s4/s4_l5_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Пароль — «крокет», але в адміністратора сьогодні вихідний. Я можу лише видати вам подарунковий ваучер або обміняти тостер на кавоварку, що розмовляє.",
+            stageDirection: "Невинно і лагідно",
+            audioUrl: "/audio/s4/s4_l5_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Hasło to „krokiet”, ale kierownik ma dziś wolne. Mogę państwu zaoferować jedynie bon towarowy lub wymienić toster na mówiący ekspres do kawy.",
+            stageDirection: "Niewinnie i spolegliwie",
+            audioUrl: "/audio/s4/s4_l5_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Heslo zní „kroketa“, ale vedoucí má dnes volno. Mohu vám nabídnout pouze poukaz do obchodu, nebo vyměnit toustovač za mluvící kávovar.",
+            stageDirection: "Nevinně a vstřícně",
+            audioUrl: "/audio/s4/s4_l5_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Lozinka glasi «kroketi», ali voditelj trgovine danas ima slobodan dan. Mogu vam jedino izdati bon za kupnju ili zamijeniti toster za aparat za kavu koji priča.",
+            stageDirection: "Nedužno i susretljivo",
+            audioUrl: "/audio/s4/s4_l5_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Salasana on «kroketti», mutta myymäläpäälliköllä on tänään vapaapäivä. Voin ainoastaan antaa teille lahjakortin tai vaihtaa leivänpaahtimen puhuvaan kahvinkeittimeen.",
+            stageDirection: "Viaton ja miellyttävä",
+            audioUrl: "/audio/s4/s4_l5_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "A jelszó az, hogy «krokett», de az üzletvezetőnek ma van a szabadnapja. Csak egy vásárlási utalványt tudok adni, vagy kicserélhetem a pirítót egy beszélő kávéfőzőre.",
+            stageDirection: "Ártatlanul és készségesen",
+            audioUrl: "/audio/s4/s4_l5_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Pasahitza «kroqueta» da, baina gaur arduraduna jai du. Dendako txartel bat eman diezazuket soilik edo txigorgailua hitz egiten duen kafe-makina batekin aldatu.",
+            stageDirection: "Inozoa eta adeitsua",
+            audioUrl: "/audio/s4/s4_l5_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Parolamız «kroket», fakat müdür beyin bugün izin günü. Size yalnızca mağaza çeki verebilirim veya ekmek kızartma makinesini konuşan bir kahve makinesiyle değiştirebilirim.",
+            stageDirection: "Masum ve sevecen bir tavırla",
+            audioUrl: "/audio/s4/s4_l5_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "パスワードは「コロッケ」ですが、責任者は本日お休みをいただいております。商品券をお渡しするか、トースターをおしゃべりコーヒーメーカーと交換することしかできません。",
+            stageDirection: "無邪気に申し訳なさそうに",
+            audioUrl: "/audio/s4/s4_l5_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "密码是“可乐饼”，但店长今天轮休。我只能给二位一张店内代金券，或者把这台烤面包机换成一台会说话的咖啡机。",
+            stageDirection: "天真而极其体贴",
+            audioUrl: "/audio/s4/s4_l5_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "密碼係「炸肉餅」，但係經理今日放假喔。我最多只能夠換張購物券畀你哋，或者將部多士爐換做一部識講嘢嘅咖啡機。",
+            stageDirection: "天真無邪好順從",
+            audioUrl: "/audio/s4/s4_l5_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "암호는 '크로켓'이지만, 지점장님이 오늘 휴무이십니다. 매장 상품권을 드리거나 토스터를 말하는 커피 머신으로 교환해 드리는 방법뿐입니다.",
+            stageDirection: "천진난만하고 친절하게",
+            audioUrl: "/audio/s4/s4_l5_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "كلمة المرور هي «كروكيت»، ولكن المدير في إجازته اليوم. كل ما يمكنني تقديمه لكما هو قسيمة شراء أو استبدال المحمصة بآلة صنع قهوة متكلمة.",
+            stageDirection: "ببراءة وعفوية",
+            audioUrl: "/audio/s4/s4_l5_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "הסיסמה היא «קרוקט», אבל המנהל ביום חופש היום. אני יכולה רק לתת לכם שובר זיכוי לחנות או להחליף את המצנם במכונת קפה מדברת.",
+            stageDirection: "תמימה ומשתפת פעולה",
+            audioUrl: "/audio/s4/s4_l5_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "La clave es «croqueta», pero hoy el encargado tiene el día libre. Solo les puedo dar una nota de crédito o cambiar la tostadora por una cafetera que habla.",
+            stageDirection: "Con una sonrisa inocente",
+            audioUrl: "/audio/s4/s4_l5_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "La clave es «croqueta», pero hoy el jefe de local tiene libre. Solo les puedo dar una nota de crédito o cambiar el tostador por una cafetera que habla.",
+            stageDirection: "Tierna e inocente",
+            audioUrl: "/audio/s4/s4_l5_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "La contraseña es «croqueta», pero hoy el administrador descansa. Solo les puedo dar una nota de crédito o cambiar la tostadora por una cafetera que habla.",
+            stageDirection: "Amable y serena",
+            audioUrl: "/audio/s4/s4_l5_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "La contraseña es «croqueta», pero hoy el administrador no está de guardia. Solo puedo darles un vale o cambiar la tostadora por una cafetera parlante.",
+            stageDirection: "Tranquila y servicial",
+            audioUrl: "/audio/s4/s4_l5_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "La contraseña es «croqueta», pero hoy el responsable libra. Solo puedo darles un vale o cambiar la tostadora por una cafetera que habla.",
+            stageDirection: "Ingenua y amable",
+            audioUrl: "/audio/s4/s4_l5_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "The password is 'croquette', but the manager has the day off today. I can only offer you store credit or swap the toaster for a talking coffee maker.",
+            stageDirection: "Innocent and accommodating",
+            audioUrl: "/audio/s4/s4_l5_en-US.mp3"
+          },
+          "en-GB": {
+            text: "The password is 'croquette', but the duty manager is off today. I can only offer you a store voucher or exchange the toaster for a talking coffee machine.",
+            stageDirection: "Sweetly accommodating",
+            audioUrl: "/audio/s4/s4_l5_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "The code word's 'croquette', but the boss is off shift the day. I can only gie ye a store voucher or swap the toaster for a coffee machine that chats away.",
+            stageDirection: "Cheery and obliging",
+            audioUrl: "/audio/s4/s4_l5_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "The password's 'croquette', but the manager's off fishin' today. All I can do is give y'all store credit or swap that toaster for a talkin' coffee maker.",
+            stageDirection: "Sweet and plainspoken",
+            audioUrl: "/audio/s4/s4_l5_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "The password is 'croquette', but the supervisor has the day off today so he has. I can only give ye a store voucher or swap the toaster for a talking coffee maker.",
+            stageDirection: "Innocent and pleasant",
+            audioUrl: "/audio/s4/s4_l5_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Password's 'croquette', mate, but the store manager's having a rostered day off. Can only give you store credit or swap the toaster for a talking coffee machine.",
+            stageDirection: "Innocent and helpful",
+            audioUrl: "/audio/s4/s4_l5_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "The password's 'croquette', but the manager is on leave today. I can only give you store credit or swap the toaster for a talking coffee machine.",
+            stageDirection: "Casual and accommodating",
+            audioUrl: "/audio/s4/s4_l5_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "The password is 'croquette', but the manager is off today hey. I can only give you a store voucher or trade the toaster for a talking coffee machine.",
+            stageDirection: "Friendly and obliging",
+            audioUrl: "/audio/s4/s4_l5_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "The password na 'croquette', but oga manager dey rest for house today. I fit only give una store voucher or change the toaster to coffee machine wey dey talk.",
+            stageDirection: "Gentle and smiling",
+            audioUrl: "/audio/s4/s4_l5_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "The password is 'croquette', but today manager sir is having weekly off. I can only give you one store credit note or exchange the toaster for a talking coffee machine.",
+            stageDirection: "Innocently helpful",
+            audioUrl: "/audio/s4/s4_l5_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Le mot de passe c'est « croquette », mais le chef est en congé aujourd'hui. Je peux seulement vous faire un bon de magasin ou échanger le grille-pain contre une cafetière parlante.",
+            stageDirection: "Innocente et souriante",
+            audioUrl: "/audio/s4/s4_l5_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Le mot de passe est « croquette », mais le responsable ne travaille pas aujourd'hui. Je peux seulement vous faire un bon ou vous donner une cafetière qui parle.",
+            stageDirection: "Tranquille et aimable",
+            audioUrl: "/audio/s4/s4_l5_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "A palavra-passe é «croquete», mas o chefe hoje está de folga. Só posso dar um vale da loja ou trocar a torradeira por uma cafeteira que fala.",
+            stageDirection: "Calma e prestativa",
+            audioUrl: "/audio/s4/s4_l5_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "A senha é «croquete», mas o gerente hoje está a descansar. Só posso dar um vale de compras ou trocar a torradeira por uma cafeteira que fala.",
+            stageDirection: "Doce e ingénua",
+            audioUrl: "/audio/s4/s4_l5_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Het paswoord is 'kroket', maar de chef is vandaag thuis. Ik kan u alleen een aankoopbon meegeven of die broodrooster omruilen voor een koffiezet die kan praten.",
+            stageDirection: "Onschuldig en gedienstig",
+            audioUrl: "/audio/s4/s4_l5_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "كلمة السر هي «كروكيت»، بس المدير اليوم في إجازته. أقدر أعطيكم قسيمة شراء للمحل أو أبدل الحماصة بمكينة قهوة تتكلم.",
+            stageDirection: "على نياتها وبكل براءة",
+            audioUrl: "/audio/s4/s4_l5_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "كلمة السر هي «كروكيت»، بس المدير واخد إجازة النهاردة. ممكن أديكم وصل رصيد للمحل أو أبدل التوستر بمكنة قهوة بتتكلم.",
+            stageDirection: "بطيبة قلب وبريئة جداً",
+            audioUrl: "/audio/s4/s4_l5_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "الكود السري هو «كروكيطة»، ولكن الشاف راه عندو نهار راحة اليوم. نقدر نعطيكم غير بون ديال المحل أو نبدلو الشواية بماكينة قهوة كاتدوي.",
+            stageDirection: "على نيتها وضريفة",
+            audioUrl: "/audio/s4/s4_l5_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "كلمة السر هي «كروكيت»، بس المدير اليوم معطل. بقدر أعطيكم كوبون للمحل أو أبدل المحمصة بماكينة قهوة بتحكي.",
+            stageDirection: "ببراءة ولطف",
+            audioUrl: "/audio/s4/s4_l5_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "الباسورد هو «كروكيت»، بس المدير اليوم مجاز. أكدر أنطيكم وصل مشتريات أو أبدل الحماصة بمكينة كهوة تحجي.",
+            stageDirection: "على فطرتها وحبابة",
+            audioUrl: "/audio/s4/s4_l5_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "密碼是「可樂餅」，但店長今天輪休。我只能給二位一張店內抵用券，或者把這台烤麵包機換成一台會說話的咖啡機。",
+            stageDirection: "天真而極其體貼",
+            audioUrl: "/audio/s4/s4_l5_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "पासवर्ड 'क्रोकेट' है, लेकिन आज मैनेजर साहब की छुट्टी है। मैं आपको केवल स्टोर वाउचर दे सकती हूँ या फिर इस टोस्टर के बदले बोलने वाली कॉफी मशीन दे सकती हूँ।",
+            stageDirection: "मासूमियत से पूरी विनम्रता के साथ",
+            audioUrl: "/audio/s4/s4_l5_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "پاس ورڈ 'کروکیٹ' ہے، لیکن آج منیجر صاحب چھٹی پر ہیں۔ میں آپ کو صرف اسٹور واؤچر دے سکتی ہوں یا اس ٹوسٹر کے بدلے بولنے والی کافی مشین پیش کر سکتی ہوں۔",
+            stageDirection: "معصومیت اور انکساری سے",
+            audioUrl: "/audio/s4/s4_l5_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "পাসওয়ার্ডটি হলো 'ক্রোকেট', তবে ম্যানেজারের আজ ছুটির দিন। আমি কেবল একটি স্টোর ভাউচার দিতে পারি অথবা টোস্টারটি বদলে কথা বলা কফি মেশিন দিতে পারি।",
+            stageDirection: "সরল মুখে অমায়িকভাবে",
+            audioUrl: "/audio/s4/s4_l5_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਪਾਸਵਰਡ 'ਕਰੋਕੇਟ' ਹੈ, ਪਰ ਅੱਜ ਮੈਨੇਜਰ ਸਾਹਿਬ ਦੀ ਛੁੱਟੀ ਹੈ। ਮੈਂ ਸਿਰਫ਼ ਸਟੋਰ ਦਾ ਵਾਊਚਰ ਦੇ ਸਕਦੀ ਹਾਂ ਜਾਂ ਇਸ ਟੋਸਟਰ ਦੇ ਬਦਲੇ ਬੋਲਣ ਵਾਲੀ ਕੌਫ਼ੀ ਮਸ਼ੀਨ ਦੇ ਸਕਦੀ ਹਾਂ।",
+            stageDirection: "ਮਾਸੂਮੀਅਤ ਨਾਲ ਅਤੇ ਨਿਮਰਤਾ ਨਾਲ",
+            audioUrl: "/audio/s4/s4_l5_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "પાસવર્ડ 'ક્રોકેટ' છે, પણ આજે મેનેજર સાહેબની રજા છે. હું તમને માત્ર સ્ટોર વાઉચર આપી શકું છું અથવા આ ટોસ્ટરના બદલામાં બોલતું કોફી મશીન આપી શકું છું.",
+            stageDirection: "નિર્દોષ ભાવે અને નમ્રતાથી",
+            audioUrl: "/audio/s4/s4_l5_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "पासवर्ड 'क्रोकेट' आहे, पण व्यवस्थाપकाची आज सुट्टी आहे. मी तुम्हाला फक्त स्टोअर व्हाउचर देऊ शकते किंवा टोस्टरच्या बदल्यात बोलणारे कॉफी मशीन देऊ शकते.",
+            stageDirection: "निष्पाप आणि नम्रपणे",
+            audioUrl: "/audio/s4/s4_l5_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "கடவுச்சொல் 'குரோக்கெட்', ஆனால் இன்று மேலாளர் விடுமுறையில் உள்ளார். என்னால் கடை வவுச்சர் மட்டுமே தர முடியும் அல்லது இந்த டோஸ்டருக்குப் பதிலாகப் பேசும் காபி இயந்திரத்தை மாற்றிக் கொடுக்க முடியும்.",
+            stageDirection: "அப்பாவித்தனமாகவும் பணிவாகவும்",
+            audioUrl: "/audio/s4/s4_l5_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "పాస్‌వర్డ్ 'క్రోకెట్', కానీ మేనేజర్ గారు ఈరోజు సెలవులో ఉన్నారు. నేను మీకు స్టోర్ వోచర్ మాత్రమే ఇవ్వగలను లేదా ఈ టోస్టర్‌కు బదులుగా మాట్లాడే కాఫీ మెషీన్‌ను మార్చి ఇవ్వగలను.",
+            stageDirection: "అమాయకంగా మరియు సహకరిస్తూ",
+            audioUrl: "/audio/s4/s4_l5_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಪಾಸ್‌ವರ್ಡ್ 'ಕ್ರೋಕೆಟ್', ಆದರೆ ವ್ಯವಸ್ಥಾಪಕರಿಗೆ ಇಂದು ರಜೆಯಿದೆ. ನಾನು ನಿಮಗೆ ಕೇವಲ ಅಂಗಡಿ ವೋಚರ್ ನೀಡಬಲ್ಲೆ ಅಥವಾ ಈ ಟೋಸ್ಟರ್ ಬದಲಿಗೆ ಮಾತನಾಡುವ ಕಾಫಿ ಯಂತ್ರವನ್ನು ನೀಡಬಲ್ಲೆ.",
+            stageDirection: "ಮುಗ್ಧವಾಗಿ ಮತ್ತು ಸಹಕಾರ ಮನೋಭಾವದಿಂದ",
+            audioUrl: "/audio/s4/s4_l5_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "പാസ്‌വേഡ് 'ക്രോക്കറ്റ്' എന്നാണ്, എന്നാൽ മാനേജർക്ക് ഇന്ന് അവധിയാണ്. എനിക്ക് നിങ്ങൾക്ക് സ്റ്റോർ വൗച്ചർ നൽകാനോ അല്ലെങ്കിൽ ടോസ്റ്ററിന് പകരം സംസാരിക്കുന്ന കോഫി മെഷീൻ നൽകാനോ മാത്രമേ കഴിയൂ.",
+            stageDirection: "നിഷ്കളങ്കമായും വിനയത്തോടെയും",
+            audioUrl: "/audio/s4/s4_l5_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Mật khẩu là 'bánh croquette', nhưng hôm nay người quản lý được nghỉ phép. Tôi chỉ có thể gửi tặng quý khách phiếu mua hàng hoặc đổi cái máy nướng này lấy máy pha cà phê biết nói.",
+            stageDirection: "Ngây thơ và sẵn lòng giúp",
+            audioUrl: "/audio/s4/s4_l5_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "รหัสผ่านคือ 'โครเกต์' ค่ะ แต่ผู้จัดการหยุดวันนี้ ฉันทำได้แค่ให้คูปองแทนเงินสดของร้าน หรือเปลี่ยนเครื่องปิ้งขนมปังนี้เป็นเครื่องชงกาแฟที่พูดได้ค่ะ",
+            stageDirection: "ไร้เดียงสาและพร้อมบริการ",
+            audioUrl: "/audio/s4/s4_l5_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Kata sandinya adalah 'kroket', tapi manajer sedang libur hari ini. Saya hanya bisa memberi Anda voucher toko atau menukar pemanggang roti ini dengan mesin kopi yang bisa berbicara.",
+            stageDirection: "Polos dan ramah",
+            audioUrl: "/audio/s4/s4_l5_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Kata laluannya ialah 'kroket', tetapi pengurus sedang bercuti hari ini. Saya hanya boleh memberi anda baucar kedai atau menukar pembakar roti ini dengan mesin kopi yang boleh bercakap.",
+            stageDirection: "Lurus dan mesra",
+            audioUrl: "/audio/s4/s4_l5_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Nenosiri ni 'croquette', lakini meneja ana siku ya mapumziko leo. Naweza kuwapa vocha ya duka au kubadilisha kibaniko hiki na mashine ya kahawa inayoongea.",
+            stageDirection: "Mpole na mwenye unyenyekevu",
+            audioUrl: "/audio/s4/s4_l5_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Pe ñe'ẽñemi ha'e «croqueta», ha katu ko árape pe mburuvicha opytu'u. Ikatúnte ame'ẽ peẽme kuatia virurã térã amoambue ko tostadora peteĩ kafe apoha oñe'ẽvare.",
+            stageDirection: "Iñañag̃ua'ỹva ha opy'aporãva",
+            audioUrl: "/audio/s4/s4_l5_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Pakasqa rimayqa «croqueta» nisqam, ichaqa kamachiqmi kunan p'unchaw samachkan. Qullqi rantina qillqallatam quykikichikman utaq kay tanta kankanata huk rimaq kafe ruwanawan tikraykuni.",
+            stageDirection: "Llamp'u sonqo llumpay sumaq",
+            audioUrl: "/audio/s4/s4_l5_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Uka p'iqi chimpuxa «croqueta» satawa, ukampis jichhürunakanx p'iqinchirix samaraskiwa. Nayax mä bono alañatakikiw chursmapxañani jan ukax aka kankarxa café lurir arst'iri maquinaruw jaqurpayta.",
+            stageDirection: "Suma llamp'u chuymampi",
+            audioUrl: "/audio/s4/s4_l5_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "In tlaixpahuiliztli ca «croqueta», tel in tlayecanqui axcan motlalia cececca. Zan hueliti nimechmaca ce tlatquicamatiliztli nozo niquipatlas inin tlaxcalchijchihualoni ic ce caféchijchihualoni tlen tlatohua.",
+            stageDirection: "Cenca yecnemiliceh",
+            audioUrl: "/audio/s4/s4_l5_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Bízhiʼ éí 'croquette' wolyé, ndi naatʼáanii díí jį́ doo naalnish da. Tʼáá azeeʼ bą́ą́h haʼníłtsóóz bee chʼiyáán nahaniihígi átʼéego bee nihiká adeeshwoł, éí doodago gah bee gohwééh álnéhígíí yáłtiʼii nihidiyootłoh.",
+            stageDirection: "Doo áhátʼį́į́góó hazhóʼó yáłtiʼ",
+            audioUrl: "/audio/s4/s4_l5_nv-US.mp3"
           }
         }
       },
@@ -6634,10 +8734,430 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Frotándose las sienes con resignación cósmica",
         expression: "defeated",
         translations: {
+          "fr-CH": {
+            text: "Donnez-moi la machine à café parlante, Bea. Elle aura certainement des propos plus sensés que ce que je dois écouter à la maison.",
+            stageDirection: "Soupirant de fatigue",
+            audioUrl: "/audio/s4/s4_l6_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Donnez-moi la cafetière qui parle, Bea. Elle aura sans doute des conversations plus sensées que les bêtises que j'entends chez moi.",
+            stageDirection: "Soupirant, au bout du rouleau",
+            audioUrl: "/audio/s4/s4_l6_fr-BE.mp3"
+          },
           "es-ES": {
             text: "Deme la cafetera parlante, Bea. Seguro que tiene conversaciones más sensatas que las que escucho en casa.",
             stageDirection: "Suspirando rendida",
             audioUrl: "/audio/s4/s4_l6_es-ES.mp3"
+          },
+          "es-MX": {
+            text: "Deme la cafetera que habla, Bea. Seguro se echa pláticas más cuerdas que las que tengo que aguantar en la casa.",
+            stageDirection: "Suspirando totalmente derrotada",
+            audioUrl: "/audio/s4/s4_l6_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "Dame la cafetera que habla, Bea. Seguro que tiene conversaciones con más sentido que las que tengo que fumarme en casa.",
+            stageDirection: "Suspirando entregada",
+            audioUrl: "/audio/s4/s4_l6_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "Deme la cafetera que habla, Bea. Seguro que habla cosas con más sentido que las que yo escucho en mi casa.",
+            stageDirection: "Suspirando con resignación",
+            audioUrl: "/audio/s4/s4_l6_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "Dame la cafetera que habla, Bea. De seguro tiene conversaciones con más sentido que las que me toca escuchar en casa.",
+            stageDirection: "Suspirando rendida",
+            audioUrl: "/audio/s4/s4_l6_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "Deme la cafetera que habla, Bea. Seguro tiene charlas con más sentido que las que me toca escuchar en la casa.",
+            stageDirection: "Suspirando resignada",
+            audioUrl: "/audio/s4/s4_l6_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Donnez-moi la cafetière parlante, Bea. Elle aura sûrement des conversations plus sensées que celles que j'entends à la maison.",
+            stageDirection: "Soupirant, totalement résignée",
+            audioUrl: "/audio/s4/s4_l6_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Donnez-moi la cafetière parlante, Bea. A' va sûrement dire des affaires plus intelligentes que l'radotage que j'entends chez nous.",
+            stageDirection: "Expirant d'découragement",
+            audioUrl: "/audio/s4/s4_l6_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Donne-moi la cafetière qui parle là, Bea. C'est sûr qu'elle va dire des choses avec plus de tête que ce que j'entends à la maison.",
+            stageDirection: "Soupirant d'un air vaincu",
+            audioUrl: "/audio/s4/s4_l6_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Me dá a cafeteira que fala, Bea. Tenho certeza de que ela tem conversas mais sensatas do que as loucuras que eu ouço em casa.",
+            stageDirection: "Suspirando derrotada",
+            audioUrl: "/audio/s4/s4_l6_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Dê-me a máquina de café falante, Bea. Com certeza terá conversas mais sensatas do que as parvoíces que ouço em casa.",
+            stageDirection: "Suspirando rendida",
+            audioUrl: "/audio/s4/s4_l6_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Mi dia la macchina del caffè parlante, Bea. Di sicuro farà discorsi più sensati di quelli che sono costretta ad ascoltare a casa.",
+            stageDirection: "Sospirando sconfitta",
+            audioUrl: "/audio/s4/s4_l6_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Dóna'm la cafetera que parla, Bea. Segur que té converses amb més sentit que les que sento a casa.",
+            stageDirection: "Sospirant resignada",
+            audioUrl: "/audio/s4/s4_l6_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Dați-mi espressorul vorbitor, Bea. Cu siguranță poartă conversații mai înțelepte decât aberațiile pe care le aud acasă.",
+            stageDirection: "Oftând resemnată",
+            audioUrl: "/audio/s4/s4_l6_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Deme a cafeteira que fala, Bea. Seguro que ten conversas máis asisadas que as que teño que aturar na casa.",
+            stageDirection: "Suspirando rendida",
+            audioUrl: "/audio/s4/s4_l6_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Donatz-me la cafetièra que parla, Bea. Segur qu'a de convèrsas mai sensadas que çò qu'ausissi a l'ostal.",
+            stageDirection: "Sospirant d'abandon",
+            audioUrl: "/audio/s4/s4_l6_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Geben Sie mir die sprechende Kaffeemaschine, Bea. Die führt mit Sicherheit vernünftigere Gespräche als das Zeug, das ich mir zu Hause anhören muss.",
+            stageDirection: "Tief und geschlagen seufzend",
+            audioUrl: "/audio/s4/s4_l6_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Gänd Si mir die Kaffimaschine wo redt, Bea. Die hät sicher gschideri Gspröch druff als das Züg, wo ich dihei mues aalose.",
+            stageDirection: "Tüüf und ergäh seufzend",
+            audioUrl: "/audio/s4/s4_l6_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Geef me dat sprekende koffiezetapparaat maar, Bea. Die voert vast zinnigere gesprekken dan de onzin die ik thuis moet aanhoren.",
+            stageDirection: "Diep en verslagen zuchtend",
+            audioUrl: "/audio/s4/s4_l6_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Gi meg den snakkende kaffetrakteren, Bea. Den fører helt sikkert mer fornuftige samtaler enn det sprøytet jeg hører hjemme.",
+            stageDirection: "Sukker fullstendig oppgitt",
+            audioUrl: "/audio/s4/s4_l6_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Ge mig den talande kaffebryggaren, Bea. Den för garanterat vettigare samtal än det svammel jag måste lyssna på hemma.",
+            stageDirection: "Suckar uppgivet",
+            audioUrl: "/audio/s4/s4_l6_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Giv mig den talende kaffemaskine, Bea. Den fører med garanti mere fornuftige samtaler end det vås, jeg hører på derhjemme.",
+            stageDirection: "Dybt og opgivende sukkende",
+            audioUrl: "/audio/s4/s4_l6_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Дайте мне говорящую кофеварку, Беа. Уверена, её речи куда более здравые, чем то, что я выслушиваю дома.",
+            stageDirection: "Вздыхает в полном бессилии",
+            audioUrl: "/audio/s4/s4_l6_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Дайте мені кавоварку, що говорить, Беа. Переконана, що в неї будуть значно розумніші розмови, ніж те, що я чую вдома.",
+            stageDirection: "Зітхає з повною безнадією",
+            audioUrl: "/audio/s4/s4_l6_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Niech pani da ten mówiący ekspres, Bea. Na pewno prowadzi rozsądniejsze dyskusje niż te androny, których muszę słuchać w domu.",
+            stageDirection: "Wzdychając z rezygnacją",
+            audioUrl: "/audio/s4/s4_l6_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Dejte mi ten mluvící kávovar, Beo. Určitě vede rozumnější rozhovory než ty nesmysly, které musím poslouchat doma.",
+            stageDirection: "Odevzdaně vzdychá",
+            audioUrl: "/audio/s4/s4_l6_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Dajte mi aparat za kavu koji priča, Bea. Sigurna sam da vodi razumnije razgovore od budalaština koje moram slušati kod kuće.",
+            stageDirection: "Uzdah potpunog poraza",
+            audioUrl: "/audio/s4/s4_l6_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Antakaa se puhuva kahvinkeitin, Bea. Se käy taatusti järkevämpiä keskusteluja kuin ne houreet, joita joudun kuuntelemaan kotona.",
+            stageDirection: "Huokaisee alistuneena",
+            audioUrl: "/audio/s4/s4_l6_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Adja csak ide a beszélő kávéfőzőt, Bea! Garantáltan értelmesebb beszélgetéseket folytat majd, mint amilyen zagyvaságokat otthon kell hallgatnom.",
+            stageDirection: "Mélyen, megsemmisülten sóhajtva",
+            audioUrl: "/audio/s4/s4_l6_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Emadazu hitz egiten duen kafe-makina, Bea. Seguru etxean entzun behar ditudanak baino elkarrizketa zentzudunagoak dituela.",
+            stageDirection: "Etsita hasperen eginez",
+            audioUrl: "/audio/s4/s4_l6_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Siz bana konuşan kahve makinesini verin, Bea. Evde dinlemek zorunda kaldığım saçmalıklardan çok daha mantıklı sohbetler edeceğine kalıbımı basarım.",
+            stageDirection: "Yenilmişlikle derin bir iç çekerek",
+            audioUrl: "/audio/s4/s4_l6_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "そのおしゃべりコーヒーメーカーをください、ベアさん。家で聞かされる世迷言より、よっぽどまともな会話ができるはずだから。",
+            stageDirection: "完全に降伏してため息をつく",
+            audioUrl: "/audio/s4/s4_l6_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "把那台会说话的咖啡机给我吧，比阿。我确信它能聊出比我在家里听到的更有理智的对话。",
+            stageDirection: "彻底认输地长叹一声",
+            audioUrl: "/audio/s4/s4_l6_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "畀部識講嘢嘅咖啡機我啦，Bea。我肯定佢講嘅嘢，點都正常過我喺屋企聽緊嗰啲發神經嘅廢話。",
+            stageDirection: "好灰噉深深嘆咗口氣",
+            audioUrl: "/audio/s4/s4_l6_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "그 말하는 커피 머신으로 주세요, 베아 씨. 집에서 듣는 헛소리들보단 훨씬 더 상식적인 대화가 통할 게 분명하니까요.",
+            stageDirection: "완전히 체념한 듯 한숨을 쉬며",
+            audioUrl: "/audio/s4/s4_l6_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "أعطني آلة القهوة المتكلمة يا بيا. أنا واثقة من أن أحاديثها ستكون أكثر عقلانية بكثير من الهراء الذي أسمعه في المنزل.",
+            stageDirection: "تتنهد باستسلام تام",
+            audioUrl: "/audio/s4/s4_l6_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "תני לי את מכונת הקפה המדברת, ביאה. אין לי ספק שהשיחות איתה יהיו הרבה יותר הגיוניות ממה שאני נאלצת לשמוע בבית.",
+            stageDirection: "נאנחת בהשלמה גמורה",
+            audioUrl: "/audio/s4/s4_l6_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "Deme la cafetera que habla, Bea. De seguro tiene conversaciones más sensatas que las que me calo en la casa.",
+            stageDirection: "Suspirando rendida",
+            audioUrl: "/audio/s4/s4_l6_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "Deme la cafetera que habla, Bea. De más que tiene conversaciones más cuerdas que las tonteras que escucho en mi casa.",
+            stageDirection: "Suspirando con resignación total",
+            audioUrl: "/audio/s4/s4_l6_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "Deme la cafetera que habla, Bea. Seguro tiene conversaciones más cuerdas que las que escucho en mi casa.",
+            stageDirection: "Suspirando resignada",
+            audioUrl: "/audio/s4/s4_l6_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "Dame la cafetera parlante, Bea. Seguro que tiene conversaciones con más cabeza que las que oigo en mi casa.",
+            stageDirection: "Suspirando rendida",
+            audioUrl: "/audio/s4/s4_l6_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "Deme la cafetera parlante, Bea. Seguro que mantiene conversaciones más razonables que las que soporto en casa.",
+            stageDirection: "Suspirando con resignación",
+            audioUrl: "/audio/s4/s4_l6_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Give me the talking coffee maker, Bea. I'm sure it has more sensible conversations than the ones I have to listen to at home.",
+            stageDirection: "Sighing in complete defeat",
+            audioUrl: "/audio/s4/s4_l6_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Give me the talking coffee machine, Bea. I am quite sure it engages in far more sensible conversations than what I hear at home.",
+            stageDirection: "Sighing in utter resignation",
+            audioUrl: "/audio/s4/s4_l6_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Gie's the chattin' coffee machine, Bea. Bound tae hae far mair sense than the pure drivel I hae tae listen tae at hame.",
+            stageDirection: "Deep defeatist sigh",
+            audioUrl: "/audio/s4/s4_l6_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Hand over that talkin' coffee maker, Bea. Lord knows it's bound to make more sense than what I gotta listen to back home.",
+            stageDirection: "Sighing, clean out of patience",
+            audioUrl: "/audio/s4/s4_l6_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Hand over the talking coffee machine, Bea. Sure it's bound to have more sense in it than the carry-on I have to listen to at home.",
+            stageDirection: "Sighing in utter exhaustion",
+            audioUrl: "/audio/s4/s4_l6_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Give me the talking coffee machine, Bea. Bet it talks way more sense than the absolute rubbish I hear at home.",
+            stageDirection: "Deep resigned sigh",
+            audioUrl: "/audio/s4/s4_l6_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Just give me the talking coffee machine, Bea. Bet it makes way more sense than the stuff I listen to at home.",
+            stageDirection: "Sighing with weary acceptance",
+            audioUrl: "/audio/s4/s4_l6_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Just give me the talking coffee machine, Bea. Sure it talks far more sense than what I have to put up with at home.",
+            stageDirection: "Sighing defeatedly",
+            audioUrl: "/audio/s4/s4_l6_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Give me that talking coffee machine, Bea. I sure say e go talk sense pass the kind nonsense wey I dey hear for house.",
+            stageDirection: "Sighing tired die",
+            audioUrl: "/audio/s4/s4_l6_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Please give me that talking coffee machine only, Bea. Surely it will make much more sense than whatever nonsense I am hearing at home.",
+            stageDirection: "Sighing in total surrender",
+            audioUrl: "/audio/s4/s4_l6_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Donnez-moi la cafetière parlante, Bea. Elle aura sûrement des paroles plus sages que ce que je subis à la maison.",
+            stageDirection: "Soupirant d'abandon",
+            audioUrl: "/audio/s4/s4_l6_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Donnez-moi la cafetière qui parle, Bea. Elle aura sans doute plus de bon sens que les palabres que j'écoute chez moi.",
+            stageDirection: "Soupirant, abattue",
+            audioUrl: "/audio/s4/s4_l6_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Dá-me a cafeteira que fala, Bea. Com certeza vai falar coisas com mais sentido do que as maluquices que aturo em casa.",
+            stageDirection: "Suspirando sem forças",
+            audioUrl: "/audio/s4/s4_l6_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Dê-me a cafeteira falante, Bea. De certeza que tem conversas com mais cabeça do que o que ouço em casa.",
+            stageDirection: "Suspiro de cansaço total",
+            audioUrl: "/audio/s4/s4_l6_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Geeft mij die pratende koffiezet maar, Bea. Die zal vast en zeker zinnigere praat verkopen dan wat ik thuis moet aanhoren.",
+            stageDirection: "Zuchtend van pure overgave",
+            audioUrl: "/audio/s4/s4_l6_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "عطيني مكينة القهوة اللي تتكلم يا بيا. أكيد كلامها فيه عقل أكثر من الخرابيط اللي أسمعها بالبيت.",
+            stageDirection: "تتنهد بقلة حيلة",
+            audioUrl: "/audio/s4/s4_l6_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "هاتي مكنة القهوة اللي بتتكلم دي يا بيا. أكيد حواراتها هتبقى أعقل بكتير من الكلام الفاضي اللي باسمعه في البيت.",
+            stageDirection: "بتتنهد بيأس واستسلام",
+            audioUrl: "/audio/s4/s4_l6_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "عطيني ديك ماكينة القهوة اللي كاتهضر أ بيا. متأكدة غادي تدوي حسن وبحكمة كثر من التخربيق اللي كانسمع فالدار.",
+            stageDirection: "كاتنهد بقلة حيلة",
+            audioUrl: "/audio/s4/s4_l6_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "أعطيني ماكينة القهوة اللي بتحكي يا بيا. أكيد رح يكون حكيها بعقل أكتر من الحكي الفاضي اللي بسمعه بالدار.",
+            stageDirection: "بتتنهد بيأس",
+            audioUrl: "/audio/s4/s4_l6_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "انطيني مكينة الكهوة اللي تحجي يا بيا. متأكدة كلامها بي عقل أكثر من الدوخة اللي أسمعها بالبيت.",
+            stageDirection: "تتنهد باستسلام",
+            audioUrl: "/audio/s4/s4_l6_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "把那台會說話的咖啡機給我吧，比阿。我確信它能聊出比我在家裡聽到的更有理智的對話。",
+            stageDirection: "徹底認輸地長嘆一聲",
+            audioUrl: "/audio/s4/s4_l6_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "मुझे वह बोलने वाली कॉफी मशीन ही दे दीजिए, बी। मुझे पक्का विश्वास है कि वह उन बातों से कहीं अधिक समझदारी भरी बातें करेगी जो मुझे घर पर सुननी पड़ती हैं।",
+            stageDirection: "पूरी तरह हार मानकर गहरी सांस लेते हुए",
+            audioUrl: "/audio/s4/s4_l6_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "مجھے وہی بولنے والی کافی مشین دے دیجیے، بیا۔ مجھے پورا یقین ہے کہ وہ ان بے تکے قصوں سے زیادہ عقل کی باتیں کرے گی جو مجھے گھر پر سننی پڑتی ہیں۔",
+            stageDirection: "مکمل ہتھیار ڈالتے ہوئے گہری سانس لیتی ہے",
+            audioUrl: "/audio/s4/s4_l6_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "কথা বলা কফি মেশিনটাই আমাকে দিন, বিয়া। আমি নিশ্চিত যে বাড়িতে আমাকে যে বকবকানি শুনতে হয়, তার চেয়ে এই মেশিন অনেক বেশি কাজের কথা বলবে।",
+            stageDirection: "সম্পূর্ণ হাল ছেড়ে দীর্ঘশ্বাস ফেলে",
+            audioUrl: "/audio/s4/s4_l6_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਮੈਨੂੰ ਉਹ ਬੋਲਣ ਵਾਲੀ ਕੌਫ਼ੀ ਮਸ਼ੀਨ ਹੀ ਦੇ ਦਿਓ, ਬੀਆ। ਮੈਨੂੰ ਪੂਰਾ ਯਕੀਨ ਹੈ ਕਿ ਉਹ ਘਰ ਵਿੱਚ ਸੁਣਨ ਨੂੰ ਮਿਲਦੀਆਂ ਫ਼ਜ਼ੂਲ ਗੱਲਾਂ ਨਾਲੋਂ ਕਿਤੇ ਵੱਧ ਅਕਲਮੰਦੀ ਵਾਲੀਆਂ ਗੱਲਾਂ ਕਰੇਗੀ।",
+            stageDirection: "ਪੂਰੀ ਤਰ੍ਹਾਂ ਹਾਰ ਮੰਨ ਕੇ ਹਉਕਾ ਭਰਦੀ ਹੈ",
+            audioUrl: "/audio/s4/s4_l6_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "મને એ બોલતું કોફી મશીન જ આપી દો, બીયા. મને ખાતરી છે કે ઘરમાં જે બકવાસ મારે સાંભળવી પડે છે તેના કરતાં તો આ વધુ સમજદારીભરી વાતો કરશે.",
+            stageDirection: "સંપૂર્ણ હાર માનીને ઊંડો નિસાસો નાખતાં",
+            audioUrl: "/audio/s4/s4_l6_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "मला ते बोलणारे कॉफी मशीनच द्या, बीया. मला खात्री आहे की घरात मला ज्या निरर्थक गोष्टी ऐकाव्या लागतात त्यापेक्षा ते नक्कीच शहाणपणाच्या गप्पा मारेल.",
+            stageDirection: "पूर्णपणे हार मानून सुस्कारा सोडत",
+            audioUrl: "/audio/s4/s4_l6_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "அந்தப் பேசும் காபி இயந்திரத்தையே என்னிடம் கொடுங்கள், பீயா. நான் வீட்டில் கேட்க வேண்டிய உளறல்களை விட அது மிகவும் விவேகமாகப் பேசும் என்று நான் நம்புகிறேன்.",
+            stageDirection: "முழுமையாகத் தோல்வியுற்றுப் பெருமூச்சு விடுகிறார்",
+            audioUrl: "/audio/s4/s4_l6_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "నాకు ఆ మాట్లాడే కాఫీ మెషీన్‌నే ఇచ్చేయండి, బియా. ఇంట్లో నేను వినాల్సిన పిచ్చి మాటల కంటే అది చాలా వివేకవంతమైన సంభాషణలు చేస్తుందని నాకు ఖచ్చితంగా తెలుసు.",
+            stageDirection: "పూర్తిగా ఓడిపోయినట్లు నిట్టూరుస్తూ",
+            audioUrl: "/audio/s4/s4_l6_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ನನಗೆ ಆ ಮಾತನಾಡುವ ಕಾಫಿ ಯಂತ್ರವನ್ನೇ ಕೊಟ್ಟುಬಿಡಿ, ಬಿಯಾ. ಮನೆಯಲ್ಲಿ ನಾನು ಕೇಳಬೇಕಾದ ಹುಚ್ಚು ಮಾತುಗಳಿಗಿಂತ ಅದು ಹೆಚ್ಚು ಜಾಣ್ಮೆಯ ಮಾತುಗಳನ್ನಾಡುತ್ತದೆ ಎಂದು ನನಗೆ ಖಚಿತವಿದೆ.",
+            stageDirection: "ಸಂಪೂರ್ಣವಾಗಿ ಸೋತು ನಿಟ್ಟುಸಿರು ಬಿಡುತ್ತಾ",
+            audioUrl: "/audio/s4/s4_l6_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "എനിക്ക് ആ സംസാരിക്കുന്ന കോഫി മെഷീൻ തന്നെ തരൂ, ബിയാ. വീട്ടിൽ ഞാൻ കേൾക്കേണ്ടി വരുന്ന വിടുവായത്തങ്ങളേക്കാൾ കൂടുതൽ വിവേകത്തോടെ അത് സംസാരിക്കുമെന്ന് എനിക്കുറപ്പുണ്ട്.",
+            stageDirection: "പൂർണ്ണമായും കീഴടങ്ങി നെടുവീർപ്പിടുന്നു",
+            audioUrl: "/audio/s4/s4_l6_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Đưa cho tôi cái máy pha cà phê biết nói đó đi, Bea. Chắc chắn nó sẽ trò chuyện có lý trí hơn những lời vớ vẩn tôi phải nghe ở nhà.",
+            stageDirection: "Thở dài trong sự buông xuôi hoàn toàn",
+            audioUrl: "/audio/s4/s4_l6_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "เอาเครื่องชงกาแฟที่พูดได้เครื่องนั้นมาให้ฉันเถอะค่ะ เบีย ฉันมั่นใจว่ามันคงคุยรู้เรื่องกว่าเรื่องไร้สาระที่ฉันต้องทนฟังที่บ้านแน่ๆ",
+            stageDirection: "ถอนหายใจอย่างยอมจำนน",
+            audioUrl: "/audio/s4/s4_l6_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Berikan saja mesin kopi yang bisa berbicara itu, Bea. Saya yakin obrolannya jauh lebih masuk akal daripada omong kosong yang harus saya dengar di rumah.",
+            stageDirection: "Menghela napas pasrah sepenuhnya",
+            audioUrl: "/audio/s4/s4_l6_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Berikan saya mesin kopi yang boleh bercakap itu, Bea. Saya yakin perbualannya lebih waras daripada merepek yang saya kena dengar dekat rumah.",
+            stageDirection: "Mengeluh pasrah sepenuhnya",
+            audioUrl: "/audio/s4/s4_l6_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Nipe hiyo mashine ya kahawa inayoongea, Bea. Nina hakika inazungumza mambo ya maana zaidi kuliko upuuzi ninaosikiliza nyumbani.",
+            stageDirection: "Akipumua kwa kushindwa kabisa",
+            audioUrl: "/audio/s4/s4_l6_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Eme'ẽ katu chéve pe kafe apoha oñe'ẽva, Bea. Ajerovia he'itaha mba'e hekopetéva hetave umi tavyrai ahendúvagui che rógape.",
+            stageDirection: "Ipy'apýva ha ikane'õmava",
+            audioUrl: "/audio/s4/s4_l6_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Huk rimaq kafe ruwanata quway, Bea. Yachanim wasiypi uyarisqay rimaykunamantaqa kayqa aswan allintaraq rimayta atinanta.",
+            stageDirection: "Mana kallpayoq samarispa",
+            audioUrl: "/audio/s4/s4_l6_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Uka arst'iri café lurir maquin churxita, Bea. Nayax yattanwa utajan ist'ktan uka jani amuyt'añanakatx aka maquinax aski arunak parlani.",
+            stageDirection: "Qarjata samana apsusisa",
+            audioUrl: "/audio/s4/s4_l6_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Xinechmaca in caféchijchihualoni tlen tlatohua, Bea. Neltiliztica quipiaz tlatolli ocachi yec tlamatiliztli que in tlen nicaqui nochan.",
+            stageDirection: "Cenca ciauhqui ihiyocan",
+            audioUrl: "/audio/s4/s4_l6_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Gohwééh álnéhígíí yáłtiʼii tʼáá kʼad shaa níłtsoos, Bea. Shikéyahdi bichʼįʼ yáníłtiʼígíí biláahgo hazhóʼó yátiʼ hólǫ́ǫ doo shaʼshin.",
+            stageDirection: "Tʼáá átʼéé chʼééh deeyáago yíhwiildééh",
+            audioUrl: "/audio/s4/s4_l6_nv-US.mp3"
           }
         }
       }
