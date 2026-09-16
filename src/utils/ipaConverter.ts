@@ -868,6 +868,8 @@ const GREEK_MAP: Record<string, string> = {
 
 function greekToIpa(text: string): string {
   let t = text.toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/ου/g, "u")
     .replace(/αι/g, "e")
     .replace(/ει|οι|υι/g, "i")

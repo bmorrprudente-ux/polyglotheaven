@@ -2028,6 +2028,29 @@ export const LANGUAGES: Record<string, Language> = {
       bea: { modelId: "he-IL-HilaNeural", gender: "Femenina", region: "Israel", type: "Neural2", label: "Hila (Alegre)" }
     }
   },
+  "el-GR": {
+    code: "el-GR",
+    name: "Griego",
+    nativeName: "Ελληνικά",
+    flag: "🇬🇷",
+    family: "Helénica (Indoeuropea)",
+    region: "Grecia y Chipre",
+    scriptType: "greek",
+    demographics: {
+      dialectSpeakers: "13.5 millones",
+      whereConcentrated: "Atenas, Salónica, Creta, Nicosia (Chipre) y diáspora",
+      totalLanguageSpeakers: "14 millones",
+      speakers2050: "13 millones",
+      curiosity: "La lengua con la tradición escrita ininterrumpida más longeva de Europa (+3.400 años desde el Lineal B micénico). Su alfabeto inspiró tanto el alfabeto latino como el cirílico."
+    },
+    characterVoices: {
+      hugo: { modelId: "el-GR-NestorasNeural", gender: "Masculino", region: "Grecia", type: "Neural2", label: "Nestoras (Ελληνικά)" },
+      clara: { modelId: "el-GR-AthinaNeural", gender: "Femenina", region: "Grecia", type: "Neural2", label: "Athina (Ελληνικά)" },
+      don_ramon: { modelId: "el-GR-NestorasNeural", gender: "Masculino", region: "Grecia", type: "WaveNet", label: "Nestoras (Maduro)" },
+      mateo: { modelId: "el-GR-NestorasNeural", gender: "Masculino", region: "Grecia", type: "Neural2", label: "Nestoras (Joven)" },
+      bea: { modelId: "el-GR-AthinaNeural", gender: "Femenina", region: "Grecia", type: "Neural2", label: "Athina (Alegre)" }
+    }
+  },
   "ar-XA": {
     code: "ar-XA",
     name: "Árabe estándar moderno",
@@ -2135,7 +2158,7 @@ export const LANGUAGE_GROUPS: LanguageGroup[] = [
     icon: "🇪🇺",
     codes: [
       "ca-ES", "de-CH", "de-DE", "en-GB", "en-GB-SCT", "en-IE", "es-ES",
-      "fr-BE", "fr-CH", "fr-FR", "gl-ES", "it-IT", "nl-BE", "nl-NL", "pt-PT", "ru-RU"
+      "fr-BE", "fr-CH", "fr-FR", "gl-ES", "it-IT", "nl-BE", "nl-NL", "pt-PT", "ru-RU", "el-GR"
     ]
   },
   {
@@ -2144,7 +2167,7 @@ export const LANGUAGE_GROUPS: LanguageGroup[] = [
     description: "La gran familia genealógica que abarca desde Europa hasta el subcontinente indio.",
     icon: "🌎",
     codes: [
-      "bn-IN", "ca-ES", "de-CH", "de-DE", "en-AU", "en-GB", "en-GB-SCT", "en-IE", "en-IN",
+      "bn-IN", "ca-ES", "de-CH", "de-DE", "el-GR", "en-AU", "en-GB", "en-GB-SCT", "en-IE", "en-IN",
       "en-NG", "en-NZ", "en-US", "en-US-south", "en-ZA", "es-AR", "es-CL", "es-CO", "es-CU",
       "es-DO", "es-ES", "es-GQ", "es-MX", "es-PE", "es-PR", "es-VE", "fr-BE", "fr-CA", "fr-CD",
       "fr-CH", "fr-CI", "fr-FR", "fr-GA", "gl-ES", "gu-IN", "hi-IN", "it-IT", "mr-IN", "nl-BE",

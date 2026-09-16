@@ -59,6 +59,11 @@ export const STORIES: Story[] = [
             stageDirection: "Susurrando",
             audioUrl: "/audio/s1/s1_l1_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Κλάρα, μην κοιτάς τώρα... αλλά εκείνη η πράσινη βαλίτσα στο απέναντι τραπέζι είναι πολύ ύποπτη.",
+            stageDirection: "Ψιθυρίζοντας",
+            audioUrl: "/audio/s1/s1_l1_el-GR.mp3"
+          },
           "es-MX": {
             text: "Clara, no voltees ahorita... pero esa maleta verde en la mesa de enfrente está bien sospechosa.",
             stageDirection: "Susurrando",
@@ -491,6 +496,11 @@ export const STORIES: Story[] = [
             text: "Es solo una maleta, Hugo. Come tu sándwich.",
             stageDirection: "Suspirando",
             audioUrl: "/audio/s1/s1_l2_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Είναι απλώς μια βαλίτσα, Ούγκο. Φάε το σάντουιτς σου.",
+            stageDirection: "Αναστενάζοντας",
+            audioUrl: "/audio/s1/s1_l2_el-GR.mp3"
           },
           "es-MX": {
             text: "Es solo una maleta, Hugo. Ya cómete tu torta en paz.",
@@ -925,6 +935,11 @@ export const STORIES: Story[] = [
             stageDirection: "Con los ojos muy abiertos",
             audioUrl: "/audio/s1/s1_l3_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Κανείς δεν αφήνει έτσι απλά μια πράσινη βαλίτσα. Πρέπει να περιέχει μυστικά έγγραφα. Ή διαμάντια!",
+            stageDirection: "Με γουρλωμένα μάτια",
+            audioUrl: "/audio/s1/s1_l3_el-GR.mp3"
+          },
           "es-MX": {
             text: "Nadie deja una maleta verde así nomás. Debe haber documentos clasificados. ¡O diamantes!",
             stageDirection: "Con los ojos muy abiertos",
@@ -1357,6 +1372,11 @@ export const STORIES: Story[] = [
             text: "O ropa sucia.",
             stageDirection: "Tono plano",
             audioUrl: "/audio/s1/s1_l4_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Ή άπλυτα ρούχα.",
+            stageDirection: "Με ανέκφραστο τόνο",
+            audioUrl: "/audio/s1/s1_l4_el-GR.mp3"
           },
           "es-MX": {
             text: "O calzones sucios.",
@@ -1791,6 +1811,11 @@ export const STORIES: Story[] = [
             stageDirection: "Se acerca corriendo, sudando pero sonriente",
             audioUrl: "/audio/s1/s1_l5_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Με συγχωρείτε! Είδε κανείς την πράσινη βαλίτσα μου με τη χρυσόσκονη;",
+            stageDirection: "Πλησιάζει τρέχοντας, ιδρωμένος αλλά χαμογελαστός",
+            audioUrl: "/audio/s1/s1_l5_el-GR.mp3"
+          },
           "es-MX": {
             text: "¡Disculpen! ¿Alguien vio mi maleta verde con brillitos?",
             stageDirection: "Se acerca corriendo, sudando pero sonriente",
@@ -2224,6 +2249,11 @@ export const STORIES: Story[] = [
             stageDirection: "Ojos desorbitados",
             audioUrl: "/audio/s1/s1_l6_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Χρυσόσκονη; Είναι αυτός ο μυστικός κωδικός για τα διαμάντια;",
+            stageDirection: "Με γουρλωμένα μάτια",
+            audioUrl: "/audio/s1/s1_l6_el-GR.mp3"
+          },
           "es-MX": {
             text: "¿Brillitos? ¿Ese es el código secreto para los diamantes?",
             stageDirection: "Ojos desorbitados",
@@ -2656,6 +2686,11 @@ export const STORIES: Story[] = [
             text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
             stageDirection: "Ajustándose la gorra hacia atrás",
             audioUrl: "/audio/s1/s1_l7_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Όχι, φίλε μου. Είναι τα ρούχα προπόνησής μου για το μάθημα χιπ-χοπ.",
+            stageDirection: "Γυρίζοντας το καπέλο του προς τα πίσω",
+            audioUrl: "/audio/s1/s1_l7_el-GR.mp3"
           },
           "es-MX": {
             text: "No, chavo. Es mi ropa deportiva para la clase de hip-hop.",
@@ -3100,6 +3135,11 @@ export const STORIES: Story[] = [
             stageDirection: "Golpeando la barra con estilo",
             audioUrl: "/audio/s2/s2_l1_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Καλησπέρα, δεσποινίς! Θέλω έναν καφέ τόσο δυνατό που να με ξυπνήσει στο 1985, και με μια δόση κινδύνου.",
+            stageDirection: "Χτυπώντας τον πάγκο με στιλ",
+            audioUrl: "/audio/s2/s2_l1_el-GR.mp3"
+          },
           "es-MX": {
             text: "¡Qué tal, señorita! Prepárame un café bien cargado que me despierte en 1985, y con un toque de peligro.",
             stageDirection: "Golpeando la barra con estilo",
@@ -3532,6 +3572,11 @@ export const STORIES: Story[] = [
             text: "¡Marchando! Un café hirviendo servido justo en el filo de la mesa y un despertador programado hace cuarenta años.",
             stageDirection: "Sonriendo alegremente con su libreta",
             audioUrl: "/audio/s2/s2_l2_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Έφτασε αμέσως! Ένας καυτός καφές σερβιρισμένος ακριβώς στην άκρη του τραπεζιού και ένα ξυπνητήρι ρυθμισμένο πριν από σαράντα χρόνια.",
+            stageDirection: "Χαμογελώντας πρόσχαρα με το σημειωματάριό της",
+            audioUrl: "/audio/s2/s2_l2_el-GR.mp3"
           },
           "es-MX": {
             text: "¡Sale y vale! Un café hirviendo servido en la mera orilla de la mesa y un despertador programado hace cuarenta años.",
@@ -3966,6 +4011,11 @@ export const STORIES: Story[] = [
             stageDirection: "Riendo con sorpresa",
             audioUrl: "/audio/s2/s2_l3_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Και οι χαρτοπετσέτες; Χρειάζομαι ακριβώς επτά για τα μαγικά μου κόλπα.",
+            stageDirection: "Γελώντας με έκπληξη",
+            audioUrl: "/audio/s2/s2_l3_el-GR.mp3"
+          },
           "es-MX": {
             text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
             stageDirection: "Riendo con sorpresa",
@@ -4398,6 +4448,11 @@ export const STORIES: Story[] = [
             text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
             stageDirection: "Saca una regla y cuenta solemnemente",
             audioUrl: "/audio/s2/s2_l4_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Ορίστε επτά χαρτοπετσέτες αριθμημένες από το ένα ως το επτά και κίτρινη προειδοποιητική ταινία.",
+            stageDirection: "Βγάζει έναν χάρακα και μετρά με επισημότητα",
+            audioUrl: "/audio/s2/s2_l4_el-GR.mp3"
           },
           "es-MX": {
             text: "Aquí tiene siete servilletas foliadas del uno al siete y cinta amarilla de precaución.",
@@ -4842,6 +4897,11 @@ export const STORIES: Story[] = [
             stageDirection: "Ajustándose los lentes y mostrando la pantalla de su tableta",
             audioUrl: "/audio/s3/s3_l1_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Δον Ραμόν, σύμφωνα με τη ρήτρα τέσσερα της διμερούς συμφωνίας μας, οφείλετε να μου μεταβιβάσετε το ολογραφικό σας αυτοκόλλητο.",
+            stageDirection: "Φτιάχνοντας τα γυαλιά του και δείχνοντας την οθόνη του τάμπλετ του",
+            audioUrl: "/audio/s3/s3_l1_el-GR.mp3"
+          },
           "es-MX": {
             text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su tarjeta holográfica.",
             stageDirection: "Ajustándose los lentes y mostrando la pantalla de su tableta",
@@ -5274,6 +5334,11 @@ export const STORIES: Story[] = [
             text: "Tranquilo, abogado diminuto. Primero enséñame a subir videos con música moderna a esa red social.",
             stageDirection: "Haciendo equilibrio sobre su patineta",
             audioUrl: "/audio/s3/s3_l2_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Χαλάρωσε, μικροσκοπικέ δικηγόρε. Πρώτα μάθε μου πώς να ανεβάζω βίντεο με μοντέρνα μουσική σε αυτό το κοινωνικό δίκτυο.",
+            stageDirection: "Ισορροπώντας πάνω στο σκέιτμπορντ του",
+            audioUrl: "/audio/s3/s3_l2_el-GR.mp3"
           },
           "es-MX": {
             text: "Cálmate, abogado de bolsillo. Primero enséñame a subir videos con música a esa red social.",
@@ -5708,6 +5773,11 @@ export const STORIES: Story[] = [
             stageDirection: "Masticando con gravedad absoluta",
             audioUrl: "/audio/s3/s3_l3_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Αυτό θα απαιτήσει παράταση της ώρας επιστροφής μου. Και από διατροφική άποψη, το παγωτό θεωρείται γαλακτοκομικό.",
+            stageDirection: "Μασώντας με απόλυτη σοβαρότητα",
+            audioUrl: "/audio/s3/s3_l3_el-GR.mp3"
+          },
           "es-MX": {
             text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
             stageDirection: "Masticando con gravedad absoluta",
@@ -6140,6 +6210,11 @@ export const STORIES: Story[] = [
             text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
             stageDirection: "Chocando los puños con el niño",
             audioUrl: "/audio/s3/s3_l4_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Συμφωνήσαμε, συνεταίρε! Στην ηλικία μου δεν ζητάω άδεια, ζητάω διπλό παγωτό και πάμε για σκέιτ!",
+            stageDirection: "Κάνοντας γροθιά με γροθιά με το παιδί",
+            audioUrl: "/audio/s3/s3_l4_el-GR.mp3"
           },
           "es-MX": {
             text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a la pista en patineta!",
@@ -6584,6 +6659,11 @@ export const STORIES: Story[] = [
             stageDirection: "Susurrando con gravedad",
             audioUrl: "/audio/s4/s4_l1_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Κλάρα, έλα πίσω μου. Αυτή η φρυγανιέρα κάνει μπιπ σε κώδικα Μορς κάθε φορά που πετάγεται το ψωμί. Είμαι σίγουρος ότι μεταδίδει τις συνομιλίες μας στο υπουργείο.",
+            stageDirection: "Ψιθυρίζοντας με σοβαρότητα",
+            audioUrl: "/audio/s4/s4_l1_el-GR.mp3"
+          },
           "es-MX": {
             text: "Clara, ponte atrás de mí. Este tostador anda pitando en clave morse cada que bota el pan. Estoy segurísimo de que le transmite nuestras pláticas a la secretaría.",
             stageDirection: "Susurrando con gravedad",
@@ -7016,6 +7096,11 @@ export const STORIES: Story[] = [
             text: "Hugo, no transmite nada. Se te quemó la rebanada porque pusiste la potencia al máximo. Devuélvela ya y vámonos antes de que nos echen.",
             stageDirection: "Con tono seco y cansado",
             audioUrl: "/audio/s4/s4_l2_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Ούγκο, δεν μεταδίδει τίποτα. Κάηκε η φέτα σου επειδή έβαλες την ένταση στο τέρμα. Επίστρεψέ την τώρα και πάμε να φύγουμε πριν μας διώξουν.",
+            stageDirection: "Με ξηρό και κουρασμένο τόνο",
+            audioUrl: "/audio/s4/s4_l2_el-GR.mp3"
           },
           "es-MX": {
             text: "Hugo, no transmite nada. Se te quemó la rebanada porque le subiste a todo el power. Regrésala ya y vámonos antes de que nos corran.",
@@ -7450,6 +7535,11 @@ export const STORIES: Story[] = [
             stageDirection: "Amable y completamente servicial",
             audioUrl: "/audio/s4/s4_l3_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Καλημέρα! Σύμφωνα με το εγχειρίδιο εξυπηρέτησης πελατών, για να επιστρέψετε ηλεκτρικές συσκευές με υποψίες κατασκοπείας χρειάζομαι την αρχική συσκευασία και έναν ένορκο μάρτυρα.",
+            stageDirection: "Ευγενική και απόλυτα εξυπηρετική",
+            audioUrl: "/audio/s4/s4_l3_el-GR.mp3"
+          },
           "es-MX": {
             text: "¡Buenos días! Según el manual de atención a clientes, para devolver aparatos con sospecha de espionaje necesito la caja original y un testigo jurado.",
             stageDirection: "Súper linda y servicial",
@@ -7882,6 +7972,11 @@ export const STORIES: Story[] = [
             text: "¿Lo ves, Clara? ¡El protocolo de seguridad nacional ya está en marcha! Dígame, agente Bea, ¿cuál es la contraseña para cancelar la operación?",
             stageDirection: "Envalentonado",
             audioUrl: "/audio/s4/s4_l4_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Το βλέπεις, Κλάρα; Το πρωτόκολλο εθνικής ασφάλειας έχει ήδη ξεκινήσει! Πείτε μου, πράκτορα Μπέα, ποιος είναι ο κωδικός πρόσβασης για να ακυρώσουμε την επιχείρηση;",
+            stageDirection: "Παίρνοντας θάρρος",
+            audioUrl: "/audio/s4/s4_l4_el-GR.mp3"
           },
           "es-MX": {
             text: "¿Ya ves, Clara? ¡El protocolo de seguridad nacional ya está jalando! Dígame, agente Bea, ¿cuál es la clave para cancelar el operativo?",
@@ -8316,6 +8411,11 @@ export const STORIES: Story[] = [
             stageDirection: "Inocente y complaciente",
             audioUrl: "/audio/s4/s4_l5_es-ES.mp3"
           },
+          "el-GR": {
+            text: "Ο κωδικός πρόσβασης είναι «κροκέτα», αλλά σήμερα ο υπεύθυνος έχει ρεπό. Μπορώ μόνο να σας δώσω ένα κουπόνι καταστήματος ή να αλλάξω τη φρυγανιέρα με μια καφετιέρα που μιλάει.",
+            stageDirection: "Αθώα και πρόθυμη",
+            audioUrl: "/audio/s4/s4_l5_el-GR.mp3"
+          },
           "es-MX": {
             text: "La clave es «croqueta», pero hoy el gerente descansó. Solo les puedo dar un monedero electrónico o cambiar el tostador por una cafetera que habla.",
             stageDirection: "Súper tierna y calmada",
@@ -8748,6 +8848,11 @@ export const STORIES: Story[] = [
             text: "Deme la cafetera parlante, Bea. Seguro que tiene conversaciones más sensatas que las que escucho en casa.",
             stageDirection: "Suspirando rendida",
             audioUrl: "/audio/s4/s4_l6_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Δώστε μου την καφετιέρα που μιλάει, Μπέα. Σίγουρα θα κάνει πιο λογικές συζητήσεις από αυτές που ακούω στο σπίτι.",
+            stageDirection: "Αναστενάζοντας απελπισμένη",
+            audioUrl: "/audio/s4/s4_l6_el-GR.mp3"
           },
           "es-MX": {
             text: "Deme la cafetera que habla, Bea. Seguro se echa pláticas más cuerdas que las que tengo que aguantar en la casa.",

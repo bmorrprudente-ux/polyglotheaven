@@ -143,6 +143,14 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
                     <span className="font-bold text-xs text-gray-800 dark:text-slate-100 truncate">
                       {lang.name}
                     </span>
+                    {langCode === "es-ES" && (
+                      <span
+                        className="text-[9px] font-black uppercase text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-200 dark:border-emerald-800 px-1.5 py-0.5 rounded flex-shrink-0"
+                        title="Versión original de referencia en Español de España"
+                      >
+                        Original
+                      </span>
+                    )}
                     {isDraftFallback && (
                       <span
                         className="text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/80 px-1.5 py-0.5 rounded flex-shrink-0"

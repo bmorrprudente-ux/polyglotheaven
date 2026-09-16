@@ -224,7 +224,11 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
               <GripVertical className="w-3 h-3 text-gray-400 -mr-0.5 cursor-grab" />
               <span className="text-sm">{lang.flag}</span>
               <span className="truncate max-w-[130px]">{lang.name.replace(/^(Español|Inglés|Francés|Portugués|Árabe|Chino)\s*/, "")}</span>
-              {isFirst && (
+              {code === "es-ES" ? (
+                <span className="text-[9px] px-1.5 py-0.2 rounded bg-emerald-200/90 dark:bg-emerald-800 text-emerald-900 dark:text-emerald-100 uppercase font-black" title="Versión original de referencia">
+                  Original
+                </span>
+              ) : isFirst && (
                 <span className="text-[9px] px-1 py-0.2 rounded bg-emerald-200/80 dark:bg-emerald-800 text-emerald-900 dark:text-emerald-200 uppercase font-black">
                   {t.baseBadge}
                 </span>
