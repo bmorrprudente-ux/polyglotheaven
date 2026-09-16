@@ -287,7 +287,7 @@ export const LanguageFamiliesModal: React.FC<LanguageFamiliesModalProps> = ({
                 {/* Member Badges */}
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-gray-400 block mb-1.5">
-                    Idiomas representados en Polyglot Heaven
+                    Idiomas representados en Polyglot Heaven ({currentFamily.members.length})
                   </span>
                   <div className="flex flex-wrap gap-1.5">
                     {currentFamily.members.map(m => (

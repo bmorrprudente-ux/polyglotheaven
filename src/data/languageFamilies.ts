@@ -50,13 +50,29 @@ export const LANGUAGE_FAMILIES: LanguageFamily[] = [
       { code: "hi-IN", name: "Hindi", flag: "🇮🇳" },
       { code: "pt-BR", name: "Portugués", flag: "🇧🇷" },
       { code: "ru-RU", name: "Ruso", flag: "🇷🇺" },
-      { code: "bn-IN", name: "Bengalí", flag: "🇧🇩" },
       { code: "fr-FR", name: "Francés", flag: "🇫🇷" },
       { code: "de-DE", name: "Alemán", flag: "🇩🇪" },
+      { code: "bn-IN", name: "Bengalí", flag: "🇧🇩" },
       { code: "it-IT", name: "Italiano", flag: "🇮🇹" },
-      { code: "el-GR", name: "Griego", flag: "🇬🇷" }
+      { code: "el-GR", name: "Griego", flag: "🇬🇷" },
+      { code: "ur-PK", name: "Urdu", flag: "🇵🇰" },
+      { code: "pa-IN", name: "Panyabí", flag: "🇮🇳" },
+      { code: "gu-IN", name: "Guyaratí", flag: "🇮🇳" },
+      { code: "mr-IN", name: "Maratí", flag: "🇮🇳" },
+      { code: "uk-UA", name: "Ucraniano", flag: "🇺🇦" },
+      { code: "pl-PL", name: "Polaco", flag: "🇵🇱" },
+      { code: "cs-CZ", name: "Checo", flag: "🇨🇿" },
+      { code: "hr-HR", name: "Croata / Serbio", flag: "🇭🇷" },
+      { code: "ro-RO", name: "Rumano", flag: "🇷🇴" },
+      { code: "nl-NL", name: "Neerlandés / Holandés", flag: "🇳🇱" },
+      { code: "sv-SE", name: "Sueco", flag: "🇸🇪" },
+      { code: "nb-NO", name: "Noruego", flag: "🇳🇴" },
+      { code: "da-DK", name: "Danés", flag: "🇩🇰" },
+      { code: "ca-ES", name: "Catalán", flag: "🟡" },
+      { code: "gl-ES", name: "Gallego", flag: "⚪" },
+      { code: "oc-FR", name: "Occitano", flag: "🔴" }
     ],
-    polyglotAdvantage: "Entender el tronco indoeuropeo te permite conectar las raíces léxicas y gramaticales de casi 40 idiomas de la aplicación, reconociendo que el inglés, el ruso, el hindi y el español comparten un mismo esqueleto ancestral."
+    polyglotAdvantage: "Entender el tronco indoeuropeo te permite conectar las raíces léxicas y gramaticales de 26 idiomas de la aplicación (en sus más de 45 variedades dialectales), reconociendo que el inglés, el ruso, el hindi, el griego y el español comparten un mismo esqueleto ancestral."
   },
   {
     id: "romance",
