@@ -133,7 +133,7 @@ export async function explainPhraseWithAi(
 
   if (hasKey) {
     try {
-      const prompt = `You are an expert polyglot linguist in an app called Telar.
+      const prompt = `You are an expert polyglot linguist in an app called Polyglot Heaven.
 Explain this phrase spoken by ${characterName} in ${langName} (${langCode}):
 "${phrase}"
 
@@ -195,7 +195,7 @@ export async function explainWordWithAi(
 
   if (hasKey) {
     try {
-      const prompt = `You are a world-class polyglot lexicographer for a language learning app called Telar.
+      const prompt = `You are a world-class polyglot lexicographer for a language learning app called Polyglot Heaven.
 Analyze this word in its sentence context:
 - Word: "${cleanWord}"
 - Source language/dialect code: "${sourceLangCode}"

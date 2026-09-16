@@ -333,6 +333,176 @@ export const CANONICAL_BY_LANG: Record<string, Record<string, string>> = {
     "Donatz-me la cafetièra que parla, Bea. Segur qu'a de convèrsas mai sensadas que çò qu'ausissi a l'ostal.":
       "[duˈna.me la ka.feˈtje.ɾo ke ˈpaɾ.lo, ˈbe.o. seˈɣyɾ ka de kum.bɛɾˈsas maj senˈsa.ðoz ke sɔ kawˈsi.si a lusˈtal]"
   },
+"de-DE": {
+    "Clara, schau jetzt nicht hin... aber dieser grüne Koffer auf dem Tisch da drüben ist extrem verdächtig.":
+      "[ˈklaːʁa, ʃaʊ̯ jɛtst nɪçt hɪn... ˈaːbɐ ˈdiːzɐ ˈɡʁyːnə ˈkɔfɐ aʊ̯f deːm tɪʃ daː ˈdʁyːbn̩ ɪst ɛksˈtʁeːm fɛɐ̯ˈdɛçtɪç]",
+    "Es ist nur ein Koffer, Hugo. Iss dein Sandwich.":
+      "[ɛs ɪst nuːɐ̯ aɪ̯n ˈkɔfɐ, ˈhuːɡo. ɪs daɪ̯n ˈsɛntvɪtʃ]",
+    "Niemand lässt einfach so einen grünen Koffer stehen. Da müssen Geheimdokumente drin sein. Oder Diamanten!":
+      "[ˈniːmant lɛst ˈaɪ̯nfax zoː ˈaɪ̯nən ˈɡʁyːnən ˈkɔfɐ ˈʃteːən. daː ˈmʏsn̩ ɡəˈhaɪ̯mdokuˌmɛntə dʁɪn zaɪ̯n. ˈoːdɐ diaˈmantn̩!]",
+    "Oder Schmutzwäsche.":
+      "[ˈoːdɐ ˈʃmʊtsˌvɛʃə]",
+    "Entschuldigung! Hat jemand meinen grünen Glitzerkoffer gesehen?":
+      "[ɛntˈʃʊldɪɡʊŋ! hat ˈjeːmant ˈmaɪ̯nən ˈɡʁyːnən ˈɡlɪtsɐˌkɔfɐ ɡəˈzeːən?]",
+    "Glitzer? Ist das etwa das Codewort für die Diamanten?":
+      "[ˈɡlɪtsɐ? ɪst das ˈɛtvaː das ˈkoːtˌvɔʁt fyːɐ̯ diː diaˈmantn̩?]",
+    "Nein, Junge. Das ist mein Outfit für meinen Hip-Hop-Tanzkurs.":
+      "[naɪ̯n, ˈjʊŋə. das ɪst maɪ̯n ˈaʊ̯tfɪt fyːɐ̯ ˈmaɪ̯nən ˈhɪphɔpˌtantskʊʁs]",
+    "Guten Tag, junge Dame! Ich hätte gerne einen Kaffee, so stark, dass er mich 1985 aufweckt – und mit einem Hauch von Gefahr.":
+      "[ˈɡuːtn̩ taːk, ˈjʊŋə ˈdaːmə! ɪç ˈhɛtə ˈɡɛʁnə ˈaɪ̯nən kaˈfeː, zoː ʃtaʁk, das eːɐ̯ mɪç ˈnaʊ̯ntseːnˌhʊndɐtfʏnfʊntˈʔaxtsɪç ˈaʊ̯fvɛkt – ʊnt mɪt ˈaɪ̯nəm haʊ̯x fɔn ɡəˈfaːɐ̯]"
+  },
+
+  "it-IT": {
+    "Clara, non guardare adesso... ma quella valigia verde sul tavolo di fronte è molto sospetta.":
+      "[ˈklaːra, non ɡwarˈdaːre aˈdɛsso... ma ˈkwella vaˈliːdʒa ˈverde sul ˈtaːvolo di ˈfronte ɛ ˈmolto soˈspetta]",
+    "È solo una valigia, Hugo. Mangia il tuo panino.":
+      "[ɛ ˈsoːlo ˈuːna vaˈliːdʒa, ˈuːɡo. ˈmandʒa il ˈtuːo paˈniːno]",
+    "Nessuno lascia una valigia verde così. Devono esserci documenti segreti. O diamanti!":
+      "[nesˈsuːno ˈlaʃʃa ˈuːna vaˈliːdʒa ˈverde koˈzi. ˈdeːvono ˈɛʃʃertʃi dokuˈmenti seˈɡreːti. o djaˈmanti!]",
+    "O biancheria sporca.":
+      "[o bjaŋkeˈriːa ˈspɔrka]",
+    "Scusatemi! Qualcuno ha visto la mia valigia verde con i brillantini?":
+      "[skuˈzaːtemi! kwalˈkuːno a ˈvisto la ˈmiːa vaˈliːdʒa ˈverde kon i brillanˈtiːni?]",
+    "Brillantini? È questa la parola d'ordine per i diamanti?":
+      "[brillanˈtiːni? ɛ ˈkwesta la paˈrɔːla ˈdordine per i djaˈmanti?]",
+    "Ma no, ragazzo! È il mio completo per il corso di hip-hop.":
+      "[ma ˈnɔ, raˈɡattso! ɛ il ˈmiːo komˈplɛːto per il ˈkorso di hip.hɔp]",
+    "Buon pomeriggio, signorina! Vorrei un caffè così forte da svegliarmi nel 1985, e con un tocco di pericolo.":
+      "[bwon pomerˈiddʒo, siɲɲoˈriːna! vorˈrɛi uŋ kafˈfɛ koˈzi ˈfɔrte da zveʎˈʎarmi nel ˈmille noːvetʃɛnˈtotˌtantatˈtʃiŋkwe, e kon un ˈtɔkko di peˈriːkolo]"
+  },
+
+  "nb-NO": {
+    "Clara, ikke se nå... men den grønne kofferten på bordet overfor er veldig mistenkelig.":
+      "[ˈklɑːɾɑ, ˈɪkːə seː noː... men den ˈɡɾønːə ˈkʊfɛʈn̩ poː ˈbuːɾə ˈoːvɛɾfuːɾ æɾ ˈvɛldɪ ˈmɪstɛŋklɪ]",
+    "Det er bare en koffert, Hugo. Spis sandwichen din.":
+      "[deː æɾ ˈbɑːɾə eːn ˈkʊfɛʈ, ˈhʉːɡu. spiːs ˈsænvɪtʃn̩ diːn]",
+    "Ingen forlater en grønn koffert sånn uten videre. Det må være hemmelige dokumenter oppi. Eller diamanter!":
+      "[ˈɪŋːn̩ fɔˈlɑːtɛɾ eːn ɡɾøn ˈkʊfɛʈ sɔn ˈʉːtn̩ ˈviːdəɾə. deː moː ˈvæːɾə ˈhɛməlɪə dʊkʉˈmɛntəɾ ˈɔpːi. ˈɛlːəɾ djɑˈmɑntəɾ!]",
+    "Eller skittentøy.":
+      "[ˈɛlːəɾ ˈʃɪtːn̩tœʏ]",
+    "Unnskyld meg! Er det noen som har sett den grønne glitterkofferten min?":
+      "[ˈʉnːʃʏl mæɪ! æɾ deː ˈnuːn sʊm hɑːɾ sɛt den ˈɡɾønːə ˈɡlɪtːəɾˌkʊfɛʈn̩ miːn?]",
+    "Glitter? Er det kodenavnet for diamantene?":
+      "[ˈɡlɪtːəɾ? æɾ deː ˈkuːdəˌnɑvnə fɔɾ djɑˈmɑntn̩ə?]",
+    "Nei, gutt. Det er antrekket mitt til hiphop-timen min.":
+      "[næɪ, ɡʉt. deː æɾ ˈɑntɾɛkːə mɪt tɪl ˈhɪphɔpˌtiːmən miːn]",
+    "God dag, frøken! Jeg vil ha en kaffe som er så sterk at jeg våkner i 1985, og med et snev av fare.":
+      "[ɡuː dɑːɡ, ˈfɾøːkn̩! jæɪ vɪl hɑː eːn ˈkɑfːə sʊm æɾ soː stæɾk ɑt jæɪ ˈvɔknəɾ i ˈnɪtːn̩ ˈɔtːi fɛm, ɔ meːd eːt sneːv ɑːv ˈfɑːɾə]"
+  },
+
+  "tr-TR": {
+    "Clara, şimdi bakma... ama karşı masadaki o yeşil bavul son derece şüpheli.":
+      "[klaˈɾa, ʃimˈdi bakˈma... aˈma kaɾˈʃɯ masaˈdaki o jeˈʃil baˈvul son deɾeˈdʒe ʃypheˈli]",
+    "O sadece bir bavul Hugo. Sandviçini ye.":
+      "[o saːdeˈdʒe biɾ baˈvul ˈhuɡo. sandviˈtʃini je]",
+    "Kimse yeşil bir bavulu öylece bırakıp gitmez. İçinde gizli belgeler olmalı. Ya da elmaslar!":
+      "[cimˈse jeˈʃil biɾ bavuˈlu œjleˈdʒe bɯɾaˈkɯp ɟitˈmez. iˈtʃinde ɟizˈli belɟeˈleɾ olmaˈlɯ. ja da elmasˈlaɾ!]",
+    "Veya kirli çamaşır.":
+      "[veˈja ciɾˈli tʃamaˈʃɯɾ]",
+    "Afedersiniz! Yeşil simli bavulumu gören oldu mu?":
+      "[afeˈdeɾsiniz! jeˈʃil simˈli bavuluˈmu ɟœˈɾen olˈdu mu?]",
+    "Simli mi? Bu elmaslar için gizli bir şifre mi?":
+      "[simˈli mi? bu elmasˈlaɾ iˈtʃin ɟizˈli biɾ ʃifˈɾe mi?]",
+    "Hayır delikanlı. O benim hip-hop dans dersi kıyafetim.":
+      "[haˈjɯɾ deliˈkanlɯ. o beˈnim hip.hɔp dans deɾˈsi kɯjafeˈtim]",
+    "Tünaydın küçük hanım! Beni 1985'te uyandıracak kadar sert bir kahve istiyorum, yanında da biraz tehlike olsun.":
+      "[tynajˈdɯn cyˈtʃyc haˈnɯm! beˈni bin doˈkuz jyːz sekˈsen beʃˈte ujanˈdɯɾadʒak kaˈdaɾ seɾt biɾ kahˈve istiˈjoɾum, janɯnˈda da biˈɾaz tehliˈce olˈsun]"
+  },
+
+  "ro-RO": {
+    "Clara, nu te uita acum... dar valiza aia verde de pe masa din față e foarte suspectă.":
+      "[ˈkla.ra, nu te ˈuj.ta aˈkum... dar vaˈli.za ˈa.ja ˈver.de de pe ˈma.sa din ˈfa.t͡sə e ˈfoar.te susˈpek.tə]",
+    "E doar o valiză, Hugo. Mănâncă-ți sandvișul.":
+      "[e d͡war o vaˈli.zə, ˈhu.ɡo. məˈnɨŋ.kə.t͡sʲ ˈsand.vi.ʃul]",
+    "Nimeni nu lasă o valiză verde așa pur și simplu. Trebuie să fie documente secrete. Sau diamante!":
+      "[ˈni.me.ni nu ˈla.sə o vaˈli.zə ˈver.de aˈʃa pur ʃi ˈsim.plu. ˈtre.bu.je sə ˈfi.e dokuˈmen.te seˈkre.te. saw djaˈman.te!]",
+    "Sau haine murdare.":
+      "[saw ˈhaj.ne murˈda.re]",
+    "Mă scuzați! A văzut cineva valiza mea verde cu sclipici?":
+      "[mə skuˈzat͡sʲ! a vəˈzut t͡ʃi.neˈva vaˈli.za ˈme̯a ˈver.de ku skliˈpit͡ʃ?]",
+    "Sclipici? Acesta este codul secret pentru diamante?":
+      "[skliˈpit͡ʃ? aˈt͡ʃes.ta ˈjes.te ˈko.dul seˈkret ˈpen.tru djaˈman.te?]",
+    "Nu, băiete. E costumul meu pentru cursul de hip-hop.":
+      "[nu, bəˈje.te. e kosˈtu.mul mew ˈpen.tru ˈkur.sul de hip.hɔp]",
+    "Bună ziua, domnișoară! Vreau o cafea atât de tare încât să mă trezească în 1985, și cu un strop de pericol.":
+      "[ˈbu.nə ˈziw̯.a, dom.niˈʃwa.rə! vraw o kaˈfe̯a əˈtɨt de ˈta.re ɨŋˈkɨt sə mə treˈze̯as.kə ɨn ˈo.mie ˈno.wə ˈsute optˈzet͡ʃʲ ʃi t͡ʃint͡ʃʲ, ʃi ku un strop de peˈri.kol]"
+  },
+
+  "pl-PL": {
+    "Clara, nie patrz teraz... ale ta zielona walizka na stole naprzeciwko jest bardzo podejrzana.":
+      "[ˈklara, ɲɛ patʂ ˈtɛras... ˈalɛ ta ʑɛˈlɔna vaˈlʲiska na ˈstɔlɛ napʂɛˈt͡ɕifkɔ jɛst ˈbard͡zɔ pɔdɛjˈʐana]",
+    "To tylko walizka, Hugo. Zjedz swoją kanapkę.":
+      "[tɔ ˈtɨlkɔ vaˈlʲiska, ˈxuɡɔ. zjɛt͡s ˈsfɔjɔ̃ kaˈnapkɛ̃]",
+    "Nikt nie zostawia zielonej walizki ot tak. Muszą tam być tajne dokumenty. Albo diamenty!":
+      "[ɲikt ɲɛ zɔsˈtavja ʑɛˈlɔnɛj vaˈlʲiski ɔt tak. ˈmuʂɔ̃ tam bɨt͡ɕ ˈtajnɛ dɔkuˈmɛntɨ. ˈalbɔ djaˈmɛntɨ!]",
+    "Albo brudne pranie.":
+      "[ˈalbɔ ˈbrudnɛ ˈpraɲɛ]",
+    "Przepraszam bardzo! Czy ktoś widział moją zieloną brokatową walizkę?":
+      "[pʂɛˈpraʂam ˈbard͡zɔ! t͡ʂɨ ktɔɕ ˈvʲid͡ʑaw ˈmɔjɔ̃ ʑɛˈlɔnɔ̃ brɔkaˈtɔvɔ̃ vaˈlʲiskɛ̃?]",
+    "Brokat? Czy to tajny kryptonim dla diamentów?":
+      "[ˈbrɔkat? t͡ʂɨ tɔ ˈtajnɨ krɨpˈtɔɲim dla djaˈmɛntuf?]",
+    "Nie, chłopcze. To mój strój na zajęcia z hip-hopu.":
+      "[ɲɛ, ˈxwɔpt͡ʂɛ. tɔ muj struj na zaˈjɛɲt͡ɕa z ˈxiphɔpu]",
+    "Dzień dobry, panienko! Poproszę kawę tak mocną, żeby obudziła mnie w 1985 roku, i z nutką niebezpieczeństwa.":
+      "[d͡ʑɛɲ ˈdɔbrɨ, paˈɲɛŋkɔ! pɔˈprɔʂɛ̃ ˈkavɛ̃ tak ˈmɔt͡snɔ̃, ˈʐɛbɨ ɔbuˈd͡ʑiwa mɲɛ v‿ˈtɨɕɔnt͡s ˈd͡ʑɛvjɛɲt͡sɛt ˈɔɕɛmd͡ʑɛɕɔnt ˈpʲɔntɨm ˈrɔku, i z‿ˈnutkɔ̃ ɲɛbɛzpjɛˈt͡ʂɛj̃stfa]"
+  },
+
+  "da-DK": {
+    "Clara, kig ikke nu... men den grønne kuffert på bordet overfor er meget mistænkelig.":
+      "[ˈklɑːʁɑ, kʰiː ˈekə nuː... mɛn dɛn ˈɡʁœnə ˈkʰufɐt pʰɔ ˈboːðð̩ ˈɒwɐˌfɒː æ ˈmɑːð̩ mɪsˈtɛŋkʰli]",
+    "Det er bare en kuffert, Hugo. Spis din sandwich.":
+      "[de æ ˈbɑːɑ eːn ˈkʰufɐt, ˈhuːɡo. sbiːs din ˈsɛnvɪtʃ]",
+    "Ingen efterlader en grøn kuffert bare sådan. Der må være hemmelige dokumenter i den. Eller diamanter!":
+      "[ˈeŋn̩ ˈɛftɐˌlæːðɐ eːn ɡʁœn ˈkʰufɐt ˈbɑːɑ ˈsɔdn̩. dɑ mɔ vɛːɐ ˈhɛməlɪə dokuˈmɛntɐ i dɛn. ˈɛlɐ djaˈmantɐ!]",
+    "Eller snavsetøj.":
+      "[ˈɛlɐ ˈsnɑwsəˌtʰʌj]",
+    "Undskyld mig! Er der nogen, der har set min grønne glitterkuffert?":
+      "[ˈonˌsɡyl mɑj! æ dɑ ˈnoːn, dɑ hɑ seːt min ˈɡʁœnə ˈɡlɪtɐˌkʰufɐt?]",
+    "Glitter? Er det kodenavnet for diamanterne?":
+      "[ˈɡlɪtɐ? æ de ˈkʰoːðəˌnɑwnð̩ fɒ djaˈmantɐnə?]",
+    "Nej, knægt. Det er mit tøj til hiphop-timen.":
+      "[nɑj, kʰnɛkt. de æ mit tʰʌj tˢel ˈhɪphɔpˌtˢiːmən]",
+    "Goddag, unge dame! Jeg vil have en kaffe, der er så stærk, at den vækker mig i 1985, og med et strejf af fare.":
+      "[ɡoˈdæː, ˈɔŋə ˈdæːmə! jɑ vɪl hæ eːn ˈkʰɑfə, dɑ æ sɔ stæɐ̯k, ɑt dɛn ˈvɛkɐ mɑj i ˈnɪtn̩ ˈfʏmfɔwɐˌfʏɐ̯s, ɔ mɛð eːt sdʁɑjf ɑw ˈfɑːɑ]"
+  },
+
+  "cs-CZ": {
+    "Kláro, nedívej se teď... ale ten zelený kufr na stole naproti je hodně podezřelý.":
+      "[ˈklaːro, ˈnɛdiːvɛj sɛ tɛt͡s... ˈalɛ tɛn ˈzɛlɛniː ˈkufr̩ na ˈstɔlɛ ˈnaprɔcɪ jɛ ˈɦɔdɲɛ ˈpɔdɛzr̝ɛliː]",
+    "Je to jenom kufr, Hugo. Sněz svůj sendvič.":
+      "[jɛ tɔ ˈjɛnɔm ˈkufr̩, ˈɦuːɡo. sɲɛs svuːj ˈsɛndvɪt͡ʃ]",
+    "Nikdo nenechá zelený kufr jen tak ležet. Určitě v něm jsou tajné dokumenty. Nebo diamanty!":
+      "[ˈnɪɡdɔ ˈnɛnɛxaː ˈzɛlɛniː ˈkufr̩ jɛn tak ˈlɛʒɛt. ˈurt͡ʃɪcɛ v‿ɲɛm jsɔu̯ ˈtajnɛː dɔkuˈmɛntɪ. ˈnɛbɔ djaˈmantɪ!]",
+    "Nebo špinavé prádlo.":
+      "[ˈnɛbɔ ˈʃpɪnavɛː ˈpraːdlɔ]",
+    "Promiňte! Neviděl někdo můj zelený třpytivý kufr?":
+      "[ˈprɔmɪɲtɛ! ˈnɛvɪɟɛl ˈɲɛɡdɔ muːj ˈzɛlɛniː ˈtr̝̊pɪcɪviː ˈkufr̩?]",
+    "Třpytky? To je tajné heslo pro ty diamanty?":
+      "[ˈtr̝̊pɪtkɪ? tɔ jɛ ˈtajnɛː ˈɦɛslɔ prɔ tɪ djaˈmantɪ?]",
+    "Ale kdepak, chlapče. To je můj kostým na lekci hip-hopu.":
+      "[ˈalɛ ˈɡdɛpak, ˈxlapt͡ʃɛ. tɔ jɛ muːj kɔsˈtiːm na ˈlɛkt͡sɪ ˈhɪphɔpu]",
+    "Dobrý den, slečno! Chtěl bych kávu tak silnou, aby mě probudila v roce 1985, a s trochou nebezpečí.":
+      "[ˈdɔbriː dɛn, ˈslɛt͡ʃnɔ! xcɛl bɪx ˈkaːvu tak ˈsɪlnɔu̯, ˈabɪ mɲɛ ˈprɔbuɟɪla v‿ˈrɔt͡sɛ ˈtɪsiːt͡s ˈdɛvjɛt sɛt ˈɔsmdɛsaːt ˈpʲɛt, a s‿ˈtrɔxɔu̯ ˈnɛbɛspɛt͡ʃiː]"
+  },
+
+  "ml-IN": {
+    "ക്ലാര, ഇപ്പോൾ നോക്കരുത്... എന്നാൽ മുന്നിലെ മേശപ്പുറത്തുള്ള ആ പച്ച സ്യൂട്ട്കേസ് വളരെ സംശയാസ്പദമാണ്.":
+      "[klaːɾa, ipːoːɭ noːkːaɾut̪ɨ... en̪ːaːl mun̪ːile meːʃapːuṟat̪ːuɭɭa aː pat͡ʃːa sjuːʈkeːs vaɭaɾe samʃajaːspadamaːɳɨ]",
+    "ശാന്തനാകൂ, ഹ്യൂഗോ... ബസ് കാത്തിരിക്കുന്ന ഏതെങ്കിലും പ്രായമായ ആളുടെതാകും അത്.":
+      "[ʃaːn̪t̪anaːɡuː, hjuːɡoː... bas kaːt̪ːiɾikːun̪ːa eːt̪eŋɡilum pɾaːjamaːja aːɭuɖet̪aːɡum at̪ɨ]",
+    "ആരും അങ്ങനെ വെറുതെ പച്ച സ്യൂട്ട്കേസ് ഉപേക്ഷിച്ചു പോകില്ല. ഇതിൽ തീർച്ചയായും രഹസ്യരേഖകൾ ഉണ്ടാകും. അല്ലെങ്കിൽ രത്നങ്ങൾ!":
+      "[aːɾum aŋŋane veṟut̪e pat͡ʃːa sjuːʈkeːs upeːkʂit͡ʃːu poːɡilːa. it̪il t̪iːɾt͡ʃːajaːjum ɾahasjaɾeːkʰaɡaɭ uɳɖaːɡum. alːeŋɡil ɾat̪naŋŋaɭ!]",
+    "അല്ലെങ്കിൽ മുഷിഞ്ഞ വസ്ത്രങ്ങൾ.":
+      "[alːeŋɡil muʂiɲɲa vast̪ɾaŋŋaɭ]",
+    "ക്ഷമിക്കണം! തിളങ്ങുന്ന മിന്നലുകളുള്ള എന്റെ പച്ച സ്യൂട്ട്കേസ് ആരെങ്കിലും കണ്ടോ?":
+      "[kʂamikːaɳam! t̪iɭaŋŋun̪ːa min̪ːaluɡaɭuɭɭa ente pat͡ʃːa sjuːʈkeːs aːɾeŋɡilum kaɳɖoː?]",
+    "തിളങ്ങുന്നതോ? ഇത് രത്നങ്ങൾക്കുള്ള രഹസ്യ കോഡ് വാക്കാണോ?":
+      "[t̪iɭaŋŋun̪ːat̪oː? it̪ɨ ɾat̪naŋŋaɭkːuɭɭa ɾahasja koːɖ vaːkːaːɳoː?]",
+    "അല്ല കുട്ടാ. ഇത് എന്റെ ഹിപ്-ഹോപ്പ് ഡാൻസ് ക്ലാസിനുള്ള പരിശീലന വസ്ത്രമാണ്.":
+      "[alːa kutːaː. it̪ɨ ente hip.hɔp ɖaːns klaːsinuɭɭa paɾiʃiːlana vast̪ɾamaːɳɨ]",
+    "ഗുഡ് ആഫ്റ്റർനൂൺ പെൺകുട്ടീ! എന്നെ 1985-ൽ ഉണർത്തുന്ന അത്ര കടുപ്പമുള്ള ഒരു കോഫി വേണം, ഒപ്പം അല്പം അപകടത്തിന്റെ രസവും.":
+      "[ɡuɖ aːftːaɾnuːɳ peɳkutːiː! en̪ːe aːjiɾat̪ːi t̪oɭːaːjiɾat̪ːi eɳpat̪ːi ant͡ʃil uɳaɾt̪ːun̪ːa at̪ɾa kaɖupːamuɭɭa oɾu koːfi veːɳam, opːam alpam apathat̪ːinte ɾasavum]"
+  },
 };
 
 // ==========================================
@@ -652,6 +822,34 @@ const DEVANAGARI_MAP: Record<string, string> = {
   "ा": "aː", "ि": "ɪ", "ी": "iː", "ु": "ʊ", "ू": "uː", "ृ": "rɪ",
   "े": "eː", "ै": "ɛː", "ो": "oː", "ौ": "ɔː", "्": "", "ं": "ɴ", "ः": "h",
 };
+
+
+const MALAYALAM_MAP: Record<string, string> = {
+  അ: "a", ആ: "aː", ഇ: "i", ഈ: "iː", ഉ: "u", ഊ: "uː", ഋ: "rɨ",
+  എ: "e", ഏ: "eː", ഐ: "ai", ഒ: "o", ഓ: "oː", ഔ: "au",
+  ക: "k", ഖ: "kʰ", ഗ: "ɡ", ഘ: "ɡʱ", ങ: "ŋ",
+  ച: "t͡ʃ", ഛ: "t͡ʃʰ", ജ: "d͡ʒ", ഝ: "d͡ʒʱ", ഞ: "ɲ",
+  ട: "ʈ", ഠ: "ʈʰ", ഡ: "ɖ", ഢ: "ɖʱ", ണ: "ɳ",
+  ത: "t̪", ഥ: "t̪ʰ", ദ: "d̪", ധ: "d̪ʱ", ന: "n̪",
+  പ: "p", ഫ: "pʰ", ബ: "b", ഭ: "bʱ", മ: "m",
+  യ: "j", ര: "ɾ", ല: "l", വ: "ʋ",
+  ശ: "ɕ", ഷ: "ʂ", സ: "s", ഹ: "ɦ",
+  ള: "ɭ", ഴ: "ɻ", റ: "r",
+  "ാ": "aː", "ി": "i", "ീ": "iː", "ു": "u", "ൂ": "uː", "ൃ": "rɨ",
+  "െ": "e", "േ": "eː", "ൈ": "ai", "ൊ": "o", "ോ": "oː", "ൌ": "au",
+  "്": "", "ം": "m", "ഃ": "h",
+  ൺ: "ɳ", ൻ: "n", ർ: "r", ൽ: "l", ൾ: "ɭ", ൿ: "k",
+};
+
+export function malayalamToIpa(text: string): string {
+  let res = "";
+  for (const ch of text) {
+    if (MALAYALAM_MAP[ch] !== undefined) res += MALAYALAM_MAP[ch];
+    else if (ch === " ") res += " ";
+  }
+  return `[${res.replace(/\s+/g, " ").trim()}]`;
+}
+
 
 function indicToIpa(text: string): string {
   let res = "";
@@ -1100,6 +1298,170 @@ function phoneticApprox(word: string): string {
 // ==========================================
 // 8. MAIN DISPATCHER
 // ==========================================
+
+export function germanToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/^sp/g, "ʃp").replace(/^st/g, "ʃt");
+    word = word.replace(/tsch/g, "t͡ʃ").replace(/sch/g, "ʃ");
+    word = word.replace(/(?<=[aou]|au)ch/g, "x").replace(/ch/g, "ç");
+    word = word.replace(/ei|ey|ai|ay/g, "aɪ");
+    word = word.replace(/eu|äu/g, "ɔʏ");
+    word = word.replace(/ie/g, "iː");
+    word = word.replace(/ä/g, "ɛː").replace(/ö/g, "øː").replace(/ü/g, "yː");
+    word = word.replace(/ß/g, "s");
+    word = word.replace(/qu/g, "kv");
+    word = word.replace(/z/g, "t͡s");
+    word = word.replace(/ng/g, "ŋ");
+    word = word.replace(/w/g, "v");
+    word = word.replace(/j/g, "j");
+    word = word.replace(/v/g, "f");
+    word = word.replace(/ig$/g, "ɪç");
+    word = word.replace(/r/g, "ʁ");
+    word = word.replace(/b$/g, "p").replace(/d$/g, "t").replace(/g$/g, "k");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function italianToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/gli([aeou])/g, "ʎ$1").replace(/gli/g, "ʎi");
+    word = word.replace(/gn/g, "ɲ");
+    word = word.replace(/sci([aeou])/g, "ʃ$1").replace(/sci/g, "ʃi").replace(/sce/g, "ʃe");
+    word = word.replace(/chi/g, "ki").replace(/che/g, "ke");
+    word = word.replace(/ghi/g, "ɡi").replace(/ghe/g, "ɡe");
+    word = word.replace(/ci([aeou])/g, "t͡ʃ$1").replace(/ci/g, "t͡ʃi").replace(/ce/g, "t͡ʃe");
+    word = word.replace(/gi([aeou])/g, "d͡ʒ$1").replace(/gi/g, "d͡ʒi").replace(/ge/g, "d͡ʒe");
+    word = word.replace(/qu/g, "kw");
+    word = word.replace(/zz/g, "t͡ts").replace(/z/g, "t͡s");
+    word = word.replace(/r/g, "r");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function norwegianToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/skj|stj|sk(?=[eiyæøy])/g, "ʃ");
+    word = word.replace(/kj|tj|k(?=[eiyæøy])/g, "ç");
+    word = word.replace(/gj|g(?=[eiyæøy])/g, "j");
+    word = word.replace(/^hj/g, "j").replace(/^hv/g, "v");
+    word = word.replace(/ng/g, "ŋ");
+    word = word.replace(/rt/g, "ʈ").replace(/rd/g, "ɖ").replace(/rn/g, "ɳ").replace(/rl/g, "ɭ").replace(/rs/g, "ʂ");
+    word = word.replace(/å/g, "oː");
+    word = word.replace(/æ/g, "æ");
+    word = word.replace(/ø/g, "ø");
+    word = word.replace(/r/g, "ɾ");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function danishToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/(?<=[aeiouyæøå])d(?=[aeiouyæøå]|$)/g, "ð");
+    word = word.replace(/sj|skj/g, "ɕ");
+    word = word.replace(/tj/g, "t͡s");
+    word = word.replace(/ng/g, "ŋ");
+    word = word.replace(/å/g, "ɔ");
+    word = word.replace(/æ/g, "ɛ");
+    word = word.replace(/ø/g, "œ");
+    word = word.replace(/r/g, "ʁ");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function turkishToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/c/g, "d͡ʒ");
+    word = word.replace(/ç/g, "t͡ʃ");
+    word = word.replace(/([aeıioöuü])ğ/g, "$1ː");
+    word = word.replace(/ı/g, "ɯ");
+    word = word.replace(/ö/g, "ø");
+    word = word.replace(/ü/g, "y");
+    word = word.replace(/ş/g, "ʃ");
+    word = word.replace(/y/g, "j");
+    word = word.replace(/r/g, "ɾ");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function romanianToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/chi([aeou])/g, "kʲ$1").replace(/che/g, "ke").replace(/chi/g, "ki");
+    word = word.replace(/ghi([aeou])/g, "ɡʲ$1").replace(/ghe/g, "ɡe").replace(/ghi/g, "ɡi");
+    word = word.replace(/ci([aeou])/g, "t͡ʃ$1").replace(/ce/g, "t͡ʃe").replace(/ci/g, "t͡ʃi");
+    word = word.replace(/gi([aeou])/g, "d͡ʒ$1").replace(/ge/g, "d͡ʒe").replace(/gi/g, "d͡ʒi");
+    word = word.replace(/ș/g, "ʃ");
+    word = word.replace(/ț/g, "t͡s");
+    word = word.replace(/ă/g, "ə");
+    word = word.replace(/â|î/g, "ɨ");
+    word = word.replace(/j/g, "ʒ");
+    word = word.replace(/x/g, "ks");
+    word = word.replace(/r/g, "r");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function polishToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/sz/g, "ʂ");
+    word = word.replace(/cz/g, "ʈ͡ʂ");
+    word = word.replace(/rz|ż/g, "ʐ");
+    word = word.replace(/dż/g, "ɖ͡ʐ");
+    word = word.replace(/dzi([aeou])/g, "d͡ʑ$1").replace(/dzi/g, "d͡ʑi").replace(/dź/g, "d͡ʑ");
+    word = word.replace(/ci([aeou])/g, "t͡ɕ$1").replace(/ci/g, "t͡ɕi").replace(/ć/g, "t͡ɕ");
+    word = word.replace(/si([aeou])/g, "ɕ$1").replace(/si/g, "ɕi").replace(/ś/g, "ɕ");
+    word = word.replace(/zi([aeou])/g, "ʑ$1").replace(/zi/g, "ʑi").replace(/ź/g, "ʑ");
+    word = word.replace(/ch|h/g, "x");
+    word = word.replace(/w/g, "v");
+    word = word.replace(/ł/g, "w");
+    word = word.replace(/ą/g, "ɔ̃");
+    word = word.replace(/ę/g, "ɛ̃");
+    word = word.replace(/y/g, "ɨ");
+    word = word.replace(/r/g, "r");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
+export function czechToIpa(text: string): string {
+  const words = text.toLowerCase().replace(/[.,;:?!¿¡"«»()–—]/g, "").trim().split(/\s+/).filter(Boolean);
+  const phon = words.map(w => {
+    let word = w;
+    word = word.replace(/ch/g, "x");
+    word = word.replace(/dě/g, "ɟɛ").replace(/tě/g, "cɛ").replace(/ně/g, "ɲɛ").replace(/mě/g, "mɲɛ").replace(/ě/g, "jɛ");
+    word = word.replace(/ď/g, "ɟ").replace(/ť/g, "c").replace(/ň/g, "ɲ");
+    word = word.replace(/ř/g, "r̝");
+    word = word.replace(/š/g, "ʃ");
+    word = word.replace(/č/g, "t͡ʃ");
+    word = word.replace(/ž/g, "ʒ");
+    word = word.replace(/c/g, "t͡s");
+    word = word.replace(/h/g, "ɦ");
+    word = word.replace(/á/g, "aː").replace(/é/g, "ɛː").replace(/í|ý/g, "iː").replace(/ó/g, "oː").replace(/ú|ů/g, "uː");
+    word = word.replace(/r/g, "r");
+    return word;
+  });
+  return `[${phon.join(" ")}]`;
+}
+
 export function getIpaTranscription(text: string, langCode: string): string {
   if (!text) return "";
 
@@ -1166,71 +1528,58 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return koreanToIpa(text);
   }
 
-  // 9. Hindi & Indic
-  if (langCode === "hi-IN" || langCode === "mr-IN" || /[ऀ-ॿ]/.test(text)) {
+  // 9. Malayalam
+  if (langCode === "ml-IN" || /[\u0D00-\u0D7F]/.test(text)) {
+    return malayalamToIpa(text);
+  }
+
+  // 10. Hindi & Indic
+  if (langCode === "hi-IN" || langCode === "mr-IN" || /[\u0900-\u097F]/.test(text)) {
     return indicToIpa(text);
   }
 
-  // 10. Greek
+  // 11. Greek
   if (langCode === "el-GR" || /[Ͱ-Ͽ]/.test(text)) {
     return greekToIpa(text);
   }
 
-  // 11. Hebrew
+  // 12. Hebrew
   if (langCode === "he-IL" || /[֐-׿]/.test(text)) {
     return hebrewToIpa(text);
   }
 
-  // 12. Portuguese (European & Brazilian)
+  // 13. Portuguese (European & Brazilian)
   if (langCode.startsWith("pt-")) {
     return portugueseToIpa(text, langCode === "pt-BR");
   }
 
-  // 13. Spanish
+  // 14. Spanish
   if (langCode.startsWith("es-")) {
     return spanishToIpa(text, langCode);
   }
 
-  // 14. English
+  // 15. English
   if (langCode.startsWith("en-")) {
     return englishToIpa(text, langCode);
   }
 
-  // 15. French
+  // 16. French
   if (langCode.startsWith("fr-")) {
     return frenchToIpa(text);
   }
 
-  // 16. German
-  if (langCode === "de-DE" || langCode === "de-CH") {
-    const germanText = text.toLowerCase()
-      .replace(/sch/g, "ʃ")
-      .replace(/ch/g, "ç")
-      .replace(/ei/g, "aɪ")
-      .replace(/eu|äu/g, "ɔɪ")
-      .replace(/ie/g, "iː")
-      .replace(/sp/g, "ʃp")
-      .replace(/st/g, "ʃt")
-      .replace(/ß/g, "s");
-    return `[${germanText}]`;
+  // 17. German
+  if (langCode.startsWith("de-")) {
+    return germanToIpa(text);
   }
 
-  // 17. Italian
-  if (langCode === "it-IT") {
-    const itText = text.toLowerCase()
-      .replace(/gli/g, "ʎi")
-      .replace(/gn/g, "ɲ")
-      .replace(/ci([aeou])/g, "t͡ʃ$1")
-      .replace(/ce/g, "t͡ʃe")
-      .replace(/ci/g, "t͡ʃi")
-      .replace(/gi([aeou])/g, "d͡ʒ$1")
-      .replace(/ge/g, "d͡ʒe")
-      .replace(/gi/g, "d͡ʒi");
-    return `[${itText}]`;
+  // 18. Italian
+  if (langCode.startsWith("it-")) {
+    return italianToIpa(text);
   }
 
-  // 18. Dutch
-  if (langCode === "nl-NL" || langCode === "nl-BE") {
+  // 19. Dutch
+  if (langCode === "nl-NL" || langCode === "nl-BE" || langCode.startsWith("nl-")) {
     const nlText = text.toLowerCase()
       .replace(/ij/g, "ɛi")
       .replace(/oe/g, "u")
@@ -1240,46 +1589,49 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${nlText}]`;
   }
 
-  // 19. Swedish, Danish, Norwegian
-  if (langCode === "sv-SE" || langCode === "da-DK" || langCode === "no-NO") {
+  // 20. Norwegian
+  if (langCode === "nb-NO" || langCode === "nn-NO" || langCode === "no-NO" || langCode.startsWith("nb") || langCode.startsWith("nn")) {
+    return norwegianToIpa(text);
+  }
+
+  // 21. Danish
+  if (langCode === "da-DK" || langCode.startsWith("da")) {
+    return danishToIpa(text);
+  }
+
+  // 22. Swedish
+  if (langCode === "sv-SE" || langCode.startsWith("sv")) {
     const scandText = text.toLowerCase()
       .replace(/skj|stj|sk(?=[eiyäö])/g, "ɧ")
       .replace(/tj|k(?=[eiyäö])/g, "ɕ")
       .replace(/å/g, "oː")
-      .replace(/ä|æ/g, "ɛ")
-      .replace(/ö|ø/g, "ø");
+      .replace(/ä/g, "ɛ")
+      .replace(/ö/g, "ø");
     return `[${scandText}]`;
   }
 
-  // 20. Turkish
-  if (langCode === "tr-TR") {
-    const trText = text.toLowerCase()
-      .replace(/c/g, "d͡ʒ")
-      .replace(/ç/g, "t͡ʃ")
-      .replace(/ğ/g, "ː")
-      .replace(/ı/g, "ɯ")
-      .replace(/ö/g, "ø")
-      .replace(/ş/g, "ʃ")
-      .replace(/ü/g, "y");
-    return `[${trText}]`;
+  // 23. Turkish
+  if (langCode === "tr-TR" || langCode.startsWith("tr")) {
+    return turkishToIpa(text);
   }
 
-  // 21. Polish
-  if (langCode === "pl-PL") {
-    const plText = text.toLowerCase()
-      .replace(/sz/g, "ʂ")
-      .replace(/cz/g, "ʈ͡ʂ")
-      .replace(/rz|ż/g, "ʐ")
-      .replace(/ś/g, "ɕ")
-      .replace(/ć/g, "t͡ɕ")
-      .replace(/ź/g, "ʑ")
-      .replace(/w/g, "v")
-      .replace(/ł/g, "w");
-    return `[${plText}]`;
+  // 24. Polish
+  if (langCode === "pl-PL" || langCode.startsWith("pl")) {
+    return polishToIpa(text);
   }
 
-  // 22. Vietnamese
-  if (langCode === "vi-VN") {
+  // 25. Romanian
+  if (langCode === "ro-RO" || langCode === "ro-MD" || langCode.startsWith("ro")) {
+    return romanianToIpa(text);
+  }
+
+  // 26. Czech
+  if (langCode === "cs-CZ" || langCode.startsWith("cs")) {
+    return czechToIpa(text);
+  }
+
+  // 27. Vietnamese
+  if (langCode === "vi-VN" || langCode.startsWith("vi")) {
     const viText = text.toLowerCase()
       .replace(/nh/g, "ɲ")
       .replace(/ng|ngh/g, "ŋ")
@@ -1290,7 +1642,7 @@ export function getIpaTranscription(text: string, langCode: string): string {
     return `[${viText}]`;
   }
 
-  // 23. General fallback
+  // 28. General fallback
   const words = text.replace(/[.,;:?!¿¡"«»()]/g, "").trim().split(/\s+/).filter(Boolean);
   return `[${words.map(w => phoneticApprox(w)).join(" ")}]`;
 }

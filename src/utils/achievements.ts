@@ -81,7 +81,7 @@ export const achievementsManager = {
       { target: 1000, title: "1.000 palabras políglotas", desc: "1.000 palabras exploradas en contexto", icon: "📖" },
       { target: 10000, title: "10.000 palabras dominadas", desc: "10.000 palabras leídas en microcuentos", icon: "💎" },
       { target: 100000, title: "100.000 palabras tejidas", desc: "100.000 palabras en múltiples variedades", icon: "🏆" },
-      { target: 1000000, title: "1.000.000 de palabras: Maestro Políglota", desc: "1 millón de palabras exploradas en Telar", icon: "👑" },
+      { target: 1000000, title: "1.000.000 de palabras: Maestro Políglota", desc: "1 millón de palabras exploradas en Polyglot Heaven", icon: "👑" },
     ];
 
     const badges: AchievementBadge[] = [];

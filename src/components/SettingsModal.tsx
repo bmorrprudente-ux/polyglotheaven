@@ -267,18 +267,29 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
           {/* Mastered Languages (Fluent) */}
           <div>
-            <div className="flex items-center justify-between mb-1.5">
+            <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
               <label className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Idiomas que domino ({masteredLanguages.length})</span>
+                <span>{t.masteredLanguagesLabel(masteredLanguages.length)}</span>
               </label>
-              <span className="text-[11px] text-gray-500 dark:text-gray-400 font-bold">
-                Para el cálculo de alcance humano
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-[11px] text-gray-500 dark:text-gray-400 font-bold">
+                  {t.humanReachDesc}
+                </span>
+                {masteredLanguages.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setMasteredLanguages([])}
+                    className="text-[10px] font-extrabold text-emerald-600 dark:text-emerald-400 hover:underline px-1.5 py-0.5 rounded-md bg-emerald-100/60 dark:bg-emerald-950/40"
+                  >
+                    {t.deselectAll}
+                  </button>
+                )}
+              </div>
             </div>
 
-            <div className="flex flex-wrap gap-1.5 p-2 rounded-2xl border border-gray-200 dark:border-slate-800 bg-emerald-50/30 dark:bg-emerald-950/20 mb-3 max-h-32 overflow-y-auto">
-              {filteredLangs.slice(0, 16).map(lang => {
+            <div className="flex flex-wrap gap-1.5 p-2.5 rounded-2xl border border-gray-200 dark:border-slate-800 bg-emerald-50/30 dark:bg-emerald-950/20 mb-3 max-h-40 overflow-y-auto">
+              {filteredLangs.map(lang => {
                 const isSelected = masteredLanguages.includes(lang.code);
                 return (
                   <button
@@ -288,7 +299,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                     className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1 ${
                       isSelected
                         ? "bg-emerald-600 text-white shadow-xs"
-                        : "bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100"
+                        : "bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700"
                     }`}
                   >
                     <span>{lang.flag}</span>
@@ -302,15 +313,34 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
           {/* Currently Learning (Focus Languages) */}
           <div>
-            <div className="flex items-center justify-between mb-1.5">
+            <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
               <label className="text-xs font-black uppercase tracking-wider text-sky-600 dark:text-sky-400 flex items-center gap-1.5">
                 <Globe className="w-3.5 h-3.5 text-sky-500" />
                 <span>{t.currentlyLearningLabel(currentlyLearning.length)}</span>
               </label>
-              <span className="text-[11px] text-sky-600 dark:text-sky-400 font-bold">
-                {t.currentlyLearningSubtitle}
-              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setCurrentlyLearning([])}
+                  className="text-[10px] font-extrabold text-sky-600 dark:text-sky-400 hover:underline px-2 py-0.5 rounded-md bg-sky-100/60 dark:bg-sky-950/40"
+                  title="Deseleccionar todos los idiomas en estudio"
+                >
+                  {t.deselectAll}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCurrentlyLearning(Array.from(new Set([...currentlyLearning, ...filteredLangs.map(l => l.code)])))}
+                  className="text-[10px] font-extrabold text-sky-600 dark:text-sky-400 hover:underline px-2 py-0.5 rounded-md bg-sky-100/60 dark:bg-sky-950/40"
+                  title="Seleccionar todos los idiomas visibles"
+                >
+                  {t.selectAll}
+                </button>
+              </div>
             </div>
+
+            <p className="text-[11px] text-sky-700 dark:text-sky-400 font-medium mb-1.5">
+              {t.currentlyLearningSubtitle}
+            </p>
 
             <input
               type="text"
@@ -367,11 +397,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </p>
 
             <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-purple-200/60 dark:border-slate-700 mb-3 text-[11px] text-gray-600 dark:text-gray-400 leading-relaxed">
-              <p className="font-bold text-gray-800 dark:text-gray-200 mb-1">Pasos rápidos para tu clave gratuita:</p>
+              <p className="font-bold text-gray-800 dark:text-gray-200 mb-1">{t.geminiQuickStepsTitle}</p>
               <ol className="list-decimal list-inside space-y-0.5">
-                <li>Abre Google AI Studio con tu cuenta Google.</li>
-                <li>Haz clic en «Create API key» (gratuita, sin tarjeta requerida).</li>
-                <li>Pégala a continuación y pulsa guardar.</li>
+                <li>{t.geminiStep1}</li>
+                <li>{t.geminiStep2}</li>
+                <li>{t.geminiStep3}</li>
               </ol>
             </div>
 
@@ -393,14 +423,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 </div>
                 <div>
                   <h4 className="text-xs font-black text-gray-900 dark:text-white flex items-center gap-1.5 flex-wrap">
-                    <span>Base de datos persistente</span>
+                    <span>{t.persistentDbTitle}</span>
                     <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-300 font-extrabold">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                      IndexedDB activa
+                      {t.indexedDbActive}
                     </span>
                   </h4>
                   <p className="text-[11px] text-gray-600 dark:text-gray-400">
-                    Tus idiomas seleccionados, progreso, cuentos y vocabulario se guardan de forma permanente.
+                    {t.persistentDbDesc}
                   </p>
                 </div>
               </div>
@@ -413,7 +443,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   {currentlyLearning.length}
                 </span>
                 <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">
-                  Aprendiendo
+                  {t.learningMetric}
                 </span>
               </div>
               <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-200/60 dark:border-slate-800">
@@ -421,7 +451,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   {masteredLanguages.length}
                 </span>
                 <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">
-                  Dominados
+                  {t.masteredMetric}
                 </span>
               </div>
               <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-200/60 dark:border-slate-800">
@@ -429,7 +459,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   {dbStats.vocabularyCount}
                 </span>
                 <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">
-                  Vocabulario ({dbStats.favoritesCount} ⭐)
+                  {t.vocabularyMetric} ({dbStats.favoritesCount} ⭐)
                 </span>
               </div>
             </div>
@@ -443,7 +473,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 title="Descargar todos tus datos en un archivo JSON seguro"
               >
                 <Download className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span>Exportar copia (.json)</span>
+                <span>{t.exportBackup}</span>
               </button>
 
               <button
@@ -453,7 +483,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 title="Subir un archivo JSON previo para restaurar tus datos"
               >
                 <Upload className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
-                <span>Restaurar copia</span>
+                <span>{t.restoreBackup}</span>
               </button>
               <input
                 ref={fileInputRef}
@@ -479,7 +509,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   className="text-[11px] text-red-500 hover:underline flex items-center gap-1 font-bold"
                 >
                   <Trash2 className="w-3 h-3" />
-                  <span>Limpiar</span>
+                  <span>{t.clearFlagged}</span>
                 </button>
               </div>
 
@@ -518,7 +548,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             {savedFeedback && (
               <span className="text-xs font-black text-emerald-600 dark:text-emerald-400 flex items-center gap-1 animate-fade-in">
                 <CheckCircle2 className="w-4 h-4" />
-                <span>¡Guardado en base de datos!</span>
+                <span>{t.savedFeedback}</span>
               </span>
             )}
           </div>

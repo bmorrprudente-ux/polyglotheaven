@@ -335,14 +335,14 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* SECTION 2: ¿CON CUÁNTAS PERSONAS PUEDES ENTENDERTE? */}
+      {/* SECTION 2: ¿CON CUÁNTAS PERSONAS PUEDES COMUNICARTE? */}
       <section className="rounded-3xl bg-white dark:bg-slate-900 p-6 sm:p-8 border-2 border-gray-200 dark:border-slate-800 shadow-duo-card space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-gray-100 dark:border-slate-800">
           <div>
             <div className="flex items-center gap-2 mb-1">
               <Globe2 className="w-5 h-5 text-duo-green" />
               <h2 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white">
-                ¿Con cuántas personas puedes entenderte?
+                ¿Con cuántas personas puedes comunicarte?
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">

@@ -7,6 +7,9 @@ interface LanguageOrderBarProps {
   selectedLanguageCodes: string[];
   onReorder: (newOrder: string[]) => void;
   onOpenCatalog: () => void;
+  currentlyLearningCodes?: string[];
+  onSelectLanguagePreset?: (codes: string[]) => void;
+  onToggleLanguage?: (code: string) => void;
   locale?: SupportedLocale;
 }
 
@@ -14,8 +17,12 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
   selectedLanguageCodes,
   onReorder,
   onOpenCatalog,
+  currentlyLearningCodes = [],
+  onSelectLanguagePreset,
+  onToggleLanguage,
   locale = "es",
 }) => {
+  const t = I18N[locale] || I18N.es;
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
 
@@ -98,14 +105,26 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5 pb-2 border-b border-gray-100 dark:border-slate-800">
         <div className="flex items-center gap-2">
           <span className="text-xs font-black text-gray-800 dark:text-gray-200 uppercase tracking-wider flex items-center gap-1.5">
-            <span>↕️ Orden de columnas en cuentos ({selectedLanguageCodes.length})</span>
+            <span>{t.columnOrderTitle(selectedLanguageCodes.length)}</span>
           </span>
           <span className="hidden sm:inline-block text-[11px] text-gray-400 dark:text-gray-500 font-medium">
-            (Arrastra o usa las flechas para colocarlas juntas)
+            {t.dragOrArrowsHint}
           </span>
         </div>
 
         <div className="flex items-center gap-1.5 flex-wrap">
+          {currentlyLearningCodes.length > 0 && onSelectLanguagePreset && (
+            <button
+              type="button"
+              onClick={() => onSelectLanguagePreset(currentlyLearningCodes)}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-black bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 transition-all shadow-xs active:scale-95"
+              title={t.loadLearningTooltip}
+            >
+              <span>🎓</span>
+              <span>{t.loadLearningLanguages(currentlyLearningCodes.length)}</span>
+            </button>
+          )}
+
           <button
             type="button"
             onClick={handleGroupSimilar}
@@ -113,7 +132,7 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
             title="Agrupar variantes similares juntas (ej. Francés de Francia junto a Francés Canadiense)"
           >
             <Sparkles className="w-3 h-3 text-sky-600" />
-            <span>Agrupar variantes similares</span>
+            <span>{t.groupSimilarVariants}</span>
           </button>
 
           <button
@@ -123,7 +142,7 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
             title="Ordenar alfabéticamente"
           >
             <ArrowDownAZ className="w-3 h-3 text-gray-500" />
-            <span className="hidden md:inline">A-Z</span>
+            <span className="hidden md:inline">{t.sortAlphabetical}</span>
           </button>
 
           <button
@@ -133,10 +152,42 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
             title="Añadir o quitar idiomas del catálogo"
           >
             <Settings2 className="w-3 h-3 text-gray-500" />
-            <span>Editar lista</span>
+            <span>{t.editList}</span>
           </button>
         </div>
       </div>
+
+      {/* Quick-Pick Learning Languages Strip */}
+      {currentlyLearningCodes.length > 0 && (
+        <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 mb-2.5 border-b border-gray-100 dark:border-slate-800/80 scrollbar-thin">
+          <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 flex items-center gap-1 flex-shrink-0">
+            <span>🎓</span>
+            <span>{t.currentlyLearningSection}:</span>
+          </span>
+          {currentlyLearningCodes.map(code => {
+            const lang = LANGUAGES[code];
+            if (!lang) return null;
+            const isActive = selectedLanguageCodes.includes(code);
+            return (
+              <button
+                key={`quick-learn-${code}`}
+                type="button"
+                onClick={() => onToggleLanguage?.(code)}
+                className={`flex items-center gap-1 px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all flex-shrink-0 border ${
+                  isActive
+                    ? "bg-emerald-100 dark:bg-emerald-900/60 text-emerald-900 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700 shadow-xs"
+                    : "bg-gray-50 dark:bg-slate-800/80 text-gray-600 dark:text-gray-400 border-dashed border-gray-300 dark:border-slate-700 hover:border-emerald-400 hover:text-emerald-600"
+                }`}
+                title={isActive ? `Quitar ${lang.name} de las columnas activas` : `Añadir ${lang.name} a las columnas activas`}
+              >
+                <span>{lang.flag}</span>
+                <span className="truncate max-w-[110px]">{lang.name.replace(/^(Español|Inglés|Francés|Portugués|Árabe|Chino)\s*/, "")}</span>
+                <span className="text-[9px] font-black">{isActive ? "✓" : "+"}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* Draggable & Click-Reorderable Pill Strip */}
       <div className="flex items-center gap-1.5 overflow-x-auto py-1 scrollbar-thin">
@@ -175,7 +226,7 @@ export const LanguageOrderBar: React.FC<LanguageOrderBarProps> = ({
               <span className="truncate max-w-[130px]">{lang.name.replace(/^(Español|Inglés|Francés|Portugués|Árabe|Chino)\s*/, "")}</span>
               {isFirst && (
                 <span className="text-[9px] px-1 py-0.2 rounded bg-emerald-200/80 dark:bg-emerald-800 text-emerald-900 dark:text-emerald-200 uppercase font-black">
-                  Base
+                  {t.baseBadge}
                 </span>
               )}
 

@@ -8,6 +8,7 @@ import { getIpaTranscription } from "../utils/ipaConverter";
 import { voiceFlagger } from "../utils/voiceFlagger";
 import { segmentSentence } from "../utils/textSegmenter";
 import { I18N, SupportedLocale } from "../utils/i18n";
+import { isRtlLang } from "../utils/rtl";
 
 interface ParallelSentenceRowProps {
   line: DialogueLine;
@@ -281,32 +282,47 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
                 )}
 
                 {/* Spoken Text - FULL COMPLETE SENTENCE with Individual Clickable Words (CJK & Polyglot) */}
-                <div className="text-sm sm:text-base font-bold text-gray-900 dark:text-white leading-relaxed mb-2">
-                  {segmentSentence(translation.text, langCode).map((token, pIdx) => {
-                    if (!token.isWord) {
-                      return (
-                        <span key={pIdx} className="text-gray-900 dark:text-white">
-                          {token.text}
-                        </span>
-                      );
-                    }
-                    return (
-                      <button
-                        key={pIdx}
-                        type="button"
-                        onClick={() => onSelectWord(token.cleanWord, translation.text, langCode)}
-                        className="inline hover:bg-amber-100 dark:hover:bg-amber-950/60 hover:text-amber-900 dark:hover:text-amber-200 px-0.5 py-0.5 rounded transition-colors cursor-pointer border-b border-dotted border-transparent hover:border-amber-400 font-bold text-left"
-                        title={t.clickToTranslate(token.cleanWord)}
-                      >
-                        {token.text}
-                      </button>
-                    );
-                  })}
-                </div>
+                {(() => {
+                  const isRtl = isRtlLang(langCode);
+                  return (
+                    <div
+                      dir={isRtl ? "rtl" : "ltr"}
+                      className={`text-sm sm:text-base font-bold text-gray-900 dark:text-white leading-relaxed mb-2 ${
+                        isRtl ? "text-right font-sans" : "text-left"
+                      }`}
+                    >
+                      {segmentSentence(translation.text, langCode).map((token, pIdx) => {
+                        if (!token.isWord) {
+                          return (
+                            <span key={pIdx} className="text-gray-900 dark:text-white">
+                              {token.text}
+                            </span>
+                          );
+                        }
+                        return (
+                          <button
+                            key={pIdx}
+                            type="button"
+                            onClick={() => onSelectWord(token.cleanWord, translation.text, langCode)}
+                            className={`inline hover:bg-amber-100 dark:hover:bg-amber-950/60 hover:text-amber-900 dark:hover:text-amber-200 px-0.5 py-0.5 rounded transition-colors cursor-pointer border-b border-dotted border-transparent hover:border-amber-400 font-bold ${
+                              isRtl ? "text-right" : "text-left"
+                            }`}
+                            title={t.clickToTranslate(token.cleanWord)}
+                          >
+                            {token.text}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  );
+                })()}
 
                 {/* Phonetics Bar (IPA - Full Sentence, No Cutoff) */}
                 {showPhonetics && ipaString && (
-                  <div className="mt-2 pt-2 border-t border-gray-200/60 dark:border-slate-700/60 font-mono text-[11px] text-gray-600 dark:text-gray-300 bg-white/60 dark:bg-slate-800/60 p-2 rounded-xl break-words leading-normal">
+                  <div
+                    dir="ltr"
+                    className="mt-2 pt-2 border-t border-gray-200/60 dark:border-slate-700/60 font-mono text-[11px] text-gray-600 dark:text-gray-300 bg-white/60 dark:bg-slate-800/60 p-2 rounded-xl break-words leading-normal text-left"
+                  >
                     <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider mr-1.5 select-none">
                       IPA:
                     </span>

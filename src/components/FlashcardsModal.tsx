@@ -4,6 +4,7 @@ import { LANGUAGES } from "../data/languages";
 import { explainWordWithAi, WordExplanation } from "../utils/aiExplainer";
 import { X, Volume2, Star, Sparkles, RotateCw, ArrowLeft, ArrowRight, Shuffle, CheckCircle2, BookmarkCheck, BookOpen } from "lucide-react";
 import { I18N, SupportedLocale } from "../utils/i18n";
+import { isRtlLang } from "../utils/rtl";
 
 interface FlashcardsModalProps {
   isOpen: boolean;
@@ -239,12 +240,18 @@ export const FlashcardsModal: React.FC<FlashcardsModalProps> = ({
                     <span className="text-[10px] font-black uppercase tracking-widest text-amber-600 dark:text-amber-400 block mb-2">
                       Palabra en contexto
                     </span>
-                    <h2 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white capitalize mb-4 tracking-tight">
+                    <h2
+                      dir={isRtlLang(currentWord.langCode) ? "rtl" : "ltr"}
+                      className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white capitalize mb-4 tracking-tight"
+                    >
                       {currentWord.word}
                     </h2>
 
                     {currentWord.contextSentence && (
-                      <p className="text-xs sm:text-sm italic text-gray-600 dark:text-gray-300 max-w-md mx-auto bg-amber-50/60 dark:bg-slate-800/80 p-3 rounded-2xl border border-amber-200/50 dark:border-slate-700">
+                      <p
+                        dir={isRtlLang(currentWord.langCode) ? "rtl" : "ltr"}
+                        className="text-xs sm:text-sm italic text-gray-600 dark:text-gray-300 max-w-md mx-auto bg-amber-50/60 dark:bg-slate-800/80 p-3 rounded-2xl border border-amber-200/50 dark:border-slate-700"
+                      >
                         "{currentWord.contextSentence}"
                       </p>
                     )}

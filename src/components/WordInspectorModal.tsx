@@ -4,6 +4,7 @@ import { vocabularyTracker } from "../utils/vocabularyTracker";
 import { LANGUAGES } from "../data/languages";
 import { X, Volume2, Bookmark, Check, Sparkles, Loader2, RefreshCw, AlertTriangle, Star } from "lucide-react";
 import { I18N, SupportedLocale } from "../utils/i18n";
+import { isRtlLang } from "../utils/rtl";
 
 interface WordInspectorModalProps {
   isOpen: boolean;
@@ -96,7 +97,12 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                   </span>
                 )}
               </div>
-              <h3 className="text-2xl font-black text-gray-900 dark:text-white capitalize">
+              <h3
+                dir={isRtlLang(actualLangCode) ? "rtl" : "ltr"}
+                className={`text-xl sm:text-2xl font-black text-gray-900 dark:text-white tracking-tight ${
+                  isRtlLang(actualLangCode) ? "text-right" : "text-left"
+                }`}
+              >
                 {word}
               </h3>
               {explanation?.ipa && (
@@ -204,7 +210,12 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                               <span>{l?.flag || "🌐"}</span>
                               <span className="truncate">{l?.name.split(" ")[0] || code}</span>
                             </div>
-                            <span className="text-xs font-extrabold text-gray-900 dark:text-white truncate block">
+                            <span
+                              dir={isRtlLang(code) ? "rtl" : "ltr"}
+                              className={`text-xs font-extrabold text-gray-900 dark:text-white truncate block ${
+                                isRtlLang(code) ? "text-right font-sans" : "text-left"
+                              }`}
+                            >
                               {eq}
                             </span>
                           </div>

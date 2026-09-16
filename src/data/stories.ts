@@ -1201,7 +1201,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l3_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Niemand laat zomaar een groene koffer achter. Er moeten geheime documenten in zitten. Of diamanten!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_nl-BE.mp3"
           },
@@ -1231,107 +1231,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l3_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "沒有人會就這樣丟下一個綠色手提箱。裡面肯定有秘密文件，或者鑽石！",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "कोई भी यूं ही हरा सूटकेस नहीं छोड़ जाता। इसमें पक्का खुफिया दस्तावेज़ होंगे। या फिर हीरे!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "کوئی یوں ہی سبز سوٹ کیس نہیں چھوڑ جاتا۔ اس میں ضرور خفیہ دستاویزات ہوں گی۔ یا ہیرے!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "কেউ এমনি এমনি সবুজ সুটকেস ফেলে যায় না। এতে নিশ্চয়ই গোপন নথিপত্র আছে। অথবা হিরে!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "ਕੋਈ ਵੀ ਐਵੇਂ ਹਰਾ ਸੂਟਕੇਸ ਨਹੀਂ ਛੱਡ ਜਾਂਦਾ। ਇਹਦੇ ਵਿੱਚ ਜ਼ਰੂਰ ਗੁਪਤ ਦਸਤਾਵੇਜ਼ ਹੋਣਗੇ। ਜਾਂ ਫਿਰ ਹੀਰੇ!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "કોઈ પણ આમ જ લીલો સૂટકેસ છોડી ન જાય. એમાં ચોક્કસ ગુપ્ત દસ્તાવેજો હોવા જોઈએ. અથવા હીરા!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "कोणीही सहज हिरवी सुटकेस अशी सोडून जात नाही. त्यात नक्कीच गुप्त कागदपत्रे असतील. किंवा हिरे!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "யாரும் பச்சை நிற சூட்கேஸை சும்மா விட்டுச் செல்ல மாட்டார்கள். அதில் ரகசிய ஆவணங்கள் இருக்க வேண்டும். அல்லது வைரங்கள்!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_ta-IN.mp3"
           },
           "te-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "ఎవరూ పచ్చటి సూట్‌కేస్‌ను అలా వదిలేసి వెళ్లరు. అందులో ఖచ్చితంగా రహస్య పత్రాలు ఉండాలి. లేదా వజ్రాలు!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_te-IN.mp3"
           },
           "kn-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "ಯಾರೂ ಸುಮ್ಮನೆ ಹಸಿರು ಸೂಟ್‌ಕೇಸ್ ಬಿಟ್ಟು ಹೋಗಲ್ಲ. ಅದರಲ್ಲಿ ಖಂಡಿತ ರಹಸ್ಯ ದಾಖಲೆಗಳಿರಬೇಕು. ಅಥವಾ ವಜ್ರಗಳು!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "ആരും അങ്ങനെ വെറുതെ പച്ച സ്യൂട്ട്കേസ് ഉപേക്ഷിച്ചു പോകില്ല. ഇതിൽ തീർച്ചയായും രഹസ്യരേഖകൾ ഉണ്ടാകും. അല്ലെങ്കിൽ രത്നങ്ങൾ!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Không ai lại vứt một chiếc vali màu xanh lá như thế cả. Chắc chắn bên trong có tài liệu mật. Hoặc kim cương!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_vi-VN.mp3"
           },
           "th-TH": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "ไม่มีใครทิ้งกระเป๋าเดินทางสีเขียวไว้เฉยๆ แบบนี้หรอก ต้องมีเอกสารลับอยู่ข้างในแน่ๆ หรือไม่ก็เพชร!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_th-TH.mp3"
           },
           "id-ID": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Mana ada orang meninggalkan koper hijau begitu saja. Pasti ada dokumen rahasia di dalamnya. Atau berlian!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_id-ID.mp3"
           },
           "ms-MY": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Tiada siapa yang tinggalkan beg pakaian hijau macam itu saja. Mesti ada dokumen rahsia. Atau berlian!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Hakuna mtu anayeacha sanduku la kijani hivi hivi tu. Lazima kuna nyaraka za siri ndani yake. Au almasi!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Avave niko ndohejareíri peteĩ vosa hovy péicha. Oiméne oguereko kuatia ñemi. Térã itavera!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Manan pipas q'omer wayaqataqa jinallachu saqenman. Chaypiqa pakasqa qelqakunachá kashan. ¡Utaq qori qollqekuna!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Janiwa khitis ch'uxña wayaqxa ukhamak jaytkaspati. Ukanxa imat qillqatanakaw utjaspacha. ¡Jan ukax q'illu qullqinaka!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Aquin hueli quicahuaz ce xoxouhqui petlacalli yuhquin. Quipiaz tlahtolli ichtaca. Nozo teocuitlapilli!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_nah-MX.mp3"
           },
           "nv-US": {
-            text: "Nadie deja una maleta verde así como así. Tiene que haber documentos secretos. ¡O diamantes!",
+            text: "Doo łaʼ tʼáadoo leʼé tʼóó tsostsʼid dootłʼizhí yę́ę yóóʼ adoolníił da. Nanináanii naaltsoos biiʼ dahólǫ́ǫ daatsʼí. Éí doodago óola daatsʼí!",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l3_nv-US.mp3"
           }
@@ -1634,7 +1634,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l4_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "O ropa sucia.",
+            text: "Of vuile was.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_nl-BE.mp3"
           },
@@ -1664,107 +1664,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l4_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "O ropa sucia.",
+            text: "或者是臭衣服。",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "O ropa sucia.",
+            text: "या गंदे कपड़े।",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "O ropa sucia.",
+            text: "یا میلے کپڑے۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "O ropa sucia.",
+            text: "নয়তো ময়লা জামাকাপড়।",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "O ropa sucia.",
+            text: "ਜਾਂ ਮੈਲੇ ਕੱਪੜੇ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "O ropa sucia.",
+            text: "અથવા મેલાં કપડાં.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "O ropa sucia.",
+            text: "किंवा मळलेले कपडे.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "O ropa sucia.",
+            text: "அல்லது அழுக்குத் துணிகள்.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_ta-IN.mp3"
           },
           "te-IN": {
-            text: "O ropa sucia.",
+            text: "లేదా మురికి బట్టలు.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_te-IN.mp3"
           },
           "kn-IN": {
-            text: "O ropa sucia.",
+            text: "ಅಥವಾ ಕೊಳಕು ಬಟ್ಟೆಗಳು.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "O ropa sucia.",
+            text: "അല്ലെങ്കിൽ മുഷിഞ്ഞ വസ്ത്രങ്ങൾ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "O ropa sucia.",
+            text: "Hoặc là đống quần áo bẩn.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_vi-VN.mp3"
           },
           "th-TH": {
-            text: "O ropa sucia.",
+            text: "หรือไม่ก็เสื้อผ้าใช้แล้ว",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_th-TH.mp3"
           },
           "id-ID": {
-            text: "O ropa sucia.",
+            text: "Atau pakaian kotor.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_id-ID.mp3"
           },
           "ms-MY": {
-            text: "O ropa sucia.",
+            text: "Atau baju kotor.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "O ropa sucia.",
+            text: "Au nguo chafu tu.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "O ropa sucia.",
+            text: "Térã ao ky'a.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "O ropa sucia.",
+            text: "Utaq qhilli p'achakuna.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "O ropa sucia.",
+            text: "Jan ukax qhilli isinaka.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "O ropa sucia.",
+            text: "Nozo zoquitzotzomahtli.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_nah-MX.mp3"
           },
           "nv-US": {
-            text: "O ropa sucia.",
+            text: "Éí doodago ééʼ tsiʼadzoolí.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l4_nv-US.mp3"
           }
@@ -2067,7 +2067,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l5_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "¡Disculpen! ¿Alguien vio mi maleta verde con brillantina?",
+            text: "Pardon! Heeft iemand mijn groene glitterkoffer gezien?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l5_nl-BE.mp3"
           },
@@ -2097,7 +2097,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l5_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "¡Disculpen! ¿Alguien vio mi maleta verde con brillantina?",
+            text: "不好意思！有人看到我那個亮晶晶的綠色手提箱嗎？",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l5_zh-TW.mp3"
           },
@@ -2172,7 +2172,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l5_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "¡Disculpen! ¿Alguien vio mi maleta verde con brillantina?",
+            text: "Samahanini! Kuna mtu ameona sanduku langu la kijani lenye kung'aa?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l5_sw-KE.mp3"
           },
@@ -2500,7 +2500,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l6_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Glitters? Is dat de geheime code voor de diamanten?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_nl-BE.mp3"
           },
@@ -2530,107 +2530,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l6_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "亮晶晶？這是鑽石的秘密暗號嗎？",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "चमकीला? क्या यह हीरों का गुप्त कोडवर्ड है?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "چمکتا ہوا؟ کیا یہ ہیروں کا خفیہ کوڈ ورڈ ہے؟",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "চকচকে? ওটা কি হিরের গোপন সংকেত?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "ਚਮਕੀਲਾ? ਕੀ ਇਹ ਹੀਰਿਆਂ ਲਈ ਗੁਪਤ ਕੋਡਵਰਡ ਹੈ?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "ચમકતો? શું આ હીરા માટેનો ગુપ્ત કોડવર્ડ છે?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "चकाकणारी? हा हिऱ्यांसाठीचा गुप्त सांकेतिक शब्द आहे का?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "மினுமினுப்பா? அது வைரங்களுக்கான ரகசிய குறியீட்டு வார்த்தையா?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_ta-IN.mp3"
           },
           "te-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "మెరిసేదా? వజ్రాలకు ఇది ఏమైనా రహస్య కోడ్ పదమా?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_te-IN.mp3"
           },
           "kn-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "ಹೊಳೆಯುವುದೇ? ಅದು ವಜ್ರಗಳ ರಹಸ್ಯ ಸಂಕೇತ ಪದವೇ?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "തിളങ്ങുന്നതോ? ഇത് രത്നങ്ങൾക്കുള്ള രഹസ്യ കോഡ് വാക്കാണോ?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Lấp lánh ư? Đó có phải là mật mã ám chỉ kim cương không?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_vi-VN.mp3"
           },
           "th-TH": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "กากเพชรเหรอ? นั่นเป็นรหัสลับสำหรับเพชรใช่ไหม?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_th-TH.mp3"
           },
           "id-ID": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Berkilau? Apa itu kode rahasia untuk berlian?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_id-ID.mp3"
           },
           "ms-MY": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Berkilat? Adakah itu kata laluan rahsia untuk berlian?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Kung'aa? Je, hilo ndilo neno la siri la almasi?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Mimbi? Péva piko hína pe ñe'ẽ ñemi itavera rehegua?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "¿Lliphipipaq? ¿Chaychu pakay simi qori qollqepaq?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "¿Khankiri? ¿Ukati wajra qullqinakatak imat arü?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "¿Petlani? ¿Inon in ichtaca tlahtolli ipan teocuitlapilli?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_nah-MX.mp3"
           },
           "nv-US": {
-            text: "¿Brillantina? ¿Es esa la clave secreta para los diamantes?",
+            text: "Disxǫsígíísh? Éísh tʼáadoo bą́ą́h ílíní óola bízhiʼ átʼé?",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l6_nv-US.mp3"
           }
@@ -2933,7 +2933,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l7_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Nee, manneke. Het is mijn trainingskleren voor de hiphoples.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_nl-BE.mp3"
           },
@@ -2963,107 +2963,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s1/s1_l7_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "才不是呢，小鬼。那是我上嘻哈舞蹈課的運動服。",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "नहीं बच्चे। यह हिप-हॉप डांस क्लास के लिए मेरी ट्रेनिंग की पोशाक है।",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "نہیں میاں۔ یہ میری ہپ ہاپ کلاس کے لیے ٹریننگ کا لباس ہے۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "আরে না খোকা। এটা হিপ-হপ ক্লাসের জন্য আমার নাচের পোশাক।",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "ਨਹੀਂ ਕਾਕਾ। ਇਹ ਹਿੱਪ-ਹੌਪ ਡਾਂਸ ਕਲਾਸ ਲਈ ਮੇਰੀ ਪੁਸ਼ਾਕ ਹੈ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "ના બેટા. આ મારા હિપ-હોપ ડાન્સ ક્લાસનો ડ્રેસ છે.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "अरे नाही पोरा. हा माझ्या हिप-हॉप डान्स क्लासचा सराव पोषाख आहे.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "இல்லை தம்பி. இது என் ஹிப்-ஹாப் நடனப் பயிற்சிக்கான உடை.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_ta-IN.mp3"
           },
           "te-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "కాదు బాబు. ఇది నా హిప్-హాప్ డ్యాన్స్ క్లాస్ కోసం ప్రాక్టీస్ డ్రెస్.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_te-IN.mp3"
           },
           "kn-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "ಅಲ್ಲ ಕಂದ. ಇದು ನನ್ನ ಹಿಪ್-ಹಾಪ್ ನೃತ್ಯ ತರಗತಿಯ ತಾಲೀಮು ಉಡುಪು.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "അല്ല കുട്ടാ. ഇത് എന്റെ ഹിപ്-ഹോപ്പ് ഡാൻസ് ക്ലാസിനുള്ള പരിശീലന വസ്ത്രമാണ്.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Không đâu, nhóc. Đó là đồ tập cho lớp nhảy hip-hop của tôi thôi.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_vi-VN.mp3"
           },
           "th-TH": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "ไม่ใช่หรอกไอ้หนู นั่นชุดซ้อมเต้นฮิปฮอปของพี่ต่างหาก",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_th-TH.mp3"
           },
           "id-ID": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Bukan, bocah. Itu baju latihanku untuk kelas hip-hop.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_id-ID.mp3"
           },
           "ms-MY": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Bukanlah, adik. Itu baju latihan saya untuk kelas hip-hop.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Hapana, dogo. Ni nguo zangu za mazoezi ya darasa la hip-hop.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Nahániri, mitã'i. Péva hína che ao ajeroky hag̃ua hip-hop.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Manan, maqt'a. Chayqa hip-hop tusuyta yachanaypaq p'achaymi.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Janiwa, yuqalla. Ukaxa hip-hop thuqt'awi yatiqañataki isijawa.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Amo, telpochtli. Inon notlaquemitl ic nimomachtia mitotiliztli hip-hop.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_nah-MX.mp3"
           },
           "nv-US": {
-            text: "No, chaval. Es mi ropa de entrenamiento para la clase de hip-hop.",
+            text: "Dooda, ashkiichílító. Éí díí daʼałzhish biniyé shiyéʼ bił hazhóʼó yishłééh.",
             stageDirection: "Natural",
             audioUrl: "/audio/s1/s1_l7_nv-US.mp3"
           }
@@ -3376,7 +3376,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l1_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Goeiemiddag, jongedame! Ik wil een koffie die zo sterk is dat hij me wakker schudt in 1985, en met een vleugje gevaar.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_nl-BE.mp3"
           },
@@ -3406,107 +3406,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l1_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "下午好，小姑娘！給我來一杯濃到能讓我一覺醒在1985年的咖啡，而且要帶點危險的滋味。",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "नमस्ते बिटिया! मुझे इतनी कड़क कॉफ़ी चाहिए जो मुझे सीधे 1985 में जगा दे, और उसमें थोड़ा ख़तरे का अंदाज़ हो।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "دوپہر بخیر، محترمہ! مجھے اتنی تیز کافی چاہیے جو مجھے 1985 میں جگا دے، اور ذرا خطرے کی آمیزش کے ساتھ۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "নমস্কার দিদিমণি! এমন কড়া কফি চাই যা আমাকে সোজা ১৯৮৫ সালে জাগিয়ে তুলবে, আর তাতে একটু বিপদের ছোঁয়া থাকবে।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਕੁੜੀਏ! ਮੈਨੂੰ ਏਨੀ ਕੜਕ ਕੌਫ਼ੀ ਚਾਹੀਦੀ ਹੈ ਜੋ ਮੈਨੂੰ 1985 ਵਿੱਚ ਜਗਾ ਦੇਵੇ, ਅਤੇ ਨਾਲ ਥੋੜ੍ਹਾ ਖ਼ਤਰੇ ਦਾ ਸੁਆਦ ਹੋਵੇ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "નમસ્તે દીકરી! મારે એવી કડક કૉફી જોઈએ છે જે મને 1985માં જગાડે, અને સાથે થોડો જોખમનો અહેસાસ હોય.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "शुभ दुपार, मुली! मला असा कडक कॉफी हवा आहे जो मला थेट १९८५ मध्ये जागे करेल, आणि त्यात थोडा धोक्याचा थरार असावा.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "வணக்கம் பெண்ணே! என்னை 1985-ல் விழிக்க வைக்கும் அளவுக்கு ஸ்ட்ராங்கான, கொஞ்சம் ஆபத்தான காபி வேண்டும்.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_ta-IN.mp3"
           },
           "te-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "నమస్కారం అమ్మాయ్! నన్ను 1985లో మేల్కొలిపేంత స్ట్రాంగ్ కాఫీ కావాలి, కాస్త ప్రమాదకరమైన రుచితో.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_te-IN.mp3"
           },
           "kn-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "ನಮಸ್ಕಾರ ಹುಡುಗಿ! ನನ್ನನ್ನು 1985 ರಲ್ಲಿ ಎಬ್ಬಿಸುವಂತಹ ಕಟುವಾದ ಕಾಫಿ ಬೇಕು, ಜೊತೆಗೆ ಸ್ವಲ್ಪ ಸಾಹಸದ ಸ್ಪರ್ಶವಿರಲಿ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "ഗുഡ് ആഫ്റ്റർനൂൺ പെൺകുട്ടീ! എന്നെ 1985-ൽ ഉണർത്തുന്ന അത്ര കടുപ്പമുള്ള ഒരു കോഫി വേണം, ഒപ്പം അല്പം അപകടത്തിന്റെ രസവും.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Chào buổi chiều, cô gái! Cho tôi một ly cà phê đậm đến mức có thể đánh thức tôi ở năm 1985, và thêm chút hiểm nguy nhé.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_vi-VN.mp3"
           },
           "th-TH": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "สวัสดีตอนบ่ายจ้ะแม่หนู! ขอกาแฟเข้มๆ แบบที่ดื่มแล้วตื่นไปโผล่ปี 1985 เลยนะ แล้วก็ขอรสชาติอันตรายนิดๆ ด้วย",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_th-TH.mp3"
           },
           "id-ID": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Selamat siang, Nona! Saya mau kopi yang begitu kuat sampai bisa membangunkanku di tahun 1985, dengan sedikit sensasi bahaya.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_id-ID.mp3"
           },
           "ms-MY": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Selamat petang, cik! Saya mahu kopi yang cukup pekat sampai boleh kejutkan saya pada tahun 1985, dengan sedikit rasa bahaya.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Habari za mchana, binti! Ninataka kahawa kali itakayoniamsha mwaka 1985, ikiwa na chembe ya hatari.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Ka'aru porã, kuñataĩ! Aipota peteĩ café imbaretéva che mombáy hag̃ua 1985-pe, ha michĩmi kyhyje reheve.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "¡Allin sukha kachun, sipas! Sinchi q'oñi caféta munani 1985 watapi rijch'ariwananpaq, manchaywan kuska.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "¡Aski jayp'ukipan, tawaqu! Mä ch'ama cafe muntha 1985 marana sartanitapata, jisk'a axsarkañampi.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "¡Cualli teotlac, ichpuchtli! Nicnequi ce café cenca chicahuac tlen nechizcaltiz ipan 1985, ihuan ica ce tlamahuizolli.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_nah-MX.mp3"
           },
           "nv-US": {
-            text: "¡Buenas tardes, señorita! Quiero un café tan fuerte que me despierte en 1985, y con un toque de peligro.",
+            text: "Yáʼátʼééh ałníʼíníłį́įgo, chʼikę́ę́h! Gohwééh bidziilgo nisin 1985góó chʼéénísííd dooleeł, dóó tʼóó kóníshghánígo nééldzidí bił.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l1_nv-US.mp3"
           }
@@ -3809,7 +3809,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l2_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "¡Marchando! Un café hirviendo servido justo en el filo de la mesa y un despertador programado hace cuarenta años.",
+            text: "Komt in orde! Een gloeiend hete koffie op de rand van de tafel en een wekker ingesteld op veertig jaar geleden.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l2_nl-BE.mp3"
           },
@@ -3839,7 +3839,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l2_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "¡Marchando! Un café hirviendo servido justo en el filo de la mesa y un despertador programado hace cuarenta años.",
+            text: "馬上來！熱騰騰的咖啡放在桌邊邊，還有一個設定在四十年前的鬧鐘。",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l2_zh-TW.mp3"
           },
@@ -3914,7 +3914,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l2_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "¡Marchando! Un café hirviendo servido justo en el filo de la mesa y un despertador programado hace cuarenta años.",
+            text: "Inakuja mara moja! Kahawa inayotokota kwenye ukingo wa meza na saa ya kengele iliyowekwa miaka arobaini iliyopita.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l2_sw-KE.mp3"
           },
@@ -4242,7 +4242,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l3_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "En de servetten? Ik heb er exact zeven nodig voor mijn goocheltrucs.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_nl-BE.mp3"
           },
@@ -4272,107 +4272,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l3_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "那紙巾呢？我剛好需要整整七張來變魔術。",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "और नैपकिन कहाँ हैं? मुझे अपने जादुई करतबों के लिए ठीक सात नैपकिन चाहिए।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "اور نیپکن کہاں ہیں؟ مجھے اپنے جادوئی کرتبوں کے لیے پورے سات نیپکن درکار ہیں۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "আর ন্যাপকিনগুলো কোথায়? আমার জাদুর খেলার জন্য ঠিক সাতখানা ন্যাপকিন দরকার।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "ਅਤੇ ਨੈਪਕਿਨ ਕਿੱਥੇ ਹਨ? ਮੈਨੂੰ ਆਪਣੇ ਜਾਦੂ ਦੇ ਕਰਤੱਬਾਂ ਲਈ ਪੂਰੇ ਸੱਤ ਨੈਪਕਿਨ ਚਾਹੀਦੇ ਹਨ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "અને નેપકિન ક્યાં છે? મારે મારા જાદુઈ પ્રયોગો માટે બરાબર સાત નેપકિન જોઈએ છે.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "आणि नॅपकिन्स कुठे आहेत? मला माझ्या जादूच्या प्रयोगांसाठी बरोबर सात नॅपकिन्स हवे आहेत.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "டிஷ்யூ பேப்பர்கள் எங்கே? என் மேஜிக் வித்தைகளுக்குச் சரியாக ஏழு தாள்கள் வேண்டும்.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_ta-IN.mp3"
           },
           "te-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "మరి నాప్కిన్లు ఎక్కడ? నా మ్యాజిక్ ట్రిక్స్ కోసం సరిగ్గా ఏడు నాప్కిన్లు కావాలి.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_te-IN.mp3"
           },
           "kn-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "ನ್ಯಾಪ್ಕಿನ್‌ಗಳು ಎಲ್ಲಿವೆ? ನನ್ನ ಜಾದೂ ತಂತ್ರಗಳಿಗೆ ಸರಿಯಾಗಿ ಏಳು ನ್ಯಾಪ್ಕಿನ್‌ಗಳು ಬೇಕು.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "നാപ്കിനുകൾ എവിടെ? എന്റെ മാന്ത്രിക വിദ്യകൾക്കായി എനിക്ക് കൃത്യം ഏഴ് നാപ്കിനുകൾ വേണം.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "Thế còn khăn ăn? Tôi cần đúng bảy tờ cho màn ảo thuật của mình.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_vi-VN.mp3"
           },
           "th-TH": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "แล้วกระดาษเช็ดปากล่ะ? ลุงต้องการเจ็ดแผ่นพอดีเป๊ะสำหรับเล่นกล",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_th-TH.mp3"
           },
           "id-ID": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "Lalu serbetnya? Aku butuh tepat tujuh lembar untuk trik sulapku.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_id-ID.mp3"
           },
           "ms-MY": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "Dan tisu servet? Saya perlukan tepat tujuh keping untuk silap mata saya.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "Na leso za karatasi je? Nahitaji saba kamili kwa ajili ya michezo yangu ya maajabu.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "Ha umi servilléta piko? Aikotevẽte siete che paje rembiaporã.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "¿P'isqipanakunari? Qanchis k'atapuni munani magiaykunapaq.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "¿Servilletanakarusti? Paqallqu chiqapa muntha yatichawi paji luratajataki.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "¿Ihuan in amatlapalmeh? Nicnequi chicome ic nomahuiztli.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_nah-MX.mp3"
           },
           "nv-US": {
-            text: "¿Y las servilletas? Necesito exactamente siete para mis trucos de magia.",
+            text: "Naaltsoos tʼóó baa dahootʼéhígííshąʼ? Tsostsʼidígíí nisin bee naʼashchʼąąʼgo.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l3_nv-US.mp3"
           }
@@ -4675,7 +4675,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l4_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Alsjeblieft, zeven servetten genummerd van één tot zeven en geel veiligheidslint.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_nl-BE.mp3"
           },
@@ -4705,107 +4705,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s2/s2_l4_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "給您七張標號一到七的紙巾，還有黃色警戒膠帶。",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "ये लीजिए एक से सात तक नंबर डले सात नैपकिन और पीला चेतावनी टेप।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "یہ لیجیے ایک سے سات تک نمبر لگے سات نیپکن اور پیلا انتباہی فیتہ۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "এই নিন এক থেকে সাত পর্যন্ত নম্বর দেওয়া সাতটা ন্যাপকিন আর হলুদ সাবধানী ফিতে।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "ਇਹ ਲਓ ਇੱਕ ਤੋਂ ਸੱਤ ਨੰਬਰ ਵਾਲੇ ਸੱਤ ਨੈਪਕਿਨ ਅਤੇ ਪੀਲੀ ਚੇਤਾਵਨੀ ਵਾਲੀ ਪੱਟੀ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "આ રહ્યા એકથી સાત નંબરવાળા સાત નેપકિન અને પીળી ચેતવણી પટ્ટી.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "हे घ्या एक ते सात क्रमांक असलेले सात नॅपकिन्स आणि पिवळी धोक्याची पट्टी.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "ஒன்றிலிருந்து ஏழு வரை எண்ணிடப்பட்ட ஏழு தாள்களும் மஞ்சள் எச்சரிக்கை நாடாவும் இதோ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_ta-IN.mp3"
           },
           "te-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "ఇదిగోండి ఒకటి నుండి ఏడు వరకు అంకెలు వేసిన ఏడు నాప్కిన్లు మరియు పసుపు హెచ్చరిక టేపు.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_te-IN.mp3"
           },
           "kn-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "ಇಲ್ಲಿವೆ ಒಂದರಿಂದ ಏಳರವರೆಗೆ ಸಂಖ್ಯೆ ಬರೆದ ಏಳು ನ್ಯಾಪ್ಕಿನ್‌ಗಳು ಮತ್ತು ಹಳದಿ ಎಚ್ಚರಿಕೆಯ ಪಟ್ಟಿ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "ഒന്നു മുതൽ ഏഴ് വരെ അക്കമിട്ട ഏഴ് നാപ്കിനുകളും മഞ്ഞ അപായ ടേപ്പും ഇതാ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Của bác đây, đúng bảy tờ khăn ăn đánh số từ một đến bảy và cuộn băng cảnh báo màu vàng.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_vi-VN.mp3"
           },
           "th-TH": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "นี่ค่ะ กระดาษเช็ดปากเจ็ดแผ่นเรียงเลขหนึ่งถึงเจ็ด พร้อมเทปเหลืองเตือนภัย",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_th-TH.mp3"
           },
           "id-ID": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Ini tujuh serbet bernomor satu sampai tujuh dan pita kuning tanda bahaya.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_id-ID.mp3"
           },
           "ms-MY": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Ini tujuh keping tisu bernombor satu hingga tujuh dan pita kuning amaran.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Hizi hapa leso saba zilizohesabiwa kuanzia moja hadi saba na utepe wa manjano wa tahadhari.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Ápe reguereko siete servilléta oñemoñepyrũva peteĩgui siete peve ha ta'anga sa'yju jesarekorã.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Kaypin kashan qanchis p'isqipanakuna jujmanta qanchiskama yupachasqa q'ellu willakuy watanawan.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Akankxiwa paqallqu servilletanaka mayata paqallqkama jakht'ata q'illu yatiyawi cintampi.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Nican tiquimpiya chicome amatlapalmeh tlapohualli ce ic chicome ihuan coztic mecatl.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_nah-MX.mp3"
           },
           "nv-US": {
-            text: "Aquí tiene siete servilletas numeradas del uno al siete y cinta amarilla de precaución.",
+            text: "Díí tsostsʼid naaltsoos tʼááłáʼhí dóó tsostsʼidjįʼ bił dóó łitsohígíí bee haʼoodzííʼ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s2/s2_l4_nv-US.mp3"
           }
@@ -5118,7 +5118,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l1_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Meneer Ramón, volgens clausule vier van ons bilateraal akkoord moet u mij uw holografische prent overdragen.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_nl-BE.mp3"
           },
@@ -5148,107 +5148,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l1_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "拉蒙先生，根據我們雙邊協議的第四條，您應該把您的全息閃卡轉交給我。",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "डॉन रमोन, हमारे द्विपक्षीय समझौते की धारा चार के अनुसार, आपको अपना होलोग्राम कार्ड मुझे सौंपना होगा।",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "ڈان رمون، ہمارے دوطرفہ معاہدے کی شق چار کے تحت آپ کو اپنا ہولوگرام کارڈ میرے حوالے کرنا ہوگا۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "ডন র‍্যামন, আমাদের দ্বিপাক্ষিক চুক্তির চার নম্বর ধারা অনুযায়ী আপনাকে আপনার হোলোগ্রাম কার্ডটি আমাকে দিয়ে দিতে হবে।",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "ਡੌਨ ਰਮੋਨ, ਸਾਡੇ ਦੁਵੱਲੇ ਸਮਝੌਤੇ ਦੀ ਧਾਰਾ ਚਾਰ ਅਨੁਸਾਰ ਤੁਹਾਨੂੰ ਆਪਣਾ ਹੋਲੋਗ੍ਰਾਮ ਕਾਰਡ ਮੈਨੂੰ ਦੇਣਾ ਪਵੇਗਾ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "ડોન રેમોન, આપણા દ્વિપક્ષીય કરારની કલમ ચાર મુજબ તમારે તમારું હોલોગ્રામ કાર્ડ મને સોંપવું પડશે.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "डॉन रमोन, आपल्या द्विपक्षीय कराराच्या कलम चारनुसार तुम्हाला तुमचे होलोग्राम कार्ड मला द्यावे लागेल.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "டான் ரமோன், நமது இருதரப்பு ஒப்பந்தத்தின் பிரிவு நான்கின்படி நீங்கள் உங்கள் ஹோலோகிராம் அட்டையை எனக்குத் தர வேண்டும்.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_ta-IN.mp3"
           },
           "te-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "డాన్ రామోన్, మన ద్వైపాక్షిక ఒప్పందంలోని నాల్గవ నిబంధన ప్రకారం మీ హోలోగ్రామ్ కార్డును నాకు బదిలీ చేయాలి.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_te-IN.mp3"
           },
           "kn-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "ಡಾನ್ ರಾಮೋನ್, ನಮ್ಮ ದ್ವಿಪಕ್ಷೀಯ ಒಪ್ಪಂದದ ನಾಲ್ಕನೇ ನಿಯಮದ ಪ್ರಕಾರ ನಿಮ್ಮ ಹೋಲೋಗ್ರಾಮ್ ಕಾರ್ಡ್ ನನಗೆ ಕೊಡಬೇಕು.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "ഡോൺ റമോൺ, നമ്മുടെ ഉഭയകക്ഷി കരാറിലെ നാലാം വകുപ്പ് പ്രകാരം നിങ്ങളുടെ ഹോളോഗ്രാം കാർഡ് എനിക്ക് കൈമാറണം.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Bác Ramón, theo điều bốn trong thỏa thuận song phương của chúng ta, bác phải chuyển giao tấm thẻ hologram cho cháu.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_vi-VN.mp3"
           },
           "th-TH": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "คุณตารามอนครับ ตามข้อที่สี่ในข้อตกลงทวิภาคีของเรา คุณตาต้องโอนการ์ดโฮโลแกรมให้ผมแล้วนะ",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_th-TH.mp3"
           },
           "id-ID": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Pak Ramón, menurut pasal empat dalam perjanjian bilateral kita, Anda harus menyerahkan kartu hologram Anda.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_id-ID.mp3"
           },
           "ms-MY": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Pak Ramón, mengikut fasal empat perjanjian dua hala kita, pakcik mesti serahkan kad hologram itu kepada saya.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Bwana Ramón, kwa mujibu wa ibara ya nne ya makubaliano yetu, unapaswa kunipa kadi yako ya picha inayometa.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Karai Ramón, ñande kuatia ñe'ẽme he'i háicha, tekotevẽ reme'ẽ chéve nde cromo holográfico.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Don Ramón, rimanakusqanchis tawa qelqaman jina, lliphipipaq cromoykita qowanki.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Don Ramón, aruskipawisan pusi chiqaparu jamuqatax cromo holográfico churaniñamawa.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Don Ramón, ipan in nahui tlahtolli de totlanonotzal, monequi tinechmacaz mocromo holográfico.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_nah-MX.mp3"
           },
           "nv-US": {
-            text: "Don Ramón, según la cláusula cuatro de nuestro acuerdo bilateral, usted debe transferirme su cromo holográfico.",
+            text: "Don Ramón, dį́į́ʼgóó ałhaʼdeetʼáanii bikʼehgo, díí naaltsoos disxǫsígíí shaa didíílcoos.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l1_nv-US.mp3"
           }
@@ -5551,7 +5551,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l2_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "Tranquilo, abogado diminuto. Primero enséñame a subir videos con música moderna a esa red social.",
+            text: "Rustig maar, kleine advocaat. Toon mij eerst hoe ik video's met hedendaagse muziek op dat sociaal netwerk post.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l2_nl-BE.mp3"
           },
@@ -5581,7 +5581,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l2_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "Tranquilo, abogado diminuto. Primero enséñame a subir videos con música moderna a esa red social.",
+            text: "別急嘛，小律師。先教我怎麼把配了流行音樂的影片發到那個社交軟體上。",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l2_zh-TW.mp3"
           },
@@ -5656,7 +5656,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l2_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "Tranquilo, abogado diminuto. Primero enséñame a subir videos con música moderna a esa red social.",
+            text: "Tulia, mwanasheria mdogo. Kwanza nifundishe kupakia video zenye muziki wa kisasa kwenye mtandao huo wa kijamii.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l2_sw-KE.mp3"
           },
@@ -5984,7 +5984,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l3_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Dat vereist een verlenging van mijn avondklok. En nutritioneel gezien telt ijs als zuivelproduct.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_nl-BE.mp3"
           },
@@ -6014,107 +6014,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l3_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "那我的門禁時間得延後。而且從營養學角度來看，冰淇淋屬於乳製品。",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "इसके लिए मेरे घर लौटने का समय बढ़ाना पड़ेगा। और पोषण के नज़रिए से, आइसक्रीम डेयरी उत्पाद में आती है।",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "اس کے لیے میرے سونے کے وقت میں توسیع درکار ہوگی۔ اور غذائی اعتبار سے، آئس کریم ڈیری مصنوعات میں شمار ہوتی ہے۔",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "তাহলে আমার বাড়ি ফেরার সময় বাড়াতে হবে। আর পুষ্টিগুণের দিক থেকে আইসক্রিম তো দুগ্ধজাত খাবার।",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "ਇਸ ਲਈ ਮੇਰੇ ਘਰ ਆਉਣ ਦਾ ਸਮਾਂ ਵਧਾਉਣਾ ਪਵੇਗਾ। ਅਤੇ ਪੌਸ਼ਟਿਕਤਾ ਪੱਖੋਂ ਆਈਸਕ੍ਰੀਮ ਡੇਅਰੀ ਉਤਪਾਦ ਹੀ ਹੈ।",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "એ માટે મારે ઘરે આવવાનો સમય લંબાવવો પડશે. અને પોષણની દ્રષ્ટિએ આઈસ્ક્રીમ ડેરી પ્રોડક્ટ ગણાય.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "त्यासाठी माझ्या घरी परतण्याची वेळ वाढवावी लागेल. आणि पौष्टिकतेच्या दृष्टीने आईस्क्रीम हे दुग्धजन्य पदार्थ मानले जाते.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "அதற்கு என் தூங்கும் நேரத்தை நீட்டிக்க வேண்டும். ஊட்டச்சத்து பார்வையில் ஐஸ்கிரீம் பால் உணவு வகையைச் சேர்ந்தது.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_ta-IN.mp3"
           },
           "te-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "దానికి నా ఇంటికి వెళ్లే సమయాన్ని పొడిగించాలి. పైగా పోషకాహార పరంగా ఐస్ క్రీం పాల పదార్థాల కోవలోకి వస్తుంది.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_te-IN.mp3"
           },
           "kn-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "ಅದಕ್ಕೆ ನನ್ನ ಮನೆಗೆ ಹೋಗುವ ಸಮಯವನ್ನು ವಿಸ್ತರಿಸಬೇಕು. ಮತ್ತು ಪೌಷ್ಟಿಕಾಂಶದ ದೃಷ್ಟಿಯಿಂದ ಐಸ್ ಕ್ರೀಮ್ ಹಾಲಿನ ಉತ್ಪನ್ನವಾಗಿದೆ.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "അതിന് എന്റെ ഉറങ്ങാനുള്ള സമയം നീട്ടിത്തരണമെന്ന് വരും. പോഷകാഹാര വീക്ഷണത്തിൽ ഐസ്ക്രീം പാലുൽപ്പന്നമായി കണക്കാക്കാം.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Việc đó đòi hỏi cháu phải được lùi giờ giới nghiêm. Và xét theo góc độ dinh dưỡng, kem được tính là sản phẩm từ sữa.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_vi-VN.mp3"
           },
           "th-TH": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "ถ้าแบบนั้นผมต้องขอขยายเวลาเคอร์ฟิวกลับบ้านครับ และตามหลักโภชนาการ ไอศกรีมนับเป็นผลิตภัณฑ์จากนมนะ",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_th-TH.mp3"
           },
           "id-ID": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Itu berarti jam malamku harus diperpanjang. Dan dari sudut pandang gizi, es krim terhitung sebagai produk susu.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_id-ID.mp3"
           },
           "ms-MY": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Itu memerlukan masa balik rumah saya dilanjutkan. Dan dari segi pemakanan, aiskrim dikira sebagai produk tenusu.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Hiyo itahitaji kuongezwa kwa muda wangu wa kulala. Na kulingana na lishe, aiskrimu ni sawa na maziwa.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Upéva tekotevẽta apyta che rógape areve pyharekue. Ha tembi'u porã rekópe, pe helado niko kamby rehegua.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Chaypaqqa wasiman kutinay ratu mast'arikunan. Kallpa qokuq kaqpiqa, jeladoqa lechemanta ruwasqan.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Ukatakixa utaru kutt'añ urasax jilxattatañapawa. Manq'at qillqatarusti, heladox lichit lurataw jakhusiri.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Inon monequiz ocachi cahuitl ic nicochiz. Ihuan ipan qualotl tlacualiztli, in cecec tlacualli tlapohualli quemeh chichiualatl.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_nah-MX.mp3"
           },
           "nv-US": {
-            text: "Eso requerirá una extensión de mi toque de queda. Y desde una perspectiva nutricional, el helado califica como lácteo.",
+            text: "Éí doodago shá bił hazhóʼó gohwééh bił jidootsʼił. Dóó chʼiyáán átʼéegi abeʼ átʼé abeʼ bił ałhízhchínígíí.",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l3_nv-US.mp3"
           }
@@ -6417,7 +6417,7 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l4_pt-MZ.mp3"
           },
           "nl-BE": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Afgesproken, makker! Op mijn leeftijd vraag ik geen toestemming, ik vraag een dubbel ijsje en we gaan skateboarden!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_nl-BE.mp3"
           },
@@ -6447,107 +6447,107 @@ export const STORIES: Story[] = [
             audioUrl: "/audio/s3/s3_l4_ar-IQ.mp3"
           },
           "zh-TW": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "成交，夥伴！在我這個年紀可不用打報告，來份雙球冰淇淋，咱們溜滑板去！",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_zh-TW.mp3"
           },
           "hi-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "सौदा पक्का, पार्टनर! मेरी उम्र में मैं इजाज़त नहीं माँगता, सीधे डबल आइसक्रीम माँगता हूँ और चलो स्केटबोर्डिंग करते हैं!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_hi-IN.mp3"
           },
           "ur-PK": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "سودا پکا، پارٹنر! میری عمر میں میں اجازت نہیں مانگتا، ڈبل آئس کریم مانگتا ہوں اور چلو اسکیٹ بورڈنگ کرتے ہیں!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_ur-PK.mp3"
           },
           "bn-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "চুক্তি পাকা, পার্টনার! আমার বয়সে আমি অনুমতি নিই না, ডবল আইসক্রিম চেয়ে নিয়ে স্কেটবোর্ড চালাতে যাই!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_bn-IN.mp3"
           },
           "pa-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "ਸੌਦਾ ਪੱਕਾ, ਦੋਸਤ! ਮੇਰੀ ਉਮਰ ਵਿੱਚ ਮੈਂ ਇਜਾਜ਼ਤ ਨਹੀਂ ਮੰਗਦਾ, ਡਬਲ ਆਈਸਕ੍ਰੀਮ ਮੰਗ ਕੇ ਸਕੇਟਬੋਰਡ ਚਲਾਉਣ ਚੱਲਦੇ ਹਾਂ!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_pa-IN.mp3"
           },
           "gu-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "સોદો પાકો, દોસ્ત! મારી ઉંમરે હું પરવાનગી નથી માંગતો, ડબલ આઈસ્ક્રીમ માંગું છું અને ચાલ સ્કેટબોર્ડ કરવા જઈએ!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_gu-IN.mp3"
           },
           "mr-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "ठरलं तर मग, दोस्ता! माझ्या वयात मी परवानगी मागत नाही, डबल आईस्क्रीम घेतो आणि चल स्केटबोर्डिंग करूया!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_mr-IN.mp3"
           },
           "ta-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "முடிவு பண்ணிட்டோம் பங்குதாரரே! என் வயதில் அனுமதி கேட்பதில்லை, டபுள் ஐஸ்கிரீம் சாப்பிட்டு ஸ்கேட்போர்டிங் போவோம்!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_ta-IN.mp3"
           },
           "te-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "ఒప్పందం కుదిరింది, పార్టనర్! నా వయసులో నేను అనుమతి అడగను, డబుల్ ఐస్ క్రీం తీసుకుని స్కేట్‌బోర్డింగ్‌కి వెళ్దాం!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_te-IN.mp3"
           },
           "kn-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "ಒಪ್ಪಂದವಾಯಿತು, ಪಾಲುದಾರ! ನನ್ನ ವಯಸ್ಸಿನಲ್ಲಿ ನಾನು ಅನುಮತಿ ಕೇಳುವುದಿಲ್ಲ, ಡಬಲ್ ಐಸ್ ಕ್ರೀಮ್ ತಿಂದು ಸ್ಕೇಟ್‌ಬೋರ್ಡಿಂಗ್ ಮಾಡೋಣ!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_kn-IN.mp3"
           },
           "ml-IN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "തീരുമാനമായി പങ്കാളീ! എന്റെ പ്രായത്തിൽ ഞാൻ അനുവാദം ചോദിക്കാറില്ല, ഇരട്ട ഐസ്ക്രീം ഓർഡർ ചെയ്ത് സ്കേറ്റ്ബോർഡിംഗിന് പോകുന്നു!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_ml-IN.mp3"
           },
           "vi-VN": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Chốt kèo, đồng đội! Ở tuổi của bác chẳng cần xin phép ai, cứ gọi kem đôi rồi chúng ta đi trượt ván nào!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_vi-VN.mp3"
           },
           "th-TH": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "ตกลงตามนั้น คู่หู! วัยอย่างตาน่ะไม่ต้องขออนุญาตใครแล้ว ขอไอติมสองลูกแล้วไปเล่นสเก็ตบอร์ดกันเลย!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_th-TH.mp3"
           },
           "id-ID": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Sepakat, kawan! Di usiaku sekarang aku tak butuh izin, beri aku dua sekop es krim dan ayo kita main papan seluncur!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_id-ID.mp3"
           },
           "ms-MY": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Setuju, rakan kongsi! Pada usia pakcik tak perlu minta izin, mari pesan aiskrim dua skop dan pergi main papan luncur!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_ms-MY.mp3"
           },
           "sw-KE": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Tumekubaliana, mshirika! Katika umri wangu siombi ruhusa, naagiza aiskrimu mbili na tunaenda kuteleza kwenye ubao!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_sw-KE.mp3"
           },
           "gn-PY": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Jajapo pe trato, che irũ! Che edápe niko naporanduvéi permíso, ajerure helado doble ha jaha japatinávo!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_gn-PY.mp3"
           },
           "qu-PE": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "¡Allinmi, masiy! Machuyasqaypiqa manan permisota mañakunichu, iskay heladota mañakuspa patinayta qallarinchis!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_qu-PE.mp3"
           },
           "ay-BO": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "¡Iyau satäxiwa, masita! Nayana marajax janiw permiso mayjti, paya helado mayisina patinart'añani!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_ay-BO.mp3"
           },
           "nah-MX": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "¡Ye omochiuh, notlatocauh! Ipan nohueyicah amo nitlatlania, nicnequi ome cecec tlacualli ihuan tihuiah tipatinaro!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_nah-MX.mp3"
           },
           "nv-US": {
-            text: "¡Trato hecho, socio! A mi edad no pido permiso, ¡pido helado doble y nos vamos a patinar!",
+            text: "Ałhaʼdeetʼaah, shikʼis! Shí doo tʼáá kóníghánígóó shaa nisin da, naaki ałhízhchínígíí dóó nidaʼiitsoh doo!",
             stageDirection: "Natural",
             audioUrl: "/audio/s3/s3_l4_nv-US.mp3"
           }

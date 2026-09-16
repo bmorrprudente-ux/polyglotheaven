@@ -550,6 +550,9 @@ export const App: React.FC = () => {
                   selectedLanguageCodes={selectedLanguageCodes}
                   onReorder={handleReorderLanguages}
                   onOpenCatalog={() => setIsLangModalOpen(true)}
+                  currentlyLearningCodes={settings.currentlyLearning}
+                  onSelectLanguagePreset={handleApplyPreset}
+                  onToggleLanguage={handleToggleLanguage}
                   locale={locale}
                 />
 
