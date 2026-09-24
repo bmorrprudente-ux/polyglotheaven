@@ -110,7 +110,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                 {explanation?.isAiGenerated && (
                   <span className="inline-flex items-center gap-1 text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
                     <Sparkles className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
-                    <span>{explanation.modelUsed?.includes("DeepSeek") ? "DeepSeek v4.1 Flash" : "AI"}</span>
+                    <span>{explanation.modelUsed?.includes("Luna") || explanation.modelUsed?.includes("GPT-6") ? "GPT-6 Luna" : (explanation.modelUsed || "AI")}</span>
                   </span>
                 )}
               </div>
@@ -266,7 +266,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                   ? "bg-amber-100 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 border border-amber-400 font-black"
                   : "bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black hover:opacity-95"
               }`}
-              title="Crear tarjeta de memoria con esta definición generada por DeepSeek"
+              title="Crear tarjeta de memoria con esta definición generada por GPT-6 Luna"
             >
               <span>🗂️</span>
               <span>{flashcardCreated || isFav ? "¡Tarjeta creada! ⭐" : "Crear Flashcard"}</span>

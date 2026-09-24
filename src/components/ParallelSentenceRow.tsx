@@ -215,12 +215,12 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
                       <Flag className={`w-3.5 h-3.5 ${isFlagged ? "fill-amber-500 text-amber-600" : ""}`} />
                     </button>
 
-                    {/* AI Phrase Explainer Button */}
+                    {/* AI Phrase Explainer / Ask AI Button */}
                     <button
                       type="button"
                       onClick={() => onExplainPhrase(translation.text, langCode, line.characterId)}
                       className="p-1.5 rounded-xl bg-purple-50 dark:bg-purple-950/50 text-purple-600 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 hover:bg-purple-100 dark:hover:bg-purple-900/60 transition-all shadow-xs"
-                      title={t.explainWithAi}
+                      title={t.askAiAboutSentence}
                     >
                       <Sparkles className="w-3.5 h-3.5" />
                     </button>

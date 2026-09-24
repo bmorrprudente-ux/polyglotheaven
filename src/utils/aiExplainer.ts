@@ -29,6 +29,14 @@ export interface WordExplanation {
   apiError?: string;
 }
 
+export interface SentenceChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: number;
+  modelUsed?: string;
+}
+
 // In-memory / localStorage cache (v3 for DeepSeek v4.1 Flash OpenRouter integration)
 const CACHE_KEY_PHRASES = "polyglot_phrases_cache_v3";
 const CACHE_KEY_WORDS = "polyglot_words_cache_v3";
@@ -184,7 +192,74 @@ Return ONLY valid JSON with this schema:
 }
 
 /**
- * Explains a single word with definitions and cross-lingual equivalents using DeepSeek v4.1 Flash
+ * Ask any question about a sentence to the AI Tutor (GPT-6 Luna via OpenRouter)
+ */
+export async function askAiAboutSentence(
+  sentence: string,
+  langCode: string,
+  langName: string,
+  characterName: string,
+  question: string,
+  history: Array<{ role: "user" | "assistant"; content: string }> = [],
+  apiKey?: string
+): Promise<{ answer: string; modelUsed: string }> {
+  // 1. Try secure OpenRouter proxy endpoint first
+  try {
+    const res = await fetch("/api/ask-sentence", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        sentence,
+        langCode,
+        langName,
+        characterName,
+        question,
+        history
+      })
+    });
+    if (res.ok) {
+      const json = await res.json();
+      if (json.ok && json.answer) {
+        return {
+          answer: json.answer,
+          modelUsed: json.modelUsed || "GPT-6 Luna (OpenRouter)"
+        };
+      }
+    }
+  } catch (err) {
+    console.warn("Proxy /api/ask-sentence unavailable, trying fallbacks:", err);
+  }
+
+  // 2. Try Gemini if user provided custom API key
+  const hasKey = Boolean(apiKey && apiKey.trim());
+  if (hasKey) {
+    try {
+      const prompt = `You are a friendly, world-class polyglot language tutor in Polyglot Heaven.
+Target sentence: "${sentence}"
+Language/Dialect: ${langName} (${langCode})
+${characterName ? `Speaker: ${characterName}` : ""}
+
+User question: "${question}"
+
+Please provide a clear, insightful, pedagogical answer in Spanish explaining this linguistic nuance, grammar structure, or vocabulary.`;
+      const { text, model } = await callGeminiApi(prompt, apiKey!.trim());
+      return { answer: text, modelUsed: model };
+    } catch (e) {
+      console.warn("Gemini fallback failed:", e);
+    }
+  }
+
+  // 3. Fallback response if offline
+  return {
+    answer: `Análisis para la frase "${sentence}" en ${langName}:\n\n` +
+      `En ${langName}, esta expresión comunica con precisión el matiz deseado. ` +
+      `Si deseas una respuesta en vivo con el modelo GPT-6 Luna, asegúrate de que el servidor dev esté en ejecución.`,
+    modelUsed: "Tutor Heurístico"
+  };
+}
+
+/**
+ * Explains a single word with definitions and cross-lingual equivalents using GPT-6 Luna
  */
 export async function explainWordWithAi(
   word: string,

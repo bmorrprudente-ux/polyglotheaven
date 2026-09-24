@@ -80,11 +80,21 @@ export const I18N = {
 
     // Phrase Explainer Modal
     aiExplainerTitle: "Explicador lingüístico con IA",
+    askAiAboutSentence: "Preguntar a la IA sobre esta frase",
     phraseSaidBy: (char: string) => `Análisis de la frase dicha por ${char}`,
     pragmaticMeaning: "Significado pragmático e idiomático",
     dialectNuance: "Matiz dialectal y cultural",
     grammarBreakdown: "Desglose gramatical",
     loadingAnalysis: "Generando análisis lingüístico y cultural...",
+    askAiPlaceholder: "Haz cualquier pregunta sobre esta frase (gramática, vocabulario, modismos)...",
+    askAiButton: "Preguntar",
+    quickPromptGrammar: "¿Por qué se usa esta estructura gramatical?",
+    quickPromptColloquial: "¿Cómo se diría esto de forma más coloquial?",
+    quickPromptVocab: "Desglosa las palabras clave y su vocabulario",
+    quickPromptNuance: "¿Qué matiz cultural o regional tiene?",
+    quickPromptLiteral: "¿Cómo se traduciría literalmente palabra por palabra?",
+    conversationWithAi: "Conversación interactiva con el tutor IA",
+    askingAi: "Pensando respuesta con GPT-6 Luna...",
     close: "Cerrar",
 
     // Word Inspector Modal
@@ -240,11 +250,21 @@ export const I18N = {
 
     // Phrase Explainer Modal
     aiExplainerTitle: "AI linguistic explainer",
+    askAiAboutSentence: "Ask AI about this sentence",
     phraseSaidBy: (char: string) => `Analysis of the phrase spoken by ${char}`,
     pragmaticMeaning: "Pragmatic & idiomatic meaning",
     dialectNuance: "Dialectal & cultural nuance",
     grammarBreakdown: "Grammar breakdown",
     loadingAnalysis: "Generating linguistic and cultural breakdown...",
+    askAiPlaceholder: "Ask any question about this sentence (grammar, vocabulary, idioms)...",
+    askAiButton: "Ask",
+    quickPromptGrammar: "Why is this grammatical structure used?",
+    quickPromptColloquial: "How would you say this more colloquially?",
+    quickPromptVocab: "Break down the key words and vocabulary",
+    quickPromptNuance: "What cultural or regional nuance does this have?",
+    quickPromptLiteral: "How would this be translated word-for-word literally?",
+    conversationWithAi: "Interactive conversation with AI tutor",
+    askingAi: "Thinking answer with GPT-6 Luna...",
     close: "Close",
 
     // Word Inspector Modal
@@ -400,11 +420,21 @@ export const I18N = {
 
     // Phrase Explainer Modal
     aiExplainerTitle: "Explicateur linguistique IA",
+    askAiAboutSentence: "Demander à l'IA sur cette phrase",
     phraseSaidBy: (char: string) => `Analyse de la phrase prononcée par ${char}`,
     pragmaticMeaning: "Sens idiomatique et pragmatique",
     dialectNuance: "Nuance dialectale et culturelle",
     grammarBreakdown: "Décomposition grammaticale",
     loadingAnalysis: "Génération de l'analyse linguistique et culturelle...",
+    askAiPlaceholder: "Posez n'importe quelle question sur cette phrase (grammaire, vocabulaire, idiomes)...",
+    askAiButton: "Demander",
+    quickPromptGrammar: "Pourquoi utilise-t-on cette structure grammaticale ?",
+    quickPromptColloquial: "Comment dirait-on cela de manière plus familière ?",
+    quickPromptVocab: "Décompose les mots clés et le vocabulaire",
+    quickPromptNuance: "Quelle nuance culturelle ou régionale cela comporte-t-il ?",
+    quickPromptLiteral: "Comment cela se traduirait-il mot à mot ?",
+    conversationWithAi: "Conversation interactive avec le tuteur IA",
+    askingAi: "Réflexion avec GPT-6 Luna...",
     close: "Fermer",
 
     // Word Inspector Modal
@@ -560,11 +590,21 @@ export const I18N = {
 
     // Phrase Explainer Modal
     aiExplainerTitle: "Explicador linguístico com IA",
+    askAiAboutSentence: "Perguntar à IA sobre esta frase",
     phraseSaidBy: (char: string) => `Análise da frase dita por ${char}`,
     pragmaticMeaning: "Significado idiomático e pragmático",
     dialectNuance: "Nuance dialetal e cultural",
     grammarBreakdown: "Decomposição gramatical",
     loadingAnalysis: "Gerando análise linguística e cultural...",
+    askAiPlaceholder: "Faça qualquer pergunta sobre esta frase (gramática, vocabulário, expressões)...",
+    askAiButton: "Perguntar",
+    quickPromptGrammar: "Por que essa estrutura gramatical é usada?",
+    quickPromptColloquial: "Como se diria isso de forma mais coloquial?",
+    quickPromptVocab: "Explique as palavras-chave e o vocabulário",
+    quickPromptNuance: "Qual nuance cultural ou regional isso tem?",
+    quickPromptLiteral: "Como isso seria traduzido literalmente palavra por palavra?",
+    conversationWithAi: "Conversa interativa com o tutor de IA",
+    askingAi: "Pensando na resposta com GPT-6 Luna...",
     close: "Fechar",
 
     // Word Inspector Modal

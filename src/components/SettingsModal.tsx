@@ -375,7 +375,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
 
-          {/* OpenRouter AI (DeepSeek v4.1 Flash) - Servidor Protegido */}
+          {/* OpenRouter AI (GPT-6 Luna) - Servidor Protegido */}
           <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-sky-500/10 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-300 dark:border-emerald-800/60 shadow-xs">
             <div className="flex items-center justify-between gap-2 mb-2">
               <div className="flex items-center gap-2">
@@ -391,7 +391,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                     </span>
                   </h4>
                   <p className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
-                    Modelo activo: <code className="bg-emerald-100/60 dark:bg-emerald-900/40 px-1 py-0.5 rounded text-[10px]">deepseek/deepseek-v4.1-flash</code>
+                    Modelo activo: <code className="bg-emerald-100/60 dark:bg-emerald-900/40 px-1 py-0.5 rounded text-[10px]">openai/gpt-6-luna</code>
                   </p>
                 </div>
               </div>
