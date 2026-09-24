@@ -17,7 +17,7 @@ interface CodeSwitchingViewProps {
   onSelectWord: (word: string, contextTranslation?: string, targetLangCode?: string) => void;
   onSpeakerActive: (characterId: string) => void;
   onOpenFactCard: (lang: Language) => void;
-  onExplainPhrase: (phrase: string, langCode: string, characterId: string) => void;
+  onExplainPhrase: (phrase: string, langCode: string, characterId: string, allTranslations?: Record<string, string>) => void;
   locale?: SupportedLocale;
 }
 
@@ -225,7 +225,15 @@ export const CodeSwitchingView: React.FC<CodeSwitchingViewProps> = ({
                     {/* AI Explainer / Ask AI Button */}
                     <button
                       type="button"
-                      onClick={() => onExplainPhrase(translation.text, langCode, line.characterId)}
+                      onClick={() => {
+                        const allTranslations: Record<string, string> = {};
+                        if (line.translations) {
+                          Object.entries(line.translations).forEach(([c, trans]) => {
+                            if (trans?.text) allTranslations[c] = trans.text;
+                          });
+                        }
+                        onExplainPhrase(translation.text, langCode, line.characterId, allTranslations);
+                      }}
                       className="p-1.5 rounded-xl bg-purple-50 dark:bg-purple-950/50 text-purple-600 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 hover:bg-purple-100 dark:hover:bg-purple-900/60 transition-all shadow-xs"
                       title={t.askAiAboutSentence}
                     >

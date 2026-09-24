@@ -160,6 +160,7 @@ export const App: React.FC = () => {
     phrase: string;
     langCode: string;
     characterId: string;
+    translations?: Record<string, string>;
   } | null>(null);
   const [inspectedWord, setInspectedWord] = useState<{
     word: string;
@@ -522,8 +523,8 @@ export const App: React.FC = () => {
                   onSelectWord={handleWordClick}
                   onSpeakerActive={(speakerId) => setActiveSpeakerId(speakerId)}
                   onOpenFactCard={(lang) => setSelectedFactLang(lang)}
-                  onExplainPhrase={(phrase, langCode, charId) => {
-                    setExplainingPhrase({ phrase, langCode, characterId: charId });
+                  onExplainPhrase={(phrase, langCode, charId, allTranslations) => {
+                    setExplainingPhrase({ phrase, langCode, characterId: charId, translations: allTranslations });
                   }}
                   locale={locale}
                 />
@@ -569,8 +570,8 @@ export const App: React.FC = () => {
                       onSelectWord={handleWordClick}
                       onSpeakerActive={(speakerId) => setActiveSpeakerId(speakerId)}
                       onOpenFactCard={(lang) => setSelectedFactLang(lang)}
-                      onExplainPhrase={(phrase, langCode, charId) => {
-                        setExplainingPhrase({ phrase, langCode, characterId: charId });
+                      onExplainPhrase={(phrase, langCode, charId, allTranslations) => {
+                        setExplainingPhrase({ phrase, langCode, characterId: charId, translations: allTranslations });
                       }}
                       onMoveLanguage={handleMoveLanguage}
                       locale={locale}
@@ -650,6 +651,7 @@ export const App: React.FC = () => {
         phrase={explainingPhrase?.phrase || ""}
         langCode={explainingPhrase?.langCode || "es-ES"}
         characterId={explainingPhrase?.characterId || "hugo"}
+        translations={explainingPhrase?.translations}
         geminiApiKey={settings.geminiApiKey}
         locale={locale}
       />

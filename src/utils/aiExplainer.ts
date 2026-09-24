@@ -201,6 +201,7 @@ export async function askAiAboutSentence(
   characterName: string,
   question: string,
   history: Array<{ role: "user" | "assistant"; content: string }> = [],
+  translations?: Record<string, string>,
   apiKey?: string
 ): Promise<{ answer: string; modelUsed: string }> {
   // 1. Try secure OpenRouter proxy endpoint first
@@ -214,7 +215,8 @@ export async function askAiAboutSentence(
         langName,
         characterName,
         question,
-        history
+        history,
+        translations
       })
     });
     if (res.ok) {

@@ -276,7 +276,7 @@ Return ONLY valid JSON with this schema:
               }
 
               const body = JSON.parse(bodyStr || "{}");
-              const { sentence, langCode, langName, characterName, question, history } = body;
+              const { sentence, langCode, langName, characterName, question, history, translations } = body;
 
               if (!sentence || !question) {
                 res.statusCode = 400;
@@ -285,26 +285,35 @@ Return ONLY valid JSON with this schema:
                 return;
               }
 
-              const systemPrompt = `You are a friendly, world-class polyglot language tutor in Polyglot Heaven.
+              let variantsContext = "";
+              if (translations && typeof translations === "object" && Object.keys(translations).length > 0) {
+                const lines = Object.entries(translations)
+                  .filter(([code, txt]) => Boolean(txt))
+                  .slice(0, 20)
+                  .map(([code, txt]) => `- [${code}]: "${txt}"`)
+                  .join("\n");
+                variantsContext = `\nAll parallel translations/dialects of this sentence across the story:\n${lines}\n`;
+              }
+
+              const systemPrompt = `You are a world-class polyglot language tutor in Polyglot Heaven.
 The user is learning languages and has a question about a specific sentence in a story.
 Target sentence: "${sentence}"
 Language/Dialect: ${langName || langCode} (${langCode})
 ${characterName ? `Speaker: ${characterName}` : ""}
-
+${variantsContext}
 Instructions:
-- Answer the user's question directly, clearly, warmly, and concisely in Spanish.
-- Use formatting (bullet points, bold font for keywords/morphemes) to make linguistic insights easy to digest.
-- If they ask about grammar, explain the rules and contrast with Spanish.
-- If they ask about vocabulary, break down the etymology or nuances.
-- If they ask how to say something colloquially, give authentic alternatives with pronunciation notes.
-- Keep the response structured, pedagogical, and inspiring.`;
+- The user can ask ANY question in their own words about this sentence, grammar, vocabulary, regional differences, or follow-up questions comparing other dialects (e.g., Canadian French / Québec French, European French, Mexican Spanish, Spain Spanish, etc.).
+- When the user asks about a specific dialect or variety (such as "Why does Canadian French say it this way?"), refer directly to the parallel translations provided above and explain the exact lexical choices, phonetic nuances, syntax, colloquialisms, and why that dialect expresses it that way.
+- Answer clearly, warmly, and pedagogically in Spanish (or the language of their question).
+- Use rich formatting: bold keywords, concise bullet points, and pronunciation tips if applicable.
+- Answer directly without repeating boilerplate greetings.`;
 
               const messages: Array<{ role: string; content: string }> = [
                 { role: "system", content: systemPrompt }
               ];
 
               if (Array.isArray(history)) {
-                for (const item of history.slice(-6)) {
+                for (const item of history.slice(-8)) {
                   if (item && item.content && (item.role === "user" || item.role === "assistant")) {
                     messages.push({ role: item.role, content: item.content });
                   }
@@ -313,7 +322,7 @@ Instructions:
 
               messages.push({
                 role: "user",
-                content: `Pregunta sobre la frase "${sentence}":\n${question}`
+                content: `Pregunta sobre la frase "${sentence}" (${langCode}):\n${question}`
               });
 
               process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
