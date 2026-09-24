@@ -110,7 +110,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                 {explanation?.isAiGenerated && (
                   <span className="inline-flex items-center gap-1 text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
                     <Sparkles className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
-                    <span>{explanation.modelUsed?.includes("Luna") || explanation.modelUsed?.includes("GPT-6") ? "GPT-6 Luna" : (explanation.modelUsed || "AI")}</span>
+                    <span>{explanation.modelUsed?.includes("3.8") || explanation.modelUsed?.includes("Gemini") ? "Gemini 3.8 Flash" : (explanation.modelUsed || "AI")}</span>
                   </span>
                 )}
               </div>

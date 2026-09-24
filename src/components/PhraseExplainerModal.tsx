@@ -213,7 +213,7 @@ export const PhraseExplainerModal: React.FC<PhraseExplainerModalProps> = ({
                   </span>
                   <span className="inline-flex items-center gap-1 text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
                     <Sparkles className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
-                    <span>GPT-6 Luna</span>
+                    <span>Gemini 3.8 Flash</span>
                   </span>
                 </div>
                 <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mt-0.5">

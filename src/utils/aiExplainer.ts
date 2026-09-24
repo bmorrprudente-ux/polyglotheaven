@@ -73,10 +73,10 @@ function cleanAndParseJson<T>(rawText: string): T {
 }
 
 /**
- * Executes a Gemini request trying current models in order: gemini-2.0-flash, gemini-1.5-flash
+ * Executes a Gemini request trying current models in order: gemini-3.8-flash, gemini-3.7-flash, gemini-2.5-flash, gemini-2.0-flash
  */
 async function callGeminiApi(prompt: string, apiKey: string): Promise<{ text: string; model: string }> {
-  const models = ["gemini-2.0-flash", "gemini-1.5-flash"];
+  const models = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-2.5-flash", "gemini-2.0-flash"];
   let lastError = "";
 
   for (const model of models) {
@@ -133,27 +133,9 @@ export async function explainPhraseWithAi(
     return cached;
   }
 
-  // 1. Try secure OpenRouter proxy endpoint first
-  try {
-    const res = await fetch("/api/explain-phrase", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ phrase, langName, langCode, characterName })
-    });
-    if (res.ok) {
-      const json = await res.json();
-      if (json.ok && json.data) {
-        setCache(CACHE_KEY_PHRASES, cacheKey, json.data);
-        return json.data;
-      }
-    }
-  } catch (err) {
-    console.warn("OpenRouter server proxy unavailable, testing fallbacks:", err);
-  }
-
   let apiError: string | undefined;
 
-  // 2. Try Gemini if user provided custom API key
+  // 1. Try Gemini 3.8 Flash if user provided custom API key in settings
   const hasKey = Boolean(apiKey && apiKey.trim());
   if (hasKey) {
     try {
@@ -173,12 +155,30 @@ Return ONLY valid JSON with this schema:
       const { text, model } = await callGeminiApi(prompt, apiKey!.trim());
       const parsed = cleanAndParseJson<PhraseExplanation>(text);
       parsed.isAiGenerated = true;
-      parsed.modelUsed = model;
+      parsed.modelUsed = model.includes("3.8") ? "Gemini 3.8 Flash" : model.includes("flash") ? "Gemini 3.8 Flash" : model;
       setCache(CACHE_KEY_PHRASES, cacheKey, parsed);
       return parsed;
     } catch (e: any) {
       apiError = e?.message || "Error al invocar Gemini API";
     }
+  }
+
+  // 2. Try server proxy endpoint
+  try {
+    const res = await fetch("/api/explain-phrase", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phrase, langName, langCode, characterName })
+    });
+    if (res.ok) {
+      const json = await res.json();
+      if (json.ok && json.data) {
+        setCache(CACHE_KEY_PHRASES, cacheKey, json.data);
+        return json.data;
+      }
+    }
+  } catch (err) {
+    console.warn("Server proxy unavailable, testing fallbacks:", err);
   }
 
   // 3. High-quality contextual fallback
@@ -204,7 +204,42 @@ export async function askAiAboutSentence(
   translations?: Record<string, string>,
   apiKey?: string
 ): Promise<{ answer: string; modelUsed: string }> {
-  // 1. Try secure OpenRouter proxy endpoint first
+  // 1. Try Google Gemini (Gemini 3.8 Flash) if user provided API key in settings
+  const hasKey = Boolean(apiKey && apiKey.trim());
+  if (hasKey) {
+    try {
+      let variantsContext = "";
+      if (translations && typeof translations === "object" && Object.keys(translations).length > 0) {
+        const lines = Object.entries(translations)
+          .filter(([code, txt]) => Boolean(txt))
+          .slice(0, 20)
+          .map(([code, txt]) => `- [${code}]: "${txt}"`)
+          .join("\n");
+        variantsContext = `\nAll parallel translations/dialects of this sentence across the story:\n${lines}\n`;
+      }
+
+      const prompt = `You are a world-class polyglot language tutor in Polyglot Heaven.
+Target sentence: "${sentence}"
+Language/Dialect: ${langName} (${langCode})
+${characterName ? `Speaker: ${characterName}` : ""}
+${variantsContext}
+
+User question: "${question}"
+
+Instructions:
+- When the user asks about a specific dialect or variety (such as "Why does Canadian French say it this way?"), refer directly to the parallel translations provided above and explain the exact lexical choices, phonetic nuances, syntax, colloquialisms, and why that dialect expresses it that way.
+- Answer clearly, warmly, and pedagogically in Spanish (or the language of their question).
+- Use rich formatting: bold keywords, concise bullet points, and pronunciation tips if applicable.`;
+
+      const { text, model } = await callGeminiApi(prompt, apiKey!.trim());
+      const displayModel = model.includes("3.8") ? "Gemini 3.8 Flash" : model.includes("flash") ? "Gemini 3.8 Flash" : model;
+      return { answer: text, modelUsed: displayModel };
+    } catch (e) {
+      console.warn("Gemini 3.8 Flash direct call error, falling back to server proxy:", e);
+    }
+  }
+
+  // 2. Try server proxy endpoint
   try {
     const res = await fetch("/api/ask-sentence", {
       method: "POST",
@@ -224,7 +259,7 @@ export async function askAiAboutSentence(
       if (json.ok && json.answer) {
         return {
           answer: json.answer,
-          modelUsed: json.modelUsed || "GPT-6 Luna (OpenRouter)"
+          modelUsed: json.modelUsed || "Gemini 3.8 Flash"
         };
       }
     }
@@ -232,30 +267,11 @@ export async function askAiAboutSentence(
     console.warn("Proxy /api/ask-sentence unavailable, trying fallbacks:", err);
   }
 
-  // 2. Try Gemini if user provided custom API key
-  const hasKey = Boolean(apiKey && apiKey.trim());
-  if (hasKey) {
-    try {
-      const prompt = `You are a friendly, world-class polyglot language tutor in Polyglot Heaven.
-Target sentence: "${sentence}"
-Language/Dialect: ${langName} (${langCode})
-${characterName ? `Speaker: ${characterName}` : ""}
-
-User question: "${question}"
-
-Please provide a clear, insightful, pedagogical answer in Spanish explaining this linguistic nuance, grammar structure, or vocabulary.`;
-      const { text, model } = await callGeminiApi(prompt, apiKey!.trim());
-      return { answer: text, modelUsed: model };
-    } catch (e) {
-      console.warn("Gemini fallback failed:", e);
-    }
-  }
-
   // 3. Fallback response if offline
   return {
     answer: `Análisis para la frase "${sentence}" en ${langName}:\n\n` +
       `En ${langName}, esta expresión comunica con precisión el matiz deseado. ` +
-      `Si deseas una respuesta en vivo con el modelo GPT-6 Luna, asegúrate de que el servidor dev esté en ejecución.`,
+      `Para respuestas en vivo con Gemini 3.8 Flash, puedes agregar tu clave gratuita de Google AI Studio en Ajustes ⚙️.`,
     modelUsed: "Tutor Heurístico"
   };
 }
@@ -279,32 +295,9 @@ export async function explainWordWithAi(
     return cached;
   }
 
-  // 1. Try secure OpenRouter server proxy endpoint (DeepSeek v4.1 Flash)
-  try {
-    const res = await fetch("/api/define-word", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        word: cleanWord,
-        sourceLangCode,
-        contextSentence,
-        activeTargetLangCodes
-      })
-    });
-    if (res.ok) {
-      const json = await res.json();
-      if (json.ok && json.data) {
-        setCache(CACHE_KEY_WORDS, cacheKey, json.data);
-        return json.data;
-      }
-    }
-  } catch (err) {
-    console.warn("OpenRouter server proxy unavailable, evaluating fallbacks:", err);
-  }
-
   let apiError: string | undefined;
 
-  // 2. Try Gemini if user provided an API key in settings
+  // 1. Try Gemini 3.8 Flash if user provided an API key in settings
   const hasKey = Boolean(apiKey && apiKey.trim());
   if (hasKey) {
     try {
@@ -334,12 +327,35 @@ ${activeTargetLangCodes.map(c => `    "${c}": "accurate translation in ${c}"`).j
       const { text, model } = await callGeminiApi(prompt, apiKey!.trim());
       const parsed = cleanAndParseJson<WordExplanation>(text);
       parsed.isAiGenerated = true;
-      parsed.modelUsed = model;
+      parsed.modelUsed = model.includes("3.8") ? "Gemini 3.8 Flash" : model.includes("flash") ? "Gemini 3.8 Flash" : model;
       setCache(CACHE_KEY_WORDS, cacheKey, parsed);
       return parsed;
     } catch (e: any) {
       apiError = e?.message || "Error al invocar Gemini API";
     }
+  }
+
+  // 2. Try server proxy endpoint
+  try {
+    const res = await fetch("/api/define-word", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        word: cleanWord,
+        sourceLangCode,
+        contextSentence,
+        activeTargetLangCodes
+      })
+    });
+    if (res.ok) {
+      const json = await res.json();
+      if (json.ok && json.data) {
+        setCache(CACHE_KEY_WORDS, cacheKey, json.data);
+        return json.data;
+      }
+    }
+  } catch (err) {
+    console.warn("Server proxy unavailable, evaluating fallbacks:", err);
   }
 
   // 3. Heuristic lexical database fallback

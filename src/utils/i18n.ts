@@ -94,7 +94,7 @@ export const I18N = {
     quickPromptNuance: "¿Qué matiz cultural o regional tiene?",
     quickPromptLiteral: "¿Cómo se traduciría literalmente palabra por palabra?",
     conversationWithAi: "Conversación interactiva con el tutor IA",
-    askingAi: "Pensando respuesta con GPT-6 Luna...",
+    askingAi: "Pensando respuesta con Gemini 3.8 Flash...",
     close: "Cerrar",
 
     // Word Inspector Modal
@@ -264,7 +264,7 @@ export const I18N = {
     quickPromptNuance: "What cultural or regional nuance does this have?",
     quickPromptLiteral: "How would this be translated word-for-word literally?",
     conversationWithAi: "Interactive conversation with AI tutor",
-    askingAi: "Thinking answer with GPT-6 Luna...",
+    askingAi: "Thinking answer with Gemini 3.8 Flash...",
     close: "Close",
 
     // Word Inspector Modal
@@ -434,7 +434,7 @@ export const I18N = {
     quickPromptNuance: "Quelle nuance culturelle ou régionale cela comporte-t-il ?",
     quickPromptLiteral: "Comment cela se traduirait-il mot à mot ?",
     conversationWithAi: "Conversation interactive avec le tuteur IA",
-    askingAi: "Réflexion avec GPT-6 Luna...",
+    askingAi: "Réflexion avec Gemini 3.8 Flash...",
     close: "Fermer",
 
     // Word Inspector Modal
@@ -604,7 +604,7 @@ export const I18N = {
     quickPromptNuance: "Qual nuance cultural ou regional isso tem?",
     quickPromptLiteral: "Como isso seria traduzido literalmente palavra por palavra?",
     conversationWithAi: "Conversa interativa com o tutor de IA",
-    askingAi: "Pensando na resposta com GPT-6 Luna...",
+    askingAi: "Pensando na resposta com Gemini 3.8 Flash...",
     close: "Fechar",
 
     // Word Inspector Modal

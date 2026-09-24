@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { LANGUAGES } from "../data/languages";
-import { X, Moon, Sun, Globe, BookOpen, Key, Check, Info, ExternalLink, Flag, Trash2, User, CheckCircle2, Database, Download, Upload, ShieldCheck } from "lucide-react";
+import { X, Moon, Sun, Globe, BookOpen, Key, Check, Info, ExternalLink, Flag, Trash2, User, CheckCircle2, Database, Download, Upload, ShieldCheck, Sparkles } from "lucide-react";
 import { I18N, SupportedLocale } from "../utils/i18n";
 import { voiceFlagger } from "../utils/voiceFlagger";
 import { themeManager } from "../utils/themeManager";
@@ -414,12 +414,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
 
-          {/* Google Gemini API Key (Opcional / Respaldo) */}
-          <div className="p-4 rounded-2xl bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-sky-500/10 dark:from-purple-950/40 dark:to-sky-950/40 border border-purple-200 dark:border-purple-800/50">
+          {/* Google Gemini 3.8 Flash API Key (Recomendado con tu cuenta Google Pro) */}
+          <div className="p-4 rounded-2xl bg-gradient-to-r from-purple-500/15 via-indigo-500/15 to-sky-500/15 dark:from-purple-950/50 dark:to-indigo-950/50 border-2 border-purple-300 dark:border-purple-700/80 shadow-xs">
             <div className="flex items-center justify-between gap-2 mb-1.5">
               <div className="flex items-center gap-1.5 text-xs font-black text-purple-900 dark:text-purple-200">
-                <Key className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-                <span>Google Gemini API (Respaldo opcional)</span>
+                <Sparkles className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                <span>Google Gemini 3.8 Flash</span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
+                  Plan Google Pro ($0 extra)
+                </span>
               </div>
               <a
                 href="https://aistudio.google.com/app/apikey"
@@ -427,20 +430,20 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 rel="noopener noreferrer"
                 className="text-[11px] font-black text-purple-600 dark:text-purple-300 hover:underline flex items-center gap-1"
               >
-                <span>{t.geminiGetFreeKey}</span>
+                <span>Obtener clave gratis ↗</span>
               </a>
             </div>
 
-            <p className="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed mb-2.5">
-              Si deseas configurar una clave personal de Google Gemini adicional como respaldo secundario, puedes ingresarla aquí:
+            <p className="text-[11px] text-gray-700 dark:text-gray-300 leading-relaxed mb-2.5">
+              Con tu cuenta de Google puedes generar una clave gratuita en <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" className="underline font-bold text-purple-600 dark:text-purple-300">Google AI Studio</a>. El modelo <strong className="text-purple-700 dark:text-purple-300">Gemini 3.8 Flash</strong> incluye 1.500 peticiones diarias gratuitas sin cobros en tarjeta.
             </p>
 
             <input
               type="password"
-              placeholder="AIzaSy..."
+              placeholder="AIzaSy... (Pega tu clave gratuita de Google AI Studio)"
               value={geminiApiKey}
               onChange={e => setGeminiApiKey(e.target.value)}
-              className="w-full px-3.5 py-2 text-xs rounded-xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:text-white font-mono"
+              className="w-full px-3.5 py-2 text-xs rounded-xl bg-white dark:bg-slate-900 border border-purple-300 dark:border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:text-white font-mono shadow-inner"
             />
           </div>
 
