@@ -9282,10 +9282,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Con voz cálida, misteriosa y un punto de ironía",
         expression: "storytelling",
         translations: {
+          "fr-CH": {
+            text: "Il était six heures précises de l'après-midi quand Hugo aperçut une ombre suspecte s'approchant de la pâtisserie.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Il était six heures pile de l'après-midi quand Hugo aperçut une ombre suspecte s'approchant de la pâtisserie, une fois.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-BE.mp3"
+          },
           "es-ES": {
             text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra sospechosa acercándose a la pastelería.",
             stageDirection: "Con voz cálida y misteriosa",
             audioUrl: "/audio/s5/s5_l1_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Ήταν ακριβώς έξι το απόγευμα όταν ο Ούγκο διέκρινε μια ύποπτη σκιά να πλησιάζει στο ζαχαροπλαστείο.",
+            stageDirection: "Με ζεστή και μυστηριώδη φωνή",
+            audioUrl: "/audio/s5/s5_l1_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa arrimándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra re sospechosa acercándose a la confitería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa acercándose a la repostería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa acercándose a la panadería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa arrimándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Il était six heures tapantes de l'après-midi quand Hugo aperçut une ombre suspecte s'approchant de la pâtisserie.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Il était six heures tapant de l'après-midi quand Hugo a vu une ombre pas mal louche s'en venir vers la pâtisserie.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Il était six heures pile dans l'après-midi quand Hugo a vu une ombre bizarre s'approcher de la pâtisserie là-bas.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Eram seis horas em ponto da tarde quando Hugo avistou uma sombra suspeita se aproximando da confeitaria.",
+            stageDirection: "Com voz calorosa e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Eram seis horas em ponto da tarde quando Hugo avistou uma sombra suspeita a aproximar-se da pastelaria.",
+            stageDirection: "Com voz calorosa e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Erano le sei in punto del pomeriggio quando Hugo scorse un'ombra sospetta avvicinarsi alla pasticceria.",
+            stageDirection: "Con voce calda e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Eren les sis en punt de la tarda quan l'Hugo va albirar una ombra sospitosa apropant-se a la pastisseria.",
+            stageDirection: "Amb veu càlida i misteriosa",
+            audioUrl: "/audio/s5/s5_l1_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Era exact ora șase după-amiaza când Hugo a zărit o umbră suspectă apropiindu-se de cofetărie.",
+            stageDirection: "Cu o voce caldă și misterioasă",
+            audioUrl: "/audio/s5/s5_l1_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Eran as seis en punto da tarde cando Hugo divisou unha sombra sospeitosa achegándose á pastelería.",
+            stageDirection: "Con voz cálida e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Èran las sièis oras exactas del vèspre quand Hugo apercebèt una ombra suspècta que s'aprochava de la pastissariá.",
+            stageDirection: "D'una votz calorosa e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Es war punkt sechs Uhr nachmittags, als Hugo einen verdächtigen Schatten bemerkte, der sich der Konditorei näherte.",
+            stageDirection: "Mit warmer, geheimnisvoller Stimme",
+            audioUrl: "/audio/s5/s5_l1_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Es isch punkt sächsi am Nammitag gsi, wo de Hugo en verdächtige Schatte gseh hät, wo sich de Chonditorei gnööcheret hät.",
+            stageDirection: "Mit warmer, gheimnisvoller Stimm",
+            audioUrl: "/audio/s5/s5_l1_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Het was precies zes uur 's middags toen Hugo een verdachte schaduw zag naderen richting de bakkerij.",
+            stageDirection: "Met warme, mysterieuze stem",
+            audioUrl: "/audio/s5/s5_l1_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Klokken var nøyaktig seks om ettermiddagen da Hugo fikk øye på en mistenkelig skygge som nærmet seg konditoriet.",
+            stageDirection: "Med en varm, mystisk stemme",
+            audioUrl: "/audio/s5/s5_l1_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Klockan var precis sex på eftermiddagen när Hugo fick syn på en misstänkt skugga som närmade sig konditoriet.",
+            stageDirection: "Med varm, mystisk röst",
+            audioUrl: "/audio/s5/s5_l1_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Klokken var præcis seks om eftermiddagen, da Hugo fik øje på en mistænkelig skygge, der nærmede sig bageriet.",
+            stageDirection: "Med en varm, mystisk stemme",
+            audioUrl: "/audio/s5/s5_l1_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Было ровно шесть часов вечера, когда Уго заметил подозрительную тень, приближающуюся к кондитерской.",
+            stageDirection: "Тёплым, таинственным голосом",
+            audioUrl: "/audio/s5/s5_l1_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Була рівно шоста година вечора, коли Уго помітив підозрілу тінь, що наближалася до кондитерської.",
+            stageDirection: "Теплим, таємничим голосом",
+            audioUrl: "/audio/s5/s5_l1_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Była dokładnie szósta po południu, gdy Hugo dostrzegł podejrzany cień zbliżający się do cukierni.",
+            stageDirection: "Ciepłym, tajemniczym głosem",
+            audioUrl: "/audio/s5/s5_l1_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Bylo přesně šest hodin odpoledne, když Hugo zahlédl podezřelý stín blížící se k cukrárně.",
+            stageDirection: "Teplým, tajemným hlasem",
+            audioUrl: "/audio/s5/s5_l1_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Bilo je točno šest sati poslijepodne kad je Hugo spazio sumnjivu sjenu kako se približava slastičarnici.",
+            stageDirection: "Toplim, tajanstvenim glasom",
+            audioUrl: "/audio/s5/s5_l1_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Kello oli tasan kuusi iltapäivällä, kun Hugo huomasi epäilyttävän varjon lähestyvän leipomoa.",
+            stageDirection: "Lämpimällä, salaperäisellä äänellä",
+            audioUrl: "/audio/s5/s5_l1_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Pontosan délután hat óra volt, amikor Hugó észrevett egy gyanús árnyékot, amely a cukrászda felé közeledett.",
+            stageDirection: "Meleg, titokzatos hangon",
+            audioUrl: "/audio/s5/s5_l1_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Arratsaldeko seiak puntu-puntuan ziren Hugok gozotegira hurbiltzen ari zen itzal susmagarri bat ikusi zuenean.",
+            stageDirection: "Ahots bero eta misteriotsuarekin",
+            audioUrl: "/audio/s5/s5_l1_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Öğleden sonra tam saat altıydı ve Hugo pastaneye doğru yaklaşan şüpheli bir gölge fark etti.",
+            stageDirection: "Sıcak ve gizemli bir ses tonuyla",
+            audioUrl: "/audio/s5/s5_l1_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "午後のちょうど6時、ウーゴは菓子店に近づいてくる怪しい人影を目撃した。",
+            stageDirection: "温かく神秘的な声で",
+            audioUrl: "/audio/s5/s5_l1_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "下午整整六点，雨果瞥见一个可疑的身影正朝着糕点店走来。",
+            stageDirection: "语调温和而神秘",
+            audioUrl: "/audio/s5/s5_l1_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "下晝啱啱好六點，雨果見到一個可疑嘅身影慢慢行近間西餅舖。",
+            stageDirection: "帶住溫暖而神祕嘅語氣",
+            audioUrl: "/audio/s5/s5_l1_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "오후 정각 6시, 위고는 제과점으로 다가오는 수상한 그림자를 발견했다.",
+            stageDirection: "따뜻하고 신비로운 목소리로",
+            audioUrl: "/audio/s5/s5_l1_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "كانت الساعة السادسة مساءً تمامًا عندما لمح هوغو ظلًا مشبوهًا يقترب من متجر الحلويات.",
+            stageDirection: "بصوت دافئ وغامض",
+            audioUrl: "/audio/s5/s5_l1_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "השעה הייתה שש בדיוק אחר הצהריים כשהו entendió וזיהה צל חשוד מתקרב למאפייה.",
+            stageDirection: "בקול חם ומסתורי",
+            audioUrl: "/audio/s5/s5_l1_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa acercándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra harto sospechosa acercándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa acercándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra bien sospechosa acercándose a la dulcería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra sospechosa acercándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "It was six o'clock on the dot in the afternoon when Hugo spotted a suspicious shadow approaching the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-US.mp3"
+          },
+          "en-GB": {
+            text: "It was six o'clock precisely in the afternoon when Hugo spotted a suspicious shadow approaching the patisserie.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "It was six o'clock on the dot in the afternoon when Hugo clocked a right suspicious shadow headin' for the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "It was right on six in the afternoon when Hugo caught sight of a mighty suspicious shadow moseyin' toward the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "It was six o'clock on the dot of the afternoon when Hugo spotted a grand suspicious shadow heading towards the bakery so he did.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "It was six o'clock sharp in the afternoon when Hugo spotted a dodgy-looking shadow heading straight for the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "It was six o'clock sharp in the afternoon when Hugo spotted a pretty suss shadow heading towards the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "It was six o'clock on the dot in the afternoon when Hugo spotted a proper suspicious shadow approaching the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "It was exactly six o'clock in the afternoon when Hugo see one suspicious shadow moving towards the bakery.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "It was six o'clock sharp in the evening when Hugo noticed a suspicious shadow coming towards the cake shop.",
+            stageDirection: "Warm, mysterious voice",
+            audioUrl: "/audio/s5/s5_l1_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Il était six heures justes de l'après-midi quand Hugo a aperçu une ombre suspecte s'approcher de la pâtisserie.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Il était six heures pile dans l'après-midi quand Hugo a remarqué une silhouette suspecte s'approcher du magasin de gâteaux.",
+            stageDirection: "D'une voix chaleureuse et mystérieuse",
+            audioUrl: "/audio/s5/s5_l1_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Eram seis horas em ponto da tarde quando o Hugo viu uma sombra bué suspeita a chegar na pastelaria.",
+            stageDirection: "Com voz calorosa e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Eram seis horas certas da tarde quando o Hugo avistou uma sombra suspeita a caminhar para a pastelaria.",
+            stageDirection: "Com voz calorosa e misteriosa",
+            audioUrl: "/audio/s5/s5_l1_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Het was stipt zes uur in de namiddag toen Hugo een verdachte schaduw zag naderen naar de patisserie.",
+            stageDirection: "Met warme, mysterieuze stem",
+            audioUrl: "/audio/s5/s5_l1_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "كانت الساعة ستة بالتمام لما لمح هوغو ظل مشبوه يقرب من محل الحلى.",
+            stageDirection: "بصوت دافئ وغامض",
+            audioUrl: "/audio/s5/s5_l1_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "الساعة كانت ستة بالظبط بعد الضهر لما هوجو لمح خيال مشبوه بيقرب من محل الحلويات.",
+            stageDirection: "بصوت دافي وغامض",
+            audioUrl: "/audio/s5/s5_l1_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "كانت الستة نيشان فالعشية ملي هوغو شاف خيال مشبوه كايقرّب من المخبزة.",
+            stageDirection: "بصوت دافي وغامض",
+            audioUrl: "/audio/s5/s5_l1_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "كانت الساعة ستة تماماً لما هوغو لمح خيال مشبوه عم يقرب من محل الحلو.",
+            stageDirection: "بصوت دافي وغامض",
+            audioUrl: "/audio/s5/s5_l1_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "جانت الساعة بالستة العصر بالضبط من هوغو لمح خيال مشبوه ديدنو يم محل الحلويات.",
+            stageDirection: "بصوت دافي وغامض",
+            audioUrl: "/audio/s5/s5_l1_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "下午整整六點，雨果瞥見一個可疑的身影正朝著糕餅店走來。",
+            stageDirection: "語調溫和而神祕",
+            audioUrl: "/audio/s5/s5_l1_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "दोपहर के ठीक छह बजे थे जब ह्यूगो ने बेकरी की ओर बढ़ते हुए एक संदिग्ध साए को देखा।",
+            stageDirection: "गर्मजोशी भरी और रहस्यमयी आवाज़ में",
+            audioUrl: "/audio/s5/s5_l1_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "سہ پہر کے ٹھیک چھ بجے تھے جب ہیوگو نے بیکری کی طرف بڑھتے ہوئے ایک مشکوک سائے کو دیکھا۔",
+            stageDirection: "پُراسرار اور گرمجوش آواز میں",
+            audioUrl: "/audio/s5/s5_l1_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "ঠিক বিকেল ছটা বাজে, এমন সময় হুগো দেখল একটি সন্দেহভাজন ছায়া মিষ্টির দোকানের দিকে এগিয়ে আসছে।",
+            stageDirection: "উষ্ণ ও রহস্যময় কণ্ঠে",
+            audioUrl: "/audio/s5/s5_l1_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਸ਼ਾਮ ਦੇ ਪੂਰੇ ਛੇ ਵੱਜੇ ਸਨ ਜਦੋਂ ਹਿਊਗੋ ਨੇ ਬੇਕਰੀ ਵੱਲ ਵਧਦੇ ਇੱਕ ਸ਼ੱਕੀ ਪਰਛਾਵੇਂ ਨੂੰ ਦੇਖਿਆ।",
+            stageDirection: "ਨਿੱਘੀ ਅਤੇ ਰਹੱਸਮਈ ਆਵਾਜ਼ ਵਿੱਚ",
+            audioUrl: "/audio/s5/s5_l1_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "સાંજના બરાબર છ વાગ્યા હતા જ્યારે હ્યુગોએ બેકરી તરફ આવતો એક શંકાસ્પદ પડછાયો જોયો.",
+            stageDirection: "હૂંફાળા અને રહસ્યમય અવાજમાં",
+            audioUrl: "/audio/s5/s5_l1_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "संध्याकाळचे बरोबर सहा वाजले होते जेव्हा ह्युगोने बेकरीकडे येणारी एक संशयास्पद सावली पाहिली.",
+            stageDirection: "उबदार आणि गूढ आवाजात",
+            audioUrl: "/audio/s5/s5_l1_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "மாலை சரியாக ஆறு மணிக்கு, பேக்கரியை நோக்கி ஒரு சந்தேகத்திற்கிடமான நிழல் வருவதை ஹியூகோ பார்த்தார்.",
+            stageDirection: "சூடான மற்றும் மர்மமான குரலில்",
+            audioUrl: "/audio/s5/s5_l1_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "సాయంత్రం సరిగ్గా ఆరు గంటలకు, బేకరీ వైపు అనుమానాస్పద నీడ రావడం హ్యూగో గమనించాడు.",
+            stageDirection: "వెచ్చని మరియు రహస్యమైన గొంతుతో",
+            audioUrl: "/audio/s5/s5_l1_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಸಂಜೆ ಸರಿಯಾಗಿ ಆರು ಗಂಟೆಗೆ ಹ್ಯೂಗೋ ಬೇಕರಿಯ ಕಡೆಗೆ ಬರುತ್ತಿರುವ ಅನುಮಾನಾಸ್ಪದ ನೆರಳನ್ನು ಕಂಡನು.",
+            stageDirection: "ಆತ್ಮೀಯ ಮತ್ತು ನಿಗೂಢ ಧ್ವನಿಯಲ್ಲಿ",
+            audioUrl: "/audio/s5/s5_l1_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "വൈകുന്നേരം കൃത്യം ആറു മണിക്ക്, ബേക്കറിയിലേക്ക് സംശയാസ്പദമായ ഒരു നിഴൽ വരുന്നത് ഹ്യൂഗോ കണ്ടു.",
+            stageDirection: "ഊഷ്മളവും നിഗൂഢവുമായ ശബ്ദത്തിൽ",
+            audioUrl: "/audio/s5/s5_l1_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Đúng sáu giờ chiều, Hugo nhìn thấy một bóng đen đáng ngờ đang tiến lại gần tiệm bánh.",
+            stageDirection: "Bằng giọng ấm áp và bí ẩn",
+            audioUrl: "/audio/s5/s5_l1_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "เวลาหกโมงเย็นพอดี ฮูโกเหลือบไปเห็นเงาต้องสงสัยกำลังเดินตรงมาที่ร้านขนม",
+            stageDirection: "ด้วยน้ำเสียงอบอุ่นและลึกลับ",
+            audioUrl: "/audio/s5/s5_l1_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Tepat pukul enam sore ketika Hugo melihat bayangan mencurigakan mendekati toko roti.",
+            stageDirection: "Dengan suara hangat dan misterius",
+            audioUrl: "/audio/s5/s5_l1_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Tepat pukul enam petang apabila Hugo melihat bayang yang mencurigakan menghampiri kedai roti.",
+            stageDirection: "Dengan suara hangat dan penuh misteri",
+            audioUrl: "/audio/s5/s5_l1_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Ilikuwa saa kumi na mbili kamili jioni ambapo Hugo aliona kivuli chenye kutiliwa shaka kikikaribia duka la mikate.",
+            stageDirection: "Kwa sauti ya joto na ya siri",
+            audioUrl: "/audio/s5/s5_l1_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Oiko seis aravoité ka'aru Hugo ohechávo peteĩ kuarahy'ã mba'e vai rehegua oñembojáva hína pe panaderíape.",
+            stageDirection: "Ñe'ẽ mborayhu ha ñemi reheve",
+            audioUrl: "/audio/s5/s5_l1_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Chay pacha suqta urapim kasharqan Hugoqa huk llantuypas manchanaqta rikurqan tanta rurana wasiman asuykamusqanta.",
+            stageDirection: "Q'oñi pakasqa simiwan",
+            audioUrl: "/audio/s5/s5_l1_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Suxta urasa pachanwa Hugo-x maya axtaña ch'iwu uñjäna t'ant'a alxawiru jak'achasiskiri.",
+            stageDirection: "K'acha ch'usa arumpi",
+            audioUrl: "/audio/s5/s5_l1_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Chicuacen horas tiotlac catca ihcuac Hugo quitztinen ce tlaixpopoyotl tlen momatqui tlen yauh ic panadería.",
+            stageDirection: "Tlayolmatiliztica ihuan ichtacatlahtolli",
+            audioUrl: "/audio/s5/s5_l1_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Hastą́ą́ góneʼ oolkiłgo Hugo tʼáá kʼad bááh ádaalnélígiichʼįʼ chahałheełgo diné naagháhígíí yiiłtsą́.",
+            stageDirection: "Hazhóʼó dóó baa dahootʼéhígíí bee",
+            audioUrl: "/audio/s5/s5_l1_nv-US.mp3"
           }
         }
       },
@@ -9295,10 +9720,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Ocultándose detrás de un cartel publicitario y susurrando con urgencia",
         expression: "conspiracy",
         translations: {
+          "fr-CH": {
+            text: "Bea, baisse-toi ! Cet homme au chapeau sombre et à l'imperméable vient piller le coffre-fort.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Bea, à terre ! Cet homme au chapeau sombre et à l'imperméable vient dévaliser le coffre-fort.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-BE.mp3"
+          },
           "es-ES": {
             text: "¡Bea, al suelo! Ese hombre del sombrero oscuro y la gabardina viene a desvalijar la caja fuerte.",
             stageDirection: "Susurrando con urgencia",
             audioUrl: "/audio/s5/s5_l2_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Μπέα, κάτω! Αυτός ο άντρας με το σκούρο καπέλο και την καπαρντίνα έρχεται να ληστέψει το χρηματοκιβώτιο.",
+            stageDirection: "Ψιθυρίζοντας επειγόντως",
+            audioUrl: "/audio/s5/s5_l2_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "¡Bea, al suelo! Ese tipo del sombrero oscuro y la gabardina viene a vaciar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "¡Bea, tirate al piso! Ese tipo de sombrero oscuro y sobretodo viene a chorearse la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "¡Bea, tírate al piso! Ese tipo del sombrero oscuro y la gabardina viene a vaciar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "¡Bea, tírate al piso! Ese tipo del sombrero oscuro y el gabán viene a asaltar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "¡Bea, al piso! Ese tipo del sombrero oscuro y la gabardina viene a desocupar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Bea, à terre ! Cet homme avec le chapeau sombre et le trench vient dévaliser le coffre-fort.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Bea, couche-toi à terre ! Ce gars-là avec le chapeau noir pis l'imperméable s'en vient voler le coffre-fort.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Bea, baisse-toi par terre ! Le monsieur avec le chapeau noir et le grand manteau là veut braquer le coffre.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Bea, pro chão! Aquele homem de chapéu escuro e sobretudo veio assaltar o cofre.",
+            stageDirection: "Sussurrando com urgência",
+            audioUrl: "/audio/s5/s5_l2_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Bea, para o chão! Aquele homem de chapéu escuro e gabardina vem assaltar o cofre.",
+            stageDirection: "Sussurrando com urgência",
+            audioUrl: "/audio/s5/s5_l2_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Bea, a terra! Quell'uomo con il cappello scuro e l'impermeabile viene a svaligiare la cassaforte.",
+            stageDirection: "Sussurrando con urgenza",
+            audioUrl: "/audio/s5/s5_l2_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Bea, a terra! Aquell home del barret fosc i la gavardina ve a desvalisar la caixa forta.",
+            stageDirection: "Xiuxiuejant amb urgència",
+            audioUrl: "/audio/s5/s5_l2_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Bea, la pământ! Bărbatul acela cu pălărie neagră și trenci vine să spargă seiful.",
+            stageDirection: "Șoptind de urgență",
+            audioUrl: "/audio/s5/s5_l2_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Bea, ao chan! Ese home do sombreiro escuro e a gabardina vén desvalixar a caixa forte.",
+            stageDirection: "Susurrando con urxencia",
+            audioUrl: "/audio/s5/s5_l2_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Bea, a tèrra ! Aquel òme del capèl escur e del paletò ven desvalisar lo còfre-fòrt.",
+            stageDirection: "Chuchotejant amb urgéncia",
+            audioUrl: "/audio/s5/s5_l2_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Bea, runter! Dieser Mann mit dem dunklen Hut und dem Trenchcoat will den Safe ausrauben.",
+            stageDirection: "Dringend flüsternd",
+            audioUrl: "/audio/s5/s5_l2_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Bea, abegah! Dä Maa mit em dunkle Huet und em Trenchcoat chunnt cho de Tresor usruume.",
+            stageDirection: "Dringend flüsternd",
+            audioUrl: "/audio/s5/s5_l2_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Bea, bukken! Die man met de donkere hoed en regenjas komt de kluis plunderen.",
+            stageDirection: "Dringend fluisterend",
+            audioUrl: "/audio/s5/s5_l2_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Bea, legg deg ned! Den mannen med den mørke hatten og frakken kommer for å tømme safen.",
+            stageDirection: "Hviskende med hastverk",
+            audioUrl: "/audio/s5/s5_l2_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Bea, ner på golvet! Den där mannen i mörk hatt och trenchcoat är här för att råna kassaskåpet.",
+            stageDirection: "Viskande med allvar",
+            audioUrl: "/audio/s5/s5_l2_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Bea, ned på gulvet! Den mand med den mørke hat og trenchcoaten kommer for at tømme pengeskabet.",
+            stageDirection: "Hvæsende hvisken",
+            audioUrl: "/audio/s5/s5_l2_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Беа, на пол! Этот мужчина в тёмной шляпе и плаще идёт грабить сейф.",
+            stageDirection: "Срочно шепча",
+            audioUrl: "/audio/s5/s5_l2_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Беа, на підлогу! Той чоловік у темному капелюсі й плащі йде грабувати сейф.",
+            stageDirection: "Терміново шепочучи",
+            audioUrl: "/audio/s5/s5_l2_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Bea, na ziemię! Ten facet w ciemnym kapeluszu i prochowcu idzie obrabować sejf.",
+            stageDirection: "Szepcząc z przejęciem",
+            audioUrl: "/audio/s5/s5_l2_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Beo, k zemi! Ten chlap v tmavém klobouku a baloňáku jde vykrást trezor.",
+            stageDirection: "Naléhavě šeptaje",
+            audioUrl: "/audio/s5/s5_l2_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Bea, na pod! Taj čovjek s tamnim šeširom i balonerom dolazi opljačkati sef.",
+            stageDirection: "Šapćući s panikom",
+            audioUrl: "/audio/s5/s5_l2_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Bea, maahan! Tuo mies tummassa hatussa ja trenssitakissa tulee ryöstämään kassakaapin.",
+            stageDirection: "Kuiskaa hätäisesti",
+            audioUrl: "/audio/s5/s5_l2_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Bea, le a földre! Az a sötét kalapos, viharkabátos férfi ki akarja rabolni a széfet.",
+            stageDirection: "Sürgetően suttogva",
+            audioUrl: "/audio/s5/s5_l2_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Bea, lurrera! Kapela ilundun eta gabardina jantzitako gizon hori kutxa gotorra hustera dator.",
+            stageDirection: "Premiaz xuxurlatuz",
+            audioUrl: "/audio/s5/s5_l2_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Bea, yere yat! Koyu şapkalı ve trençkotlu o adam kasayı soymaya geliyor.",
+            stageDirection: "Aceleyle fısıldayarak",
+            audioUrl: "/audio/s5/s5_l2_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "ベア、伏せて！あの黒い帽子とトレンチコートの男、金庫を奪いに来たんだ！",
+            stageDirection: "切迫した囁き声で",
+            audioUrl: "/audio/s5/s5_l2_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "贝雅，趴下！那个戴黑帽子、穿风衣的男人是来抢保险柜的。",
+            stageDirection: "急促地耳语",
+            audioUrl: "/audio/s5/s5_l2_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "比雅，快啲趴低！戴黑帽著風褸嗰個男人想嚟搶保險箱啊。",
+            stageDirection: "好急咁細聲講",
+            audioUrl: "/audio/s5/s5_l2_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "베아, 엎드려! 어두운 모자에 트렌치코트를 입은 저 남자, 금고를 털러 온 거야.",
+            stageDirection: "다급하게 속삭이며",
+            audioUrl: "/audio/s5/s5_l2_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "بيا، انبطحي أرضًا! ذلك الرجل بالقبعة الداكنة ومعطف المطر قادم لسرقة الخزنة.",
+            stageDirection: "يهمس بإلحاح",
+            audioUrl: "/audio/s5/s5_l2_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "ביאה, לרצפה! האיש הזה עם הכובע הכהה ומעיל הגשם בא לשדוד את הכספת.",
+            stageDirection: "לוחש בדחיפות",
+            audioUrl: "/audio/s5/s5_l2_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "¡Bea, al piso! Ese chamo del sombrero oscuro y la gabardina viene a robarse la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "¡Bea, tírate al suelo! Ese gallo del sombrero oscuro y la gabardina viene a pelarse la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "¡Bea, al suelo! Ese pata del sombrero oscuro y la gabardina viene a vaciar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "¡Bea, al piso! Ese tipo del sombrero oscuro y el gabán viene a llevarse la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "¡Bea, al suelo! Ese hombre del sombrero oscuro y la gabardina viene a robar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Bea, hit the deck! That man in the dark hat and trench coat is coming to rob the safe.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Bea, get down! That man in the dark hat and mackintosh is coming to ransack the safe.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Bea, hit the deck! That lad in the dark bunnet and trench coat is comin' tae nick the safe.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Bea, get down on the floor! That feller in the dark hat and overcoat's comin' to clean out the safe.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Bea, down on the floor! That fella in the dark hat and overcoat is coming to rob the safe entirely.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Bea, hit the deck! That bloke in the dark hat and trench coat is coming to nick the safe.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Bea, duck down! That mate in the dark hat and trench coat is coming to clean out the safe.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Bea, get down! That guy in the dark hat and overcoat is coming to loot the safe hey.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Bea, bend down quick! That man with black hat and long coat wan come thief our safe o.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Bea, duck down quickly! That man in the dark hat and raincoat is coming to rob the safe only.",
+            stageDirection: "Whispering urgently",
+            audioUrl: "/audio/s5/s5_l2_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Bea, jette-toi au sol ! Cet homme avec son grand chapeau noir et sa veste longue vient vider le coffre-fort.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Bea, baisse-toi vite ! Le type là au chapeau sombre et trench-coat arrive pour emporter le coffre-fort.",
+            stageDirection: "Chuchotant avec urgence",
+            audioUrl: "/audio/s5/s5_l2_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Bea, deita no chão! Aquele homem de chapéu escuro e casacão vem assaltar o nosso cofre.",
+            stageDirection: "Sussurrando com urgência",
+            audioUrl: "/audio/s5/s5_l2_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Bea, vai ao chão! Aquele homem de chapéu escuro e sobretudo vem esvaziar o cofre.",
+            stageDirection: "Sussurrando com urgência",
+            audioUrl: "/audio/s5/s5_l2_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Bea, op de grond! Die man met de donkere hoed en trenchcoat komt de koffer plunderen.",
+            stageDirection: "Dringend fluisterend",
+            audioUrl: "/audio/s5/s5_l2_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "بيا، على الأرض بسرعة! هذاك الرجال اللي لابس قبعة غامقة وبالطو جاي يسرق الخزنة.",
+            stageDirection: "يهمس بعجلة",
+            audioUrl: "/audio/s5/s5_l2_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "بيا، انزلي ع الأرض! الراجل اللي لابس طاقية سودا وبالطو طويل ده جاي يسرق الخزنة.",
+            stageDirection: "بيهمس بسرعة وخوف",
+            audioUrl: "/audio/s5/s5_l2_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "بيا، هبطي للأرض! داك الراجل بالشاشية الكحلة والمونطو جاي يفرغ الكوفر فور.",
+            stageDirection: "كايهمس بالزربة",
+            audioUrl: "/audio/s5/s5_l2_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "بيا، انزلي ع الأرض بسرعة! هاد الزلمة اللي بالبرنيطة الغامقة والبالطو جاي يسرق الخزنة.",
+            stageDirection: "بهمس سريع وخوف",
+            audioUrl: "/audio/s5/s5_l2_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "بيا، انزلي بالكاع! هذاك الرجال لابس قبعة سودة وقمصلة طويلة جاي يفرغ القاصة.",
+            stageDirection: "يهمس بخوف وسرعة",
+            audioUrl: "/audio/s5/s5_l2_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "貝雅，快趴下！那個戴黑帽子、穿風衣的男人是來搶保險箱的。",
+            stageDirection: "急促地耳語",
+            audioUrl: "/audio/s5/s5_l2_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "बिया, ज़मीन पर झुक जाओ! वो गहरे रंग की टोपी और ओवरकोट वाला आदमी तिजोरी लूटने आ रहा है।",
+            stageDirection: "जल्दबाज़ी में फुसफुसाते हुए",
+            audioUrl: "/audio/s5/s5_l2_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "بیا، زمین پر جھک جاؤ! وہ گہرے رنگ کی ٹوپی اور اوورکوٹ والا آدمی تجوری لوٹنے آ رہا ہے۔",
+            stageDirection: "فوری سرگوشی میں",
+            audioUrl: "/audio/s5/s5_l2_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "বিয়া, নিচে বসো! ওই কালো টুপি আর রেইনকোট পরা লোকটা সিন্দুক লুট করতে আসছে।",
+            stageDirection: "ব্যগ্র স্বরে ফিসফিস করে",
+            audioUrl: "/audio/s5/s5_l2_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਬੀਆ, ਜ਼ਮੀਨ 'ਤੇ ਝੁਕ ਜਾਓ! ਉਹ ਕਾਲੀ ਟੋਪੀ ਅਤੇ ਕੋਟ ਵਾਲਾ ਆਦਮੀ ਤਿਜੋਰੀ ਲੁੱਟਣ ਆ ਰਿਹਾ ਹੈ।",
+            stageDirection: "ਘਬਰਾਹਟ ਵਿੱਚ ਫੁਸਫੁਸਾਉਂਦੇ ہوئے",
+            audioUrl: "/audio/s5/s5_l2_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "બિયા, નીચે ઝૂકી જા! કાળી ટોપી અને કોટવાળો એ માણસ તિજોરી લૂંટવા આવી રહ્યો છે.",
+            stageDirection: "ઉતાવળે ફુસફુસાતાં",
+            audioUrl: "/audio/s5/s5_l2_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "बिया, खाली वाक! काळी टोपी आणि लांब कोट घातलेला तो माणूस तिजोरी लुटायला येत आहे.",
+            stageDirection: "घाईघाईने कुजबुजत",
+            audioUrl: "/audio/s5/s5_l2_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "பியா, கீழே படு! அந்த இருண்ட தொப்பியும் நீண்ட கோட்டும் அணிந்த மனிதன் பெட்டகத்தைக் கொள்ளையடிக்க வருகிறான்.",
+            stageDirection: "அவசரமாக கிசுகிசுக்கிறார்",
+            audioUrl: "/audio/s5/s5_l2_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "బియా, కింద పడుకో! డార్క్ టోపీ మరియు కోటు ధరించిన ఆ వ్యక్తి సేఫ్‌ను దోచుకోవడానికి వస్తున్నాడు.",
+            stageDirection: "కంగారుగా గుసగుసలాడుతూ",
+            audioUrl: "/audio/s5/s5_l2_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಬಿಯಾ, ಕೆಳಗೆ ಮಲಗು! ಆ ಕಪ್ಪು ಟೋಪಿ ಮತ್ತು ಕೋಟು ಧರಿಸಿದ ವ್ಯಕ್ತಿ ಸೇಫ್ ಕದಿಯಲು ಬರುತ್ತಿದ್ದಾನೆ.",
+            stageDirection: "ಆತುರದಿಂದ ಪಿಸುಗುಡುತ್ತಾ",
+            audioUrl: "/audio/s5/s5_l2_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "ബിയാ, താഴെ കിടക്കൂ! ഇരുണ്ട തൊപ്പിയും കോട്ടും ധരിച്ച ആ മനുഷ്യൻ സേഫ് കൊള്ളയടിക്കാൻ വരികയാണ്.",
+            stageDirection: "തിടുക്കത്തിൽ അടക്കംപറഞ്ഞ്",
+            audioUrl: "/audio/s5/s5_l2_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Bea, nằm xuống! Người đàn ông đội mũ đen mặc áo măng tô kia đến để cướp két sắt đấy.",
+            stageDirection: "Thì thầm đầy khẩn cấp",
+            audioUrl: "/audio/s5/s5_l2_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "เบีย หมอบลงเร็ว! ผู้ชายใส่หมวกดำกับเสื้อโค้ตตัวยาวนั่น กำลังจะมาปล้นตู้เซฟ",
+            stageDirection: "กระซิบอย่างร้อนรน",
+            audioUrl: "/audio/s5/s5_l2_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Bea, tiarap! Pria bertopi gelap dan mantel panjang itu datang untuk merampok brankas.",
+            stageDirection: "Berbisik dengan panik",
+            audioUrl: "/audio/s5/s5_l2_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Bea, tunduk bawah! Lelaki bertopi gelap dan kot labuh itu datang nak rompak peti besi.",
+            stageDirection: "Berbisik cemas",
+            audioUrl: "/audio/s5/s5_l2_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Bea, lala chini! Mwanaume huyo mwenye kofia nyeusi na koti refu anakuja kuiba sanduku la pesa.",
+            stageDirection: "Akinong'ona kwa wasiwasi",
+            audioUrl: "/audio/s5/s5_l2_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Bea, eñeno yvýpe! Pe kuimba'e akãngao hũ ha sái puku oguerekóva oúma omonda hag̃ua kofre.",
+            stageDirection: "Oñe'ẽ ñemi kyhyje reheve",
+            audioUrl: "/audio/s5/s5_l2_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Bea, pampaman k'umuykuy! Chay yana chukuliyuq hatun kapa runam kashan qullqi waqaychanata suwakunanpaq.",
+            stageDirection: "Manchaywan ch'inllapi rimaspa",
+            audioUrl: "/audio/s5/s5_l2_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Bea, uka uraqir jaquqiptasim! Uka ch'iyara ch'ukuni jaqix t'ant'a alxawina qullqi kaxapa lunthatiriw juti.",
+            stageDirection: "Axtasiñampi jisk'at aruskipasina",
+            audioUrl: "/audio/s5/s5_l2_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Bea, ximotlali tlalli! Ne tlacatl tlen quipiya sombreroltic ihuan hueyi cotón huitz quicuiz tomin.",
+            stageDirection: "Ihuan ichtacatlahtolli tlen momauhtia",
+            audioUrl: "/audio/s5/s5_l2_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Bea, bikʼi silʼéél! Diné chahałheełgo chʼah dah joogáłígíí béésh bąąh ditiinígíí yineeztʼįįł biniyé naaghá.",
+            stageDirection: "Yee chʼééh ánaaʼniłgo sodolzin",
+            audioUrl: "/audio/s5/s5_l2_nv-US.mp3"
           }
         }
       },
@@ -9308,10 +10158,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Colocando con calma una bandeja de pasteles recién horneados",
         expression: "cheerful",
         translations: {
+          "fr-CH": {
+            text: "Nous n'avons pas de coffre-fort, Hugo. On garde les pièces dans une boîte à biscuits avec un dessin de chaton.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "On n'a pas de coffre-fort, Hugo. On garde les pièces dans une boîte à biscuits avec un petit chaton.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-BE.mp3"
+          },
           "es-ES": {
             text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
             stageDirection: "Con serenidad inocente",
             audioUrl: "/audio/s5/s5_l3_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Δεν έχουμε χρηματοκιβώτιο, Ούγκο. Κρατάμε τα κέρματα σε ένα κουτί μπισκότων με ζωγραφισμένο γατάκι.",
+            stageDirection: "Με αθώα γαλήνη",
+            audioUrl: "/audio/s5/s5_l3_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con un gatito dibujado.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletitas con dibujito de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos los chavos en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Nous n'avons pas de coffre-fort, Hugo. Nous gardons les pièces dans une boîte à biscuits avec un dessin de chaton.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "On n'a pas de coffre-fort, Hugo. On garde notre monnaie dans une boîte de biscuits avec un dessin de p'tit chat.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Mais Hugo, on n'a pas de coffre ici ! On met l'argent dans une boîte de biscuits avec le dessin de petit chat.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Nós não temos cofre, Hugo. Guardamos as moedas numa lata de biscoitos com desenho de gatinho.",
+            stageDirection: "Com serenidade inocente",
+            audioUrl: "/audio/s5/s5_l3_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Não temos cofre, Hugo. Guardamos as moedas numa lata de bolachas com um desenho de gatinho.",
+            stageDirection: "Com serenidade inocente",
+            audioUrl: "/audio/s5/s5_l3_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Non abbiamo una cassaforte, Hugo. Teniamo le monete in una scatola di biscotti con il disegno di un gattino.",
+            stageDirection: "Con serenità innocente",
+            audioUrl: "/audio/s5/s5_l3_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "No tenim caixa forta, Hugo. Guardem les monedes en una llauna de galetes amb un dibuix de gatet.",
+            stageDirection: "Amb serenor innocent",
+            audioUrl: "/audio/s5/s5_l3_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Nu avem seif, Hugo. Ținem monedele într-o cutie de biscuiți cu un desen cu pisicuță.",
+            stageDirection: "Cu o seninătate inocentă",
+            audioUrl: "/audio/s5/s5_l3_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Non temos caixa forte, Hugo. Gardamos as moedas nunha lata de galletas cun debuxo dun gatiño.",
+            stageDirection: "Con serenidade inocente",
+            audioUrl: "/audio/s5/s5_l3_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Avèm pas de còfre-fòrt, Hugo. Gardam las pèças dins una bóstia de biscuits amb un dessenh de caton.",
+            stageDirection: "Amb una serenitat innocenta",
+            audioUrl: "/audio/s5/s5_l3_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Wir haben gar keinen Safe, Hugo. Wir bewahren die Münzen in einer Keksdose mit einem Kätzchenmuster auf.",
+            stageDirection: "Mit unschuldiger Gelassenheit",
+            audioUrl: "/audio/s5/s5_l3_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Mir händ doch gar kein Tresor, Hugo. Mir händ d'Münze inere Guetzlidose mit eme Chätzli druff.",
+            stageDirection: "Mit unschuldiger Glasseheit",
+            audioUrl: "/audio/s5/s5_l3_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "We hebben helemaal geen kluis, Hugo. We bewaren de munten in een koektrommel met een poesje erop.",
+            stageDirection: "Met onschuldige kalmte",
+            audioUrl: "/audio/s5/s5_l3_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Vi har ikke noe pengeskap, Hugo. Vi oppbevarer myntene i en kakeboks med bilde av en kattunge.",
+            stageDirection: "Med uskyldig ro",
+            audioUrl: "/audio/s5/s5_l3_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Vi har inget kassaskåp, Hugo. Vi har mynten i en kakburk med en bild på en kattunge.",
+            stageDirection: "Med oskyldigt lugn",
+            audioUrl: "/audio/s5/s5_l3_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Vi har ikke noget pengeskab, Hugo. Vi opbevarer mønterne i en kagedåse med et billede af en killing.",
+            stageDirection: "Med uskyldig ro",
+            audioUrl: "/audio/s5/s5_l3_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "У нас нет сейфа, Уго. Мы храним монеты в жестянке из-под печенья с котиком.",
+            stageDirection: "С невинным спокойствием",
+            audioUrl: "/audio/s5/s5_l3_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "У нас немає сейфа, Уго. Ми тримаємо монети в бляшанці з-під печива з котиком.",
+            stageDirection: "З невинним спокоєм",
+            audioUrl: "/audio/s5/s5_l3_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Nie mamy sejfu, Hugo. Monety trzymamy w puszce po ciastkach z rysunkiem kotka.",
+            stageDirection: "Z niewinnym spokojem",
+            audioUrl: "/audio/s5/s5_l3_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "My nemáme žádný trezor, Hugo. Mince dáváme do plechovky od sušenek s koťátkem.",
+            stageDirection: "S nevinným klidem",
+            audioUrl: "/audio/s5/s5_l3_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Nemamo sef, Hugo. Kovanice čuvamo u limenci za kekse s crtežom mačića.",
+            stageDirection: "S nevinom smirenošću",
+            audioUrl: "/audio/s5/s5_l3_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Meillä ei ole kassakaappia, Hugo. Säilytämme kolikot keksirasiassa, jossa on kissanpennun kuva.",
+            stageDirection: "Viattoman rauhallisesti",
+            audioUrl: "/audio/s5/s5_l3_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Nincs is széfünk, Hugó. Az aprópénzt egy kiscicás kekszesdobozban tartjuk.",
+            stageDirection: "Ártatlan nyugalommal",
+            audioUrl: "/audio/s5/s5_l3_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Ez daukagu kutxa gotorrik, Hugo. Txanponak katutxo baten marrazkia duen galleta-lata batean gordetzen ditugu.",
+            stageDirection: "Lasaitasun xaloarekin",
+            audioUrl: "/audio/s5/s5_l3_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Bizim kasamız yok ki Hugo. Bozuk paraları üstünde kedi resmi olan bisküvi kutusunda tutuyoruz.",
+            stageDirection: "Masum bir sakinlikle",
+            audioUrl: "/audio/s5/s5_l3_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "ウーゴ、うちには金庫なんてないわよ。小銭は子猫の絵がついたクッキーの缶に入れているの。",
+            stageDirection: "無邪気で落ち着いた様子で",
+            audioUrl: "/audio/s5/s5_l3_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "雨果，我们根本没有保险柜。零钱都装在印着小猫图案的饼干盒里。",
+            stageDirection: "天真而平静",
+            audioUrl: "/audio/s5/s5_l3_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "雨果，我哋邊有保險箱呀。啲散銀不嬲擺喺印咗貓仔圖案嘅曲奇餅罐入面。",
+            stageDirection: "好天真淡定噉講",
+            audioUrl: "/audio/s5/s5_l3_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "위고, 우린 금고 같은 거 없어. 동전은 아기 고양이 그림이 있는 쿠키 틴케이스에 넣어두잖아.",
+            stageDirection: "순진하고 태연하게",
+            audioUrl: "/audio/s5/s5_l3_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "ليس لدينا خزنة يا هوغو. نحن نحتفظ بالعملات المعدنية في علبة بسكويت عليها رسم قطة صغيرة.",
+            stageDirection: "بهدوء بريء",
+            audioUrl: "/audio/s5/s5_l3_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "אין לנו כספת, הוגו. אנחנו שומרים את המטבעות בקופסת עוגיות עם ציור של חתלתול.",
+            stageDirection: "ברוגע תמים",
+            audioUrl: "/audio/s5/s5_l3_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatico.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "We don't have a safe, Hugo. We keep the coins in a cookie tin with a picture of a kitten.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-US.mp3"
+          },
+          "en-GB": {
+            text: "We don't have a safe, Hugo. We keep the coins in a biscuit tin with a kitten on it.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "We dinnae have a safe, Hugo. We keep the coins in a biscuit tin wi' a wee kitten picture.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "We ain't got no safe, Hugo. We keep our coins in a cookie tin with a little kitten on it.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "We don't have a safe at all, Hugo. We keep the coins in a biscuit tin with a kitten pictured on it.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "We don't have a safe, Hugo. We keep the coins in a biscuit tin with a kitten on it.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "We don't have a safe, Hugo. We keep our coins in a biscuit tin with a cute kitten picture.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "We don't have a safe, Hugo. We keep the coins in a biscuit tin with a picture of a kitten.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "We no get safe, Hugo. We dey keep the coins inside biscuit tin with pussycat picture.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "We do not have any safe, Hugo. We keep the coins in a biscuit tin having a kitten picture.",
+            stageDirection: "With innocent serenity",
+            audioUrl: "/audio/s5/s5_l3_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Nous n'avons aucun coffre-fort, Hugo. L'argent est gardé dans une boîte de biscuits avec l'image d'un chaton.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Hugo, il n'y a pas de coffre-fort ! Nos pièces sont dans une boîte à gâteaux avec un chaton dessus.",
+            stageDirection: "Avec une sérénité innocente",
+            audioUrl: "/audio/s5/s5_l3_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Nós não temos cofre nenhum, Hugo. As moedas estão numa lata de bolachas com desenho de gatinho.",
+            stageDirection: "Com serenidade inocente",
+            audioUrl: "/audio/s5/s5_l3_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Não temos cofre, Hugo. As moedas estão guardadas numa lata de bolachas com a figura dum gatinho.",
+            stageDirection: "Com serenidade inocente",
+            audioUrl: "/audio/s5/s5_l3_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "We hebben geen kluis, Hugo. We bewaren het kleingeld in een koekjesdoos met een kitten erop.",
+            stageDirection: "Met onschuldige kalmte",
+            audioUrl: "/audio/s5/s5_l3_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "ما عندنا خزنة يا هوغو. مخلين الفلوس في علبة بسكوت عليها رسمة بسة صغيرة.",
+            stageDirection: "بهدوء بريء",
+            audioUrl: "/audio/s5/s5_l3_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "إحنا معندناش خزنة يا هوجو. إحنا حاطين الفكة في علبة بسكوت مرسوم عليها قطة صغيرة.",
+            stageDirection: "بهدوء بريء",
+            audioUrl: "/audio/s5/s5_l3_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "راه ما عندناش كوفر فور يا هوغو. الفلوس ديرينها فبواطة ديال البسكوي فيها تصويرة قطيطة.",
+            stageDirection: "بهدوء وبراءة",
+            audioUrl: "/audio/s5/s5_l3_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "ما عنا خزنة يا هوغو. إحنا حاطين الفراطة بعلبة بسكوت عليها صورة بسينة صغيرة.",
+            stageDirection: "بهدوء وبراءة",
+            audioUrl: "/audio/s5/s5_l3_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "ما عندنا قاصة يا هوغو. الخردة مخليها بقوطية بسكت مرسوم عليها بزونة زغيرة.",
+            stageDirection: "بهدوء وبراءة",
+            audioUrl: "/audio/s5/s5_l3_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "雨果，我們根本沒有保險箱。零錢都放在印著小貓圖案的餅乾鐵盒裡。",
+            stageDirection: "天真而平靜",
+            audioUrl: "/audio/s5/s5_l3_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "हमारे पास कोई तिजोरी नहीं है, ह्यूगो। हम सिक्के बिल्ली के बच्चे के चित्र वाले बिस्कुट के डिब्बे में रखते हैं।",
+            stageDirection: "मासूमियत भरी शांति से",
+            audioUrl: "/audio/s5/s5_l3_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "ہمارے پاس کوئی تجوری نہیں ہے، ہیوگو۔ ہم سکے بلی کے بچے کی تصویر والے بسکٹ کے ڈبے میں رکھتے ہیں۔",
+            stageDirection: "معصومانہ سکون سے",
+            audioUrl: "/audio/s5/s5_l3_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "আমাদের কোনো সিন্দুক নেই, হুগো। আমরা বিড়ালছানার ছবি আঁকা বিস্কুটের কৌটোয় খুচরো পয়সা রাখি।",
+            stageDirection: "নিষ্পাপ শান্ত গলায়",
+            audioUrl: "/audio/s5/s5_l3_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਸਾਡੇ ਕੋਲ ਕੋਈ ਤਿਜੋਰੀ ਨਹੀਂ ਹੈ, ਹਿਊਗੋ। ਅਸੀਂ ਸਿੱਕੇ ਬਿੱਲੀ ਦੇ ਬੱਚੇ ਦੀ ਤਸਵੀਰ ਵਾਲੇ ਬਿਸਕੁਟ ਦੇ ਡੱਬੇ ਵਿੱਚ ਰੱਖਦੇ ਹਾਂ।",
+            stageDirection: "ਮਾਸੂਮ ਸ਼ਾਂਤੀ ਨਾਲ",
+            audioUrl: "/audio/s5/s5_l3_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "આપણી પાસે કોઈ તિજોરી નથી, હ્યુગો. આપણે સિક્કા બિલાડીના બચ્ચાના ચિત્રવાળા બિસ્કિટના ડબ્બામાં રાખીએ છીએ.",
+            stageDirection: "નિર્દોષ શાંતિથી",
+            audioUrl: "/audio/s5/s5_l3_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "आपल्याकडे तिजोरी नाही, ह्युगो. आपण नाणी मांजराचे पिल्लू असलेल्या बिस्किटांच्या डब्यात ठेवतो.",
+            stageDirection: "निरागस शांततेने",
+            audioUrl: "/audio/s5/s5_l3_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "நம்மிடம் பெட்டகம் இல்லை ஹியூகோ. பூனைக்குட்டி படம் போட்ட பிஸ்கட் டப்பாவில் தான் நாணயங்களை வைத்திருக்கிறோம்.",
+            stageDirection: "அப்பாவித்தனமான அமைதியுடன்",
+            audioUrl: "/audio/s5/s5_l3_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "మన దగ్గర సేఫ్ లేదు హ్యూగో. మనం నాణేలను పిల్లిపిల్ల బొమ్మ ఉన్న బిస్కెట్ డబ్బాలో ఉంచుతాము.",
+            stageDirection: "అమాయకపు ప్రశాంతతతో",
+            audioUrl: "/audio/s5/s5_l3_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ನಮ್ಮಲ್ಲಿ ಯಾವುದೇ ಸೇಫ್ ಇಲ್ಲ ಹ್ಯೂಗೋ. ನಾವು ನಾಣ್ಯಗಳನ್ನು ಬೆಕ್ಕಿನ ಮರಿಯ ಚಿತ್ರವಿರುವ ಬಿಸ್ಕತ್ ಡಬ್ಬದಲ್ಲಿ ಇಡುತ್ತೇವೆ.",
+            stageDirection: "ಮುಗ್ಧ ಶಾಂತತೆಯಿಂದ",
+            audioUrl: "/audio/s5/s5_l3_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "നമുക്ക് സേഫൊന്നുമില്ല ഹ്യൂഗോ. പൂച്ചക്കുട്ടിയുടെ ചിത്രമുള്ള ബിസ്കറ്റ് ടിന്നിലാണ് നാം നാണയങ്ങൾ സൂക്ഷിക്കുന്നത്.",
+            stageDirection: "നിഷ്കളങ്കമായ ശാന്തതയോടെ",
+            audioUrl: "/audio/s5/s5_l3_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Chúng ta làm gì có két sắt đâu Hugo. Tiền xu đựng trong hộp bánh quy hình con mèo con kia kìa.",
+            stageDirection: "Với vẻ bình thản ngây thơ",
+            audioUrl: "/audio/s5/s5_l3_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "เราไม่มีตู้เซฟหรอกฮูโก เราเก็บเหรียญไว้ในกล่องคุกกี้ลายลูกแมวต่างหาก",
+            stageDirection: "ด้วยความสงบนิ่งอย่างไร้เดียงสา",
+            audioUrl: "/audio/s5/s5_l3_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Kita tidak punya brankas, Hugo. Kita menyimpan koin-koin di kaleng biskuit bergambar anak kucing.",
+            stageDirection: "Dengan ketenangan yang polos",
+            audioUrl: "/audio/s5/s5_l3_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Kita tak ada peti besi, Hugo. Kita simpan syiling dalam tin biskut yang ada gambar anak kucing.",
+            stageDirection: "Dengan tenang dan bersahaja",
+            audioUrl: "/audio/s5/s5_l3_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Hatuna sanduku la pesa, Hugo. Tunaweka sarafu kwenye kopo la biskuti lenye picha ya mtoto wa paka.",
+            stageDirection: "Kwa utulivu wa kutokuwa na hatia",
+            audioUrl: "/audio/s5/s5_l3_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Ndaipóri ñandéve kofre, Hugo. Ñongatu pe pirapire peteĩ mbujape ryru mbarakaja'i ra'anga orekóvape.",
+            stageDirection: "Py'aguapy marangatu reheve",
+            audioUrl: "/audio/s5/s5_l3_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Manam qullqi waqaychanayuqchu kanchik, Hugo. Qullqichakunataqa galleta latachapim misi wawachapa llimp'isqanpi churaniku.",
+            stageDirection: "Hawka kay chunlla sonqowan",
+            audioUrl: "/audio/s5/s5_l3_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Janiw kaxaniptanxti, Hugo. Phisi wawa uñstat galleta latajaruw qullqinakx imtana.",
+            stageDirection: "Ch'uxña llamp'u arumpi",
+            audioUrl: "/audio/s5/s5_l3_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Amo ticpiyah caja fuerte, Hugo. Titlaliah tomin ipan ce galleta comitl tlen quipiya ce mizton tlahcuiloli.",
+            stageDirection: "Ica yolsehuiliztli",
+            audioUrl: "/audio/s5/s5_l3_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Béésh bąąh ditiinígíí doo dahólǫ́ǫ da, Hugo. Béeso łaʼ mósí yázhí bikááʼ bistiʼígíí bááh łikaní biih biʼnił.",
+            stageDirection: "Tʼáá hazhóʼógo",
+            audioUrl: "/audio/s5/s5_l3_nv-US.mp3"
           }
         }
       },
@@ -9321,10 +10596,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Acentuando el dramatismo con una leve sonrisa cómplice",
         expression: "ironic",
         translations: {
+          "fr-CH": {
+            text: "La porte grinça lentement. Le redoutable suspect glissa vers le comptoir d'un pas résolu.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "La porte a grincé lentement. Le redoutable suspect s'est avancé vers le comptoir d'un pas assuré.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-BE.mp3"
+          },
           "es-ES": {
             text: "La puerta crujió lentamente. El temible sospechoso se deslizó hacia el mostrador a paso firme.",
             stageDirection: "Con suspense teatral",
             audioUrl: "/audio/s5/s5_l4_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Η πόρτα έτριξε αργά. Ο τρομερός ύποπτος γλίστρησε προς τον πάγκο με σταθερό βήμα.",
+            stageDirection: "Με θεατρική αγωνία",
+            audioUrl: "/audio/s5/s5_l4_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "La puerta rechinó despacito. El temible sospechoso avanzó hacia el mostrador con paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "La puerta rechinó despacio. El temible sospechoso se mandó hacia el mostrador a paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "La puerta chilló despacito. El temible sospechoso se deslizó hacia el mostrador con paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "La puerta rechinó despacio. El temible sospechoso caminó hacia el mostrador con paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "La puerta rechinó despacio. El temible sospechoso se deslizó hacia el mostrador a paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "La porte grinça lentement. Le redoutable suspect glissa vers le comptoir d'un pas ferme.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "La porte a grincé tranquillement. Le redoutable suspect s'est glissé vers le comptoir d'un pas ferme.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "La porte a fait un petit bruit doucement. L'homme suspect là a marché vers le comptoir sans trembler.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "A porta rangeu devagar. O temível suspeito deslizou em direção ao balcão com passos firmes.",
+            stageDirection: "Com suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "A porta rangeu lentamente. O temível suspeito deslizou até ao balcão com passos firmes.",
+            stageDirection: "Com suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "La porta cigolò lentamente. Il temibile sospetto scivolò verso il bancone a passo deciso.",
+            stageDirection: "Con suspense teatrale",
+            audioUrl: "/audio/s5/s5_l4_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "La porta va grinyolar lentament. El temible sospitós va lliscar cap al taulell amb pas ferm.",
+            stageDirection: "Amb suspens teatral",
+            audioUrl: "/audio/s5/s5_l4_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Ușa a scârțâit încet. Înfricoșătorul suspect a alunecat spre tejghea cu pași siguri.",
+            stageDirection: "Cu suspans teatral",
+            audioUrl: "/audio/s5/s5_l4_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "A porta renxeu paseniño. O temible sospeitoso deslizouse cara ao mostrador con paso firme.",
+            stageDirection: "Con suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "La pòrta crinclet lentament. Lo crentable suspèct s'avancèt vèrs lo comptador d'un pas fèrm.",
+            stageDirection: "Amb un suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Die Tür knarrte langsam. Der furchterregende Verdächtige glitt mit festem Schritt auf die Theke zu.",
+            stageDirection: "Mit theatralischer Spannung",
+            audioUrl: "/audio/s5/s5_l4_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "D'Türe hät langsam gquiitscht. Dä gföörlich Verdächtigi isch mit feschtem Schritt an Tresen gloffe.",
+            stageDirection: "Mit theatralischer Spaanig",
+            audioUrl: "/audio/s5/s5_l4_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "De deur kraakte langzaam. De angstaanjagende verdachte schreed met vaste pas richting de toonbank.",
+            stageDirection: "Met theatrale spanning",
+            audioUrl: "/audio/s5/s5_l4_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Døren knirket sakte. Den fryktinngytende mistenkte beveget seg mot disken med faste skritt.",
+            stageDirection: "Med teatralsk spenning",
+            audioUrl: "/audio/s5/s5_l4_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Dörren gnisslade långsamt. Den skräckinjagande misstänkte gled mot disken med bestämda steg.",
+            stageDirection: "Med teatralisk spänning",
+            audioUrl: "/audio/s5/s5_l4_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Døren knirkede langsomt. Den frygtindgydende mistænkte gled hen mod disken med faste skridt.",
+            stageDirection: "Med teatralsk spænding",
+            audioUrl: "/audio/s5/s5_l4_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Дверь медленно скрипнула. Грозный подозреваемый твёрдым шагом двинулся к прилавку.",
+            stageDirection: "С театральным напряжением",
+            audioUrl: "/audio/s5/s5_l4_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Двері повільно рипнули. Грізний підозрюваний упевненим кроком попрямував до прилавка.",
+            stageDirection: "З театральним напруженням",
+            audioUrl: "/audio/s5/s5_l4_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Drzwi zaskrzypiały powoli. Groźny podejrzany pewnym krokiem zbliżył się do lady.",
+            stageDirection: "Z teatralnym napięciem",
+            audioUrl: "/audio/s5/s5_l4_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Dveře pomalu zavrzaly. Hrozivý podezřelý pevným krokem zamířil k pultu.",
+            stageDirection: "S divadelním napětím",
+            audioUrl: "/audio/s5/s5_l4_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Vrata su polako zaškripala. Strašni sumnjivac kliznuo je prema pultu čvrstim korakom.",
+            stageDirection: "S dramatičnom napetošću",
+            audioUrl: "/audio/s5/s5_l4_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Ovi narahti hitaasti. Pelottava epäilty liukui kohti tiskiä vakain askelin.",
+            stageDirection: "Teatraalisella jännityksellä",
+            audioUrl: "/audio/s5/s5_l4_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Az ajtó lassan megnyikordult. A félelmetes gyanúsított határozott léptekkel siklott a pult felé.",
+            stageDirection: "Színházi feszültséggel",
+            audioUrl: "/audio/s5/s5_l4_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Ateak emeki karraska egin zuen. Susmagarri beldurgarria urrats irmoez lerratu zen mostradorerantz.",
+            stageDirection: "Tentsio antzerkizalez",
+            audioUrl: "/audio/s5/s5_l4_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Kapı yavaşça gıcırdadı. Korkutucu şüpheli sağlam adımlarla tezgâha doğru süzüldü.",
+            stageDirection: "Tiyatrovari bir gerilimle",
+            audioUrl: "/audio/s5/s5_l4_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "ドアがゆっくりときしんだ。恐るべき容疑者は確かな足取りでカウンターへと滑り込んだ。",
+            stageDirection: "劇的なサスペンスを込めて",
+            audioUrl: "/audio/s5/s5_l4_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "门缓缓吱呀作响。那个可怕的可疑分子脚步沉稳地滑向柜台。",
+            stageDirection: "带着戏剧性的悬疑感",
+            audioUrl: "/audio/s5/s5_l4_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "度門好慢噉吱吱叫。嗰個咁得人驚嘅疑犯，邁開好定嘅步伐行去櫃面。",
+            stageDirection: "好有戲劇張力咁講",
+            audioUrl: "/audio/s5/s5_l4_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "문이 천천히 삐걱거렸다. 무시무시한 용의자는 흔들림 없는 발걸음으로 카운터를 향해 다가섰다.",
+            stageDirection: "연극적인 긴장감을 담아",
+            audioUrl: "/audio/s5/s5_l4_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "صر الباب ببطء. انزلق المشتبه به المخيف نحو المنضدة بخطوات ثابتة.",
+            stageDirection: "بتشويق مسرحي",
+            audioUrl: "/audio/s5/s5_l4_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "הדלת חרקה באיטיות. החשוד האימתני החליק לעבר הדלפק בצעדים בטוחים.",
+            stageDirection: "במתח תיאטרלי",
+            audioUrl: "/audio/s5/s5_l4_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "La puerta rechinó despacito. El temible sospechoso se acercó al mostrador con paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "La puerta crujió despacito. El temible sospechoso se deslizó hacia el mesón con paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "La puerta rechinó lentamente. El temible sospechoso avanzó hacia el mostrador a paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "La puerta rechinó despacito. El temible sospechoso caminó hacia el mostrador a paso firme.",
+            stageDirection: "Con suspenso teatral",
+            audioUrl: "/audio/s5/s5_l4_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "La puerta crujió lentamente. El temible sospechoso se acercó al mostrador con paso firme.",
+            stageDirection: "Con suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "The door creaked slowly. The fearsome suspect glided toward the counter with a steady stride.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-US.mp3"
+          },
+          "en-GB": {
+            text: "The door creaked open slowly. The menacing suspect glided towards the counter with purposeful steps.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "The door creaked slowly open. The scary suspect slid towards the counter wi' steady steps.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "The door gave a slow creak. That spooky suspect glided right on up to the counter with steady steps.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "The door gave an awful slow creak. The terrifying suspect strode towards the counter steady as you like.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "The door gave a slow creak. The scary-looking suspect strode up to the counter with steady steps.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "The door creaked open slowly. The eerie suspect made their way towards the counter with firm steps.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "The door creaked slowly. The intimidating suspect glided toward the counter with a steady stride.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "The door make slow sound krrrr. The fearful suspect just dey waka enter counter with strong legs.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "The door creaked open slowly. The menacing suspect approached the counter with very steady steps.",
+            stageDirection: "With theatrical suspense",
+            audioUrl: "/audio/s5/s5_l4_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "La porte a grincé tout doucement. Le suspect terrifiant s'est dirigé vers le comptoir d'une démarche ferme.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "La porte a grincé doucement. Le dangereux suspect a avancé droit vers le comptoir.",
+            stageDirection: "Avec un suspense théâtral",
+            audioUrl: "/audio/s5/s5_l4_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "A porta rangeu devagar. O temível suspeito deslizou até ao balcão num passo firme e decidido.",
+            stageDirection: "Com suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "A porta rangeu lentamente. O temível suspeito caminhou firme em direção ao balcão.",
+            stageDirection: "Com suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "De deur kraakte traag. De vreeswekkende verdachte stapte met vaste tred naar de toog.",
+            stageDirection: "Met theatrale spanning",
+            audioUrl: "/audio/s5/s5_l4_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "صك الباب بصوت هاديء ومخيف. والمشتبه فيه مشى باتجاه الكاونتر بخطوات واثقة.",
+            stageDirection: "بتشويق مسرحي",
+            audioUrl: "/audio/s5/s5_l4_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "الباب زَيّق براحة. المشتبه فيه المرعب قرب على الكاونتر بخطوات ثابتة.",
+            stageDirection: "بتشويق مسرحي",
+            audioUrl: "/audio/s5/s5_l4_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "تزيڭ الباب بشوية. والمشتبه به اللي كايخلع تمشى لعند الكونتوار بخطوة تابتة.",
+            stageDirection: "بتشويق مسرحي",
+            audioUrl: "/audio/s5/s5_l4_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "الباب ززق شوي شوي. المشتبه فيه اللي بيخوف قرب ع الكاونتر بخطوة واثقة.",
+            stageDirection: "بتشويق مسرحي",
+            audioUrl: "/audio/s5/s5_l4_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "الباب طلع صوت شخير بطيء. المشتبه بيه المخيف تقدم ع الميز بخطوة ثابتة.",
+            stageDirection: "بتشويق مسرحي",
+            audioUrl: "/audio/s5/s5_l4_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "門緩緩發出吱呀聲。那個令人膽寒的嫌犯腳步沉穩地滑向櫃檯。",
+            stageDirection: "帶著戲劇性的懸疑感",
+            audioUrl: "/audio/s5/s5_l4_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "दरवाज़ा धीरे से चरमराया। वह भयानक संदिग्ध दृढ़ कदमों से काउंटर की ओर बढ़ा।",
+            stageDirection: "नाटकीय रोमांच के साथ",
+            audioUrl: "/audio/s5/s5_l4_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "دروازہ آہستہ سے چرچرایا۔ وہ خوفناک مشتبہ شخص پختہ قدموں سے کاؤنٹر کی طرف بڑھا۔",
+            stageDirection: "ڈرامائی تجسس کے ساتھ",
+            audioUrl: "/audio/s5/s5_l4_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "দরজাটা ধীরে ধীরে ক্যাঁচক্যাঁচ করে উঠল। সেই ভয়ঙ্কর সন্দেহভাজন দৃঢ় পদক্ষেপে কাউন্টারের দিকে এগিয়ে গেল।",
+            stageDirection: "নাটকীয় রোমাঞ্চের সাথে",
+            audioUrl: "/audio/s5/s5_l4_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਦਰਵਾਜ਼ਾ ਹੌਲੀ-ਹੌਲੀ ਚੀਕਿਆ। ਉਹ ਡਰਾਉਣਾ ਸ਼ੱਕੀ ਪੱਕੇ ਕਦਮਾਂ ਨਾਲ ਕਾਊਂਟਰ ਵੱਲ ਵਧਿਆ।",
+            stageDirection: "ਨਾਟਕੀ ਉਤਸੁਕਤਾ ਨਾਲ",
+            audioUrl: "/audio/s5/s5_l4_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "દરવાજો ધીમેથી કડકડ્યો. એ ભયાનક શંકાસ્પદ મક્કમ ડગલે કાઉન્ટર તરફ સરક્યો.",
+            stageDirection: "નાટકીય રોમાંચ સાથે",
+            audioUrl: "/audio/s5/s5_l4_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "दाराने हळूच कर्कश आवाज केला. तो भयानक संशयित ठाम पावलांनी काउंटरकडे सरकला.",
+            stageDirection: "नाट्यमय उत्कंठेने",
+            audioUrl: "/audio/s5/s5_l4_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "கதவு மெதுவாக கீச்சிட்டது. பயமுறுத்தும் அந்த சந்தேக நபர் உறுதியான நடையுடன் மேசையை நோக்கி நகர்ந்தார்.",
+            stageDirection: "நாடக பாணியிலான விறுவிறுப்புடன்",
+            audioUrl: "/audio/s5/s5_l4_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "తలుపు నెమ్మదిగా కీచుమని శబ్దం చేసింది. ఆ భయంకరమైన అనుమానితుడు స్థిరమైన అడుగులతో కౌంటర్ వైపు వెళ్లాడు.",
+            stageDirection: "నాటకీయ ఉత్కంఠతో",
+            audioUrl: "/audio/s5/s5_l4_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಬಾಗಿಲು ನಿಧಾನವಾಗಿ ಕೀರಲು ಶಬ್ದ ಮಾಡಿತು. ಆ ಭಯಾನಕ ಶಂಕಿತ ಸ್ಥಿರ ಹೆಜ್ಜೆಯಿಟ್ಟು ಕೌಂಟರ್ ಕಡೆಗೆ ಜಾರಿದನು.",
+            stageDirection: "ನಾಟಕೀಯ ಕುತೂಹಲದೊಂದಿಗೆ",
+            audioUrl: "/audio/s5/s5_l4_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "വാതിൽ സാവധാനം ശബ്ദമുണ്ടാക്കി. ഭയപ്പെടുത്തുന്ന സംശയിതൻ ദൃഢമായ ചുവടുകളോടെ കൗണ്ടറിലേക്ക് നീങ്ങി.",
+            stageDirection: "നാടകീയമായ ഉദ്വേഗത്തോടെ",
+            audioUrl: "/audio/s5/s5_l4_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Cánh cửa cọt kẹt mở ra thật chậm. Kẻ khả nghi đáng sợ bước những bước vững chắc tiến về phía quầy.",
+            stageDirection: "Đầy kịch tính nghẹt thở",
+            audioUrl: "/audio/s5/s5_l4_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "ประตูส่งเสียงเอี๊ยดอ๊าดช้า ๆ ผู้ต้องสงสัยผู้น่าเกรงขามก้าวเท้าอย่างมั่นคงตรงไปยังเคาน์เตอร์",
+            stageDirection: "ด้วยความตื่นเต้นเร้าใจราวกับละคร",
+            audioUrl: "/audio/s5/s5_l4_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Pintu berderit perlahan. Tersangka yang menakutkan itu melangkah pasti menuju meja kasir.",
+            stageDirection: "Dengan ketegangan teatrikal",
+            audioUrl: "/audio/s5/s5_l4_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Pintu berkeriut perlahan-lahan. Suspek yang menggerunkan itu meluncur ke arah kaunter dengan langkah yakin.",
+            stageDirection: "Penuh ketegangan teater",
+            audioUrl: "/audio/s5/s5_l4_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Mlango ulilia polepole. Mshukiwa huyo wa kutisha aliteleza kuelekea kaunta kwa hatua thabiti.",
+            stageDirection: "Kwa hisia kali za tamthilia",
+            audioUrl: "/audio/s5/s5_l4_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Pe okẽ osyryrýi mbeguekatu. Upe kuimba'e kyhyjerã oñemboja mesape py'aguasúpe.",
+            stageDirection: "Py'atarova guasu reheve",
+            audioUrl: "/audio/s5/s5_l4_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Punkuqa suysurirqan allillamanta. Chay manchay runaqa takyasqa purispan counterman chimpan.",
+            stageDirection: "Manchay kusi llantuywan",
+            audioUrl: "/audio/s5/s5_l4_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Punkux k'achat qhispiriña axtayäna. Uka jaqix ch'allxtasisa ch'amani kayunakampi alxawi uñsti.",
+            stageDirection: "Axtaña samkanakampi",
+            audioUrl: "/audio/s5/s5_l4_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Tlatzaccapantzintl tlachayauhyocatzin. Tlacatl tlen momauhtia motlalia yacatlalpan ica tlahuel chicahuac.",
+            stageDirection: "Ica mahuiztic tlahtolli",
+            audioUrl: "/audio/s5/s5_l4_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Dáádílkał tsʼídá hazhóʼó yitsʼaʼ. Diné ayóo bééhániihígíí bił hadoolgodgo bichʼįʼ doogááł.",
+            stageDirection: "Baa dahatʼéhígíí bee",
+            audioUrl: "/audio/s5/s5_l4_nv-US.mp3"
           }
         }
       },
@@ -9334,10 +11034,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Sacando triunfalmente un paquete envuelto en papel dorado y gafas de sol",
         expression: "cheerful",
         translations: {
+          "fr-CH": {
+            text: "Que personne ne bouge ! J'apporte le gâteau au chocolat le plus dangereux de la ville pour fêter ma retraite.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Que personne ne bouge ! J'apporte la tarte au chocolat la plus dangereuse de la ville pour fêter ma pension.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-BE.mp3"
+          },
           "es-ES": {
             text: "¡Que nadie se mueva! Traigo la tarta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
             stageDirection: "Con voz potente y festiva",
             audioUrl: "/audio/s5/s5_l5_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Κανείς να μην κουνηθεί! Έφερα την πιο επικίνδυνη τούρτα σοκολάτας της πόλης για να γιορτάσω τη συνταξιοδότησή μου.",
+            stageDirection: "Με δυνατή και γιορτινή φωνή",
+            audioUrl: "/audio/s5/s5_l5_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "¡Que nadie se mueva! Traigo el pastel de chocolate más peligroso de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "¡Que nadie se mueva! Traigo la torta de chocolate más peligrosa de la ciudad para festejar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "¡Que nadie se mueva! Traigo el bizcocho de chocolate más peligroso de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "¡Que nadie se mueva! Traigo el bizcocho de chocolate más peligroso de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "¡Que nadie se mueva! Traigo la torta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Que personne ne bouge ! J'apporte le gâteau au chocolat le plus dangereux de la ville pour fêter ma retraite.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Que personne bouge ! J'amène le gâteau au chocolat le plus dangereux en ville pour fêter ma retraite.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Personne ne bouge deh ! J'ai envoyé le gâteau au chocolat le plus dangereux d'Abidjan pour fêter ma retraite.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Ninguém se mexa! Eu trouxe o bolo de chocolate mais perigoso da cidade para comemorar a minha aposentadoria.",
+            stageDirection: "Com voz potente e festiva",
+            audioUrl: "/audio/s5/s5_l5_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Ninguém se mexa! Trago o bolo de chocolate mais perigoso da cidade para celebrar a minha reforma.",
+            stageDirection: "Com voz potente e festiva",
+            audioUrl: "/audio/s5/s5_l5_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Nessuno si muova! Porto la torta al cioccolato più pericolosa della città per festeggiare la mia pensione.",
+            stageDirection: "Con voce potente e festosa",
+            audioUrl: "/audio/s5/s5_l5_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Que ningú no es mogui! Porto el pastís de xocolata més perillós de la ciutat per celebrar la meva jubilació.",
+            stageDirection: "Amb veu potent i festiva",
+            audioUrl: "/audio/s5/s5_l5_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Să nu se miște nimeni! Aduc cel mai periculos tort de ciocolată din oraș pentru a-mi sărbători pensionarea.",
+            stageDirection: "Cu o voce puternică și festivă",
+            audioUrl: "/audio/s5/s5_l5_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Que ninguén se mova! Traio a tarta de chocolate máis perigosa da cidade para celebrar a miña xubilación.",
+            stageDirection: "Con voz potente e festiva",
+            audioUrl: "/audio/s5/s5_l5_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Que degun bolege pas ! Pòrti lo pastís de chocolat mai perilhós de la vila per celebrar ma retirada.",
+            stageDirection: "D'una votz poderosa e festiva",
+            audioUrl: "/audio/s5/s5_l5_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Niemand bewegt sich! Ich bringe die gefährlichste Schokoladentorte der Stadt, um meinen Ruhestand zu feiern.",
+            stageDirection: "Mit kräftiger, festlicher Stimme",
+            audioUrl: "/audio/s5/s5_l5_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Niemert bewegt sich! Ich bringe die gföörlichschti Schoggituurte vo de Stadt zum mini Pensionierig fiire.",
+            stageDirection: "Mit chräftiger, feschtlicher Stimm",
+            audioUrl: "/audio/s5/s5_l5_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Niemand beweegt! Ik breng de gevaarlijkste chocoladetaart van de stad mee om mijn pensioen te vieren.",
+            stageDirection: "Met krachtige, feestelijke stem",
+            audioUrl: "/audio/s5/s5_l5_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Ingen rører seg! Jeg har med byens farligste sjokoladekake for å feire min pensjonisttilværelse.",
+            stageDirection: "Med kraftig og festlig stemme",
+            audioUrl: "/audio/s5/s5_l5_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Ingen rör sig! Jag kommer med stadens farligaste chokladtårta för att fira min pensionering.",
+            stageDirection: "Med kraftfull och festlig röst",
+            audioUrl: "/audio/s5/s5_l5_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Ingen bevæger sig! Jeg har byens farligste chokoladekage med for at fejre min pension.",
+            stageDirection: "Med kraftfuld og festlig stemme",
+            audioUrl: "/audio/s5/s5_l5_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Всем стоять на местах! Я принёс самый опасный шоколадный торт в городе, чтобы отпраздновать выход на пенсию.",
+            stageDirection: "Мощным, праздничным голосом",
+            audioUrl: "/audio/s5/s5_l5_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Всім стояти на місцях! Я приніс найнебезпечніший шоколадний торт у місті, щоб відсвяткувати вихід на пенсію.",
+            stageDirection: "Міцним, святковим голосом",
+            audioUrl: "/audio/s5/s5_l5_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Niech nikt się nie rusza! Przynoszę najniebezpieczniejszy tort czekoladowy w mieście, by świętować przejście na emeryturę.",
+            stageDirection: "Donośnym, radosnym głosem",
+            audioUrl: "/audio/s5/s5_l5_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Nikdo se ani nehne! Nesu ten nejnebezpečnější čokoládový dort ve městě na oslavu mého odchodu do důchodu.",
+            stageDirection: "Hromovým a slavnostním hlasem",
+            audioUrl: "/audio/s5/s5_l5_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Nitko ni makac! Donosim najopasniju čokoladnu tortu u gradu kako bih proslavio odlazak u mirovinu.",
+            stageDirection: "Snažnim, slavljeničkim glasom",
+            audioUrl: "/audio/s5/s5_l5_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Kukaan ei liiku! Tuon kaupungin vaarallisimman suklaakakun juhlistaakseni eläkkeelle jäämistäni.",
+            stageDirection: "Voimakkaalla ja juhlavalla äänellä",
+            audioUrl: "/audio/s5/s5_l5_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Senki ne mozduljon! A város legveszélyesebb csokoládétortáját hoztam el, hogy megünnepeljem a nyugdíjba vonulásomat.",
+            stageDirection: "Harsány, ünnepi hangon",
+            audioUrl: "/audio/s5/s5_l5_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Inor ez mugitu! Hiriko txokolatezko tartarik arriskutsuena dakart nire erretirorako ospakizun gisa.",
+            stageDirection: "Ahots indartsu eta jaizalearekin",
+            audioUrl: "/audio/s5/s5_l5_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Kimse kıpırdamasın! Emekliliğimi kutlamak için şehrin en tehlikeli çikolatalı pastasını getirdim.",
+            stageDirection: "Gür ve neşeli bir ses tonuyla",
+            audioUrl: "/audio/s5/s5_l5_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "誰も動くな！退職を祝うために、この街で一番危険なチョコレートケーキを持ってきたぞ。",
+            stageDirection: "力強くお祝いの調子で",
+            audioUrl: "/audio/s5/s5_l5_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "谁都别动！我带来了全城最危险的巧克力蛋糕，来庆祝我光荣退休。",
+            stageDirection: "声如洪钟，充满喜气",
+            audioUrl: "/audio/s5/s5_l5_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "大家咪郁呀！我帶咗全城最危險嘅朱古力蛋糕嚟慶祝我退休呀。",
+            stageDirection: "中氣十足兼好開心噉講",
+            audioUrl: "/audio/s5/s5_l5_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "모두 꼼짝 마라! 내 은퇴를 축하하기 위해 도시에서 가장 위험한 초콜릿 케이크를 가져왔다.",
+            stageDirection: "우렁차고 흥겨운 목소리로",
+            audioUrl: "/audio/s5/s5_l5_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "لا يتحرك أحد! لقد أحضرت أخطر كعكة شوكولاتة في المدينة للاحتفال بتقاعدي.",
+            stageDirection: "بصوت قوي واحتفالي",
+            audioUrl: "/audio/s5/s5_l5_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "שאף אחד לא יזוז! הבאתי את עוגת השוקולד הכי מסוכנת בעיר כדי לחגוג את הפרישה שלי.",
+            stageDirection: "בקול חזק וחגיגי",
+            audioUrl: "/audio/s5/s5_l5_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "¡Que nadie se mueva! Traigo la torta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "¡Que nadie se mueva! Traigo la torta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "¡Que nadie se mueva! Traigo la torta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "¡Que nadie se mueva! Traigo el cake de chocolate más peligroso de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "¡Que nadie se mueva! Traigo la tarta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Nobody move! I bring the most dangerous chocolate cake in the city to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Nobody move! I bring the most dangerous chocolate cake in town to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Naebody move! Ah've brought the most dangerous chocolate cake in the toon tae celebrate mah retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Don't nobody move now! I brought the most dangerous chocolate cake in this whole city to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Nobody move a muscle! I've brought the most dangerous chocolate cake in the whole town to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Nobody move! I've brought the most dangerous chocolate cake in town to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Nobody move! I've got the most dangerous chocolate cake in town right here to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Nobody move! I brought the most dangerous chocolate cake in the city to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Make nobody move! I carry the most dangerous chocolate cake for this town to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Nobody move! I am bringing the most dangerous chocolate cake in the entire city to celebrate my retirement.",
+            stageDirection: "With a booming, festive voice",
+            audioUrl: "/audio/s5/s5_l5_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Que personne ne bouge ! J'apporte le gâteau au chocolat le plus puissant de la ville pour célébrer ma retraite.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Personne ne bouge ! Je viens avec le gâteau au chocolat le plus redoutable de la ville pour fêter ma retraite.",
+            stageDirection: "D'une voix puissante et festive",
+            audioUrl: "/audio/s5/s5_l5_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Ninguém mexe! Trago o bolo de chocolate mais potente da cidade para festejar a minha reforma.",
+            stageDirection: "Com voz potente e festiva",
+            audioUrl: "/audio/s5/s5_l5_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Ninguém se mexa! Trago o bolo de chocolate mais perigoso da cidade para celebrar a minha reforma.",
+            stageDirection: "Com voz potente e festiva",
+            audioUrl: "/audio/s5/s5_l5_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Niemand verroert! Ik breng de gevaarlijkste chocoladetaart van de stad mee om mijn pensioen te vieren.",
+            stageDirection: "Met krachtige, feestelijke stem",
+            audioUrl: "/audio/s5/s5_l5_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "ولا أحد يتحرك! جايب أخطر كيكة شوكولاتة بالمدينة عشان أحتفل بتقاعدي.",
+            stageDirection: "بصوت قوي وفرحان",
+            audioUrl: "/audio/s5/s5_l5_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "محدش يتحرك! أنا جايب أخطر تورتة شيكولاتة في البلد عشان أحتفل بخروجي على المعاش.",
+            stageDirection: "بصوت عالي وفرحان",
+            audioUrl: "/audio/s5/s5_l5_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "تا واحد ما يتحرك! راني جايب أخطر حلوى الشكلاط فالمدينة باش نحتفل بالروطريط ديالي.",
+            stageDirection: "بصوت قوي وفرحان",
+            audioUrl: "/audio/s5/s5_l5_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "ما حدا يتحرك! جايب أخطر كيكة شوكولاتة بالبلد مشان احتفل بتقاعدي.",
+            stageDirection: "بصوت قوي وفرحان",
+            audioUrl: "/audio/s5/s5_l5_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "ما حد يتحرك! جايب اخطر كيكة جوكليت بالمدينة حتى احتفل بتقاعدي.",
+            stageDirection: "بصوت قوي وفرحان",
+            audioUrl: "/audio/s5/s5_l5_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "誰都別動！我帶來了全城最危險的巧克力蛋糕，來慶祝我光榮退休。",
+            stageDirection: "聲如洪鐘，充滿喜氣",
+            audioUrl: "/audio/s5/s5_l5_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "कोई भी हिलेगा नहीं! मैं अपनी सेवानिवृत्ति का जश्न मनाने के लिए शहर का सबसे खतरनाक चॉकलेट केक लाया हूँ।",
+            stageDirection: "दमदार और उत्सवी आवाज़ में",
+            audioUrl: "/audio/s5/s5_l5_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "کوئی بھی نہ ہلے! میں اپنی ریٹائرمنٹ کا جشن منانے کے لیے شہر کا سب سے خطرناک چاکلیٹ کیک لایا ہوں۔",
+            stageDirection: "طاقتور اور پُرجوش آواز میں",
+            audioUrl: "/audio/s5/s5_l5_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "কেউ নড়বেন না! আমার অবসর উদযাপন করতে এই শহরের সবচেয়ে বিপজ্জনক চকোলেট কেক নিয়ে এসেছি।",
+            stageDirection: "গম্ভীর ও আনন্দঘন কণ্ঠে",
+            audioUrl: "/audio/s5/s5_l5_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਕੋਈ ਨਾ ਹਿੱਲੇ! ਮੈਂ ਆਪਣੀ ਰਿਟਾਇਰਮੈਂਟ ਮਨਾਉਣ ਲਈ ਸ਼ਹਿਰ ਦਾ ਸਭ ਤੋਂ ਖ਼ਤਰਨਾਕ ਚਾਕਲੇਟ ਕੇਕ ਲੈ ਕੇ ਆਇਆ ਹਾਂ।",
+            stageDirection: "ਦਮਦਾਰ ਅਤੇ ਜਸ਼ਨ ਵਾਲੀ ਆਵਾਜ਼ ਵਿੱਚ",
+            audioUrl: "/audio/s5/s5_l5_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "કોઈ હલશો નહીં! હું મારી નિવૃત્તિની ઉજવણી કરવા શહેરની સૌથી ખતરનાક ચોકલેટ કેક લાવ્યો છું.",
+            stageDirection: "બુલંદ અને ઉત્સવી અવાજમાં",
+            audioUrl: "/audio/s5/s5_l5_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "कोणीही हलणार नाही! मी माझ्या निवृत्तीचा आनंद साजरा करण्यासाठी शहरातील सर्वात धोकादायक चॉकलेट केक आणला आहे.",
+            stageDirection: "दमदार आणि उत्सवी आवाजात",
+            audioUrl: "/audio/s5/s5_l5_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "யாரும் அசையாதீர்கள்! எனது ஓய்வுபெறுதலைக் கொண்டாட இந்த ஊரிலேயே மிகவும் ஆபத்தான சாக்லேட் கேக்கை கொண்டு வந்திருக்கிறேன்.",
+            stageDirection: "கம்பீரமான மற்றும் பண்டிகைக் குரலில்",
+            audioUrl: "/audio/s5/s5_l5_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "ఎవరూ కదలవద్దు! నా పదవీ విరమణను జరుపుకోవడానికి నేను నగరంలోనే అత్యంత ప్రమాదకరమైన చాక్లెట్ కేక్‌ను తీసుకొచ్చాను.",
+            stageDirection: "గర్జించే మరియు పండుగ గొంతుతో",
+            audioUrl: "/audio/s5/s5_l5_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಯಾರೂ ಕದಲಬೇಡಿ! ನನ್ನ ನಿವೃತ್ತಿಯನ್ನು ಆಚರಿಸಲು ಈ ನಗರದ ಅತ್ಯಂತ ಅಪಾಯಕಾರಿ ಚಾಕೊಲೇಟ್ ಕೇಕ್ ತಂದಿದ್ದೇನೆ.",
+            stageDirection: "ಗಂಭೀರ ಮತ್ತು ಉತ್ಸಾಹಭರಿತ ಧ್ವನಿಯಲ್ಲಿ",
+            audioUrl: "/audio/s5/s5_l5_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "ആരും അനങ്ങരുത്! എന്റെ വിരമിക്കൽ ആഘോഷിക്കാൻ നഗരത്തിലെ ഏറ്റവും അപകടകരമായ ചോക്ലേറ്റ് കേക്കുമായി ഞാൻ വന്നിരിക്കുന്നു.",
+            stageDirection: "ശക്തവും ഉത്സവപ്രതീതിയുള്ളതുമായ ശബ്ദത്തിൽ",
+            audioUrl: "/audio/s5/s5_l5_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Đứng im hết! Tôi mang chiếc bánh sô-cô-la nguy hiểm nhất thành phố đến để mừng ngày nghỉ hưu đây.",
+            stageDirection: "Bằng giọng dõng dạc và hân hoan",
+            audioUrl: "/audio/s5/s5_l5_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "อย่าขยับนะทุกคน! ฉันนำเค้กช็อกโกแลตที่อันตรายที่สุดในเมืองมาฉลองการเกษียณของฉัน",
+            stageDirection: "ด้วยเสียงก้องกังวานและรื่นเริง",
+            audioUrl: "/audio/s5/s5_l5_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Jangan ada yang bergerak! Aku membawa kue cokelat paling berbahaya di kota untuk merayakan masa pensiunku.",
+            stageDirection: "Dengan suara lantang dan meriah",
+            audioUrl: "/audio/s5/s5_l5_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Jangan bergerak semua! Saya bawa kek coklat paling merbahaya dalam bandar untuk sambut hari persaraan saya.",
+            stageDirection: "Dengan suara lantang dan ceria",
+            audioUrl: "/audio/s5/s5_l5_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Hakuna mtu kusogea! Ninaleta keki ya chokoleti hatari zaidi jijini kusherehekea kustaafu kwangu.",
+            stageDirection: "Kwa sauti kubwa ya sherehe",
+            audioUrl: "/audio/s5/s5_l5_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "¡Avave ani omanyi'ĩ! Agueru pe torta chokoláte ivaivéva ko távape ambopoty hag̃ua che jubilasión.",
+            stageDirection: "Ñe'ẽ mbarete ha vy'apópe",
+            audioUrl: "/audio/s5/s5_l5_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "¡Ama pipas kuyuchunchu! Llaqtapa lliwmanpas chiti chukulati tantantan apamuni samayniyta kusirikunapaq.",
+            stageDirection: "Qhapariy kusi kunkawan",
+            audioUrl: "/audio/s5/s5_l5_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "¡Janiw khitis unjtaspaniti! Aka marka ch'amancht'ata chukulati t'ant'awa apanxta jubilasiyuxa phuqhasiñataki.",
+            stageDirection: "Ch'ama q'uchu arumpi",
+            audioUrl: "/audio/s5/s5_l5_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "¡Amo aquin ma momolini! Niqualica in chocolate tlacualiztli tlen tlahuel cualli ipan altepetl ic nitlamiltia notequiyo.",
+            stageDirection: "Ica chicahuac paquiliztlahtolli",
+            audioUrl: "/audio/s5/s5_l5_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Tʼáadoo naahkaií! Chizh łikaní ayóo átʼéhígíí sháʼóltaʼ bee nizhónígo baa hozhǫ́ dooleeł biniyé naashłóós.",
+            stageDirection: "Doo yáʼátʼéehgo bił nizhóní",
+            audioUrl: "/audio/s5/s5_l5_nv-US.mp3"
           }
         }
       },
@@ -9347,10 +11472,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Parpadeando atónito, bajando lentamente el paraguas que usaba como escudo",
         expression: "confused",
         translations: {
+          "fr-CH": {
+            text: "Don Ramón ? Et cette mallette noire avec cadenas renforcé ne contenait pas d'explosifs plastiques ?",
+            stageDirection: "Bouche bée et stupéfait",
+            audioUrl: "/audio/s5/s5_l6_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Don Ramón ? Et cette mallette noire au cadenas renforcé, elle ne contenait pas d'explosifs plastiques ?",
+            stageDirection: "Bouche bée et ébahi",
+            audioUrl: "/audio/s5/s5_l6_fr-BE.mp3"
+          },
           "es-ES": {
             text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no contenía explosivos plásticos?",
             stageDirection: "Boquiabierto y desconcertado",
             audioUrl: "/audio/s5/s5_l6_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Δον Ραμόν; Και εκείνος ο μαύρος χαρτοφύλακας με το ενισχυμένο λουκέτο δεν περιείχε πλαστικά εκρηκτικά;",
+            stageDirection: "Με ανοιχτό το στόμα και αποσβολωμένος",
+            audioUrl: "/audio/s5/s5_l6_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no traía explosivos plásticos?",
+            stageDirection: "Boquiabierto y sacado de onda",
+            audioUrl: "/audio/s5/s5_l6_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no tenía explosivos plásticos?",
+            stageDirection: "Con la boca abierta y desconcertado",
+            audioUrl: "/audio/s5/s5_l6_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no tenía explosivos plásticos?",
+            stageDirection: "Boquiabierto y confundido",
+            audioUrl: "/audio/s5/s5_l6_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no tenía explosivos plásticos?",
+            stageDirection: "Boquiabierto y desconcertado",
+            audioUrl: "/audio/s5/s5_l6_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no traía explosivos plásticos?",
+            stageDirection: "Boquiabierto y despistado",
+            audioUrl: "/audio/s5/s5_l6_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Don Ramón ? Et cette mallette noire avec le cadenas renforcé ne contenait pas d'explosifs plastiques ?",
+            stageDirection: "Bouche bée et déconcerté",
+            audioUrl: "/audio/s5/s5_l6_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Don Ramón ? Pis la mallette noire avec le gros cadenas, c'était pas plein d'explosifs plastiques ?",
+            stageDirection: "Bouche bée et confus",
+            audioUrl: "/audio/s5/s5_l6_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Don Ramón ? Donc la valise noire avec gros cadenas là ne contenait pas des explosifs ?",
+            stageDirection: "La bouche ouverte tellement étonné",
+            audioUrl: "/audio/s5/s5_l6_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Seu Ramón? E essa maleta preta com cadeado reforçado não tinha explosivos plásticos?",
+            stageDirection: "De queixo caído e desconcertado",
+            audioUrl: "/audio/s5/s5_l6_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Dom Ramón? E essa pasta preta com cadeado reforçado não continha explosivos plásticos?",
+            stageDirection: "Boquiaberto e perplexo",
+            audioUrl: "/audio/s5/s5_l6_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Don Ramón? E quella valigetta nera con il lucchetto rinforzato non conteneva esplosivi al plastico?",
+            stageDirection: "A bocca aperta e sconcertato",
+            audioUrl: "/audio/s5/s5_l6_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Don Ramón? I aquest maletí negre amb cadenat reforçat no contenia pas explosius plàstics?",
+            stageDirection: "Bocabadat i desconcertat",
+            audioUrl: "/audio/s5/s5_l6_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Don Ramón? Și servieta aceea neagră cu lacăt întărit nu conținea explozibili plastici?",
+            stageDirection: "Cu gura căscată și uluit",
+            audioUrl: "/audio/s5/s5_l6_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Don Ramón? E ese maletín negro con cadeado reforzado non contiña explosivos plásticos?",
+            stageDirection: "Boquiaberto e desconcertado",
+            audioUrl: "/audio/s5/s5_l6_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Don Ramón ? E aquela maleta negra amb lo cadenat renforçat conteniá pas d'explosius plastics ?",
+            stageDirection: "Bocadobèrt e desconcertat",
+            audioUrl: "/audio/s5/s5_l6_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Don Ramón? Und diese schwarze Aktentasche mit dem verstärkten Vorhängeschloss enthielt keine Plastiksprengstoffe?",
+            stageDirection: "Mit offenem Mund und fassungslos",
+            audioUrl: "/audio/s5/s5_l6_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Don Ramón? Und die schwarz Aktätäsche mit em fette Vorhängschloss hät kei Plastiksprengstoff gha?",
+            stageDirection: "Mit offnem Muul und baff",
+            audioUrl: "/audio/s5/s5_l6_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Don Ramón? En die zwarte aktetas met het zware hangslot bevatte geen kneedbommen?",
+            stageDirection: "Met open mond en stomverbaasd",
+            audioUrl: "/audio/s5/s5_l6_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Don Ramón? Og den svarte kofferten med den forsterkede hengelåsen inneholdt ikke plastisk sprengstoff?",
+            stageDirection: "Målløs og forbløffet",
+            audioUrl: "/audio/s5/s5_l6_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Don Ramón? Och den där svarta portföljen med det kraftiga hänglåset innehöll inte sprängdeg?",
+            stageDirection: "Med gapande mun och förbluffad",
+            audioUrl: "/audio/s5/s5_l6_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Don Ramón? Og den sorte mappe med den forstærkede hængelås indeholdt ikke plastisk sprængstof?",
+            stageDirection: "Målløs og forvirret",
+            audioUrl: "/audio/s5/s5_l6_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Дон Рамон? А в этом чёрном дипломате с массивным замком не было пластиковой взрывчатки?",
+            stageDirection: "С открытым ртом и в полном замешательстве",
+            audioUrl: "/audio/s5/s5_l6_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Дон Рамон? А в цьому чорному дипломаті з посиленим замком не було пластикової вибухівки?",
+            stageDirection: "З відкритим ротом і здивовано",
+            audioUrl: "/audio/s5/s5_l6_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Don Ramón? A ta czarna teczka ze wzmocnioną kłódką nie zawierała materiałów wybuchowych?",
+            stageDirection: "Z otwartymi ustami i osłupiały",
+            audioUrl: "/audio/s5/s5_l6_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Don Ramón? A v tom černém kufříku se zesíleným visacím zámkem nebyla plastická trhavina?",
+            stageDirection: "S otevřenou pusou a vyveden z míry",
+            audioUrl: "/audio/s5/s5_l6_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Don Ramón? A taj crni koferčić s pojačanim lokotom nije sadržavao plastični eksploziv?",
+            stageDirection: "Otvorenih usta i zbunjen",
+            audioUrl: "/audio/s5/s5_l6_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Don Ramón? Eikö tuossa mustassa vahvistetulla riippulukolla varustetussa salkussa ollutkaan muoviräjähdettä?",
+            stageDirection: "Suu auki ja hämmentyneenä",
+            audioUrl: "/audio/s5/s5_l6_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Don Ramón? És abban a megerősített lakattal lezárt fekete aktatáskában nem plasztikbomba volt?",
+            stageDirection: "Tátott szájjal és megdöbbenve",
+            audioUrl: "/audio/s5/s5_l6_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Don Ramón? Eta giltzarrapo sendotuko maletatxo beltz horrek ez zeukan lehergailu plastikorik?",
+            stageDirection: "Aho zabalik eta harrituta",
+            audioUrl: "/audio/s5/s5_l6_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Don Ramón? Peki o güçlendirilmiş kilitli siyah evrak çantasında plastik patlayıcı yok muydu?",
+            stageDirection: "Ağzı açık ve şaşkınlıkla",
+            audioUrl: "/audio/s5/s5_l6_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "ドン・ラモン！？それに、その頑丈な南京錠が付いた黒いアタッシュケースにはプラスチック爆弾が入っていたんじゃないんですか？",
+            stageDirection: "あっけにとられて呆然と",
+            audioUrl: "/audio/s5/s5_l6_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "拉蒙先生？那个装有加固密码锁的黑公文包里，装的不是塑胶炸药吗？",
+            stageDirection: "目瞪口呆，大惑不解",
+            audioUrl: "/audio/s5/s5_l6_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "拉蒙先生？嗰個加厚密碼鎖嘅黑手抽篋入面，裝嘅唔係塑膠炸藥咩？",
+            stageDirection: "擘大個口呆晒噉問",
+            audioUrl: "/audio/s5/s5_l6_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "돈 라몬? 그럼 그 단단한 자물쇠가 달린 검은 서류가방엔 플라스틱 폭탄이 든 게 아니었나요?",
+            stageDirection: "입을 떡 벌리고 어리둥절해하며",
+            audioUrl: "/audio/s5/s5_l6_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "دون رامون؟ وتلك الحقيبة السوداء ذات القفل المقوى لم تكن تحتوي على متفجرات بلاستيكية؟",
+            stageDirection: "فاغر الفم وفي حيرة تامة",
+            audioUrl: "/audio/s5/s5_l6_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "דון רמון? ובתיק השחור ההוא עם המנעול המחוזק לא היו חומרי נפץ פלסטיים?",
+            stageDirection: "בפה פעור ומבולבל לחלוטין",
+            audioUrl: "/audio/s5/s5_l6_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no tenía explosivos plásticos?",
+            stageDirection: "Boquiabierto y asombrado",
+            audioUrl: "/audio/s5/s5_l6_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no tenía explosivos plásticos?",
+            stageDirection: "Plop y desconcertado",
+            audioUrl: "/audio/s5/s5_l6_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no traía explosivos plásticos?",
+            stageDirection: "Boquiabierto y sorprendido",
+            audioUrl: "/audio/s5/s5_l6_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no traía explosivos plásticos?",
+            stageDirection: "Boquiabierto y asombrado",
+            audioUrl: "/audio/s5/s5_l6_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no contenía explosivos plásticos?",
+            stageDirection: "Boquiabierto y desconcertado",
+            audioUrl: "/audio/s5/s5_l6_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "Don Ramón? And that black briefcase with the heavy-duty padlock didn't have plastic explosives in it?",
+            stageDirection: "Jaw dropped and utterly bewildered",
+            audioUrl: "/audio/s5/s5_l6_en-US.mp3"
+          },
+          "en-GB": {
+            text: "Don Ramón? And that black briefcase with the reinforced padlock didn't contain plastic explosives then?",
+            stageDirection: "Flabbergasted and bewildered",
+            audioUrl: "/audio/s5/s5_l6_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "Don Ramón? An' that black case wi' the heavy padlock didnae hae plastic explosives inside?",
+            stageDirection: "Gobsmacked and confused",
+            audioUrl: "/audio/s5/s5_l6_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Don Ramón? You mean that black briefcase with the heavy padlock ain't full of plastic explosives?",
+            stageDirection: "Mouth hanging open, plumb confused",
+            audioUrl: "/audio/s5/s5_l6_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "Don Ramón? And that black briefcase with the heavy padlock wasn't packed with plastic explosives at all?",
+            stageDirection: "Flabbergasted and confused",
+            audioUrl: "/audio/s5/s5_l6_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "Don Ramón? And that black briefcase with the heavy lock didn't have plastic explosives in it?",
+            stageDirection: "Stunned and totally bewildered",
+            audioUrl: "/audio/s5/s5_l6_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "Don Ramón? So that black briefcase with the reinforced lock didn't have plastic explosives?",
+            stageDirection: "Jaw dropped and baffled",
+            audioUrl: "/audio/s5/s5_l6_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "Don Ramón? And that black briefcase with the heavy padlock didn't contain plastic explosives?",
+            stageDirection: "Mouth open and completely confused",
+            audioUrl: "/audio/s5/s5_l6_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Don Ramón? So that black briefcase with heavy lock no carry plastic explosives inside?",
+            stageDirection: "Mouth open wide in surprise",
+            audioUrl: "/audio/s5/s5_l6_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "Don Ramón? And that black briefcase with reinforced padlock was not carrying plastic explosives?",
+            stageDirection: "Stunned and thoroughly confused",
+            audioUrl: "/audio/s5/s5_l6_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Don Ramón ? Et cette valise noire avec cadenas solide ne contenait donc pas des explosifs plastiques ?",
+            stageDirection: "Bouche bée et totalement confus",
+            audioUrl: "/audio/s5/s5_l6_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Don Ramón ? Et ce cartable noir fermé avec un gros cadenas n'avait pas d'explosifs dedans ?",
+            stageDirection: "Bouche bée et stupéfait",
+            audioUrl: "/audio/s5/s5_l6_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Dom Ramón? E aquela mala preta com cadeado reforçado não tinha explosivos plásticos?",
+            stageDirection: "Boquiaberto e admirado",
+            audioUrl: "/audio/s5/s5_l6_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Dom Ramón? E essa pasta preta com cadeado reforçado não trazia explosivos plásticos?",
+            stageDirection: "Boquiaberto e surpreendido",
+            audioUrl: "/audio/s5/s5_l6_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Don Ramón? En die zwarte aktetas met het versterkte hangslot bevatte geen plastiekbommen?",
+            stageDirection: "Met open mond en verbouwereerd",
+            audioUrl: "/audio/s5/s5_l6_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "عم رامون؟ وهذي الشنطة السودا بالقفل المقفل ما كان فيها متفجرات بلاستيكية؟",
+            stageDirection: "مفتح فمه ومستغرب تماماً",
+            audioUrl: "/audio/s5/s5_l6_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "عم رامون؟ والشنطة السودا دي اللي بقفل تقيل مكنش فيها قنابل ومتفجرات؟",
+            stageDirection: "بقه مفتوح ومذهول",
+            audioUrl: "/audio/s5/s5_l6_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "سيد رامون؟ وديك الصاكوشة الكحلة بالقفل المزير ما كانش فيها متفجرات بلاستيكية؟",
+            stageDirection: "فمو محلول ومصدوم",
+            audioUrl: "/audio/s5/s5_l6_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "عمو رامون؟ وهي الشنطة السودة اللي عليها قفل قوي ما كان فيها متفجرات بلاستيك؟",
+            stageDirection: "صافن ومصدوم",
+            audioUrl: "/audio/s5/s5_l6_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "عمي رامون؟ وهاي الجنطة السودة أم القفل القوي ما جان بيها متفجرات؟",
+            stageDirection: "مفگوع ومتفاجئ",
+            audioUrl: "/audio/s5/s5_l6_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "拉蒙先生？那個裝有強化密碼鎖的黑公事包裡，裝的不是塑膠炸藥嗎？",
+            stageDirection: "目瞪口呆，大惑不解",
+            audioUrl: "/audio/s5/s5_l6_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "डॉन रेमन? और उस मज़बूत ताले वाले काले ब्रीफकेस में प्लास्टिक विस्फोटक नहीं थे?",
+            stageDirection: "हैरान और भौचक्का होकर",
+            audioUrl: "/audio/s5/s5_l6_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "ڈان ریمن؟ اور اس مضبوط تالے والے کالے بریف کیس میں پلاسٹک بم نہیں تھا؟",
+            stageDirection: "حیران اور دم بخود ہو کر",
+            audioUrl: "/audio/s5/s5_l6_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "ডন রামন? আর শক্ত তালা লাগানো ওই কালো ব্রিফকেসে কোনো প্লাস্টিক বিস্ফোরক ছিল না?",
+            stageDirection: "হা হয়ে অবাক চোখে",
+            audioUrl: "/audio/s5/s5_l6_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਡੌਨ ਰਾਮੋਨ? ਅਤੇ ਉਸ ਮਜ਼ਬੂਤ ਤਾਲੇ ਵਾਲੇ ਕਾਲੇ ਬ੍ਰੀਫਕੇਸ ਵਿੱਚ ਪਲਾਸਟਿਕ ਬੰਬ ਨਹੀਂ ਸੀ?",
+            stageDirection: "ਹੈਰਾਨ ਅਤੇ ਹੱਕਾ-ਬੱਕਾ ਹੋ ਕੇ",
+            audioUrl: "/audio/s5/s5_l6_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "ડોન રામોન? અને એ મજબૂત તાળાવાળા કાળા બ્રીફકેસમાં પ્લાસ્ટિક વિસ્ફોટકો નહોતા?",
+            stageDirection: "મોં ખુલ્લું રાખીને સ્તબ્ધ થઈને",
+            audioUrl: "/audio/s5/s5_l6_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "डॉन रमोन? आणि त्या मजबूत कुलूप असलेल्या काळ्या ब्रीफकेसमध्ये प्लास्टिक स्फोटके नव्हती?",
+            stageDirection: "आ वासून आणि चक्रावून जाऊन",
+            audioUrl: "/audio/s5/s5_l6_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "டான் ரமோன்? பலமான பூட்டு போட்ட அந்த கறுப்பு பெட்டியில் வெடிபொருட்கள் எதுவும் இல்லையா?",
+            stageDirection: "வாய் பிளந்து திகைத்துப்போய்",
+            audioUrl: "/audio/s5/s5_l6_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "డాన్ రామోన్? ఆ గట్టి తాళం వేసిన నల్లటి బ్రీఫ్‌కేస్‌లో ప్లాస్టిక్ పేలుడు పదార్థాలు లేవా?",
+            stageDirection: "నోరెళ్లబెట్టి అయోమయంగా",
+            audioUrl: "/audio/s5/s5_l6_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಡಾನ್ ರಮೋನ್? ಮತ್ತು ಆ ಗಟ್ಟಿ ಬೀಗವಿರುವ ಕಪ್ಪು ಬ್ರೀಫ್‌ಕೇಸ್‌ನಲ್ಲಿ ಪ್ಲಾಸ್ಟಿಕ್ ಸ್ಫೋಟಕಗಳು ಇರಲಿಲ್ಲವೇ?",
+            stageDirection: "ಬಾಯಿ ತೆರೆದು ದಿಗ್ಭ್ರಮೆಯಿಂದ",
+            audioUrl: "/audio/s5/s5_l6_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "ഡോൺ റാമോൺ? ഭദ്രമായ പൂട്ടുള്ള ആ കറുത്ത പെട്ടിയിൽ പ്ലാസ്റ്റിക് സ്ഫോടകവസ്തുക്കൾ ഉണ്ടായിരുന്നില്ലേ?",
+            stageDirection: "വാപൊളിച്ച് അത്ഭുതപ്പെട്ട്",
+            audioUrl: "/audio/s5/s5_l6_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Bác Ramón? Thế chiếc cặp đen có khóa gia cố đó không chứa thuốc nổ dẻo sao?",
+            stageDirection: "Há hốc mồm ngơ ngác",
+            audioUrl: "/audio/s5/s5_l6_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "ดอน รามอนเหรอครับ? แล้วกระเป๋าเอกสารสีดำที่มีแม่กุญแจแน่นหนานั่นไม่ได้ใส่ระเบิดพลาสติกไว้เหรอครับ?",
+            stageDirection: "อ้าปากค้างด้วยความสับสนงุนงง",
+            audioUrl: "/audio/s5/s5_l6_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Don Ramón? Dan koper hitam dengan gembok kokoh itu tidak berisi bahan peledak plastik?",
+            stageDirection: "Menganga dan bingung",
+            audioUrl: "/audio/s5/s5_l6_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Don Ramón? Dan beg bimbit hitam berkunci tebal tu tak ada bahan letupan plastik ke?",
+            stageDirection: "Ternganga dan bingung",
+            audioUrl: "/audio/s5/s5_l6_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Don Ramón? Na mkoba huo mweusi wenye kufuli imara haukuwa na vilipuzi vya plastiki?",
+            stageDirection: "Ameshikwa na butwaa akiwa ameduwaa",
+            audioUrl: "/audio/s5/s5_l6_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "¿Don Ramón? ¿Ha upe vosa hũ orekóva peteĩ kando imbaretéva ndoguerekói piko mba'e opo'óva?",
+            stageDirection: "Ijurujái ha oñemondyiete",
+            audioUrl: "/audio/s5/s5_l6_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "¿Don Ramón? ¿Chay yana q'ipi hatun kandaduyuqqa manachu phataq manchanaqkunayuq karqan?",
+            stageDirection: "Simi kichasqa mancharisqa",
+            audioUrl: "/audio/s5/s5_l6_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "¿Don Ramón? ¿Uka ch'iyara maletax ch'amani llawimpi janiw phalliri qullanakanïkiti?",
+            stageDirection: "Laka apxatata musparata",
+            audioUrl: "/audio/s5/s5_l6_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "¿Don Ramón? ¿Ne maleta tliltic ica tlahuel chicahuac candado amo quipiya tlapopocani tlen pozoni?",
+            stageDirection: "Icamac tapalpatztic ihuan miyac momauhtia",
+            audioUrl: "/audio/s5/s5_l6_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Don Ramón daatsʼí? Béésh biih naalkidí łizhinígíí chahałheełgo bee bił ahoodzoígíí doo daatsʼí diltłiʼ da?",
+            stageDirection: "Azaʼáditʼéhígíí bee tʼóó tsídootʼįįd",
+            audioUrl: "/audio/s5/s5_l6_nv-US.mp3"
           }
         }
       },
@@ -9360,10 +11910,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Dando una palmada cariñosa en el hombro de Hugo y soltando una carcajada",
         expression: "laughing",
         translations: {
+          "fr-CH": {
+            text: "Elle contient des serviettes en tissu et des bougies scintillantes, gamin. À mon âge, le seul danger, ce sont les calories.",
+            stageDirection: "Riant chaleureusement",
+            audioUrl: "/audio/s5/s5_l7_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Elle contient des serviettes en tissu et des bougies étincelantes, fieu ! À mon âge, le seul danger, ce sont les calories.",
+            stageDirection: "Riant aux éclats",
+            audioUrl: "/audio/s5/s5_l7_fr-BE.mp3"
+          },
           "es-ES": {
             text: "Contiene servilletas de tela y velas con chispas, chaval. A mi edad, el único peligro son las calorías.",
             stageDirection: "Riendo a carcajadas",
             audioUrl: "/audio/s5/s5_l7_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Περιέχει υφασμάτινες πετσέτες και κεράκια με σπίθες, νεαρέ μου! Στην ηλικία μου, ο μόνος κίνδυνος είναι οι θερμίδες.",
+            stageDirection: "Γελώντας με την καρδιά του",
+            audioUrl: "/audio/s5/s5_l7_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "Trae servilletas de tela y velitas de chispas, muchacho. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "Tiene servilletas de tela y velitas con chispas, pibe. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "Tiene servilletas de tela y velitas con chispas, muchacho. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "Tiene servilletas de tela y velitas con chispas, muchacho. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "Trae servilletas de tela y velitas con chispas, pelao. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Elle contient des serviettes en tissu et des bougies scintillantes, mon garçon. À mon âge, le seul danger, ce sont les calories.",
+            stageDirection: "Riant aux éclats",
+            audioUrl: "/audio/s5/s5_l7_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Y a des serviettes en tissu pis des chandelles étincelantes là-dedans, jeune homme ! À mon âge, le seul danger, c'est les calories.",
+            stageDirection: "Riant de bon cœur",
+            audioUrl: "/audio/s5/s5_l7_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Il y a des serviettes en tissu et des bougies magiques dedans deh ! À mon âge là, le seul danger c'est les calories !",
+            stageDirection: "En riant aux éclats",
+            audioUrl: "/audio/s5/s5_l7_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "Tem guardanapos de pano e velinhas com faíscas, rapaz! Na minha idade, o único perigo são as calorias.",
+            stageDirection: "Gargalhando gostoso",
+            audioUrl: "/audio/s5/s5_l7_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "Contém guardanapos de pano e velas com faíscas, rapaz! Na minha idade, o único perigo são as calorias.",
+            stageDirection: "A rir às gargalhadas",
+            audioUrl: "/audio/s5/s5_l7_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "Contiene tovaglioli di stoffa e candeline scintillanti, ragazzo! Alla mia età, l'unico pericolo sono le calorie.",
+            stageDirection: "Ridendo a crepapelle",
+            audioUrl: "/audio/s5/s5_l7_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "Conté tovallons de roba i espelmes amb espurnes, noi! A la meva edat, l'únic perill són les calories.",
+            stageDirection: "Rient a riallades",
+            audioUrl: "/audio/s5/s5_l7_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Conține șervețele de pânză și lumânări cu artificii, flăcău! La vârsta mea, singurul pericol sunt caloriile.",
+            stageDirection: "Râzând în hohote",
+            audioUrl: "/audio/s5/s5_l7_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "Contén panos de mesa e candeas con faíscas, rapaz! Á miña idade, o único perigo son as calorías.",
+            stageDirection: "Rindo ás gargalladas",
+            audioUrl: "/audio/s5/s5_l7_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "Conten de toalhetas de teissut e de candèlas amb d'estèlas, drollet ! A mon edat, lo sol perilh son las calorias.",
+            stageDirection: "Risent a las esclafadas",
+            audioUrl: "/audio/s5/s5_l7_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Sie enthält Stoffservietten und Wunderkerzen, Junge! In meinem Alter sind Kalorien die einzige Gefahr.",
+            stageDirection: "Schallend lachend",
+            audioUrl: "/audio/s5/s5_l7_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Dä hät Stoffserviette und Sprützcherzli dinne, Bürschtli! In mim Alter sind d'Kalorie die einzig Gfohr.",
+            stageDirection: "Härzhaft lachend",
+            audioUrl: "/audio/s5/s5_l7_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "Er zitten stoffen servetten en sterretjeskaarsen in, jongen! Op mijn leeftijd zijn calorieën het enige gevaar.",
+            stageDirection: "Schaterlachend",
+            audioUrl: "/audio/s5/s5_l7_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Den inneholder tøyservietter og stjerneskudd, gutt! I min alder er kalorier den eneste faren.",
+            stageDirection: "Leende hjertelig",
+            audioUrl: "/audio/s5/s5_l7_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Den innehåller tygservetter och tomtebloss, grabben! I min ålder är kalorierna den enda faran.",
+            stageDirection: "Skrattande hjärtligt",
+            audioUrl: "/audio/s5/s5_l7_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Den indeholder stofservietter og stjernekastere, knægt! I min alder er kalorier den eneste fare.",
+            stageDirection: "Grinende hjerteligt",
+            audioUrl: "/audio/s5/s5_l7_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Там тканевые салфетки и бенгальские свечи, парень! В моём возрасте единственная опасность — это калории.",
+            stageDirection: "Громко хохоча",
+            audioUrl: "/audio/s5/s5_l7_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Там тканинні серветки та бенгальські свічки, хлопче! У моєму віці єдина небезпека — це калорії.",
+            stageDirection: "Голосно регочучи",
+            audioUrl: "/audio/s5/s5_l7_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "Zawiera płócienne serwetki i świeczki z zimnymi ogniami, chłopcze! W moim wieku jedynym niebezpieczeństwem są kalorie.",
+            stageDirection: "Śmiejąc się do rozpuku",
+            audioUrl: "/audio/s5/s5_l7_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "Jsou v něm látkové ubrousky a prskavky, chlapče! V mém věku jsou jediným nebezpečím kalorie.",
+            stageDirection: "Srdečně se směje",
+            audioUrl: "/audio/s5/s5_l7_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "Sadrži platnene salvete i prskalice, mladiću! U mojim godinama jedina opasnost su kalorije.",
+            stageDirection: "Grohotom se smijući",
+            audioUrl: "/audio/s5/s5_l7_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Siellä on kankaisia lautasliinoja ja tähtisadetikkuja, poika! Minun iässäni ainoa vaara ovat kalorit.",
+            stageDirection: "Naurunremakkaan purskahtaen",
+            audioUrl: "/audio/s5/s5_l7_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "Vászonszalvéták és csillagszórók vannak benne, fiam! Az én koromban már csak a kalóriák jelentenek veszélyt.",
+            stageDirection: "Harsányan nevetve",
+            audioUrl: "/audio/s5/s5_l7_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Oihalezko eskuzapiak eta txinpartadun kandelak dauzka, motel! Nire adinean, arrisku bakarra kaloriak dira.",
+            stageDirection: "Barre algaraka eginez",
+            audioUrl: "/audio/s5/s5_l7_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "İçinde kumaş peçeteler ve maytaplı mumlar var delikanlı! Benim yaşımda tek tehlike kalorilerdir.",
+            stageDirection: "Kahkahalarla gülerek",
+            audioUrl: "/audio/s5/s5_l7_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "布のナプキンとスパークラーのろうそくが入っているんじゃよ、若者よ！ワシの年齢になると、唯一の危険はカロリーだけさ。",
+            stageDirection: "大声で大笑いしながら",
+            audioUrl: "/audio/s5/s5_l7_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "里面装的是布餐巾和火花蜡烛，小伙子！到了我这个年纪，唯一的危险就是卡路里。",
+            stageDirection: "开怀大笑",
+            audioUrl: "/audio/s5/s5_l7_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "入面係布餐巾同埋火花蠟燭嚟㗎咋，後生仔！去到我呢個年紀，唯一危險嘅就只有卡路里。",
+            stageDirection: "開懷大笑噉講",
+            audioUrl: "/audio/s5/s5_l7_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "거기엔 천 냅킨이랑 불꽃 양초가 들었단다, 젊은이! 내 나이엔 오직 칼로리만이 위험할 뿐이지.",
+            stageDirection: "호탕하게 껄껄 웃으며",
+            audioUrl: "/audio/s5/s5_l7_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "تحتوي على مناديل قماشية وشموع براقة يا فتى! في سني هذا، الخطر الوحيد هو السعرات الحرارية.",
+            stageDirection: "يضحك بصوت عالٍ من قلبه",
+            audioUrl: "/audio/s5/s5_l7_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "יש בה מפיות בד ונרות נוצצים, בחורצ'יק! בגילי, הסכנה היחידה היא הקלוריות.",
+            stageDirection: "צוחק במלוא גרונו",
+            audioUrl: "/audio/s5/s5_l7_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "Tiene servilletas de tela y velitas con chispas, chamo. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "Tiene servilletas de género y velitas con chispas, cabro. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "Trae servilletas de tela y velitas con chispas, muchacho. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "Trae servilletas de tela y velitas con chispas, mi socio. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "Contiene servilletas de tela y velas con chispas, chaval. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "It holds cloth napkins and sparkling candles, kiddo. At my age, the only real hazard is calories.",
+            stageDirection: "Belly laughing heartily",
+            audioUrl: "/audio/s5/s5_l7_en-US.mp3"
+          },
+          "en-GB": {
+            text: "It contains cloth napkins and sparkler candles, lad. At my time of life, the only danger is the calories.",
+            stageDirection: "Chuckling uproariously",
+            audioUrl: "/audio/s5/s5_l7_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "It's got cloth napkins and sparklers, son. At mah age, the only real hazard is the calories!",
+            stageDirection: "Roaring wi' laughter",
+            audioUrl: "/audio/s5/s5_l7_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "Why, it's just cloth napkins and sparkler candles, boy. At my age, the only danger is them calories.",
+            stageDirection: "Laughing heartily out loud",
+            audioUrl: "/audio/s5/s5_l7_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "It's full of cloth napkins and sparklers, lad! At my age, the only thing dangerous is the calories.",
+            stageDirection: "Laughing heartily",
+            audioUrl: "/audio/s5/s5_l7_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "It's got cloth napkins and sparkler candles, mate! At my age, the only danger is the calories.",
+            stageDirection: "Busting out laughing",
+            audioUrl: "/audio/s5/s5_l7_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "It's just cloth napkins and sparkler candles, mate! At my age, the only hazard is the calories.",
+            stageDirection: "Laughing out loud",
+            audioUrl: "/audio/s5/s5_l7_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "It contains cloth napkins and sparkler candles, my boy. At my age, the only danger is calories.",
+            stageDirection: "Laughing heartily",
+            audioUrl: "/audio/s5/s5_l7_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "Na table napkins and sparkler candles dey inside, my boy! At my age now, only calories fit harm me.",
+            stageDirection: "Laughing very loud",
+            audioUrl: "/audio/s5/s5_l7_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "It contains cloth napkins and sparkling candles, young man! At my age, the only danger is calories.",
+            stageDirection: "Laughing whole-heartedly",
+            audioUrl: "/audio/s5/s5_l7_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Elle a des serviettes en tissu et des bougies avec étincelles, mon cher. À mon âge, le seul vrai danger, ce sont les calories.",
+            stageDirection: "En éclatant de rire",
+            audioUrl: "/audio/s5/s5_l7_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Il n'y a que des serviettes propres et des bougies de fête, fiston ! À mon âge, le seul danger, ce sont les calories.",
+            stageDirection: "Riant aux éclats",
+            audioUrl: "/audio/s5/s5_l7_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "Tem guardanapos de pano e velas de faísca, miúdo! Na minha idade, o único perigo são as calorias.",
+            stageDirection: "A rir com vontade",
+            audioUrl: "/audio/s5/s5_l7_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "Tem guardanapos de tecido e velas com faíscas, jovem! Na minha idade, o único perigo são as calorias.",
+            stageDirection: "A rir às gargalhadas",
+            audioUrl: "/audio/s5/s5_l7_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "Er zitten stoffen servietten en vuurwerkkaarsjes in, kerel! Op mijn leeftijd zijn calorieën het enige gevaar.",
+            stageDirection: "Schaterlachend",
+            audioUrl: "/audio/s5/s5_l7_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "فيها مناديل قماش وشموع فيها شرار يا ولدي! في عمري هذا، الخطر الوحيد هو السعرات الحرارية.",
+            stageDirection: "يضحك من كل قلبه",
+            audioUrl: "/audio/s5/s5_l7_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "دي فيها مناديل قماش وشمع بشرار يا ابني! في سني ده، الخطر الوحيد هو السعرات الحرارية.",
+            stageDirection: "بيضحك بضحكة عالية من قلبه",
+            audioUrl: "/audio/s5/s5_l7_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "فيها دريدكات ديال الثوب وشمع كايطرطق يا ولدي! فعمري هادا، الخطر الوحيد هو الكالوري.",
+            stageDirection: "كايضحك بالجهد",
+            audioUrl: "/audio/s5/s5_l7_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "فيها محارم قماش وشموع شرار يا بطل! بعمري هاد، الخطر الوحيد هو السعرات الحرارية.",
+            stageDirection: "عم يضحك من قلبه وبصوت عالي",
+            audioUrl: "/audio/s5/s5_l7_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "بيها خاويات قماش وشموع أم الشرر يا ولد! بعمري هذا، الخطر الوحيد هو السعرات الحرارية.",
+            stageDirection: "يضحك بضحكة قوية من قلبه",
+            audioUrl: "/audio/s5/s5_l7_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "裡面裝的是布餐巾和煙火蠟燭，年輕人！到了我這個年紀，唯一的危險就是卡路里。",
+            stageDirection: "開懷大笑",
+            audioUrl: "/audio/s5/s5_l7_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "इसमें कपड़े के नैपकिन और स्पार्कलर मोमबत्तियाँ हैं, बच्चे! मेरी उम्र में एकमात्र खतरा कैलोरीज़ हैं।",
+            stageDirection: "ठहाके मारकर हंसते हुए",
+            audioUrl: "/audio/s5/s5_l7_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "اس میں کپڑے کے نیپکن اور شعلہ انگیز موم بتیاں ہیں، میاں! میری عمر میں واحد خطرہ کیلوریز ہیں۔",
+            stageDirection: "قہقہہ لگا کر ہنستے ہوئے",
+            audioUrl: "/audio/s5/s5_l7_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "এতে কাপড়ের ন্যাপকিন আর তারাবাতির মোমবাতি আছে, বাছা! আমার বয়সে একমাত্র বিপদ হলো ক্যালোরি।",
+            stageDirection: "হো হো করে হেসে",
+            audioUrl: "/audio/s5/s5_l7_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਇਸ ਵਿੱਚ ਕੱਪੜੇ ਦੇ ਨੈਪਕਿਨ ਅਤੇ ਪਟਾਕਿਆਂ ਵਾਲੀਆਂ ਮੋਮਬੱਤੀਆਂ ਹਨ, ਬੱਚੇ! ਮੇਰੀ ਉਮਰ ਵਿੱਚ ਇੱਕੋ-ਇੱਕ ਖ਼ਤਰਾ ਕੈਲੋਰੀਆਂ ਹਨ।",
+            stageDirection: "ਜ਼ੋਰ-ਜ਼ੋਰ ਨਾਲ ਹੱਸਦੇ ਹੋਏ",
+            audioUrl: "/audio/s5/s5_l7_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "એમાં કાપડના નેપકિન અને સ્પાર્કલર મીણબત્તીઓ છે, દીકરા! મારી ઉંમરે એકમાત્ર જોખમ કેલરી છે.",
+            stageDirection: "ખડખડાટ હસતાં",
+            audioUrl: "/audio/s5/s5_l7_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "यात कापडी नॅपकिन्स आणि फटाक्यांच्या मेणबत्त्या आहेत, मुला! माझ्या वयात एकमेव धोका कॅलरीजचा आहे.",
+            stageDirection: "मोठमोठ्याने हसत",
+            audioUrl: "/audio/s5/s5_l7_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "இதில் துணி நாப்கின்களும் தீப்பொறி மெழுகுவர்த்திகளும் உள்ளன தம்பி! என் வயதில் ஒரே ஆபத்து கலோரிகள்தான்.",
+            stageDirection: "வாய்விட்டுச் சிரித்து",
+            audioUrl: "/audio/s5/s5_l7_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "ఇందులో గుడ్డ న్యాప్‌కిన్లు మరియు స్పార్క్లర్ కొవ్వొత్తులు ఉన్నాయి బాబూ! నా వయస్సులో ఏకైక ప్రమాదం కేలరీలు మాత్రమే.",
+            stageDirection: "పగలబడి నవ్వుతూ",
+            audioUrl: "/audio/s5/s5_l7_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಇದರಲ್ಲಿ ಬಟ್ಟೆಯ ನ್ಯಾಪ್ಕಿನ್‌ಗಳು ಮತ್ತು ಕಿಡಿಹೊಮ್ಮುವ ಮೇಣದಬತ್ತಿಗಳಿವೆ ಮಗನೇ! ನನ್ನ ವಯಸ್ಸಿನಲ್ಲಿ ಏಕೈಕ ಅಪಾಯವೆಂದರೆ ಕ್ಯಾಲೊರಿಗಳು.",
+            stageDirection: "ಗಹಗಹಿಸಿ ನಗುತ್ತಾ",
+            audioUrl: "/audio/s5/s5_l7_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "ഇതിൽ തുണി തൂവാലകളും മിന്നാമിനുങ്ങി തിരികളുമാണ് കുട്ടീ! എന്റെ പ്രായത്തിൽ ഒരേയൊരു അപകടം കലോറികൾ മാത്രമാണ്.",
+            stageDirection: "പൊട്ടിച്ചിരിച്ചുകൊണ്ട്",
+            audioUrl: "/audio/s5/s5_l7_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Nó chỉ chứa khăn ăn bằng vải với nến pháo hoa thôi nhóc à! Ở tuổi của ta, mối nguy hiểm duy nhất là calo đấy.",
+            stageDirection: "Cười ha hả sảng khoái",
+            audioUrl: "/audio/s5/s5_l7_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "ข้างในมีแต่ผ้าเช็ดปากกับเทียนประกายไฟต่างหาก เจ้าหนู! ในวัยอย่างฉัน อันตรายอย่างเดียวก็คือแคลอรีนั่นแหละ",
+            stageDirection: "หัวเราะร่าเริงเสียงดังลั่น",
+            audioUrl: "/audio/s5/s5_l7_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Ini cuma berisi serbet kain dan lilin kembang api, Nak! Di usiaku, satu-satunya bahaya adalah kalori.",
+            stageDirection: "Tertawa terbahak-bahak",
+            audioUrl: "/audio/s5/s5_l7_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Dalam ni cuma ada kain lap dan lilin bunga api, anak muda! Pada usia saya, satu-satunya bahaya ialah kalori.",
+            stageDirection: "Ketawa berdekah-dekah",
+            audioUrl: "/audio/s5/s5_l7_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Ina vitambaa vya mezani na mishumaa inayometa, kijana! Katika umri wangu, hatari pekee ni kalori.",
+            stageDirection: "Akicheka kwa sauti kubwa",
+            audioUrl: "/audio/s5/s5_l7_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Oguereko ao ryru ha tataindy mimbi, karia'y! Che edad-pe, pe mba'e vaiete ha'e umi kaloría.",
+            stageDirection: "Opuka guasu vy'apópe",
+            audioUrl: "/audio/s5/s5_l7_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Awa p'acha pichanakunawan k'anchaq kanilakunallam kashan, wayna! Kunan wataypiqa caloriasllataqmi manchanapaqqa.",
+            stageDirection: "Asiywan qhaparispa",
+            audioUrl: "/audio/s5/s5_l7_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "K'añaska laphinaka ukat k'ajk'ajiri velanakaw utji, wayna! Jichha marajanxa, sapaki kaloriyanakarukiw axsartxa.",
+            stageDirection: "Wali larusisa",
+            audioUrl: "/audio/s5/s5_l7_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Quipiya quimichin tilmahtli ihuan popocani candelas, telpuchtli! Ipan nohueyitiliz, san calorías tlen mopatza.",
+            stageDirection: "Huetziliztica chicahuac",
+            audioUrl: "/audio/s5/s5_l7_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Kétłʼóól tsʼídá nizhóní dóó kǫʼ bee diltłiʼígíí biiʼ hólǫ́, shiyáázh! Shinaaháigo éí kalorii tʼéiyá bee shił hóyééʼ.",
+            stageDirection: "Doo ayóo yidlóogo",
+            audioUrl: "/audio/s5/s5_l7_nv-US.mp3"
           }
         }
       },
@@ -9373,10 +12348,435 @@ export const STORIES: Story[] = [
         defaultStageDirection: "Cerrando el relato con dulzura cómica y tono de cuento clásico",
         expression: "warm",
         translations: {
+          "fr-CH": {
+            text: "Et c'est ainsi que prit fin la grande conspiration de l'après-midi, dissoute dans les rires, le chocolat chaud et trois parts de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-CH.mp3"
+          },
+          "fr-BE": {
+            text: "Et c'est ainsi que s'acheva la grande conspiration de l'après-midi, fondue dans les rires, un bon chocolat chaud et trois parts de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-BE.mp3"
+          },
           "es-ES": {
             text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de tarta.",
             stageDirection: "Concluyendo con calidez y humor",
             audioUrl: "/audio/s5/s5_l8_es-ES.mp3"
+          },
+          "el-GR": {
+            text: "Και κάπως έτσι ολοκληρώθηκε η μεγάλη απογευματινή συνωμοσία, διαλυμένη μέσα σε γέλια, ζεστή σοκολάτα και τρία κομμάτια τούρτας.",
+            stageDirection: "Κλείνοντας με ζεστασιά και χιούμορ",
+            audioUrl: "/audio/s5/s5_l8_el-GR.mp3"
+          },
+          "es-MX": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres rebanadas de pastel.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-MX.mp3"
+          },
+          "es-AR": {
+            text: "Y así terminó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de torta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-AR.mp3"
+          },
+          "es-DO": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres pedazos de bizcocho.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-DO.mp3"
+          },
+          "es-PR": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres pedazos de bizcocho.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-PR.mp3"
+          },
+          "es-CO": {
+            text: "Y así terminó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de torta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-CO.mp3"
+          },
+          "fr-FR": {
+            text: "Et c'est ainsi que s'acheva la grande conspiration de l'après-midi, dissoute dans les rires, le chocolat chaud et trois parts de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-FR.mp3"
+          },
+          "fr-CA": {
+            text: "Pis c'est d'même que s'est terminée la grande conspiration de l'après-midi, fondue dans les rires, du chocolat chaud pis trois pointes de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-CA.mp3"
+          },
+          "fr-CI": {
+            text: "Et c'est comme ça que le grand complot de l'après-midi a fini, dans les rires, du bon chocolat chaud et trois morceaux de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-CI.mp3"
+          },
+          "pt-BR": {
+            text: "E assim terminou a grande conspiração daquela tarde, dissolvida entre risadas, chocolate quente e três fatias de bolo.",
+            stageDirection: "Concluindo com calor e bom humor",
+            audioUrl: "/audio/s5/s5_l8_pt-BR.mp3"
+          },
+          "pt-PT": {
+            text: "E assim terminou a grande conspiração da tarde, desfeita em risos, chocolate quente e três fatias de bolo.",
+            stageDirection: "Concluindo com calor e bom humor",
+            audioUrl: "/audio/s5/s5_l8_pt-PT.mp3"
+          },
+          "it-IT": {
+            text: "E così si concluse la grande cospirazione del pomeriggio, sciolta tra risate, cioccolata calda e tre fette di torta.",
+            stageDirection: "Concludendo con calore e umorismo",
+            audioUrl: "/audio/s5/s5_l8_it-IT.mp3"
+          },
+          "ca-ES": {
+            text: "I així va concloure la gran conspiració de la tarda, dissolta entre riures, xocolata desfeta i tres porcions de pastís.",
+            stageDirection: "Concloent amb calidesa i humor",
+            audioUrl: "/audio/s5/s5_l8_ca-ES.mp3"
+          },
+          "ro-RO": {
+            text: "Și așa s-a încheiat marea conspirație a după-amiezii, dizolvată între râsete, ciocolată caldă și trei felii de tort.",
+            stageDirection: "Încheind cu căldură și umor",
+            audioUrl: "/audio/s5/s5_l8_ro-RO.mp3"
+          },
+          "gl-ES": {
+            text: "E así rematou a gran conspiración da tarde, disolta entre risas, chocolate quente e tres anacos de tarta.",
+            stageDirection: "Concluíndo con calidez e humor",
+            audioUrl: "/audio/s5/s5_l8_gl-ES.mp3"
+          },
+          "oc-FR": {
+            text: "E aital s'acabèt la granda conspiracion del vèspre, dissolguda dins de risas, de chocolat caud e tres tròces de pastís.",
+            stageDirection: "Conclusent amb calor e umor",
+            audioUrl: "/audio/s5/s5_l8_oc-FR.mp3"
+          },
+          "de-DE": {
+            text: "Und so endete die große Nachmittagsverschwörung, aufgelöst in Gelächter, heißer Schokolade und drei Stücken Torte.",
+            stageDirection: "Mit Herzlichkeit und Humor abschließend",
+            audioUrl: "/audio/s5/s5_l8_de-DE.mp3"
+          },
+          "de-CH": {
+            text: "Und so hät die grossi Nammitags-Verschwörig gendet, ufglöst in Glächter, heisser Schoggi und drüü Stugg Tuurte.",
+            stageDirection: "Mit Härzlichkeit und Humor abschlüssend",
+            audioUrl: "/audio/s5/s5_l8_de-CH.mp3"
+          },
+          "nl-NL": {
+            text: "En zo eindigde de grote middagsamenzwering, opgelost in gelach, warme chocolademelk en drie punten taart.",
+            stageDirection: "Afsluitend met warmte en humor",
+            audioUrl: "/audio/s5/s5_l8_nl-NL.mp3"
+          },
+          "nb-NO": {
+            text: "Og slik endte ettermiddagens store konspirasjon, oppløst i latter, varm sjokolade og tre kakestykker.",
+            stageDirection: "Avsluttende med varme og humor",
+            audioUrl: "/audio/s5/s5_l8_nb-NO.mp3"
+          },
+          "sv-SE": {
+            text: "Och så slutade eftermiddagens stora konspiration, upplöst i skratt, varm choklad och tre tårtbitar.",
+            stageDirection: "Avslutar med värme och humor",
+            audioUrl: "/audio/s5/s5_l8_sv-SE.mp3"
+          },
+          "da-DK": {
+            text: "Og således endte eftermiddagens store sammensværgelse, opløst i latter, varm kakao og tre stykker kage.",
+            stageDirection: "Afsluttende med varme og humor",
+            audioUrl: "/audio/s5/s5_l8_da-DK.mp3"
+          },
+          "ru-RU": {
+            text: "Так и завершился великий дневной заговор, растворившись в смехе, горячем шоколаде и трёх кусках торта.",
+            stageDirection: "Завершая с теплотой и юмором",
+            audioUrl: "/audio/s5/s5_l8_ru-RU.mp3"
+          },
+          "uk-UA": {
+            text: "Так і завершилася велика змова того дня, розчинившись у сміху, гарячому шоколаді та трьох шматках торта.",
+            stageDirection: "Завершуючи з теплотою та гумором",
+            audioUrl: "/audio/s5/s5_l8_uk-UA.mp3"
+          },
+          "pl-PL": {
+            text: "I tak zakończył się wielki popołudniowy spisek, rozpłynąwszy się w śmiechu, gorącej czekoladzie i trzech kawałkach tortu.",
+            stageDirection: "Kończąc z ciepłem i humorem",
+            audioUrl: "/audio/s5/s5_l8_pl-PL.mp3"
+          },
+          "cs-CZ": {
+            text: "A tak skončilo velké odpolední spiknutí, rozpuštěné ve smíchu, horké čokoládě a třech kouscích dortu.",
+            stageDirection: "Uzavírajíc s vřelostí a humorem",
+            audioUrl: "/audio/s5/s5_l8_cs-CZ.mp3"
+          },
+          "hr-HR": {
+            text: "I tako je završila velika poslijepodnevna zavjera, rastopljena u smijehu, toploj čokoladi i tri komada torte.",
+            stageDirection: "Završavajući s toplinom i humorom",
+            audioUrl: "/audio/s5/s5_l8_hr-HR.mp3"
+          },
+          "fi-FI": {
+            text: "Ja niin iltapäivän suuri salaliitto päättyi, haihtuen nauruun, kuumaan kaakaoon ja kolmeen kakkupalaan.",
+            stageDirection: "Lopettaen lämmöllä ja huumorilla",
+            audioUrl: "/audio/s5/s5_l8_fi-FI.mp3"
+          },
+          "hu-HU": {
+            text: "És így ért véget a délutáni nagy összeesküvés, feloldódva a nevetésben, a forró csokiban és három szelet tortában.",
+            stageDirection: "Melegséggel és humorral lezárva",
+            audioUrl: "/audio/s5/s5_l8_hu-HU.mp3"
+          },
+          "eu-ES": {
+            text: "Eta horrela amaitu zen arratsaldeko konspirazio handia, barre artean, txokolate beroz eta hiru tarta zatirekin desegina.",
+            stageDirection: "Gozotasunez eta umorez amaituz",
+            audioUrl: "/audio/s5/s5_l8_eu-ES.mp3"
+          },
+          "tr-TR": {
+            text: "Ve böylece öğleden sonranın büyük komplosu kahkahalar, sıcak çikolata ve üç dilim pasta arasında tatlıya bağlandı.",
+            stageDirection: "Sıcaklık ve mizahla sonlandırarak",
+            audioUrl: "/audio/s5/s5_l8_tr-TR.mp3"
+          },
+          "ja-JP": {
+            text: "こうして午後の大陰謀は、笑い声と温かいココア、そして3切れのケーキの中に溶けて幕を閉じたのであった。",
+            stageDirection: "温もりとユーモアを込めて締めくくる",
+            audioUrl: "/audio/s5/s5_l8_ja-JP.mp3"
+          },
+          "cmn-CN": {
+            text: "午后的这场“惊天大阴谋”，就在欢声笑语、热巧克力的香浓和三块蛋糕的甜美中圆满落幕了。",
+            stageDirection: "以温暖而幽默的语气收尾",
+            audioUrl: "/audio/s5/s5_l8_cmn-CN.mp3"
+          },
+          "yue-HK": {
+            text: "下晝呢場所謂嘅「驚天大陰謀」，就喺笑聲、熱朱古力同埋三件蛋糕嘅香甜之中圓滿收場喇。",
+            stageDirection: "以好溫暖搞笑嘅語氣作結",
+            audioUrl: "/audio/s5/s5_l8_yue-HK.mp3"
+          },
+          "ko-KR": {
+            text: "그렇게 오후의 거대한 음모는 웃음소리와 따뜻한 핫초코, 그리고 케이크 세 조각 속에 사르르 녹아내리며 막을 내렸다.",
+            stageDirection: "따스함과 유머를 담아 마무리하며",
+            audioUrl: "/audio/s5/s5_l8_ko-KR.mp3"
+          },
+          "ar-XA": {
+            text: "وهكذا انتهت مؤامرة الظهيرة الكبرى، متلاشية بين الضحكات والشوكولاتة الساخنة وثلاث قطع من الكعك.",
+            stageDirection: "تختتم بدفء ودعابة",
+            audioUrl: "/audio/s5/s5_l8_ar-XA.mp3"
+          },
+          "he-IL": {
+            text: "וכך הסתיימה לה הקונספירציה הגדולה של אחר הצהריים, כשהיא מתמוססת בין צחוק, שוקו חם ושלוש פרוסות עוגה.",
+            stageDirection: "בסיום חם ומלא הומור",
+            audioUrl: "/audio/s5/s5_l8_he-IL.mp3"
+          },
+          "es-VE": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de torta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-VE.mp3"
+          },
+          "es-CL": {
+            text: "Y así terminó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres pedazos de torta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-CL.mp3"
+          },
+          "es-PE": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de torta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-PE.mp3"
+          },
+          "es-CU": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres lascas de cake.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-CU.mp3"
+          },
+          "es-GQ": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de tarta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-GQ.mp3"
+          },
+          "en-US": {
+            text: "And so concluded the great afternoon conspiracy, dissolved amid laughter, hot cocoa, and three generous slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-US.mp3"
+          },
+          "en-GB": {
+            text: "And so concluded the great afternoon conspiracy, dissolved in laughter, hot chocolate, and three generous slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-GB.mp3"
+          },
+          "en-GB-SCT": {
+            text: "An' so ended the grand afternoon conspiracy, melted awa' in laughter, hot chocolate, an' three big slices o' cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-GB-SCT.mp3"
+          },
+          "en-US-south": {
+            text: "And that's how the great afternoon conspiracy wrapped up, all melted away in laughter, hot cocoa, and three big slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-US-south.mp3"
+          },
+          "en-IE": {
+            text: "And so finished the grand afternoon conspiracy, melted away in laughter, hot chocolate, and three massive slices of cake so it did.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-IE.mp3"
+          },
+          "en-AU": {
+            text: "And that was the end of the great afternoon conspiracy, sorted out with heaps of laughs, hot choc, and three big slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-AU.mp3"
+          },
+          "en-NZ": {
+            text: "And so wrapped up the great afternoon conspiracy, dissolved in laughter, hot chocolate, and three sweet slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-NZ.mp3"
+          },
+          "en-ZA": {
+            text: "And so concluded the great afternoon conspiracy, melted away in laughter, hot chocolate, and three lekker slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-ZA.mp3"
+          },
+          "en-NG": {
+            text: "And na so the big afternoon conspiracy take end, melted inside plenty laughter, hot cocoa, and three big slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-NG.mp3"
+          },
+          "en-IN": {
+            text: "And thus concluded the great afternoon conspiracy, peacefully resolved amid laughter, hot chocolate, and three slices of cake.",
+            stageDirection: "Concluding with warmth and humor",
+            audioUrl: "/audio/s5/s5_l8_en-IN.mp3"
+          },
+          "fr-CD": {
+            text: "Et c'est ainsi que prit fin la grande conspiration de l'après-midi, effacée par les rires, le chocolat chaud et trois parts de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-CD.mp3"
+          },
+          "fr-GA": {
+            text: "Et c'est comme ça que s'est terminée la grande affaire de l'après-midi, dans les éclats de rire, le chocolat chaud et trois tranches de gâteau.",
+            stageDirection: "Concluant avec chaleur et humour",
+            audioUrl: "/audio/s5/s5_l8_fr-GA.mp3"
+          },
+          "pt-AO": {
+            text: "E assim terminou a grande conspiração daquela tarde, desfeita em muitas gargalhadas, chocolate quente e três boas fatias de bolo.",
+            stageDirection: "Concluindo com calor e bom humor",
+            audioUrl: "/audio/s5/s5_l8_pt-AO.mp3"
+          },
+          "pt-MZ": {
+            text: "E foi assim que terminou a grande conspiração da tarde, desfeita em risos, chocolate quente e três fatias de bolo.",
+            stageDirection: "Concluindo com calor e bom humor",
+            audioUrl: "/audio/s5/s5_l8_pt-MZ.mp3"
+          },
+          "nl-BE": {
+            text: "En zo eindigde de grote namiddagsamenzwering, opgelost in gelach, warme chocolademelk en drie stukken taart.",
+            stageDirection: "Afsluitend met warmte en humor",
+            audioUrl: "/audio/s5/s5_l8_nl-BE.mp3"
+          },
+          "ar-SA": {
+            text: "وهكذا خلصت مؤامرة العصر الكبيرة، وذابت بين الضحك والشوكولاتة الحارة وثلاث قطع من الكيك.",
+            stageDirection: "يختم بدفء ودعابة",
+            audioUrl: "/audio/s5/s5_l8_ar-SA.mp3"
+          },
+          "ar-EG": {
+            text: "وهكذا انتهت مؤامرة بعد الضهر الكبيرة، وداابت وسط الضحك والشيكولاتة السخنة وتلات حتت تورتة.",
+            stageDirection: "بيختم بدفا وخفة دم",
+            audioUrl: "/audio/s5/s5_l8_ar-EG.mp3"
+          },
+          "ar-MA": {
+            text: "وهكذا سالات المؤامرة الكبيرة دالعشية، وتلاشت بين الضحك والشكلاط السخون وتلاتة الطراف دالحلوى.",
+            stageDirection: "كاتسالي بدفء وضحك",
+            audioUrl: "/audio/s5/s5_l8_ar-MA.mp3"
+          },
+          "ar-JO": {
+            text: "وهيك خلصت مؤامرة بعد الظهر الكبيرة، ودابت بين الضحكات والشوكولاتة السخنة وتلات قطع كيك.",
+            stageDirection: "بتختم بدفء ومرح",
+            audioUrl: "/audio/s5/s5_l8_ar-JO.mp3"
+          },
+          "ar-IQ": {
+            text: "وهيج خلصت مؤامرة العصر الكبيرة، وذابت بنص الضحك والجوكليت الحار وتلت قطع كيك.",
+            stageDirection: "يختم بدفء وضحكة حلوة",
+            audioUrl: "/audio/s5/s5_l8_ar-IQ.mp3"
+          },
+          "zh-TW": {
+            text: "午後的這場「驚天大陰謀」，就在歡聲笑語、熱巧克力的香濃和三塊蛋糕的甜美中圓滿落幕了。",
+            stageDirection: "以溫暖而幽默的語氣收尾",
+            audioUrl: "/audio/s5/s5_l8_zh-TW.mp3"
+          },
+          "hi-IN": {
+            text: "और इस तरह दोपहर का वह बड़ा षड्यंत्र हंसी-मज़ाक, गर्म चॉकलेट और केक के तीन टुकड़ों के बीच घुलकर समाप्त हो गया।",
+            stageDirection: "गर्मजोशी और हास्य के साथ समापन करते हुए",
+            audioUrl: "/audio/s5/s5_l8_hi-IN.mp3"
+          },
+          "ur-PK": {
+            text: "اور یوں سہ پہر کی بڑی سازش قہقہوں، گرم چاکلیٹ اور کیک کے تین ٹکڑوں میں گھل کر ختم ہو گئی۔",
+            stageDirection: "گرمجوشی اور مزاح کے ساتھ اختتام کرتے ہوئے",
+            audioUrl: "/audio/s5/s5_l8_ur-PK.mp3"
+          },
+          "bn-IN": {
+            text: "আর এভাবেই বিকেলের সেই বিরাট ষড়যন্ত্র হাসি, গরম চকোলেট আর তিন টুকরো কেকের মিষ্টি স্বাদে সমাপ্ত হলো।",
+            stageDirection: "উষ্ণতা ও কৌতুকের সাথে সমাপ্তি টেনে",
+            audioUrl: "/audio/s5/s5_l8_bn-IN.mp3"
+          },
+          "pa-IN": {
+            text: "ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਸ਼ਾਮ ਦੀ ਵੱਡੀ ਸਾਜ਼ਿਸ਼ ਹਾਸੇ, ਗਰਮ ਚਾਕਲੇਟ ਅਤੇ ਕੇਕ ਦੇ ਤਿੰਨ ਟੁਕੜਿਆਂ ਵਿੱਚ ਘੁਲ ਕੇ ਸਮਾਪਤ ਹੋ ਗਈ।",
+            stageDirection: "ਨਿੱਘ ਅਤੇ ਹਾਸੇ-ਮਜ਼ਾਕ ਨਾਲ ਸਮਾਪਤ ਕਰਦੇ ਹੋਏ",
+            audioUrl: "/audio/s5/s5_l8_pa-IN.mp3"
+          },
+          "gu-IN": {
+            text: "અને આમ બપોરનું મોટું ષડયંત્ર હાસ્ય, ગરમ ચોકલેટ અને કેકના ત્રણ ટુકડાઓ વચ્ચે ઓગળીને પૂર્ણ થયું.",
+            stageDirection: "હૂંફ અને રમૂજ સાથે સમાપન કરતાં",
+            audioUrl: "/audio/s5/s5_l8_gu-IN.mp3"
+          },
+          "mr-IN": {
+            text: "आणि अशा प्रकारे दुपारचा मोठा कट हास्य, गरम चॉकलेट आणि केकच्या तीन तुकड्यांमध्ये विरघळून संपला.",
+            stageDirection: "उबदारपणा आणि विनोदाने समारोप करत",
+            audioUrl: "/audio/s5/s5_l8_mr-IN.mp3"
+          },
+          "ta-IN": {
+            text: "இவ்வாறாக பிற்பகலின் மாபெரும் சதி சிரிப்பு, சூடான சாக்லேட் மற்றும் மூன்று துண்டு கேக்குகளுக்கு நடுவே இனிதாக முடிந்தது.",
+            stageDirection: "அன்போடும் நகைச்சுவையோடும் முடிக்கிறார்",
+            audioUrl: "/audio/s5/s5_l8_ta-IN.mp3"
+          },
+          "te-IN": {
+            text: "ఈ విధంగా మధ్యాహ్నపు గొప్ప కుట్ర నవ్వులు, వేడి చాక్లెట్ మరియు మూడు కేక్ ముక్కల మధ్య కరిగిపోయి ముగిసింది.",
+            stageDirection: "వెచ్చదనంతో మరియు హాస్యంతో ముగిస్తూ",
+            audioUrl: "/audio/s5/s5_l8_te-IN.mp3"
+          },
+          "kn-IN": {
+            text: "ಹೀಗೆ ಮಧ್ಯಾಹ್ನದ ಆ ಮಹಾ ಸಂಚು ನಗು, ಬಿಸಿ ಚಾಕೊಲೇಟ್ ಮತ್ತು ಮೂರು ಕೇಕ್ ತುಂಡುಗಳ ನಡುವೆ ಕರಗಿ ಸಮಾಪ್ತವಾಯಿತು.",
+            stageDirection: "ಆತ್ಮೀಯತೆ ಮತ್ತು ಹಾಸ್ಯದೊಂದಿಗೆ ಮುಕ್ತಾಯಗೊಳಿಸುತ್ತಾ",
+            audioUrl: "/audio/s5/s5_l8_kn-IN.mp3"
+          },
+          "ml-IN": {
+            text: "അങ്ങനെ ആ ഉച്ചതിരിഞ്ഞുള്ള വലിയ ഗൂഢാലോചന ചിരിയിലും ചൂടുള്ള ചോക്ലേറ്റിലും മൂന്ന് കഷ്ണം കേക്കിലുമായി അലിഞ്ഞുതീർന്നു.",
+            stageDirection: "ഊഷ്മളതയോടും നർമ്മത്തോടും കൂടി ഉപസംഹരിക്കുന്നു",
+            audioUrl: "/audio/s5/s5_l8_ml-IN.mp3"
+          },
+          "vi-VN": {
+            text: "Và thế là âm mưu vĩ đại của buổi chiều đã khép lại, tan biến trong tiếng cười, sô-cô-la nóng và ba miếng bánh ngọt.",
+            stageDirection: "Khép lại câu chuyện với sự ấm áp và hài hước",
+            audioUrl: "/audio/s5/s5_l8_vi-VN.mp3"
+          },
+          "th-TH": {
+            text: "และแล้วแผนการร้ายครั้งใหญ่ยามบ่ายก็ปิดฉากลง ละลายหายไปท่ามกลางเสียงหัวเราะ ช็อกโกแลตร้อน และเค้กแสนอร่อยสามชิ้น",
+            stageDirection: "กล่าวจบเรื่องด้วยความอบอุ่นและเปี่ยมอารมณ์ขัน",
+            audioUrl: "/audio/s5/s5_l8_th-TH.mp3"
+          },
+          "id-ID": {
+            text: "Dan begitulah konspirasi besar sore itu berakhir, larut dalam tawa riang, cokelat panas, dan tiga potong kue lezat.",
+            stageDirection: "Mengakhiri dengan kehangatan dan humor",
+            audioUrl: "/audio/s5/s5_l8_id-ID.mp3"
+          },
+          "ms-MY": {
+            text: "Maka berakhirlah konspirasi petang yang hebat itu, lebur dalam gelak tawa, coklat panas dan tiga potong kek yang enak.",
+            stageDirection: "Menutup cerita dengan penuh kemesraan dan jenaka",
+            audioUrl: "/audio/s5/s5_l8_ms-MY.mp3"
+          },
+          "sw-KE": {
+            text: "Na hivyo ndivyo njama kubwa ya alasiri ilivyomalizika, ikiyeyuka katika vicheko, chokoleti moto na vipande vitatu vya keki.",
+            stageDirection: "Akiihitimisha kwa upendo na ucheshi",
+            audioUrl: "/audio/s5/s5_l8_sw-KE.mp3"
+          },
+          "gn-PY": {
+            text: "Ha upéicha opa pe ñomongeta guasu ka'arupegua, oñehundívo pukavy, chokoláte haku ha mbohapy tórta pehẽngue apytépe.",
+            stageDirection: "Omboty vy'a ha torýpe",
+            audioUrl: "/audio/s5/s5_l8_gn-PY.mp3"
+          },
+          "qu-PE": {
+            text: "Chaynallam tukukun chay hatun mana allin yuyaykuyqa, asiywan, q'oñi chukulatiwan kimsa tanta rakiywan lliw chinkaspa.",
+            stageDirection: "Q'oñi kusi kawsaywan tukun",
+            audioUrl: "/audio/s5/s5_l8_qu-PE.mp3"
+          },
+          "ay-BO": {
+            text: "Ukat ukhamaw uka jayp'u pachan ch'axwawi tukt'äna, lart'asiñampi, junt'u chukulatimpi ukat kimsani t'ant'a chhitamparuw chhaqtxa.",
+            stageDirection: "K'achampi ukat kusisiñampi tukt'ayasa",
+            audioUrl: "/audio/s5/s5_l8_ay-BO.mp3"
+          },
+          "nah-MX": {
+            text: "Ihuan yuhcatzan tlatlamic in hueyi ichtacayotl, polihui ica huetziliztli, totonqui chocolate ihuan yeyi tlacualiztli.",
+            stageDirection: "Tlamiltiliztli ica tlapalewiliztli ihuan paquiliztli",
+            audioUrl: "/audio/s5/s5_l8_nah-MX.mp3"
+          },
+          "nv-US": {
+            text: "Ákótʼéego díí chahałheełgo baa tsíhodeezkʼézígiicʼįʼ yidlóoʼgo, góohwééh łikaní dóó bááh łikaní tááʼ ałtsʼą́ą́ʼ kʼíhodeesdzo.",
+            stageDirection: "Baa hozhǫ́ǫgo ałtso",
+            audioUrl: "/audio/s5/s5_l8_nv-US.mp3"
           }
         }
       }
