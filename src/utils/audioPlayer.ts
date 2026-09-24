@@ -64,7 +64,7 @@ class AudioPlayerService {
     audioUrl?: string;
     spokenText: string;
     langCode: string;
-    characterId: "hugo" | "clara" | "don_ramon" | "mateo" | "bea";
+    characterId: "hugo" | "clara" | "don_ramon" | "mateo" | "bea" | "narrator" | "narrator_male";
   }) {
     // If clicking same active playing line, pause/stop
     if (this.activeId === id) {
@@ -86,7 +86,7 @@ class AudioPlayerService {
       utterance.rate = this.playbackRate;
 
       // Character-specific pitch tuning (Hugo and Don Ramón must sound unmistakably male)
-      const isMale = characterId === "hugo" || characterId === "don_ramon";
+      const isMale = characterId === "hugo" || characterId === "don_ramon" || characterId === "narrator_male";
       if (characterId === "mateo") {
         utterance.pitch = 1.15; // Youthful boy
       } else if (characterId === "don_ramon") {
@@ -96,6 +96,10 @@ class AudioPlayerService {
         utterance.pitch = 1.1;  // Bright female
       } else if (characterId === "hugo") {
         utterance.pitch = 0.88; // Masculine, dramatic tenor
+      } else if (characterId === "narrator_male") {
+        utterance.pitch = 0.92; // Warm masculine storyteller
+      } else if (characterId === "narrator") {
+        utterance.pitch = 1.05; // Expressive female narrator
       } else {
         utterance.pitch = 1.0;  // Clara calm & steady female
       }

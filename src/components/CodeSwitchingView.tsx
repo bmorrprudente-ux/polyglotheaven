@@ -40,6 +40,8 @@ export const CodeSwitchingView: React.FC<CodeSwitchingViewProps> = ({
     don_ramon: "es-DO",
     mateo: "de-DE",
     bea: "pt-BR",
+    narrator: "es-ES",
+    narrator_male: "es-ES",
   });
 
   const handleLanguageChange = (charId: string, langCode: string) => {
@@ -147,7 +149,8 @@ export const CodeSwitchingView: React.FC<CodeSwitchingViewProps> = ({
           const langCode = characterLanguages[line.characterId] || "es-ES";
           const lang = LANGUAGES[langCode] || LANGUAGES["es-ES"];
           const translation = line.translations[langCode] || line.translations["es-ES"];
-          const voiceModel = lang?.characterVoices[line.characterId];
+          const voiceModel = (lang?.characterVoices as any)?.[line.characterId] || 
+            (line.characterId === "narrator" ? lang?.characterVoices?.clara : lang?.characterVoices?.hugo);
           const hasVoice = lang.hasVoiceModel !== false && voiceModel && !voiceModel.label.includes("Sin modelo");
           const isFlagged = voiceFlagger.isFlagged(langCode);
           const audioId = `switch_${line.id}_${langCode}`;
@@ -180,6 +183,14 @@ export const CodeSwitchingView: React.FC<CodeSwitchingViewProps> = ({
                       <span>{lang.flag}</span>
                       <span>{lang.name}</span>
                     </span>
+                    {!line.translations[langCode] && langCode !== "es-ES" && (
+                      <span
+                        className="text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/80 px-1.5 py-0.5 rounded flex-shrink-0"
+                        title="Este cuento aún no tiene traducción a este idioma. Mostrando versión original en español de España."
+                      >
+                        Borrador ES
+                      </span>
+                    )}
                     <button
                       type="button"
                       onClick={() => onOpenFactCard(lang)}
@@ -242,7 +253,7 @@ export const CodeSwitchingView: React.FC<CodeSwitchingViewProps> = ({
                             id: audioId,
                             audioUrl: translation.audioUrl,
                             spokenText: translation.text,
-                            langCode: lang.code,
+                            langCode: line.translations[langCode] ? lang.code : "es-ES",
                             characterId: line.characterId,
                           });
                         }}

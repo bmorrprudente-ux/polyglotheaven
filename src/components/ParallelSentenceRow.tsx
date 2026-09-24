@@ -121,7 +121,8 @@ export const ParallelSentenceRow: React.FC<ParallelSentenceRowProps> = ({
           const isDraftFallback = !line.translations[langCode] && langCode !== "es-ES";
           const audioId = `${line.id}_${langCode}`;
           const isPlaying = activeAudioId === audioId;
-          const voiceModel = lang.characterVoices[line.characterId];
+          const voiceModel = (lang.characterVoices as any)[line.characterId] || 
+            (line.characterId === "narrator" ? lang.characterVoices.clara : lang.characterVoices.hugo);
           const hasVoice = lang.hasVoiceModel !== false && voiceModel && !voiceModel.label.includes("Sin modelo");
           const isFlagged = voiceFlagger.isFlagged(langCode);
           const ipaString = translation.phonetic || getIpaTranscription(translation.text, line.translations[langCode] ? langCode : "es-ES");

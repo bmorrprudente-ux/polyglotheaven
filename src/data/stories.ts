@@ -13,7 +13,7 @@ export interface DialogueLineTranslation {
 
 export interface DialogueLine {
   id: string;
-  characterId: "hugo" | "clara" | "don_ramon" | "mateo" | "bea";
+  characterId: "hugo" | "clara" | "don_ramon" | "mateo" | "bea" | "narrator" | "narrator_male";
   defaultStageDirection?: string;
   expression: string;
   translations: Record<string, DialogueLineTranslation>;
@@ -23,7 +23,7 @@ export interface Story {
   id: string;
   title: string;
   subtitle: string;
-  characters: ("hugo" | "clara" | "don_ramon" | "mateo" | "bea")[];
+  characters: ("hugo" | "clara" | "don_ramon" | "mateo" | "bea" | "narrator" | "narrator_male")[];
   conflictType: string;
   vocabularyTheme: string;
   lines: DialogueLine[];
@@ -9267,6 +9267,121 @@ export const STORIES: Story[] = [
         }
       }
     ]
+  },
+  {
+    id: "story_5",
+    title: "El Robo del Siglo... o Casi",
+    subtitle: "Narradora + Hugo + Don Ramón + Bea",
+    characters: ["narrator", "hugo", "don_ramon", "bea"],
+    conflictType: "Hugo confunde un regalo sorpresa de Don Ramón con un atraco a mano armada; la narradora aclara el embrollo.",
+    vocabularyTheme: "Misterio, celebraciones, regalos, tienda, malentendidos y humor.",
+    lines: [
+      {
+        id: "s5_l1",
+        characterId: "narrator",
+        defaultStageDirection: "Con voz cálida, misteriosa y un punto de ironía",
+        expression: "storytelling",
+        translations: {
+          "es-ES": {
+            text: "Eran las seis en punto de la tarde cuando Hugo divisó una sombra sospechosa acercándose a la pastelería.",
+            stageDirection: "Con voz cálida y misteriosa",
+            audioUrl: "/audio/s5/s5_l1_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l2",
+        characterId: "hugo",
+        defaultStageDirection: "Ocultándose detrás de un cartel publicitario y susurrando con urgencia",
+        expression: "conspiracy",
+        translations: {
+          "es-ES": {
+            text: "¡Bea, al suelo! Ese hombre del sombrero oscuro y la gabardina viene a desvalijar la caja fuerte.",
+            stageDirection: "Susurrando con urgencia",
+            audioUrl: "/audio/s5/s5_l2_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l3",
+        characterId: "bea",
+        defaultStageDirection: "Colocando con calma una bandeja de pasteles recién horneados",
+        expression: "cheerful",
+        translations: {
+          "es-ES": {
+            text: "No tenemos caja fuerte, Hugo. Guardamos las monedas en una lata de galletas con dibujo de gatito.",
+            stageDirection: "Con serenidad inocente",
+            audioUrl: "/audio/s5/s5_l3_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l4",
+        characterId: "narrator",
+        defaultStageDirection: "Acentuando el dramatismo con una leve sonrisa cómplice",
+        expression: "ironic",
+        translations: {
+          "es-ES": {
+            text: "La puerta crujió lentamente. El temible sospechoso se deslizó hacia el mostrador a paso firme.",
+            stageDirection: "Con suspense teatral",
+            audioUrl: "/audio/s5/s5_l4_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l5",
+        characterId: "don_ramon",
+        defaultStageDirection: "Sacando triunfalmente un paquete envuelto en papel dorado y gafas de sol",
+        expression: "cheerful",
+        translations: {
+          "es-ES": {
+            text: "¡Que nadie se mueva! Traigo la tarta de chocolate más peligrosa de la ciudad para celebrar mi jubilación.",
+            stageDirection: "Con voz potente y festiva",
+            audioUrl: "/audio/s5/s5_l5_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l6",
+        characterId: "hugo",
+        defaultStageDirection: "Parpadeando atónito, bajando lentamente el paraguas que usaba como escudo",
+        expression: "confused",
+        translations: {
+          "es-ES": {
+            text: "¿Don Ramón? ¿Y ese maletín negro con candado reforzado no contenía explosivos plásticos?",
+            stageDirection: "Boquiabierto y desconcertado",
+            audioUrl: "/audio/s5/s5_l6_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l7",
+        characterId: "don_ramon",
+        defaultStageDirection: "Dando una palmada cariñosa en el hombro de Hugo y soltando una carcajada",
+        expression: "laughing",
+        translations: {
+          "es-ES": {
+            text: "Contiene servilletas de tela y velas con chispas, chaval. A mi edad, el único peligro son las calorías.",
+            stageDirection: "Riendo a carcajadas",
+            audioUrl: "/audio/s5/s5_l7_es-ES.mp3"
+          }
+        }
+      },
+      {
+        id: "s5_l8",
+        characterId: "narrator",
+        defaultStageDirection: "Cerrando el relato con dulzura cómica y tono de cuento clásico",
+        expression: "warm",
+        translations: {
+          "es-ES": {
+            text: "Y así concluyó la gran conspiración de la tarde, disuelta entre risas, chocolate caliente y tres porciones de tarta.",
+            stageDirection: "Concluyendo con calidez y humor",
+            audioUrl: "/audio/s5/s5_l8_es-ES.mp3"
+          }
+        }
+      }
+    ]
   }
 ];
+
 

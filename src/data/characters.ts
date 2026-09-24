@@ -77,5 +77,32 @@ export const CHARACTERS: Record<string, Character> = {
     color: "#ec4899",
     themeBorder: "border-pink-500",
     bgBadge: "bg-pink-100 text-pink-800"
+  },
+  narrator: {
+    id: "narrator",
+    name: "Narradora",
+    subtitle: "Voz de la Historia",
+    age: "Atemporal",
+    archetype: "Observadora perspicaz que guía el relato y acentúa la ironía de las situaciones.",
+    comicTrait: "Comenta con elegancia cómica y calidez los enredos de los protagonistas.",
+    catchphrase: "«Y así comenzó otro día perfectamente caótico...»",
+    avatar: "/characters/narrator_female.jpg",
+    color: "#8b5cf6",
+    themeBorder: "border-violet-500",
+    bgBadge: "bg-violet-100 text-violet-800"
+  },
+  narrator_male: {
+    id: "narrator_male",
+    name: "Narrador",
+    subtitle: "Voz de la Historia",
+    age: "Atemporal",
+    archetype: "Relator elocuente que narra cada peripecia con emoción y sutileza.",
+    comicTrait: "Aporta tono documental y cinematográfico a las peripecias cotidianas.",
+    catchphrase: "«Todo parecía estar bajo control... hasta este instante.»",
+    avatar: "/characters/narrator_male.jpg",
+    color: "#6366f1",
+    themeBorder: "border-indigo-500",
+    bgBadge: "bg-indigo-100 text-indigo-800"
   }
 };
+
