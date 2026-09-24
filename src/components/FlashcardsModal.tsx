@@ -264,15 +264,23 @@ export const FlashcardsModal: React.FC<FlashcardsModalProps> = ({
                 ) : (
                   /* BACK OF CARD */
                   <div className="my-auto text-left py-2 space-y-3">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between flex-wrap gap-1">
                       <span className="text-2xl font-black text-gray-900 dark:text-white capitalize">
                         {currentWord.word}
                       </span>
-                      {explanation?.partOfSpeech && (
-                        <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-300">
-                          {explanation.partOfSpeech}
-                        </span>
-                      )}
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        {explanation?.isAiGenerated && (
+                          <span className="inline-flex items-center gap-1 text-[9px] font-black px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
+                            <Sparkles className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
+                            <span>DeepSeek v4.1 Flash</span>
+                          </span>
+                        )}
+                        {explanation?.partOfSpeech && (
+                          <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-300">
+                            {explanation.partOfSpeech}
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     {explanation?.ipa && (

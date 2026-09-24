@@ -620,6 +620,7 @@ export const App: React.FC = () => {
         activeLanguageCodes={selectedLanguageCodes}
         geminiApiKey={settings.geminiApiKey}
         onClose={() => setInspectedWord(null)}
+        onOpenFlashcards={() => setIsFlashcardsOpen(true)}
         locale={locale}
       />
 

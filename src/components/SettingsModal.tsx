@@ -375,12 +375,51 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
 
-          {/* Google Gemini API Key & Instructions */}
+          {/* OpenRouter AI (DeepSeek v4.1 Flash) - Servidor Protegido */}
+          <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-sky-500/10 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-300 dark:border-emerald-800/60 shadow-xs">
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">
+                  🤖
+                </div>
+                <div>
+                  <h4 className="text-xs font-black text-gray-900 dark:text-white flex items-center gap-1.5 flex-wrap">
+                    <span>OpenRouter AI</span>
+                    <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-300 font-extrabold border border-emerald-300 dark:border-emerald-700">
+                      <ShieldCheck className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                      <span>Protegido en Servidor 🔒</span>
+                    </span>
+                  </h4>
+                  <p className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
+                    Modelo activo: <code className="bg-emerald-100/60 dark:bg-emerald-900/40 px-1 py-0.5 rounded text-[10px]">deepseek/deepseek-v4.1-flash</code>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+              Tu clave de OpenRouter está salvaguardada en las variables de entorno del servidor (<code className="text-[10px] bg-black/5 dark:bg-white/10 px-1 py-0.5 rounded">.env</code>) y nunca se expone en el código cliente del navegador ni en GitHub.
+            </p>
+
+            <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-200/60 dark:border-slate-700 text-[11px] text-gray-700 dark:text-gray-300 space-y-1">
+              <p className="font-bold text-gray-900 dark:text-white flex items-center gap-1">
+                <span>✨ Funciones automáticas:</span>
+              </p>
+              <ul className="list-disc list-inside space-y-0.5 text-[10px] text-gray-600 dark:text-gray-400">
+                <li>Definiciones semánticas contextuales generadas al hacer clic en cada palabra.</li>
+                <li>Transcripción fonética IPA y análisis de categoría gramatical.</li>
+                <li>Creación inmediata de tarjetas de memoria (Flashcards) listas para practicar.</li>
+                <li>Traducciones cruzadas simultáneas para todos los idiomas de estudio activos.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Google Gemini API Key (Opcional / Respaldo) */}
           <div className="p-4 rounded-2xl bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-sky-500/10 dark:from-purple-950/40 dark:to-sky-950/40 border border-purple-200 dark:border-purple-800/50">
             <div className="flex items-center justify-between gap-2 mb-1.5">
               <div className="flex items-center gap-1.5 text-xs font-black text-purple-900 dark:text-purple-200">
                 <Key className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-                <span>{t.geminiKeyLabel}</span>
+                <span>Google Gemini API (Respaldo opcional)</span>
               </div>
               <a
                 href="https://aistudio.google.com/app/apikey"
@@ -393,17 +432,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
 
             <p className="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed mb-2.5">
-              {t.geminiKeyDesc}
+              Si deseas configurar una clave personal de Google Gemini adicional como respaldo secundario, puedes ingresarla aquí:
             </p>
-
-            <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-purple-200/60 dark:border-slate-700 mb-3 text-[11px] text-gray-600 dark:text-gray-400 leading-relaxed">
-              <p className="font-bold text-gray-800 dark:text-gray-200 mb-1">{t.geminiQuickStepsTitle}</p>
-              <ol className="list-decimal list-inside space-y-0.5">
-                <li>{t.geminiStep1}</li>
-                <li>{t.geminiStep2}</li>
-                <li>{t.geminiStep3}</li>
-              </ol>
-            </div>
 
             <input
               type="password"

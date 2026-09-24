@@ -15,6 +15,7 @@ interface WordInspectorModalProps {
   activeLanguageCodes: string[];
   geminiApiKey?: string;
   locale?: SupportedLocale;
+  onOpenFlashcards?: () => void;
 }
 
 export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
@@ -26,11 +27,13 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
   activeLanguageCodes,
   geminiApiKey,
   locale = "es",
+  onOpenFlashcards,
 }) => {
   const [loading, setLoading] = useState(true);
   const [explanation, setExplanation] = useState<WordExplanation | null>(null);
   const [saved, setSaved] = useState(false);
   const [isFav, setIsFav] = useState(false);
+  const [flashcardCreated, setFlashcardCreated] = useState(false);
 
   const t = I18N[locale] || I18N.es;
   const actualLangCode = langCode || "es-ES";
@@ -43,6 +46,10 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
       .then(res => {
         setExplanation(res);
         setLoading(false);
+        // Automatically save with full definition into vocabulary tracker / flashcards
+        if (res && res.definition) {
+          vocabularyTracker.recordWord(word, actualLangCode, contextSentence, res.definition);
+        }
       })
       .catch(() => {
         setLoading(false);
@@ -52,6 +59,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
   useEffect(() => {
     if (!isOpen || !word) return;
     setSaved(false);
+    setFlashcardCreated(false);
     setIsFav(vocabularyTracker.isFavorite(word, actualLangCode));
 
     // Automatically record word encounter in Vocabulary Tracker
@@ -70,6 +78,15 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
       u.rate = 0.9;
       window.speechSynthesis.speak(u);
     }
+  };
+
+  const handleCreateFlashcard = () => {
+    if (!word) return;
+    vocabularyTracker.recordWord(word, actualLangCode, contextSentence, explanation?.definition);
+    vocabularyTracker.toggleFavorite(word, actualLangCode);
+    setIsFav(true);
+    setSaved(true);
+    setFlashcardCreated(true);
   };
 
   return (
@@ -92,8 +109,8 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                 )}
                 {explanation?.isAiGenerated && (
                   <span className="inline-flex items-center gap-1 text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
-                    <Sparkles className="w-2.5 h-2.5 text-emerald-600" />
-                    <span>Gemini AI</span>
+                    <Sparkles className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
+                    <span>{explanation.modelUsed?.includes("DeepSeek") ? "DeepSeek v4.1 Flash" : "AI"}</span>
                   </span>
                 )}
               </div>
@@ -239,28 +256,44 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="p-3.5 bg-gray-50 dark:bg-slate-800/60 border-t border-gray-200 dark:border-slate-800 flex justify-between items-center gap-2">
-          <div className="flex items-center gap-2">
+        <div className="p-3.5 bg-gray-50 dark:bg-slate-800/60 border-t border-gray-200 dark:border-slate-800 flex flex-wrap justify-between items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Create Flashcard Button */}
             <button
-              onClick={() => {
-                if (word) {
-                  const nowFav = vocabularyTracker.toggleFavorite(word, actualLangCode);
-                  setIsFav(nowFav);
-                }
-              }}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
-                isFav
-                  ? "bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-400"
-                  : "bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-slate-700 hover:bg-gray-100"
+              onClick={handleCreateFlashcard}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shadow-xs ${
+                flashcardCreated || isFav
+                  ? "bg-amber-100 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 border border-amber-400 font-black"
+                  : "bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black hover:opacity-95"
               }`}
-              title="Añadir a favoritas para repasar en Flashcards"
+              title="Crear tarjeta de memoria con esta definición generada por DeepSeek"
             >
-              <Star className={`w-3.5 h-3.5 ${isFav ? "fill-amber-500 text-amber-500" : "text-gray-400"}`} />
-              <span>{isFav ? "Favorita ⭐" : "Favorita"}</span>
+              <span>🗂️</span>
+              <span>{flashcardCreated || isFav ? "¡Tarjeta creada! ⭐" : "Crear Flashcard"}</span>
             </button>
 
+            {/* Quick link to practice flashcards if callback exists */}
+            {onOpenFlashcards && (flashcardCreated || isFav) && (
+              <button
+                onClick={() => {
+                  onClose();
+                  onOpenFlashcards();
+                }}
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-900 dark:text-purple-200 text-xs font-extrabold hover:bg-purple-200 transition-colors"
+                title="Abrir el mazo de tarjetas para practicar"
+              >
+                <span>Practicar</span>
+                <span>→</span>
+              </button>
+            )}
+
             <button
-              onClick={() => setSaved(true)}
+              onClick={() => {
+                setSaved(true);
+                if (word) {
+                  vocabularyTracker.recordWord(word, actualLangCode, contextSentence, explanation?.definition);
+                }
+              }}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
                 saved
                   ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300"

@@ -29,9 +29,9 @@ export interface WordExplanation {
   apiError?: string;
 }
 
-// In-memory / localStorage cache (version 2 invalidates previous bugged fallback caches)
-const CACHE_KEY_PHRASES = "telar_ai_cache_phrases_v2";
-const CACHE_KEY_WORDS = "telar_ai_cache_words_v2";
+// In-memory / localStorage cache (v3 for DeepSeek v4.1 Flash OpenRouter integration)
+const CACHE_KEY_PHRASES = "polyglot_phrases_cache_v3";
+const CACHE_KEY_WORDS = "polyglot_words_cache_v3";
 
 function getCache(key: string): Record<string, any> {
   try {
@@ -108,7 +108,7 @@ async function callGeminiApi(prompt: string, apiKey: string): Promise<{ text: st
 }
 
 /**
- * Explains a whole dialogue line or phrase
+ * Explains a whole dialogue line or phrase using OpenRouter DeepSeek v4.1 Flash via server proxy
  */
 export async function explainPhraseWithAi(
   phrase: string,
@@ -121,16 +121,32 @@ export async function explainPhraseWithAi(
   const cacheKey = `${langCode}:${phrase}`;
   const cached = getCache(CACHE_KEY_PHRASES)[cacheKey];
 
-  // If cached and valid: if apiKey exists but cached was NOT AI generated, bypass cache and query AI
-  const hasKey = Boolean(apiKey && apiKey.trim());
-  if (!forceRefresh && cached) {
-    if (!hasKey || cached.isAiGenerated) {
-      return cached;
+  if (!forceRefresh && cached && cached.isAiGenerated) {
+    return cached;
+  }
+
+  // 1. Try secure OpenRouter proxy endpoint first
+  try {
+    const res = await fetch("/api/explain-phrase", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phrase, langName, langCode, characterName })
+    });
+    if (res.ok) {
+      const json = await res.json();
+      if (json.ok && json.data) {
+        setCache(CACHE_KEY_PHRASES, cacheKey, json.data);
+        return json.data;
+      }
     }
+  } catch (err) {
+    console.warn("OpenRouter server proxy unavailable, testing fallbacks:", err);
   }
 
   let apiError: string | undefined;
 
+  // 2. Try Gemini if user provided custom API key
+  const hasKey = Boolean(apiKey && apiKey.trim());
   if (hasKey) {
     try {
       const prompt = `You are an expert polyglot linguist in an app called Polyglot Heaven.
@@ -154,11 +170,10 @@ Return ONLY valid JSON with this schema:
       return parsed;
     } catch (e: any) {
       apiError = e?.message || "Error al invocar Gemini API";
-      console.warn("Gemini phrase explanation failed:", apiError);
     }
   }
 
-  // High-quality contextual fallback
+  // 3. High-quality contextual fallback
   const fallback = generateHeuristicPhraseExplanation(phrase, langName, langCode, characterName);
   fallback.isAiGenerated = false;
   fallback.apiError = apiError;
@@ -169,7 +184,7 @@ Return ONLY valid JSON with this schema:
 }
 
 /**
- * Explains a single word with definitions and cross-lingual equivalents
+ * Explains a single word with definitions and cross-lingual equivalents using DeepSeek v4.1 Flash
  */
 export async function explainWordWithAi(
   word: string,
@@ -179,20 +194,41 @@ export async function explainWordWithAi(
   apiKey?: string,
   forceRefresh: boolean = false
 ): Promise<WordExplanation> {
-  const cleanWord = word.trim().replace(/^[¿¡"'(]+|[.,!?:;)"']+$/g, "");
+  const cleanWord = word.trim().replace(/^[¿¡"«'(\[]+|[.,;:?!»"')\]]+$/g, "");
   const cacheKey = `${sourceLangCode}:${cleanWord.toLowerCase()}`;
   const cached = getCache(CACHE_KEY_WORDS)[cacheKey];
 
-  const hasKey = Boolean(apiKey && apiKey.trim());
-  if (!forceRefresh && cached) {
-    // If we have an API key and the cached result was merely heuristic, query Gemini!
-    if (!hasKey || cached.isAiGenerated) {
-      return cached;
+  if (!forceRefresh && cached && cached.isAiGenerated) {
+    return cached;
+  }
+
+  // 1. Try secure OpenRouter server proxy endpoint (DeepSeek v4.1 Flash)
+  try {
+    const res = await fetch("/api/define-word", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        word: cleanWord,
+        sourceLangCode,
+        contextSentence,
+        activeTargetLangCodes
+      })
+    });
+    if (res.ok) {
+      const json = await res.json();
+      if (json.ok && json.data) {
+        setCache(CACHE_KEY_WORDS, cacheKey, json.data);
+        return json.data;
+      }
     }
+  } catch (err) {
+    console.warn("OpenRouter server proxy unavailable, evaluating fallbacks:", err);
   }
 
   let apiError: string | undefined;
 
+  // 2. Try Gemini if user provided an API key in settings
+  const hasKey = Boolean(apiKey && apiKey.trim());
   if (hasKey) {
     try {
       const prompt = `You are a world-class polyglot lexicographer for a language learning app called Polyglot Heaven.
@@ -226,11 +262,10 @@ ${activeTargetLangCodes.map(c => `    "${c}": "accurate translation in ${c}"`).j
       return parsed;
     } catch (e: any) {
       apiError = e?.message || "Error al invocar Gemini API";
-      console.warn("Gemini word explanation failed:", apiError);
     }
   }
 
-  // Heuristic lexical database fallback
+  // 3. Heuristic lexical database fallback
   const fallback = generateHeuristicWordExplanation(cleanWord, sourceLangCode, contextSentence, activeTargetLangCodes);
   fallback.isAiGenerated = false;
   fallback.apiError = apiError;
